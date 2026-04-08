@@ -1,0 +1,330 @@
+{
+  "producer": "Casa da Passarela",
+  "generated_at": "2026-03-01T11:20:27.326860",
+  "found_count": 7,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "passarela-enologo-2022",
+      "producer": "Casa da Passarela",
+      "name": "Casa da Passarela O Enólogo",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa da Passarella O Enólogo – Vinhas Velhas Tinto",
+          "confidence": "low",
+          "score": 0.635,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Casa da Passarella O Abanico Reserva branco",
+          "confidence": "no_match",
+          "score": 0.448,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa Santar Reserva 2020 75 Cl",
+          "confidence": "no_match",
+          "score": 0.218,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Casa da Passarella O Enólogo Encruzado Branco 2022",
+          "confidence": "low",
+          "score": 0.665,
+          "url": null
+        },
+        "Granvine": {
+          "retail_price": 19.79,
+          "name_found": "Casa da Passarella O Enólogo Vinhas Velhas Tinto 2021",
+          "confidence": "high",
+          "score": 0.9,
+          "url": "https://granvine.com/pt/casa-da-passarella-o-enologo-v-velhas-tinto-2021"
+        }
+      },
+      "best_retail": 19.79,
+      "best_source": "Granvine",
+      "restaurant_estimates": {
+        "1.5x": 30.0,
+        "2.0x": 40.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "passarela-descoberta-tinto-2022",
+      "producer": "Casa da Passarela",
+      "name": "Casa da Passarela A Descoberta",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 5.99,
+          "name_found": "Casa da Passarella A Descoberta Tinto",
+          "confidence": "high",
+          "score": 0.743,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/casa-da-passarella-a-descoberta-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 6.95,
+          "name_found": " 2024 Casa da Passarella A Descoberta branco",
+          "confidence": "high",
+          "score": 0.739,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-casa-da-passarella-a-descoberta-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa Santar Reserva 2020 75 Cl",
+          "confidence": "no_match",
+          "score": 0.216,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Passarella A Descoberta Branco 2024",
+          "confidence": "low",
+          "score": 0.631,
+          "url": null
+        }
+      },
+      "best_retail": 5.99,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 9.0,
+        "2.0x": 12.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "passarela-fugitivo-tinta-amarela-2018",
+      "producer": "Casa da Passarela",
+      "name": "Casa da Passarela O Fugitivo Tinta Amarela",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 24.95,
+          "name_found": "Casa da Passarella O Fugitivo Tinta Amarela Tinto",
+          "confidence": "high",
+          "score": 0.815,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/casa-da-passarella-o-fugitivo-tinta-amarela-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2018 Casa da Passarella O Fugitivo Tinta Pinheira tinto",
+          "confidence": "low",
+          "score": 0.643,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa Santar Reserva 2020 75 Cl",
+          "confidence": "no_match",
+          "score": 0.166,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 35.35,
+          "name_found": "Casa da Passarella O Fugitivo Tinta Amarela Tinto 2019",
+          "confidence": "high",
+          "score": 0.802,
+          "url": "https://www.portugalvineyards.com/pt/dao/25662-casa-da-passarella-o-fugitivo-tinta-amarela-red-2019.html"
+        }
+      },
+      "best_retail": 24.95,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 37.5,
+        "2.0x": 50.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "passarela-fugitivo-bastardo-2023",
+      "producer": "Casa da Passarela",
+      "name": "Casa da Passarela O Fugitivo Bastardo",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 24.85,
+          "name_found": "Casa da Passarella O Fugitivo Bastardo Tinto",
+          "confidence": "high",
+          "score": 0.783,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/casa-da-passarella-o-fugitivo-bastardo-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 29.95,
+          "name_found": " 2023 Casa da Passarella O Fugitivo Bastardo tinto",
+          "confidence": "high",
+          "score": 0.791,
+          "url": "https://www.garrafeiranacional.com/vinho/2023-casa-da-passarella-o-fugitivo-bastardo-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa Santar Reserva 2020 75 Cl",
+          "confidence": "no_match",
+          "score": 0.185,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 35.35,
+          "name_found": "Casa da Passarella O Fugitivo Bastardo Tinto 2020",
+          "confidence": "high",
+          "score": 0.773,
+          "url": "https://www.portugalvineyards.com/pt/dao/14406-casa-da-passarella-o-fugitivo-bastardo-red-2018-5609613003931.html"
+        }
+      },
+      "best_retail": 24.85,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 37.5,
+        "2.0x": 50.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "passarela-fugitivo-tinta-carvalha-2021",
+      "producer": "Casa da Passarela",
+      "name": "Casa da Passarela O Fugitivo Tinta Carvalha",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa da Passarella O Fugitivo Tinta Pinheira Tinto",
+          "confidence": "low",
+          "score": 0.626,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2018 Casa da Passarella O Fugitivo Tinta Pinheira tinto",
+          "confidence": "low",
+          "score": 0.626,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa Santar Reserva 2020 75 Cl",
+          "confidence": "no_match",
+          "score": 0.169,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Casa da Passarella O Fugitivo Tinta Amarela Tinto 2019",
+          "confidence": "low",
+          "score": 0.622,
+          "url": null
+        },
+        "CasaDaPassarella": {
+          "retail_price": 31.8,
+          "name_found": "Casa da Passarella O Fugitivo Tinta Carvalha 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://loja.casadapassarella.pt/loja/o-fugitivo-tinta-carvalha/"
+        }
+      },
+      "best_retail": 31.8,
+      "best_source": "CasaDaPassarella",
+      "restaurant_estimates": {
+        "1.5x": 48.0,
+        "2.0x": 64.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "passarela-villa-oliveira-2019",
+      "producer": "Casa da Passarela",
+      "name": "Casa da Passarela Villa Oliveira",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Villa Oliveira Encruzado Branco",
+          "confidence": "low",
+          "score": 0.557,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Casa da Passarella Villa Oliveira Encruzado branco",
+          "confidence": "low",
+          "score": 0.679,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa Santar Reserva 2020 75 Cl",
+          "confidence": "no_match",
+          "score": 0.222,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Casa da Passarella Villa Oliveira Encruzado Branco 2021",
+          "confidence": "low",
+          "score": 0.669,
+          "url": null
+        },
+        "CasaDaPassarella": {
+          "retail_price": 51.9,
+          "name_found": "Casa da Passarella Villa Oliveira Encruzado",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://loja.casadapassarella.pt/loja/villa-oliveira-encruzado-2019/"
+        }
+      },
+      "best_retail": 51.9,
+      "best_source": "CasaDaPassarella",
+      "restaurant_estimates": {
+        "1.5x": 78.0,
+        "2.0x": 104.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "passarela-fugitivo-uva-cao-2020",
+      "producer": "Casa da Passarela",
+      "name": "Casa da Passarela O Fugitivo Uva-cão",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 24.85,
+          "name_found": "Casa da Passarella O Fugitivo Uva-Cão Branco",
+          "confidence": "high",
+          "score": 0.824,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/casa-da-passarella-o-fugitivo-uva-cao-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Casa da Passarella Villa Oliveira Uva-Cão branco",
+          "confidence": "low",
+          "score": 0.535,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa Santar Reserva 2020 75 Cl",
+          "confidence": "no_match",
+          "score": 0.161,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 35.35,
+          "name_found": "Casa da Passarella O Fugitivo Uva Cão Branco 2021",
+          "confidence": "high",
+          "score": 0.813,
+          "url": "https://www.portugalvineyards.com/pt/dao/24521-casa-da-passarella-o-fugitivo-uva-cao-white-2020.html"
+        }
+      },
+      "best_retail": 24.85,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 37.5,
+        "2.0x": 50.0
+      },
+      "status": "found"
+    }
+  ]
+}

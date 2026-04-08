@@ -1,0 +1,309 @@
+{
+  "producer": "Quinta de Lemos",
+  "generated_at": "2026-03-01T11:20:27.324356",
+  "found_count": 7,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "lemos-tinta-roriz-2015",
+      "producer": "Quinta de Lemos",
+      "name": "Quinta de Lemos Tinta Roriz",
+      "vintage": 2015,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 23.9,
+          "name_found": "Quinta de Lemos Tinta Roriz 2009 Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-de-lemos-tinta-roriz-2009-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 17.95,
+          "name_found": " 2015 Quinta de Lemos Tinta Roriz tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2015-quinta-de-lemos-tinta-roriz-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Crasto Tinta Roriz 2018 75 Cl",
+          "confidence": "low",
+          "score": 0.642,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta de Ventozelo Tinta Roriz Tinto 2021",
+          "confidence": "low",
+          "score": 0.684,
+          "url": null
+        }
+      },
+      "best_retail": 17.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 27.0,
+        "2.0x": 36.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "lemos-jaen-2007",
+      "producer": "Quinta de Lemos",
+      "name": "Quinta de Lemos Jaen",
+      "vintage": 2007,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 16.8,
+          "name_found": "Quinta de Lemos Jaen 2009 Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-de-lemos-jaen-2009-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 25.95,
+          "name_found": " 2008 Quinta de Lemos Jaen tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2008-quinta-de-lemos-jaen-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Quinta Nova Reserva Blanc De Noir 2023 75 Cl",
+          "confidence": "no_match",
+          "score": 0.301,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta do Mondego Jaen Tinto 2022",
+          "confidence": "low",
+          "score": 0.465,
+          "url": null
+        }
+      },
+      "best_retail": 16.8,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 25.5,
+        "2.0x": 34.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "lemos-alfrocheiro-2008",
+      "producer": "Quinta de Lemos",
+      "name": "Quinta de Lemos Alfrocheiro",
+      "vintage": 2008,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 17.9,
+          "name_found": "Quinta de Lemos Alfrocheiro Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-de-lemos-alfrocheiro-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 17.95,
+          "name_found": " 2015 Quinta de Lemos Alfrocheiro tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2015-quinta-de-lemos-alfrocheiro-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Quinta Nova Reserva Blanc De Noir 2023 75 Cl",
+          "confidence": "no_match",
+          "score": 0.299,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Vinha de Reis Alfrocheiro Tinto 2017",
+          "confidence": "low",
+          "score": 0.453,
+          "url": null
+        }
+      },
+      "best_retail": 17.9,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 27.0,
+        "2.0x": 36.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "lemos-touriga-bosque-2015",
+      "producer": "Quinta de Lemos",
+      "name": "Quinta de Lemos Touriga do Bosque",
+      "vintage": 2015,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta de Lemos Touriga Nacional 2012 Tinto",
+          "confidence": "low",
+          "score": 0.655,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 97.95,
+          "name_found": " 2015 Quinta de Lemos Touriga do Bosque tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2015-quinta-de-lemos-touriga-do-bosque-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Crasto Touriga Franca 2018 75 Cl",
+          "confidence": "no_match",
+          "score": 0.303,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta do Noval Touriga Nacional Tinto 2022",
+          "confidence": "no_match",
+          "score": 0.374,
+          "url": null
+        }
+      },
+      "best_retail": 97.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 147.0,
+        "2.0x": 196.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "lemos-lucita-2017",
+      "producer": "Quinta de Lemos",
+      "name": "Quinta de Lemos Lucita",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta de Lemos Rosé",
+          "confidence": "low",
+          "score": 0.632,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 12.95,
+          "name_found": " 2022 Quinta de Lemos Lucita tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2022-quinta-de-lemos-lucita-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Quinta Nova Reserva Blanc De Noir 2023 75 Cl",
+          "confidence": "no_match",
+          "score": 0.295,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta de Ventozelo Branco 2018",
+          "confidence": "no_match",
+          "score": 0.293,
+          "url": null
+        }
+      },
+      "best_retail": 12.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 19.5,
+        "2.0x": 26.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "lemos-dona-paulette-2012",
+      "producer": "Quinta de Lemos",
+      "name": "Quinta de Lemos Dona Paulette",
+      "vintage": 2012,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 34.8,
+          "name_found": "Quinta de Lemos Dona Paulette Encruzado Branco",
+          "confidence": "high",
+          "score": 0.908,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-de-lemos-dona-paulette-encruzado-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 35.95,
+          "name_found": " 2022 Quinta de Lemos Dona Paulette branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2022-quinta-de-lemos-dona-paulette-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Quinta Nova Reserva Blanc De Noir 2023 75 Cl",
+          "confidence": "no_match",
+          "score": 0.264,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta dos Frades Dona Sylvia Branco 2020",
+          "confidence": "no_match",
+          "score": 0.264,
+          "url": null
+        }
+      },
+      "best_retail": 34.8,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 52.5,
+        "2.0x": 70.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "lemos-nelita-2016",
+      "producer": "Quinta de Lemos",
+      "name": "Quinta de Lemos Nelita",
+      "vintage": 2016,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 33.9,
+          "name_found": "Quinta de Lemos Nélita Rosé",
+          "confidence": "high",
+          "score": 0.904,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-de-lemos-nelita-rose/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 32.95,
+          "name_found": " 2018 Quinta de Lemos Nélita rosé",
+          "confidence": "high",
+          "score": 0.91,
+          "url": "https://www.garrafeiranacional.com/vinho/2018-quinta-de-lemos-nelita-rose.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Quinta Nova Reserva Blanc De Noir 2023 75 Cl",
+          "confidence": "no_match",
+          "score": 0.295,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta de Ventozelo Branco 2018",
+          "confidence": "no_match",
+          "score": 0.293,
+          "url": null
+        }
+      },
+      "best_retail": 32.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 49.5,
+        "2.0x": 66.0
+      },
+      "status": "found"
+    }
+  ]
+}

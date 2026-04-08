@@ -1,0 +1,266 @@
+{
+  "producer": "Quinta dos Abibes",
+  "generated_at": "2026-03-01T11:20:27.312972",
+  "found_count": 6,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "abibes-espumante-arinto-baga-2023",
+      "producer": "Quinta dos Abibes",
+      "name": "Quinta dos Abibes Espumante Arinto & Baga Reserva",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Boição Reserva Arinto-Chardonnay Bruto Branco",
+          "confidence": "no_match",
+          "score": 0.436,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2015 Espumante Encontro Baga Reserva Bruto",
+          "confidence": "low",
+          "score": 0.491,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Boa Esperanca Arinto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.314,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 19.25,
+          "name_found": "Quinta dos Abibes Arinto Baga Reserva Espumante 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/26462-quinta-dos-abibes-arinto-baga-reserve-sparkling-2022.html"
+        }
+      },
+      "best_retail": 19.25,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 29.0,
+        "2.0x": 38.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "abibes-reserva-tinto-2019",
+      "producer": "Quinta dos Abibes",
+      "name": "Quinta dos Abibes Reserva Tinto",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta dos Termos Reserva Branco",
+          "confidence": "low",
+          "score": 0.545,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos Reserva branco",
+          "confidence": "low",
+          "score": 0.555,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.401,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 18.45,
+          "name_found": "Quinta dos Abibes Reserva Tinto 2018",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/26200-quinta-dos-abibes-reserve-red-2018-5600356212215.html"
+        }
+      },
+      "best_retail": 18.45,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 28.0,
+        "2.0x": 37.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "abibes-amonite-lote-campo-2019",
+      "producer": "Quinta dos Abibes",
+      "name": "Quinta dos Abibes Amonite – Lote de Campo",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta das Marias Lote Tinto",
+          "confidence": "no_match",
+          "score": 0.298,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos branco",
+          "confidence": "no_match",
+          "score": 0.244,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Quinta Nova Reserva Blanc De Noir 2023 75 Cl",
+          "confidence": "no_match",
+          "score": 0.208,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 14.94,
+          "name_found": "Abibes Amonite Tinto 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/26428-quinta-dos-abibes-amonite-red-2023.html"
+        }
+      },
+      "best_retail": 14.94,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 22.5,
+        "2.0x": 30.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "abibes-bical-2019",
+      "producer": "Quinta dos Abibes",
+      "name": "Quinta dos Abibes Bical",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Ortigão Arinto-Bical Branco",
+          "confidence": "no_match",
+          "score": 0.395,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos branco",
+          "confidence": "no_match",
+          "score": 0.373,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Monte Meão Vinha Dos Novos 2022 75 Cl",
+          "confidence": "no_match",
+          "score": 0.2,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 31.55,
+          "name_found": "Quinta dos Abibes Bical Branco 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/26463-quinta-dos-abibes-bical-white-2019.html"
+        }
+      },
+      "best_retail": 31.55,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 47.5,
+        "2.0x": 63.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "abibes-sublime-tinto-2019",
+      "producer": "Quinta dos Abibes",
+      "name": "Quinta dos Abibes Sublime Tinto",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Maria Izabel Sublime Tinto",
+          "confidence": "low",
+          "score": 0.52,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos branco",
+          "confidence": "no_match",
+          "score": 0.38,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Monte Meão Vinha Dos Novos 2022 75 Cl",
+          "confidence": "no_match",
+          "score": 0.197,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 61.05,
+          "name_found": "Quinta dos Abibes Sublime Branco 2017",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/26204-quinta-dos-abibes-sublime-white-2017.html"
+        }
+      },
+      "best_retail": 61.05,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 92.0,
+        "2.0x": 122.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "abibes-sublime-branco-2019",
+      "producer": "Quinta dos Abibes",
+      "name": "Quinta dos Abibes Sublime Branco",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Maria Izabel Sublime Tinto",
+          "confidence": "low",
+          "score": 0.52,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos branco",
+          "confidence": "no_match",
+          "score": 0.38,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Monte Meão Vinha Dos Novos 2022 75 Cl",
+          "confidence": "no_match",
+          "score": 0.197,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 61.05,
+          "name_found": "Quinta dos Abibes Sublime Branco 2017",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/26204-quinta-dos-abibes-sublime-white-2017.html"
+        }
+      },
+      "best_retail": 61.05,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 92.0,
+        "2.0x": 122.5
+      },
+      "status": "found"
+    }
+  ]
+}

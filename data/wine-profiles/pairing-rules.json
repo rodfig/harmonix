@@ -1,0 +1,344 @@
+{
+  "_meta": {
+    "description": "EXPERIMENTAL — pairing-rules.json + 2 additions: (1) high-acidity-soy-condiment rule for sushi/light-soy dishes; (2) conflict-sweetness-pickled negative bonus for off-dry/semi-sweet wines with pickled or fermented dishes. Do not use in production without assessment.",
+    "score_range": "1–10 (10 = perfect match)",
+    "operators": ">= | <= | == | != | in | not_in",
+    "wine_conditions": "Fields matching structure{} keys in wine profile schemas",
+    "food_tags": "Descriptive tags applied to each dish — match these against rule food_tags",
+    "experimental_changes": [
+      "NEW TAG: soy_condiment — shoyu as condiment/dip (sushi, yakitori); distinct from soy_based (dominant sauce)",
+      "NEW TAG: pickled — tsukemono, escabeche, pickled vegetables as significant component",
+      "NEW RULE: high-acidity-soy-condiment — rewards acidity>=8 whites for soy_condiment dishes",
+      "NEW RULE: conflict-sweetness-pickled — negative score_bonus for non-dry wines + pickled/fermented dishes"
+    ]
+  },
+
+  "food_tags_reference": {
+    "_note": "Apply these tags to each dish. A dish can have multiple tags.",
+    "protein": ["raw_fish", "cooked_fish", "shellfish", "white_meat", "red_meat", "game", "pork", "tofu", "egg"],
+    "cooking_method": ["fried", "steamed", "grilled", "braised", "raw", "smoked", "pickled"],
+    "flavor_profile": ["umami", "delicate", "rich", "fatty", "acidic", "sweet", "spicy", "bitter", "smoky", "soy_based", "soy_condiment", "miso_based", "dashi_based", "citrus", "fermented"],
+    "texture": ["light", "creamy", "crunchy", "silky", "robust"]
+  },
+
+  "rules": [
+
+    {
+      "id": "high-acidity-raw-fish",
+      "description": "Vinhos de acidez muito alta harmonizam com peixe cru",
+      "dimension": "acidity",
+      "wine_condition": { "acidity": ">= 8", "type": "white" },
+      "food_tags": ["raw_fish", "sashimi", "light_seafood"],
+      "score": 10,
+      "reason": "Acidez muito alta realça sabores delicados e limpa a gordura suave do peixe cru"
+    },
+
+    {
+      "id": "high-acidity-citrus-raw",
+      "description": "Acidez muito alta para pratos com citrinos intensos (yuzu, limão)",
+      "dimension": "acidity",
+      "wine_condition": { "acidity": ">= 8", "type": "white" },
+      "food_tags": ["citrus", "yuzu", "raw", "lemon_based", "acidic"],
+      "score": 9,
+      "reason": "Acidez muito alta espelha e aguenta a intensidade cítrica do prato — o yuzu não domina, harmoniza"
+    },
+
+    {
+      "id": "high-acidity-shellfish",
+      "description": "Acidez alta com mariscos",
+      "dimension": "acidity",
+      "wine_condition": { "acidity": ">= 7", "type": "white" },
+      "food_tags": ["shellfish", "oyster", "clam", "shrimp"],
+      "score": 9,
+      "reason": "Acidez complementa a salinidade e corta a riqueza dos mariscos"
+    },
+
+    {
+      "id": "high-acidity-soy-condiment",
+      "description": "Acidez muito alta para pratos com shoyu como condimento (sushi, proteína leve com molho de soja)",
+      "dimension": "acidity",
+      "wine_condition": { "acidity": ">= 8", "type": "white" },
+      "food_tags": ["soy_condiment"],
+      "score": 10,
+      "reason": "Acidez muito alta corta e equilibra a salinidade intensa do shoyu como condimento — espelha a frescura cítrica do arroz temperado"
+    },
+
+    {
+      "id": "light-body-delicate-dishes",
+      "description": "Corpo leve para pratos delicados",
+      "dimension": "body",
+      "wine_condition": { "body": "light", "type": "white" },
+      "food_tags": ["delicate", "steamed", "dashi_based", "light"],
+      "score": 9,
+      "reason": "Corpo leve não domina pratos de sabor sutil e textura delicada"
+    },
+
+    {
+      "id": "medium-body-fried-light",
+      "description": "Corpo médio com fritura leve",
+      "dimension": "body",
+      "wine_condition": { "acidity": ">= 6", "body": "medium", "type": "white" },
+      "food_tags": ["fried", "tofu", "light_seafood"],
+      "score": 8,
+      "reason": "Acidez média corta o óleo da fritura; corpo médio aguenta a textura mais pesada"
+    },
+
+    {
+      "id": "aromatic-white-umami",
+      "description": "Brancos aromáticos com pratos umami",
+      "dimension": "style",
+      "wine_condition": { "acidity": "<= 7", "type": "white" },
+      "food_tags": ["umami", "miso_based", "soy_based", "dashi_based"],
+      "score": 8,
+      "reason": "Aromas varietais de brancos moderadamente ácidos complementam a profundidade do umami sem conflito"
+    },
+
+    {
+      "id": "off-dry-miso-sweet",
+      "description": "Brancos com doçura residual para pratos com miso doce",
+      "dimension": "sweetness",
+      "wine_condition": { "sweetness": "off-dry" },
+      "food_tags": ["miso_based", "sweet", "umami"],
+      "score": 9,
+      "reason": "Doçura residual espelha a doçura natural do miso e equilibra o sal"
+    },
+
+    {
+      "id": "full-body-white-rich-dishes",
+      "description": "Brancos encorpados para pratos ricos",
+      "dimension": "body",
+      "wine_condition": { "body": "full", "type": "white" },
+      "food_tags": ["rich", "creamy", "fatty", "gratin"],
+      "score": 9,
+      "reason": "Corpo pleno suporta a riqueza e gordura do prato sem se perder"
+    },
+
+    {
+      "id": "sparkling-aperitif-variety",
+      "description": "Espumante para aperitivo e pratos variados",
+      "dimension": "style",
+      "wine_condition": { "type": "sparkling" },
+      "food_tags": ["light", "shellfish", "raw_fish", "variety", "fried"],
+      "score": 9,
+      "reason": "Borbulha e acidez alta do espumante limpam o palato e complementam sabores frescos e fritos leves"
+    },
+
+    {
+      "id": "low-tannin-red-light-meat",
+      "description": "Taninos baixos para carnes brancas e cogumelos",
+      "dimension": "tannin",
+      "wine_condition": { "tannins": "<= 6", "type": "red" },
+      "food_tags": ["white_meat", "mushroom", "tofu_rich", "pork_light"],
+      "score": 8,
+      "reason": "Taninos baixos não dominam proteínas delicadas; acidez media equilibra gordura moderada"
+    },
+
+    {
+      "id": "high-tannin-red-fatty-meat",
+      "description": "Taninos altos para carnes gordurosas",
+      "dimension": "tannin",
+      "wine_condition": { "tannins": ">= 8", "type": "red" },
+      "food_tags": ["red_meat", "game", "fatty", "rich"],
+      "score": 10,
+      "reason": "Proteínas e gordura amaciam taninos altos; equilíbrio mútuo entre estrutura do vinho e riqueza do prato"
+    },
+
+    {
+      "id": "high-acidity-red-fatty-fish",
+      "description": "Tinto de acidez muito alta com peixe gordo",
+      "dimension": "acidity",
+      "wine_condition": { "acidity": ">= 9", "type": "red" },
+      "food_tags": ["oily_fish", "sardine", "mackerel"],
+      "score": 8,
+      "reason": "Acidez extrema (ex: Vinhão, Baga) corta eficazmente a gordura de peixes muito gordos — harmonização regional clássica"
+    },
+
+    {
+      "id": "full-body-red-robust-stews",
+      "description": "Tintos encorpados para ensopados robustos",
+      "dimension": "body",
+      "wine_condition": { "body": "full", "type": "red" },
+      "food_tags": ["braised", "stew", "rich", "red_meat", "game"],
+      "score": 9,
+      "reason": "Estrutura plena e taninos do tinto encorpado integram-se com a complexidade de molhos de longa cozedura"
+    },
+
+    {
+      "id": "medium-red-grilled-meat",
+      "description": "Tintos de corpo médio para grelhados",
+      "dimension": "tannin",
+      "wine_condition": { "body": "medium", "tannins": "<= 7", "type": "red" },
+      "food_tags": ["grilled", "white_meat", "pork", "red_meat_light"],
+      "score": 8,
+      "reason": "O carvão do grelhado complementa taninos médios; corpo médio não desequilibra pratos de média riqueza"
+    },
+
+    {
+      "id": "fresh-structured-red-umami",
+      "description": "Tintos frescos e estruturados para pratos umami ricos, miso, grelhados e fermentados",
+      "dimension": "tannin",
+      "wine_condition": { "type": "red", "acidity": ">= 6", "tannins": "<= 6" },
+      "food_tags": ["umami", "miso_based", "gratin", "soy_based", "fermented", "mushroom", "grilled"],
+      "score": 8,
+      "reason": "Taninos contidos e acidez estruturada sustentam a profundidade do umami e sabores fermentados — a frescura do tinto integra-se sem dominar o prato"
+    },
+
+    {
+      "id": "dry-madeira-acidic-fried",
+      "description": "Madeira seco (Sercial) para pratos agridoces, fritos e marinados",
+      "dimension": "style",
+      "wine_condition": { "type": "fortified", "sweetness": "dry", "acidity": ">= 8" },
+      "food_tags": ["acidic", "fried", "sweet_sour", "marinade"],
+      "score": 8,
+      "reason": "A acidez extrema do Madeira seco corta a gordura da fritura e equilibra o agridoce — a oxidação acrescenta camadas de complexidade"
+    },
+
+    {
+      "id": "sweet-fortified-rich-desserts",
+      "description": "Fortificados doces para sobremesas ricas",
+      "dimension": "sweetness",
+      "wine_condition": { "sweetness": "sweet", "type": "fortified" },
+      "food_tags": ["sweet", "chocolate", "dessert", "nuts", "caramel"],
+      "score": 10,
+      "reason": "Regra fundamental: vinho deve ser tão doce ou mais doce que a sobremesa; complexidade oxidativa adiciona camadas"
+    },
+
+    {
+      "id": "tawny-port-nut-desserts",
+      "description": "Tawny Port para sobremesas de frutos secos",
+      "dimension": "style",
+      "wine_condition": { "id_ref": "porto-tawny-10", "type": "fortified" },
+      "food_tags": ["nuts", "caramel", "custard", "dessert"],
+      "score": 10,
+      "reason": "Notas de noz e caramelo do Tawny espelham os sabores torrados e doces das sobremesas de frutos secos"
+    },
+
+    {
+      "id": "madeira-acidic-fortified-acidic-dishes",
+      "description": "Madeira seco/off-dry para pratos agridoces e fritos",
+      "dimension": "style",
+      "wine_condition": { "type": "fortified", "region_ref": "Madeira", "sweetness": "off-dry" },
+      "food_tags": ["sweet_sour", "fried", "acidic", "marinade"],
+      "score": 9,
+      "reason": "Acidez alta característica do Madeira corta fritura e equilibra agridoce; a oxidação adiciona complexidade"
+    },
+
+    {
+      "id": "moscatel-sweet-aromatic-desserts",
+      "description": "Moscatel para sobremesas e queijos azuis",
+      "dimension": "style",
+      "wine_condition": { "id_ref": "moscatel-setubal", "sweetness": "sweet" },
+      "food_tags": ["sweet", "dessert", "blue_cheese", "honey"],
+      "score": 10,
+      "reason": "Aromas de lichia, mel e damasco do Moscatel harmonizam com sobremesas frutadas e o contraste salgado-doce do queijo azul"
+    },
+
+    {
+      "id": "conflict-high-tannin-delicate-fish",
+      "description": "CONFLITO: Taninos altos destroem peixe delicado",
+      "dimension": "tannin",
+      "wine_condition": { "tannins": ">= 7", "type": "red" },
+      "food_tags": ["raw_fish", "delicate", "sashimi", "light_seafood"],
+      "score": -10,
+      "reason": "Taninos altos reagem com proteínas do peixe criando sabor metálico e amargo — combinação clássica a evitar"
+    },
+
+    {
+      "id": "conflict-sweet-wine-savory-intense",
+      "description": "CONFLITO: Vinho doce com pratos salgados intensos",
+      "dimension": "sweetness",
+      "wine_condition": { "sweetness": "sweet" },
+      "food_tags": ["savory", "salty", "umami_intense"],
+      "score": -8,
+      "reason": "Doçura do vinho amplifica salinidade e umami do prato criando desequilíbrio"
+    },
+
+    {
+      "id": "conflict-light-body-rich-stew",
+      "description": "CONFLITO: Vinho leve com pratos muito ricos",
+      "dimension": "body",
+      "wine_condition": { "body": "light" },
+      "food_tags": ["rich", "heavy", "fatty", "braised"],
+      "score": -7,
+      "reason": "O vinho leve perde-se face à riqueza e peso do prato — o prato domina completamente"
+    },
+
+    {
+      "id": "conflict-sweetness-pickled",
+      "description": "CONFLITO: Vinho com resíduo de açúcar penalizado em pratos com pickle ou fermentados",
+      "dimension": "bonus",
+      "wine_condition": { "sweetness": "!= dry" },
+      "food_tags": ["pickled", "fermented"],
+      "score_bonus": -7,
+      "reason": "Resíduo de açúcar conflitua com a acidez láctica de pickles e fermentados — a doçura amplifica a dissonância ácido-doce"
+    },
+
+    {
+      "id": "very-long-finish-complex",
+      "description": "Persistência muito longa para pratos de grande complexidade e múltiplas camadas",
+      "dimension": "finish",
+      "wine_condition": { "finish": "very long" },
+      "food_tags": ["layered", "complex", "aged", "cured", "lingering"],
+      "score": 8,
+      "reason": "Persistência excepcional acompanha a complexidade do prato — os sabores evoluem juntos e sustentam-se até ao fim"
+    },
+
+    {
+      "id": "long-finish-lingering",
+      "description": "Persistência longa para pratos com sabores que perduram",
+      "dimension": "finish",
+      "wine_condition": { "finish": "long" },
+      "food_tags": ["layered", "lingering"],
+      "score": 5,
+      "reason": "O finish longo acompanha e prolonga os sabores do prato — a harmonização continua depois do último garfo"
+    },
+
+    {
+      "id": "bonus-regional-affinity",
+      "description": "BÓNUS: Afinidade regional — vinho e prato da mesma tradição culinária",
+      "dimension": "bonus",
+      "wine_condition": {},
+      "food_tags": ["portuguese_dish", "cataplana", "bacalhau", "portuguese_seafood"],
+      "score_bonus": 2,
+      "reason": "Vinhos e pratos que evoluíram juntos na mesma região têm harmonização natural — a tradição é o melhor guia"
+    },
+
+    {
+      "id": "bonus-citrus-citrus-mirror",
+      "description": "BÓNUS: Espelhamento de citrinos — vinho cítrico com prato cítrico",
+      "dimension": "bonus",
+      "wine_condition": { "acidity": ">= 7", "type": "white" },
+      "food_tags": ["citrus", "yuzu", "lemon_based"],
+      "score_bonus": 2,
+      "reason": "Notas cítricas do vinho espelham elementos cítricos do prato — harmonia por semelhança"
+    },
+
+    {
+      "id": "bonus-floral-delicate-steam",
+      "description": "BÓNUS: Brancos florais com pratos de vapor delicados",
+      "dimension": "bonus",
+      "wine_condition": { "acidity": ">= 6", "body": "light", "type": "white" },
+      "food_tags": ["steamed", "delicate", "egg", "custard"],
+      "score_bonus": 2,
+      "reason": "Aromas florais e leveza do vinho complementam a delicadeza e textura sedosa dos pratos a vapor"
+    }
+
+  ],
+
+  "pairing_principles": {
+    "_note": "Princípios gerais para guiar o motor de harmonização",
+
+    "FUNDAMENTAL": "A harmonização não é determinada apenas pelo ingrediente principal. O método de confeção e os complementos do prato (molhos, temperos, caldos, guarnições) têm peso IGUAL ou SUPERIOR ao ingrediente base na decisão de harmonização. Exemplo: salmão cru (sashimi) → branco de acidez alta; salmão com glaze de teriyaki → branco mais encorpado ou rosé; salmão em caldo de miso → branco aromático off-dry. O mesmo ingrediente, três harmonizações completamente diferentes.",
+
+    "by_cooking_method": "O método de confeção altera radicalmente o perfil do prato: fritura adiciona gordura e crocância (exige acidez corta-gordura); vapor preserva delicadeza (exige vinho leve e não invasivo); grelha adiciona amargor e fumo (complementa taninos médios); estufado concentra sabores e gordura (exige vinho encorpado com estrutura); cru preserva textura e frescura (exige acidez muito alta e corpo leve); pickle/fermentação adiciona acidez láctica (conflitua com resíduo de açúcar no vinho)",
+
+    "by_complements": "Molhos, caldos e temperos dominam frequentemente a harmonização: miso (umami doce-salgado) → brancos aromáticos ou ligeiramente adocicados; soja como condimento (shoyu em sushi) → acidez muito alta para contrabalançar; soja como base dominante → brancos aromáticos de acidez moderada; dashi (umami delicado) → vinhos leves e minerais; yuzu/cítrico → espelhar com vinho cítrico de alta acidez; gordura (manteiga, creme, queijo) → acidez ou corpo para cortar; picante → evitar taninos altos e álcool elevado; pickle/fermentado → brancos secos de acidez alta; resíduo açucarado conflitua com fermentados",
+
+    "by_weight": "O corpo do vinho deve equilibrar o peso TOTAL do prato (ingrediente + método + molho): pratos leves = vinho leve, pratos ricos = vinho encorpado",
+    "by_acidity": "Acidez alta no vinho corta gordura; acidez baixa funciona melhor com pratos neutros ou cremosos",
+    "by_tannins": "Taninos precisam de proteína e gordura; nunca com peixe cru ou pratos delicados",
+    "by_sweetness": "O vinho nunca deve ser menos doce que o prato; doçura residual complementa sal e umami suave; mas resíduo conflitua com pickles e fermentados",
+    "by_mirror": "Harmonização por semelhança: vinho com notas de limão + prato com yuzu; vinho mineral + prato de mar",
+    "by_contrast": "Harmonização por contraste: acidez alta + fritura gordurosa; doce + salgado (queijo azul + Porto)"
+  }
+}

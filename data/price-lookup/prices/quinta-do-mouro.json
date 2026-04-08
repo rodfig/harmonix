@@ -1,0 +1,137 @@
+{
+  "producer": "Quinta do Mouro",
+  "generated_at": "2026-03-01T11:20:27.300912",
+  "found_count": 3,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "vinha-do-mouro-reserva-2020",
+      "producer": "Quinta do Mouro",
+      "name": "Vinha do Mouro Reserva",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Vinha do Mouro Tinto",
+          "confidence": "low",
+          "score": 0.917,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2019 Quinta do Mouro tinto (rótulo dourado)",
+          "confidence": "low",
+          "score": 0.474,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Vinha Do Souto 2019 75 Cl",
+          "confidence": "low",
+          "score": 0.491,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 13.55,
+          "name_found": "Vinha do Mouro Reserva Tinto 2020",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/alentejo/3709-vinha-do-mouro-red-2015-5606005020057.html"
+        }
+      },
+      "best_retail": 13.55,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 20.5,
+        "2.0x": 27.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "zagalos-reserva-tinto-2019",
+      "producer": "Quinta do Mouro",
+      "name": "Zagalos Reserva Tinto",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Arribas do Douro Reserva Branco",
+          "confidence": "no_match",
+          "score": 0.369,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2019 Casa dos Zagalos Reserva tinto",
+          "confidence": "low",
+          "score": 0.718,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.446,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 23.45,
+          "name_found": "Casa dos Zagalos Reserva Branco 2018",
+          "confidence": "high",
+          "score": 0.727,
+          "url": "https://www.portugalvineyards.com/pt/alentejo/9301-casa-dos-zagalos-reserve-white-2016-5606005016012.html"
+        }
+      },
+      "best_retail": 23.45,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 35.5,
+        "2.0x": 47.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "quinta-do-mouro-tinto",
+      "producer": "Quinta do Mouro",
+      "name": "Quinta do Mouro Tinto",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 39.99,
+          "name_found": "Quinta do Mouro Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-do-mouro-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2019 Quinta do Mouro tinto (rótulo dourado)",
+          "confidence": "low",
+          "score": 0.663,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Quinta Do Rol Sauvignon Blanc 75 Cl",
+          "confidence": "no_match",
+          "score": 0.375,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 49.65,
+          "name_found": "Quinta do Mouro Tinto 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/alentejo/3706-quinta-do-mouro-red-2013-5606005119027.html"
+        }
+      },
+      "best_retail": 39.99,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 60.0,
+        "2.0x": 80.0
+      },
+      "status": "found"
+    }
+  ]
+}

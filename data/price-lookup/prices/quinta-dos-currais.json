@@ -1,0 +1,244 @@
+{
+  "producer": "Quinta dos Currais",
+  "generated_at": "2026-03-01T11:20:27.318699",
+  "found_count": 5,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "currais-siria-2022",
+      "producer": "Quinta dos Currais",
+      "name": "Quinta dos Currais Síria Branco",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta da Biaia 750 Síria Branco",
+          "confidence": "low",
+          "score": 0.479,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Quinta do Piloto Collection Síria branco",
+          "confidence": "no_match",
+          "score": 0.392,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Carvalhais 75 Cl",
+          "confidence": "no_match",
+          "score": 0.186,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta do Piloto Collection Síria Branco 2022",
+          "confidence": "no_match",
+          "score": 0.394,
+          "url": null
+        },
+        "Auchan": {
+          "retail_price": 5.49,
+          "name_found": "vinho branco quinta dos currais siria",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.auchan.pt/pt/bebidas-e-garrafeira/garrafeira/vinhos-brancos/vinho-branco-quinta-dos-currais-siria-0.75l/647075.html?srsltid=AfmBOorPPwTmVGbmdADaTLrjH4qYq1goyZDYCFKmTT2f3PIz-HiZnawa"
+        }
+      },
+      "best_retail": 5.49,
+      "best_source": "Auchan",
+      "restaurant_estimates": {
+        "1.5x": 8.5,
+        "2.0x": 11.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "currais-reserva-branco-2023",
+      "producer": "Quinta dos Currais",
+      "name": "Quinta dos Currais Reserva Branco",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta dos Termos Reserva Branco",
+          "confidence": "low",
+          "score": 0.545,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos Reserva branco",
+          "confidence": "low",
+          "score": 0.555,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.401,
+          "url": null
+        },
+        "GrandesEscolhas": {
+          "retail_price": 9.49,
+          "name_found": "Quinta dos Currais 2019",
+          "confidence": "hight",
+          "score": 0.9,
+          "url": "https://grandesescolhas.com/pesquisa-de-vinhos/quinta-dos-currais-2/"
+        }
+      },
+      "best_retail": 9.49,
+      "best_source": "GrandesEscolhas",
+      "restaurant_estimates": {
+        "1.5x": 14.5,
+        "2.0x": 19.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "currais-colheita-seleccionada-tinto-2021",
+      "producer": "Quinta dos Currais",
+      "name": "Quinta dos Currais Colheita Seleccionada Tinto",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta dos Termos Colheita Tinto",
+          "confidence": "low",
+          "score": 0.455,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos branco",
+          "confidence": "no_match",
+          "score": 0.322,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Carvalhais 75 Cl",
+          "confidence": "no_match",
+          "score": 0.156,
+          "url": null
+        },
+        "ProdutosDoFundao": {
+          "retail_price": 5.0,
+          "name_found": "Quinta dos Currais Colheita Selecionada Tinto DOC 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.produtosdofundao.pt/produto/quinta-dos-currais-tinto-doc/"
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta dos Carvalhais Colheita Branco 2023",
+          "confidence": "no_match",
+          "score": 0.443,
+          "url": null
+        }
+      },
+      "best_retail": 5.0,
+      "best_source": "ProdutosDoFundao",
+      "restaurant_estimates": {
+        "1.5x": 7.5,
+        "2.0x": 10.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "currais-reserva-tinto-2020",
+      "producer": "Quinta dos Currais",
+      "name": "Quinta dos Currais Reserva Tinto",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta dos Termos Reserva Branco",
+          "confidence": "low",
+          "score": 0.545,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos Reserva branco",
+          "confidence": "low",
+          "score": 0.555,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.401,
+          "url": null
+        },
+        "Auchan": {
+          "retail_price": 9.99,
+          "name_found": "vinho tinto quinta dos currais reserva",
+          "confidence": "high",
+          "score": 1.0,
+          "url": null
+        }
+      },
+      "best_retail": 9.99,
+      "best_source": "Auchan",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "currais-talabara-2019",
+      "producer": "Quinta dos Currais",
+      "name": "Talabara Premium Edition",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Tua Edition branco",
+          "confidence": "low",
+          "score": 0.459,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta da Deserta Premium Tinto 2015",
+          "confidence": "no_match",
+          "score": 0.437,
+          "url": null
+        },
+        "ProdutosDoFundao": {
+          "retail_price": 35,
+          "name_found": "Quinta dos Currais Talabara Premium Edition 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.produtosdofundao.pt/produto/quinta-dos-currais-talabara-tinto-2019/"
+        }
+      },
+      "best_retail": 35,
+      "best_source": "ProdutosDoFundao",
+      "restaurant_estimates": {
+        "1.5x": 52.5,
+        "2.0x": 70.0
+      },
+      "status": "found"
+    }
+  ]
+}

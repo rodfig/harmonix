@@ -1,0 +1,128 @@
+{
+  "producer": "Tapada do Chaves",
+  "generated_at": "2026-03-01T11:20:27.275955",
+  "found_count": 3,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "tapada-chaves-portalegre-branco-2022",
+      "producer": "Tapada do Chaves",
+      "name": "Portalegre Branco",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "Granvine": {
+          "retail_price": 25.59,
+          "name_found": "Tapada do Chaves Branco 2022",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://granvine.com/pt/tapada-do-chaves-branco-2022"
+        }
+      },
+      "best_retail": 25.59,
+      "best_source": "Granvine",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "tapada-chaves-vinhas-velhas-branco-2022",
+      "producer": "Tapada do Chaves",
+      "name": "Portalegre Branco Vinhas Velhas",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Tapada do Chaves Vinhas Velhas Tinto",
+          "confidence": "low",
+          "score": 0.674,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2017 Tapada do Chaves Vinhas Velhas tinto",
+          "confidence": "low",
+          "score": 0.686,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "Granvine": {
+          "retail_price": 55.99,
+          "name_found": "Tapada do Chaves Vinhas Velhas Branco 2022",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://granvine.com/pt/tapada-do-chaves-vinhas-velhas-branco-2022"
+        }
+      },
+      "best_retail": 55.99,
+      "best_source": "Granvine",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "tapada-chaves-reserva-tinto-2018",
+      "producer": "Tapada do Chaves",
+      "name": "Portalegre Reserva Tinto",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Tapada do Chaves Reserva Tinto",
+          "confidence": "no_match",
+          "score": 0.369,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2017 Tapada do Chaves Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.381,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Tapada Chaves Reserva 2017 75 Cl",
+          "confidence": "no_match",
+          "score": 0.446,
+          "url": null
+        },
+        "Granvine": {
+          "retail_price": 27.89,
+          "name_found": "Tapada do Chaves Reserva Tinto 2018",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://granvine.com/pt/tapada-do-chaves-reserva-tinto-2018"
+        }
+      },
+      "best_retail": 27.89,
+      "best_source": "Granvine",
+      "restaurant_estimates": null,
+      "status": "found"
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "producer": "Quinta de Soalheiro",
+  "generated_at": "2026-03-01T11:20:27.376365",
+  "found_count": 7,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "soalheiro-classico-2020",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro Alvarinho Clássico",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 10.85,
+          "name_found": "Soalheiro Alvarinho Branco",
+          "confidence": "high",
+          "score": 0.752,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/soalheiro-alvarinho-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 11.95,
+          "name_found": " 2024 Soalheiro Alvarinho branco",
+          "confidence": "high",
+          "score": 0.725,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-soalheiro-alvarinho-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Soalheiro Bruto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.392,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 13.55,
+          "name_found": "Soalheiro Alvarinho Branco 2024",
+          "confidence": "high",
+          "score": 0.76,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/524-soalheiro-alvarinho-white-2018-5602640000645.html"
+        }
+      },
+      "best_retail": 10.85,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 16.5,
+        "2.0x": 22.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "soalheiro-granit-2021",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro Granit Alvarinho",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 12.7,
+          "name_found": "Soalheiro Granit Branco",
+          "confidence": "high",
+          "score": 0.849,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/soalheiro-granit-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 13.95,
+          "name_found": " 2024 Soalheiro Granit Alvarinho branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-soalheiro-granit-alvarinho-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Soalheiro Bruto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.385,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 15.45,
+          "name_found": "Soalheiro Granit Branco 2024",
+          "confidence": "high",
+          "score": 0.874,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/7360-soalheiro-granit-white-2018-5602640000522.html"
+        }
+      },
+      "best_retail": 12.7,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 19.5,
+        "2.0x": 25.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "soalheiro-primeiras-vinhas-2022",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro Primeiras Vinhas Alvarinho",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 16.96,
+          "name_found": "Soalheiro Primeiras Vinhas Branco",
+          "confidence": "high",
+          "score": 0.881,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/soalheiro-primeiras-vinhas-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 17.95,
+          "name_found": " 2024 Soalheiro Primeiras Vinhas Alvarinho branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-soalheiro-primeiras-vinhas-alvarinho-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Soalheiro Bruto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.339,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 19.95,
+          "name_found": "Soalheiro Primeiras Vinhas Alvarinho Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/3124-soalheiro-primeiras-vinhas-alvarinho-white-2018-5602640000447.html"
+        }
+      },
+      "best_retail": 16.96,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 25.5,
+        "2.0x": 34.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "soalheiro-espumante-bruto-alvarinho",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro Espumante Bruto Alvarinho",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Soalheiro Alvarinho Branco",
+          "confidence": "low",
+          "score": 0.735,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 15.95,
+          "name_found": " 2014 Espumante Soalheiro Alvarinho Bruto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2014-espumante-soalheiro-alvarinho.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 15.49,
+          "name_found": "Espumante Soalheiro Bruto 75 Cl",
+          "confidence": "high",
+          "score": 0.829,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/espumante-soalheiro-bruto-75-cl/item_62166.html?id=215&cat=254&pc=3"
+        },
+        "PortugalVineyards": {
+          "retail_price": 18.75,
+          "name_found": "Soalheiro Bruto Espumante",
+          "confidence": "high",
+          "score": 0.867,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/525-soalheiro-brut-sparkling-2018-5602640000072.html"
+        }
+      },
+      "best_retail": 15.49,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 23.5,
+        "2.0x": 31.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "soalheiro-9pct-2024",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro 9% Alvarinho",
+      "vintage": 2024,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 10.85,
+          "name_found": "Soalheiro Alvarinho Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/soalheiro-alvarinho-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 11.95,
+          "name_found": " 2024 Soalheiro Alvarinho branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-soalheiro-alvarinho-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Soalheiro Bruto 75 Cl",
+          "confidence": "low",
+          "score": 0.488,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 13.55,
+          "name_found": "Soalheiro Alvarinho Branco 2024",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/524-soalheiro-alvarinho-white-2018-5602640000645.html"
+        }
+      },
+      "best_retail": 10.85,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 16.5,
+        "2.0x": 22.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "soalheiro-reserva-2023",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro Reserva Alvarinho",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Soalheiro Alvarinho Branco",
+          "confidence": "low",
+          "score": 0.898,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 28.95,
+          "name_found": " 2023 Soalheiro Alvarinho Reserva branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2023-soalheiro-alvarinho-reserva-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Soalheiro Bruto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.441,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Soalheiro Alvarinho Branco 2024",
+          "confidence": "low",
+          "score": 0.898,
+          "url": null
+        }
+      },
+      "best_retail": 28.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 43.5,
+        "2.0x": 58.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "soalheiro-aghora-loureiro-2022",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro Ag.hora Loureiro",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Soalheiro Germinar Loureiro Vinhas Velhas Branco",
+          "confidence": "no_match",
+          "score": 0.416,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Soalheiro Allo Alvarinho & Loureiro branco",
+          "confidence": "no_match",
+          "score": 0.441,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Soalheiro Bruto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.308,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 26.35,
+          "name_found": "Soalheiro Ag. Hora Loureiro Branco 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/27764-soalheiro-ag-hora-loureiro-white-2022.html"
+        }
+      },
+      "best_retail": 26.35,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 40.0,
+        "2.0x": 53.0
+      },
+      "status": "found"
+    }
+  ]
+}

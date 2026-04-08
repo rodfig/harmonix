@@ -1,0 +1,266 @@
+{
+  "producer": "Casal de Santa Maria",
+  "generated_at": "2026-03-01T11:20:27.345004",
+  "found_count": 6,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "csm-reserva-branco-2022",
+      "producer": "Casal de Santa Maria",
+      "name": "Casal de Santa Maria Reserva Branco",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casal Santa Maria Bruma Tinto",
+          "confidence": "low",
+          "score": 0.722,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2012 Quinta de Santa Eufémia Grande Reserva tinto",
+          "confidence": "low",
+          "score": 0.499,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa Santar Reserva 2020 75 Cl",
+          "confidence": "no_match",
+          "score": 0.212,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 15.95,
+          "name_found": "Casal Santa Maria Reserva Branco 2022",
+          "confidence": "high",
+          "score": 0.93,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/25555-casal-santa-maria-reserve-white-2022-5600287102197.html"
+        }
+      },
+      "best_retail": 15.95,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 24.0,
+        "2.0x": 32.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "csm-reserva-tinto-2019",
+      "producer": "Casal de Santa Maria",
+      "name": "Casal de Santa Maria Reserva Tinto",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casal Santa Maria Bruma Tinto",
+          "confidence": "low",
+          "score": 0.722,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2012 Quinta de Santa Eufémia Grande Reserva tinto",
+          "confidence": "low",
+          "score": 0.499,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa Santar Reserva 2020 75 Cl",
+          "confidence": "no_match",
+          "score": 0.212,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 15.95,
+          "name_found": "Casal Santa Maria Reserva Branco 2022",
+          "confidence": "high",
+          "score": 0.93,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/25555-casal-santa-maria-reserve-white-2022-5600287102197.html"
+        }
+      },
+      "best_retail": 15.95,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 24.0,
+        "2.0x": 32.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "csm-ramisco-2014",
+      "producer": "Casal de Santa Maria",
+      "name": "Casal de Santa Maria Ramisco",
+      "vintage": 2014,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 34.52,
+          "name_found": "Casal de Santa Maria Colares Ramisco Tinto",
+          "confidence": "high",
+          "score": 0.889,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/casal-de-santa-maria-colares-ramisco-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2012 Quinta de Santa Eufémia Grande Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.366,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa De Santar 75 Cl",
+          "confidence": "no_match",
+          "score": 0.183,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 54.75,
+          "name_found": "Casal Santa Maria Ramisco de Colares Tinto 2014",
+          "confidence": "high",
+          "score": 0.886,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/25545-casal-santa-maria-ramisco-de-colares-red-2014-5600287207069.html"
+        }
+      },
+      "best_retail": 34.52,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 52.0,
+        "2.0x": 69.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "csm-malvasia-2022",
+      "producer": "Casal de Santa Maria",
+      "name": "Casal de Santa Maria Malvasia",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casal Santa Maria Bruma Tinto",
+          "confidence": "low",
+          "score": 0.668,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2012 Quinta de Santa Eufémia Grande Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.371,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa De Santar 75 Cl",
+          "confidence": "no_match",
+          "score": 0.183,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 47.15,
+          "name_found": "Casal Santa Maria Malvasia de Colares Branco 2013",
+          "confidence": "high",
+          "score": 0.882,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/25550-casal-santa-maria-malvasia-de-colares-white-2013.html"
+        }
+      },
+      "best_retail": 47.15,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 71.0,
+        "2.0x": 94.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "csm-colheita-tardia-2019",
+      "producer": "Casal de Santa Maria",
+      "name": "Casal de Santa Maria Colheita Tardia",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casal Santa Maria Bruma Tinto",
+          "confidence": "low",
+          "score": 0.631,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2012 Quinta de Santa Eufémia Grande Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.327,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa De Santar 75 Cl",
+          "confidence": "no_match",
+          "score": 0.159,
+          "url": null
+        },
+        "producer_direct": {
+          "retail_price": 36.5,
+          "name_found": "Casal de Santa Maria Colheita Tardia",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://casalstamaria.pt/pt-pt/shop/colheita-tardia/"
+        }
+      },
+      "best_retail": 36.5,
+      "best_source": "producer_direct",
+      "restaurant_estimates": {
+        "1.5x": 55.0,
+        "2.0x": 73.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "csm-3000-rosas-rose-2021",
+      "producer": "Casal de Santa Maria",
+      "name": "Casal de Santa Maria 3000 Rosas Rosé",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 19.83,
+          "name_found": "Casal Santa Maria Mar de Rosas Rosé",
+          "confidence": "high",
+          "score": 0.889,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/casal-santa-maria-mar-de-rosas-rose/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2012 Quinta de Santa Eufémia Grande Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.34,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa De Santar 75 Cl",
+          "confidence": "no_match",
+          "score": 0.169,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 13.45,
+          "name_found": "Casal Santa Maria 3000 Rosas Rosé",
+          "confidence": "high",
+          "score": 0.953,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/25548-casal-santa-maria-3000-rosas-rose-5600287408206.html"
+        }
+      },
+      "best_retail": 13.45,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 20.5,
+        "2.0x": 27.0
+      },
+      "status": "found"
+    }
+  ]
+}

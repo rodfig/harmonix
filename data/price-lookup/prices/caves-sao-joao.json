@@ -1,0 +1,395 @@
+{
+  "producer": "Caves São João",
+  "generated_at": "2026-03-01T11:20:27.309487",
+  "found_count": 9,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "csj-qdpl-branco-reserva-2016",
+      "producer": "Caves São João",
+      "name": "Quinta do Poço do Lobo Branco Reserva",
+      "vintage": 2016,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 16.94,
+          "name_found": "Quinta do Poço do Lobo Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-do-poco-do-lobo-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 19.95,
+          "name_found": " 2019 Quinta do Poço do Lobo Reserva tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2019-quinta-do-poco-do-lobo-reserva-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Pitch Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.174,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 25.15,
+          "name_found": "Quinta do Poço do Lobo Reserva Branco 2018",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/22444-quinta-do-poco-do-lobo-reserve-white-2018-5601831207245.html"
+        }
+      },
+      "best_retail": 16.94,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 25.5,
+        "2.0x": 34.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "csj-qdpl-rose-2017",
+      "producer": "Caves São João",
+      "name": "Quinta do Poço do Lobo Rosé",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 16.94,
+          "name_found": "Quinta do Poço do Lobo Reserva Rosé",
+          "confidence": "high",
+          "score": 0.947,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-do-poco-do-lobo-reserva-rose/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 19.95,
+          "name_found": " 2023 Quinta do Poço do Lobo Reserva rosé",
+          "confidence": "high",
+          "score": 0.946,
+          "url": "https://www.garrafeiranacional.com/vinho/2023-quinta-do-poco-do-lobo-reserva-rose.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Rose Quinta Vista 75 Cl",
+          "confidence": "no_match",
+          "score": 0.326,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 25.15,
+          "name_found": "Quinta do Poço do Lobo Reserva Rosé 2023",
+          "confidence": "high",
+          "score": 0.949,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/22460-quinta-do-poco-do-lobo-reserve-rose-2022-5601831208082.html"
+        }
+      },
+      "best_retail": 16.94,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 25.5,
+        "2.0x": 34.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "csj-luiz-costa-espumante-2015",
+      "producer": "Caves São João",
+      "name": "Luiz Costa Espumante Bruto Natural",
+      "vintage": 2015,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 19.79,
+          "name_found": "Luiz Costa Bruto Branco",
+          "confidence": "high",
+          "score": 0.874,
+          "url": "https://www.cavelusa.pt/loja/espumante-e-champagne/espumantes/luiz-costa-bruto-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Espumante Quinta do Poço do Lobo Arinto & Chardonnay Bruto Natural",
+          "confidence": "no_match",
+          "score": 0.371,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Belissimo Bruto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.366,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Caves São João Luiz Costa Pinot Chardonnay Espumante 2018",
+          "confidence": "low",
+          "score": 0.593,
+          "url": null
+        }
+      },
+      "best_retail": 19.79,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 30.0,
+        "2.0x": 40.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "csj-qdpl-espumante-arinto-chardonnay-2015",
+      "producer": "Caves São João",
+      "name": "Espumante Quinta do Poço do Lobo Arinto & Chardonnay",
+      "vintage": 2015,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 10.39,
+          "name_found": "Quinta do Poço do Lobo Bruto Branco",
+          "confidence": "high",
+          "score": 0.747,
+          "url": "https://www.cavelusa.pt/loja/espumante-e-champagne/espumantes/quinta-do-poco-do-lobo-bruto-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 12.95,
+          "name_found": " 2023 Espumante Quinta do Poço do Lobo Arinto & Chardonnay Bruto Natural",
+          "confidence": "high",
+          "score": 0.877,
+          "url": "https://www.garrafeiranacional.com/vinho/2023-espumante-quinta-do-poco-do-lobo-arinto-chardonnay-bruto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Casa Santos Lima Arinto Chardonnay 75 Cl",
+          "confidence": "no_match",
+          "score": 0.447,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 15.85,
+          "name_found": "Quinta do Poço do Lobo Arinto Chardonnay Espumante 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/22439-quinta-do-poco-do-lobo-arinto-chardonnay-sparkling-2020-5601831207870.html"
+        }
+      },
+      "best_retail": 10.39,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 16.0,
+        "2.0x": 21.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "csj-qdpl-espumante-baga-2016",
+      "producer": "Caves São João",
+      "name": "Espumante Quinta do Poço do Lobo Baga",
+      "vintage": 2016,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 14.49,
+          "name_found": "Quinta do Poço do Lobo Baga Rosé",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/espumante-e-champagne/espumantes/quinta-do-poco-do-lobo-baga-rose/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 16.95,
+          "name_found": " 2021 Espumante Quinta do Poço do Lobo Bruto rosé",
+          "confidence": "high",
+          "score": 0.82,
+          "url": "https://www.garrafeiranacional.com/vinho/2021-espumante-quinta-do-poco-do-lobo-bruto-rose.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Belissimo Rose 75 Cl",
+          "confidence": "no_match",
+          "score": 0.176,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 15.85,
+          "name_found": "Quinta do Poço do Lobo Baga Espumante 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/22440-quinta-do-poco-do-lobo-baga-sparkling-2021-5601831207894.html"
+        }
+      },
+      "best_retail": 14.49,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 22.0,
+        "2.0x": 29.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "csj-qdpl-espumante-tinto-2014",
+      "producer": "Caves São João",
+      "name": "Espumante Quinta do Poço do Lobo Tinto Bruto",
+      "vintage": 2014,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 10.39,
+          "name_found": "Quinta do Poço do Lobo Bruto Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/espumante-e-champagne/espumantes/quinta-do-poco-do-lobo-bruto-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 16.95,
+          "name_found": " 2021 Espumante Quinta do Poço do Lobo Bruto rosé",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2021-espumante-quinta-do-poco-do-lobo-bruto-rose.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Belissimo Bruto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.366,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 15.85,
+          "name_found": "Quinta do Poço do Lobo Baga Espumante 2022",
+          "confidence": "high",
+          "score": 0.837,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/22440-quinta-do-poco-do-lobo-baga-sparkling-2021-5601831207894.html"
+        }
+      },
+      "best_retail": 10.39,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 16.0,
+        "2.0x": 21.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "csj-frei-joao-reserva-tinto-2014",
+      "producer": "Caves São João",
+      "name": "Frei João Reserva Tinto",
+      "vintage": 2014,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Frei João Colheita Tinto",
+          "confidence": "low",
+          "score": 0.805,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 39.95,
+          "name_found": " 1983 Frei João Reserva tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/1983-frei-jo-o-reserva-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Pitch Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.228,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 34.75,
+          "name_found": "Frei João Reserva Tinto 1991",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/19677-frei-joao-reserve-red-1991-5601831012122.html"
+        }
+      },
+      "best_retail": 34.75,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 52.5,
+        "2.0x": 69.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "csj-frei-joao-branco-reserva-2016",
+      "producer": "Caves São João",
+      "name": "Frei João Branco Reserva Clássico",
+      "vintage": 2016,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Frei João Clássico Tinto",
+          "confidence": "low",
+          "score": 0.94,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2020 Frei João Clássico branco",
+          "confidence": "low",
+          "score": 0.944,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Pitch Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.181,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 28.25,
+          "name_found": "Frei João Clássico Branco 2016",
+          "confidence": "high",
+          "score": 0.94,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/22445-frei-joao-classico-white-2016-5601831206385.html"
+        }
+      },
+      "best_retail": 28.25,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 42.5,
+        "2.0x": 56.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "csj-frei-joao-colheita-tardia-2016",
+      "producer": "Caves São João",
+      "name": "Frei João Colheita Tardia",
+      "vintage": 2016,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 4.79,
+          "name_found": "Frei João Colheita Tinto",
+          "confidence": "high",
+          "score": 0.844,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/frei-joao-colheita-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2020 Frei João tinto",
+          "confidence": "low",
+          "score": 0.648,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 7.75,
+          "name_found": "Frei João Branco 2022",
+          "confidence": "high",
+          "score": 0.726,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/22434-frei-joao-white-2020-5601831207603.html"
+        }
+      },
+      "best_retail": 4.79,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 7.5,
+        "2.0x": 10.0
+      },
+      "status": "found"
+    }
+  ]
+}

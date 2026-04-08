@@ -1,0 +1,389 @@
+{
+  "producer": "Pico Wines – Cooperativa Vitivinícola da Ilha do Pico",
+  "generated_at": "2026-03-01T11:20:27.304494",
+  "found_count": 9,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "pico-arinto-garrafeira-2020",
+      "producer": "Pico Wines – Cooperativa Vitivinícola da Ilha do Pico",
+      "name": "Arinto dos Açores – Garrafeira",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Insula Arinto dos Açores Branco",
+          "confidence": "low",
+          "score": 0.864,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 34.95,
+          "name_found": " 2022 Picowines Arinto dos Açores branco",
+          "confidence": "high",
+          "score": 0.721,
+          "url": "https://www.garrafeiranacional.com/vinho/2022-picowines-arinto-dos-acores-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Arinto Dos Açores 2024 75 Cl",
+          "confidence": "low",
+          "score": 0.805,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Insula Arinto dos Açores Branco 2020",
+          "confidence": "low",
+          "score": 0.851,
+          "url": null
+        }
+      },
+      "best_retail": 34.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 52.5,
+        "2.0x": 70.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "pico-verdelho-2021",
+      "producer": "Pico Wines – Cooperativa Vitivinícola da Ilha do Pico",
+      "name": "Verdelho",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 11.93,
+          "name_found": "Bacalhoa Verdelho Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/bacalhoa-verdelho-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Picowines Verdelho branco",
+          "confidence": "low",
+          "score": 0.629,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 10.95,
+          "name_found": "Vinho Branco Tiago Cabaço Verdelho 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-tiago-cabaco-verdelho-75-cl/item_12127.html?id=203&cat=254&pc=22"
+        },
+        "PortugalVineyards": {
+          "retail_price": 11.75,
+          "name_found": "Tiago Cabaço Verdelho Branco 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/alentejo/18124-tiago-cabaco-verdelho-white-2019-5600360393085.html"
+        }
+      },
+      "best_retail": 10.95,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 16.5,
+        "2.0x": 22.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "pico-terrantez-2023",
+      "producer": "Pico Wines – Cooperativa Vitivinícola da Ilha do Pico",
+      "name": "Terrantez do Pico",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Maçanita Terrantez do Pico Branco",
+          "confidence": "low",
+          "score": 0.867,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 47.66,
+          "name_found": "Vinho Branco Terrantez Do Pico 2024 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-terrantez-do-pico-2024-75-cl/item_56659.html?id=203&cat=254&pc=4"
+        },
+        "PortugalVineyards": {
+          "retail_price": 51.35,
+          "name_found": "Eruptio Terrantez do Pico Branco 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/acores/17758-eruptio-terrantez-do-pico-white-2020-5600781951819.html"
+        }
+      },
+      "best_retail": 47.66,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 71.5,
+        "2.0x": 95.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "pico-rola-pipa-2023",
+      "producer": "Pico Wines – Cooperativa Vitivinícola da Ilha do Pico",
+      "name": "Rola Pipa",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Rola-Pipa do Pico Branco",
+          "confidence": "low",
+          "score": 0.736,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "ProducerPrice": {
+          "retail_price": 25.90,
+          "name_found": "Rola Pipa Açores Branco 2023",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.picowines.com/vinho/brancos/rola-pipa/"
+        }
+      },
+      "best_retail": 25.90,
+      "best_source": "ProducerPrice",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "pico-gruta-das-torres-2020",
+      "producer": "Pico Wines – Cooperativa Vitivinícola da Ilha do Pico",
+      "name": "Gruta das Torres",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta das Carvalhas Branco",
+          "confidence": "no_match",
+          "score": 0.235,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. das Carvalhas 2023 75 Cl",
+          "confidence": "no_match",
+          "score": 0.293,
+          "url": null
+        },
+        "ProducerPrice": {
+          "retail_price": 59.90,
+          "name_found": "2020 Vinho Branco Gruta das Torres",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.picowines.com/vinho/brancos/gruta-das-torres/"
+        }
+      },
+      "best_retail": 59.90,
+      "best_source": "ProducerPrice",
+      "restaurant_estimates": null,
+      "status": "not_found"
+    },
+    {
+      "wine_id": "pico-frei-gigante-2023",
+      "producer": "Pico Wines – Cooperativa Vitivinícola da Ilha do Pico",
+      "name": "Frei Gigante",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 16.78,
+          "name_found": "Frei Gigante Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/frei-gigante-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 28.45,
+          "name_found": "Frei Gigante Branco 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/acores/13207-frei-gigante-white-2018-5609296000104.html"
+        }
+      },
+      "best_retail": 16.78,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 25.5,
+        "2.0x": 34.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "pico-terras-de-lava-syrah-2021",
+      "producer": "Pico Wines – Cooperativa Vitivinícola da Ilha do Pico",
+      "name": "Terras de Lava",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 9.99,
+          "name_found": "Terras de Lava Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/terras-de-lava-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2017 Espumante Picowines Blanc de Blanc Bruto Natural",
+          "confidence": "no_match",
+          "score": 0.129,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Terras Do Demo 75 Cl",
+          "confidence": "no_match",
+          "score": 0.317,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 21.05,
+          "name_found": "Pico Wines Terras de Lava Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/acores/14683-pico-wines-terras-de-lava-white-2019-5609296000128.html"
+        }
+      },
+      "best_retail": 9.99,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "pico-terras-de-lava-reserva-cabernet-sauvignon-2021",
+      "producer": "Pico Wines – Cooperativa Vitivinícola da Ilha do Pico",
+      "name": "Terras de Lava Reserva",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Terras de Lava Tinto",
+          "confidence": "low",
+          "score": 0.925,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2017 Espumante Picowines Blanc de Blanc Bruto Natural",
+          "confidence": "no_match",
+          "score": 0.123,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Quinta Nova Reserva Blanc De Noir 2023 75 Cl",
+          "confidence": "no_match",
+          "score": 0.38,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 36.55,
+          "name_found": "Pico Wines Terras de Lava Reserva Tinto 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/acores/13394-pico-wines-terras-de-lava-reserve-red-2017-5609296000623.html"
+        }
+      },
+      "best_retail": 36.55,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 55.0,
+        "2.0x": 73.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "pico-terras-de-lava-merlot-2021",
+      "producer": "Pico Wines – Cooperativa Vitivinícola da Ilha do Pico",
+      "name": "Terras de Lava Merlot",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 9.99,
+          "name_found": "Terras de Lava Merlot Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/terras-de-lava-merlot-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2017 Espumante Picowines Blanc de Blanc Bruto Natural",
+          "confidence": "no_match",
+          "score": 0.112,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa Santos Lima Merlot 75 Cl",
+          "confidence": "no_match",
+          "score": 0.413,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 18.35,
+          "name_found": "Pico Wines Terras de Lava Merlot Tinto 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/acores/13210-pico-wines-terras-de-lava-merlot-red-2017-5609296000500.html"
+        }
+      },
+      "best_retail": 9.99,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    }
+  ]
+}

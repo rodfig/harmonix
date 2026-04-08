@@ -1,0 +1,51 @@
+{
+  "producer": "Quinta dos Termos",
+  "generated_at": "2026-03-01T11:20:27.319663",
+  "found_count": 1,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "termos-talhao-serra-rufete-2022",
+      "producer": "Quinta dos Termos",
+      "name": "Quinta dos Termos Reserva Talhão da Serra Rufete",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 14.75,
+          "name_found": "Quinta dos Termos Talhão da Serra Reserva Tinto",
+          "confidence": "high",
+          "score": 0.902,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-termos-talhao-da-serra-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 14.95,
+          "name_found": " 2022 Quinta dos Termos Talhão da Serra Rufete Reserva tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2022-quinta-dos-termos-talh-o-da-serra-rufete-reserva-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.221,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 17.05,
+          "name_found": "Quinta dos Termos Rufete Talhão da Serra Reserva Tinto 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/beiras/12088-quinta-dos-termos-rufete-talhao-da-serra-reserve-red-2016-5608105420225.html"
+        }
+      },
+      "best_retail": 14.75,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 22.5,
+        "2.0x": 29.5
+      },
+      "status": "found"
+    }
+  ]
+}

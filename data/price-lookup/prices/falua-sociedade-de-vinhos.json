@@ -1,0 +1,223 @@
+{
+  "producer": "Falua — Sociedade de Vinhos",
+  "generated_at": "2026-03-01T11:20:27.365759",
+  "found_count": 5,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "falua-conde-vimioso-espumante-brut-nature-2019",
+      "producer": "Falua — Sociedade de Vinhos",
+      "name": "Conde Vimioso Espumante Brut Nature",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Monte da Ravasqueira Grande Reserva Brut Nature Branco",
+          "confidence": "low",
+          "score": 0.647,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2019 Espumante Quanta Terra Éclat Pinot Noir Bruto",
+          "confidence": "no_match",
+          "score": 0.123,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Conde Villar 75 Cl",
+          "confidence": "no_match",
+          "score": 0.379,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 20.35,
+          "name_found": "Conde de Vimioso Brut Sparkling",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/en/tejo/22230-conde-de-vimioso-brut-sparkling-5604138011355.html"
+        }
+      },
+      "best_retail": 20.35,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 31.0,
+        "2.0x": 41.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "falua-conde-vimioso-vinha-do-convento-branco-2019",
+      "producer": "Falua — Sociedade de Vinhos",
+      "name": "Conde Vimioso Vinha do Convento Branco",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 77.59,
+          "name_found": "Conde Vimioso Vinha do Convento Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/conde-vimioso-vinha-do-convento-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Vinha Do Conde 75 Cl",
+          "confidence": "low",
+          "score": 0.664,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 94.95,
+          "name_found": "Conde de Vimioso Vinha do Convento Branco 2019",
+          "confidence": "high",
+          "score": 0.95,
+          "url": "https://www.portugalvineyards.com/pt/tejo/21715-conde-de-vimioso-vinha-do-convento-white-2019-5604138012079.html"
+        }
+      },
+      "best_retail": 77.59,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 116.5,
+        "2.0x": 155.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "falua-reserva-branco-2019",
+      "producer": "Falua — Sociedade de Vinhos",
+      "name": "Falua Reserva Branco",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Covela Reserva Tinto",
+          "confidence": "no_match",
+          "score": 0.369,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Quanta Terra Grande Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.281,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Macanita Reserva 2023 75 Cl",
+          "confidence": "no_match",
+          "score": 0.446,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 17.05,
+          "name_found": "Falua Reserva Branco 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/tejo/21668-falua-unoaked-reserve-white-2019-5604138011805.html"
+        }
+      },
+      "best_retail": 17.05,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 26.0,
+        "2.0x": 34.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "falua-conde-vimioso-vinha-do-convento-tinto-2017",
+      "producer": "Falua — Sociedade de Vinhos",
+      "name": "Conde Vimioso Vinha do Convento Tinto",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 77.59,
+          "name_found": "Conde Vimioso Vinha do Convento Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/conde-vimioso-vinha-do-convento-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Vinha Do Conde 75 Cl",
+          "confidence": "low",
+          "score": 0.664,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 94.95,
+          "name_found": "Conde de Vimioso Vinha do Convento Branco 2019",
+          "confidence": "high",
+          "score": 0.95,
+          "url": "https://www.portugalvineyards.com/pt/tejo/21715-conde-de-vimioso-vinha-do-convento-white-2019-5604138012079.html"
+        }
+      },
+      "best_retail": 77.59,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 116.5,
+        "2.0x": 155.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "falua-unoaked-reserva-tinto-2015",
+      "producer": "Falua — Sociedade de Vinhos",
+      "name": "Falua Unoaked Reserva Tinto",
+      "vintage": 2015,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Ferradosa Unoaked Branco",
+          "confidence": "low",
+          "score": 0.559,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Quanta Terra Grande Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.203,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Nova Unoaked 75 Cl",
+          "confidence": "low",
+          "score": 0.539,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 17.05,
+          "name_found": "Falua Unoaked Reserva Tinto 2020",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/tejo/21669-falua-unoaked-reserve-red-2020-5604138011812.html"
+        }
+      },
+      "best_retail": 17.05,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 26.0,
+        "2.0x": 34.5
+      },
+      "status": "found"
+    }
+  ]
+}

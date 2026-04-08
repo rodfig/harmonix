@@ -1,0 +1,2454 @@
+{
+  "_meta": {
+    "region": "Bairrada",
+    "description": "Producer wine profiles for Bairrada DOC",
+    "schema_version": "2.0",
+    "note": "Producer-centric format. Pairing is derived algorithmically from structure fields via pairing-rules.json. food_tags are NOT stored on wines. Cooking method and dish complements are as important as the main ingredient — see pairing_principles in pairing-rules.json.",
+    "fields_required": [
+      "id",
+      "name",
+      "doc",
+      "type",
+      "varieties",
+      "alcohol",
+      "structure",
+      "aromas",
+      "pairing"
+    ],
+    "fields_optional": [
+      "vintage",
+      "acidity_gl",
+      "ph",
+      "winemaking",
+      "notes",
+      "quinta"
+    ]
+  },
+  "producers": [
+    {
+      "producer": "Filipa Pato",
+      "region": "Bairrada – Óis do Bairro / Silvanense",
+      "producer_notes": "Filha de Luís Pato, produz vinhos em nome próprio desde 2001 (primeira vindima). Opera com o marido William Wouters. Filosofia biológica e biodinâmica certificada — Bio (Certiplanet) e Demeter. Foco absoluto em Bairrada: Baga e Bical de vinhas centenárias em solos calcários jurássicos. Dois pilares varietais: Baga (tinto e rosé) e Bical (branco, skin contact, espumante). Abordagem de mínima intervenção: leveduras e bactérias indígenas, prensa de cesto, fermentação em pipas tradicionais e ânforas, sem colagem, sem filtração na maioria dos vinhos. Baixos sulfitos — Flos Castanea tem zero SO2 (flor de castanheiro como único conservante). A gama 'Nossa Calcário' é a linha principal; 'Nossa Missão' é a raridade absoluta (pré-filoxera); 'Nossa S.l.ra' é o espumante anti-vintage desde 2001. Produção total muito limitada — entre 1300 e 7700 garrafas por referência.",
+      "wines": [
+        {
+          "id": "filipa-pato-nossa-missao-baga-2023",
+          "name": "Filipa Pato Nossa Missão Baga",
+          "vintage": 2023,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.71,
+          "ph": null,
+          "winemaking": "100% Baga pré-filoxera, vinhas centenárias (150+ anos), 0.57 ha, orientação Este. Solo argilo-calcário superficial com argila vermelha e cascalho. Bio + Biodynamic (Demeter). Colheita e seleção manual na vinha. Desengace parcial — uso de bagos inteiros depende da vindima. Leveduras indígenas exclusivamente. Pisa manual (punch down) diária durante 3 semanas. Prensagem lenta em prensa de cesto por sistema de gravidade. 18 meses em pipa tradicional. 2 anos em garrafa antes do lançamento. Sem colagem. Produção: 720 garrafas 0.75L + 45 magnums.",
+          "notes": "A raridade absoluta da gama. Vinhas pré-filoxera (150+ anos) em solo argilo-calcário superficial — condições extremamente raras em Bairrada. 12.5% álcool baixo para o perfil tânico que tem. Potencial de guarda declarado: expressão plena após 7-9 anos mínimo. 'Baga doesn't get better than this' — nota da produtora.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 9,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "violeta",
+              "morango",
+              "amora silvestre"
+            ],
+            "secondary": [
+              "especiarias",
+              "fumado subtil"
+            ],
+            "tertiary": [
+              "complexidade mineral elevada (após 7-9 anos)"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "caça",
+              "borrego assado",
+              "leitão",
+              "queijo curado",
+              "cogumelos silvestres"
+            ],
+            "notes": "Taninos 9/10 + corpo pleno: exige proteína e gordura para amaciar. A acidez relativamente moderada (5.71 g/L para Baga) permite alguma flexibilidade. Guardar mínimo 5 anos para integração dos taninos. Não adequado para o menu Nanban atual — tofu não tem gordura suficiente para amainar a estrutura tânica."
+          }
+        },
+        {
+          "id": "filipa-pato-nossa-calcario-baga-2023",
+          "name": "Filipa Pato Nossa Calcário Baga",
+          "vintage": 2023,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.52,
+          "ph": null,
+          "winemaking": "100% Baga, 3 vinhas centenárias (100-140 anos), 15 km do oceano Atlântico, influência atlântica intensa. Solo calcário jurássico inferior em meia encosta. Bio + Biodynamic (Demeter). Desengace parcial, fermentação com leveduras indígenas em lagares de carvalho abertos (pigeage). 12-18 meses (conforme vindima) em pipas usadas de 500-600L e barricas de 1500L. 2 meses em garrafa. Sem colagem. Produção: 5174 garrafas 0.75L + 205 magnums.",
+          "notes": "Linha principal Baga da gama — mais acessível que Nossa Missão mas igualmente séria. Três vinhas centenárias (100-140 anos) em calcário jurássico com forte influência atlântica. Acidez 5.52 g/L + taninos nobres e sedosos declarados pelo produtor. Potencial de guarda declarado: 30-60 anos (e às vezes mais). A diferença para a Missão: solos ligeiramente mais profundos e produção muito maior (5174 vs 720 garrafas).",
+          "structure": {
+            "acidity": 6,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "violeta",
+              "morango",
+              "fumado subtil",
+              "especiaria"
+            ],
+            "secondary": [
+              "complexidade terroir atlântico"
+            ],
+            "tertiary": [
+              "energético e concentrado (após 5-7 anos)"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "borrego",
+              "vaca",
+              "vitela",
+              "pombo",
+              "pato",
+              "faisão",
+              "perdiz",
+              "lebre",
+              "veado",
+              "miúdos nobres (rim, fígado)",
+              "queijo curado forte"
+            ],
+            "notes": "Taninos 8/10 nobres e sedosos (lagares abertos + pigeage). Acidez 5.52 g/L energética. Para carnes de carácter — caça, assados longos, miúdos. Lista de sugestões gastronómicas do produtor é excepcionalmente diversa (inclui miúdos e caça variada). Não adequado para menu Nanban atual."
+          }
+        },
+        {
+          "id": "filipa-pato-nossa-tola-bical-2023",
+          "name": "Filipa Pato Nossa Tola Bical",
+          "vintage": 2023,
+          "doc": "Bairrada DOC",
+          "type": "white",
+          "varieties": [
+            "Bical"
+          ],
+          "alcohol": 11.5,
+          "acidity_gl": 6.5,
+          "ph": null,
+          "winemaking": "100% Bical, vinhas com mais de 60 anos, exposição sul, solo calcário profundo do Jurássico Inferior. Bio + Biodynamic (Demeter). Colheita manual. Prensagem suave. Fermentação direta em pipas tradicionais com leveduras indígenas. 12 meses sobre borras finas sem batonnage, depois 4 meses em cuba de inox. 12 meses em garrafa antes do lançamento. Sem colagem, sem filtração. Produção: 1515 garrafas.",
+          "notes": "Nomeado em homenagem a uma senhora excêntrica do século XIX que possuía a vinha. Vinhas com 60+ anos, solo calcário profundo com exposição sul. 11.5% álcool + 6.5 g/L acidez + corpo médio-alto (12mo pipa + 4mo inox). Sem batonnage — preserva pureza varietal. Potencial de guarda: 15+ anos. Produção muito limitada: 1515 garrafas.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "flor branca",
+              "flor de pessegueiro",
+              "pêra",
+              "mel"
+            ],
+            "secondary": [
+              "amêndoa torrada",
+              "mineral",
+              "fumado (calcário)"
+            ],
+            "tertiary": [
+              "madeiras exóticas (com tempo)"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "moleja e aves em molho cremoso",
+              "peixe nobre em molho",
+              "vieiras",
+              "lagostim",
+              "lagosta",
+              "ostras gratinadas",
+              "queijo de cabra seco",
+              "queijo de pasta semi-dura de leite cru"
+            ],
+            "notes": "Bical de vinhas velhas em pipa: acidez 6.5 g/L + textura sedosa (12mo pipa sem batonnage) + sem filtração. Corpo médio com textura rica. Para contexto Nanban: affinities declaram 'scallops, langoustine, lobster, oven-glazed oysters' — excelente para Cataplana de Tofu e Ameijoas (Dish 5) ou Goma Doufu com uni (Dish 1). A textura sedosa harmoniza com tofu sedoso."
+          }
+        },
+        {
+          "id": "filipa-pato-nossa-calcario-bical-2024",
+          "name": "Filipa Pato Nossa Calcário Bical",
+          "vintage": 2024,
+          "doc": "Bairrada DOC",
+          "type": "white",
+          "varieties": [
+            "Bical"
+          ],
+          "alcohol": 11.5,
+          "acidity_gl": 5.3,
+          "ph": null,
+          "winemaking": "100% Bical, Óis do Bairro — uma das aldeias mais celebradas de Bairrada para Bical. Solo argilo-calcário jurássico, próximo do rio Cértima (microclima com manhãs nebulosas). Bio + Biodynamic (Demeter). Colheita manual, seleção em vinha e em adega, prensagem pneumática lenta. Fermentação em barricas de 500-600L e cuba de 2000L com leveduras e bactérias indígenas (FML ocorre). 10 meses sobre borras finas sem batonnage. 1 mês em inox para lote. Engarrafamento por calendário lunar. Sem colagem. Produção: 7666 garrafas 0.75L + 240 magnums.",
+          "notes": "Linha de entrada da gama Bical — maior produção (7666 garrafas). FML completa: acidez mais baixa (5.3 g/L vs 6.5 g/L da Nossa T.la) e textura mais cremosa. Rio Cértima cria microclima específico: manhãs nebulosas e influência atlântica intensa. Óis do Bairro historicamente reconhecido como berço do Bical de qualidade — um dos primeiros brancos portugueses exportados para as ex-colónias. Potencial de guarda: ~10 anos.",
+          "structure": {
+            "acidity": 5,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "pêra",
+              "mineral",
+              "fumado (calcário)",
+              "avelã",
+              "amêndoa",
+              "pinheiro"
+            ],
+            "secondary": [
+              "tomilho",
+              "mel"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe fino",
+              "vitela estufada",
+              "frango do campo",
+              "queijo curado de pasta dura"
+            ],
+            "notes": "FML completa torna este Bical mais redondo e cremoso que a Nossa T.la. Acidez 5.3 g/L = mais acessível e versátil. Textura 'quase crocante e com notas de frutos secos' descrita pelo produtor. Para contexto Nanban: versatilidade para Hassun (Aperitivos Variados) ou como acompanhamento do Gratin de Tofu."
+          }
+        },
+        {
+          "id": "filipa-pato-flos-castanea-2023",
+          "name": "Filipa Pato Flos Castanea",
+          "vintage": 2023,
+          "doc": "Vinho de Mesa (Óis do Bairro)",
+          "type": "white",
+          "varieties": [
+            "Bical"
+          ],
+          "alcohol": 11.5,
+          "acidity_gl": 6.9,
+          "ph": null,
+          "winemaking": "100% Bical, ~40 anos de vinha, Óis do Bairro, calcário jurássico inferior, orientação Este, 15 km do oceano. Fermentação em contato com películas (skin contact / orange wine): desengace total, maceração com pisa (punch down) 2 semanas em lagar aberto até fim da fermentação. Leveduras indígenas. Flor de castanheiro como único conservante — zero SO2 adicionado. Prensagem em prensa de cesto. 12 meses em pipa (500L) e ânforas. Sem colagem, sem filtração. Produção: 1403 garrafas.",
+          "notes": "O vinho mais radical da gama. Bical skin-fermented (orange wine) com zero SO2 — flor de castanheiro como único conservante. Classificação Vinho de Mesa (não DOC) provavelmente pela ausência de SO2 e técnica não convencional. Acidez 6.9 g/L = a mais alta da gama Filipa Pato. Ânforas + pipas: oxidação microcontrolada. Inspirado por João Goucho (neto de Fernando Paiva, pioneiro da biodinâmica em Portugal). Nome em latim: 'Flos Castanea' = flor de castanheiro.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 3,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "mineral intenso",
+              "fumado (calcário)",
+              "camomila",
+              "flor de tomilho",
+              "pêra"
+            ],
+            "secondary": [
+              "avelã",
+              "amêndoa",
+              "pinheiro",
+              "mel",
+              "tomilho"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe fumado artesanal (salmão, halibute, cavala)",
+              "marisco cru com limão",
+              "cogumelos silvestres com azeite",
+              "aves assadas com limão e ras el hanout",
+              "carnes brancas grelhadas (coelho)",
+              "queijo forte (Serpa, Évora, Époisses)"
+            ],
+            "notes": "Skin contact Bical: taninos 3/10 (películas de uva branca, 2 semanas maceração), acidez 7/10 (6.9 g/L = a mais alta da gama), zero SO2. Corpo médio com textura tánica ligeira e mineralidade intensa. Para contexto Nanban: os taninos leves + acidez alta + carácter fumado mineral harmonizam potencialmente com Tofu Nanban-zuke (marinada agridoce + fritura) ou pratos com cogumelos. O único vinho da gama com taninos — não adequado para pratos muito delicados."
+          }
+        },
+        {
+          "id": "filipa-pato-nossa-solera-4ed",
+          "name": "Filipa Pato Nossa Solera",
+          "vintage": null,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Baga",
+            "Bical"
+          ],
+          "alcohol": 11.9,
+          "acidity_gl": 5.9,
+          "ph": null,
+          "winemaking": "Baga + Bical + pequena % outras castas indígenas de Bairrada. Anti-vintage blend baseado na vindima de 2001 (primeira vindima de Filipa Pato). Fermentação em pipas com leveduras indígenas, estágio em barricas usadas por tempo indeterminado. Lote base envelhecido adicionalmente em grande tonel 3 anos. Segunda fermentação em garrafa (método clássico) com rolha de cortiça natural. 18 meses sobre borras em garrafa. Disgorgement: 8 de março 2025 (4ª edição). Non dosé. Sem filtração, sem coloração, baixíssimo SO2 (20 mg/L total). Rolha de cortiça natural com 3 discos. Produção: 1309 garrafas 0.75L + 5 magnums + 2 jeroboam + 3L + 1 rehoboam 4.5L.",
+          "notes": "Conceito único: anti-vintage blend acumulativo desde 2001. 'O vinho velho educa o vinho novo' — cada vindima nova mistura com as vindimas anteriores, criando continuidade de terroir e estilo. Sem vintage declarado — 4ª edição. Nenhum recipiente metálico em nenhuma fase da vinificação. Non dosé: 11.9% + 5.9 g/L + 2.4 g/L açúcar residual (do vinho base — após segunda fermentação o açúcar converteu-se em álcool e CO2). O vinho pede decantação apesar de ser espumante.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 1,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "flor branca",
+              "citrinos maduros e secos",
+              "pêra",
+              "alcaçuz"
+            ],
+            "secondary": [
+              "marzipan",
+              "pão de especiarias",
+              "brioche"
+            ],
+            "tertiary": [
+              "avelã",
+              "nougat",
+              "amêndoa",
+              "laranja cristalizada",
+              "cacau",
+              "mel"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "marisco complexo",
+              "vieiras",
+              "camarão",
+              "lagosta",
+              "peixe nobre (rodovalho, pregado, linguado, robalo, pargo, tamboril)",
+              "aves e frango",
+              "pato com especiarias orientais e agridoce",
+              "queijo"
+            ],
+            "notes": "Espumante anti-vintage com complexidade terciária de anos em barrica: avelã, nougat, brioche + acidez refrescante. Non dosé. Para contexto Nanban: o produtor menciona explicitamente 'pato com especiarias orientais e agridoce' como harmonização — converge diretamente com o contexto do Menu Nanban. Adequado para Hassun (Aperitivos Variados), Cataplana de Tofu e Ameijoas, e como vinho de entrada para toda a refeição."
+          }
+        },
+        {
+          "id": "filipa-pato-roleta-russa-rose-2023",
+          "name": "Filipa Pato Roleta Russa Rosé",
+          "vintage": 2023,
+          "doc": "Bairrada DOC",
+          "type": "rosé",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 11.0,
+          "acidity_gl": 5.6,
+          "ph": null,
+          "winemaking": "100% Baga, vinhas centenárias em Silvanense, solo calcário jurássico, meia encosta, orientação Este. Em conversão para bio e biodinâmica. Colheita exclusivamente manual (incluindo colaboração com APPACDM Anadia). Maceração pelicular + prensagem direta. Mosto decantado, fermentação espontânea com leveduras indígenas em inox e pipas. 6 meses em pipas usadas de 500-600L, FML ocorre. Sem filtração, sem colagem.",
+          "notes": "Primeiro rosé seco de Baga de Filipa Pato — 2023 foi a vindima escolhida para a estreia. Vinhas centenárias em Silvanense (Bairrada). Cor rosé pálida com tons laranja — resultado da maceração pelicular breve. 11% álcool = o mais leve da gama. Parte dos lucros vai para APPACDM Anadia (associação de apoio a pessoas com deficiência intelectual). Produção não especificada.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 2,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos",
+              "flor branca de pomar"
+            ],
+            "secondary": [
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne branca grelhada (frango, codorniz, porco, vitela)",
+              "marisco",
+              "peixe de rocha (pargo, garoupa)",
+              "sardinhas grelhadas",
+              "saladas com vinagrete leve",
+              "cozinha exótica",
+              "queijo de cabra seco",
+              "queijo de vaca curado dos Açores"
+            ],
+            "notes": "Baga rosé: taninos 2/10 (maceração pelicular breve), acidez 5.6 g/L, corpo leve, 11% álcool. O produtor descreve como 'o vinho perfeito para quem quer ficar com um único vinho durante toda a refeição'. Para contexto Nanban: versatilidade para Tofu Nanban-zuke (Dish 6 — marinada agridoce + fritura), Aperitivos Variados (Dish 2), e pratos de carácter médio. Alternativa ao Julia Kemper Rosé para o mesmo perfil de refeição."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Luís Pato",
+      "region": "Bairrada – Amoreira da Gândara / Aguim",
+      "producer_notes": "Referência histórica absoluta da Baga e do DOC Bairrada. Pioneer no engarrafamento de Baga de vinha única quando a casta era desvalorizada. Opera com múltiplas vinhas: Vinha Pan (argilo-calcário, vinhas velhas), Vinha Barrosa (Aguim, 90+ anos, rodeada por floresta de pinheiros), Vinha Formal e outras. Filha Filipa Pato opera produção independente. Dados técnicos escassos disponíveis — perfis baseados em informação parcial dos materiais fornecidos.",
+      "wines": [
+        {
+          "id": "luis-pato-rebel-2010",
+          "name": "Luís Pato Pato Rebel",
+          "vintage": 2010,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "Baga",
+            "Touriga Nacional",
+            "Bical"
+          ],
+          "alcohol": 12.1,
+          "acidity_gl": 4.9,
+          "ph": null,
+          "winemaking": "90% Baga + 9% Touriga Nacional + 1% Bical. Maceração curta. Temperatura de fermentação controlada a baixa temperatura. Objetivo: taninos suaves e perfil aromático próximo do Pinot Noir. Estágio não especificado nos materiais disponíveis.",
+          "notes": "Conceito declarado: provar que a Baga pode ser aromática e de taninos suaves. 12.1% álcool + 4.9 g/L = perfil leve e acessível. Comparação explícita do produtor com Pinot Noir. 'Pode ser consumido no ano imediato à respetiva vindima' — incomum em Bairrada.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 5,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "amora",
+              "framboesa",
+              "morango",
+              "cereja ácida"
+            ],
+            "secondary": [
+              "chocolate negro",
+              "resina de pinheiro"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carnes vermelhas leves",
+              "peixe grelhado",
+              "aves",
+              "cogumelos",
+              "queijo semi-curado"
+            ],
+            "notes": "Rebel é a exceção na gama Luís Pato: taninos 5/10, acidez 4.9 g/L, corpo médio. O produtor sugere explicitamente peixe a 14°C — confirma os taninos suaves. Para contexto Nanban: o único tinto de Bairrada com alguma viabilidade para pratos mais pesados do menu (Gratin)."
+          }
+        },
+        {
+          "id": "luis-pato-baga-natural-2012",
+          "name": "Luís Pato Baga Natural",
+          "vintage": 2012,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 6.2,
+          "ph": null,
+          "winemaking": "100% Baga. Sem adição de SO2 em nenhuma fase incluindo engarrafamento. Sem outros aditivos. Leveduras indígenas implícitas. Dados analíticos não disponíveis.",
+          "notes": "Experiência de vindima 2012: demonstrar a capacidade antioxidante natural da Baga sem SO2. Produzido para consumidores alérgicos a sulfitos. Acidity_gl 6.2 g/L estimada: 12% alc = colheita precoce = acidez natural elevada; 'clima próprio para vinhos sem adição de ácido' = acidity already sufficient; sem correção ácida confirma que a Baga natural deu >6.0 g/L. Tannins 7/10: Julia Harding MW descreve a casa Luís Pato como 'fine, sandy tannins'.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha",
+              "amora"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "caça",
+              "queijo curado"
+            ],
+            "notes": "Baga sem SO2 — estrutura estimada. Dados insuficientes para recomendação precisa."
+          }
+        },
+        {
+          "id": "luis-pato-pato-doiro-2010",
+          "name": "Luís Pato Pato D'Oiro",
+          "vintage": 2010,
+          "doc": "Bairrada DOC / Lisboa",
+          "type": "red",
+          "varieties": [
+            "Baga",
+            "Tinta Roriz",
+            "Syrah"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.5,
+          "ph": null,
+          "winemaking": "45% Baga (Vinha Barrosa, Aguim — vinha velha 90+ anos, argilo-calcário, rodeada de floresta de pinheiros e eucaliptos) + 45% Tinta Roriz + 10% Syrah (Quinta do Monte d'Oiro, Lisboa). Baga: 12 meses em pipos novos e usados de carvalho Allier. Tinta Roriz + Syrah: 14 meses em barricas CF (Radoux, Seguin Moreau, Taransaud), 35% novas. Colaboração com José Bento dos Santos. Produção: 1662 garrafas 0.75L + 50 × 1.5L + 25 × 3L.",
+          "notes": "Colaboração única entre dois produtores de regiões distintas. 14% álcool. Baga + Tinta Roriz descrita como 'ligação muito interessante'. A floresta de pinheiros envolvente à Vinha Barrosa contribui com notas de resina. DOC duplo = provavelmente classificado como Vinho Regional.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "amora",
+              "fruta preta"
+            ],
+            "secondary": [
+              "especiarias",
+              "carvalho"
+            ],
+            "tertiary": [
+              "pinheiro",
+              "resina"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "queijo curado forte",
+              "enchidos"
+            ],
+            "notes": "Blend Baga + TR + Syrah: 14% álcool, corpo pleno, taninos 7/10. A Syrah adiciona redondeza. Notas de pinheiro/resina da Vinha Barrosa. Para pratos de carácter robusto."
+          }
+        },
+        {
+          "id": "luis-pato-espumante-baga",
+          "name": "Luís Pato Espumante Baga",
+          "vintage": null,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "100% Baga. Solo argilo-calcário. Vinificado de bica aberta (free-run). Prensagem muito leve em prensa de vácuo, rendimento máximo 60%. Fermentação em cubas de inox. Segunda fermentação em garrafa. 3-6 meses sobre borras. Dados analíticos não disponíveis.",
+          "notes": "Espumante de Baga — raridade pela casta. 60% rendimento máximo = seleção rigorosa do mosto. Sem taninos pela prensagem suave bica-aberta. O produtor menciona explicitamente leitão com laranja como harmonização — acidez corta gordura e não conflitua com cítrico.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 1,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha fresca",
+              "cítrico"
+            ],
+            "secondary": [
+              "brioche leve",
+              "leveduras"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "leitão assado",
+              "peixe",
+              "marisco",
+              "carnes assadas no forno",
+              "aperitivos"
+            ],
+            "notes": "Acidez alta da casta Baga + sem taninos (bica aberta) = versatilidade máxima como espumante. Para contexto Nanban: alternativa regional para o Hassun (Aperitivos Variados) ao Távora-Varosa."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta das Bágeiras",
+      "region": "Bairrada – Bairrada Central",
+      "producer_notes": "Uma das quintas de referência absoluta do DOC Bairrada. Gestão familiar, estilo austero e tradicional — fermentação sem desengace em lagares abertos, remontagem com massas de madeira, estágio em tonéis de madeira antigos, engarrafamento sem colagem nem filtração. Nenhuma intervenção tecnológica na adega além do necessário. Os espumantes são método tradicional com remuage manual em pupitres de madeira. A gama organiza-se em torno de personagens da família: 'Pai Abel' (topo de gama, parcela específica) e 'Avô Fausto' (elegância e frescura). As castas brancas são Bical e Maria Gomes — a Fernão Pires de Bairrada. Os tintos são Baga dominant com componente de Touriga Nacional. Produção total muito limitada — 2000 a 9000 garrafas por referência.",
+      "wines": [
+        {
+          "id": "bageiras-reserva-tinto-2013",
+          "name": "Quinta das Bágeiras Reserva Tinto",
+          "vintage": 2013,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "Baga",
+            "Touriga Nacional"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.9,
+          "ph": null,
+          "winemaking": "Baga 60% + Touriga Nacional 40%. Vinhas velhas em anos sem Garrafeira Tinto (toda a uva de vinhas velhas vai para a Reserva nesses anos). Fermentação 5-8 dias em lagar aberto sem desengace. Remontagem com massas de madeira várias vezes ao dia. Termina fermentação em tonéis de madeira antigos. 18 meses em tonéis. Engarrafado sem colagem nem filtração. Tudo manual. Produção: ~9000 garrafas.",
+          "notes": "Linha de entrada dos tintos de guarda da gama. Em anos sem Garrafeira, recebe toda a uva de vinhas velhas — tornando-se potencialmente mais rico que o habitual. Estilo austero e tradicional da casa. 2011 review: 'bagas silvestres, especiarias, ervas frescas. Sumarento, expressivo, longo, cheio de garra. 17/20' (Revista de Vinhos, 2014).",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "bagas silvestres",
+              "especiarias",
+              "ervas frescas"
+            ],
+            "secondary": [
+              "tonel de madeira antigo"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "caça",
+              "borrego",
+              "queijo curado",
+              "leitão"
+            ],
+            "notes": "Baga 60% + TN 40%: acidez 5.9 g/L moderada, taninos 7/10 (sem desengace + 18mo tonel). Estrutura plena típica de Bairrada. Para pratos de carácter."
+          }
+        },
+        {
+          "id": "bageiras-pai-abel-tinto-2011",
+          "name": "Quinta das Bágeiras Pai Abel Tinto",
+          "vintage": 2011,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "Baga",
+            "Touriga Nacional"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 7.3,
+          "ph": null,
+          "winemaking": "Baga 80% + Touriga Nacional 20%, parcela única com as duas castas misturadas (simulando plantação de vinha centenária). 2-3 cachos por cepa (rendimento extremamente baixo). Vindima simultânea das duas castas. Sem desengace, ~1 semana em lagar aberto, remontagem com massas de madeira várias vezes ao dia. Termina fermentação em barricas usadas de Borgonha (carvalho francês). Transferido para pequeno tonel de madeira até engarrafamento. Sem colagem, sem filtração. Produção: ~2000 garrafas.",
+          "notes": "Topo de gama tinto — parcela única, rendimento radical (2-3 cachos por cepa). 14% álcool + 7.3 g/L acidez = estrutura excepcional. Conceito de field blend em parcela única (as duas castas misturadas como numa vinha centenária). 2009 review: 'muito concentrado, frutos pretos, balsâmico, muito texturado, rusticidade do tonel. 18/20' (guia Vinhos de Portugal 2015). Potencial de guarda muito elevado.",
+          "structure": {
+            "acidity": 8,
+            "tannins": 9,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos pretos",
+              "balsâmico"
+            ],
+            "secondary": [
+              "tonel rústico",
+              "especiarias"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha de qualidade",
+              "caça de pelo",
+              "borrego",
+              "queijo curado forte"
+            ],
+            "notes": "14% + 7.3 g/L + taninos 9/10 + rendimento 2-3 cachos/cepa: um dos vinhos mais estruturados do DB. Exige carne com gordura e proteína para amainar. Guardar vários anos antes de abrir."
+          }
+        },
+        {
+          "id": "bageiras-avo-fausto-tinto-2012",
+          "name": "Quinta das Bágeiras Avô Fausto Tinto",
+          "vintage": 2012,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 13.3,
+          "acidity_gl": 7.4,
+          "ph": null,
+          "winemaking": "Baga (2012: monovarietal — a descrição geral menciona Baga + TN mas a ficha analítica da 2012 indica apenas Baga). Parcelas selecionadas por darem tintos elegantes e frescos. Sem desengace, ~1 semana em lagar aberto, remontagem com massas de madeira. Termina fermentação em barricas usadas de Borgonha (carvalho francês). Transferido para pequeno tonel de madeira até engarrafamento. Sem colagem, sem filtração. Produção: ~2000 garrafas.",
+          "notes": "Conceito oposto ao Pai Abel: 'elegância em vez de potência'. Parcelas selecionadas pelo seu perfil fresco. 7.4 g/L acidez = acidez alta para o estilo mais elegante pretendido. 2012 review: 'especiaria, bagas silvestres, perfeito equilíbrio, taninos polidos, fresca acidez, muito carácter. 17.5/20' (Revista de Vinhos, 2015). Nota: a ficha analítica da colheita 2012 indica Baga puro; a descrição geral da linha menciona Baga + TN.",
+          "structure": {
+            "acidity": 8,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "bagas silvestres",
+              "especiarias"
+            ],
+            "secondary": [
+              "frescura mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha leve",
+              "caça de penas",
+              "borrego mais fresco",
+              "queijo semi-curado"
+            ],
+            "notes": "Baga elegante: taninos 6/10 (polidos), acidez 7.4 g/L alta, corpo médio. O mais versátil dos tintos da gama — equilíbrio entre estrutura e frescura. O mais próximo do estilo do Pato Rebel dentro dos tintos de Bairrada clássicos."
+          }
+        },
+        {
+          "id": "bageiras-pai-abel-branco-2014",
+          "name": "Quinta das Bágeiras Pai Abel Branco",
+          "vintage": 2014,
+          "doc": "Bairrada DOC",
+          "type": "white",
+          "varieties": [
+            "Maria Gomes",
+            "Bical"
+          ],
+          "alcohol": 13.3,
+          "acidity_gl": 7.4,
+          "ph": null,
+          "winemaking": "Maria Gomes + Bical, vinhas ~15 anos com produção drasticamente reduzida. Bica aberta. Decantação 24-36h em pequenos decantadores de 1m³ por precipitação natural. Fermentação em barricas usadas de carvalho francês (Borgonha). Ligeira bâtonnage. Estágio em barricas até limpidez natural. Engarrafado sem filtração nem colagem. Produção: ~5000 garrafas.",
+          "notes": "Topo de gama branco. 13.3% + 7.4 g/L + barricas Borgonha + bâtonnage = grande estrutura. 2012 review: 'fruta amarela, geleia suave, bergamota, flores secas, especiarias, minerais, confeitaria. Precisão, estrutura firme, acidez alta, longo e luxuoso final. 18.5/20' (Revista de Vinhos, 2013). 18.5/20 é uma das notas mais altas de branco português nesta fonte.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta amarela",
+              "bergamota",
+              "flores secas"
+            ],
+            "secondary": [
+              "geleia suave",
+              "especiarias",
+              "mineral",
+              "confeitaria"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe nobre em molho",
+              "lagosta",
+              "vieiras",
+              "aves em molho cremoso",
+              "queijo de leite cru curado"
+            ],
+            "notes": "13.3% + 7.4 g/L + barrica Borgonha: corpo pleno, acidez alta bem integrada. Um dos brancos mais estruturados do DB — comparável ao Julia Kemper Reserva Branco e Magnum Ribeiro Santo. Para contexto Nanban: potencial para Gratin de Tofu (riqueza + estrutura) e Cataplana de Tofu e Ameijoas."
+          }
+        },
+        {
+          "id": "bageiras-avo-fausto-branco-2014",
+          "name": "Quinta das Bágeiras Avô Fausto Branco",
+          "vintage": 2014,
+          "doc": "Bairrada DOC",
+          "type": "white",
+          "varieties": [
+            "Maria Gomes"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 8.2,
+          "ph": null,
+          "winemaking": "100% Maria Gomes (Fernão Pires). Vindimada relativamente cedo para preservar acidez elevada. Bica aberta. Decantação 24-36h em pequenos decantadores de 1m³. Fermentação em barricas usadas de carvalho francês. Ligeira bâtonnage. Estágio em barricas até limpidez natural. Engarrafado sem filtração nem colagem. Produção: ~2500 garrafas.",
+          "notes": "8.2 g/L acidez total — a mais alta de todos os brancos secos do DB. Vindimado cedo intencionalmente para maximizar acidez e potencial de guarda. 2014 review: 'perfil floral, fumado leve, intensidade, leveza e frescura quase crocante, vibrante e longo, grande potencial de guarda. 17.5/20' (Revista de Vinhos, 2015). Maria Gomes monovarietal é muito raro em Bairrada nesta qualidade.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "fumado leve"
+            ],
+            "secondary": [
+              "mineral",
+              "crocante"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco cru",
+              "ostras",
+              "sashimi",
+              "peixe branco delicado",
+              "ceviche",
+              "yuzu"
+            ],
+            "notes": "Acidez 9/10 (8.2 g/L) + corpo médio + vindima precoce: o white mais ácido do DB inteiro. Perfil próximo de um Alvarinho de alta qualidade em estrutura ácida. Para contexto Nanban: excelente para Ceviche de Tofu + Yuzu (Dish 3 — harmonização por espelhamento de acidez) e Goma Doufu com uni (Dish 1). A acidez extrema corta a riqueza do uni e amplifica o yuzu."
+          }
+        },
+        {
+          "id": "bageiras-espumante-grande-reserva",
+          "name": "Quinta das Bágeiras Espumante Grande Reserva",
+          "vintage": null,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Maria Gomes",
+            "Bical"
+          ],
+          "alcohol": 13.6,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Maria Gomes + Bical (nota: vintage 2012 foi produzido com Maria Gomes + Baga em vez de Bical — variação de vindima). Bica aberta. Decantação 24-36h em decantadores de 1m³ por precipitação natural. Fermentação em inox com controlo de temperatura por queda de água refrigerada. Espumantização em março do ano seguinte. 48 meses em cave antes do degorgement. Método tradicional, fermentação em garrafa, remuage manual em pupitres de madeira. Bruto natural (zero dosagem). Produzido apenas em vindimas de qualidade excecional. Produção: ~3000 garrafas.",
+          "notes": "Topo de gama dos espumantes — 48 meses sur lees é tempo excepcional (Champagne Prestige Cuvée nível). 13.6% álcool é elevado para espumante. Bruto natural. Produção seletiva por vindima. 2012 review: 'bela presença de fruta, notas limonadas, leve toque vegetal, leve, harmonioso, elegante. 16/20' (Revista de Vinhos, 2014).",
+          "structure": {
+            "acidity": 7,
+            "tannins": 1,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta cítrica (lima, toranja)",
+              "vegetal elegante"
+            ],
+            "secondary": [
+              "notas de lees (48 meses)",
+              "brioche"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco nobre",
+              "lagosta",
+              "peixe nobre",
+              "aperitivo sofisticado",
+              "queijo curado"
+            ],
+            "notes": "48 meses sur lees + 13.6% + bruto natural: o espumante de maior complexidade e estrutura do DB. Para ocasiões de maior sofisticação. Para contexto Nanban: Hassun (Aperitivos Variados) ou como espumante de entrada para toda a refeição."
+          }
+        },
+        {
+          "id": "bageiras-espumante-super-reserva",
+          "name": "Quinta das Bágeiras Espumante Super Reserva",
+          "vintage": null,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Bical",
+            "Maria Gomes"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Bical + Maria Gomes. Bica aberta. Decantação 24-36h em decantadores de 1m³. Fermentação em inox com controlo de temperatura. Espumantização normalmente em março do ano seguinte. 24 meses em cave. Método tradicional, fermentação em garrafa, remuage manual em pupitres de madeira. Bruto natural. Produção: ~6000 garrafas.",
+          "notes": "Linha principal dos espumantes brancos — 24 meses sur lees (vs 48 do Grande Reserva). 2012 review: 'sério e austero da casa, mas com elegância e cremosidade... lima e toranja, perfeita acidez. 16.5/20' (Revista de Vinhos, 2013). O mesmo estilo austero aplicado ao espumante.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 1,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "lima",
+              "toranja",
+              "citrinos"
+            ],
+            "secondary": [
+              "cremosidade (lees)",
+              "elegância austera"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "peixe delicado",
+              "aperitivos",
+              "queijo fresco"
+            ],
+            "notes": "24 meses sur lees + Bical/Maria Gomes + bruto natural: acidez alta, corpo médio, carácter cítrico marcado. Para contexto Nanban: Hassun (Aperitivos Variados) e Ceviche de Tofu + Yuzu — as notas de lima e toranja espelham o yuzu diretamente."
+          }
+        },
+        {
+          "id": "bageiras-espumante-reserva-tinto",
+          "name": "Quinta das Bágeiras Espumante Reserva Tinto",
+          "vintage": null,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "100% Baga, vindimada com teor alcoólico potencial moderado (colheita precoce intencional). Mosto fermentado em tonéis de madeira antigos (ao contrário dos brancos que fermentam em inox). Estágio em tonéis. Engarrafado no ano seguinte à vindima. Método tradicional, fermentação em garrafa, remuage manual em pupitres de madeira. Bruto natural. Produção: ~4000 garrafas.",
+          "notes": "Raridade: espumante tinto de Baga com carácter da casta presente. Fermentado em tonel (não inox) — dá mais estrutura e rusticidade que os espumantes brancos. 2006 review: 'notas da casta Baga com evolução, acidez boa, taninos difíceis para churrascos de verão, sardinhas ou carne de porco. 15/20' (guia Vinhos de Portugal 2015). Os taninos são identificados mesmo em espumante.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 3,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "Baga: bagas vermelhas",
+              "especiaria"
+            ],
+            "secondary": [
+              "evolução (tonel)",
+              "rústico"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "leitão assado",
+              "sardinhas grelhadas",
+              "carne de porco",
+              "charcutaria",
+              "queijo curado"
+            ],
+            "notes": "Espumante tinto de Baga: taninos 3/10 (presentes mesmo em espumante — Baga tem pele espessa), acidez alta, corpo médio. Tonel antigo dá rusticidade extra. Produtor sugere sardinhas e carne de porco — confirmado pela acidez alta que corta gordura. Para contexto Nanban: não adequado para o menu atual."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Caves São João",
+      "region": "Bairrada – Anadia",
+      "quintas": [
+        "Quinta do Poço do Lobo"
+      ],
+      "producer_notes": "Uma das caves históricas do DOC Bairrada, fundada em 1920 em Anadia. Opera com a Quinta do Poço do Lobo como propriedade própria — vinhas da quinta fornecem uvas para as linhas premium. A etiqueta 'Luiz Costa' é a linha histórica de espumantes da casa (não associada à quinta). Especialização em espumante método tradicional — tanto brancos (Arinto, Chardonnay, Bical) como tintos e rosés de Baga. A linha Quinta do Poço do Lobo inclui tranquilos e espumantes. O Tinto Bruto 2014 é classificado como Beira Atlântico IGP por incluir Cabernet Sauvignon (casta não permitida no DOC Bairrada).",
+      "wines": [
+        {
+          "id": "csj-qdpl-branco-reserva-2016",
+          "name": "Quinta do Poço do Lobo Branco Reserva",
+          "quinta": "Quinta do Poço do Lobo",
+          "vintage": 2016,
+          "doc": "Bairrada DOC",
+          "type": "white",
+          "varieties": [
+            "Chardonnay",
+            "Arinto"
+          ],
+          "alcohol": 12.3,
+          "acidity_gl": 5.6,
+          "ph": 3.2,
+          "winemaking": "Chardonnay 60% + Arinto 40%. Colheita no momento ideal de maturação. Desengace, esmagamento, maceração a 10°C. Prensagem das massas. Clarificação do mosto. Fermentação em barricas avinhadas de carvalho francês. Batonnage 5 meses. Estágio sobre borras 8 meses. Engarrafado novembro 2017.",
+          "notes": "Branco tranquilo de topo de gama da Quinta. Arinto + Chardonnay em barrica — combinação atlântica/internacional. 5.60 g/L acidez + pH 3.20 + 8mo borras + batonnage: estrutura e textura equilibradas. Potencial de guarda: 5+ anos.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta (cítrico, pêssego)",
+              "floral",
+              "mineral"
+            ],
+            "secondary": [
+              "madeira integrada",
+              "notas vegetais",
+              "flores secas"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixes gordos",
+              "ostras",
+              "marisco",
+              "carnes magras"
+            ],
+            "notes": "Barrica + 8mo borras + batonnage: corpo médio com textura. Acidez 5.60 g/L (moderada). Para contexto Nanban: estrutura adequada para Cataplana de Tofu e Ameijoas (Dish 5) ou Hassun."
+          }
+        },
+        {
+          "id": "csj-qdpl-rose-2017",
+          "name": "Quinta do Poço do Lobo Rosé",
+          "quinta": "Quinta do Poço do Lobo",
+          "vintage": 2017,
+          "doc": "Bairrada DOC",
+          "type": "rosé",
+          "varieties": [
+            "Baga",
+            "Pinot Noir"
+          ],
+          "alcohol": 11.5,
+          "acidity_gl": 6.62,
+          "ph": null,
+          "winemaking": "Baga 50% + Pinot Noir 50%. Colheita primeira quinzena de setembro. Prensagem suave. Fermentação em pipas de carvalho avinhadas e cuba de inox a temperatura controlada. Batonnage 5 meses. Engarrafado março 2018.",
+          "notes": "Blend incomum: Baga (Bairrada) + Pinot Noir (casta internacional). Cor olho-de-perdiz muito pálida. 11.5% + 6.62 g/L acidez — o mais ácido dos tranquilos da ficha. Pipas de carvalho + batonnage 5 meses em rosé é técnica pouco convencional que dá textura adicional. Potencial de guarda: 4+ anos.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 2,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos frescos",
+              "pétalas secas",
+              "mineral"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "canapés",
+              "peixe",
+              "carnes magras"
+            ],
+            "notes": "Rosé de alta acidez (6.62 g/L, 7/10): o mais ácido dos rosés no DB de Bairrada. Baga + Pinot Noir: frescura e elegância. Para contexto Nanban: Tofu Nanban-zuke (Dish 6 — marinada agridoce), ou como rosé de abertura para o Hassun."
+          }
+        },
+        {
+          "id": "csj-luiz-costa-espumante-2015",
+          "name": "Luiz Costa Espumante Bruto Natural",
+          "quinta": null,
+          "vintage": 2015,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Pinot Noir",
+            "Chardonnay"
+          ],
+          "alcohol": 12.8,
+          "acidity_gl": 9,
+          "ph": 3.17,
+          "winemaking": "Pinot Noir + Chardonnay (proporções não especificadas). Vindima entre meados de agosto e primeiros dias de setembro. Prensagem muito delicada. Fermentação 16 dias em inox temperatura controlada. Método clássico: tiragem abril 2016, refermentação 26 dias a 15°C em cave. Estágio 20 meses sobre borras em garrafa. Bruto natural (zero dosagem).",
+          "notes": "Etiqueta histórica da Caves São João — não associada à Quinta do Poço do Lobo. Pinot Noir + Chardonnay: perfil próximo de Champagne. 12.8% álcool (o mais elevado dos espumantes da ficha). 20 meses sur lees. Bruto natural. Aromas: casca de citrinos, flores secas, tosta, biscoito de manteiga, cera de abelha — paleta complexa e rica.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 1,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "casca de citrinos",
+              "flores secas"
+            ],
+            "secondary": [
+              "tosta",
+              "biscoito de manteiga",
+              "cera de abelha"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "ostras",
+              "peixe",
+              "carnes brancas",
+              "queijo"
+            ],
+            "notes": "Pinot Noir + Chardonnay + 20mo sur lees + bruto natural: perfil internacional próximo de Champagne. 12.8% + 6.05 g/L acidez + mousse cremosa. Para contexto Nanban: Hassun (variedade + fritura) ou abertura de refeição."
+          }
+        },
+        {
+          "id": "csj-qdpl-espumante-arinto-chardonnay-2015",
+          "name": "Espumante Quinta do Poço do Lobo Arinto & Chardonnay",
+          "quinta": "Quinta do Poço do Lobo",
+          "vintage": 2015,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Chardonnay",
+            "Arinto"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.12,
+          "ph": 3.16,
+          "winemaking": "Chardonnay 55% + Arinto 45%. Vindima separada: Chardonnay no final de agosto, Arinto meados de setembro. Prensagem muito delicada. Fermentação 15 dias em inox temperatura controlada. Método clássico: tiragem março 2016, refermentação 25 dias a 14°C. Estágio 20 meses sobre borras. Primeiro lote degorjado dezembro 2017.",
+          "notes": "Versão espumante do mesmo blend do branco tranquilo (Arinto + Chardonnay). Vindima em duas datas distintas para cada casta. 6.12 g/L acidez + pH 3.16. Aromas: flores de citrinos, mel, tosta, panificação, ananás, pêssego — perfil mais tropical que o Luiz Costa.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 1,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "flores de citrinos",
+              "ananás",
+              "pêssego"
+            ],
+            "secondary": [
+              "mel",
+              "tosta",
+              "panificação"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivos",
+              "peixes gordos",
+              "carnes brancas",
+              "sobremesas leves"
+            ],
+            "notes": "Arinto + Chardonnay espumante: acidez 6.12 g/L + perfil tropical (ananás, pêssego). Versátil. Para contexto Nanban: Hassun (Aperitivos Variados) — perfil tropical harmoniza com yuba e tempura."
+          }
+        },
+        {
+          "id": "csj-qdpl-espumante-baga-2016",
+          "name": "Espumante Quinta do Poço do Lobo Baga",
+          "quinta": "Quinta do Poço do Lobo",
+          "vintage": 2016,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.72,
+          "ph": 3.14,
+          "winemaking": "100% Baga. Apenas primeiro mosto (free-run). Clarificação. Fermentação 15 dias em inox temperatura moderadamente controlada. Método clássico: tiragem abril 2017, refermentação 25 dias a 15°C. Estágio 18 meses sobre borras. Primeiro lote degorjado novembro 2018.",
+          "notes": "Espumante branco de Baga — a casta tinta vinificada como branco (bica aberta + apenas primeiro mosto). Cor amarela palha com nuances plúmbeas (ligeiro traço da pele escura da Baga). 3.9 g/L açúcar total: Bruto (não Bruto Natural). Aromas: frutos frescos e secos, tosta, biscoito.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 1,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutos frescos",
+              "frutos secos"
+            ],
+            "secondary": [
+              "tosta",
+              "biscoito"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "canapés",
+              "peixe",
+              "carnes brancas",
+              "carnes vermelhas magras"
+            ],
+            "notes": "Baga vinificada como branco espumante: sem taninos, acidez 5.72 g/L moderada. Corpo leve. Versátil para mesa inteira como o produtor sugere (canapés a carne vermelha magra). Para contexto Nanban: Hassun."
+          }
+        },
+        {
+          "id": "csj-qdpl-espumante-tinto-2014",
+          "name": "Espumante Quinta do Poço do Lobo Tinto Bruto",
+          "quinta": "Quinta do Poço do Lobo",
+          "vintage": 2014,
+          "doc": "Beira Atlântico IGP",
+          "type": "sparkling",
+          "varieties": [
+            "Baga",
+            "Touriga Nacional",
+            "Cabernet Sauvignon"
+          ],
+          "alcohol": 12.8,
+          "acidity_gl": 5.48,
+          "ph": 3.48,
+          "winemaking": "Baga 40% + Touriga Nacional 30% + Cabernet Sauvignon 30%, uvas da Quinta do Poço do Lobo. Colheita no momento ideal para vinho base de espumante. Desengace total. Fermentação em inox temperatura controlada. Fermentação maloláctica após desencuba. Método clássico: tiragem início 2018, refermentação 24 dias a 14°C. Estágio 5 meses sobre borras.",
+          "notes": "Classificado como Beira Atlântico IGP (não Bairrada DOC) porque o Cabernet Sauvignon não é casta permitida no DOC. 5 meses sur lees é muito curto — o mais jovem dos espumantes da ficha. 8.6 g/L açúcar total (Bruto, não Bruto Natural). pH 3.48 = o mais alto dos espumantes (menor acidez percebida). FML completa: reduz acidez, suaviza perfil. Aromas: frutos negros, balsâmico, anisado, vegetal e apimentado (Cabernet).",
+          "structure": {
+            "acidity": 5,
+            "tannins": 3,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutos negros do bosque",
+              "balsâmico",
+              "anisado"
+            ],
+            "secondary": [
+              "vegetal",
+              "apimentado (Cabernet Sauvignon)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixes gordos",
+              "carnes vermelhas grelhadas ou assadas",
+              "carnes bem condimentadas"
+            ],
+            "notes": "Espumante tinto com Cabernet: taninos 3/10, acidez 5/10, corpo médio. O mais gastronómico dos espumantes da ficha — adequado para carnes, não apenas para aperitivo. FML suaviza. 5mo sur lees = perfil jovem e direto. IGP não DOC pela presença de Cabernet Sauvignon."
+          }
+        },
+        {
+          "id": "csj-frei-joao-reserva-tinto-2014",
+          "name": "Frei João Reserva Tinto",
+          "quinta": null,
+          "vintage": 2014,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "Baga",
+            "Touriga Nacional"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.59,
+          "ph": 3.45,
+          "winemaking": "Baga 80% + Touriga Nacional 20%. Vindima manual. Maceração completa em lagar com pisador pneumático. Fermentação maloláctica. Estágio 6 meses em pipas de carvalho francês + 18 meses em cuba de cimento — método tradicional da casa. Engarrafado 2017 sem colagem nem estabilização.",
+          "notes": "Etiqueta Frei João, pertencente ao grupo Caves São João. Tradição da casa: estágio em cimento após barrica, sem intervenção clarificante. 12.5% + 5.59 g/L acidez + taninos presentes mas domados. Potencial de guarda declarado: mínimo 15 anos. Açúcar residual 2.8 g/L (seco).",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos negros",
+              "resinas",
+              "figo seco"
+            ],
+            "secondary": [
+              "feno",
+              "especiarias"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carnes assadas ou grelhadas",
+              "peixes gordos",
+              "caça",
+              "queijo curado"
+            ],
+            "notes": "Baga 80% + TN 20% em cimento: taninos 7/10 domados pelo tempo em adega, acidez 5.59 g/L moderada para Bairrada. Potencial de guarda de 15+ anos. Para pratos de sabores e texturas intensas, como o produtor declara."
+          }
+        },
+        {
+          "id": "csj-frei-joao-branco-reserva-2016",
+          "name": "Frei João Branco Reserva Clássico",
+          "quinta": null,
+          "vintage": 2016,
+          "doc": "Bairrada DOC",
+          "type": "white",
+          "varieties": [
+            "Cercial",
+            "Bical"
+          ],
+          "alcohol": 11.7,
+          "acidity_gl": 7.28,
+          "ph": 3.1,
+          "winemaking": "Cercial 70% + Bical 30%. Colheita no momento ideal. Desengace + esmagamento + maceração prolongada a 9°C. Prensagem das massas. Fermentação em barricas de carvalho francês. Batonnage 5 meses. Engarrafado maio 2017. Estágio 18 meses em garrafa antes da comercialização. 2ª edição.",
+          "notes": "Blend clássico de Bairrada branco — Cercial (frescura + acidez alta) + Bical (textura + aromas). 7.28 g/L acidez = uma das mais altas dos brancos secos do DB. pH 3.10 muito baixo. 11.7% álcool leve. Maceração a frio + barrica + batonnage + 18mo garrafa: complexidade progressiva. Açúcar residual 1.6 g/L (seco). Potencial de guarda: 6+ anos.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutado",
+              "mineral",
+              "vegetal"
+            ],
+            "secondary": [
+              "especiado",
+              "barrica integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carnes magras",
+              "peixes gordos",
+              "marisco",
+              "marisco com molhos"
+            ],
+            "notes": "Cercial + Bical + 7.28 g/L acidez + barrica: estrutura alta e frescura. Segundo o produtor, suporta marisco mesmo com molhos — a acidez corta gordura e molho. Para contexto Nanban: candidato para Cataplana de Tofu e Ameijoas (Dish 5) pela acidez alta + compatibilidade declarada com marisco em molho."
+          }
+        },
+        {
+          "id": "csj-frei-joao-colheita-tardia-2016",
+          "name": "Frei João Colheita Tardia",
+          "quinta": null,
+          "vintage": 2016,
+          "doc": "Bairrada DOC",
+          "type": "white",
+          "varieties": [
+            "Semillon",
+            "Alvarinho"
+          ],
+          "alcohol": 14.6,
+          "acidity_gl": 7.5,
+          "ph": 3.38,
+          "winemaking": "Semillon 65% + Alvarinho 35%. Colheita início de novembro com botritização nobre importante. Prensagem. Mosto simbolicamente decantado. Fermentação 1 mês em barricas avinhadas de carvalho. Amadurecimento em barricas 18 meses adicionais.",
+          "notes": "Nome não constava da ficha técnica — designação 'Colheita Tardia' atribuída por perfil. Botritização nobre intensa: 117 g/L açúcar total + 14.6% álcool + 7.50 g/L acidez = equilíbrio notável entre doçura e frescura. Blend incomum: Semillon (botrytis, Bordéus) + Alvarinho (aromático, atlântico). Potencial de guarda: 10-15 anos. Pratos recomendados pelo produtor: foie-gras, patês, sobremesas de frutos secos e caramelizadas.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "full",
+            "sweetness": "sweet",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "casca de laranja confitada",
+              "alperce seco",
+              "marmelada"
+            ],
+            "secondary": [
+              "especiarias",
+              "tosta"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "foie-gras",
+              "patês",
+              "entradas ricas",
+              "sobremesas de frutos secos",
+              "sobremesas caramelizadas"
+            ],
+            "notes": "Colheita tardia botrytizada: açúcar 117 g/L + acidez 8/10 (7.50 g/L) = clássico equilíbrio doçura/acidez. O único vinho doce botrytizado de Bairrada no DB. Para contexto Nanban: Mizumono (Dish 10 — Parfait + Castella) como alternativa regional ao Ribeiro Santo Colheita Tardia do Dão. As notas de laranja confitada e alperce seco espelham o Castella."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Casa de Saima",
+      "region": "Bairrada – Anadia",
+      "producer_notes": "Produtor histórico do DOC Bairrada com décadas de experiência exclusiva na casta Baga. Estilo definido pela elegância e precisão — menos concentração bruta, mais equilíbrio e frescura atlântica. Terroir: solos argilo-calcários com influência atlântica marcada. Lagares abertos para o topo de gama (Grande Reserva — uvas das mondas, seleção dos melhores cachos após desbaste). O Tonel 10 representa o estilo moderno: Baga leve e imediata, fermentação parcial em tonel de madeira antigo + inox. Os brancos exploram o trio clássico de Bairrada (Bical + Maria Gomes + Cercial) de vinhas velhas sem barrica, apenas inox. Espumante de Baga em método clássico com 24 meses sur lees.",
+      "wines": [
+        {
+          "id": "saima-espumante-baga-bruto-2022",
+          "name": "Casa de Saima Espumante Baga Bruto",
+          "vintage": 2022,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 7.0,
+          "ph": null,
+          "winemaking": "100% Baga. Colheita manual. Prensagem suave. Fermentação em inox. Segunda fermentação em garrafa (método clássico). Estágio 24 meses sobre borras. Bruto (0.5 g/L açúcar total).",
+          "notes": "Espumante de Baga 100% em método clássico — 24 meses sur lees. 12% + 7 g/L acidez (8/10) + 0.5 g/L açúcar (Bruto extremamente seco). Cor âmbar claro — resultado da pele espessa da Baga, sinal de presença da casta mesmo em espumante branco. Mousse cremosa declarada. Clima atlântico + argilo-calcário.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 1,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos",
+              "flores delicadas"
+            ],
+            "secondary": [
+              "mousse cremosa (lees 24mo)",
+              "mineralidade atlântica"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "ostras",
+              "peixe delicado",
+              "aperitivos sofisticados"
+            ],
+            "notes": "Baga espumante: acidez 8/10, sem taninos, 24mo sur lees, bruto extremo (0.5 g/L). Perfil estruturado e mineral. Para contexto Nanban: Hassun (Aperitivos Variados, Dish 2) — borbulha fina + acidez alta lidam com a heterogeneidade do prato. Alternativa ao Luiz Costa/Bágeiras para o mesmo momento."
+          }
+        },
+        {
+          "id": "saima-baga-tonel-10",
+          "name": "Casa de Saima Baga Tonel 10",
+          "vintage": null,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 6.7,
+          "ph": null,
+          "winemaking": "100% Baga. Extração suave e menos prolongada (maceração curta). Fermentação parcialmente em inox e parcialmente em tonel de madeira antigo. Estágio 10 meses em carvalho e cubas de inox. Estilo concebido para consumo jovem.",
+          "notes": "Conceito oposto à Grande Reserva: Baga na forma mais leve, fresca e imediata. 'Sem a concentração e estrutura intensas que muitas vezes lhe estão associadas.' Maceração curta + tonel antigo + inox: acidez preservada (6.7 g/L), taninos suaves. 0.4 g/L açúcar (praticamente zero). Voltado para modernizar a perceção da Baga.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 4,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos",
+              "especiarias"
+            ],
+            "secondary": [
+              "notas vegetais",
+              "vinoso"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carnes brancas",
+              "aves",
+              "cogumelos",
+              "queijo semi-curado",
+              "pratos leves"
+            ],
+            "notes": "Baga leve: taninos 4/10 (extração curta), acidez 6.7 g/L, corpo leve. O mais versátil dos tintos de Bairrada do DB — estilo próximo do Pato Rebel. Para contexto Nanban: potencial para Gratin de Tofu (Dish 7) se a opção branca já foi usada, ou pratos mais leves. Bebido jovem."
+          }
+        },
+        {
+          "id": "saima-grande-reserva",
+          "name": "Casa de Saima Grande Reserva",
+          "vintage": null,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 6.0,
+          "ph": null,
+          "winemaking": "100% Baga. Uvas das mondas — seleção dos melhores cachos que permanecem após desbaste (rendimento muito reduzido). Fermentação em lagares abertos (método tradicional da Bairrada). Estágio 18 meses em barricas de carvalho. 0.8 g/L açúcar.",
+          "notes": "Topo de gama tinto. Conceito das mondas: apenas os cachos selecionados após desbaste manual — concentração máxima por seleção na vinha, não por extração intensa na adega. 13.5% + 6 g/L acidez + lagares abertos + 18mo barrica. Taninos aveludados de sabor intenso. 'Frescura, taninos polidos e final longo e sereno' — estilo elegante apesar da concentração.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos maduros",
+              "chão de floresta"
+            ],
+            "secondary": [
+              "floral",
+              "especiarias discretas"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "caça",
+              "borrego",
+              "queijo curado"
+            ],
+            "notes": "Baga de mondas: taninos 7/10 aveludados (lagares abertos + 18mo barrica), acidez 6/10, 13.5% corpo pleno. Para pratos de carácter. Não adequado para menu Nanban atual."
+          }
+        },
+        {
+          "id": "saima-reserva-tinto",
+          "name": "Casa de Saima Reserva Tinto",
+          "vintage": null,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "Baga",
+            "Touriga Nacional"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.2,
+          "ph": null,
+          "winemaking": "Baga + Touriga Nacional (proporções não especificadas). Fermentação em inox com controlo de temperatura. Estágio 18 meses em pipas de carvalho. <1.5 g/L açúcar.",
+          "notes": "Blend Baga + Touriga Nacional — a TN aporta elegância aromática (flores, frescura) ao carácter firme da Baga. 13% + 6.2 g/L acidez + 18mo pipas. 'Amplo e harmonioso, taninos polidos, final longo e expressivo.' Versátil à mesa com potencial de guarda. Percentagens de castas não declaradas na ficha.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos maduros",
+              "flores secas"
+            ],
+            "secondary": [
+              "especiaria fina",
+              "balsâmico"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "aves",
+              "borrego",
+              "queijo semi-curado a curado"
+            ],
+            "notes": "Baga + TN: taninos 6/10 polidos, acidez 6.2 g/L, corpo médio. Mais versátil que a Grande Reserva. O 'embaixador' da casa — perfil equilibrado para mesa variada."
+          }
+        },
+        {
+          "id": "saima-vinhas-velhas-branco",
+          "name": "Casa de Saima Vinhas Velhas Branco",
+          "vintage": null,
+          "doc": "Bairrada DOC",
+          "type": "white",
+          "varieties": [
+            "Bical",
+            "Maria Gomes",
+            "Cercial"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 7.0,
+          "ph": null,
+          "winemaking": "Bical + Maria Gomes + Cercial, de parcelas distintas de vinhas velhas. Fermentação em inox a temperatura controlada. Estágio 4 meses em cubas de inox + 2 meses em garrafa. Solo: argilo-calcário com ocorrência de areia. 1.8 g/L açúcar.",
+          "notes": "Trio clássico branco de Bairrada em vinhas velhas. 100% inox sem barrica — pureza varietal e frescura máxima. 13% + 7 g/L acidez (8/10) + solo com areia (característica distinta dos outros brancos do DB). Cor citrina límpida. Produção simples mas de qualidade: vinhas velhas + inox + garrafa. Versátil para mesa.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "fruta branca",
+              "citrinos"
+            ],
+            "secondary": [
+              "mineralidade atlântica"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe",
+              "marisco",
+              "carnes brancas"
+            ],
+            "notes": "Vinhas velhas Bical + Maria Gomes + Cercial em inox: acidez 8/10 (7 g/L), corpo médio, sem barrica. Frescura e mineralidade atlântica. Para contexto Nanban: Ceviche de Tofu + Yuzu (Dish 3) — acidez alta espelha o yuzu; Cataplana de Tofu e Ameijoas (Dish 5) — afinidade natural com marisco. O Cercial da mistura reforça a ligação ao Frei João Branco Reserva Clássico em estilo."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Caves São Domingos",
+      "region": "Bairrada",
+      "producer_notes": "Caves históricas do DOC Bairrada com forte aposta em variedades internacionais ao lado das castas tradicionais. Gama de espumantes premium 'Elpídio' (em homenagem ao fundador) e a linha 'Lopo de Freitas' — método clássico com blends que incluem Cerceal, Arinto, Baga, Sauvignon Blanc, Pinot Noir e Chardonnay. Nos tintos tranquilos, presença significativa de Merlot e Syrah ao lado de Touriga Nacional e Baga. Estilo mais internacional e comercial comparativamente a Filipa Pato, Bágeiras ou Casa de Saima. Dados analíticos (acidez, pH) não disponíveis nas fichas — estrutura estimada a partir de perfis varietais.",
+      "wines": [
+        {
+          "id": "csdomingos-lopo-de-freitas-bruto",
+          "name": "Lopo de Freitas Bruto",
+          "vintage": null,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Cerceal",
+            "Chardonnay"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Cerceal 70% + Chardonnay 30%. Método clássico (bolha finíssima). Tempo de estágio sobre borras não declarado.",
+          "notes": "Linha de espumante branco com foco em Cerceal (alta acidez natural) complementado por Chardonnay. 'Acidez crocante' e 'bolha finíssima' — confirmam carácter atlântico e método clássico de qualidade. Dados analíticos não disponíveis.",
+          "structure": {
+            "acidity": 8,
+            "tannins": 1,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta de polpa branca",
+              "mineral"
+            ],
+            "secondary": [
+              "fruto seco",
+              "cremosidade (lees)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivos de salmão",
+              "ostras",
+              "marisco"
+            ],
+            "notes": "Cerceal 70% + 'acidez crocante': acidez estimada 8/10. Bolha finíssima + cremosidade. Para contexto Nanban: Hassun (Aperitivos Variados, Dish 2) ou Goma Doufu com uni (Dish 1)."
+          }
+        },
+        {
+          "id": "csdomingos-elpidio-cuvee",
+          "name": "Elpídio Cuvée",
+          "vintage": null,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Baga",
+            "Sauvignon Blanc"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Baga 60% + Sauvignon Blanc 40%. Método clássico. Tempo de estágio não declarado.",
+          "notes": "Blend incomum: Baga (acidez estrutural alta, pele espessa) + Sauvignon Blanc (aromático, cítrico). 'Extrema mineralidade' e 'acidez fina e refrescante' declaradas. Textura aveludada. Dados analíticos não disponíveis.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 1,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos de polpa branca",
+              "mineral intenso"
+            ],
+            "secondary": [
+              "tostado delicado"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "peixe delicado",
+              "aperitivos"
+            ],
+            "notes": "Baga + SB em espumante: Baga traz acidez e estrutura, SB traz aromaticidade cítrica. Acidez estimada 8/10. Para contexto Nanban: Hassun ou como espumante de abertura."
+          }
+        },
+        {
+          "id": "csdomingos-elpidio-velha-reserva",
+          "name": "Elpídio Velha Reserva",
+          "vintage": null,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Pinot Noir",
+            "Chardonnay"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Pinot Noir 50% + Chardonnay 50%. Método clássico. Estágio longo sobre borras (não quantificado — 'Velha Reserva' sugere tempo extended).",
+          "notes": "Blend Champagne-style (PN + Chardonnay). 'Muito cremoso e suave' — lees aging prolongado. Notas florais, mineral, tosta discreta. Dados analíticos não disponíveis. O mais próximo do estilo Champagne dos espumantes do DB.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 1,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "mineral"
+            ],
+            "secondary": [
+              "tosta discreta",
+              "cremosidade (lees)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco nobre",
+              "peixe fino",
+              "aperitivos elegantes"
+            ],
+            "notes": "PN + Chardonnay estilo Champagne: acidez estimada 7/10, cremoso. Para contexto Nanban: Hassun. Não diferencia muito do Luiz Costa (também PN+Chardonnay) sem dados analíticos."
+          }
+        },
+        {
+          "id": "csdomingos-elpidio-superior",
+          "name": "Elpídio Superior",
+          "vintage": null,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Arinto",
+            "Chardonnay"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Arinto 50% + Chardonnay 50%. Método clássico. 'Longo estágio' declarado pelo produtor (não quantificado).",
+          "notes": "Arinto (acidez muito alta, mineral) + Chardonnay (textura, cremosidade). 'Frescura e mousse perfeitas, final profundo e sofisticado.' Longo estágio sobre borras declarado. Arinto é uma das castas brancas com acidez mais alta de Portugal. Dados analíticos não disponíveis.",
+          "structure": {
+            "acidity": 8,
+            "tannins": 1,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "pêra",
+              "maçã",
+              "cítrico"
+            ],
+            "secondary": [
+              "tostado",
+              "cremosidade (lees)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "ostras",
+              "peixe delicado",
+              "aperitivos"
+            ],
+            "notes": "Arinto 50%: acidez estimada 8/10. 'Longo estágio' = complexidade de lees. Para contexto Nanban: Hassun (Dish 2) ou Ceviche de Tofu + Yuzu (Dish 3 — acidez alta e notas cítricas espelham yuzu)."
+          }
+        },
+        {
+          "id": "csdomingos-grande-reserva-tinto",
+          "name": "São Domingos Grande Reserva Tinto",
+          "vintage": null,
+          "doc": "Bairrada / IGP Beiras",
+          "type": "red",
+          "varieties": [
+            "Baga",
+            "Merlot",
+            "Touriga Nacional"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 5.5,
+          "ph": null,
+          "winemaking": "Baga 40% + Merlot 40% + Touriga Nacional 20%. Estágio em barrica (tempo não declarado). Merlot não é casta autorizada no DOC Bairrada — classificação provável IGP.",
+          "notes": "14.5% álcool elevado. Blend internacional com Baga como base estrutural + Merlot (maciez, cor) + TN (aroma). 'Taninos sedosos' + 'fruta surpreendentemente fresca' = acidez acima do esperado para 14.5% alc. Acidity_gl 5.5 g/L estimada: Baga 40% traz acidez estrutural; Merlot 40% modera; 14.5% alc com frescura percetível sugere ~5.5.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 6,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos",
+              "chocolate"
+            ],
+            "secondary": [
+              "especiarias",
+              "tosta (barrica)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "pratos de forno",
+              "grelhados",
+              "carne vermelha",
+              "caça"
+            ],
+            "notes": "14.5% + barrica + Merlot: tannins sedosos, corpo pleno. Estilo mais internacional que os Bagas puros. Não adequado para menu Nanban atual."
+          }
+        },
+        {
+          "id": "csdomingos-grande-escolha-tinto",
+          "name": "Grande Escolha Tinto",
+          "vintage": null,
+          "doc": "IGP Beiras",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Merlot",
+            "Syrah"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.0,
+          "ph": null,
+          "winemaking": "Touriga Nacional 50% + Merlot 30% + Syrah 20%. Estágio em madeira (tempo não declarado). Sem Baga — sem enquadramento no DOC Bairrada; classificação IGP.",
+          "notes": "O único vinho do DB de Bairrada sem Baga. 14% álcool. TN + Merlot + Syrah = estilo completamente internacional, sem ancoragem na casta regional. 'Macio e redondo na boca' = baixa perceção de acidez. Acidity_gl 5.0 g/L estimada: sem Baga, sem âncora ácida regional; TN+Merlot+Syrah a 14% alc em estilo redondo.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 5,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos silvestres",
+              "floral"
+            ],
+            "secondary": [
+              "especiaria",
+              "madeira integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carnes condimentadas",
+              "assados",
+              "guisados",
+              "carne com gordura"
+            ],
+            "notes": "TN + Merlot + Syrah: taninos 5/10 suaves (madeira bem integrada), 14% corpo pleno. Estilo Alentejo mais do que Bairrada. Não adequado para menu Nanban."
+          }
+        },
+        {
+          "id": "csdomingos-volupia-branco",
+          "name": "Volúpia Branco",
+          "vintage": null,
+          "doc": "Bairrada DOC",
+          "type": "white",
+          "varieties": [
+            "Sauvignon Blanc",
+            "Chardonnay",
+            "Maria Gomes"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 6.2,
+          "ph": null,
+          "winemaking": "Sauvignon Blanc 50% + Chardonnay 35% + Maria Gomes 15%. Vinificação não detalhada. 'Cremosidade' sugere contacto com borras ou barrica.",
+          "notes": "14% álcool elevado para branco — corpo pleno garantido. SB 50% traz aromaticidade tropical e cítrica; Chardonnay traz textura; Maria Gomes traz acidez atlântica. 'Muita frescura e mineralidade' explícito na nota de prova. Acidity_gl 6.2 g/L estimada: SB 50% é o motor ácido; 14% alc modera perceção; 'frescura' declarada a este álcool implica acidez real ≥6.0.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta tropical",
+              "fruta cítrica"
+            ],
+            "secondary": [
+              "mineral",
+              "cremosidade"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "salmão",
+              "caldeirada de peixe",
+              "enguias",
+              "queijo de pasta dura"
+            ],
+            "notes": "SB + Chardonnay + 14%: corpo pleno, aromas tropicais e cítricos, mineralidade. O branco mais rico e aromático de Bairrada no DB. Para contexto Nanban: Cataplana de Tofu e Ameijoas (Dish 5) pelo corpo e afinidade com marisco; ou Gratin de Tofu (Dish 7) pelo volume de boca."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta dos Abibes",
+      "region": "Bairrada",
+      "producer_notes": "Produtor de Bairrada com gama diversificada: castas tradicionais da região (Bical, Baga, Arinto) e internacionais (Touriga Nacional, Cabernet Sauvignon). Destaque para o Bical em barrica (fermentação terminada em carvalho 500L), o espumante Arinto + Baga e o conceito Amonite — lote de campo de 7 castas (4 tintas + 3 brancas). Produções limitadas em vários referências (2000–2133 garrafas). Estilo equilibrado entre tradição (Bical, Baga) e abordagem mais estruturada com uso de madeira nova (70% barricas novas na linha Sublime e Reserva). Dados analíticos de acidez não disponíveis.",
+      "wines": [
+        {
+          "id": "abibes-espumante-arinto-baga-2023",
+          "name": "Quinta dos Abibes Espumante Arinto & Baga Reserva",
+          "vintage": 2023,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Arinto",
+            "Baga"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Arinto 50% + Baga 50%. Desengace total, prensagem pneumática suave, fermentação a 16°C. Da Baga, aproveitado apenas ~40% do rendimento (free-run seletivo). Método clássico. Estágio 18 meses em cave + 3 meses após dégorgement.",
+          "notes": "Blend original: Arinto (acidez muito alta, mineral) + Baga (apenas 40% do rendimento — só o mosto mais fino). Cor citrina com laivos dourados. 'Crocante' e bolha fina persistente com coroa. Longevidade declarada: 3-5 anos. Aromas de fruta vermelha (mirtilo, cassis) incomuns num espumante branco — presença da Baga mesmo em vinificação bica aberta seletiva.",
+          "structure": {
+            "acidity": 8,
+            "tannins": 1,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "mirtilo",
+              "cassis",
+              "mineral"
+            ],
+            "secondary": [
+              "maçã verde",
+              "brioche"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivos",
+              "leitão à Bairrada",
+              "cozinha mediterrânica"
+            ],
+            "notes": "Arinto + Baga 40% rendimento: acidez estimada 8/10, mousse cremosa, 21 meses total sobre borras. Para contexto Nanban: Hassun (Dish 2) — a bolha + acidez lidam com a diversidade do prato. As notas de mirtilo/cassis são incomuns num espumante branco e criam um perfil diferenciado."
+          }
+        },
+        {
+          "id": "abibes-reserva-tinto-2019",
+          "name": "Quinta dos Abibes Reserva Tinto",
+          "vintage": 2019,
+          "doc": "Bairrada / IGP Beiras",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Cabernet Sauvignon"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 5.2,
+          "ph": null,
+          "winemaking": "Touriga Nacional 50% + Cabernet Sauvignon 50%. Desengace total, maceração pelicular suave e prolongada, fermentação a 28°C. Estágio 12 meses em barricas de carvalho francês (70% novas + 30% 2º ano) + 6 meses em garrafa. Cabernet Sauvignon não é casta autorizada no DOC Bairrada — classificação provável IGP.",
+          "notes": "TN + CS em partes iguais com 70% barricas novas: estrutura internacional. 13.5% + barricas novas + CS = perfil mais bordalês do que Bairrada. 'Taninos equilibrados e elegantes' — acidity não destacada. Acidity_gl 5.2 g/L estimada: TN+CS sem Baga = sem âncora ácida regional; 'equilibrados' = sem frescura pronunciada.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 6,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "mirtilos",
+              "framboesas"
+            ],
+            "secondary": [
+              "tosta",
+              "floral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne assada no forno",
+              "queijo de pasta",
+              "peixe nobre"
+            ],
+            "notes": "TN + CS + 70% barrica nova: taninos 6/10 equilibrados, corpo pleno. Não adequado para menu Nanban atual."
+          }
+        },
+        {
+          "id": "abibes-amonite-lote-campo-2019",
+          "name": "Quinta dos Abibes Amonite – Lote de Campo",
+          "vintage": 2019,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "lote de 7 castas (4 tintas + 3 brancas)"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.8,
+          "ph": null,
+          "winemaking": "Lote de 7 castas (4 tintas + 3 brancas — variedades não especificadas). Desengace total, maceração pelicular suave, fermentação a 22°C. Sem maturação declarada. Produção: 2000 garrafas. Nota: label indica 2023, 'Ano de colheita' indica 2019 — vintage 2019 usado por ser dado analítico.",
+          "notes": "Conceito de lote de campo (field blend) com castas brancas e tintas co-fermentadas. A inclusão de castas brancas num tinto traz frescura e acidez ao blend — técnica histórica em Bairrada e Dão. 'Cor rubi aberto' = cor leve. 'Fresco, harmonioso, elegante.' 12.5% álcool contido. Longevidade declarada: 10 anos. Classificação DOC incerta pela composição incomum. 2000 garrafas.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 4,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha",
+              "fruta do bosque"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves",
+              "carnes magras",
+              "cogumelos",
+              "queijo fresco"
+            ],
+            "notes": "Field blend co-fermentado com brancas: taninos 4/10, corpo leve, frescura integrada. O mais leve dos tintos de Quinta dos Abibes. Para contexto Nanban: potencialmente o mais versátil dos tintos de Bairrada para pratos de carácter médio."
+          }
+        },
+        {
+          "id": "abibes-bical-2019",
+          "name": "Quinta dos Abibes Bical",
+          "vintage": 2019,
+          "doc": "Bairrada DOC",
+          "type": "white",
+          "varieties": [
+            "Bical"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.5,
+          "ph": null,
+          "winemaking": "100% Bical. Desengace total. Início de fermentação em inox com temperatura controlada, finalização da fermentação em barricas de carvalho francês de 500L. Estágio 12 meses em barrica de 1º ano + 12 meses em garrafa. Produção: 2133 garrafas.",
+          "notes": "Bical com fermentação terminada em barrica 500L (1º ano) — técnica que integra a madeira mais suavemente que uma barrica nova 225L. 'Acidez vibrante' explicitamente declarada — raro nos descritores de prova. Acidity_gl 6.5 g/L estimada: 'vibrante' = claramente perceptível; Bical é naturalmente alta-ácida em Bairrada; alinhado com Filipa Pato Nossa T.la Bical (6.5 g/L). 'Encorpado, amplo, persistente.' 2133 garrafas.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta cítrica",
+              "mineral",
+              "exótico"
+            ],
+            "secondary": [
+              "tosta suave",
+              "especiarias",
+              "fruta madura"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe assado",
+              "carne não maturada",
+              "marisco"
+            ],
+            "notes": "Bical + barrica 500L 1º ano + 12mo garrafa: 'acidez vibrante' estimada 8/10, corpo médio. Para contexto Nanban: Cataplana de Tofu e Ameijoas (Dish 5) — acidez alta + afinidade com peixe declarada. Alternativa ao Frei João Branco Reserva Clássico (também Cercial+Bical) para o mesmo momento."
+          }
+        },
+        {
+          "id": "abibes-sublime-tinto-2019",
+          "name": "Quinta dos Abibes Sublime Tinto",
+          "vintage": 2019,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.0,
+          "ph": null,
+          "winemaking": "100% Touriga Nacional. Desengace total, maceração pelicular suave e prolongada, fermentação a 28°C. Estágio 12 meses em barricas de carvalho francês (70% novas + 30% 2º ano) + 18 meses em garrafa.",
+          "notes": "TN puro com 70% barricas novas e 18 meses em garrafa — total ~30 meses de estágio. 14% álcool. 'Taninos bem definidos, madeira bem casada' — estrutura tânica e não ácida. Acidity_gl 5.0 g/L estimada: TN puro a 14% alc com 70% barrica nova = perfil de textura tânica, não frescura; notas de couro e baunilha confirmam amadurecimento. Longevidade 6-8 anos.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta madura",
+              "compota"
+            ],
+            "secondary": [
+              "especiaria",
+              "couro",
+              "baunilha"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "chanfana",
+              "carnes maturadas",
+              "queijo de pasta curado"
+            ],
+            "notes": "TN 100% + 70% novas + 18mo garrafa: taninos 7/10 bem definidos, corpo pleno, 14% álcool. Para pratos de carácter intenso. Não adequado para menu Nanban."
+          }
+        },
+        {
+          "id": "abibes-sublime-branco-2019",
+          "name": "Quinta dos Abibes Sublime Branco",
+          "vintage": 2019,
+          "doc": "Bairrada DOC",
+          "type": "white",
+          "varieties": [
+            "Arinto"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 6.0,
+          "ph": null,
+          "winemaking": "100% Arinto. Colheita 2019, engarrafado 2023. Desengace total. Início de fermentação em inox, finalização em barricas de carvalho francês de 225L (70% novas + 30% 2º ano). Estágio 12 meses em barrica + 6 meses em garrafa. Nota: 4 anos entre colheita e engarrafamento é excecional.",
+          "notes": "Arinto 100% com 225L 70% novas — abordagem mais intensa em madeira que o Bical 500L. Engarrafado em 2023 (4 anos após a colheita de 2019). Aromas: fruta tropical, flor de laranjeira, madeira elegante. 'Sabor fresco, fruta bastante equilibrada' = frescura presente mas integrada pela madeira intensa. Acidity_gl 6.0 g/L estimada: Arinto é naturalmente ácido; 13.5% alc + 12mo barrica nova modera perceção; 'fresca mas equilibrada' = ~6.0.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta tropical",
+              "flor de laranjeira"
+            ],
+            "secondary": [
+              "madeira elegante integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe assado",
+              "carne não maturada",
+              "marisco com molhos"
+            ],
+            "notes": "Arinto + 225L 70% novas + guarda longa antes de engarrafar: acidez alta estimada 8/10, corpo médio, aromas tropicais e florais. Para contexto Nanban: Ceviche de Tofu + Yuzu (Dish 3) — a flor de laranjeira espelha o yuzu; ou Cataplana de Tofu e Ameijoas (Dish 5)."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta do Ortigão",
+      "region": "Bairrada – Anadia",
+      "producer_notes": "Produtor familiar de Anadia no coração da Bairrada, a ~50m de altitude entre as serras do Caramulo e Buçaco. Vinhas de 1972 (as mais antigas) e 1999. Enólogos: Hugo Louro e Carla Rodrigues. Gama completa: tinto tranquilo (Baga), branco tranquilo (Arinto+Bical), espumante branco de Baga, espumante branco de Arinto+Bical+Cerceal (Blanc des Blancs), e espumante rosé de Baga. Todos os vinhos têm dados analíticos completos (pH + acidez g/L) nas fichas técnicas — uma das entradas mais ricas em dados do DB de Bairrada.",
+      "wines": [
+        {
+          "id": "ortigao-reserva-tinto-2020",
+          "name": "Ortigão Reserva Tinto",
+          "vintage": 2020,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 5.6,
+          "ph": 3.7,
+          "winemaking": "100% Baga. Vinhas de 1972 e 1999, Anadia. Desengace total, maceração pelicular prolongada, fermentação a 26°C. Estágio 12 meses em barricas de carvalho francês (30% nova + 70% 2ª). Mínimo 9 meses em cave adicional. Açúcar residual 1.5 g/L.",
+          "notes": "pH 3.70 excepcionalmente elevado para Baga — o mais alto pH de tinto no DB de Bairrada. 5.60 g/L + pH 3.70 = perfil mais macio e redondo que a maioria dos Bagas do DB. 'Taninos redondos que evidenciam a sua elegância.' Vinhas velhas 1972. Estilo elegante e imediato, não austero.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos maduros",
+              "frutos do bosque"
+            ],
+            "secondary": [
+              "tosta"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carnes vermelhas",
+              "queijos macios"
+            ],
+            "notes": "Baga com pH 3.70: o mais acessível e redondo dos Bagas tranquilos do DB. Taninos 6/10 redondos, corpo médio. Para contexto Nanban: o mais próximo de ser viável num menu de tofu, mas ainda exige proteína."
+          }
+        },
+        {
+          "id": "ortigao-arinto-bical-2023",
+          "name": "Ortigão Arinto Bical",
+          "vintage": 2023,
+          "doc": "Bairrada DOC",
+          "type": "white",
+          "varieties": [
+            "Arinto",
+            "Bical"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.0,
+          "ph": 3.3,
+          "winemaking": "Arinto 60% + Bical 40%. Desengace total, ligeira maceração pelicular a frio, decantação estática, fermentação a 16°C. 100% inox. Açúcar <1 g/L.",
+          "notes": "Blend clássico de Bairrada branco em inox puro — sem madeira. 6 g/L + pH 3.30 = bom equilíbrio acidez/volume. Arinto (60%) traz acidez e citrinos; Bical (40%) traz textura e fruta de polpa branca. 13% álcool com frescura integrada. Versátil e acessível.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos",
+              "frutos de polpa branca"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixes gordos",
+              "assados no forno",
+              "marisco"
+            ],
+            "notes": "Arinto 60% + inox: acidez 7/10 (6 g/L), frescura e volume. Para contexto Nanban: Cataplana de Tofu e Ameijoas (Dish 5) — acidez e afinidade com marisco. Alternativa mais acessível ao Frei João Branco Reserva (7.28 g/L, barrica) para o mesmo prato."
+          }
+        },
+        {
+          "id": "ortigao-cuvee-2020",
+          "name": "Ortigão Cuvée",
+          "vintage": 2020,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Arinto",
+            "Bical"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.8,
+          "ph": 3.4,
+          "winemaking": "Arinto + Bical (proporções não declaradas). Desengace total, prensagem suave, decantação estática natural, fermentação a 16°C. Método clássico. Dégorgement à la volée. Tempo de estágio sobre borras não declarado. Açúcar 1 g/L.",
+          "notes": "Espumante branco Arinto + Bical em método clássico. 5.80 g/L + pH 3.40. 'Elegante e harmonioso no final.' Aromas de frutos de polpa branca, frutos secos, ligeiro tostado. Referência de acidez para Arinto+Bical em espumante no DB de Bairrada.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 1,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutos de polpa branca"
+            ],
+            "secondary": [
+              "frutos secos",
+              "ligeiro tostado"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivos",
+              "pratos regionais",
+              "sobremesas leves"
+            ],
+            "notes": "Arinto+Bical espumante: 5.80 g/L + pH 3.40. Versátil. Para contexto Nanban: Hassun (Dish 2)."
+          }
+        },
+        {
+          "id": "ortigao-espumante-baga-2021",
+          "name": "Ortigão Espumante Baga",
+          "vintage": 2021,
+          "doc": "Bairrada DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.4,
+          "ph": 3.2,
+          "winemaking": "100% Baga. Desengace total, prensagem suave, decantação estática natural, fermentação a 16°C. Método clássico. Dégorgement à la voille. Estágio 18 meses pré-dégorgement. Açúcar <3 g/L.",
+          "notes": "Espumante branco de Baga 100% com 18 meses sur lees. 5.4 g/L + pH 3.2. Cor amarelo palha com tons de salmão — traço da pele espessa da Baga mesmo em bica aberta. 'Panificação/massa mãe' no aroma. Mousse cremosa intensa. Referência de acidez para espumante Baga branco no DB — ver nota de comparação.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 1,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos silvestres"
+            ],
+            "secondary": [
+              "panificação",
+              "massa mãe"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivos",
+              "leitão à Bairrada",
+              "chanfana",
+              "assados no forno"
+            ],
+            "notes": "Baga espumante 18mo sur lees: 5.4 g/L + pH 3.2 + mousse cremosa. Para contexto Nanban: Hassun (Dish 2). Referência empírica de acidez para todos os espumantes Baga do DB sem dados analíticos."
+          }
+        },
+        {
+          "id": "ortigao-espumante-rose-2022",
+          "name": "Espumante Ortigão Rosé",
+          "vintage": 2022,
+          "doc": "Beira Atlântico IGP",
+          "type": "sparkling",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.6,
+          "ph": 3.45,
+          "winemaking": "100% Baga. Desengace total, prensagem suave, decantação estática natural. Método clássico. Estágio 12 meses pré-dégorgement. Açúcar 1 g/L. Classificado como Beira Atlântico IGP (não Bairrada DOC) — provavelmente por razões de enquadramento do espumante rosé.",
+          "notes": "Espumante rosé de Baga com 12 meses sur lees. 5.6 g/L + pH 3.45. Ligeiramente rosado com tons salmão. 'Fresco, elegante, frutos vermelhos, bolha fina e persistente.' Referência de acidez para espumante Baga rosé. IGP Beira Atlântico apesar de ser 100% Baga de Anadia — classificação por escolha do produtor ou regras de enquadramento.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 2,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos maduros",
+              "frutos do bosque"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivos",
+              "charcutaria leve",
+              "peixe",
+              "marisco",
+              "carnes leves"
+            ],
+            "notes": "Baga rosé espumante: 5.6 g/L + pH 3.45 + 12mo lees. Versátil por definição. Para contexto Nanban: Hassun (Dish 2) ou Tofu Nanban-zuke (Dish 6 — marinada agridoce)."
+          }
+        },
+        {
+          "id": "ortigao-blanc-des-blancs-2023",
+          "name": "Ortigão Blanc des Blancs Brut",
+          "vintage": 2023,
+          "doc": "Beira Atlântico IGP",
+          "type": "sparkling",
+          "varieties": [
+            "Arinto",
+            "Bical",
+            "Cerceal"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 6.22,
+          "ph": 3.3,
+          "winemaking": "Arinto 40% + Bical 40% + Cerceal 20%. Desengace total, prensagem suave, decantação estática natural. Método clássico. Tempo de estágio não declarado. Açúcar 1.3 g/L. Classificado como IGP Beira Atlântico.",
+          "notes": "Blanc de Blancs em método clássico com o trio branco de Bairrada. 6.22 g/L + pH 3.30 — a acidez mais alta dos espumantes de Ortigão. Cerceal (20%) contribui com acidez estrutural; Arinto (40%) com citrinos; Bical (40%) com textura. 12% álcool leve. IGP Beira Atlântico.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 1,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos de polpa branca intensos"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivos",
+              "saladas",
+              "peixe branco grelhado",
+              "marisco"
+            ],
+            "notes": "Arinto+Bical+Cerceal em blanc de blancs: 6.22 g/L + 12% álcool = o mais leve e ácido dos espumantes de Ortigão. Para contexto Nanban: Hassun (Dish 2) ou Goma Doufu com uni (Dish 1)."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Sidónio de Sousa",
+      "region": "Bairrada – Ancas, Anadia",
+      "producer_notes": "Produtor de referência de Bairrada, baseado em Ancas, Anadia. Filosofia de viticultura sustentável. Vinificação em pequenos lagares abertos com pisa manual em todos os vinhos — técnica ancestral que garante extração delicada. Gama inclui tanto Baga tradicional como Merlot (IGP), ambos fermentados pelos mesmos métodos de lagar. O Reserva Baga usa tonéis de carvalho nacional avinhado — madeira portuguesa não nova, abordagem tradicional da região. Dados técnicos disponíveis para ambos os vinhos (pH + acidez g/L). Apenas dois vinhos disponíveis na ficha.",
+      "wines": [
+        {
+          "id": "sousa-merlot-2018",
+          "name": "Sidónio de Sousa Merlot",
+          "vintage": 2018,
+          "doc": "Bairrada IGP",
+          "type": "red",
+          "varieties": [
+            "Merlot"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 5.08,
+          "ph": 3.45,
+          "winemaking": "100% Merlot. Vindima manual. Fermentação em pequenos lagares abertos com pisa manual (extração delicada). Estágio 6 meses em barricas novas de carvalho francês. Terroir argilo-calcário, Ancas. Merlot não é casta autorizada no DOC Bairrada — classificação IGP.",
+          "notes": "Merlot vinificado com técnica ancestral de Bairrada (lagares + pisa manual) — combinação incomum. 14.5% + 5.08 g/L + pH 3.45 + barricas novas: perfil internacional com método tradicional. Harmonização declarada inclui 'pratos de inspiração chinesa' — nota relevante para contexto Nanban. Potencial de guarda até ~2027.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 5,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutos silvestres",
+              "frutos vermelhos"
+            ],
+            "secondary": [
+              "chocolate",
+              "especiarias",
+              "tosta (barrica nova)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carnes brancas",
+              "massas",
+              "queijo de pasta mole",
+              "pratos de inspiração asiática"
+            ],
+            "notes": "Merlot com pisa manual + barrica nova: taninos 5/10 macios, acidez 5/10, corpo pleno (14.5%). O produtor declara explicitamente 'pratos de inspiração chinesa' — o único vinho do DB de Bairrada com essa indicação. Para contexto Nanban: potencialmente o tinto de Bairrada mais versátil para pratos de carácter médio do menu."
+          }
+        },
+        {
+          "id": "sousa-reserva-baga-2019",
+          "name": "Sidónio de Sousa Reserva",
+          "vintage": 2019,
+          "doc": "Bairrada DOC",
+          "type": "red",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.71,
+          "ph": 3.38,
+          "winemaking": "100% Baga. Vindima manual. Fermentação em pequenos lagares abertos sem adição de leveduras ou enzimas (fermentação natural). Pisa manual. Estágio 12 meses em tonéis de carvalho nacional avinhado (madeira portuguesa não nova). Potencial de guarda: 10 anos.",
+          "notes": "Baga com fermentação natural + tonel de carvalho nacional avinhado — dupla tradição: sem leveduras externas, madeira portuguesa envelhecida (não nova). 13% + 5.71 g/L + pH 3.38. 'Taninos bem estruturados e de excelente qualidade, final encorpado e macio.' O carvalho nacional avinhado dá integração suave sem sobrepor a fruta. Comparado com Frei João Reserva (cimento) e Bágeiras (tonel antigo) — todos métodos de estágio em recipiente grande sem barrica nova.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos silvestres frescos"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "chanfana",
+              "carnes vermelhas grelhadas",
+              "queijos fortes",
+              "pratos bem condimentados"
+            ],
+            "notes": "Baga natural + tonel nacional: taninos 7/10 estruturados, acidez 5.71 g/L, corpo pleno. Estilo tradicional sem intervenção na fermentação. Para pratos de carácter intenso — não adequado para menu Nanban atual."
+          }
+        }
+      ]
+    }
+  ]
+}

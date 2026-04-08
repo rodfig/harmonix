@@ -1,0 +1,168 @@
+{
+  "producer": "Dalva",
+  "generated_at": "2026-03-01T11:20:27.357972",
+  "found_count": 4,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "dalva-dry-white-10-years",
+      "producer": "Dalva",
+      "name": "Dry White 10 Years Old",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Rosé Mateus Dry 75 Cl",
+          "confidence": "no_match",
+          "score": 0.363,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 19.95,
+          "name_found": "Dalva 10 anos Dry White Porto",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/pt/branco-envelhecido/22099-dalva-10-years-dry-white-port-5603003110759.html"
+        }
+      },
+      "best_retail": 19.95,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "dalva-lbv-2019",
+      "producer": "Dalva",
+      "name": "Late Bottled Vintage",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Murganheira Vintage 75 Cl",
+          "confidence": "no_match",
+          "score": 0.423,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 15.85,
+          "name_found": "Dalva LBV Porto 2019",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/pt/porto-lbv/22105-dalva-lbv-port-2017-5603003004638.html"
+        }
+      },
+      "best_retail": 15.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "dalva-10-year-old-tawny",
+      "producer": "Dalva",
+      "name": "10 Year Old Tawny",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 19.95,
+          "name_found": "Dalva 10 anos Tawny Porto",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/pt/tawny-envelhecido/22098-dalva-10-years-port-5603003110070.html"
+        }
+      },
+      "best_retail": 19.95,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "dalva-20-year-old-tawny",
+      "producer": "Dalva",
+      "name": "20 Year Old Tawny",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 44.65,
+          "name_found": "Dalva 20 anos Tawny Porto",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/pt/tawny-envelhecido/22100-dalva-20-years-port-5603003110087.html"
+        }
+      },
+      "best_retail": 44.65,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    }
+  ]
+}

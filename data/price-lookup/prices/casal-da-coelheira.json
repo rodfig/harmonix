@@ -1,0 +1,137 @@
+{
+  "producer": "Casal da Coelheira",
+  "generated_at": "2026-03-01T11:20:27.371399",
+  "found_count": 3,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "casal-da-coelheira-private-collection-fernao-pires",
+      "producer": "Casal da Coelheira",
+      "name": "Casal da Coelheira Private Collection Fernão Pires",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Adega da Corga Reserva Tinto 2019",
+          "confidence": "no_match",
+          "score": 0.097,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta da Cheira Alvarinho branco",
+          "confidence": "no_match",
+          "score": 0.103,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "Granvine": {
+          "retail_price": 9.89,
+          "name_found": "Casal da Coelheira Fernão Pires Private Collection Branco 2025",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://granvine.com/pt/casal-da-coelheira-fern-o-pires-private-collection-branco-2025"
+        }
+      },
+      "best_retail": 9.89,
+      "best_source": "Granvine",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "casal-da-coelheira-private-collection-verdelho",
+      "producer": "Casal da Coelheira",
+      "name": "Casal da Coelheira Private Collection Verdelho",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Adega da Corga Reserva Tinto 2019",
+          "confidence": "no_match",
+          "score": 0.113,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta da Cheira Alvarinho branco",
+          "confidence": "no_match",
+          "score": 0.114,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "Granvine": {
+          "retail_price": 9.89,
+          "name_found": "Casal da Coelheira Verdelho Private Collection Branco 2025",
+          "confidence": "high",
+          "score": 0.9,
+          "url": "https://granvine.com/pt/casal-da-coelheira-verdelho-private-collection-branco-2025"
+        }
+      },
+      "best_retail": 9.89,
+      "best_source": "Granvine",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "casal-da-coelheira-reserva-tinto",
+      "producer": "Casal da Coelheira",
+      "name": "Casal da Coelheira Reserva Tinto",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Adega da Corga Reserva Tinto 2019",
+          "confidence": "no_match",
+          "score": 0.285,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2020 Casa da Passarella Abanico Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.261,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Raposeira Super Reserva Bruto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.156,
+          "url": null
+        },
+        "GrandesEscolhas": {
+          "retail_price": 8,
+          "name_found": "Casal da Coelheira Tejo, Tinto, 2021",
+          "confidence": "high",
+          "score": 0.9,
+          "url": "https://grandesescolhas.com/pesquisa-de-vinhos/casal-da-coelheira-22/"
+        }
+      },
+      "best_retail": 8,
+      "best_source": "GrandesEscolhas",
+      "restaurant_estimates": {
+        "1.5x": 12.0,
+        "2.0x": 16.0
+      },
+      "status": "found"
+    }
+  ]
+}

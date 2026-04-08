@@ -1,0 +1,180 @@
+{
+  "producer": "Quinta da Biaia",
+  "generated_at": "2026-03-01T11:20:27.317799",
+  "found_count": 4,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "biaia-reserva-branco-siria-2020",
+      "producer": "Quinta da Biaia",
+      "name": "Quinta da Biaia Reserva Branco Síria",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 22.02,
+          "name_found": "Quinta da Biaia Reserva Síria Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/quinta-da-biaia-reserva-siria-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2019 Quinta da Biaia 750 biológico tinto",
+          "confidence": "low",
+          "score": 0.652,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.329,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta da Biaia Biologic Reserva Branco 2019",
+          "confidence": "low",
+          "score": 0.684,
+          "url": null
+        }
+      },
+      "best_retail": 22.02,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 33.5,
+        "2.0x": 44.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "biaia-fonte-da-vila-branco-siria-2019",
+      "producer": "Quinta da Biaia",
+      "name": "Quinta da Biaia Single Vineyard Fonte da Vila Branco Síria",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta da Biaia Fonte da Vila Branco",
+          "confidence": "low",
+          "score": 0.688,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2019 Quinta da Biaia Fonte da Vila biológico branco",
+          "confidence": "low",
+          "score": 0.643,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Fonte das Setas 75 Cl",
+          "confidence": "no_match",
+          "score": 0.163,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 38.05,
+          "name_found": "Quinta da Biaia Biologic Fonte da Vila Síria Branco 2019",
+          "confidence": "high",
+          "score": 0.732,
+          "url": "https://www.portugalvineyards.com/pt/beiras/15530-quinta-da-biaia-biologic-fonte-da-vila-siria-white-2015-5600764517261.html"
+        }
+      },
+      "best_retail": 38.05,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 57.5,
+        "2.0x": 76.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "biaia-reserva-tinto-2018",
+      "producer": "Quinta da Biaia",
+      "name": "Quinta da Biaia Reserva Tinto",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 21.4,
+          "name_found": "Quinta da Biaia Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-da-biaia-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2019 Quinta da Biaia 750 biológico tinto",
+          "confidence": "low",
+          "score": 0.789,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.415,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 24.95,
+          "name_found": "Quinta da Biaia Biologic Reserva Branco 2019",
+          "confidence": "high",
+          "score": 0.805,
+          "url": "https://www.portugalvineyards.com/pt/beiras/12685-quinta-da-biaia-biologic-reserve-white-2016-5600764517193.html"
+        }
+      },
+      "best_retail": 21.4,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 32.5,
+        "2.0x": 43.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "biaia-fonte-da-vila-tinto-2016",
+      "producer": "Quinta da Biaia",
+      "name": "Quinta da Biaia Single Vineyard Fonte da Vila Tinto",
+      "vintage": 2016,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 28.83,
+          "name_found": "Quinta da Biaia Fonte da Vila Branco",
+          "confidence": "high",
+          "score": 0.765,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-da-biaia-fonte-da-vila-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2019 Quinta da Biaia Fonte da Vila biológico branco",
+          "confidence": "low",
+          "score": 0.704,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Fonte das Setas 75 Cl",
+          "confidence": "no_match",
+          "score": 0.185,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta da Biaia Biologic Fonte da Vila Tinto 2015",
+          "confidence": "low",
+          "score": 0.681,
+          "url": null
+        }
+      },
+      "best_retail": 28.83,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 43.5,
+        "2.0x": 58.0
+      },
+      "status": "found"
+    }
+  ]
+}

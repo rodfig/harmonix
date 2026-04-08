@@ -1,0 +1,395 @@
+{
+  "producer": "Quinta dos Roques",
+  "generated_at": "2026-03-01T11:20:27.322050",
+  "found_count": 9,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "roques-encruzado-2023",
+      "producer": "Quinta dos Roques",
+      "name": "Quinta dos Roques Encruzado",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 18.28,
+          "name_found": "Quinta dos Roques Encruzado Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-roques-encruzado-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 20.95,
+          "name_found": " 2023 Quinta dos Roques Encruzado branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2023-quinta-dos-roques-encruzado-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Dão Quinta Carvalhais Encruzado 2022 75 Cl",
+          "confidence": "no_match",
+          "score": 0.434,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 25.65,
+          "name_found": "Quinta dos Roques Encruzado Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/dao/3883-quinta-dos-roques-encruzado-white-2015-5603792001122.html"
+        }
+      },
+      "best_retail": 18.28,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 27.5,
+        "2.0x": 37.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "roques-cerceal-branco-2023",
+      "producer": "Quinta dos Roques",
+      "name": "Quinta dos Roques Cerceal Branco",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 25.09,
+          "name_found": "Quinta dos Roques Reserva Tinto",
+          "confidence": "high",
+          "score": 0.728,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-roques-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 9.95,
+          "name_found": " 2021 Quinta dos Roques tinto",
+          "confidence": "high",
+          "score": 0.795,
+          "url": "https://www.garrafeiranacional.com/vinho/2021-quinta-dos-roques-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Monte Meão Vinha Dos Novos 2022 75 Cl",
+          "confidence": "no_match",
+          "score": 0.197,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 20.25,
+          "name_found": "Quinta dos Roques Cerceal Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/dao/25729-quinta-dos-roques-cerceal-white-2023.html"
+        }
+      },
+      "best_retail": 9.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "roques-bical-2017",
+      "producer": "Quinta dos Roques",
+      "name": "Quinta dos Roques Bical",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 25.09,
+          "name_found": "Quinta dos Roques Reserva Tinto",
+          "confidence": "high",
+          "score": 0.73,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-roques-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 9.95,
+          "name_found": " 2021 Quinta dos Roques tinto",
+          "confidence": "high",
+          "score": 0.779,
+          "url": "https://www.garrafeiranacional.com/vinho/2021-quinta-dos-roques-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Monte Meão Vinha Dos Novos 2022 75 Cl",
+          "confidence": "no_match",
+          "score": 0.2,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 10.25,
+          "name_found": "Quinta dos Roques Branco 2022",
+          "confidence": "high",
+          "score": 0.808,
+          "url": "https://www.portugalvineyards.com/pt/dao/2947-quinta-dos-roques-white-2017-5603792001146.html"
+        }
+      },
+      "best_retail": 9.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "roques-reserva-branco-2022",
+      "producer": "Quinta dos Roques",
+      "name": "Quinta dos Roques Reserva Branco",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 25.09,
+          "name_found": "Quinta dos Roques Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-roques-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Quinta dos Roques tinto",
+          "confidence": "low",
+          "score": 0.92,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.401,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 29.85,
+          "name_found": "Quinta dos Roques Reserva Branco 2015",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/dao/18880-quinta-dos-roques-reserve-white-2015-5603792001702.html"
+        }
+      },
+      "best_retail": 25.09,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 38.0,
+        "2.0x": 50.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "roques-jaen-2022",
+      "producer": "Quinta dos Roques",
+      "name": "Quinta dos Roques Jaen",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 25.09,
+          "name_found": "Quinta dos Roques Reserva Tinto",
+          "confidence": "high",
+          "score": 0.751,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-roques-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 9.95,
+          "name_found": " 2021 Quinta dos Roques tinto",
+          "confidence": "high",
+          "score": 0.827,
+          "url": "https://www.garrafeiranacional.com/vinho/2021-quinta-dos-roques-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Monte Meão Vinha Dos Novos 2022 75 Cl",
+          "confidence": "no_match",
+          "score": 0.201,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 10.25,
+          "name_found": "Quinta dos Roques Branco 2022",
+          "confidence": "high",
+          "score": 0.811,
+          "url": "https://www.portugalvineyards.com/pt/dao/2947-quinta-dos-roques-white-2017-5603792001146.html"
+        }
+      },
+      "best_retail": 9.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "roques-tinta-roriz-2019",
+      "producer": "Quinta dos Roques",
+      "name": "Quinta dos Roques Tinta Roriz",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 27.96,
+          "name_found": "Quinta dos Roques Tinta Roriz Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-roques-tinta-roriz-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Quinta dos Roques tinto",
+          "confidence": "low",
+          "score": 0.688,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Crasto Tinta Roriz 2018 75 Cl",
+          "confidence": "low",
+          "score": 0.633,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 36.45,
+          "name_found": "Quinta dos Roques Tinta Roriz Tinto 2017",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/dao/24598-quinta-dos-roques-tinta-roriz-red-2017.html"
+        }
+      },
+      "best_retail": 27.96,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 42.0,
+        "2.0x": 56.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "roques-tinto-cao-2017",
+      "producer": "Quinta dos Roques",
+      "name": "Quinta dos Roques Tinto Cão",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 27.96,
+          "name_found": "Quinta dos Roques Tinto Cão",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-roques-tinto-cao/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 9.95,
+          "name_found": " 2021 Quinta dos Roques tinto",
+          "confidence": "high",
+          "score": 0.788,
+          "url": "https://www.garrafeiranacional.com/vinho/2021-quinta-dos-roques-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Monte Meão Vinha Dos Novos 2022 75 Cl",
+          "confidence": "no_match",
+          "score": 0.197,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 10.25,
+          "name_found": "Quinta dos Roques Branco 2022",
+          "confidence": "high",
+          "score": 0.808,
+          "url": "https://www.portugalvineyards.com/pt/dao/2947-quinta-dos-roques-white-2017-5603792001146.html"
+        }
+      },
+      "best_retail": 9.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "roques-2castas-2018",
+      "producer": "Quinta dos Roques",
+      "name": "Quinta dos Roques 2 Castas",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 17.31,
+          "name_found": "Quinta dos Roques Duas Castas Tinto",
+          "confidence": "high",
+          "score": 0.846,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-roques-duas-castas-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 9.95,
+          "name_found": " 2021 Quinta dos Roques tinto",
+          "confidence": "high",
+          "score": 0.788,
+          "url": "https://www.garrafeiranacional.com/vinho/2021-quinta-dos-roques-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Monte Meão Vinha Dos Novos 2022 75 Cl",
+          "confidence": "no_match",
+          "score": 0.204,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 23.45,
+          "name_found": "Quinta dos Roques Duas Castas Tinto 2018",
+          "confidence": "high",
+          "score": 0.865,
+          "url": "https://www.portugalvineyards.com/pt/dao/23674-quinta-dos-roques-duas-castas-red-2018-5603792001825.html"
+        }
+      },
+      "best_retail": 9.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "roques-reserva-tinto-2021",
+      "producer": "Quinta dos Roques",
+      "name": "Quinta dos Roques Reserva Tinto",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 25.09,
+          "name_found": "Quinta dos Roques Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-roques-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Quinta dos Roques tinto",
+          "confidence": "low",
+          "score": 0.92,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.401,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 29.85,
+          "name_found": "Quinta dos Roques Reserva Branco 2015",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/dao/18880-quinta-dos-roques-reserve-white-2015-5603792001702.html"
+        }
+      },
+      "best_retail": 25.09,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 38.0,
+        "2.0x": 50.5
+      },
+      "status": "found"
+    }
+  ]
+}

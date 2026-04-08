@@ -1,0 +1,168 @@
+{
+  "producer": "Henriques & Henriques",
+  "generated_at": "2026-03-01T11:20:27.352511",
+  "found_count": 4,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "hh-sercial-10-years",
+      "producer": "Henriques & Henriques",
+      "name": "Sercial 10 Years Old",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Horácio Simões Old School Branco",
+          "confidence": "no_match",
+          "score": 0.375,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Madame Pió Sercial Reserva branco",
+          "confidence": "no_match",
+          "score": 0.322,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 43.75,
+          "name_found": "Henriques Henriques Sercial 10 years Madeira",
+          "confidence": "hight",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/en/dry/5656-henriques-henriques-sercial-10-years-madeira-5601196017206.html"
+        }
+      },
+      "best_retail": 43.75,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "hh-verdelho-10-years",
+      "producer": "Henriques & Henriques",
+      "name": "Verdelho 10 Years Old",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Bacalhoa Verdelho Branco",
+          "confidence": "no_match",
+          "score": 0.411,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Bacalhôa Verdelho branco",
+          "confidence": "no_match",
+          "score": 0.417,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Tiago Cabaço Verdelho 75 Cl",
+          "confidence": "no_match",
+          "score": 0.398,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 37.65,
+          "name_found": "Henriques Henriques Verdelho 10 years Madeira",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/en/medium-dry/27198-henriques-henriques-verdelho-10-years-madeira-5601196017213.html"
+        }
+      },
+      "best_retail": 37.65,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "hh-boal-10-years",
+      "producer": "Henriques & Henriques",
+      "name": "Boal 10 Years Old",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Pêgo de Moura Boal Branco",
+          "confidence": "no_match",
+          "score": 0.429,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 43.75,
+          "name_found": "Henriques Henriques Boal 10 years Madeira",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/en/medium-rich/24643-henriques-henriques-boal-10-years-madeira-5601196017220.html"
+        }
+      },
+      "best_retail": 43.75,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "hh-malvasia-10-years",
+      "producer": "Henriques & Henriques",
+      "name": "Malvasia 10 Years Old",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Horácio Simões Old School Branco",
+          "confidence": "no_match",
+          "score": 0.397,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2017 Fundação Oriente Colares Malvasia branco",
+          "confidence": "no_match",
+          "score": 0.36,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Murganheira Malvasia Fina Bruto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.313,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 44.75,
+          "name_found": "Henriques Henriques Malmsey 10 years Madeira",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/en/full-rich/5657-henriques-henriques-malmsey-10-years-madeira-5601196017237.html"
+        }
+      },
+      "best_retail": 44.75,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "producer": "Quinta do Crasto",
+  "generated_at": "2026-03-01T11:20:27.338081",
+  "found_count": 8,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "crasto-branco-2021",
+      "producer": "Quinta do Crasto",
+      "name": "Crasto Branco",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 10.28,
+          "name_found": "Crasto DOC Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/crasto-doc-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 11.95,
+          "name_found": " 2024 Crasto branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-crasto-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 11.49,
+          "name_found": "Vinho Tinto Crasto 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-tinto-crasto-75-cl/item_10467.html?id=202&cat=254&pc=19"
+        },
+        "PortugalVineyards": {
+          "retail_price": 13.95,
+          "name_found": "Crasto Branco 2024",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/710-crasto-white-2018-5604123008513.html"
+        }
+      },
+      "best_retail": 10.28,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 15.5,
+        "2.0x": 21.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "crasto-tinto-2017",
+      "producer": "Quinta do Crasto",
+      "name": "Crasto Tinto",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 10.28,
+          "name_found": "Crasto DOC Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/crasto-doc-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 11.95,
+          "name_found": " 2024 Crasto branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-crasto-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 11.49,
+          "name_found": "Vinho Tinto Crasto 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-tinto-crasto-75-cl/item_10467.html?id=202&cat=254&pc=19"
+        },
+        "PortugalVineyards": {
+          "retail_price": 13.95,
+          "name_found": "Crasto Branco 2024",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/710-crasto-white-2018-5604123008513.html"
+        }
+      },
+      "best_retail": 10.28,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 15.5,
+        "2.0x": 21.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "crasto-rose-2023",
+      "producer": "Quinta do Crasto",
+      "name": "Crasto Rosé",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 10.28,
+          "name_found": "Crasto DOC Rosé",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/crasto-doc-rose/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 11.95,
+          "name_found": " 2024 Crasto branco",
+          "confidence": "high",
+          "score": 0.753,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-crasto-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 11.49,
+          "name_found": "Vinho Rose Crasto 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-rose-crasto-75-cl/item_12470.html?id=204&cat=254&pc=10"
+        },
+        "PortugalVineyards": {
+          "retail_price": 13.95,
+          "name_found": "Crasto Branco 2024",
+          "confidence": "high",
+          "score": 0.787,
+          "url": "https://www.portugalvineyards.com/pt/douro/710-crasto-white-2018-5604123008513.html"
+        }
+      },
+      "best_retail": 10.28,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 15.5,
+        "2.0x": 21.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "crasto-altitude-430-tinto-2021",
+      "producer": "Quinta do Crasto",
+      "name": "Crasto Altitude 430 Tinto",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 14.59,
+          "name_found": "Crasto Altitude Tinto 430",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/crasto-altitude-tinto-430/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 16.95,
+          "name_found": " 2021 Crasto Altitude 430 tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2021-crasto-altitude-430-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Crasto 75 Cl",
+          "confidence": "low",
+          "score": 0.617,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 19.45,
+          "name_found": "Crasto Altitude 430 Tinto 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/17125-quinta-do-crasto-altitude-430-red-2019-5604123007653.html"
+        }
+      },
+      "best_retail": 14.59,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 22.0,
+        "2.0x": 29.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "crasto-superior-branco-2020",
+      "producer": "Quinta do Crasto",
+      "name": "Crasto Superior Branco",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 14.4,
+          "name_found": "Crasto Superior Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/crasto-superior-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 16.95,
+          "name_found": " 2024 Crasto Superior branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-crasto-superior-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 16.49,
+          "name_found": "Vinho Branco Crasto Superior 2024 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-crasto-superior-2024-75-cl/item_10802.html?id=203&cat=254&pc=8"
+        },
+        "PortugalVineyards": {
+          "retail_price": 19.45,
+          "name_found": "Crasto Superior Branco 2024",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/5345-crasto-superior-white-2017-5604123008575.html"
+        }
+      },
+      "best_retail": 14.4,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 22.0,
+        "2.0x": 29.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "crasto-superior-tinto-2019",
+      "producer": "Quinta do Crasto",
+      "name": "Crasto Superior Tinto",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 14.4,
+          "name_found": "Crasto Superior Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/crasto-superior-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 16.95,
+          "name_found": " 2024 Crasto Superior branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-crasto-superior-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 16.49,
+          "name_found": "Vinho Branco Crasto Superior 2024 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-crasto-superior-2024-75-cl/item_10802.html?id=203&cat=254&pc=8"
+        },
+        "PortugalVineyards": {
+          "retail_price": 19.45,
+          "name_found": "Crasto Superior Branco 2024",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/5345-crasto-superior-white-2017-5604123008575.html"
+        }
+      },
+      "best_retail": 14.4,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 22.0,
+        "2.0x": 29.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "crasto-reserva-vinhas-velhas-2021",
+      "producer": "Quinta do Crasto",
+      "name": "Crasto Reserva Vinhas Velhas",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 33.34,
+          "name_found": "Quinta do Crasto Reserva Vinhas Velhas Tinto",
+          "confidence": "high",
+          "score": 0.871,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-do-crasto-reserva-vinhas-velhas-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 36.95,
+          "name_found": " 2022 Crasto Vinhas Velhas Reserva tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2022-crasto-reserva-vinhas-velhas-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 37.95,
+          "name_found": "Vinho Tinto Quinta Crasto Reserva Vinhas Velhas 2022 75 Cl",
+          "confidence": "high",
+          "score": 0.923,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-tinto-quinta-crasto-reserva-vinhas-velhas-2022-75-cl/item_10470.html?id=202&cat=254&pc=19"
+        },
+        "PortugalVineyards": {
+          "retail_price": 60.05,
+          "name_found": "Maritávora Reserva Vinhas Velhas Branco 2009",
+          "confidence": "high",
+          "score": 0.824,
+          "url": "https://www.portugalvineyards.com/pt/douro/23248-maritavora-reserve-old-vines-white-2009-5600393763091.html"
+        }
+      },
+      "best_retail": 33.34,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 50.5,
+        "2.0x": 67.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "crasto-touriga-franca-2018",
+      "producer": "Quinta do Crasto",
+      "name": "Quinta do Crasto Touriga Franca",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 56.93,
+          "name_found": "Quinta do Crasto Touriga Franca Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-do-crasto-touriga-franca-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 59.95,
+          "name_found": " 2018 Quinta do Crasto Touriga Franca tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2018-quinta-do-crasto-touriga-franca-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 58.95,
+          "name_found": "Vinho Tinto Quinta Crasto Touriga Franca 2018 75 Cl",
+          "confidence": "high",
+          "score": 0.9,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-tinto-quinta-crasto-touriga-franca-2018-75-cl/item_56701.html?id=202&cat=254&pc=50"
+        },
+        "PortugalVineyards": {
+          "retail_price": 65.95,
+          "name_found": "Quinta do Crasto Touriga Franca Tinto 2016",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/21275-quinta-do-crasto-touriga-franca-red-2016-5604123005505.html"
+        }
+      },
+      "best_retail": 56.93,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 85.5,
+        "2.0x": 114.0
+      },
+      "status": "found"
+    }
+  ]
+}

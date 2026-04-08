@@ -1,0 +1,180 @@
+{
+  "producer": "Quinta da Fonte Souto",
+  "generated_at": "2026-03-01T11:20:27.296311",
+  "found_count": 4,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "fonte-souto-taifa-branco-2020",
+      "producer": "Quinta da Fonte Souto",
+      "name": "TAIFA Branco",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 77.0,
+          "name_found": "Vinho Branco Quinta Fonte Souto Taifa 2021 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-quinta-fonte-souto-taifa-2021-75-cl/item_106796.html?id=203&cat=254&pc=18"
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta do Fonte Souto Taifa Branco 2021",
+          "confidence": "low",
+          "score": 0.524,
+          "url": null
+        }
+      },
+      "best_retail": 77.0,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 115.5,
+        "2.0x": 154.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "fonte-souto-branco-2021",
+      "producer": "Quinta da Fonte Souto",
+      "name": "Quinta da Fonte Souto Branco",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta da Romaneira Tinto",
+          "confidence": "no_match",
+          "score": 0.365,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos Fonte Cal Reserva branco",
+          "confidence": "no_match",
+          "score": 0.358,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 18.95,
+          "name_found": "Vinho Branco Quinta Fonte Souto 2023 75 Cl",
+          "confidence": "high",
+          "score": 0.879,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-quinta-fonte-souto-2023-75-cl/item_10623.html?id=203&cat=254&pc=33"
+        },
+        "PortugalVineyards": {
+          "retail_price": 17.55,
+          "name_found": "Quinta da Fonte Souto Tinto 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/alentejo/11182-quinta-da-fonte-souto-red-2017-5608309011731.html"
+        }
+      },
+      "best_retail": 17.55,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 26.5,
+        "2.0x": 35.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "fonte-souto-tinto-2018",
+      "producer": "Quinta da Fonte Souto",
+      "name": "Quinta da Fonte Souto Tinto",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta da Romaneira Tinto",
+          "confidence": "no_match",
+          "score": 0.365,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos Fonte Cal Reserva branco",
+          "confidence": "no_match",
+          "score": 0.358,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 18.95,
+          "name_found": "Vinho Branco Quinta Fonte Souto 2023 75 Cl",
+          "confidence": "high",
+          "score": 0.879,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-quinta-fonte-souto-2023-75-cl/item_10623.html?id=203&cat=254&pc=33"
+        },
+        "PortugalVineyards": {
+          "retail_price": 17.55,
+          "name_found": "Quinta da Fonte Souto Tinto 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/alentejo/11182-quinta-da-fonte-souto-red-2017-5608309011731.html"
+        }
+      },
+      "best_retail": 17.55,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 26.5,
+        "2.0x": 35.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "fonte-souto-florao-branco-2022",
+      "producer": "Quinta da Fonte Souto",
+      "name": "Florão Branco",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 9.49,
+          "name_found": "Vinho Branco Florao 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-florao-75-cl/item_10622.html?id=203&cat=254&pc=16"
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta do Fonte Souto Florão Branco 2023",
+          "confidence": "low",
+          "score": 0.513,
+          "url": null
+        }
+      },
+      "best_retail": 9.49,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 14.5,
+        "2.0x": 19.0
+      },
+      "status": "found"
+    }
+  ]
+}

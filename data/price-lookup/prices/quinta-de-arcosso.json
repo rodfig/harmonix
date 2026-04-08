@@ -1,0 +1,223 @@
+{
+  "producer": "Quinta de Arcossó",
+  "generated_at": "2026-03-01T11:20:27.374153",
+  "found_count": 5,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "arcosso-bago-a-bago-2021",
+      "producer": "Quinta de Arcossó",
+      "name": "Quinta de Arcossó Superior Bago a Bago",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 35.0,
+          "name_found": "Quinta de Arcossó Superior Bago a Bago Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-de-arcosso-superior-bago-a-bago-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Crasto Superior branco",
+          "confidence": "no_match",
+          "score": 0.298,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Carvalhais Melange a 3 75 Cl",
+          "confidence": "no_match",
+          "score": 0.333,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta de Sanjoanne Superior Branco 2015",
+          "confidence": "no_match",
+          "score": 0.395,
+          "url": null
+        }
+      },
+      "best_retail": 35.0,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 52.5,
+        "2.0x": 70.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "arcosso-syrah-2009",
+      "producer": "Quinta de Arcossó",
+      "name": "Quinta de Arcossó Syrah",
+      "vintage": 2009,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 13.0,
+          "name_found": "Quinta de Arcossó Syrah Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-de-arcosso-syrah-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Quinta de Vale Mourisco Syrah tinto",
+          "confidence": "low",
+          "score": 0.522,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Crasto Superior Syrah 2022 75 Cl",
+          "confidence": "no_match",
+          "score": 0.335,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta de Vale Mourisco Syrah Red 2019",
+          "confidence": "low",
+          "score": 0.488,
+          "url": null
+        }
+      },
+      "best_retail": 13.0,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 19.5,
+        "2.0x": 26.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "arcosso-rose-bastardo-2010",
+      "producer": "Quinta de Arcossó",
+      "name": "Quinta de Arcossó Rosé",
+      "vintage": 2010,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 12.5,
+          "name_found": "Quinta de Arcossó Reserva Tinto",
+          "confidence": "high",
+          "score": 0.775,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-de-arcosso-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2018 Quinta de Lemos Nélita rosé",
+          "confidence": "low",
+          "score": 0.46,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Rose Dão Quinta Carvalhais 75 Cl",
+          "confidence": "no_match",
+          "score": 0.352,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta de Ventozelo Rosé 2024",
+          "confidence": "low",
+          "score": 0.522,
+          "url": null
+        }
+      },
+      "best_retail": 12.5,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 19.0,
+        "2.0x": 25.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "arcosso-branco-reserva-2010",
+      "producer": "Quinta de Arcossó",
+      "name": "Quinta de Arcossó Branco Reserva",
+      "vintage": 2010,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 12.5,
+          "name_found": "Quinta de Arcossó Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-de-arcosso-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta de Carvalhiços Reserva branco",
+          "confidence": "low",
+          "score": 0.499,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.411,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta de Ventozelo Reserva Tinto 2022",
+          "confidence": "low",
+          "score": 0.497,
+          "url": null
+        }
+      },
+      "best_retail": 12.5,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 19.0,
+        "2.0x": 25.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "arccosso-bastardo-2021",
+      "producer": "Quinta de Arcossó",
+      "name": "Quinta de Arcossó Bastardo",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 12.5,
+          "name_found": "Quinta de Arcossó Bastardo Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-de-arcosso-bastardo-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta de Carvalhiços Reserva branco",
+          "confidence": "no_match",
+          "score": 0.303,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Duque De Viseu 75 Cl",
+          "confidence": "no_match",
+          "score": 0.211,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta dos Castelares Bastardo Tinto 2022",
+          "confidence": "low",
+          "score": 0.477,
+          "url": null
+        }
+      },
+      "best_retail": 12.5,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 19.0,
+        "2.0x": 25.0
+      },
+      "status": "found"
+    }
+  ]
+}

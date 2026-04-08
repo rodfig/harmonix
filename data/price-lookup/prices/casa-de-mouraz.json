@@ -1,0 +1,223 @@
+{
+  "producer": "Casa de Mouraz",
+  "generated_at": "2026-03-01T11:20:27.330516",
+  "found_count": 5,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "mouraz-tinto-2014",
+      "producer": "Casa de Mouraz",
+      "name": "Casa de Mouraz Tinto",
+      "vintage": 2014,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa de Santar DOC Tinto",
+          "confidence": "low",
+          "score": 0.496,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 14.95,
+          "name_found": " 2023 Casa de Mouraz biológico branco",
+          "confidence": "high",
+          "score": 0.866,
+          "url": "https://www.garrafeiranacional.com/vinho/2023-casa-de-mouraz-biologico-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa De Santar 75 Cl",
+          "confidence": "low",
+          "score": 0.56,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 14.85,
+          "name_found": "Casa de Mouraz Bio Branco 2023",
+          "confidence": "high",
+          "score": 0.823,
+          "url": "https://www.portugalvineyards.com/pt/dao/11382-casa-de-mouraz-bio-white-2017-5605689544729.html"
+        }
+      },
+      "best_retail": 14.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 22.5,
+        "2.0x": 30.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "mouraz-branco-2015",
+      "producer": "Casa de Mouraz",
+      "name": "Casa de Mouraz Branco",
+      "vintage": 2015,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa de Santar DOC Tinto",
+          "confidence": "low",
+          "score": 0.496,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 14.95,
+          "name_found": " 2023 Casa de Mouraz biológico branco",
+          "confidence": "high",
+          "score": 0.866,
+          "url": "https://www.garrafeiranacional.com/vinho/2023-casa-de-mouraz-biologico-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa De Santar 75 Cl",
+          "confidence": "low",
+          "score": 0.56,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 14.85,
+          "name_found": "Casa de Mouraz Bio Branco 2023",
+          "confidence": "high",
+          "score": 0.823,
+          "url": "https://www.portugalvineyards.com/pt/dao/11382-casa-de-mouraz-bio-white-2017-5605689544729.html"
+        }
+      },
+      "best_retail": 14.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 22.5,
+        "2.0x": 30.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "mouraz-encruzado-2016",
+      "producer": "Casa de Mouraz",
+      "name": "Casa de Mouraz Encruzado",
+      "vintage": 2016,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa de Santar Vinha dos Amores Encruzado Branco",
+          "confidence": "no_match",
+          "score": 0.447,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 14.95,
+          "name_found": " 2023 Casa de Mouraz biológico branco",
+          "confidence": "high",
+          "score": 0.749,
+          "url": "https://www.garrafeiranacional.com/vinho/2023-casa-de-mouraz-biologico-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa De Santar 75 Cl",
+          "confidence": "low",
+          "score": 0.473,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 18.75,
+          "name_found": "Casa de Mouraz Encruzado Bio Branco 2023",
+          "confidence": "high",
+          "score": 0.866,
+          "url": "https://www.portugalvineyards.com/pt/dao/11936-casa-de-mouraz-encruzado-bio-white-2016-5605689544651.html"
+        }
+      },
+      "best_retail": 14.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 22.5,
+        "2.0x": 30.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "mouraz-elfa-2014",
+      "producer": "Casa de Mouraz",
+      "name": "Casa de Mouraz Elfa",
+      "vintage": 2014,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa de Santar DOC Tinto",
+          "confidence": "no_match",
+          "score": 0.381,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Casa de Mouraz biológico branco",
+          "confidence": "low",
+          "score": 0.686,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa De Santar 75 Cl",
+          "confidence": "low",
+          "score": 0.451,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 35.45,
+          "name_found": "Casa de Mouraz Elfa Bio Tinto 2017",
+          "confidence": "high",
+          "score": 0.884,
+          "url": "https://www.portugalvineyards.com/pt/dao/11385-casa-de-mouraz-elfa-bio-red-2015-5605689544521.html"
+        }
+      },
+      "best_retail": 35.45,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 53.5,
+        "2.0x": 71.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "mouraz-private-selection-2014",
+      "producer": "Casa de Mouraz",
+      "name": "Casa de Mouraz Private Selection",
+      "vintage": 2014,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa de Santar DOC Tinto",
+          "confidence": "no_match",
+          "score": 0.346,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Casa de Mouraz biológico branco",
+          "confidence": "low",
+          "score": 0.63,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa De Santar 75 Cl",
+          "confidence": "no_match",
+          "score": 0.412,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 29.85,
+          "name_found": "Casa de Mouraz Private Selection Bio Tinto 2016",
+          "confidence": "high",
+          "score": 0.895,
+          "url": "https://www.portugalvineyards.com/pt/dao/11384-casa-de-mouraz-private-selection-bio-red-2015-5605689544613.html"
+        }
+      },
+      "best_retail": 29.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 45.0,
+        "2.0x": 60.0
+      },
+      "status": "found"
+    }
+  ]
+}

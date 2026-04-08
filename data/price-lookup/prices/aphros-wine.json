@@ -1,0 +1,309 @@
+{
+  "producer": "Aphros Wine",
+  "generated_at": "2026-03-01T11:20:27.380785",
+  "found_count": 7,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "aphros-loureiro-2024",
+      "producer": "Aphros Wine",
+      "name": "Aphros Loureiro",
+      "vintage": 2024,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 16.35,
+          "name_found": "Aphros Loureiro Organic Branco 2023",
+          "confidence": "high",
+          "score": 0.772,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/13505-aphros-loureiro-white-2018-5600329048056.html"
+        }
+      },
+      "best_retail": 16.35,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 25.0,
+        "2.0x": 33.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "aphros-loureiro-2022",
+      "producer": "Aphros Wine",
+      "name": "Aphros Loureiro",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 16.35,
+          "name_found": "Aphros Loureiro Organic Branco 2023",
+          "confidence": "high",
+          "score": 0.772,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/13505-aphros-loureiro-white-2018-5600329048056.html"
+        }
+      },
+      "best_retail": 16.35,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 25.0,
+        "2.0x": 33.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "aphros-ten-2023",
+      "producer": "Aphros Wine",
+      "name": "Aphros Ten",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 13.75,
+          "name_found": "Aphros Ten Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/24042-aphros-ten-white-2023-5600329041057.html"
+        }
+      },
+      "best_retail": 13.75,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 21.0,
+        "2.0x": 27.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "aphros-melissae-2021",
+      "producer": "Aphros Wine",
+      "name": "Aphros Melissae",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 34.65,
+          "name_found": "Aphros Melissae Branco 2020",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/portugal/13534-aphros-melissae-white-2018-5600329046021.html"
+        }
+      },
+      "best_retail": 34.65,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 52.0,
+        "2.0x": 69.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "phaunus-loureiro-2023",
+      "producer": "Aphros Wine",
+      "name": "Phaunus Loureiro",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 25.95,
+          "name_found": "Phaunus Amphora Loureiro Branco 2022",
+          "confidence": "high",
+          "score": 0.797,
+          "url": "https://www.portugalvineyards.com/pt/portugal/13506-phaunus-amphora-loureiro-white-2017-5600329043044.html"
+        }
+      },
+      "best_retail": 25.95,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 39.0,
+        "2.0x": 52.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "phaunus-vinhao-2020",
+      "producer": "Aphros Wine",
+      "name": "Phaunus Vinhão",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 34.65,
+          "name_found": "Phaunus Amphora Vinhão Tinto 2020",
+          "confidence": "high",
+          "score": 0.808,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/13515-phaunus-amphora-vinhao-red-2017-5600329043129.html"
+        }
+      },
+      "best_retail": 34.65,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 52.0,
+        "2.0x": 69.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "aphros-ouranos-2020",
+      "producer": "Aphros Wine",
+      "name": "Aphros Ouranos",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 34.65,
+          "name_found": "Aphros Ouranos Alvarelhão Tinto 2020",
+          "confidence": "high",
+          "score": 0.812,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/13535-aphros-ouranos-alvarelhao-red-2018-5600329045123.html"
+        }
+      },
+      "best_retail": 34.65,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 52.0,
+        "2.0x": 69.5
+      },
+      "status": "found"
+    }
+  ]
+}

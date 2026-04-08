@@ -1,0 +1,223 @@
+{
+  "producer": "Quinta de Covela",
+  "generated_at": "2026-03-01T11:20:27.378834",
+  "found_count": 5,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "covela-edicao-nacional-avesso-2018",
+      "producer": "Quinta de Covela",
+      "name": "Covela Edição Nacional Avesso",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 8.31,
+          "name_found": "Covela Edição Nacional Arinto Branco",
+          "confidence": "high",
+          "score": 0.73,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/covela-edicao-nacional-arinto-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2018 Quinta de Vale Mourisco Touriga Nacional Edição Limitada tinto",
+          "confidence": "no_match",
+          "score": 0.422,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Carvalhais Touriga Nacional 2021 75 Cl",
+          "confidence": "no_match",
+          "score": 0.256,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Covela Avesso Branco 2023",
+          "confidence": "low",
+          "score": 0.695,
+          "url": null
+        }
+      },
+      "best_retail": 8.31,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 12.5,
+        "2.0x": 17.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "covela-arinto-2019",
+      "producer": "Quinta de Covela",
+      "name": "Covela Arinto",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Covela Edição Nacional Arinto Branco",
+          "confidence": "low",
+          "score": 0.708,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Quinta de Pancas Arinto branco",
+          "confidence": "low",
+          "score": 0.544,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Prova Regia Arinto Bucelas 75 Cl",
+          "confidence": "no_match",
+          "score": 0.272,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 8.75,
+          "name_found": "Covela Arinto Branco 2024",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/14200-covela-edicao-nacional-arinto-white-2018-5600734431085.html"
+        }
+      },
+      "best_retail": 8.75,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 13.5,
+        "2.0x": 17.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "covela-avesso-reserva-2019",
+      "producer": "Quinta de Covela",
+      "name": "Covela Avesso Reserva Bio",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Covela Reserva Tinto",
+          "confidence": "low",
+          "score": 0.552,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta de La Rosa Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.165,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.217,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 14.95,
+          "name_found": "Covela Avesso Reserva Branco 2022",
+          "confidence": "high",
+          "score": 0.838,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/14255-covela-avesso-reserve-white-2018-5600203486097.html"
+        }
+      },
+      "best_retail": 14.95,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 22.5,
+        "2.0x": 30.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "covela-branco-2017",
+      "producer": "Quinta de Covela",
+      "name": "Covela Branco",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 25.63,
+          "name_found": "Covela Reserva Tinto",
+          "confidence": "high",
+          "score": 0.842,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/covela-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 11.35,
+          "name_found": "Covela Branco 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/16835-covela-white-2018-5600203486271.html"
+        }
+      },
+      "best_retail": 11.35,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 17.5,
+        "2.0x": 23.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "covela-edicao-nacional-arinto-2017",
+      "producer": "Quinta de Covela",
+      "name": "Covela Edição Nacional Arinto",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 8.31,
+          "name_found": "Covela Edição Nacional Arinto Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/covela-edicao-nacional-arinto-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2018 Quinta de Vale Mourisco Touriga Nacional Edição Limitada tinto",
+          "confidence": "no_match",
+          "score": 0.446,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Carvalhais Touriga Nacional 2021 75 Cl",
+          "confidence": "no_match",
+          "score": 0.275,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Covela Arinto Branco 2024",
+          "confidence": "low",
+          "score": 0.68,
+          "url": null
+        }
+      },
+      "best_retail": 8.31,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 12.5,
+        "2.0x": 17.0
+      },
+      "status": "found"
+    }
+  ]
+}

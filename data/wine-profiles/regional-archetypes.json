@@ -1,0 +1,1175 @@
+{
+  "_meta": {
+    "description": "Regional archetype profiles for Portuguese wine DOCs — represent the typical blend style of each region",
+    "note": "These are archetypes (average/typical), not specific wines. Named wines in named-wines.json override these when specific data is available",
+    "typical_blend": "Dominant varieties listed in order of prevalence",
+    "source": "Módulo 5 + Claude wine synthesis"
+  },
+
+  "archetypes": [
+
+    {
+      "id": "vinho-verde-branco",
+      "name": "Vinho Verde Branco",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Vinho Verde",
+      "doc": "Vinho Verde",
+      "typical_blend": ["Loureiro", "Arinto", "Trajadura", "Avesso", "Azal"],
+      "structure": {
+        "acidity": 8,
+        "tannins": null,
+        "body": "light",
+        "alcohol": "9–12%",
+        "sweetness": "dry",
+        "finish": "short"
+      },
+      "aromas": {
+        "primary": ["limão", "lima", "maçã verde", "flor de laranjeira", "erva fresca"],
+        "secondary": ["notas de fermentação leve", "pétillant natural"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["mariscos", "peixe leve", "saladas", "pratos frescos", "queijo fresco"],
+        "conflicts": ["carne vermelha", "pratos gordurosos muito pesados", "sobremesas ricas"],
+        "notes": "Levíssimo, muito fresco, ligeiramente frisante. Acidez alta e corpo leve fazem-no ideal para aperitivo e pratos delicados. Teor alcoólico dos mais baixos de Portugal"
+      }
+    },
+
+    {
+      "id": "vinho-verde-alvarinho",
+      "name": "Vinho Verde Alvarinho (Monção e Melgaço)",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Vinho Verde – Monção e Melgaço",
+      "doc": "Vinho Verde",
+      "typical_blend": ["Alvarinho"],
+      "structure": {
+        "acidity": 9,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "12–13.5%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["flor de laranjeira", "pêssego", "damasco", "toranja", "madressilva"],
+        "secondary": ["notas de lias", "mineralidade"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["sashimi", "mariscos", "ostra", "peixe cru", "queijo fresco", "tempura de camarão"],
+        "conflicts": ["carne vermelha", "pratos muito ricos"],
+        "notes": "A sub-região mais nobre do Vinho Verde. Corpo mais cheio que o blend standard, muito aromático e com acidez estruturante"
+      }
+    },
+
+    {
+      "id": "vinho-verde-espumante",
+      "name": "Vinho Verde Espumante",
+      "type": "sparkling",
+      "category": "regional-blend",
+      "region": "Vinho Verde",
+      "doc": "Vinho Verde",
+      "typical_blend": ["Arinto", "Loureiro", "Azal"],
+      "structure": {
+        "acidity": 9,
+        "tannins": null,
+        "body": "light",
+        "alcohol": "11–12.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["limão", "lima", "maçã verde", "flores brancas"],
+        "secondary": ["brioche leve", "notas de levedura", "pão fresco"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["aperitivo", "mariscos", "ostra", "peixe cru", "sushi"],
+        "conflicts": ["carne vermelha", "pratos muito ricos"],
+        "notes": "Espumante natural de método tradicional ou Charmat. Acidez muito alta e borbulha fina. Excelente para aperitivo"
+      }
+    },
+
+    {
+      "id": "vinho-verde-tinto",
+      "name": "Vinho Verde Tinto",
+      "type": "red",
+      "category": "regional-blend",
+      "region": "Vinho Verde",
+      "doc": "Vinho Verde",
+      "typical_blend": ["Vinhão", "Borraçal", "Espadeiro"],
+      "structure": {
+        "acidity": 9,
+        "tannins": 7,
+        "body": "light",
+        "alcohol": "10–12%",
+        "sweetness": "dry",
+        "finish": "short"
+      },
+      "aromas": {
+        "primary": ["frutas vermelhas frescas", "banana", "maçã cozida", "notas rústicas"],
+        "secondary": [],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["sardinhas", "peixe azul gordo", "carnes de porco simples", "enchidos"],
+        "conflicts": ["pratos delicados", "peixe branco subtil"],
+        "notes": "Muito tânico e muito ácido — raridade mundialmente única. Bebido fresco (10-12°C) com peixe gordo, combinação regional clássica"
+      }
+    },
+
+    {
+      "id": "douro-branco",
+      "name": "Douro Branco",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Douro",
+      "doc": "Douro",
+      "typical_blend": ["Rabigato", "Viosinho", "Gouveio", "Malvasia Fina", "Arinto"],
+      "structure": {
+        "acidity": 7,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "12.5–14%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["pêssego", "damasco", "citrinos", "frutas de polpa branca"],
+        "secondary": ["mineral", "notas de xisto", "baunilha suave (reservas)"],
+        "tertiary": ["mel", "notas tostadas (evoluídos)"]
+      },
+      "pairing": {
+        "affinities": ["peixe nobre", "aves", "lulas e polvos", "risotto", "queijo de pasta mole"],
+        "conflicts": ["peixe muito delicado e cru", "mariscos muito simples"],
+        "notes": "Brancos de personalidade, com mineralidade xistosa característica. Reservas com barrica têm grande potencial de envelhecimento"
+      }
+    },
+
+    {
+      "id": "douro-tinto",
+      "name": "Douro Tinto",
+      "type": "red",
+      "category": "regional-blend",
+      "region": "Douro",
+      "doc": "Douro",
+      "typical_blend": ["Touriga Nacional", "Touriga Franca", "Tinta Roriz", "Tinta Barroca", "Tinto Cão"],
+      "structure": {
+        "acidity": 7,
+        "tannins": 8,
+        "body": "full",
+        "alcohol": "13.5–15%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["amora", "cassis", "violeta", "mirtilo", "ameixa"],
+        "secondary": ["grafite", "pedra de isqueiro", "especiarias"],
+        "tertiary": ["baunilha", "cravo", "chocolate", "tabaco", "couro leve"]
+      },
+      "pairing": {
+        "affinities": ["carne vermelha", "cordeiro", "caça", "queijo curado", "pratos robustos"],
+        "conflicts": ["peixe delicado", "pratos leves", "mariscos"],
+        "notes": "Um dos grandes tintos do mundo. Estrutura imponente, taninos firmes mas polidos nos melhores exemplares. Grande potencial de envelhecimento"
+      }
+    },
+
+    {
+      "id": "douro-tinto-premium",
+      "name": "Douro Tinto Premium (Touriga Nacional + Touriga Franca + Tinta Roriz)",
+      "type": "red",
+      "category": "regional-blend",
+      "region": "Douro",
+      "doc": "Douro",
+      "typical_blend": ["Touriga Nacional", "Touriga Franca", "Tinta Roriz"],
+      "structure": {
+        "acidity": 7,
+        "tannins": 9,
+        "body": "full",
+        "alcohol": "13.5–15%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["violeta intensa", "cassis", "amora", "ameixa preta", "mirtilo"],
+        "secondary": ["grafite", "pedra de isqueiro", "especiarias escuras"],
+        "tertiary": ["chocolate negro", "cedro", "baunilha", "tabaco", "couro polido"]
+      },
+      "pairing": {
+        "affinities": ["carne vermelha premium", "borrego assado", "caça maior", "queijo curado de longa cura", "lombinho de vaca"],
+        "conflicts": ["peixe", "mariscos", "pratos leves"],
+        "notes": "Blend nobre por excelência do Douro — as três castas mais aromáticas e estruturadas, sem Tinta Barroca nem Tinto Cão. Touriga Nacional dá perfume intenso (violeta, cassis), Touriga Franca suavidade e fruta vermelha-escura, Tinta Roriz estrutura tânica e acidez. Taninos mais polidos que o blend clássico de cinco castas. Estágio em carvalho novo frequente nos grandes rótulos. Potencial de envelhecimento muito elevado — 10 a 20+ anos"
+      }
+    },
+
+    {
+      "id": "porto-vintage",
+      "name": "Porto Vintage",
+      "type": "fortified",
+      "category": "regional-blend",
+      "region": "Douro",
+      "doc": "Porto",
+      "typical_blend": ["Touriga Nacional", "Touriga Franca", "Tinta Roriz", "Tinta Barroca"],
+      "structure": {
+        "acidity": 7,
+        "tannins": 10,
+        "body": "full",
+        "alcohol": "20%",
+        "sweetness": "sweet",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["amora", "cassis", "ameixa", "violeta"],
+        "secondary": ["frutas confitadas", "especiarias"],
+        "tertiary": ["couro", "tabaco", "chocolate", "nozes", "figo seco", "compota de frutos"]
+      },
+      "pairing": {
+        "affinities": ["queijo stilton", "queijo azul", "chocolate negro", "nozes", "sobremesas de frutos secos"],
+        "conflicts": ["pratos salgados intensos", "peixe", "mariscos"],
+        "notes": "O mais nobre dos Portos. Declarado apenas nos melhores anos. Precisa de decantação e décadas de envelhecimento para atingir o apogeu"
+      }
+    },
+
+    {
+      "id": "porto-lbv",
+      "name": "Porto LBV (Late Bottled Vintage)",
+      "type": "fortified",
+      "category": "regional-blend",
+      "region": "Douro",
+      "doc": "Porto",
+      "typical_blend": ["Touriga Nacional", "Touriga Franca", "Tinta Roriz"],
+      "structure": {
+        "acidity": 6,
+        "tannins": 8,
+        "body": "full",
+        "alcohol": "20%",
+        "sweetness": "sweet",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["amora", "ameixa preta", "cassis"],
+        "secondary": ["frutas confitadas"],
+        "tertiary": ["chocolate", "compota", "especiarias", "baunilha"]
+      },
+      "pairing": {
+        "affinities": ["queijo azul", "chocolate negro", "nozes", "sobremesas de frutos vermelhos"],
+        "conflicts": ["pratos salgados", "peixe"],
+        "notes": "Porto de um só ano, envelhecido 4–6 anos em pipa. Mais acessível que Vintage, bebível com menor decantação. Ótima relação qualidade/preço"
+      }
+    },
+
+    {
+      "id": "porto-tawny-10",
+      "name": "Porto Tawny 10 Anos",
+      "type": "fortified",
+      "category": "regional-blend",
+      "region": "Douro",
+      "doc": "Porto",
+      "typical_blend": ["Touriga Franca", "Tinta Roriz", "Tinta Barroca", "Touriga Nacional"],
+      "structure": {
+        "acidity": 5,
+        "tannins": 4,
+        "body": "medium",
+        "alcohol": "20%",
+        "sweetness": "sweet",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": [],
+        "secondary": ["frutos secos", "caramelo", "toffee"],
+        "tertiary": ["nozes", "amêndoa", "figo seco", "laranja confitada", "baunilha", "mel"]
+      },
+      "pairing": {
+        "affinities": ["sobremesas de noz e amêndoa", "crème brûlée", "parfait", "queijo azul suave", "foie gras"],
+        "conflicts": ["pratos salgados", "peixe"],
+        "notes": "Envelhecimento oxidativo em pequenas pipas. Cor âmbar-acastanhada. Servido fresco (14-16°C). Versátil para sobremesas"
+      }
+    },
+
+    {
+      "id": "porto-tawny-20",
+      "name": "Porto Tawny 20 Anos",
+      "type": "fortified",
+      "category": "regional-blend",
+      "region": "Douro",
+      "doc": "Porto",
+      "typical_blend": ["Touriga Franca", "Tinta Roriz", "Tinta Barroca"],
+      "structure": {
+        "acidity": 4,
+        "tannins": 2,
+        "body": "medium",
+        "alcohol": "20%",
+        "sweetness": "sweet",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": [],
+        "secondary": [],
+        "tertiary": ["nozes torradas", "amêndoa torrada", "laranja confitada", "café", "caramelo profundo", "especiarias doces", "tabaco suave"]
+      },
+      "pairing": {
+        "affinities": ["sobremesas de noz", "tortas de amêndoa", "pastéis de nata", "chocolate com leite", "queijo parmesão curado"],
+        "conflicts": ["pratos salgados", "peixe", "sobremesas muito frescas"],
+        "notes": "Complexidade oxidativa máxima. Cor âmbar intensa. Um dos grandes vinhos de sobremesa do mundo. Servido levemente fresco"
+      }
+    },
+
+    {
+      "id": "porto-branco",
+      "name": "Porto Branco",
+      "type": "fortified",
+      "category": "regional-blend",
+      "region": "Douro",
+      "doc": "Porto",
+      "typical_blend": ["Malvasia Fina", "Viosinho", "Rabigato", "Gouveio"],
+      "structure": {
+        "acidity": 6,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "17–20%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["damasco", "pêssego", "citrinos", "flores brancas"],
+        "secondary": ["nozes", "amêndoa"],
+        "tertiary": ["mel", "baunilha suave"]
+      },
+      "pairing": {
+        "affinities": ["aperitivo com gelo e tónica", "queijo de cabra", "presunto", "amêndoas tostadas", "petiscos"],
+        "conflicts": ["sobremesas muito doces", "pratos principais intensos"],
+        "notes": "Servido com gelo e tónica como aperitivo moderno. Versões dry são muito versáteis. Tendência crescente como cóctel base"
+      }
+    },
+
+    {
+      "id": "dao-branco",
+      "name": "Dão Branco",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Dão",
+      "doc": "Dão",
+      "typical_blend": ["Encruzado", "Malvasia Fina", "Bical", "Cerceal"],
+      "structure": {
+        "acidity": 7,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "13–14%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["maçã", "pêra", "pêssego", "citrinos"],
+        "secondary": ["manteiga", "nata", "mineral de granito"],
+        "tertiary": ["mel", "tosta suave (reservas)"]
+      },
+      "pairing": {
+        "affinities": ["peixe nobre", "aves", "cogumelos", "risotto", "pratos com molho cremoso", "queijo de pasta mole"],
+        "conflicts": ["peixe cru muito delicado", "mariscos simples"],
+        "notes": "Granito do Dão dá mineralidade única. Encruzado como casta principal garante complexidade e longevidade. Reservas excecionais"
+      }
+    },
+
+    {
+      "id": "dao-tinto",
+      "name": "Dão Tinto",
+      "type": "red",
+      "category": "regional-blend",
+      "region": "Dão",
+      "doc": "Dão",
+      "typical_blend": ["Touriga Nacional", "Alfrocheiro", "Tinta Roriz", "Jaen"],
+      "structure": {
+        "acidity": 7,
+        "tannins": 7,
+        "body": "medium",
+        "alcohol": "13–14%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["violeta", "cereja", "morango", "amora", "pimenta"],
+        "secondary": ["grafite", "mineral"],
+        "tertiary": ["baunilha", "cedro", "cogumelos", "terra húmida", "tabaco"]
+      },
+      "pairing": {
+        "affinities": ["aves assadas", "cordeiro", "vitela", "cogumelos", "queijo semiduro", "pratos de caça leve"],
+        "conflicts": ["peixe", "mariscos", "pratos leves"],
+        "notes": "A elegância dos tintos portugueses. Solo de granito e altitude moderam os taninos. Frequentemente comparado ao Pinot Noir pela delicadeza"
+      }
+    },
+
+    {
+      "id": "bairrada-branco",
+      "name": "Bairrada Branco",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Bairrada",
+      "doc": "Bairrada",
+      "typical_blend": ["Bical", "Arinto", "Maria Gomes"],
+      "structure": {
+        "acidity": 8,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "12–13%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["maçã", "pêra", "limão", "flores brancas"],
+        "secondary": ["mineral", "pedra molhada"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["peixe", "mariscos", "frango", "queijo fresco"],
+        "conflicts": ["carne vermelha", "pratos muito pesados"],
+        "notes": "Solo argiloso-calcário da Bairrada dá mineralidade e frescura. Acidez alta estrutura bem com frutos do mar"
+      }
+    },
+
+    {
+      "id": "bairrada-espumante",
+      "name": "Bairrada Espumante (Método Tradicional)",
+      "type": "sparkling",
+      "category": "regional-blend",
+      "region": "Bairrada",
+      "doc": "Bairrada",
+      "typical_blend": ["Bical", "Arinto", "Maria Gomes"],
+      "production_method": "Método tradicional (clássico) — segunda fermentação em garrafa, com estágio sobre lias",
+      "aging_tiers": {
+        "standard": "9 meses mínimo em garrafa",
+        "baga_bairrada": "18 meses mínimo (designação específica, obrigatório brut nature/extra-brut/brut)",
+        "reserva": "12–24 meses",
+        "super_extra_reserva": "24–36 meses",
+        "velha_grande_reserva": "36+ meses"
+      },
+      "structure": {
+        "acidity": 9,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "11.5–13%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["maçã", "pêra", "limão", "toranja", "pêssego", "damasco"],
+        "secondary": ["brioche", "massa de pão", "leveduras", "bolacha", "tosta leve"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["aperitivo", "mariscos", "ostra", "sushi", "ameijoas", "petiscos", "fritos leves", "peixe branco"],
+        "conflicts": ["carne vermelha", "pratos muito condimentados", "pratos muito gordurosos"],
+        "notes": "Um dos melhores espumantes de Portugal — cerca de 40% da produção nacional de espumante certificado. Solo argiloso-calcário e clima atlântico húmido garantem acidez naturalmente alta. Bical é a casta dominante: retém acidez excecionalmente bem e adiciona notas de pêssego/damasco e responde muito bem a estágio em lias. Notas de brioche mais subtis que Champagne — estilo mais frutal e floral. Existe também variante tinto/rosado de Baga (Espumante Baga Bairrada) — muito cítrico, azedo, com carácter único. Produtores de referência: Luís Pato, Caves São João, Sidonio de Sousa, Quinta das Bágeiras, Aliança"
+      }
+    },
+
+    {
+      "id": "tavora-varosa-espumante",
+      "name": "Távora-Varosa Espumante (Método Tradicional)",
+      "type": "sparkling",
+      "category": "regional-blend",
+      "region": "Távora-Varosa",
+      "doc": "Távora-Varosa",
+      "typical_blend": ["Malvasia Fina", "Bical", "Cerceal", "Arinto"],
+      "production_method": "Método tradicional exclusivo — segunda fermentação em garrafa. Primeira região demarcada de espumante em Portugal (1989)",
+      "aging_tiers": {
+        "standard": "9 meses mínimo em garrafa",
+        "reserva": "12 meses",
+        "super_extra_reserva": "24 meses",
+        "velha_grande_reserva": "36+ meses"
+      },
+      "structure": {
+        "acidity": 9,
+        "tannins": null,
+        "body": "light",
+        "alcohol": "11–12.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["limão", "toranja", "pêssego", "damasco", "citrinos frescos"],
+        "secondary": ["brioche suave", "amêndoa tostada", "pão fresco (reservas)"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["aperitivo", "ostra", "mariscos", "peixe cru", "sushi", "petiscos leves", "fritos delicados"],
+        "conflicts": ["carne vermelha", "pratos gordurosos pesados", "umami intenso"],
+        "notes": "Região serrana entre Douro e Dão, altitude e solos graníticos produzem espumantes de elevada acidez e carácter frutal-cítrico marcante. Cerca de 35% da produção nacional de espumante certificado. Perfil mais leve e frutal que a Bairrada: autólise muito discreta — mesmo as Super-Reserva mantêm carácter cítrico fresco. Produção exclusiva por método tradicional, herança dos monges Cistercienses do século XII. Produtores de referência: Murganheira, Raposeira"
+      }
+    },
+
+    {
+      "id": "bairrada-tinto",
+      "name": "Bairrada Tinto",
+      "type": "red",
+      "category": "regional-blend",
+      "region": "Bairrada",
+      "doc": "Bairrada",
+      "typical_blend": ["Baga"],
+      "structure": {
+        "acidity": 9,
+        "tannins": 9,
+        "body": "full",
+        "alcohol": "12–13.5%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["morango", "cereja", "framboesa"],
+        "secondary": [],
+        "tertiary": ["couro", "alcatrão", "especiarias", "terra"]
+      },
+      "pairing": {
+        "affinities": ["leitão da Bairrada", "porco gordo", "enchidos", "queijo curado", "pratos de forno ricos"],
+        "conflicts": ["peixe", "pratos leves", "mariscos", "qualquer prato não proteico"],
+        "notes": "Vinhos de longa guarda, necessitam envelhecimento. A combinação regional com leitão é uma das grandes harmonizações da gastronomia portuguesa"
+      }
+    },
+
+    {
+      "id": "alentejo-branco",
+      "name": "Alentejo Branco",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Alentejo",
+      "doc": "Alentejo",
+      "typical_blend": ["Antão Vaz", "Arinto", "Roupeiro", "Verdelho"],
+      "structure": {
+        "acidity": 6,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "13–14.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["pêssego", "damasco", "citrinos", "frutas tropicais"],
+        "secondary": ["baunilha", "tosta suave"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["peixe grelhado", "aves", "pratos mediterrâneos", "queijo de pasta mole", "legumes assados"],
+        "conflicts": ["mariscos muito delicados", "pratos muito ácidos"],
+        "notes": "Clima quente do Alentejo produz brancos maduros e encorpados. Bons resultados com barrica. Muito populares no mercado nacional e de exportação"
+      }
+    },
+
+    {
+      "id": "alentejo-tinto",
+      "name": "Alentejo Tinto",
+      "type": "red",
+      "category": "regional-blend",
+      "region": "Alentejo",
+      "doc": "Alentejo",
+      "typical_blend": ["Aragonez", "Trincadeira", "Alicante Bouschet", "Touriga Nacional"],
+      "structure": {
+        "acidity": 6,
+        "tannins": 7,
+        "body": "full",
+        "alcohol": "14–15.5%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["amora", "ameixa", "cassis", "frutas negras maduras"],
+        "secondary": ["chocolate", "café", "especiarias"],
+        "tertiary": ["baunilha", "couro", "tabaco", "compota"]
+      },
+      "pairing": {
+        "affinities": ["carne vermelha", "cordeiro", "caça", "porco preto alentejano", "queijo curado", "ensopados"],
+        "conflicts": ["peixe", "pratos leves", "mariscos"],
+        "notes": "Os tintos mais potentes e frutados de Portugal. Clima mediterrânico quente produz vinhos opulentos. Excelente com culinária robusta do Alentejo"
+      }
+    },
+
+    {
+      "id": "alentejo-alicante-bouschet-syrah",
+      "name": "Alentejo Tinto Alicante Bouschet + Syrah",
+      "type": "red",
+      "category": "regional-blend",
+      "region": "Alentejo",
+      "doc": "Alentejo",
+      "typical_blend": ["Alicante Bouschet", "Syrah"],
+      "structure": {
+        "acidity": 6,
+        "tannins": 8,
+        "body": "full",
+        "alcohol": "14–15.5%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["amora", "mirtilo", "ameixa preta", "frutas negras muito maduras"],
+        "secondary": ["chocolate negro", "café", "pimenta preta", "fumo", "especiarias"],
+        "tertiary": ["couro", "alcatrão", "baunilha intensa", "compota de frutos negros"]
+      },
+      "pairing": {
+        "affinities": ["carne vermelha gordurosa", "cordeiro assado", "churrasco", "caça maior", "queijo curado intenso", "enchidos fortes"],
+        "conflicts": ["peixe", "mariscos", "pratos leves", "pratos ácidos"],
+        "notes": "Alicante Bouschet é casta tintória rara (casca E polpa vermelhos), dando cor opaca quase negra e taninos firmes — mas com acidez superior às outras castas alentejanas (vantagem no clima quente). Syrah acrescenta pimenta negra, notas fumadas e especiarias orientais. Blend de grande potência e concentração. Estágio típico em barrica de 500L por 15-20 meses. Grande ageabilidade — evolui de fruta negra para especiarias florais e taninos sedosos"
+      }
+    },
+
+    {
+      "id": "alentejo-syrah-castelao",
+      "name": "Alentejo Tinto Syrah + Castelão",
+      "type": "red",
+      "category": "regional-blend",
+      "region": "Alentejo",
+      "doc": "Alentejo",
+      "typical_blend": ["Syrah", "Castelão"],
+      "structure": {
+        "acidity": 7,
+        "tannins": 7,
+        "body": "medium",
+        "alcohol": "13.5–14.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["groselha", "cereja negra", "ameixa", "amora"],
+        "secondary": ["pimenta negra", "especiarias", "ervas mediterrânicas"],
+        "tertiary": ["eucalipto", "notas balsâmicas", "couro suave"]
+      },
+      "pairing": {
+        "affinities": ["carnes grelhadas", "porco", "frango assado", "enchidos", "queijo médio", "pratos mediterrâneos"],
+        "conflicts": ["peixe muito delicado", "mariscos simples"],
+        "notes": "Syrah traz estrutura, pimenta e fruta escura; Castelão (Periquita) acrescenta acidez viva, fruta vermelha e carácter balsâmico característico. Blend mais versátil e de corpo médio face ao AB+Syrah. Castelão é autóctone de Palmela/Setúbal mas também aparece no Alentejo, trazendo frescura que aligeira o conjunto e melhora o equilíbrio em anos quentes"
+      }
+    },
+
+    {
+      "id": "lisboa-branco",
+      "name": "Lisboa Branco",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Lisboa",
+      "doc": "Lisboa",
+      "typical_blend": ["Arinto", "Fernão Pires", "Vital"],
+      "structure": {
+        "acidity": 7,
+        "tannins": null,
+        "body": "light",
+        "alcohol": "12–13%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["limão", "maçã", "flores brancas", "erva fresca"],
+        "secondary": ["notas minerais costeiras"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["peixe", "mariscos", "pratos mediterrâneos leves", "saladas"],
+        "conflicts": ["carne vermelha", "pratos muito pesados"],
+        "notes": "Influência atlântica e mediterrânica combinadas. Arinto da Bucelas é a variante mais notável da região — mineralidade e acidez excecionais"
+      }
+    },
+
+    {
+      "id": "lisboa-branco-interior",
+      "name": "Lisboa Branco Interior (Alenquer / Encostas d'Aire)",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Lisboa – Alenquer / interior",
+      "doc": "Lisboa",
+      "typical_blend": ["Arinto", "Fernão Pires", "Vital", "Seara Nova"],
+      "structure": {
+        "acidity": 7,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "12.5–13.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["pêssego", "pêra", "maçã madura", "citrinos"],
+        "secondary": ["flores brancas", "ervas mediterrânicas"],
+        "tertiary": ["mel leve", "tosta suave (reservas com barrica)"]
+      },
+      "pairing": {
+        "affinities": ["peixe grelhado", "aves", "queijo de pasta mole", "pratos mediterrâneos", "legumes assados"],
+        "conflicts": ["carne vermelha intensa", "pratos muito ácidos"],
+        "notes": "Estilo interior da Lisboa, protegido das brisas atlânticas pela Serra de Sintra e Montejunto — uvas amadurecem mais, brancos mais concentrados e frutados que o estilo costeiro de Colares. Arinto dá estrutura ácida, Fernão Pires aromas, Vital e Seara Nova corpo e textura. Alenquer tem reputação crescente para brancos de qualidade. Oposto complementar ao Colares — mais fruta, menos salinidade"
+      }
+    },
+
+    {
+      "id": "colares-branco",
+      "name": "Colares Branco",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Colares",
+      "doc": "Colares",
+      "typical_blend": ["Malvasia de Colares"],
+      "structure": {
+        "acidity": 8,
+        "tannins": null,
+        "body": "light",
+        "alcohol": "11–12.5%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["amêndoa fresca", "limão", "citrinos", "flor de laranjeira"],
+        "secondary": ["sal marinho", "iodo leve", "mineral de areia"],
+        "tertiary": ["mel leve", "cera de abelha (versões evoluídas)"]
+      },
+      "pairing": {
+        "affinities": ["ostra", "mariscos", "peixe do Atlântico", "peixe cru", "sushi", "sashimi"],
+        "conflicts": ["carne vermelha", "pratos muito ricos", "especiarias fortes"],
+        "notes": "Um dos vinhos portugueses mais raros e únicos do mundo. Vinhas plantadas em areia de dunas — a filoxera não sobrevive na areia, por isso as videiras não são enxertadas (pé-franco). Cultivo em latada alta (árvore). Malvasia de Colares produz brancos com salinidade e mineralidade incomparáveis, influência atlântica extrema junto a Sintra. DOC histórico (1907). Produção mínima — vinho de culto com excelente longevidade"
+      }
+    },
+
+    {
+      "id": "lisboa-tinto",
+      "name": "Lisboa Tinto",
+      "type": "red",
+      "category": "regional-blend",
+      "region": "Lisboa",
+      "doc": "Lisboa",
+      "typical_blend": ["Castelão", "Touriga Nacional", "Tinta Roriz", "Syrah"],
+      "structure": {
+        "acidity": 6,
+        "tannins": 6,
+        "body": "medium",
+        "alcohol": "13–14.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["frutas vermelhas e negras", "citrinos", "ervas mediterrânicas"],
+        "secondary": ["especiarias suaves"],
+        "tertiary": ["eucalipto", "notas balsâmicas"]
+      },
+      "pairing": {
+        "affinities": ["frango", "porco", "carnes magras", "pratos mediterrâneos", "queijo médio"],
+        "conflicts": ["peixe muito delicado", "mariscos"],
+        "notes": "Região diversa com muitos sub-estilos. Influência oceânica próxima de Lisboa modera o calor. Bom valor geral"
+      }
+    },
+
+    {
+      "id": "tejo-branco",
+      "name": "Tejo Branco",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Tejo",
+      "doc": "Tejo",
+      "typical_blend": ["Fernão Pires", "Arinto", "Sauvignon Blanc"],
+      "structure": {
+        "acidity": 6,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "12.5–13.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["lichia", "flores aromáticas", "pêssego", "mel leve"],
+        "secondary": ["notas de ervas"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["peixe grelhado", "aves", "saladas aromáticas", "queijo fresco"],
+        "conflicts": ["carne vermelha intensa"],
+        "notes": "Fernão Pires domina, dando aromas únicos de lichia e anis. Boa relação qualidade-preço. Modernização com castas internacionais frequente"
+      }
+    },
+
+    {
+      "id": "tejo-branco-arinto",
+      "name": "Tejo Branco Arinto",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Tejo",
+      "doc": "Tejo",
+      "typical_blend": ["Arinto", "Fernão Pires"],
+      "structure": {
+        "acidity": 8,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "12–13.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["limão", "toranja", "maçã verde", "lima"],
+        "secondary": ["pedra molhada", "mineral calcário", "erva fresca"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["peixe grelhado", "mariscos", "saladas", "queijo fresco", "pratos mediterrâneos leves"],
+        "conflicts": ["carne vermelha", "pratos muito gordurosos"],
+        "notes": "Estilo estruturado e mineral do Tejo — contrasta com o branco aromático de Fernão Pires. Arinto aqui retém acidez alta e mineralidade calcária própria da região. Sub-região de Tomar (solos de xisto) produz os exemplares mais minerais e austeros. Mais cítrico e menos aromático que o blend standard Fernão Pires; maior potencial de envelhecimento"
+      }
+    },
+
+    {
+      "id": "tejo-tinto",
+      "name": "Tejo Tinto",
+      "type": "red",
+      "category": "regional-blend",
+      "region": "Tejo",
+      "doc": "Tejo",
+      "typical_blend": ["Castelão", "Trincadeira", "Touriga Nacional", "Syrah", "Cabernet Sauvignon"],
+      "structure": {
+        "acidity": 6,
+        "tannins": 6,
+        "body": "medium",
+        "alcohol": "13.5–15%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["frutas vermelhas e negras maduras", "amora", "ameixa"],
+        "secondary": ["especiarias", "ervas"],
+        "tertiary": ["baunilha leve", "couro suave"]
+      },
+      "pairing": {
+        "affinities": ["carnes grelhadas", "porco", "enchidos", "queijo médio", "pizzas"],
+        "conflicts": ["peixe delicado", "mariscos"],
+        "notes": "Região de grande volume. Blends com castas internacionais muito comuns. Boa relação qualidade-preço para consumo diário"
+      }
+    },
+
+    {
+      "id": "palmela-tinto",
+      "name": "Palmela / Setúbal Tinto",
+      "type": "red",
+      "category": "regional-blend",
+      "region": "Palmela, Setúbal",
+      "doc": "Palmela",
+      "typical_blend": ["Castelão"],
+      "structure": {
+        "acidity": 7,
+        "tannins": 6,
+        "body": "medium",
+        "alcohol": "13–14.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["morango", "cereja", "framboesa", "ervas mediterrânicas"],
+        "secondary": [],
+        "tertiary": ["eucalipto", "pinho", "notas balsâmicas"]
+      },
+      "pairing": {
+        "affinities": ["frango", "porco", "linguiça", "peixe azul grelhado", "pratos de mar robustos"],
+        "conflicts": ["peixe muito delicado"],
+        "notes": "Castelão é a casta dominante. Solo de areia sobre argila. Produz tintos de média estrutura com carácter balsâmico distinto"
+      }
+    },
+
+    {
+      "id": "moscatel-setubal",
+      "name": "Moscatel de Setúbal",
+      "type": "fortified",
+      "category": "regional-blend",
+      "region": "Setúbal",
+      "doc": "Setúbal",
+      "typical_blend": ["Moscatel Galego Branco", "Moscatel Roxo"],
+      "structure": {
+        "acidity": 5,
+        "tannins": null,
+        "body": "full",
+        "alcohol": "17–20%",
+        "sweetness": "sweet",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["uva fresca", "rosa", "lichia", "laranja"],
+        "secondary": [],
+        "tertiary": ["damasco seco", "figo seco", "mel de abelha", "caramelo", "laranja confitada"]
+      },
+      "pairing": {
+        "affinities": ["sobremesas frutadas", "queijo azul", "foie gras", "frutas exóticas", "pastéis de nata"],
+        "conflicts": ["pratos salgados", "peixe", "carnes"],
+        "notes": "Um dos vinhos doces mais únicos do mundo. Fermentação interrompida com aguardente vínica sobre as películas da uva. Pode envelhecer décadas"
+      }
+    },
+
+    {
+      "id": "bucelas-branco",
+      "name": "Bucelas Branco",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Bucelas",
+      "doc": "Bucelas",
+      "typical_blend": ["Arinto", "Esgana Cão"],
+      "structure": {
+        "acidity": 9,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "11.5–13%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["limão", "lima", "toranja", "erva fresca", "flores brancas"],
+        "secondary": ["pedra de isqueiro", "mineral", "fósforo"],
+        "tertiary": ["resina leve", "petróleo (versões evoluídas)"]
+      },
+      "pairing": {
+        "affinities": ["ostra", "mariscos", "peixe cru", "sushi", "sashimi", "peixe branco nobre"],
+        "conflicts": ["carne vermelha", "pratos gordurosos pesados"],
+        "notes": "DOC histórico a norte de Lisboa. Arinto puro com acidez extremamente alta e mineralidade calcária característica. Grande longevidade"
+      }
+    },
+
+    {
+      "id": "madeira-sercial",
+      "name": "Madeira Sercial",
+      "type": "fortified",
+      "category": "regional-blend",
+      "region": "Madeira",
+      "doc": "Madeira",
+      "typical_blend": ["Sercial"],
+      "structure": {
+        "acidity": 9,
+        "tannins": null,
+        "body": "light",
+        "alcohol": "17–20%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["limão", "maçã verde", "citrinos secos"],
+        "secondary": [],
+        "tertiary": ["nozes secas", "caramelo seco", "laranja amarga", "sal marinho", "verniz leve"]
+      },
+      "pairing": {
+        "affinities": ["aperitivo", "sopa de tartaruga", "ostra", "presunto", "patés de peixe"],
+        "conflicts": ["sobremesas muito doces", "pratos muito açucarados"],
+        "notes": "O mais seco dos Madeiras. Acidez altíssima e sabor oxidativo único. Excelente aperitivo e com sopas ricas"
+      }
+    },
+
+    {
+      "id": "madeira-verdelho",
+      "name": "Madeira Verdelho",
+      "type": "fortified",
+      "category": "regional-blend",
+      "region": "Madeira",
+      "doc": "Madeira",
+      "typical_blend": ["Verdelho"],
+      "structure": {
+        "acidity": 8,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "17–20%",
+        "sweetness": "off-dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["pêssego seco", "damasco", "citrinos"],
+        "secondary": [],
+        "tertiary": ["nozes", "caramelo", "mel", "especiarias secas", "fumo"]
+      },
+      "pairing": {
+        "affinities": ["sopa de caldo rico", "frango assado", "pratos agridoces", "pratos com marinado"],
+        "conflicts": ["sobremesas muito doces", "pratos muito leves"],
+        "notes": "Off-dry com acidez alta. Equilíbrio perfeito entre doçura residual e acidez. Clássico com consommé e sopas ricas"
+      }
+    },
+
+    {
+      "id": "madeira-bual",
+      "name": "Madeira Bual",
+      "type": "fortified",
+      "category": "regional-blend",
+      "region": "Madeira",
+      "doc": "Madeira",
+      "typical_blend": ["Bual"],
+      "structure": {
+        "acidity": 7,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "17–20%",
+        "sweetness": "semi-sweet",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": [],
+        "secondary": [],
+        "tertiary": ["caramelo rico", "mel de abelha", "nozes", "laranja confitada", "especiarias doces", "tabaco suave"]
+      },
+      "pairing": {
+        "affinities": ["sobremesas de noz", "tortas", "queijos semiduros curados", "crème brûlée", "frutos secos"],
+        "conflicts": ["pratos salgados muito intensos", "peixe cru"],
+        "notes": "Semi-doce com acidez que equilibra a doçura. Muito versátil para sobremesas. Envelhecimento extraordinário — garrafas centenárias ainda vivas"
+      }
+    },
+
+    {
+      "id": "madeira-malmsey",
+      "name": "Madeira Malmsey",
+      "type": "fortified",
+      "category": "regional-blend",
+      "region": "Madeira",
+      "doc": "Madeira",
+      "typical_blend": ["Malvasia"],
+      "structure": {
+        "acidity": 6,
+        "tannins": null,
+        "body": "full",
+        "alcohol": "17–20%",
+        "sweetness": "sweet",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": [],
+        "secondary": [],
+        "tertiary": ["caramelo", "mel profundo", "chocolate com leite", "café", "nozes torradas", "laranja confitada", "figo seco", "especiarias doces"]
+      },
+      "pairing": {
+        "affinities": ["sobremesas ricas", "chocolate", "crème brûlée", "pudim", "queijo azul", "parfait"],
+        "conflicts": ["pratos salgados", "peixe"],
+        "notes": "O mais doce dos Madeiras. Acidez suficiente para não ser enjoativo. Perfeito para sobremesas complexas e chocolate"
+      }
+    },
+
+    {
+      "id": "trasosmontes-branco",
+      "name": "Trás-os-Montes Branco",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Trás-os-Montes",
+      "doc": "Trás-os-Montes",
+      "typical_blend": ["Códega do Larinho", "Gouveio", "Rabigato", "Viosinho", "Malvasia Fina"],
+      "structure": {
+        "acidity": 7,
+        "tannins": null,
+        "body": "light",
+        "alcohol": "12–13.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["flores brancas", "pêssego", "citrinos", "fruta tropical leve"],
+        "secondary": ["mineral de granito", "ervas frescas"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["peixe", "mariscos", "aves leves", "queijo fresco", "pratos da cozinha transmontana leve"],
+        "conflicts": ["carne vermelha intensa", "pratos muito gordurosos"],
+        "notes": "Região remota no extremo nordeste de Portugal, entre as montanhas ('Trás-os-Montes' = 'atrás das montanhas'). Clima continental extremo — invernos muito frios, verões quentes e secos. Brancos suaves e aromáticos, com acidez fresca e aroma floral. Castas autóctones como Códega do Larinho e Rabigato dominam. Região ainda pouco explorada — grande valor de descoberta para apreciadores"
+      }
+    },
+
+    {
+      "id": "trasosmontes-tinto",
+      "name": "Trás-os-Montes Tinto",
+      "type": "red",
+      "category": "regional-blend",
+      "region": "Trás-os-Montes",
+      "doc": "Trás-os-Montes",
+      "typical_blend": ["Bastardo", "Marufo", "Tinta Roriz", "Touriga Nacional", "Touriga Franca"],
+      "structure": {
+        "acidity": 7,
+        "tannins": 8,
+        "body": "full",
+        "alcohol": "13–15%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["ameixa madura", "amora", "cereja negra", "frutas negras rústicas"],
+        "secondary": ["especiarias", "terra", "ervas aromáticas"],
+        "tertiary": ["couro", "tabaco", "compota de frutos", "notas animais leves"]
+      },
+      "pairing": {
+        "affinities": ["caça maior", "javali", "cordeiro assado", "enchidos transmontanos", "carne de vaca", "queijo curado"],
+        "conflicts": ["peixe", "pratos delicados", "mariscos"],
+        "notes": "Tintos robustos e autênticos — refletem o carácter rústico e generoso da cozinha transmontana. Bastardo (Trousseau) contribui açúcar e álcool potencial; Marufo adiciona cor e corpo; Tinta Roriz e Tourigas refinam o perfil. Altitude variável: vinhas em baixo produzemvinhos mais encorpados e alcoólicos, em altitude mais frescura e acidez. Cozinha regional de referência: alheira, presunto e caça"
+      }
+    },
+
+    {
+      "id": "beira-interior-branco",
+      "name": "Beira Interior Branco",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Beira Interior",
+      "doc": "Beira Interior",
+      "typical_blend": ["Síria", "Arinto", "Malvasia Fina"],
+      "structure": {
+        "acidity": 8,
+        "tannins": null,
+        "body": "light",
+        "alcohol": "11.5–13%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["limão", "melão", "citrinos", "flores silvestres", "erva fresca"],
+        "secondary": ["mineral de granito", "pedra molhada"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["peixe grelhado", "mariscos", "saladas", "queijo fresco de cabra", "petiscos leves"],
+        "conflicts": ["carne vermelha", "pratos muito ricos"],
+        "notes": "A mais alta região DOC de Portugal (vinhas até 900m). Serra da Estrela define o terroir — solos graníticos, clima continental extremo com grandes amplitudes térmicas. Síria (= Roupeiro = Códega) é aromática e refrescante com notas de melão e flores silvestres. Acidez bem preservada pela altitude. Beira Interior é uma das regiões mais autênticas e menos conhecidas de Portugal — vinhos de descoberta"
+      }
+    },
+
+    {
+      "id": "beira-interior-tinto",
+      "name": "Beira Interior Tinto",
+      "type": "red",
+      "category": "regional-blend",
+      "region": "Beira Interior",
+      "doc": "Beira Interior",
+      "typical_blend": ["Rufete", "Touriga Nacional", "Marufo", "Alfrocheiro"],
+      "structure": {
+        "acidity": 8,
+        "tannins": 6,
+        "body": "medium",
+        "alcohol": "12–13.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["cereja", "morango", "framboesa", "violeta"],
+        "secondary": ["pimenta", "mineral de granito", "ervas silvestres"],
+        "tertiary": ["terra húmida", "cogumelos leves"]
+      },
+      "pairing": {
+        "affinities": ["aves", "porco magro", "cogumelos", "queijo médio", "pratos da cozinha da Beira", "vitela"],
+        "conflicts": ["peixe", "mariscos", "pratos muito delicados"],
+        "notes": "Rufete é a casta emblemática da Beira Interior — produz tintos de corpo leve a médio com acidez alta e notas florais e de fruta vermelha, frequentemente comparado ao Pinot Noir pela elegância e leveza. Altitude (até 900m) e granito preservam frescura e acidez invulgares para um tinto português. Sub-regiões: Castelo Rodrigo, Pinhel, Cova da Beira — cada uma com personalidade distinta. Vinhos de terroir autêntico, ainda sub-valorizados"
+      }
+    },
+
+    {
+      "id": "acores-branco-pico",
+      "name": "Açores Branco – Pico (Verdelho + Arinto dos Açores)",
+      "type": "white",
+      "category": "regional-blend",
+      "region": "Açores – Ilha do Pico",
+      "doc": "Açores",
+      "typical_blend": ["Verdelho", "Arinto dos Açores"],
+      "structure": {
+        "acidity": 9,
+        "tannins": null,
+        "body": "light",
+        "alcohol": "12–13%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["toranja", "maracujá", "guava", "lima", "citrinos tropicais"],
+        "secondary": ["sal marinho", "mineral vulcânico", "iodo", "pedra de basalto"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["ostra", "mariscos atlânticos", "peixe cru", "sushi", "sashimi", "peixe do Atlântico", "percebes"],
+        "conflicts": ["carne vermelha", "pratos muito ricos", "umami intenso"],
+        "notes": "Terroir absolutamente único no mundo — vinhas plantadas em currais (muros de lava basáltica) para proteger do vento e salsugem do Atlântico, a 50-300m de altitude. Solo exclusivamente vulcânico (basalto), vinha não enxertada. Salinidade dos vinhos impregnada literalmente pela brisa marinha. UNESCO World Heritage. Verdelho dos Açores é diferente do Verdelho da Madeira — mais cítrico e tropical, menos oxidativo. Arinto dos Açores (≠ Arinto continental) é uma casta distinta, com salinidade e acidez ainda mais acentuadas. Produção mínima — vinhos de culto e experiência"
+      }
+    }
+
+  ]
+}

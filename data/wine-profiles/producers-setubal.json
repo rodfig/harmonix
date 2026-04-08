@@ -1,0 +1,397 @@
+{
+  "_meta": {
+    "region": "Setúbal",
+    "description": "Producer wine profiles for Setúbal DOC (fortified system)",
+    "schema_version": "2.0",
+    "note": "Producer-centric format. Pairing is derived algorithmically from structure fields via pairing-rules.json. food_tags are NOT stored on wines. Cooking method and dish complements are as important as the main ingredient — see pairing_principles in pairing-rules.json.",
+    "fields_required": [
+      "id",
+      "name",
+      "doc",
+      "type",
+      "varieties",
+      "alcohol",
+      "structure",
+      "aromas",
+      "pairing"
+    ],
+    "fields_optional": [
+      "vintage",
+      "acidity_gl",
+      "ph",
+      "winemaking",
+      "notes",
+      "quinta"
+    ],
+    "fields_producer_optional": [
+      "quintas"
+    ]
+  },
+  "producers": [
+	{
+	  "producer": "José Maria da Fonseca",
+	  "region": "Setúbal DOC – Azeitão",
+	  "quintas": [],
+	  "producer_notes": "Produtor histórico fundado em 1834 e principal referência do Moscatel de Setúbal. Estilo baseado em maceração pelicular prolongada após fortificação e envelhecimento oxidativo em madeira usada, privilegiando intensidade aromática, notas cítricas e meladas e grande persistência.",
+	  "wines": [
+
+		{
+		  "id": "jmf-alambre-moscatel-2019",
+		  "name": "Alambre Moscatel de Setúbal",
+		  "vintage": 2019,
+		  "doc": "Setúbal DOC",
+		  "type": "fortified",
+		  "varieties": ["Moscatel de Setúbal"],
+		  "alcohol": 18.0,
+		  "acidity_gl": 4.05,
+		  "ph": 3.56,
+		  "winemaking": "Fermentação interrompida com aguardente vínica seguida de maceração pelicular de 3 meses; envelhecimento em cascos de madeira usada.",
+		  "notes": "Perfil clássico com casca de laranja cristalizada e passas, mantendo frescura aromática característica da Arrábida.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": null,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["casca de laranja", "uva passa"],
+			"secondary": ["mel"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "doçaria conventual",
+			  "tarte de laranja",
+			  "amêndoa",
+			  "queijo azul"
+			],
+			"notes": "Moscatel jovem onde frescura cítrica equilibra elevada doçura."
+		  }
+		},
+
+		{
+		  "id": "jmf-alambre-10-anos",
+		  "name": "Alambre 10 Anos",
+		  "vintage": null,
+		  "doc": "Setúbal DOC",
+		  "type": "fortified",
+		  "varieties": ["Moscatel de Setúbal"],
+		  "alcohol": 17.5,
+		  "acidity_gl": 4.3,
+		  "ph": 3.64,
+		  "winemaking": "Maceração pelicular de 5 meses após fortificação; envelhecimento oxidativo entre 10 e 15 anos em madeira usada.",
+		  "notes": "Grande complexidade aromática com laranja, alperce, nozes e mel; textura macia e final muito longo.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": null,
+			"body": "full",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["laranja", "alperce"],
+			"secondary": ["noz", "mel", "erva-doce"],
+			"tertiary": ["oxidativo", "tosta"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "sobremesas de frutos secos",
+			  "toucinho do céu",
+			  "foie gras",
+			  "queijos intensos"
+			],
+			"notes": "Moscatel envelhecido onde doçura e amargor cítrico criam grande versatilidade gastronómica."
+		  }
+		},
+
+		{
+		  "id": "jmf-alambre-20-anos",
+		  "name": "Alambre 20 Anos",
+		  "vintage": null,
+		  "doc": "Setúbal DOC",
+		  "type": "fortified",
+		  "varieties": ["Moscatel de Setúbal"],
+		  "alcohol": 18.0,
+		  "acidity_gl": 7.3,
+		  "ph": 3.34,
+		  "winemaking": "Maceração pelicular tradicional prolongada; envelhecimento oxidativo em madeira usada com lotes muito antigos.",
+		  "notes": "Extremamente complexo com laranja cristalizada, café, caramelo, avelã e ervas aromáticas.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": null,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["laranja cristalizada"],
+			"secondary": ["avelã", "caramelo", "café"],
+			"tertiary": ["oxidativo", "resina"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "crème brûlée",
+			  "doçaria de ovos",
+			  "amêndoas caramelizadas",
+			  "queijo azul"
+			],
+			"notes": "Moscatel altamente oxidativo e complexo, ideal para sobremesas ricas."
+		  }
+		},
+
+		{
+		  "id": "jmf-alambre-moscatel-roxo",
+		  "name": "Alambre Moscatel Roxo",
+		  "vintage": null,
+		  "doc": "Setúbal DOC",
+		  "type": "fortified",
+		  "varieties": ["Moscatel Roxo"],
+		  "alcohol": 18.5,
+		  "acidity_gl": 3.82,
+		  "ph": 3.20,
+		  "winemaking": "Maceração pelicular de 3 meses após fortificação; envelhecimento oxidativo em madeira usada.",
+		  "notes": "Perfil aromático intenso com tangerina, alperce, lima, mel e caramelo.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 1,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["tangerina", "alperce", "lima"],
+			"secondary": ["mel", "caramelo"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "sobremesas cítricas",
+			  "amêndoa",
+			  "doçaria conventual"
+			],
+			"notes": "Moscatel Roxo mais perfumado e fresco que o estilo clássico."
+		  }
+		},
+
+		{
+		  "id": "jmf-moscatel-roxo-20-anos",
+		  "name": "Moscatel Roxo 20 Anos",
+		  "vintage": null,
+		  "doc": "Setúbal DOC",
+		  "type": "fortified",
+		  "varieties": ["Moscatel Roxo"],
+		  "alcohol": 18.0,
+		  "acidity_gl": 5.7,
+		  "ph": 3.5,
+		  "winemaking": "Maceração pelicular de 5 meses seguida de envelhecimento oxidativo prolongado em madeira usada.",
+		  "notes": "Aromas de caramelo, laranja e especiarias; boca redonda e muito suave com final extremamente prolongado.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 1,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["laranja"],
+			"secondary": ["caramelo", "especiarias"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "doçaria rica",
+			  "frutos secos",
+			  "queijos intensos"
+			],
+			"notes": "Grande Moscatel Roxo com elevada persistência aromática."
+		  }
+		}
+
+	  ]
+	},
+	{
+	  "producer": "Bacalhôa",
+	  "region": "Setúbal DOC – Azeitão / Serra da Arrábida",
+	  "quintas": [
+		"Serra da Ursa",
+		"Quinta dos Frades"
+	  ],
+	  "producer_notes": "Produtor histórico da Península de Setúbal com forte foco no Moscatel de Setúbal e Moscatel Roxo. Estilo marcado por maceração pelicular prolongada após fortificação e envelhecimento em estufa com grandes amplitudes térmicas, resultando em elevada concentração aromática e equilíbrio entre doçura, acidez e amargor cítrico.",
+	  "wines": [
+
+		{
+		  "id": "bacalhoa-moscatel-setubal-2022",
+		  "name": "Moscatel de Setúbal",
+		  "vintage": 2022,
+		  "doc": "Setúbal DOC",
+		  "type": "fortified",
+		  "varieties": ["Moscatel de Setúbal"],
+		  "alcohol": 17.0,
+		  "acidity_gl": 5.6,
+		  "ph": 3.10,
+		  "winemaking": "Fermentação curta interrompida por aguardente vínica; maceração pelicular até ao inverno seguinte; estágio de 12 meses em meias pipas usadas.",
+		  "notes": "Estilo jovem com flor de laranjeira, citrinos, casca de laranja e frutas cristalizadas; boca encorpada com equilíbrio entre doçura e amargo fresco.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": null,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["flor de laranjeira", "citrinos"],
+			"secondary": ["casca de laranja", "fruta cristalizada", "chá"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "sobremesas cítricas",
+			  "chocolate negro",
+			  "aperitivo com limão"
+			],
+			"notes": "Moscatel jovem onde o amargo cítrico equilibra a doçura."
+		  }
+		},
+
+		{
+		  "id": "bacalhoa-moscatel-10-anos-2010",
+		  "name": "Moscatel de Setúbal Superior 10 Anos",
+		  "vintage": 2010,
+		  "doc": "Setúbal DOC",
+		  "type": "fortified",
+		  "varieties": ["Moscatel de Setúbal"],
+		  "alcohol": 20.0,
+		  "acidity_gl": 6.7,
+		  "ph": 3.12,
+		  "winemaking": "Maceração pelicular prolongada seguida de envelhecimento cerca de 15 anos em meias pipas usadas sob grandes amplitudes térmicas.",
+		  "notes": "Notas intensas de flor de laranjeira, doce de laranja amarga, figos, passas e nozes; textura suave com equilíbrio entre doce, ácido e amargo.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": null,
+			"body": "full",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["laranja amarga", "figo"],
+			"secondary": ["noz", "marmelada", "chá earl grey"],
+			"tertiary": ["rancio", "oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "chocolate negro",
+			  "frutos secos",
+			  "café",
+			  "digestivo"
+			],
+			"notes": "Grande Moscatel oxidativo com elevada persistência."
+		  }
+		},
+
+		{
+		  "id": "bacalhoa-moscatel-20-anos-2000",
+		  "name": "Moscatel de Setúbal Superior 20 Anos",
+		  "vintage": 2000,
+		  "doc": "Setúbal DOC",
+		  "type": "fortified",
+		  "varieties": ["Moscatel de Setúbal"],
+		  "alcohol": 20.0,
+		  "acidity_gl": 12.02,
+		  "ph": 3.40,
+		  "winemaking": "Envelhecimento prolongado em estufa após estágio iniciado em 2001.",
+		  "notes": "Âmbar complexo com marmelada, chá earl grey, alperce, figo, mel e avelã; equilíbrio entre elevada acidez e amargor refrescante.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["marmelada", "alperce"],
+			"secondary": ["avelã", "mel", "chá"],
+			"tertiary": ["oxidativo", "rancio"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "queijos intensos",
+			  "sobremesas de chocolate",
+			  "café"
+			],
+			"notes": "Moscatel altamente concentrado onde acidez e amargor sustentam a doçura."
+		  }
+		},
+
+		{
+		  "id": "bacalhoa-moscatel-roxo-5-anos",
+		  "name": "Moscatel Roxo 5 Anos",
+		  "vintage": null,
+		  "doc": "Setúbal DOC",
+		  "type": "fortified",
+		  "varieties": ["Moscatel Roxo"],
+		  "alcohol": 18.5,
+		  "acidity_gl": 5.5,
+		  "ph": 3.11,
+		  "winemaking": "Maceração pelicular prolongada seguida de estágio mínimo de 5 anos em barricas usadas.",
+		  "notes": "Perfil floral intenso com rosas, passas, amêndoas e mel; boca suave e persistente.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 1,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["rosa", "flor de laranjeira"],
+			"secondary": ["amêndoa", "mel", "passas"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "doçaria conventual",
+			  "amêndoa",
+			  "sobremesas ricas"
+			],
+			"notes": "Moscatel Roxo perfumado e gastronómico."
+		  }
+		},
+
+		{
+		  "id": "bacalhoa-moscatel-roxo-10-anos-2011",
+		  "name": "Moscatel Roxo Superior 10 Anos",
+		  "vintage": 2011,
+		  "doc": "Setúbal DOC",
+		  "type": "fortified",
+		  "varieties": ["Moscatel Roxo"],
+		  "alcohol": 20.1,
+		  "acidity_gl": 9.18,
+		  "ph": 3.25,
+		  "winemaking": "Maceração tradicional seguida de envelhecimento cerca de 15 anos em barricas usadas sob grandes amplitudes térmicas.",
+		  "notes": "Aroma intenso com flor de laranjeira, rosas, mel e amêndoas; boca equilibrada entre doçura, acidez e leve adstringência.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": 1,
+			"body": "full",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["rosa", "flor de laranjeira"],
+			"secondary": ["mel", "amêndoa"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "chocolate negro",
+			  "sobremesas ricas",
+			  "digestivo"
+			],
+			"notes": "Grande Moscatel Roxo de elevada intensidade aromática."
+		  }
+		}
+
+	  ]
+	}	
+  ]
+}  

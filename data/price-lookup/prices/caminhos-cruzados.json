@@ -1,0 +1,266 @@
+{
+  "producer": "Caminhos Cruzados",
+  "generated_at": "2026-03-01T11:20:27.328131",
+  "found_count": 6,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "cruzados-reserva-tinto-2019",
+      "producer": "Caminhos Cruzados",
+      "name": "Caminhos Cruzados Reserva Tinto",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 19.38,
+          "name_found": "Caminhos Cruzados Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/caminhos-cruzados-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2013 Madalena Reserva Especial tinto",
+          "confidence": "no_match",
+          "score": 0.162,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Macanita Reserva 2023 75 Cl",
+          "confidence": "no_match",
+          "score": 0.287,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 25.85,
+          "name_found": "Caminhos Cruzados Reserva Tinto 2017",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/dao/21583-caminhos-cruzados-reserve-red-2017-5600765408049.html"
+        }
+      },
+      "best_retail": 19.38,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 29.5,
+        "2.0x": 39.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "cruzados-reserva-encruzado-2022",
+      "producer": "Caminhos Cruzados",
+      "name": "Caminhos Cruzados Reserva Encruzado",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 19.19,
+          "name_found": "Caminhos Cruzados Reserva Encruzado Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/caminhos-cruzados-reserva-encruzado-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Titular Encruzado Reserva branco",
+          "confidence": "no_match",
+          "score": 0.383,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Taboadella Reserva Encruzado 2024 75 Cl",
+          "confidence": "low",
+          "score": 0.54,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 25.85,
+          "name_found": "Caminhos Cruzados Encruzado Reserva Branco 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/dao/21579-caminhos-cruzados-encruzado-reserve-white-2021-5600765408094.html"
+        }
+      },
+      "best_retail": 19.19,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 29.0,
+        "2.0x": 38.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "cruzados-tn-reserva-2024",
+      "producer": "Caminhos Cruzados",
+      "name": "Caminhos Cruzados Touriga Nacional Reserva",
+      "vintage": 2024,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 19.38,
+          "name_found": "Caminhos Cruzados Reserva Tinto",
+          "confidence": "high",
+          "score": 0.794,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/caminhos-cruzados-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2013 Madalena Reserva Especial tinto",
+          "confidence": "no_match",
+          "score": 0.126,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Nova Reserva Touriga Nacional 2021 75 Cl",
+          "confidence": "low",
+          "score": 0.615,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 25.85,
+          "name_found": "Caminhos Cruzados Reserva Tinto 2017",
+          "confidence": "high",
+          "score": 0.801,
+          "url": "https://www.portugalvineyards.com/pt/dao/21583-caminhos-cruzados-reserve-red-2017-5600765408049.html"
+        }
+      },
+      "best_retail": 19.38,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 29.5,
+        "2.0x": 39.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "cruzados-teixuga-branco",
+      "producer": "Caminhos Cruzados",
+      "name": "Vinhas da Teixuga Branco",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 24.91,
+          "name_found": "Vinhas da Teixuga Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/vinhas-da-teixuga-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 29.95,
+          "name_found": " 2021 Vinhas da Teixuga 2ª Edição tinto",
+          "confidence": "high",
+          "score": 0.854,
+          "url": "https://www.garrafeiranacional.com/vinho/2021-vinhas-da-teixuga-2-edic-o-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Tiago Cabaço Vinhas Velhas 75 Cl",
+          "confidence": "no_match",
+          "score": 0.376,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 33.55,
+          "name_found": "Vinhas da Teixuga Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/dao/24570-vinhas-da-teixuga-white-2021.html"
+        }
+      },
+      "best_retail": 24.91,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 37.5,
+        "2.0x": 50.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "cruzados-teixuga-tinto-2021",
+      "producer": "Caminhos Cruzados",
+      "name": "Vinhas da Teixuga Tinto",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 24.91,
+          "name_found": "Vinhas da Teixuga Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/vinhas-da-teixuga-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 29.95,
+          "name_found": " 2021 Vinhas da Teixuga 2ª Edição tinto",
+          "confidence": "high",
+          "score": 0.854,
+          "url": "https://www.garrafeiranacional.com/vinho/2021-vinhas-da-teixuga-2-edic-o-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Tiago Cabaço Vinhas Velhas 75 Cl",
+          "confidence": "no_match",
+          "score": 0.376,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 33.55,
+          "name_found": "Vinhas da Teixuga Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/dao/24570-vinhas-da-teixuga-white-2021.html"
+        }
+      },
+      "best_retail": 24.91,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 37.5,
+        "2.0x": 50.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "cruzados-rose-2023",
+      "producer": "Caminhos Cruzados",
+      "name": "Caminhos Cruzados Rosé",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 19.38,
+          "name_found": "Caminhos Cruzados Reserva Tinto",
+          "confidence": "high",
+          "score": 0.803,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/caminhos-cruzados-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Rosé Convento Paraiso 2022 75 Cl",
+          "confidence": "no_match",
+          "score": 0.29,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 11.45,
+          "name_found": "Caminhos Cruzados Rosé 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/dao/21584-caminhos-cruzados-rose-2020-5600765408025.html"
+        }
+      },
+      "best_retail": 11.45,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 17.5,
+        "2.0x": 23.0
+      },
+      "status": "found"
+    }
+  ]
+}

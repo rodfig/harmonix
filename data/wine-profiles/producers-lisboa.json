@@ -1,0 +1,2171 @@
+{
+  "_meta": {
+    "region": "Lisboa",
+    "description": "Producer wine profiles for Lisboa DOC and Vinho Regional Lisboa",
+    "schema_version": "2.0",
+    "note": "Producer-centric format. Pairing is derived algorithmically from structure fields via pairing-rules.json. food_tags are NOT stored on wines. Cooking method and dish complements are as important as the main ingredient — see pairing_principles in pairing-rules.json.",
+    "fields_required": [
+      "id",
+      "name",
+      "doc",
+      "type",
+      "varieties",
+      "alcohol",
+      "structure",
+      "aromas",
+      "pairing"
+    ],
+    "fields_optional": [
+      "vintage",
+      "acidity_gl",
+      "ph",
+      "winemaking",
+      "notes",
+      "quinta"
+    ]
+  },
+  "producers": [
+    {
+      "producer": "Quinta de Chocapalha",
+      "region": "Lisboa – Torres Vedras",
+      "quintas": [
+        "Quinta de Chocapalha"
+      ],
+      "producer_notes": "Quinta em Torres Vedras, DOC Lisboa. Solos argilo-calcários com exposição Sul-Norte. Clima atlântico com influência oceânica — preserva acidez natural e mineralidade. Vinhas em cordão bilateral com 19-31 anos. Portfolio diversificado: brancos (Chardonnay+Arinto, Viosinho), rosé (TN+TR em barrica), tintos (Castelão a solo, blend TN+Syrah+TR+Castelão). Destaque para o Viosinho — casta tipicamente duriense aqui expressa em clima atlântico. Segunda marca 'Mar de Lisboa' para o blend de entrada.",
+      "wines": [
+        {
+          "id": "chocapalha-reserva-branco-2017",
+          "name": "Chocapalha Reserva Branco",
+          "quinta": "Quinta de Chocapalha",
+          "vintage": 2017,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Chardonnay",
+            "Arinto"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.6,
+          "ph": 3.39,
+          "winemaking": "Chardonnay 80% + Arinto 20%. Vinhas 25 anos, cordão bilateral, Sul-Norte, solo argilo-calcário. Fermentação 16 dias a baixa temperatura em barricas de carvalho francês. Estágio 9 meses nas mesmas barricas sobre borras finas com batonnage.",
+          "notes": "Blend bordalês invertido: Chardonnay dominante com âncora ácida de Arinto. Argilo-calcário de Torres Vedras + clima atlântico = frescura inesperada para Chardonnay em Portugal. 12.5% álcool moderado. Acidez 6.6 g/L + pH 3.39 = estrutura ácida superior ao esperado para Chardonnay. 'Grande intensidade, excelente equilíbrio, boa acidez e mineralidade. Muito elegante, fresco, longo final.'",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta branca",
+              "floral"
+            ],
+            "secondary": [
+              "baunilha (barrica francesa)",
+              "notas de borras",
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "marisco",
+              "sashimi",
+              "aves",
+              "queijo semi-curado",
+              "cogumelos"
+            ],
+            "notes": "Chardonnay+Arinto em barrica com 9 meses batonnage: textura cremosa com acidez estruturante. pH 3.39 + 6.6 g/L = corte limpo na gordura. Para contexto Nanban: Chawanmushi (textura do batonnage complementa o pudim de ovo), Sashimi de peixe branco (mineralidade atlântica + acidez), Tempura de camarão (acidez corta gordura da fritura)."
+          }
+        },
+        {
+          "id": "chocapalha-reserva-rose-2018",
+          "name": "Chocapalha Reserva Rosé",
+          "quinta": "Quinta de Chocapalha",
+          "vintage": 2018,
+          "doc": "Lisboa DOC",
+          "type": "rosé",
+          "varieties": [
+            "Touriga Nacional",
+            "Tinta Roriz"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 7.02,
+          "ph": 3.37,
+          "winemaking": "TN 70% + Tinta Roriz 30%. Vinhas 25 anos, Sul-Norte, argilo-calcário. Prensagem directa. Fermentação em barricas de carvalho francês a baixa temperatura. Estágio 5 meses sobre borras finas com batonnage.",
+          "notes": "Rosé de barrica — incomum em Portugal. 7.02 g/L + pH 3.37 = um dos rosés mais ácidos desta base de dados (próximo do Valle Pradinhos Rosé 8.80 g/L mas acima da média). Prensagem directa = cor pálida e sem taninos. TN 70% confere aromaticidade floral e de frutos vermelhos; TR 30% adiciona estrutura. Atmosfera atlântica de Torres Vedras preserva acidez a 12.5% álcool.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 2,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "casca de laranja",
+              "framboesa",
+              "bergamota"
+            ],
+            "secondary": [
+              "notas de borras (batonnage)",
+              "baunilha suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "marisco",
+              "tempura",
+              "peixe cru",
+              "aves leves",
+              "aperitivos",
+              "tofu"
+            ],
+            "notes": "Acidez 7.02 g/L excepcional para rosé + corpo leve + aromas cítricos e de frutos vermelhos frescos. A barrica adiciona textura sem peso. Para contexto Nanban: Hassun (aperitivos variados — os cítricos do rosé bridgem com a variedade), Sashimi de atum (acidez alta + aromas de laranja complementam a gordura do atum), Tempura de camarão, Agedashi Tofu (acidez corta a fritura)."
+          }
+        },
+        {
+          "id": "chocapalha-viosinho-2019",
+          "name": "Quinta de Chocapalha Viosinho",
+          "quinta": "Quinta de Chocapalha",
+          "vintage": 2019,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Viosinho"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.0,
+          "ph": 3.35,
+          "winemaking": "100% Viosinho. Vinhas 29 anos, cordão bilateral. Fermentação 26 dias em cubas de aço inox. Estágio 9 meses sobre borras finas + 4 meses em barricas neutras com batonnage.",
+          "notes": "Viosinho (casta do Douro) em clima atlântico de Torres Vedras — expressão geograficamente única. 12.5% álcool moderado, 6.0 g/L + pH 3.35. 13 meses de estágio (borras + barrica neutra) sem impressão de madeira nova. 'Muito aromático, líchias e florais. Grande mineralidade reflectindo o clima atlântico e solos.' O clima atlântico dá frescura incomum ao Viosinho — casta normalmente mais quente e alcoólica no Douro.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "líchias",
+              "floral",
+              "fruta exótica"
+            ],
+            "secondary": [
+              "mineral atlântico",
+              "notas de borras"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "peixe branco",
+              "sashimi",
+              "tofu",
+              "pratos com gengibre",
+              "aves leves"
+            ],
+            "notes": "Viosinho atlântico: aromas exóticos (líchias) + mineralidade + frescura de clima costeiro. pH 3.35 baixo para a casta. Para contexto Nanban: Aroma de líchias cria afinidade natural com pratos de frutos do mar aromáticos, Tofu com gengibre e cebolinho (o floral do Viosinho amplifica os aromáticos do prato), Sashimi de peixe branco delicado."
+          }
+        },
+        {
+          "id": "chocapalha-castelao-2017",
+          "name": "Quinta de Chocapalha Castelão",
+          "quinta": "Quinta de Chocapalha",
+          "vintage": 2017,
+          "doc": "Lisboa DOC",
+          "type": "red",
+          "varieties": [
+            "Castelão"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.57,
+          "ph": 3.72,
+          "winemaking": "100% Castelão. Vinhas 31 anos, cordão bilateral. Desengace, maceração pré-fermentativa a frio 12h. Fermentação em inox <25°C durante 10 dias. 50% do vinho estagiou 15 meses em barricas de carvalho francês 2ª e 3ª utilização.",
+          "notes": "Castelão puro em Lisboa — casta autóctone da região de Setúbal/Palmela aqui expressa em Torres Vedras. Vinhas de 31 anos. 14% álcool mas 'taninos redondos e aveludados' — maturação em barrica usada (2ª e 3ª) sem taninos de madeira nova. pH 3.72 = acidez moderada (5.57 g/L). 50% passa por barrica, 50% inox — blend equilibrado de estrutura e frescura.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 6,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha intensa",
+              "frutado"
+            ],
+            "secondary": [
+              "especiaria suave (barrica usada)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "pato",
+              "aves assadas",
+              "queijo curado",
+              "enchidos"
+            ],
+            "notes": "Castelão puro com 50% barrica usada — elegância frutal com estrutura. Taninos 6/10 aveludados, 14% alc, pH 3.72 (acidez moderada). Para contexto Nanban: Yakiniku de vaca com tare (taninos aveludados + fruta vermelha intensa harmonizam com a caramelização do molho), Gyutan grelhado, Kakuni (barriga de porco — a fruta compota equilibra a riqueza da carne de longa cozedura)."
+          }
+        },
+        {
+          "id": "mar-de-lisboa-tinto-2019",
+          "name": "Mar de Lisboa Tinto",
+          "quinta": "Quinta de Chocapalha",
+          "vintage": 2019,
+          "doc": "Lisboa DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Syrah",
+            "Tinta Roriz",
+            "Castelão"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.65,
+          "ph": 3.67,
+          "winemaking": "TN 35% + Syrah 25% + Tinta Roriz 20% + Castelão 20%. Vinhas 19-29 anos. Desengace, maceração pré-fermentativa. Fermentação 8 dias em inox <25°C. Estágio 22 meses em cuba de inox.",
+          "notes": "Segunda marca da Quinta de Chocapalha. Blend de 4 castas (2 portuguesas + Syrah + TR) com 22 meses de estágio em inox — abordagem redutor que preserva fruta. Sem barrica. 14% álcool com 'excelente equilíbrio, boa frescura, taninos suaves'. Acidez 5.65 g/L + pH 3.67. Vinho de perfil acessível e gastronómico.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 5,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha madura",
+              "frutado fresco"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "aves assadas",
+              "yakitori",
+              "enchidos",
+              "queijo semi-curado",
+              "prato de forno"
+            ],
+            "notes": "Blend acessível sem barrica — fruta limpa e taninos suaves. 'Boa frescura' com 14% alc. Para contexto Nanban: Yakitori de coxa com tare (taninos suaves + fruta vermelha madura harmonizam com o molho tare), Gyudon (tigela de vaca com cebola), Niku Udon (sopa de carne)."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta da Romeira",
+      "region": "Lisboa – Bucelas",
+      "quintas": [
+        "Quinta da Romeira"
+      ],
+      "producer_notes": "Quinta da Romeira, Bucelas — DOC Lisboa. Portfolio inteiramente assente na casta Arinto, a casta emblemática de Bucelas reconhecida pela acidez vibrante e mineralidade. Três perfis distintos: Prova Régia (entrada, fresca e aromática), Morgado de Santa Catherina (premium, mineral e encorpado) e Espumante Bruto (Arinto em versão borbulhante, elegante e cremosa). pH muito baixo em todos os vinhos (3.1–3.3) reflete o terroir calco-argiloso de Bucelas. Os dados de acidez são de laboratório (fichas técnicas).",
+      "wines": [
+        {
+          "id": "romeira-prova-regia-branco-2024",
+          "name": "Prova Régia Branco",
+          "quinta": "Quinta da Romeira",
+          "vintage": 2024,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Arinto"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.5,
+          "ph": 3.2,
+          "winemaking": "100% Arinto. Vinificação clássica de branco. Açúcar residual 0.2 g/L.",
+          "notes": "Arinto de entrada de gama. pH 3.2 muito baixo = acidez percetível alta apesar de TA 5.5 g/L moderado. Açúcar residual 0.2 g/L (seco). 17 pts Revista de Vinhos: 'Exuberante, notas de lima e ananás. Notas elegantes de maçã e goiaba com notas minerais. Excelente acidez fresca e volume complementado por notas aromáticas intensas, longo final de boca.'",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "lima",
+              "ananás",
+              "maçã",
+              "goiaba"
+            ],
+            "secondary": [
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "marisco",
+              "peixe branco",
+              "tempura de camarão",
+              "tofu"
+            ],
+            "notes": "pH 3.2 = um dos valores mais baixos da DB = acidez percetível muito alta. Frescura tropical e mineralidade ideal para frutos do mar crus. Para contexto Nanban: Sashimi de peixe branco (lima + ananás amplificam delicadeza do peixe cru), Tempura de camarão (acidez corta gordura da fritura), Sunomono de pepino (ananás do vinho ressoa com o vinagre do prato)."
+          }
+        },
+        {
+          "id": "romeira-morgado-santa-catherina-2023",
+          "name": "Morgado de Santa Catherina Branco",
+          "quinta": "Quinta da Romeira",
+          "vintage": 2023,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Arinto"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.0,
+          "ph": 3.3,
+          "winemaking": "100% Arinto. Tier premium da Quinta da Romeira. Açúcar residual 0.1 g/L.",
+          "notes": "Tier premium da Quinta da Romeira. 6.0 g/L + pH 3.3 = acidez bem estruturada. 'Complexo com notas minerais complementadas com especiarias, flores brancas e notas cítricas. Encorpado com grande frescura, carácter mineral e final longo.' Açúcar residual 0.1 g/L.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "cítrico",
+              "flores brancas",
+              "especiarias"
+            ],
+            "secondary": [
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "marisco",
+              "sashimi de peixe branco",
+              "chawanmushi",
+              "queijo fresco"
+            ],
+            "notes": "Arinto premium com carácter mineral e estrutura. 'Encorpado' permite acompanhar preparações mais complexas. Para contexto Nanban: Chawanmushi (mineralidade + acidez estruturada complementam o pudim de ovo e dashi), Sashimi de vieira ou robalo (flores brancas + mineral amplificam delicadeza), Peixe branco grelhado com molho ponzu."
+          }
+        },
+        {
+          "id": "romeira-bruto-espumante-2021",
+          "name": "Quinta da Romeira Bruto Espumante",
+          "quinta": "Quinta da Romeira",
+          "vintage": 2021,
+          "doc": "Lisboa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Arinto"
+          ],
+          "alcohol": 12,
+          "acidity_gl": 6.6,
+          "ph": 3.1,
+          "winemaking": "100% Arinto. Espumante Bruto. Açúcar residual 0.3 g/L. Notas de tosta e manteiga indicam estágio prolongado sobre borras.",
+          "notes": "Espumante Bruto de Arinto. pH 3.1 = um dos valores mais baixos da DB — acidez percetível muito alta. TA 6.6 g/L. 'Cor amarelo. Elegante e complexo, tosta, lima, leve manteiga. Bolhas finas e persistentes dentro de uma estrutura cremosa, frescura, final delicioso e duradouro.' Açúcar 0.3 g/L (verdadeiramente Bruto). Notas de tosta e manteiga = estágio prolongado sobre borras.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "lima",
+              "cítrico"
+            ],
+            "secondary": [
+              "tosta",
+              "manteiga (borras)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivos",
+              "sashimi",
+              "marisco",
+              "tempura",
+              "ikura",
+              "peixe cru",
+              "hassun"
+            ],
+            "notes": "Espumante Arinto de alta acidez (pH 3.1, 6.6 g/L). Bolhas finas + acidez vibrante = perfeito para limpeza de palato. Para contexto Nanban: Hassun (aperitivos variados de abertura — efervescência + acidez bridgem a variedade), Ikura ou Uni (acidez cítrica + efervescência amplificam salinidade marinha), Tempura de camarão (efervescência + acidez cortam gordura da fritura com elegância)."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta da Murta",
+      "region": "Lisboa – Bucelas",
+      "quintas": [
+        "Quinta da Murta"
+      ],
+      "producer_notes": "Quinta da Murta, Bucelas (Lisboa DOC). Especialista em Arinto no seu terroir natural — as colinas calco-argilosas de Bucelas onde a casta atinge a sua máxima expressão. Dois estilos contrastantes: o Arinto Branco jovem e 'estaladiço' (fermentação em bica aberta, sem contacto pelicular, leveza de 12%) e o Clássico de guarda (maceração pelicular especial + fermentação em barrica francesa + 12 meses batonnage, capaz de 15 anos). Os dados de acidez do Arinto Branco 2023 são estimados a partir da linguagem de prova.",
+      "wines": [
+        {
+          "id": "murta-arinto-branco-2023",
+          "name": "Quinta da Murta Arinto Branco",
+          "quinta": "Quinta da Murta",
+          "vintage": 2023,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Arinto"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 6.8,
+          "ph": null,
+          "winemaking": "100% Arinto. Fermentação de uvas de película branca em bica aberta (sem contacto do sumo com as películas).",
+          "notes": "Arinto puro de entrada de gama. 'Estaladiço' = linguagem típica de acidez alta em notas portuguesas de vinho. 12% álcool preserva leveza e frescura. 90 pts Robert Parker. 'Cor amarelo pálido. Aromas tropicais e com notas de mentol e compota. Conjunto aromático muito complexo e com boa mineralidade. Na boca é estaladiço, suculento e com grande estrutura. No final de boca é persistente.' Acidity_gl estimado 6.8 g/L a partir de 'estaladiço, suculento, grande estrutura, boa mineralidade'.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "tropical",
+              "mentol",
+              "compota de fruta"
+            ],
+            "secondary": [
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "marisco",
+              "peixe cru",
+              "tempura",
+              "pratos com citrus"
+            ],
+            "notes": "Arinto 'estaladiço' — acidez alta estimada + aromas de mentol e tropical. 12% álcool = leveza extra. Para contexto Nanban: Sashimi de peixe branco (mentol + tropical amplificam delicadeza do peixe cru), Tempura de camarão (acidez alta corta gordura da fritura), Hamachi Crudo com yuzu (mentol ressoa com frescura do yuzu)."
+          }
+        },
+        {
+          "id": "murta-classico-2012",
+          "name": "Quinta da Murta Clássico",
+          "quinta": "Quinta da Murta",
+          "vintage": 2012,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Arinto"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 6.5,
+          "ph": null,
+          "winemaking": "100% Arinto. Maceração pelicular especial controlada a baixa temperatura. Prensagem suave. Fermentação em barricas de carvalho francês. Estágio 12 meses nas mesmas barricas sobre borras com batonnage. Estabilização por frio + filtração suave antes do engarrafamento.",
+          "notes": "Arinto de guarda em barrica francesa — 12 meses com batonnage. 'Pode ser apreciado por cerca de 15 anos.' 13.5% álcool com 'excelente acidez' — a casta Arinto mantém acidez mesmo em versões barricadas. 'Nariz muito frutado, citrinos e baunilha. Boca muito fresca, corpo balanceado, cremoso, elegância perfeita. Fim de boca longo e desafiante.' Acidity_gl estimado 6.5 g/L ('excelente acidez' + contexto Arinto barricado).",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "cítrico",
+              "baunilha"
+            ],
+            "secondary": [
+              "notas de borras (batonnage)",
+              "manteiga suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco rico",
+              "peixe nobre grelhado",
+              "aves",
+              "chawanmushi",
+              "queijo semi-curado"
+            ],
+            "notes": "Arinto 12mo barrica + batonnage = textura cremosa com acidez estruturante. 'Macio, balanceado, cremoso, elegante.' Para contexto Nanban: Chawanmushi (textura batonnage amplifica o pudim de ovo e dashi), Hotate no Batayaki (vieira grelhada com manteiga e dashi — baunilha do vinho ressoa com manteiga), Peixe branco nobre grelhado com molho ligeiro."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Casal de Santa Maria",
+      "region": "Lisboa – Colares (Sintra)",
+      "quintas": [
+        "Casal de Santa Maria"
+      ],
+      "producer_notes": "Casal de Santa Maria, DOC Colares — Sintra, Costa Atlântica. Uma das adegas mais únicas de Portugal: vinhas pré-filoxera plantadas diretamente em areias de duna, sem enxerto. A única região do mundo onde o Ramisco sobreviveu à filoxera. Terroir atlântico extremo: salinidade, nevoeiros, solos arenosos que 'afogam' a filoxera protegendo as raízes originais. Portfolio diversificado além do Ramisco histórico: brancos (Malvasia atlântica com maceração pelicular, blend Malvasia+Chardonnay+Riesling), rosé com barrica (3000 Rosas), tinto de guarda (Reserva TN+Syrah+Merlot) e Colheita Tardia de Petit Manseng (119 g/L açúcar residual). Todos os dados de acidez são de laboratório (fichas técnicas).",
+      "wines": [
+        {
+          "id": "csm-reserva-branco-2022",
+          "name": "Casal de Santa Maria Reserva Branco",
+          "quinta": "Casal de Santa Maria",
+          "vintage": 2022,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Malvasia",
+            "Chardonnay",
+            "Riesling"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 6.5,
+          "ph": 3.28,
+          "winemaking": "Blend Malvasia + Chardonnay + Riesling. Fermentação em inox. Estágio sobre borras finas até Abril com batonnage. Terroir DOC Colares, costa atlântica de Sintra.",
+          "notes": "Blend atlântico de três castas aromáticas: Malvasia (base portuguesa), Chardonnay (textura e corpo), Riesling (acidez e mineralidade). 13.5% álcool + 6.5 g/L + pH 3.28 = equilíbrio entre riqueza e frescura. Terroir de Colares: solos arenosos de duna + influência marítima intensa = mineralidade salgada distinta. Borras finas até Abril = textura suave sem perda de frescura.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "cítrico",
+              "fruta amarela",
+              "mineral salgado"
+            ],
+            "secondary": [
+              "notas de borras",
+              "levedura"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe nobre",
+              "robatayaki de peixe",
+              "marisco",
+              "sashimi de peixe gordo",
+              "aves"
+            ],
+            "notes": "Blend aromático atlântico com mineralidade salgada de Colares. Acidez 6.5 g/L + pH 3.28 + textura de borras = estrutura para preparações complexas. Para contexto Nanban: Robatayaki de peixe (mineralidade salgada do terroir atlântico ressoa com fumo da grelha), Sashimi de peixe gordo (acidez estruturada corta gordura), Chawanmushi com dashi de kombu (umami marinho + mineralidade salgada)."
+          }
+        },
+        {
+          "id": "csm-reserva-tinto-2019",
+          "name": "Casal de Santa Maria Reserva Tinto",
+          "quinta": "Casal de Santa Maria",
+          "vintage": 2019,
+          "doc": "Lisboa DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Syrah",
+            "Merlot"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 6.2,
+          "ph": 3.73,
+          "winemaking": "TN + Syrah + Merlot. Maceração a frio 3 dias. Estágio 14 meses em barricas de carvalho francês novas e usadas. Terroir DOC Colares, Sintra.",
+          "notes": "Tinto atlântico a 12% álcool — estrutura de barrica com leveza de clima costeiro. TA 6.2 g/L (incomum para tinto — acidez alta, típica do clima atlântico) + pH 3.73. 14 meses em barricas novas + usadas = taninos de madeira moderados. TN + Syrah + Merlot: blend internacional-português. Maceração fria 3 dias = extração suave de cor e aromas.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha",
+              "ameixa",
+              "pimenta (Syrah)"
+            ],
+            "secondary": [
+              "especiaria de carvalho",
+              "baunilha suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "pato",
+              "aves assadas",
+              "carne vermelha",
+              "queijo curado",
+              "yakitori"
+            ],
+            "notes": "Tinto atlântico com acidez acima da média para a categoria (6.2 g/L). Leveza de 12% alc + taninos 7/10 de barrica. Para contexto Nanban: Yakitori de coxa com tare (Syrah + pimenta + fruta vermelha harmonizam com molho tare), Pato com molho teriyaki (ameixa do vinho ressoa com tare), Gyutan grelhado (taninos de carvalho + acidez fresca equilibram gordura)."
+          }
+        },
+        {
+          "id": "csm-ramisco-2014",
+          "name": "Casal de Santa Maria Ramisco",
+          "quinta": "Casal de Santa Maria",
+          "vintage": 2014,
+          "doc": "DOC Colares",
+          "type": "red",
+          "varieties": [
+            "Ramisco"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 6.1,
+          "ph": 3.7,
+          "winemaking": "100% Ramisco. Vinhas pré-filoxera em areias de duna, Colares. Estágio em tonel de mogno brasileiro 6yo 3000L + barrica de carvalho francês 2yo 225L + estágio em garrafa 1 ano.",
+          "notes": "Ramisco puro de Colares — uma das últimas expressões mundiais de vinhas pré-filoxera em areias. As areias de duna de Colares 'afogam' a filoxera, protegendo as raízes originais. 12% álcool + TA 6.1 g/L + pH 3.7 + taninos elevados típicos da casta. Mogno brasileiro 3000L (tonel neutro de grande volume) + barrica francesa 225L + garrafa = estágio complexo com oxidação controlada suave. Ramisco: casta autóctone de Colares, cor rubim, taninos marcantes, acidez estrutural, personalidade histórica única.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha",
+              "fruta silvestre",
+              "ervas"
+            ],
+            "secondary": [
+              "especiaria",
+              "terra",
+              "mineral"
+            ],
+            "tertiary": [
+              "couro suave",
+              "cogumelos (oxidação controlada)"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "carnes de longa cozedura",
+              "enchidos curados",
+              "queijo de cura avançada",
+              "cogumelos",
+              "prato de forno"
+            ],
+            "notes": "Ramisco pré-filoxera: taninos 8/10 marcantes + acidez estrutural + personalidade histórica. Estágio em tonel grande + barrica + garrafa = complexidade oxidativa suave. Para contexto Nanban: Kakuni (barriga de porco de longa cozedura — taninos altos + acidez cortam riqueza e gordura), Nikujaga (guisado de carne e batata — vinho aguenta estrutura do prato), Tonkatsu com molho demi-glace."
+          }
+        },
+        {
+          "id": "csm-malvasia-2022",
+          "name": "Casal de Santa Maria Malvasia",
+          "quinta": "Casal de Santa Maria",
+          "vintage": 2022,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Malvasia"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.1,
+          "ph": 3.24,
+          "winemaking": "100% Malvasia. Maceração pelicular 6-8 horas. Fermentação e estágio: 70% em inox + 30% em barricas de carvalho francês usadas. Batonnage até Abril. Terroir Colares, Sintra.",
+          "notes": "Malvasia atlântica com maceração pelicular 6-8h — orange wine leve, sem taninos visíveis mas com textura adicional. pH 3.24 baixo (alta acidez percetível). 70% inox preserva frescura, 30% barrica usada adiciona textura suave. Terroir de Colares: solos arenosos + influência marítima = aromas florais com mineralidade salgada distinta. A maceração pelicular amplifica os aromas varietais da Malvasia (flores, mel, fruta amarela).",
+          "structure": {
+            "acidity": 6,
+            "tannins": 1,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "mel",
+              "fruta amarela",
+              "damasco"
+            ],
+            "secondary": [
+              "mineral salgado",
+              "notas de borras"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco aromático",
+              "tofu",
+              "pratos com miso",
+              "pratos com dashi",
+              "queijo fresco"
+            ],
+            "notes": "Malvasia com maceração pelicular: textura e aromas florais amplificados + mineral salgado de Colares + pH 3.24. Para contexto Nanban: Miso Ramen com tofu (umami do miso ressoa com o mel da Malvasia, mineral salgado amplifica o dashi), Agedashi Tofu (textura do vinho + acidez cortam gordura da fritura), Chawanmushi de frutos do mar (floral + mineral + textura = harmonia com o pudim suave)."
+          }
+        },
+        {
+          "id": "csm-colheita-tardia-2019",
+          "name": "Casal de Santa Maria Colheita Tardia",
+          "quinta": "Casal de Santa Maria",
+          "vintage": 2019,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Petit Manseng"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 8.4,
+          "ph": 3.53,
+          "winemaking": "100% Petit Manseng. Colheita tardia. Fermentação interrompida por frio. Estágio em barricas antigas de carvalho francês. Açúcar residual 119 g/L.",
+          "notes": "Colheita Tardia de Petit Manseng — casta francesa do Jurançon aqui expressa na costa atlântica de Colares. 119 g/L açúcar residual = doce. 8.4 g/L acidez total = o vinho mais ácido da base de dados (superior a todos os espumantes). pH 3.53 = acidez moderada-alta. Esta combinação (alta acidez + alta doçura) é o 'segredo' do estilo Jurançon: a acidez equilibra perfeitamente o açúcar residual. 12% álcool moderado para um vinho doce.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "full",
+            "sweetness": "sweet",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "mel",
+              "damasco",
+              "abacaxi",
+              "fruta tropical concentrada"
+            ],
+            "secondary": [
+              "baunilha suave (barrica antiga)",
+              "especiaria doce"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sobremesa",
+              "queijo azul",
+              "foie gras",
+              "doces asiáticos",
+              "anko"
+            ],
+            "notes": "Petit Manseng doce com acidez 8.4 g/L — equilíbrio doçura/acidez excecional, estilo Jurançon. Para contexto Nanban: Dorayaki (panqueca com anko — o vinho replica a doçura do anko com acidez que limpa o palato), Mochi de fruta ou wagashi delicado (mel + tropical complementam), Queijo tipo gorgonzola com mochi (acidez alta + doçura = harmonização clássica com queijo azul)."
+          }
+        },
+        {
+          "id": "csm-3000-rosas-rose-2021",
+          "name": "Casal de Santa Maria 3000 Rosas Rosé",
+          "quinta": "Casal de Santa Maria",
+          "vintage": 2021,
+          "doc": "Lisboa DOC",
+          "type": "rosé",
+          "varieties": [
+            "Touriga Nacional",
+            "Pinot Noir",
+            "Syrah"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.28,
+          "ph": 3.32,
+          "winemaking": "TN + Pinot Noir + Syrah. 50% em barricas de carvalho francês novas e usadas (225L + 500L) + 50% em inox. Estágio 6 meses sobre borras finas com batonnage. Terroir Colares, Sintra.",
+          "notes": "Rosé atlântico com metade em barrica — incomum para a categoria. TN (estrutura e cor), Pinot Noir (elegância e acidez), Syrah (pimenta e aromas). 5.28 g/L + pH 3.32 = acidez moderada. 6 meses borras + barrica = textura cremosa incomum para rosé. 12.5% álcool equilibrado.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 2,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "morangos",
+              "framboesa",
+              "pétalas de rosa",
+              "pimenta suave (Syrah)"
+            ],
+            "secondary": [
+              "notas de borras",
+              "baunilha suave (barrica)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "yakitori",
+              "sashimi de atum",
+              "tempura mista",
+              "hassun",
+              "aves grelhadas",
+              "salmão"
+            ],
+            "notes": "Rosé com textura de barrica + borras. TN + PN + Syrah = complexidade acima do standard para rosé. Para contexto Nanban: Yakitori de frango (morangos + pimenta de Syrah harmonizam com molho tare ligeiro), Sashimi de atum (framboesa + acidez complementam gordura do atum), Hassun de abertura (aromas florais e de frutos vermelhos criam ponte com variedade dos aperitivos japoneses)."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "ODE Winery",
+      "region": "Lisboa DOC",
+      "quintas": [
+        "ODE Winery"
+      ],
+      "producer_notes": "ODE Winery, Lisboa DOC. Adega boutique com portfolio inovador que combina castas autóctones (Fernão Pires, Arinto, Touriga Nacional, Trincadeira) com variedades internacionais raras em Portugal (Viognier, Semillon, Pinot Gris, Alicante Bouschet). Linha varietal com estágios curtos (5 meses em lias ou barrica). Linha premium Enóloga (Arinto+FP e TN, ambos 12 meses 500L francês). Destaque especial para 'Feito a Mão': field blend de 9 castas com 270 dias de maceração total em talha de barro de 500L — vinificação das mais radicais desta DB. Enóloga: Maria Vicente. Todos os vinhos com dados analíticos completos de laboratório.",
+      "wines": [
+        {
+          "id": "ode-viognier",
+          "name": "ODE Viognier",
+          "quinta": "ODE Winery",
+          "vintage": null,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Viognier"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.5,
+          "ph": 3.36,
+          "winemaking": "100% Viognier. Unoaked. Estágio 5 meses sobre borras finas após fermentação. Açúcar residual 1.2 g/L.",
+          "notes": "Viognier unoaked com lees contact — incomum para a variedade. 'Casta francesa com grande capacidade de adaptação a esta região.' 12.5% álcool + 5.5 g/L + pH 3.36. 'Pêssego, nectarinas, damascos, frutos tropicais, gengibre e especiarias.' Borras finas deram corpo e intensidade de boca sem barrica. Produtor recomenda explicitamente para sushi e sashimi.",
+          "structure": {
+            "acidity": 5,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "pêssego",
+              "nectarina",
+              "damasco",
+              "fruta tropical",
+              "gengibre"
+            ],
+            "secondary": [
+              "notas de borras"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sushi",
+              "sashimi",
+              "marisco",
+              "pratos aromáticos",
+              "aves leves"
+            ],
+            "notes": "Viognier unoaked com borras: aromas exuberantes + corpo suave. Produtor recomenda explicitamente para sushi e sashimi. Para contexto Nanban: Nigiri de salmão (pêssego + gengibre amplificam gordura do salmão), Sashimi de hamachi (tropical + especiaria ressoa com yuzu), Tempura de camarão (frescura + corpo suave equilibra fritura)."
+          }
+        },
+        {
+          "id": "ode-fernao-pires",
+          "name": "ODE Fernão Pires",
+          "quinta": "ODE Winery",
+          "vintage": null,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 5.7,
+          "ph": 3.4,
+          "winemaking": "100% Fernão Pires. 50% estágio 5 meses em barricas novas 500L de carvalho francês. Açúcar residual 1.2 g/L.",
+          "notes": "Fernão Pires com 50% em barrica nova — abordagem arrojada para esta casta aromática. 13.5% álcool + 5.7 g/L + pH 3.40. 'Tropical e herbáceo. Arrojado mas fresco. A madeira criou um suporte e adicionou uma textura formidável ao vinho.'",
+          "structure": {
+            "acidity": 5,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "fruta tropical",
+              "herbáceo",
+              "fruta branca"
+            ],
+            "secondary": [
+              "baunilha (barrica nova)",
+              "especiaria suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "saladas",
+              "porco grelhado",
+              "vitela",
+              "aves"
+            ],
+            "notes": "FP com 50% barrica nova — corpo e textura acima do típico para a casta. 'Muito gastronómico.' Para contexto Nanban: Yakitori de frango (tropical + herbáceo complementam molho tare), Tempura mista de vegetais (textura de barrica + frescura equilibram fritura), Pratos com molho de soja e gengibre."
+          }
+        },
+        {
+          "id": "ode-arinto",
+          "name": "ODE Arinto",
+          "quinta": "ODE Winery",
+          "vintage": null,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Arinto"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.4,
+          "ph": 3.3,
+          "winemaking": "100% Arinto. 50% estágio 5 meses em barricas novas 500L de carvalho francês. Açúcar residual 1.2 g/L.",
+          "notes": "Arinto com 50% em barrica nova — estilo semelhante ao Borgonha segundo o produtor. 12.5% álcool + 6.4 g/L + pH 3.30. 'Pera, maçã verde, marmelo, baunilha. Verdadeiro e elegante exemplo do potencial da casta.' Potencial de 10 anos.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "pera",
+              "maçã verde",
+              "marmelo"
+            ],
+            "secondary": [
+              "baunilha (barrica nova)",
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "pato confitado",
+              "cogumelos",
+              "queijo",
+              "peixe nobre",
+              "aves"
+            ],
+            "notes": "Arinto 50% barrica nova: acidez alta (6.4 g/L + pH 3.30) com textura de carvalho. Produtor recomenda para pato confitado — incomum para branco. Para contexto Nanban: Chawanmushi (pera + marmelo + baunilha complementam pudim de ovo), Cogumelos grelhados com dashi (mineralidade ressoa com umami), Pato no forno com molho teriyaki (acidez corta gordura do pato)."
+          }
+        },
+        {
+          "id": "ode-feito-a-mao",
+          "name": "ODE Feito a Mão",
+          "quinta": "ODE Winery",
+          "vintage": null,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires",
+            "Arinto",
+            "Encruzado",
+            "Antão Vaz",
+            "Viosinho",
+            "Cercial",
+            "Riesling",
+            "Chardonnay",
+            "Sauvignon Blanc"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.4,
+          "ph": 3.3,
+          "winemaking": "Field blend experimental: 9 castas (FP + Arinto + Encruzado + Antão Vaz + Viosinho + Cercial + Riesling + Chardonnay + Sauv Blanc). Colheita, desengace, fermentação e engarrafamento completamente à mão. Fermentação com engaços e películas durante 270 dias numa talha de barro de 500L. Estágio 1 mês em carvalho francês antes do engarrafamento.",
+          "notes": "Skin contact de 270 dias em talha de barro — uma das vinificações mais radicais desta DB. 'Incrivelmente límpido e brilhante no copo, sem qualquer tonalidade oxidativa' — notável para 270 dias de maceração. 'Flores brancas, camomila, fruta fresca. Complexo e texturado, rico mas precisamente preciso, final persistente e elegante.' 12.5% álcool + 6.4 g/L + pH 3.30. A longa maceração extrai taninos brancos que dão estrutura sem cor.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 3,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "flores brancas",
+              "camomila",
+              "fruta fresca"
+            ],
+            "secondary": [
+              "mineral",
+              "ervas"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe",
+              "marisco",
+              "arroz",
+              "barriga de porco",
+              "pratos complexos"
+            ],
+            "notes": "Skin contact 270 dias em talha + taninos brancos 3/10 = versatilidade excecional. Produtor recomenda com 'barriga de porco ibérico assada lentamente.' Para contexto Nanban: Kakuni (barriga de porco de longa cozedura — taninos brancos + acidez equilibram gordura), Tempura mista (white texturado com taninos leves aguenta fritura complexa), Robatayaki misto (complexidade do field blend bridgea com diversidade de ingredientes grelhados)."
+          }
+        },
+        {
+          "id": "ode-phosphorous",
+          "name": "ODE Phosphorous",
+          "quinta": "ODE Winery",
+          "vintage": null,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Semillon"
+          ],
+          "alcohol": 11.5,
+          "acidity_gl": 6.3,
+          "ph": 3.3,
+          "winemaking": "100% Semillon. Fermentação e estágio 12 meses em barricas de carvalho francês 500L. Açúcar residual 1.3 g/L.",
+          "notes": "Semillon puro em Lisboa — raridade nesta DB. 11.5% álcool (o mais baixo desta coleção ODE). 'Limão confitado, toranja, marmelo, flores brancas, mineral fumado. Textura notável, excecional num vinho de corpo tão leve.' 6.3 g/L + pH 3.30. 12 meses barrica. Potencial de 15 anos. Estilo próximo do Semillon barricado de Graves/Pessac-Léognan.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "limão confitado",
+              "toranja",
+              "marmelo",
+              "flores brancas"
+            ],
+            "secondary": [
+              "mineral fumado",
+              "baunilha suave (barrica)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "vieiras",
+              "caranguejo",
+              "marisco",
+              "aves robustas",
+              "queijo macio"
+            ],
+            "notes": "Semillon barricado com textura notável a 11.5% alc — leveza surpreendente. 'Vieiras salteadas ou caranguejo fresco' por recomendação do produtor. Para contexto Nanban: Hotate Batayaki (vieira salteada com manteiga + dashi — limão confitado + mineral fumado = harmonização excecional), Chawanmushi de marisco (textura + acidez bridgea com pudim delicado), Karaage de frango (leveza + acidez equilibram fritura)."
+          }
+        },
+        {
+          "id": "ode-enologa-branco-2023",
+          "name": "ODE Enóloga Branco",
+          "quinta": "ODE Winery",
+          "vintage": 2023,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Arinto",
+            "Fernão Pires"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.9,
+          "ph": 3.2,
+          "winemaking": "Arinto 60% + Fernão Pires 40%. Estágio 12 meses em barricas de carvalho francês 500L. Melhores barricas selecionadas pela enóloga Maria Vicente para o lote final. Açúcar residual 1.4 g/L.",
+          "notes": "Linha premium ODE. Arinto+FP em 12 meses barrica — blend das castas mais representativas de Lisboa. pH 3.20 excecional (um dos mais baixos para branco barricado desta DB). 13% álcool + 5.9 g/L. 'Incrivelmente complexo, maçã verde aromática, frutos secos torrados. Palato cheio, acidez persistente, final longo e elegante.'",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "maçã verde",
+              "fruta tropical",
+              "cítrico"
+            ],
+            "secondary": [
+              "frutos secos torrados (barrica)",
+              "baunilha",
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves assadas",
+              "marisco grelhado",
+              "cogumelos",
+              "peixe nobre",
+              "pintada"
+            ],
+            "notes": "Premium Arinto+FP com 12mo barrica: pH 3.20 + acidez persistente + 'palato cheio'. Para contexto Nanban: Karei no Karaage (linguado frito — frutos secos torrados + acidez fresca = harmonia com peixe frito), Aves assadas com tare (complexidade aromática bridgea com molho), Tempura de camarão e vegetais (acidez persistente corta fritura)."
+          }
+        },
+        {
+          "id": "ode-enologa-tinto",
+          "name": "ODE Enóloga Tinto",
+          "quinta": "ODE Winery",
+          "vintage": null,
+          "doc": "Lisboa DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.9,
+          "ph": 3.6,
+          "winemaking": "100% Touriga Nacional. Fermentação em depósitos de inox com controlo de temperatura. Estágio 12 meses em barricas de carvalho francês 500L. Açúcar residual 2.0 g/L.",
+          "notes": "TN puro 12mo barrica — expressão premium linha Enóloga. 13% álcool + 5.9 g/L + pH 3.60. 'Frutos vermelhos e pretos profundos unem-se de forma harmoniosa, elegante e cheio de textura.' Produtor sugere Wagyu A5 Striploin e lombo de veado — indica estrutura e elegância para carnes de alta qualidade. Potencial de 15 anos.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos profundos",
+              "frutos pretos",
+              "floral (TN)"
+            ],
+            "secondary": [
+              "especiaria (barrica)",
+              "baunilha"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "wagyu",
+              "borrego",
+              "veado",
+              "carne vermelha nobre",
+              "queijo curado"
+            ],
+            "notes": "TN premium 12mo barrica — 'poder contido'. Produtor recomenda Wagyu A5 e lombo de veado. Para contexto Nanban: Wagyu Yakiniku (taninos 7/10 + frutos pretos = harmonização clássica com gordura marmoreada), Kakuni premium (barriga de porco de qualidade com TN elegante), Nabe de carne (hot pot — vinho aguenta riqueza do caldo)."
+          }
+        },
+        {
+          "id": "ode-rose",
+          "name": "ODE Rosé",
+          "quinta": "ODE Winery",
+          "vintage": null,
+          "doc": "Lisboa DOC",
+          "type": "rosé",
+          "varieties": [
+            "Touriga Nacional",
+            "Pinot Gris"
+          ],
+          "alcohol": 11.0,
+          "acidity_gl": 6.5,
+          "ph": 3.4,
+          "winemaking": "TN 70% em aço inoxidável + Pinot Gris 30% em barricas de carvalho francês de 2ª utilização. Açúcar residual 1.2 g/L.",
+          "notes": "Rosé inovador: TN (fruto e acidez) + Pinot Gris (complexidade e textura em barrica usada). 11% álcool — levíssimo. 6.5 g/L + pH 3.40 = um dos rosés mais ácidos desta DB. 'Morango, framboesa, cremoso. Extremamente refrescante.' Estilo gastronómico-verão.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 2,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "morango",
+              "framboesa",
+              "floral"
+            ],
+            "secondary": [
+              "cremoso (barrica usada PG)",
+              "baunilha suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "salmão fumado",
+              "charcutaria",
+              "sushi",
+              "aves grelhadas",
+              "hassun"
+            ],
+            "notes": "TN+PG rosé com acidez 6.5 g/L a apenas 11% alc — leveza extrema com acidez vibrante. Para contexto Nanban: Sashimi de salmão (morango + framboesa complementam gordura do salmão), Hassun de abertura (leveza + acidez + aromas de frutos vermelhos bridgem com variedade dos aperitivos), Yakitori de frango com shio (leveza do vinho não domina o prato)."
+          }
+        },
+        {
+          "id": "ode-quarteto",
+          "name": "ODE Quarteto",
+          "quinta": "ODE Winery",
+          "vintage": null,
+          "doc": "Lisboa DOC",
+          "type": "red",
+          "varieties": [
+            "Alicante Bouschet",
+            "Touriga Nacional",
+            "Trincadeira",
+            "Cabernet Sauvignon"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.9,
+          "ph": 3.63,
+          "winemaking": "AB 35% + TN 35% + Trincadeira 25% + CabSauv 5%. Co-fermentação em aço inoxidável + fermentação maloláctica longa e lenta. 50% estágio 10 meses em barricas usadas 500L de carvalho francês. Açúcar residual 2.8 g/L.",
+          "notes": "Blend de 4 castas co-fermentadas — fusão completa de variedades. AB (cor profunda e estrutura), TN (aromaticidade), Trincadeira (especiaria), CabSauv (estrutura). 13% álcool + 5.9 g/L + pH 3.63. 'Frutos pretos, trufas, terra e especiarias, taninos picantes.' 50% barrica usada = extração moderada.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 6,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos pretos",
+              "especiaria",
+              "terra"
+            ],
+            "secondary": [
+              "trufa",
+              "carvalho suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "borrego",
+              "carne vermelha grelhada",
+              "enchidos",
+              "queijo curado",
+              "prato de forno"
+            ],
+            "notes": "Co-fermentação de 4 castas: complexidade aromática única + taninos 6/10 picantes. Para contexto Nanban: Gyutan grelhado (taninos picantes + terra + especiaria harmonizam com tutano grelhado), Yakiniku de borrego (especiaria + frutos pretos = harmonização natural com carne de borrego), Niku Udon com tare intenso."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta de Pancas",
+      "region": "Lisboa – Alenquer",
+      "quintas": [
+        "Quinta de Pancas"
+      ],
+      "producer_notes": "Quinta de Pancas, Lisboa DOC — Alenquer. 60+ hectares de vinhas a 35km do Oceano Atlântico, protegidas pela Serra de Montejunto. Solo argilo-calcário, clima mediterrânico com influência atlântica. Portfolio: Reserva Branco (Arinto+Chardonnay+Vital, 6mo barrica), Reserva Tinto (CabSauv+TN+AB, 6mo barrica) e Grande Reserva Tinto (CabSauv+TN, vinificação separada por casta, 12mo barrica com FML e 21 dias maceração pós-fermentativa no CabSauv). Destaque para o Grande Reserva 2021: pH 3.35 excecional para um tinto a 14% — a combinação mais ácida de tinto a 14% nesta DB. CabSauv domina os tintos.",
+      "wines": [
+        {
+          "id": "pancas-reserva-branco-2023",
+          "name": "Pancas Reserva Branco",
+          "quinta": "Quinta de Pancas",
+          "vintage": 2023,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Arinto",
+            "Chardonnay",
+            "Vital"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.94,
+          "ph": null,
+          "winemaking": "Arinto + Chardonnay + Vital. Uvas da Quinta de Pancas, Alenquer. Estágio 6 meses em barricas de carvalho francês. Solo argilo-calcário, Serra de Montejunto. Açúcar residual 2.0 g/L.",
+          "notes": "Blend atlântico: Arinto (acidez e mineralidade), Chardonnay (textura e corpo), Vital (casta autóctone de Alenquer). 12.5% álcool + 5.94 g/L. '6 meses em barricas de carvalho francês complementam com textura, volume de boca e longevidade, resultando num vinho gastronómico, rico e refrescante.'",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta branca",
+              "cítrico",
+              "fruta tropical"
+            ],
+            "secondary": [
+              "baunilha suave (barrica)",
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "marisco",
+              "sashimi",
+              "aves",
+              "queijo semi-curado"
+            ],
+            "notes": "Arinto+Chardonnay+Vital com 6mo barrica: textura equilibrada com frescura atlântica. 'Gastronómico, rico e refrescante.' Para contexto Nanban: Chawanmushi (Chardonnay+barrica complementam textura cremosa do pudim), Peixe branco grelhado com ponzu (Arinto + acidez bridgea com cítrico do ponzu), Tempura de camarão (6mo barrica + acidez 5.94 g/L corta fritura)."
+          }
+        },
+        {
+          "id": "pancas-grande-reserva-tinto-2021",
+          "name": "Quinta de Pancas Grande Reserva Tinto",
+          "quinta": "Quinta de Pancas",
+          "vintage": 2021,
+          "doc": "Lisboa DOC",
+          "type": "red",
+          "varieties": [
+            "Cabernet Sauvignon",
+            "Touriga Nacional"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 6.0,
+          "ph": 3.35,
+          "winemaking": "CabSauv (vinhas 30 anos, talhões 6+17) + TN (parcela 1, 18 anos). Vinificação separada. CabSauv: desengace + 1 délestage + 1 remontagem diários + maceração pós-fermentativa 21 dias + FML em barricas novas e 2º ano + 12 meses barrica. TN: maceração pré-fermentativa fria 3 dias + fermentação 24°C + FML em cuba + 12 meses barricas mais antigas. Açúcar residual 0.7 g/L.",
+          "notes": "Grande Reserva com vinificação separada por casta — CabSauv tratado como Bordéus (21 dias pós-maceração + FML em barrica nova), TN tratado para preservar frescura aromática (FML em cuba, barrica antiga). pH 3.35 para um tinto a 14% = excecional. TA 6.0 g/L. 'Fruta preta, terra molhada, violeta, café, tabaco, ligeiro vegetal. Equilibrado, tenso, grande frescura, final muito longo.'",
+          "structure": {
+            "acidity": 7,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta",
+              "violeta",
+              "terra molhada"
+            ],
+            "secondary": [
+              "café",
+              "tabaco",
+              "vegetal fresco (CabSauv)",
+              "especiaria de barrica nova"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha nobre",
+              "borrego",
+              "caça",
+              "queijo curado",
+              "pato"
+            ],
+            "notes": "Grande Reserva CabSauv+TN + pH 3.35 único para 14%: taninos 8/10 + acidez 7/10 = estrutura para carnes de alta qualidade. 'Equilibrado, tenso, grande frescura.' Para contexto Nanban: Wagyu Yakiniku premium (taninos estruturados + acidez fresca equilibram gordura marmoreada), Gyutan de qualidade (violeta + café complementam tutano grelhado), Kakuni premium de borrego."
+          }
+        },
+        {
+          "id": "pancas-reserva-tinto-2022",
+          "name": "Quinta de Pancas Reserva Tinto",
+          "quinta": "Quinta de Pancas",
+          "vintage": 2022,
+          "doc": "Lisboa DOC",
+          "type": "red",
+          "varieties": [
+            "Cabernet Sauvignon",
+            "Touriga Nacional",
+            "Alicante Bouschet"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.7,
+          "ph": null,
+          "winemaking": "CabSauv + TN + Alicante Bouschet. Uvas da Quinta de Pancas, Alenquer. Solo argilo-calcário, Serra de Montejunto. Estágio 6 meses em barricas de carvalho francês.",
+          "notes": "Reserva (entrada relativa ao GR) com CabSauv+TN+AB. 14% álcool. 'Cor rubi profunda. Fruta negra e bosque, pimenta preta, chocolate negro. Suave mas intenso, estrutura média, tanino firme, potencial de guarda.' Sem dados analíticos de acidez — acidity_gl estimado 5.7 g/L (semelhante a outros 14% Lisboa com CabSauv).",
+          "structure": {
+            "acidity": 5,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta negra",
+              "bosque",
+              "pimenta preta"
+            ],
+            "secondary": [
+              "chocolate negro",
+              "especiaria de carvalho"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "pato",
+              "enchidos",
+              "queijo curado"
+            ],
+            "notes": "Reserva CabSauv+TN+AB: 'tanino firme, intenso.' 6mo barrica. Para contexto Nanban: Yakiniku de vaca (fruta negra + pimenta + taninos firmes harmonizam com carne grelhada e molho tare), Gyutan grelhado (chocolate negro + especiaria complementam tutano), Kakuni (barriga de porco — taninos firmes + acidez equilibram gordura de longa cozedura)."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta da Boa Esperança",
+      "region": "Lisboa DOC",
+      "quintas": [
+        "Quinta da Boa Esperança"
+      ],
+      "producer_notes": "Quinta da Boa Esperança, Lisboa DOC. Propriedade costeira a 15 km do Oceano Atlântico — influência marítima intensa refletida em acidez excecional em toda a gama (brancos: 7.1–8.3 g/L, rosés: 7.2–7.4 g/L, tintos costeiros: 4.8–6.5 g/L). Portfolio de 13 vinhos: 5 brancos (FP a solo, Arinto a solo, SB, Colheita FP+Arinto, Reserva FP+Arinto barricado), 6 tintos (monovarietais Syrah, TN, AB + blends Aragonez+Castelão+Syrah, Colheita Seleccionada 5 castas, Reserva Syrah+TN), 2 rosés (Atlântico blend e Reserva 100% TN barricado). Vinificação cuidada: maceração pré-fermentativa a 8°C (tintos), prensagem suave de cachos inteiros (brancos e rosés), fermentação controlada a baixa temperatura. Destaque: FP 2019 com TA 8.3 g/L + pH 3.12 (acidez mais alta de FP nesta DB); Arinto com pH 3.04 (o mais ácido dos brancos não-espumantes); Reserva Rosé com pH 2.96 (2º mais baixo desta DB após Valle Pradinhos Rosé 2.86).",
+      "wines": [
+        {
+          "id": "boa-esperanca-colheita-tinto-2018",
+          "name": "Quinta da Boa Esperança Colheita Tinto",
+          "quinta": "Quinta da Boa Esperança",
+          "vintage": 2018,
+          "doc": "Lisboa DOC",
+          "type": "red",
+          "varieties": [
+            "Aragonez",
+            "Castelão",
+            "Syrah"
+          ],
+          "alcohol": 14.72,
+          "acidity_gl": 4.81,
+          "ph": 3.7,
+          "winemaking": "Aragonez 33% + Castelão 34% + Syrah 33%. Desengace total + maceração pré-fermentativa 8°C + fermentação em cuba troncocónica a 24°C. Estágio 12 meses em garrafa. Sem barrica.",
+          "notes": "Blend Aragonez+Castelão+Syrah sem barrica. 14.72% álcool (o mais alto da gama) + TA 4.81 g/L + pH 3.7. 'Aromas frutados a especiados. Taninos presentes mas domados. Vinho fresco e mineral.' Mineral = terroir atlântico, não acidez.",
+          "structure": {
+            "acidity": 4,
+            "tannins": 5,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha",
+              "especiaria",
+              "mineral"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves assadas",
+              "yakitori",
+              "queijo semi-curado",
+              "enchidos",
+              "prato de forno"
+            ],
+            "notes": "Tinto frutado e especiado sem barrica — taninos domados, mineral atlântico. Para contexto Nanban: Yakitori de coxa com tare (especiaria + fruta vermelha harmonizam com molho tare), Gyudon (tigela de vaca — corpo cheio aguenta riqueza), Niku Udon (caldo de carne + especiaria do vinho)."
+          }
+        },
+        {
+          "id": "boa-esperanca-colheita-seleccionada-2015",
+          "name": "Quinta da Boa Esperança Colheita Seleccionada",
+          "quinta": "Quinta da Boa Esperança",
+          "vintage": 2015,
+          "doc": "Lisboa DOC",
+          "type": "red",
+          "varieties": [
+            "Alicante Bouschet",
+            "Aragonez",
+            "Castelão",
+            "Touriga Nacional",
+            "Syrah"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 6.5,
+          "ph": 3.66,
+          "winemaking": "AB + Aragonez + Castelão + TN + Syrah. 20% do lote fermentou em barricas novas de carvalho francês durante 18 meses + 12 meses de estágio em garrafa.",
+          "notes": "Blend das 5 principais castas da quinta. 14% álcool + TA 6.5 g/L excecional para tinto (pH 3.66). 'Complexo, cor granada intensa, fruta preta, notas especiadas e balsâmicas. Fresco e intenso, taninos firmes, final longo.' O TA 6.5 g/L distingue este vinho — acidez real de um branco com estrutura de tinto.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta",
+              "especiaria",
+              "balsâmico"
+            ],
+            "secondary": [
+              "carvalho (20% barrica nova)",
+              "especiaria fumada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "pato",
+              "queijo curado",
+              "caça"
+            ],
+            "notes": "Blend complexo com acidez 6.5 g/L invulgar para tinto + taninos firmes. Para contexto Nanban: Yakiniku de vaca (acidez acima da média + fruta preta + balsâmico harmonizam com carne grelhada e molho tare), Pato com tare (especiaria + balsâmico = afinidade com molho agridoce), Kakuni premium (taninos 7/10 + acidez 6.5 g/L cortam gordura de longa cozedura)."
+          }
+        },
+        {
+          "id": "boa-esperanca-syrah-2017",
+          "name": "Quinta da Boa Esperança Syrah",
+          "quinta": "Quinta da Boa Esperança",
+          "vintage": 2017,
+          "doc": "Lisboa DOC",
+          "type": "red",
+          "varieties": [
+            "Syrah"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.64,
+          "ph": 3.57,
+          "winemaking": "100% Syrah. 10% do lote fermentou em barricas novas de carvalho francês durante 18 meses + 12 meses de estágio em garrafa.",
+          "notes": "Syrah puro de clima atlântico. 14% álcool + TA 5.64 g/L + pH 3.57. '10% em barrica nova 18 meses. Cor granada intensa, fruta preta e especiarias. Fresco e intenso, taninos firmes, final longo.'",
+          "structure": {
+            "acidity": 5,
+            "tannins": 6,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta",
+              "especiaria",
+              "pimenta"
+            ],
+            "secondary": [
+              "carvalho suave (10% barrica nova)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha grelhada",
+              "borrego",
+              "enchidos",
+              "aves robustas",
+              "queijo curado"
+            ],
+            "notes": "Syrah atlântico: pimenta + fruta preta + frescura de clima costeiro. Para contexto Nanban: Yakiniku de borrego (pimenta + fruta preta = harmonização natural com carne de borrego grelhada), Gyutan grelhado (especiaria + corpo cheio complementam tutano), Yakitori de coxa com tare forte (Syrah aguenta molho intenso)."
+          }
+        },
+        {
+          "id": "boa-esperanca-touriga-nacional-2018",
+          "name": "Quinta da Boa Esperança Touriga Nacional",
+          "quinta": "Quinta da Boa Esperança",
+          "vintage": 2018,
+          "doc": "Lisboa DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 14.09,
+          "acidity_gl": 4.69,
+          "ph": 3.53,
+          "winemaking": "100% Touriga Nacional. Desengace total + maceração pré-fermentativa 8°C + fermentação em lagar a 24°C. 10% em barrica de carvalho francês durante 18 meses + 12 meses estágio em garrafa.",
+          "notes": "TN puro em lagar — vinificação tradicional. 14.09% álcool + TA 4.69 g/L (baixa, típica de TN) + pH 3.53. 'Cor granada muito intensa, nuances cítricas e florais. Vibrante e estruturado, frescura e riqueza em taninos.' pH 3.53 dá acidez percetível moderada apesar de TA baixo.",
+          "structure": {
+            "acidity": 4,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos",
+              "violeta",
+              "floral (TN)",
+              "cítrico"
+            ],
+            "secondary": [
+              "carvalho suave (10% barrica)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "pato",
+              "queijo curado",
+              "aves assadas"
+            ],
+            "notes": "TN puro em lagar: taninos 7/10 ricos + florais cítricos característicos. Para contexto Nanban: Wagyu Yakiniku (taninos ricos + cítrico do TN complementam gordura marmoreada), Pato com tare (floral + violeta harmonizam com molho agridoce), Borrego assado (TN + acidez percetível cortam gordura)."
+          }
+        },
+        {
+          "id": "boa-esperanca-alicante-bouschet-2017",
+          "name": "Quinta da Boa Esperança Alicante Bouschet",
+          "quinta": "Quinta da Boa Esperança",
+          "vintage": 2017,
+          "doc": "Lisboa DOC",
+          "type": "red",
+          "varieties": [
+            "Alicante Bouschet"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.93,
+          "ph": 3.56,
+          "winemaking": "100% Alicante Bouschet. 10% do lote fermentou em barricas novas de carvalho francês durante 18 meses + 12 meses de estágio em garrafa.",
+          "notes": "AB puro — a casta teinturier com cor mais intensa desta DB. 14% álcool + TA 5.93 g/L + pH 3.56. '10% em barrica nova 18 meses. Cor granada muito intensa, quase opaco, notas de fruta preta com nuances balsâmicas. Vibrante e volumoso.' A cor quase opaca é característica do AB (polpa pigmentada).",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta intensa",
+              "balsâmico",
+              "prunela"
+            ],
+            "secondary": [
+              "carvalho suave (10% barrica nova)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha robusta",
+              "borrego",
+              "caça",
+              "queijo curado forte",
+              "enchidos"
+            ],
+            "notes": "AB puro: cor opaca + fruta preta intensa + balsâmico + acidez 5.93 g/L + corpo pleno. Para contexto Nanban: Kakuni de barriga de porco (corpo volumoso + balsâmico cortam gordura de longa cozedura), Yakiniku de costela de vaca (fruta preta intensa + taninos aguenta cortes gordurosos), Nabe de caça (hot pot — AB aguenta riqueza do caldo intenso)."
+          }
+        },
+        {
+          "id": "boa-esperanca-reserva-tinto-2017",
+          "name": "Quinta da Boa Esperança Reserva Tinto",
+          "quinta": "Quinta da Boa Esperança",
+          "vintage": 2017,
+          "doc": "Lisboa DOC",
+          "type": "red",
+          "varieties": [
+            "Syrah",
+            "Touriga Nacional"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 4.8,
+          "ph": 3.4,
+          "winemaking": "Syrah 50% + TN 50%. Desengace total + maceração pré-fermentativa 8°C + fermentação em lagar a 24°C. Castas vinificadas em separado. Estágio 24 meses em barricas de carvalho francês + 18 meses em garrafa. Vindima 2017: ano quente e seco na fase de maturação.",
+          "notes": "Reserva de topo: Syrah+TN vinificados separadamente + 24 meses barrica. 14.5% álcool + TA 4.8 g/L + pH 3.4. 'Aromas de fruta preta, notas especiadas e fumadas. Fresco, intenso e estruturado, taninos firmes.' Potencial de consumo: de imediato até 15/20 anos.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta",
+              "especiaria fumada",
+              "floral (TN)"
+            ],
+            "secondary": [
+              "carvalho (24mo barrica)",
+              "especiaria de madeira",
+              "fumo"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "wagyu",
+              "carne vermelha nobre",
+              "borrego assado",
+              "caça",
+              "queijo curado avançado"
+            ],
+            "notes": "Reserva de topo com 24mo barrica: taninos 8/10 + Syrah+TN = estrutura para carnes de alta qualidade. Potencial 15-20 anos. Para contexto Nanban: Wagyu Yakiniku premium (taninos 8/10 + especiaria fumada = harmonização com gordura marmoreada de alto nível), Borrego assado no forno (especiaria fumada + estrutura = par excecional), Nikujaga de carnes nobres."
+          }
+        },
+        {
+          "id": "boa-esperanca-fernao-pires-2019",
+          "name": "Quinta da Boa Esperança Fernão Pires",
+          "quinta": "Quinta da Boa Esperança",
+          "vintage": 2019,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires"
+          ],
+          "alcohol": 13.1,
+          "acidity_gl": 8.3,
+          "ph": 3.12,
+          "winemaking": "100% Fernão Pires. Vinificação em inox. Propriedade a 15 km do Oceano Atlântico.",
+          "notes": "FP de clima atlântico extremo. TA 8.3 g/L + pH 3.12 = a acidez mais alta de um FP nesta DB (compare com ODE FP 5.7 g/L, ou FP típico 5–6.5 g/L). 13.1% álcool. 'Cor cítrica, aroma intenso a frutas tropicais, nuances florais. Elegante e fresco, final longo.' A acidez atlântica amplifica os aromas varietais característicos.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutas tropicais",
+              "flores brancas",
+              "cítrico"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "marisco",
+              "peixe cru",
+              "sunomono",
+              "tofu"
+            ],
+            "notes": "FP atlântico com acidez 8.3 g/L + pH 3.12 — excecional para a casta. Para contexto Nanban: Sashimi de peixe branco (tropical + flores brancas amplificam delicadeza — acidez 9/10 limpa o palato), Sunomono de pepino (flores tropicais bridgem com vinagrete japonês), Agedashi Tofu (acidez muito alta corta gordura da fritura com precisão)."
+          }
+        },
+        {
+          "id": "boa-esperanca-colheita-branco-2021",
+          "name": "Quinta da Boa Esperança Colheita Branco",
+          "quinta": "Quinta da Boa Esperança",
+          "vintage": 2021,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires",
+            "Arinto"
+          ],
+          "alcohol": 13.3,
+          "acidity_gl": 7.2,
+          "ph": 3.18,
+          "winemaking": "Fernão Pires 50% + Arinto 50%. 4 meses de estágio em garrafa. Sem barrica. Propriedade a 15 km do Atlântico.",
+          "notes": "Blend FP+Arinto sem barrica. TA 7.2 g/L + pH 3.18 = acidez alta. 'Cor cítrica, mineral, aroma intenso a fruta tropical. Na boca é intenso, frutado e fresco, final muito agradável e persistente.' Tropical do FP + mineralidade do Arinto + terroir atlântico.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta tropical",
+              "mineral",
+              "cítrico"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "marisco",
+              "tempura",
+              "peixe branco",
+              "tofu"
+            ],
+            "notes": "FP+Arinto atlântico sem barrica: tropical + mineralidade + acidez 7.2 g/L. Para contexto Nanban: Sashimi de peixe branco (tropical + mineral + acidez 8/10 = harmonização perfeita com peixe cru delicado), Tempura de camarão (acidez alta + leveza = perfeito para fritura), Hassun de frutos do mar (tropical bridgea com variedade dos aperitivos)."
+          }
+        },
+        {
+          "id": "boa-esperanca-arinto-2018",
+          "name": "Quinta da Boa Esperança Arinto",
+          "quinta": "Quinta da Boa Esperança",
+          "vintage": 2018,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Arinto"
+          ],
+          "alcohol": 13.4,
+          "acidity_gl": 7.8,
+          "ph": 3.04,
+          "winemaking": "100% Arinto. Vinificação em inox. Propriedade a 15 km do Atlântico.",
+          "notes": "Arinto de acidez extrema: TA 7.8 g/L + pH 3.04 — o pH mais baixo de todos os brancos não-espumantes desta DB. Compare com Arinto típico (5.5–6.8 g/L, pH 3.2–3.4). O pH 3.04 é próximo de muitos espumantes. 13.4% álcool. 'Cor cítrica, aroma mineral muito elegante, ligeiras nuances tropicais. Muito fresco, final longo e persistente.'",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "mineral",
+              "cítrico",
+              "notas tropicais suaves"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "marisco cru",
+              "ostras",
+              "peixe cru",
+              "sunomono"
+            ],
+            "notes": "Arinto com pH 3.04 — acidez percetível extrema, próxima de espumante. Para contexto Nanban: Sashimi de peixe branco premium (mineralidade elegante + acidez 9/10 = harmonização excecional), Ostras com ponzu (mineral + cítrico = afinidade natural com o iodo das ostras), Hamachi Crudo com yuzu (mineral + cítrico ressoa com yuzu)."
+          }
+        },
+        {
+          "id": "boa-esperanca-sauvignon-blanc-2020",
+          "name": "Quinta da Boa Esperança Sauvignon Blanc",
+          "quinta": "Quinta da Boa Esperança",
+          "vintage": 2020,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Sauvignon Blanc"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 7.1,
+          "ph": 3.24,
+          "winemaking": "100% Sauvignon Blanc. Prensagem de cachos inteiros. Fermentação com temperatura controlada 10/12°C. 4 meses de estágio em garrafa.",
+          "notes": "Sauvignon Blanc atlântico: TA 7.1 g/L + pH 3.24. 13.5% álcool. 'Mineral e fresco. Notas de fruta tropical com apontamentos vegetais característicos da casta. Untuoso com bom equilíbrio de acidez.' O herbáceo/vegetal é a assinatura do SB; o 'bom equilíbrio' refere-se à relação entre 7.1 g/L TA e o álcool.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "fruta tropical",
+              "herbáceo",
+              "vegetal (SB)",
+              "mineral"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "tofu",
+              "saladas",
+              "marisco",
+              "peixe branco"
+            ],
+            "notes": "SB atlântico: herbáceo + tropical + acidez 7.1 g/L + mineral. Para contexto Nanban: Sashimi de peixe branco (herbáceo + mineral bridgem com wasabi e delicadeza do peixe cru), Agedashi Tofu (SB vegetal + acidez corta fritura com precisão), Sunomono de algas (herbáceo + mineral = harmonização natural com algas e vinagrete japonês)."
+          }
+        },
+        {
+          "id": "boa-esperanca-reserva-branco-2019",
+          "name": "Quinta da Boa Esperança Reserva Branco",
+          "quinta": "Quinta da Boa Esperança",
+          "vintage": 2019,
+          "doc": "Lisboa DOC",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires",
+            "Arinto"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 7.8,
+          "ph": 3.25,
+          "winemaking": "Fernão Pires 50% + Arinto 50%. 20% fermentação em inox + 4 meses batonnage em cuba. 80% fermentação em barricas novas de carvalho francês + 6 meses batonnage. Estágio 12 meses em garrafa. Vindima amena e chuvosa com escaldão a meio da maturação.",
+          "notes": "Reserva Branco: mesmas castas do Colheita Branco mas 80% em barrica nova + 6 meses batonnage. TA 7.8 g/L + pH 3.25 = acidez alta para barricado (mesma TA que o Arinto a solo). 13% álcool. 'Mineral e fresco. Notas florais com apontamentos cítricos. Extremamente untuoso, excelente equilíbrio entre estrutura e acidez.' Combinação 80% barrica nova + acidez 7.8 g/L é excecional.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "cítrico",
+              "mineral"
+            ],
+            "secondary": [
+              "baunilha (80% barrica nova)",
+              "notas de borras (batonnage)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe nobre grelhado",
+              "marisco rico",
+              "chawanmushi",
+              "aves",
+              "queijo semi-curado"
+            ],
+            "notes": "FP+Arinto 80% barrica nova: textura excecionalmente untuosa com acidez 7.8 g/L estruturante. 'Extremamente untuoso + excelente equilíbrio.' Para contexto Nanban: Chawanmushi (80% barrica nova + batonnage = textura complementa o pudim de ovo e dashi), Hotate Batayaki (vieira com manteiga + dashi — untuosidade + floral amplificam), Peixe nobre grelhado com ponzu (acidez 8/10 bridgea com cítrico do ponzu)."
+          }
+        },
+        {
+          "id": "boa-esperanca-rose-atlantico-2020",
+          "name": "Quinta da Boa Esperança Rosé Atlântico",
+          "quinta": "Quinta da Boa Esperança",
+          "vintage": 2020,
+          "doc": "Lisboa DOC",
+          "type": "rosé",
+          "varieties": [
+            "Touriga Nacional",
+            "Castelão",
+            "Syrah"
+          ],
+          "alcohol": 12.3,
+          "acidity_gl": 7.37,
+          "ph": 3.28,
+          "winemaking": "TN + Castelão + Syrah. Vindimadas à mão para caixas de 15kg. Prensagem suave de cachos inteiros. Fermentação com temperatura controlada 10/12°C. Vinha a 15 km do Oceano Atlântico.",
+          "notes": "Rosé atlântico único. 'A escassos 15 km do Atlântico esta vinha que o olha de frente, adquire toda a mineralidade e frescura.' 12.3% álcool + TA 7.37 g/L + pH 3.28. 'Acidez expressiva, enorme frescura e salinidade tão marcada que o torna texturado. Leve cor salmão, volumoso e estruturado.' A salinidade marcada é terroir atlântico puro — incomum em rosé. TA 7.37 g/L = um dos rosés mais ácidos desta DB.",
+          "structure": {
+            "acidity": 8,
+            "tannins": 2,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos frescos",
+              "mineral salgado",
+              "floral"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe",
+              "marisco",
+              "sashimi",
+              "tempura",
+              "pratos atlânticos"
+            ],
+            "notes": "Rosé atlântico com salinidade marcada + acidez 7.37 g/L — único desta DB com caráter salgado como terroir dominante. Para contexto Nanban: Sashimi de peixe gordo (salinidade atlântica + acidez alta = harmonização com gordura do atum ou salmão), Tempura de camarão marítimo (salinidade + acidez 8/10 corta fritura com elegância), Hassun de frutos do mar (salinidade bridgea naturalmente com ingredientes marinhos japoneses)."
+          }
+        },
+        {
+          "id": "boa-esperanca-reserva-rose-2018",
+          "name": "Quinta da Boa Esperança Reserva Rosé",
+          "quinta": "Quinta da Boa Esperança",
+          "vintage": 2018,
+          "doc": "Lisboa DOC",
+          "type": "rosé",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 7.23,
+          "ph": 2.96,
+          "winemaking": "100% Touriga Nacional. Vindimado à mão para caixas de 15kg. Prensagem directa. Fermentação em barricas usadas de carvalho francês 500L com batonnage. Estágio 9 meses em barrica + 6 meses em garrafa.",
+          "notes": "TN puro em barrica usada 9 meses — rosé de guarda. pH 2.96 = segundo valor mais baixo desta DB (após Valle Pradinhos Rosé 2.86). TA 7.23 g/L. 13% álcool. 'Complexo, untuoso com acidez vibrante. Fresco, final muito longo.' Barrica usada 500L + batonnage 9 meses = textura e complexidade invulgares para um rosé. pH 2.96 + barrica + TN floral = combinação excecional.",
+          "structure": {
+            "acidity": 9,
+            "tannins": 3,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos",
+              "floral (TN)",
+              "cítrico"
+            ],
+            "secondary": [
+              "notas de borras (batonnage)",
+              "baunilha suave (barrica usada)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi premium",
+              "marisco",
+              "aves grelhadas",
+              "peixe nobre",
+              "aperitivos de nível"
+            ],
+            "notes": "TN Reserva Rosé: pH 2.96 (2º mais baixo DB) + 9mo barrica usada + taninos brancos 3/10. Acidez extrema + complexidade de barrica = versatilidade para alta gastronomia. Para contexto Nanban: Sashimi de linguado premium (pH 2.96 + TN floral = limpeza de palato excecional + amplificação do peixe delicado), Hotate Sashimi (textura do batonnage complementa cremosidade da vieira), Hassun de abertura premium (acidez extrema + complexidade = par para aperitivos de nível)."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Adega Mãe",
+      "region": "Lisboa – Torres Vedras",
+      "quintas": [
+        "Adega Mãe"
+      ],
+      "producer_notes": "Propriedade em Ventosa, Torres Vedras, a 15km do Atlântico. Solos argilo-calcários, clima atlântico. Enólogo: Diogo Lopes. Portfolio diversificado com enfoque em diferenciação: vinho em ovo de cimento (Vital, Viosinho), Pinot Noir de estilo borgonhês, colheita tardia com Botrytis Cinerea, linha biológica certificada. Casta Vital — indígena de Torres Vedras — é o emblema da identidade de terroir. Viticultura mista: convencional e biológica.",
+      "wines": [
+        {
+          "id": "adega-mae-reserva-branco-2022",
+          "name": "Adega Mãe Reserva Branco",
+          "vintage": 2022,
+          "doc": "Vinho Regional Lisboa",
+          "type": "white",
+          "varieties": [
+            "Viosinho",
+            "Alvarinho",
+            "Chardonnay"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.89,
+          "ph": 3.38,
+          "winemaking": "Desengace total, ligeira prensagem, decantação a frio, fermentação em barricas de 400L de carvalho francês. Batonnage durante 9 meses. Engarrafado setembro 2023, lançado maio 2024.",
+          "notes": "Estilo borgonhês: fermentação e estágio completos em barrica 400L — incomum em Lisboa. Viosinho+Alvarinho preservam frescura atlântica; Chardonnay confere estrutura e untuosidade. 13% + batonnage 9mo = textura cremosa com acidez viva. Frescura e mineralidade, fruta tropical, amanteigado integrado, madeira bem assimilada. Potencial de evolução. 17.000 garrafas.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta tropical",
+              "cítrico",
+              "fruta branca"
+            ],
+            "secondary": [
+              "amanteigado",
+              "baunilha integrada",
+              "mineral atlântico"
+            ],
+            "tertiary": [
+              "potencial de evolução"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "bacalhau assado",
+              "peixes gordos",
+              "queijos pasta mole",
+              "marisco",
+              "aves com molho cremoso"
+            ],
+            "notes": "Fermentação em barrica 400L + batonnage 9mo cria textura cremosa com acidez estruturante (5.89 g/L, pH 3.38). Para contexto Nanban: Saikyo Yaki (peixe marinado em miso — a untuosidade do branco borgonhês equilibra o miso doce), Chawanmushi (textura cremosa do batonnage complementa o custard de ovo), Tempura de peixe nobre (acidez corta gordura, textura acompanha peixe rico)."
+          }
+        },
+        {
+          "id": "adega-mae-atlantico-2021",
+          "name": "Adega Mãe Atlântico",
+          "vintage": 2021,
+          "doc": "Vinho Regional Lisboa",
+          "type": "red",
+          "varieties": [
+            "Pinot Noir"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 5.14,
+          "ph": 3.53,
+          "winemaking": "Vindima manual em caixas. Desengace parcial — 20% cachos inteiros na cuba. Maceração a frio 2 dias. Fermentação com curtimenta 3 dias, mosto prensado a meio da fermentação e termina em barricas usadas. Estágio 5 meses em barricas usadas de carvalho francês.",
+          "notes": "Pinot Noir em Lisboa — único na DB. Estilo borgonhês: 20% cachos inteiros (frescura e especiaria), fermentação termina em barrica usada (integração, não cedência de carvalho). 12% álcool, pH 3.53, 5.14 g/L = acidez elevada para tinto (comparável a Baga leve). Cor vermelha aberta, brilhante, reflexos violáceos. Frutos vermelhos frescos, florais, ligeiro especiado. Textura leve, vibrante, final prolongado. 3.500 garrafas. Engarrafado agosto 2022, lançado setembro 2025.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 4,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos frescos",
+              "floral",
+              "ligeiro especiado"
+            ],
+            "secondary": [
+              "notas de madeira suave (barricas usadas)",
+              "toque vegetal (cachos inteiros)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "queijos",
+              "aves",
+              "peixe grelhado",
+              "cogumelos",
+              "pratos leves"
+            ],
+            "notes": "Pinot Noir leve com acidez elevada (5.14 g/L, pH 3.53) e taninos suaves (4/10) — perfil raro em tintos portugueses. Para contexto Nanban: Yakitori de frango (taninos suaves + frutos vermelhos frescos = clássico PN com grelhado de aves), Mushimono (pratos de vapor com frango ou peixe — leveza do vinho não domina o prato), Queijos de pasta semi-curada (acidez + corpo leve = par clássico para PN)."
+          }
+        },
+        {
+          "id": "adega-mae-vinhas-velhas-2022",
+          "name": "Adega Mãe Vinhas Velhas",
+          "vintage": 2022,
+          "doc": "Vinho Regional Lisboa",
+          "type": "white",
+          "varieties": [
+            "Vital"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 4.76,
+          "ph": 3.29,
+          "winemaking": "Vindima manual, ligeira prensagem, decantação estática a frio 48h. Fermentação em ovo de cimento com temperatura controlada durante 20 dias. Estágio no ovo sobre borras finas durante 10 meses. Sem barrica.",
+          "notes": "Casta Vital — indígena de Torres Vedras, muito rara fora da região. Vinhas velhas: concentração aromática distinta, nota de pólvora (silex/gunflint) característica. Ovo de cimento: micro-oxigenação sem cedência de carvalho, textura, redondez. pH 3.29 apesar de 4.76 g/L TA = acidez percebida sólida. Cor limão palha, florais, fruta branca, mineral. Múltiplas camadas de complexidade, final rico e volumoso. Produção mínima: 2.700 garrafas.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "fruta branca"
+            ],
+            "secondary": [
+              "mineral/pólvora (silex)",
+              "notas de borras (ovo de cimento)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixes gordos no forno",
+              "borrego",
+              "aves assadas",
+              "queijos curados",
+              "pratos com cogumelos"
+            ],
+            "notes": "Vital em ovo de cimento: textura redonda sem madeira, mineral intenso (silex). pH 3.29 = acidez percebida alta apesar de TA moderada. Para contexto Nanban: Shio Yaki (peixe grelhado com sal — mineralidade do Vital amplifica iodo do peixe, silex no nariz espelha limpeza do sal), Tofu Dengaku (miso doce + mineral do vinho = contraste limpo), Peixe branco em vapor (leveza 12% + textura ovo de cimento = par para pratos delicados mas aromáticos)."
+          }
+        },
+        {
+          "id": "adega-mae-colheita-tardia-2021",
+          "name": "Adega Mãe Colheita Tardia",
+          "vintage": 2021,
+          "doc": "Vinho Regional Lisboa",
+          "type": "white",
+          "varieties": [
+            "Semillon",
+            "Petit Manseng"
+          ],
+          "alcohol": 11.5,
+          "acidity_gl": 7.55,
+          "ph": 3.45,
+          "winemaking": "Vindima no final de outubro com forte ataque de Botrytis Cinerea. Vindima manual em caixas de 18kg. Prensagem directa em prensa vertical. Fermentação em inox com temperatura controlada. Estágio em barricas usadas de carvalho francês. 375ml.",
+          "notes": "Botrytis Cinerea confirmada. Semillon (base clássica Sauternes) + Petit Manseng (acidez natural elevada) — equilíbrio raro: 7.55 g/L TA controla 112.1 g/L açúcar. pH 3.45 para vinho doce = frescura inesperada. Cor dourada brilhante. Casca de laranja, figo, mel, ligeira evolução. Corpo envolvente, doçura suavizada pela acidez, final longo e persistente. 2.700 garrafas de 375ml.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "full",
+            "sweetness": "sweet",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "casca de laranja",
+              "figo",
+              "mel"
+            ],
+            "secondary": [
+              "botrytis (abricó, cera)",
+              "madeira usada suave"
+            ],
+            "tertiary": [
+              "ligeira evolução"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "foie-gras",
+              "patés",
+              "queijos azuis",
+              "sobremesas conventuais",
+              "fruta seca"
+            ],
+            "notes": "Botrytis + 7.55 g/L TA + 112.1 g/L RS: doce mas com acidez que impede peso. Para contexto Nanban: Wagashi (doces tradicionais japoneses — a acidez do PM equilibra a doçura delicada do wagashi, evitando saturação), Mochi de pasta de feijão (doçura controlada pela acidez = complementaridade), Queijos azuis (clássico: botrytis + queijo forte = contraste fundamental)."
+          }
+        }
+      ]
+    }
+  ]
+}

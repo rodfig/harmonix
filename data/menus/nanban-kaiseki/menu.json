@@ -1,0 +1,226 @@
+{
+  "_meta": {
+    "menu_id":          "nanban-kaiseki",
+    "menu_name":        "Menu Kaiseki Nanban",
+    "menu_title":       "Menu Kaiseki",
+    "menu_subtitle":    "会席コース",
+    "language":         "pt",
+    "page_break_after": 6,
+    "pages": ["booklet-page-menu1.html", "booklet-page-menu2.html"]
+  },
+
+  "dishes": [
+
+    {
+      "id":           "goma-doufu",
+      "sequence":     1,
+      "name":         "Goma Doufu",
+      "name_alt":     "胡麻豆腐、海栗ピューレ",
+      "course_label": "先付 Sakizuke",
+      "description":  "Tofu de gergelim com purê de ouriço",
+      "image":        "images/Goma Dōfu with uni and wasabi.png",
+      "properties": {
+        "preparation":        "chilled",
+        "sauce":              null,
+        "texture":            "silky",
+        "intensity":          "delicate",
+        "fat_level":          "medium",
+        "acidity":            "none",
+        "sweetness":          "none",
+        "key_flavors":        ["umami", "marine"],
+        "dominant_component": "uni"
+      }
+    },
+
+    {
+      "id":           "aperitivos-variados",
+      "sequence":     2,
+      "name":         "Aperitivos Variados",
+      "name_alt":     "八寸盛り合わせ：湯葉ロール、油揚げ、豆腐天ぷら",
+      "course_label": "八寸 Hassun",
+      "description":  "Yuba roll, abura-age com shiso, bacon e queijo, tempura de tofu",
+      "image":        "images/Traditional Japanese Hassun platter scene.png",
+      "properties": {
+        "preparation":        "fried",
+        "sauce":              null,
+        "texture":            "crispy",
+        "intensity":          "medium",
+        "fat_level":          "high",
+        "acidity":            "none",
+        "sweetness":          "none",
+        "key_flavors":        ["umami", "spiced"],
+        "dominant_component": "variety (fried, fatty, shellfish)"
+      }
+    },
+
+    {
+      "id":           "ceviche-tofu",
+      "sequence":     3,
+      "name":         "Ceviche de Tofu Firme",
+      "name_alt":     "豆腐のセビーチェ、柚子風味",
+      "course_label": "向付 Mukozuke",
+      "description":  "Tofu firme com yuzu e azeite português, guarnição com chips de batata doce",
+      "image":        "images/Tofu ceviche with sweet potato chips.png",
+      "properties": {
+        "preparation":        "raw",
+        "sauce":              "citrus",
+        "texture":            "firm",
+        "intensity":          "light",
+        "fat_level":          "low",
+        "acidity":            "high",
+        "sweetness":          "none",
+        "key_flavors":        ["citrus"],
+        "dominant_component": "yuzu"
+      }
+    },
+
+    {
+      "id":           "agedashi-doufu",
+      "sequence":     4,
+      "name":         "Doufu Agedashi",
+      "name_alt":     "揚げ出し豆腐",
+      "course_label": "焼物 Yakimono",
+      "description":  "tofu com molho de dashi, shoyu e mirin",
+      "image":        "images/Agedashi Tofu in rustic bowl.png",
+      "properties": {
+        "preparation":        "fried",
+        "sauce":              "dashi",
+        "texture":            "crispy",
+        "intensity":          "medium",
+        "fat_level":          "medium",
+        "acidity":            "none",
+        "sweetness":          "low",
+        "key_flavors":        ["umami"],
+        "dominant_component": "dashi broth (shoyu, mirin)"
+      }
+    },
+
+    {
+      "id":           "cataplana-tofu",
+      "sequence":     5,
+      "name":         "Cataplana de Tofu e Ameijoas",
+      "name_alt":     "豆腐とあさりのカタプラーナ風",
+      "course_label": "煮物 Nimono",
+      "description":  "Inspirado em cataplana portuguesa, com amêijoas e especiarias nanban",
+      "image":        "images/Cataplana de tofu e ameijoas.png",
+      "properties": {
+        "preparation":        "braised",
+        "sauce":              "dashi",
+        "texture":            "chunky",
+        "intensity":          "rich",
+        "fat_level":          "medium",
+        "acidity":            "none",
+        "sweetness":          "none",
+        "key_flavors":        ["umami", "marine"],
+        "dominant_component": "clams (cataplana)"
+      }
+    },
+
+    {
+      "id":           "tofu-nanban",
+      "sequence":     6,
+      "name":         "Nanban-zuke de Tofu",
+      "name_alt":     "豆腐の南蛮漬け",
+      "course_label": "酢肴 Suzakana",
+      "description":  "Tofu frito e marinado, prato histórico nanban",
+      "image":        "images/Tofu Nanban-zuke with pickled vegetables.png",
+      "properties": {
+        "preparation":        "fried",
+        "sauce":              "sweet_sour",
+        "texture":            "tender",
+        "intensity":          "medium",
+        "fat_level":          "medium",
+        "acidity":            "high",
+        "sweetness":          "medium",
+        "key_flavors":        ["acidic", "sweet"],
+        "dominant_component": "sweet-sour marinade"
+      }
+    },
+
+    {
+      "id":           "gratin-tofu",
+      "sequence":     7,
+      "name":         "Gratin de Tofu e Cogumelos",
+      "name_alt":     "豆腐と茸のグラタン、味噌クリーム",
+      "course_label": "強肴 Shiizakana",
+      "description":  "Tofu gratinado com molho cremoso de miso e queijo",
+      "image":        "images/Tofu gratin with cheese and herbs.png",
+      "properties": {
+        "preparation":        "gratinée",
+        "sauce":              "miso",
+        "texture":            "creamy",
+        "intensity":          "very_rich",
+        "fat_level":          "high",
+        "acidity":            "none",
+        "sweetness":          "none",
+        "key_flavors":        ["umami", "earthy"],
+        "dominant_component": "creamy miso + cheese"
+      }
+    },
+
+    {
+      "id":           "arroz-misto",
+      "sequence":     8,
+      "name":         "Arroz Misto",
+      "name_alt":     "季節の炊き込みご飯",
+      "course_label": "御飯 Gohan",
+      "description":  "Arroz preparado com ingredientes sazonais",
+      "image":        "images/Arroz Misto with seasonal vegetables.png",
+      "properties": {
+        "preparation":        "steamed",
+        "sauce":              "dashi",
+        "texture":            "tender",
+        "intensity":          "light",
+        "fat_level":          "low",
+        "acidity":            "none",
+        "sweetness":          "none",
+        "key_flavors":        ["umami"],
+        "dominant_component": "dashi"
+      }
+    },
+
+    {
+      "id":           "sopa-yuba",
+      "sequence":     9,
+      "name":         "Sopa clara com Yuba",
+      "name_alt":     "お吸い物、湯葉",
+      "course_label": "留椀 Tomewan",
+      "description":  "Delicada sopa à base de caldo transparente de algas, flocos de bonito defumado e sal.",
+      "image":        "images/Delicate suimono with yuba and yuzu.png",
+      "properties": {
+        "preparation":        "steamed",
+        "sauce":              "dashi",
+        "texture":            "silky",
+        "intensity":          "delicate",
+        "fat_level":          "low",
+        "acidity":            "none",
+        "sweetness":          "none",
+        "key_flavors":        ["umami", "citrus"],
+        "dominant_component": "clear dashi (suimono)"
+      }
+    },
+
+    {
+      "id":           "parfait-tofu",
+      "sequence":     10,
+      "name":         "Parfait de Tofu e Castella com Biscoito de Okara",
+      "name_pairing": "Parfait de Tofu e Castella",
+      "name_alt":     "カステラと豆腐のパルフェ、おからクッキー",
+      "course_label": "水物 Mizumono",
+      "description":  "Mousse de tofu sedoso com bolo castella e biscoito de okara",
+      "image":        "images/Elegant Japanese parfait with tofu mousse.png",
+      "properties": {
+        "preparation":        "chilled",
+        "sauce":              null,
+        "texture":            "creamy",
+        "intensity":          "medium",
+        "fat_level":          "medium",
+        "acidity":            "none",
+        "sweetness":          "high",
+        "key_flavors":        ["sweet", "earthy"],
+        "dominant_component": "sweet dessert (castella, okara)"
+      }
+    }
+
+  ]
+}

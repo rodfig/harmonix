@@ -1,0 +1,137 @@
+{
+  "producer": "Quinta de Pancas",
+  "generated_at": "2026-03-01T11:20:27.347339",
+  "found_count": 3,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "pancas-reserva-branco-2023",
+      "producer": "Quinta de Pancas",
+      "name": "Pancas Reserva Branco",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Covela Reserva Tinto",
+          "confidence": "no_match",
+          "score": 0.369,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Quinta de Pancas Arinto branco",
+          "confidence": "low",
+          "score": 0.546,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Rose Quinta das Pancas Reserva 2023 75 Cl",
+          "confidence": "low",
+          "score": 0.709,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 8.25,
+          "name_found": "Quinta de Pancas Reserva Branco 2023",
+          "confidence": "high",
+          "score": 0.791,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/23614-quinta-de-pancas-reserve-white-2023-5600883660015.html"
+        }
+      },
+      "best_retail": 8.25,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 12.5,
+        "2.0x": 16.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "pancas-grande-reserva-tinto-2021",
+      "producer": "Quinta de Pancas",
+      "name": "Quinta de Pancas Grande Reserva Tinto",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta de Arcossó Grande Reserva Tinto",
+          "confidence": "low",
+          "score": 0.606,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Quinta de Pancas Arinto branco",
+          "confidence": "low",
+          "score": 0.703,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Rose Quinta das Pancas Reserva 2023 75 Cl",
+          "confidence": "low",
+          "score": 0.6,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 19.85,
+          "name_found": "Quinta de Pancas Grande Reserva Tinto 2017",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/23610-quinta-de-pancas-grand-reserve-red-2017-5600228987081.html"
+        }
+      },
+      "best_retail": 19.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 30.0,
+        "2.0x": 40.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "pancas-reserva-tinto-2022",
+      "producer": "Quinta de Pancas",
+      "name": "Quinta de Pancas Reserva Tinto",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta de Ventozelo Reserva Branco",
+          "confidence": "low",
+          "score": 0.507,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Quinta de Pancas Arinto branco",
+          "confidence": "low",
+          "score": 0.781,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Rose Quinta das Pancas Reserva 2023 75 Cl",
+          "confidence": "low",
+          "score": 0.677,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 8.25,
+          "name_found": "Quinta de Pancas Reserva Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/23614-quinta-de-pancas-reserve-white-2023-5600883660015.html"
+        }
+      },
+      "best_retail": 8.25,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 12.5,
+        "2.0x": 16.5
+      },
+      "status": "found"
+    }
+  ]
+}

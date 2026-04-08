@@ -1,0 +1,266 @@
+{
+  "producer": "Mateus Nicolau de Almeida",
+  "generated_at": "2026-03-01T11:20:27.340698",
+  "found_count": 6,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "trans-douro-express-douro-superior-2022",
+      "producer": "Mateus Nicolau de Almeida",
+      "name": "Trans-Douro Express Douro Superior",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 21.35,
+          "name_found": "Trans Douro Express Douro Superior Tinto 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/20912-trans-douro-express-douro-superior-red-2020-5600767480036.html"
+        }
+      },
+      "best_retail": 21.35,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 32.5,
+        "2.0x": 43.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "trans-douro-express-cima-corgo-2022",
+      "producer": "Mateus Nicolau de Almeida",
+      "name": "Trans-Douro Express Cima Corgo",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 21.35,
+          "name_found": "Trans Douro Express Cima Corgo Tinto 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/20911-trans-douro-express-cima-corgo-red-2022-5600767480029.html"
+        }
+      },
+      "best_retail": 21.35,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 32.5,
+        "2.0x": 43.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "trans-douro-express-baixo-corgo-2022",
+      "producer": "Mateus Nicolau de Almeida",
+      "name": "Trans-Douro Express Baixo Corgo",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 21.35,
+          "name_found": "Trans Douro Express Baixo Corgo Tinto 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/20910-trans-douro-express-baixo-corgo-red-2020-5600767480012.html"
+        }
+      },
+      "best_retail": 21.35,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 32.5,
+        "2.0x": 43.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "eremitas-paulo-de-tebas-2020",
+      "producer": "Mateus Nicolau de Almeida",
+      "name": "Eremitas Paulo de Tebas",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa de Ronfe Branco",
+          "confidence": "no_match",
+          "score": 0.143,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Foral de Évora branco",
+          "confidence": "no_match",
+          "score": 0.129,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Eugenio De Almeida 75 Cl",
+          "confidence": "no_match",
+          "score": 0.203,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 30.05,
+          "name_found": "Eremitas Paulo de Tebas Branco 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/20909-eremitas-paulo-de-tebas-white-2019.html"
+        }
+      },
+      "best_retail": 30.05,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 45.5,
+        "2.0x": 60.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "eremitas-amon-de-kelia-2023",
+      "producer": "Mateus Nicolau de Almeida",
+      "name": "Eremitas Amón de Kélia",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa de Ronfe Branco",
+          "confidence": "no_match",
+          "score": 0.134,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Foral de Évora branco",
+          "confidence": "no_match",
+          "score": 0.126,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Eugenio De Almeida 75 Cl",
+          "confidence": "no_match",
+          "score": 0.198,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 30.05,
+          "name_found": "Eremitas Amon de Kelia Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/20907-eremitas-amon-de-kelia-white-2021-560002021110.html"
+        }
+      },
+      "best_retail": 30.05,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 45.5,
+        "2.0x": 60.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "eremitas-antao-do-deserto-2020",
+      "producer": "Mateus Nicolau de Almeida",
+      "name": "Eremitas Antão do Deserto",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Monte Xisto Tinto",
+          "confidence": "no_match",
+          "score": 0.139,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2012 Quinta do Monte Xisto tinto",
+          "confidence": "no_match",
+          "score": 0.135,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 30.05,
+          "name_found": "Eremitas Antão do Deserto Branco 2020",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/20908-eremitas-antao-do-deserto-white-2019-5600020211019.html"
+        }
+      },
+      "best_retail": 30.05,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 45.5,
+        "2.0x": 60.5
+      },
+      "status": "found"
+    }
+  ]
+}

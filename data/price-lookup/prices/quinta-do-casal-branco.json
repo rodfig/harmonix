@@ -1,0 +1,108 @@
+{
+  "producer": "Quinta do Casal Branco",
+  "generated_at": "2026-03-01T11:20:27.365029",
+  "found_count": 5,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "casal-branco-falcoaria-branco-2022",
+      "producer": "Quinta do Casal Branco",
+      "name": "Falcoaria Branco Vinhas Velhas",
+      "vintage": 2022,
+      "best_retail": 17.99,
+      "best_source": "producer",
+      "restaurant_estimates": {
+        "low_markup_1_5x": 27.0,
+        "high_markup_2_0x": 36.0
+      },
+      "prices": {
+        "producer": {
+          "retail_price": 17.99,
+          "confidence": "manual",
+          "score": 1.0
+        }
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "casal-branco-falcoaria-tinto-2022",
+      "producer": "Quinta do Casal Branco",
+      "name": "Falcoaria Tinto",
+      "vintage": 2022,
+      "best_retail": 17.99,
+      "best_source": "producer",
+      "restaurant_estimates": {
+        "low_markup_1_5x": 27.0,
+        "high_markup_2_0x": 36.0
+      },
+      "prices": {
+        "producer": {
+          "retail_price": 17.99,
+          "confidence": "manual",
+          "score": 1.0
+        }
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "casal-branco-falcoaria-colheita-tardia-2018",
+      "producer": "Quinta do Casal Branco",
+      "name": "Falcoaria Colheita Tardia",
+      "vintage": 2018,
+      "best_retail": 32.0,
+      "best_source": "producer",
+      "restaurant_estimates": {
+        "low_markup_1_5x": 48.0,
+        "high_markup_2_0x": 64.0
+      },
+      "prices": {
+        "producer": {
+          "retail_price": 32.0,
+          "confidence": "manual",
+          "score": 1.0
+        }
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "casal-branco-reserva-branco-2022",
+      "producer": "Quinta do Casal Branco",
+      "name": "Quinta do Casal Branco Reserva Branco",
+      "vintage": 2022,
+      "best_retail": 10.99,
+      "best_source": "producer",
+      "restaurant_estimates": {
+        "low_markup_1_5x": 16.5,
+        "high_markup_2_0x": 22.0
+      },
+      "prices": {
+        "producer": {
+          "retail_price": 10.99,
+          "confidence": "manual",
+          "score": 1.0
+        }
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "casal-branco-reserva-tinto-2022",
+      "producer": "Quinta do Casal Branco",
+      "name": "Quinta do Casal Branco Reserva Tinto",
+      "vintage": 2022,
+      "best_retail": 10.99,
+      "best_source": "producer",
+      "restaurant_estimates": {
+        "low_markup_1_5x": 16.5,
+        "high_markup_2_0x": 22.0
+      },
+      "prices": {
+        "producer": {
+          "retail_price": 10.99,
+          "confidence": "manual",
+          "score": 1.0
+        }
+      },
+      "status": "found"
+    }
+  ]
+}

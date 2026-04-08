@@ -1,0 +1,223 @@
+{
+  "producer": "Quinta de Chocapalha",
+  "generated_at": "2026-03-01T11:20:27.342421",
+  "found_count": 5,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "chocapalha-reserva-branco-2017",
+      "producer": "Quinta de Chocapalha",
+      "name": "Chocapalha Reserva Branco",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 14.35,
+          "name_found": "Chocapalha Reserva Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/chocapalha-reserva-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2019 Quinta de Chocapalha Vinha Mãe tinto",
+          "confidence": "low",
+          "score": 0.455,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.446,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 19.95,
+          "name_found": "Chocapalha Reserva Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/418-chocapalha-reserve-white-2015-5607951420236.html"
+        }
+      },
+      "best_retail": 14.35,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 22.0,
+        "2.0x": 29.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "chocapalha-reserva-rose-2018",
+      "producer": "Quinta de Chocapalha",
+      "name": "Chocapalha Reserva Rosé",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 14.35,
+          "name_found": "Chocapalha Reserva Branco",
+          "confidence": "high",
+          "score": 0.82,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/chocapalha-reserva-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta do Sobral rosé",
+          "confidence": "no_match",
+          "score": 0.422,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Rose Quinta das Pancas Reserva 2023 75 Cl",
+          "confidence": "no_match",
+          "score": 0.386,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 18.75,
+          "name_found": "Chocapalha Reserva Rosé 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/16159-chocapalha-reserve-rose-2018-5607951040229.html"
+        }
+      },
+      "best_retail": 14.35,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 22.0,
+        "2.0x": 29.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "chocapalha-viosinho-2019",
+      "producer": "Quinta de Chocapalha",
+      "name": "Quinta de Chocapalha Viosinho",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 9.99,
+          "name_found": "Quinta de Chocapalha Tinto",
+          "confidence": "high",
+          "score": 0.77,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-de-chocapalha-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2019 Quinta de Chocapalha Vinha Mãe tinto",
+          "confidence": "low",
+          "score": 0.589,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Duque De Viseu 75 Cl",
+          "confidence": "no_match",
+          "score": 0.215,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 13.25,
+          "name_found": "Chocapalha Viosinho Branco 2022",
+          "confidence": "high",
+          "score": 0.836,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/16173-chocapalha-viosinho-white-2019-5607951050228.html"
+        }
+      },
+      "best_retail": 9.99,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "chocapalha-castelao-2017",
+      "producer": "Quinta de Chocapalha",
+      "name": "Quinta de Chocapalha Castelão",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 9.99,
+          "name_found": "Quinta de Chocapalha Tinto",
+          "confidence": "high",
+          "score": 0.774,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-de-chocapalha-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2019 Quinta de Chocapalha Vinha Mãe tinto",
+          "confidence": "low",
+          "score": 0.611,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Duque De Viseu 75 Cl",
+          "confidence": "no_match",
+          "score": 0.217,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 11.95,
+          "name_found": "Chocapalha Castelão Tinto 2020",
+          "confidence": "high",
+          "score": 0.835,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/7362-chocapalha-castelao-red-2016-5607951180208.html"
+        }
+      },
+      "best_retail": 9.99,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "mar-de-lisboa-tinto-2019",
+      "producer": "Quinta de Chocapalha",
+      "name": "Mar de Lisboa Tinto",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Alameda de Santar Tinto",
+          "confidence": "no_match",
+          "score": 0.2,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta de San Michel Malvasia de Colares branco",
+          "confidence": "no_match",
+          "score": 0.19,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Duque De Viseu 75 Cl",
+          "confidence": "no_match",
+          "score": 0.228,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 7.95,
+          "name_found": "Mar de Lisboa Branco 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/3678-mar-de-lisboa-white-2018-5607951250222.html"
+        }
+      },
+      "best_retail": 7.95,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 12.0,
+        "2.0x": 16.0
+      },
+      "status": "found"
+    }
+  ]
+}

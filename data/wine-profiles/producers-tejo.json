@@ -1,0 +1,2093 @@
+{
+  "_meta": {
+    "region": "Tejo",
+    "description": "Producer wine profiles for Tejo DOC",
+    "schema_version": "2.0",
+    "note": "Producer-centric format. Pairing is derived algorithmically from structure fields via pairing-rules.json. food_tags are NOT stored on wines. Cooking method and dish complements are as important as the main ingredient — see pairing_principles in pairing-rules.json.",
+    "fields_required": [
+      "id",
+      "name",
+      "doc",
+      "type",
+      "varieties",
+      "alcohol",
+      "structure",
+      "aromas",
+      "pairing"
+    ],
+    "fields_optional": [
+      "vintage",
+      "acidity_gl",
+      "ph",
+      "winemaking",
+      "notes",
+      "quinta"
+    ]
+  },
+  "producers": [
+    {
+      "producer": "Quinta do Casal Branco",
+      "region": "Tejo – Almeirim",
+      "quintas": [
+        "Quinta do Casal Branco"
+      ],
+      "producer_notes": "Quinta histórica em Almeirim, no coração do Tejo. Solos arenosos de charneca, terreno plano — as condições clássicas da margem direita do Tejo. Especialistas em Fernão Pires, a casta branca dominante da região, com parcelas de vinhas velhas com mais de 65 anos. Portfolio organizado em duas linhas: 'Falcoaria' (premium, vinhas velhas, barrica) e 'Reserva' (acessível, barricas usadas). Colheita Tardia é o vinho de topo — Viognier + Fernão Pires de vinhas velhas, produção limitada. Nota: sem dados de acidez titulável disponíveis nas fichas técnicas; estimativas derivadas das notas de prova e perfil regional.",
+      "wines": [
+        {
+          "id": "casal-branco-falcoaria-branco-2022",
+          "name": "Falcoaria Branco Vinhas Velhas",
+          "quinta": "Quinta do Casal Branco",
+          "vintage": 2022,
+          "doc": "Tejo DOC",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 6.2,
+          "ph": null,
+          "winemaking": "100% Fernão Pires. Vinhas velhas com mais de 65 anos. Solo arenoso, charneca. Estágio em madeira (notas de tosta presentes mas em segundo plano face à fruta). Exposição Este–Oeste.",
+          "notes": "Linha premium Falcoaria de vinhas velhas. Marcadamente mineral e salino — expressão de terroir de charneca arenosa. 'Óptima acidez natural' mencionada explicitamente → estimativa 6/10 (acima da média regional). Boa longevidade. Sem dados de acidez titulável.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "cítrico",
+              "tropical",
+              "mineral",
+              "salinidade"
+            ],
+            "secondary": [
+              "tosta de madeira suave",
+              "leve barrica integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "marisco",
+              "sashimi",
+              "tofu",
+              "legumes grelhados",
+              "queijo fresco"
+            ],
+            "notes": "Fernão Pires de vinhas velhas com mineralidade e salinidade pronunciadas — raro em brancos do Tejo. Acidez natural acima da média regional equilibra pratos de umami ligeiro a moderado. Para contexto Nanban: mineralidade e salinidade harmonizam com sashimi de peixe branco, tofu frio (Hiyayakko) e pratos com dashi ou kombu."
+          }
+        },
+        {
+          "id": "casal-branco-falcoaria-tinto-2022",
+          "name": "Falcoaria Tinto",
+          "quinta": "Quinta do Casal Branco",
+          "vintage": 2022,
+          "doc": "Tejo DOC",
+          "type": "red",
+          "varieties": [
+            "Castelão",
+            "Alicante Bouschet",
+            "Touriga Nacional",
+            "Cabernet Sauvignon"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 5.2,
+          "ph": null,
+          "winemaking": "Blend Castelão + Alicante Bouschet + Touriga Nacional + Cabernet Sauvignon. Estágio em barrica. Vinha com 20–50 anos. Solo arenoso. Exposição Sul–Norte.",
+          "notes": "Linha premium tinta Falcoaria. Taninos poderosos e bem definidos — 'grande estrutura e persistência'. Blend com Touriga Nacional e Cab Sauv aumenta estrutura e potencial de guarda. Boa capacidade de evolução em garrafa. Sem dados de acidez titulável; estimativa regional 5/10.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta",
+              "cassis",
+              "ameixa seca",
+              "floral"
+            ],
+            "secondary": [
+              "barrica",
+              "especiarias"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "yakitori de carne",
+              "enchidos",
+              "queijo curado"
+            ],
+            "notes": "Tinto estruturado com taninos poderosos e álcool 14.5% — para carnes de carácter. Blend com Touriga Nacional e Cabernet dá complexidade e longevidade. Para contexto Nanban: harmoniza com pratos de carne à grelha (Yakiniku, Gyutan), teriyaki de carne intenso e pratos de umami elevado."
+          }
+        },
+        {
+          "id": "casal-branco-falcoaria-colheita-tardia-2018",
+          "name": "Falcoaria Colheita Tardia",
+          "quinta": "Quinta do Casal Branco",
+          "vintage": 2018,
+          "doc": "Tejo DOC",
+          "type": "white",
+          "varieties": [
+            "Viognier",
+            "Fernão Pires"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.8,
+          "ph": null,
+          "winemaking": "Blend Viognier (15 anos) + Fernão Pires vinhas velhas (70 anos). Colheita tardia. Solo arenoso. Exposição Este–Oeste.",
+          "notes": "Vinho de topo da Quinta. Cor âmbar, exuberância aromática excepcional. 'Acidez viva em perfeita harmonia' com notas de tangerina, alperce e figo — equilíbrio doce/ácido exemplar. 'Um vinho ímpar, soberbo'. Estimativa acidity 7/10 pela 'acidez viva' mencionada. Sem dados titulação.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium-full",
+            "sweetness": "sweet",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "tangerina",
+              "figo",
+              "alperce desidratado",
+              "flor de laranjeira"
+            ],
+            "secondary": [
+              "mel",
+              "complexidade aromática elevada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "foie gras",
+              "queijo azul",
+              "sobremesas de fruta",
+              "doces orientais",
+              "pato laqueado",
+              "miso doce"
+            ],
+            "notes": "Colheita Tardia de alto nível — acidez viva impede que seja pesado. Figo, alperce e tangerina com frescura final. Para contexto Nanban: harmoniza com Misozuke (marinados em miso doce), Wagashi (doces japoneses), pato com miso ou teriyaki de pato — a acidez corta a untuosidade e o doce complementa o miso."
+          }
+        },
+        {
+          "id": "casal-branco-reserva-branco-2022",
+          "name": "Quinta do Casal Branco Reserva Branco",
+          "quinta": "Quinta do Casal Branco",
+          "vintage": 2022,
+          "doc": "Tejo DOC",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires",
+            "Sauvignon Blanc",
+            "Gouveio"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.0,
+          "ph": null,
+          "winemaking": "Blend Fernão Pires + Sauvignon Blanc + Gouveio. Barricas usadas — sofisticação e integração sem dominância da madeira. Solo arenoso. Exposição Norte–Sul.",
+          "notes": "Linha acessível Reserva. Sauvignon Blanc imprime frescura e notas de lima e espargo. Barricas usadas aportam volume e integração sem sobreposição. 'Ótima frescura', estilo moderno e internacional. Estimativa acidity 6/10 pela presença de Sauvignon Blanc. Sem dados titulação.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "ananás",
+              "alperce",
+              "pêssego",
+              "lima",
+              "espargo"
+            ],
+            "secondary": [
+              "barrica usada integrada",
+              "volume de boca"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "marisco",
+              "sushi",
+              "sashimi",
+              "tempura",
+              "aves",
+              "queijo fresco"
+            ],
+            "notes": "Branco versátil e acessível — Sauvignon Blanc dá frescura, Fernão Pires dá fruta tropical, barricas usadas dão corpo. Boa polivalência. Para contexto Nanban: tempura de legumes e camarão, sushi de peixe branco, pratos leves com dashi ou ponzu."
+          }
+        },
+        {
+          "id": "casal-branco-reserva-tinto-2022",
+          "name": "Quinta do Casal Branco Reserva Tinto",
+          "quinta": "Quinta do Casal Branco",
+          "vintage": 2022,
+          "doc": "Tejo DOC",
+          "type": "red",
+          "varieties": [
+            "Syrah",
+            "Touriga Franca",
+            "Castelão",
+            "Alicante Bouschet"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 5.2,
+          "ph": null,
+          "winemaking": "Blend Syrah + Touriga Franca + Castelão + Alicante Bouschet. 12 meses em barrica de carvalho francês. Solo arenoso. Exposição Norte–Sul.",
+          "notes": "Linha acessível tinta Reserva. Taninos definidos (menos poderosos que Falcoaria). Ruby intensa. Compota de frutos vermelhos, ameixa negra, notas fumadas. Syrah traz especiaria e corpo; Touriga Franca dá elegância; Alicante Bouschet cor e estrutura. Estimativa acidity 5/10, tannins 6/10. Sem dados titulação.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 6,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "compota de frutos vermelhos",
+              "ameixa negra"
+            ],
+            "secondary": [
+              "fumado",
+              "carvalho francês",
+              "especiaria"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "aves de capoeira",
+              "yakitori",
+              "enchidos",
+              "queijo semi-curado"
+            ],
+            "notes": "Tinto acessível e bem estruturado — Syrah e barrica francesa dão carácter fumado e especiado. Para contexto Nanban: yakitori de frango ou coxa, pratos de carne com tare, gyoza de carne. Taninos suficientes para cortar gordura mas sem agressividade."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Falua — Sociedade de Vinhos",
+      "region": "Tejo – Almeirim",
+      "quintas": [
+        "Vinha do Convento"
+      ],
+      "producer_notes": "Produtor de Almeirim com duas linhas distintas: 'Conde Vimioso' (premium, vinha própria — Vinha do Convento, solo de calhau rolado depositado pelo Tejo há 400.000 anos) e 'Falua' (reserva, solos arenosos). A Vinha do Convento é a parcela de topo: solos muito peculiares de calhau rolado conferem mineralidade e frescura únicas. Vinificação exigente com seleção organolética das melhores barricas. Portfolio diferenciado: espumante método champanhês, brancos com diferentes vinificações (novo carvalho vs inox), e tintos com e sem madeira.",
+      "wines": [
+        {
+          "id": "falua-conde-vimioso-espumante-brut-nature-2019",
+          "name": "Conde Vimioso Espumante Brut Nature",
+          "quinta": "Vinha do Convento",
+          "vintage": 2019,
+          "doc": "Tejo DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Chardonnay",
+            "Touriga Nacional"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.5,
+          "ph": null,
+          "winemaking": "Prensagem direta sem esmagamento. Fermentação alcoólica base a temperatura controlada. Segunda fermentação em garrafa (método champanhês), tiragem Julho 2020. Estágio sobre borras de fermentação ~15 meses em garrafa. Degorgement Outubro 2021. Solo calhau rolado.",
+          "notes": "Espumante de método tradicional de topo. Chardonnay + Touriga Nacional — combinação pouco comum em Portugal. Brut Nature (<2 g/L residual). Bolha fina e persistente. Muito fresco e intenso. 5.5 g/L de acidez com estágio longo sobre borras.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium-light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta branca",
+              "floral"
+            ],
+            "secondary": [
+              "mel",
+              "pão tostado"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sushi",
+              "sashimi",
+              "tempura",
+              "marisco",
+              "peixe grelhado",
+              "ostras",
+              "queijo fresco"
+            ],
+            "notes": "Espumante Brut Nature com estágio longo sobre borras — frescura acutilante e complexidade de leveduras. Para contexto Nanban: excelente com tempura de camarão e legumes (acidez corta a gordura da fritura), sushi e sashimi de peixe branco, e pratos com ponzu ou yuzu."
+          }
+        },
+        {
+          "id": "falua-conde-vimioso-vinha-do-convento-branco-2019",
+          "name": "Conde Vimioso Vinha do Convento Branco",
+          "quinta": "Vinha do Convento",
+          "vintage": 2019,
+          "doc": "Vinho Regional Tejo",
+          "type": "white",
+          "varieties": [
+            "Arinto"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.0,
+          "ph": null,
+          "winemaking": "Vindima manual. Arrefecimento a 5°C. Maceração pelicular a baixa temperatura. Prensagem suave + maceração longa 8 dias a 6°C com borras. Decantação estática. Fermentação alcoólica em cuba de inox, passando a meio da fermentação para barricas de carvalho francês de 500L. 12 meses sobre borras finas em 2 barricas novas de 500L. Solo calhau rolado.",
+          "notes": "Vinho de topo da linha Conde Vimioso, branco. 100% Arinto de calhau rolado — mineralidade e acidez pronunciadas, potenciadas pelo estágio em barrica nova de grande formato. 'Acidez viva, mas muito bem integrada'. Longo potencial de envelhecimento. Cítrico (lima, toranja), mineral, leve fumado.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "lima",
+              "toranja",
+              "cítrico"
+            ],
+            "secondary": [
+              "notas de barrica integradas",
+              "frutos secos",
+              "leve fumado"
+            ],
+            "tertiary": [
+              "mineralidade"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "marisco",
+              "sashimi",
+              "chawanmushi",
+              "peixe em molho cítrico",
+              "queijo fresco",
+              "legumes grelhados"
+            ],
+            "notes": "Arinto estruturado com barrica nova de grande formato — mineralidade e acidez cítrica de grande precisão. Para contexto Nanban: combina com chawanmushi (textura delicada + mineralidade), peixe branco grelhado, sashimi de peixe gordo (acidez corta a gordura), e pratos com yuzu ou ponzu."
+          }
+        },
+        {
+          "id": "falua-reserva-branco-2019",
+          "name": "Falua Reserva Branco",
+          "quinta": null,
+          "vintage": 2019,
+          "doc": "Vinho Regional Tejo",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.0,
+          "ph": null,
+          "winemaking": "Arrefecimento a 5°C. Maceração pelicular controlada. Prensagem, decantação, fermentação a 16°C em inox. Estágio longo sobre borras finas em inox. Solo arenoso com calhau rolado.",
+          "notes": "Linha Falua Reserva — 100% Fernão Pires em inox com longa estadia sobre borras. Perfil aromático rico e floral (rosa, flor de laranjeira, alperce). Diferenciação clara do Vinha do Convento Branco: sem madeira, estilo mais frutado e aromático, corpo mais leve. 'Acidez natural bem marcada e integrada'.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "alperce",
+              "flor de laranjeira",
+              "rosa",
+              "fruta branca"
+            ],
+            "secondary": [
+              "notas de borras finas (volume de boca)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "tofu",
+              "saladas",
+              "marisco leve",
+              "peixe assado",
+              "legumes",
+              "tempura de legumes"
+            ],
+            "notes": "Fernão Pires aromático e fresco em inox — floral e frutado, sem competição de madeira. Para contexto Nanban: Hiyayakko (tofu frio com gengibre e molho de soja), sashimi de peixe branco, edamame, tempura leve de legumes. A componente floral complementa pratos com dashi suave ou kombu."
+          }
+        },
+        {
+          "id": "falua-conde-vimioso-vinha-do-convento-tinto-2017",
+          "name": "Conde Vimioso Vinha do Convento Tinto",
+          "quinta": "Vinha do Convento",
+          "vintage": 2017,
+          "doc": "Vinho Regional Tejo",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Cabernet Sauvignon",
+            "Castelão"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 6.0,
+          "ph": null,
+          "winemaking": "Vindima manual. Arrefecimento a 5°C. Desengace total + esmagamento suave. Maceração pré-fermentativa. Fermentação alcoólica a temperatura controlada com longa maceração pós-fermentativa. Delestages e remontagens rigorosas. As 3 castas vinificadas e estagiadas separadamente. 24 meses em 11 barricas novas de 300L de carvalho francês. Seleção organolética das melhores barricas. Solo calhau rolado.",
+          "notes": "Vinho de topo Conde Vimioso — engarrafado apenas em anos excecionais. 45% TN + 30% CabSauv + 25% Castelão. 24 meses em barrica nova de pequeno formato — extração e integração máximas. 'Taninos robustos, complexos e muito suaves'. Mineralidade e eucalipto no final. Potencial de décadas.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "amora",
+              "ameixa madura",
+              "fruta preta",
+              "violeta"
+            ],
+            "secondary": [
+              "tabaco",
+              "especiarias",
+              "carvalho novo integrado"
+            ],
+            "tertiary": [
+              "mineralidade",
+              "eucalipto"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "yakiniku",
+              "gyutan",
+              "enchidos",
+              "queijo curado"
+            ],
+            "notes": "Tinto de grande estrutura com taninos robustos e 24 meses de carvalho novo — para carnes de grande carácter. Para contexto Nanban: Yakiniku (carne à brasa japonesa), Gyutan (língua de boi grelhada), teriyaki de carne intenso. A mineralidade e o eucalipto final criam ponte com pratos grelhados."
+          }
+        },
+        {
+          "id": "falua-unoaked-reserva-tinto-2015",
+          "name": "Falua Unoaked Reserva Tinto",
+          "quinta": null,
+          "vintage": 2015,
+          "doc": "Vinho Regional Tejo",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 5.5,
+          "ph": null,
+          "winemaking": "Vindima manual. Arrefecimento a 5°C, 48 horas. Desengace + esmagamento suave. Maceração pré-fermentativa a 10°C. Fermentação alcoólica a 25°C em pequenas cubas de inox com maceração prolongada. Sem qualquer estágio em madeira. Solo arenoso com calhau rolado.",
+          "notes": "100% Touriga Nacional sem madeira — expressão pura da casta. Contraste direto com o Vinha do Convento Tinto: mesma casta dominante, zero influência de carvalho. Mineralidade e florais de violeta sem camadas de baunilha/tosta. 'Taninos muito presentes mas bem envolvidos'. Grande estrutura e potencial de envelhecimento.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "violeta",
+              "ameixa",
+              "amora",
+              "fruta preta"
+            ],
+            "secondary": [],
+            "tertiary": [
+              "mineralidade"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha grelhada",
+              "yakitori de carne",
+              "borrego",
+              "aves",
+              "enchidos",
+              "queijo semi-curado"
+            ],
+            "notes": "TN puro sem madeira — taninos presentes mas sem a sobreposição de baunilha e tosta de barrica. Para contexto Nanban: excelente com pratos de carne grelhada onde os aromas da grelha são protagonistas (Yakitori, Yakiniku). A ausência de oak permite que os aromas da grelha e do molho tare brilhem sem competição."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Companhia das Lezírias",
+      "region": "Tejo – Benavente / Reserva Natural do Estuário do Tejo",
+      "quintas": [
+        "Herdade de Catapereiro",
+        "Vinha do Convento"
+      ],
+      "producer_notes": "Grande produtor histórico (fundado em 1836) instalado na Reserva Natural do Estuário do Tejo, Benavente. 140 hectares de vinhas em solos arenosos e podzol com influência do estuário — microclima único. Gestão com forte compromisso de sustentabilidade e equilíbrio ecológico (mínima intervenção). Portfolio de grande amplitude: linha premium '1836', linha de terroir 'Tyto Alba' (homenagem à coruja-das-torres), 'Herdade de Catapereiro', e a linha inovadora 'Senhora Companhia'. Destaque para as 'Séries Singulares' — vinificações experimentais em ânfora e métodos não convencionais. A Vinha do Convento (calhau rolado, >400.000 anos) é a parcela de topo.",
+      "wines": [
+        {
+          "id": "cdl-series-singulares-fernao-pires-2020",
+          "name": "Séries Singulares Fernão Pires",
+          "quinta": "Mata de Catapereiro",
+          "vintage": 2020,
+          "doc": "Vinho Regional Tejo",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires"
+          ],
+          "alcohol": 11.73,
+          "acidity_gl": 5.32,
+          "ph": 3.48,
+          "winemaking": "Vinha plantada final dos anos 80, solo franco-arenoso com calhau e gravilha, sem irrigação. Seleção de cachos no ótimo de maturação com acidez ainda elevada. Pós-maturação de cachos em câmara frigorífica 24h a 2°C. Esmagamento + desengace total. Semi-curtimenta (skin contact) 24h antes de prensagem pneumática suave. Fermentação a 18°C, 15 dias. Trabalho diário de borras. Estágio em ânforas de barro (terracota) até dois meses após fermentação.",
+          "notes": "Vinho experimental da linha Séries Singulares — estilo pele de contacto (orange wine) em terracota. 11.73% álcool. Semi-curtimenta confere taninos ligeiros elegantes e untuosidade invulgar para branco. Aromas peculiares: terracota fresca, floral intenso de Fernão Pires, fermento de padeiro, pão velho, pederneira mineral. 'Gordo e envolvente' com 'elevada untuosidade' — perfil completamente diferente dos brancos convencionais.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 2,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral intenso (Fernão Pires)",
+              "fruta branca"
+            ],
+            "secondary": [
+              "terracota",
+              "fermento de padeiro",
+              "pão velho"
+            ],
+            "tertiary": [
+              "mineral (pederneira)"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "tofu",
+              "cogumelos",
+              "pratos de aves",
+              "peixe grelhado com umami",
+              "queijo curado",
+              "enchidos suaves"
+            ],
+            "notes": "Orange wine em ânfora — textura untuosa com tanino suave, aromas complexos de terracota e floral. Para contexto Nanban: excelente com Agedashi Tofu (tofu frito em dashi), cogumelos salteados (shiitake, shimeji), pratos com miso branco ou dashi de kombu. A untuosidade e o tanino suave criam ponte com pratos de umami elevado que os brancos convencionais não conseguem."
+          }
+        },
+        {
+          "id": "cdl-tyto-alba-rose-2022",
+          "name": "Tyto Alba Colheitas Rosé",
+          "quinta": null,
+          "vintage": 2022,
+          "doc": "Tejo DOC",
+          "type": "rosé",
+          "varieties": [
+            "Touriga Nacional",
+            "Tinto Cão"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.33,
+          "ph": 3.6,
+          "winemaking": "Vinhas velhas. Batonage durante 3 meses em barricas de carvalho francês com 5 anos. Solo arenoso, Reserva Natural do Estuário do Tejo.",
+          "notes": "Rosé de vinhas velhas com estágio em barrica antiga — estrutura e complexidade acima da média para rosé. 6.33 g/L de acidez — acutilante para a categoria. Touriga Nacional dominante (80%) garante fruta e floral pronunciados; Tinto Cão adiciona frescura. Cor salmão. Aromas: flor de cerejeira, maçã verde, lima, notas abaunilhadas suaves da barrica antiga.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 2,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "flor de cerejeira",
+              "maçã verde",
+              "lima"
+            ],
+            "secondary": [
+              "notas abaunilhadas suaves (barrica antiga)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi de salmão",
+              "peixe grelhado",
+              "marisco",
+              "sushi",
+              "saladas",
+              "tempura",
+              "aves leves"
+            ],
+            "notes": "Rosé estruturado com acidez elevada — versatilidade invulgar. Para contexto Nanban: sashimi de salmão (acidez e fruta de cerejeira espelham o peixe gordo), Chirashi (sushi disperso), Gyoza de legumes e frango, Karaage (frango frito japonês). A acidez alta corta a gordura e a frescura de cerejeira complementa sabores delicados."
+          }
+        },
+        {
+          "id": "cdl-1836-grande-reserva-tinto-2016",
+          "name": "1836 Grande Reserva Tinto",
+          "quinta": "Vinha do Convento",
+          "vintage": 2016,
+          "doc": "Tejo DOC",
+          "type": "red",
+          "varieties": [
+            "Alicante Bouschet"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 5.76,
+          "ph": 3.62,
+          "winemaking": "Vindima manual. Desengace total. Fermentação espontânea em lagar a 25°C com pisas diárias. Fermentação malolática em cubas de inox. Estágio 18 meses em barricas de carvalho francês novas (50%) e 2º uso (50%). Solo arenoso, Vinha do Convento (calhau rolado).",
+          "notes": "100% Alicante Bouschet — monovarietal raramente visto neste nível. Casta de polpa e películas escuras (tingideira): extrato seco 39.6 g/L — concentração excecional. Fermentação espontânea em lagar com pisas. 'Tanino cheio de garra'. Aromas empireumáticos típicos da casta (notas de piche, especiaria escura, fruta negra silvestre). Potencial de guarda elevado.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "amora silvestre",
+              "fruta negra",
+              "fruta negra madura"
+            ],
+            "secondary": [
+              "empireumático",
+              "especiaria escura"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha maturada",
+              "caça grossa",
+              "borrego",
+              "yakiniku wagyu",
+              "enchidos",
+              "queijo azul"
+            ],
+            "notes": "Alicante Bouschet puro — tânico, escuro e concentrado. Para contexto Nanban: Wagyu Yakiniku (carne maturada grelhada), Gyutan (língua de boi) com tare intenso, pratos de caça à japonesa. Os taninos robustos e os aromas empireumáticos criam harmonia com carnes gordas grelhadas e com o char da grelha de carvão."
+          }
+        },
+        {
+          "id": "cdl-senhora-companhia-vinho-novo-2022",
+          "name": "Senhora Companhia Vinho Novo",
+          "quinta": null,
+          "vintage": 2022,
+          "doc": "I.G. Tejo",
+          "type": "red",
+          "varieties": [
+            "Castelão",
+            "Alicante Bouschet"
+          ],
+          "alcohol": 12.3,
+          "acidity_gl": 5.4,
+          "ph": 3.85,
+          "winemaking": "Maceração carbónica: vindima manual, sem desengace, cacho inteiro em cubas cónicas com atmosfera de CO2. Maceração carbónica 9 dias. Prensagem suave. Fermentação alcoólica a 18°C. Fermentação malolática completa. Filtração tangencial. Engarrafamento imediato (Novembro 2022). Solo podzol arenoso com cascalho — 'vinhas do Rio'.",
+          "notes": "'Tejolais' — inspiração direta no Beaujolais Nouveau. Maceração carbónica preserva fruta primária vívida e cria tânico fino sem agressividade. Lançado no dia de São Martinho (11 Nov). 12.3% álcool, fresco e fluído. Castelão + Alicante Bouschet em carbónico — combinação pouco comum. Para beber jovem.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 3,
+            "body": "medium-light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "cereja fresca",
+              "bagas vermelhas",
+              "rebuçado inglês"
+            ],
+            "secondary": [
+              "canela",
+              "cravinho"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "yakitori",
+              "gyoza",
+              "salmão grelhado",
+              "aves",
+              "pratos leves de carne",
+              "charcutaria suave"
+            ],
+            "notes": "Tinto de maceração carbónica — fruta fresca, tanino fino, leveza. Servir fresco (12-14°C). Para contexto Nanban: Yakitori (espetada de frango), Gyoza grelhado, Karaage (frango frito). A leveza e a fruta vívida não sobrepõem sabores delicados; o tanino fino corta a gordura da fritura sem agredir."
+          }
+        },
+        {
+          "id": "cdl-1836-espumante-bruto-2016",
+          "name": "1836 Bruto Espumante",
+          "quinta": null,
+          "vintage": 2016,
+          "doc": "Vinho Regional Tejo",
+          "type": "sparkling",
+          "varieties": [
+            "Arinto"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.72,
+          "ph": 3.26,
+          "winemaking": "Vinha em solo arenoso, vindima 2016. 30% do vinho base fermentado em barricas de 300L de carvalho francês; 70% em inox. Segunda fermentação em garrafa (método clássico) a 13°C. Estágio sobre borras em garrafa. Degorgement Fevereiro 2018. Açúcares totais 5.2 g/L (Bruto).",
+          "notes": "Espumante Arinto de método clássico com 30% de fermentação em barrica. Perfil distinto do Falua Brut Nature: casta Arinto (vs Chardonnay+TN), tem dosage (5.2 g/L), parcial fermentação em oak confere complexidade adicional. Cor aloirada, bolha muito fina e cordão persistente. 'Equilíbrio entre a fruta e o estágio — notas tropicais bem combinadas com panificação e ligeiros tostados'. Rico, textura redonda.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta tropical",
+              "cítrico"
+            ],
+            "secondary": [
+              "panificação",
+              "ligeiros tostados (30% barrica)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "sushi",
+              "sashimi",
+              "tempura",
+              "aperitivo",
+              "queijo fresco",
+              "ostras"
+            ],
+            "notes": "Espumante Arinto com 30% barrica — frescura cítrica com camada de complexidade de panificação e tostado. Para contexto Nanban: Tempura de camarão e legumes (acidez + bolha cortam a fritura), sushi de peixe branco, Sunomono (salada de pepino em vinagre de arroz). A nota tropical complementa pratos com molho de mango ou yuzu."
+          }
+        },
+        {
+          "id": "cdl-1836-grande-reserva-branco-2019",
+          "name": "1836 Grande Reserva Branco",
+          "quinta": "Vinha Cincinato",
+          "vintage": 2019,
+          "doc": "Tejo DOC",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.98,
+          "ph": 3.48,
+          "winemaking": "Vinha velha 'Cincinato', sem irrigação. Vindima manual. Prensagem e clarificação estática. Fermentação em barricas de carvalho francês novas e de segundo ano de 300L. Estágio sobre borras finas durante 12 meses. Solo arenoso, clima sul-mediterrânico com influência do Tejo.",
+          "notes": "Expressão clássica premium de Fernão Pires em carvalho novo — complemento estrutural ao Séries Singulares (mesma casta, vinificação oposta). Vinha velha 'Cincinato' sem rega. 5.98 g/L acidez, 12mo novo carvalho 300L. 'Envolvente, amanteigado com acidez natural apelativa'. Tangerina, alperce, cítrico, mineral. Final persistente. Contraste direto com a versão em ânfora.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "tangerina",
+              "alperce",
+              "cítrico"
+            ],
+            "secondary": [
+              "amanteigado",
+              "carvalho novo integrado"
+            ],
+            "tertiary": [
+              "mineral"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "peixe assado",
+              "bacalhau",
+              "peixe grelhado",
+              "aves",
+              "queijo de massa mole",
+              "chawanmushi",
+              "marisco com manteiga"
+            ],
+            "notes": "Fernão Pires de vinha velha em carvalho novo — volume e textura amanteigada com acidez que sustenta. Para contexto Nanban: Chawanmushi (pudim de ovo japonês — textura sedosa espelha o carácter amanteigado), peixe branco assado com dashi, Sawara (corvina japonesa) grelhada. O lado amanteigado e a mineralidade complementam-se com pratos de dashi concentrado."
+          }
+        },
+        {
+          "id": "cdl-tyto-alba-tinto-2016",
+          "name": "Tyto Alba Colheitas Tinto",
+          "quinta": null,
+          "vintage": 2016,
+          "doc": "Tejo DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Alicante Bouschet",
+            "Touriga Franca"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 5.0,
+          "ph": 3.8,
+          "winemaking": "Fermentação alcoólica em pequenos lagares de inox. Estágio 12 meses em barricas de carvalho francês e americano. Solo arenoso, Reserva Natural do Estuário do Tejo.",
+          "notes": "TN 50% + AB 30% + TF 20% — blend de terroir com 12 meses em carvalho misto francês e americano. O carvalho americano (raro nesta base de dados) adiciona perfil de coco, baunilha doce e especiaria que o francês não confere. 5.00 g/L acidez — o mais baixo dos tintos Tejo. pH 3.80 elevado. Sedoso e envolvente.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 6,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "violeta",
+              "amora silvestre",
+              "fruta negra"
+            ],
+            "secondary": [
+              "especiaria fina",
+              "baunilha (carvalho americano)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "aves",
+              "yakitori de carne",
+              "enchidos",
+              "queijo semi-curado",
+              "pratos estufados"
+            ],
+            "notes": "Tinto com carvalho americano — baunilha e especiaria doce que o distingue dos outros tintos Tejo. Para contexto Nanban: Yakitori de carne com tare (o doce do tare harmoniza com a baunilha do carvalho americano), Gyudon (tigela de carne de vaca), pratos de pato com molho adocicado. A sedosidade e os taninos integrados não agridem pratos com molhos complexos."
+          }
+        },
+        {
+          "id": "cdl-senhora-companhia-licoroso",
+          "name": "Senhora Companhia Vinho Licoroso",
+          "quinta": null,
+          "vintage": null,
+          "doc": "Vinho de Portugal",
+          "type": "fortified",
+          "varieties": [
+            "Fernão Pires"
+          ],
+          "alcohol": 16.0,
+          "acidity_gl": 5.5,
+          "ph": 3.9,
+          "winemaking": "Vindima mecanizada. Desengace total. Fermentação sobre películas 2 dias a 22°C. Prensagem. Aguardentação do mosto (mutagem — fermentação interrompida pelo álcool). Estágio 3 anos em tonéis de castanho. Solo arenoso, Reserva Natural do Estuário do Tejo.",
+          "notes": "Vinho licoroso a partir de Fernão Pires — incomum para a casta. 16% álcool, estágio oxidativo em castanho durante 3 anos. Extrato seco 90 g/L — muito doce. pH 3.90 (muito alto — vinhos doces fortificados tendem a ter pH elevado). Aromas: laranja cristalizada, caril, frutos secos, torrefação, caramelo. Doçura equilibrada com final saboroso. Estilo semelhante a um Moscatel mais simples mas com identidade própria da região.",
+          "structure": {
+            "acidity": 5,
+            "tannins": null,
+            "body": "full",
+            "sweetness": "sweet",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "laranja cristalizada"
+            ],
+            "secondary": [
+              "caril",
+              "frutos secos",
+              "notas de castanho oxidativo"
+            ],
+            "tertiary": [
+              "torrefação",
+              "caramelo"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "sobremesas de fruta",
+              "wagashi",
+              "doces orientais",
+              "pastéis de nata",
+              "foie gras",
+              "queijo azul"
+            ],
+            "notes": "Licoroso doce com 3 anos de oxidação em castanho — aromas complexos de fruta seca e caramelo. Para contexto Nanban: Wagashi (doces japoneses tradicionais à base de feijão e mochi), Dorayaki, sobremesas com pasta de anko. O carácter oxidativo e o doce equilibrado são complementares com sobremesas de sabor delicado e não muito açucarado."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Casa Cadaval",
+      "region": "Tejo – Muge / Salvaterra de Magos",
+      "quintas": [
+        "Quinta de Muge"
+      ],
+      "producer_notes": "Quinta histórica aristocrática em Muge, Salvaterra de Magos, à beira do Tejo. Portfolio único no Tejo pela aposta em castas internacionais ao lado das portuguesas — Pinot Noir plantado numa região incomum para a casta. Destaque para as 'Séries' monovarietais: Trincadeira Preta de vinhas velhas em arbusto (>80 anos), Gouveio (casta do Douro aqui no Tejo), Blanc des Noirs em vinho tranquilo. Espumante Blanc des Noirs 'Tuisca' é o único espumante de Pinot Noir do Tejo. Vinificação consistente: câmara de frio 24h, fermentação em barrica francesa, sur lies com batonnage.",
+      "wines": [
+        {
+          "id": "cadaval-espumante-blanc-des-noirs-2019",
+          "name": "Tuisca Espumante Bruto Blanc des Noirs",
+          "quinta": "Quinta de Muge",
+          "vintage": 2019,
+          "doc": "Tejo DOP",
+          "type": "sparkling",
+          "varieties": [
+            "Pinot Noir"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 5.78,
+          "ph": 3.19,
+          "winemaking": "Desengace total. Prensagem suave. Fermentação em inox a 14-16°C. Tiragem para segunda fermentação em garrafa. Estágio sobre borras de fermentação ~16 meses. Dégorgement. Pressão 6.0 bar. Sem indicação de dosage — estilo Bruto.",
+          "notes": "Único espumante Blanc des Noirs de Pinot Noir do Tejo. pH 3.19 — muito baixo, acidez percebida elevada. 16 meses sobre borras. 'Delicado e elegante' — notas de biscoito, flor de limoeiro, casca de laranja. Componente cítrica marcada na boca. Bolha fina, expressivo e fresco. Pinot Noir em Tejo é raro; este é o único espumante de uvas tintas da base de dados Tejo.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium-light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "cítrico",
+              "flor de limoeiro",
+              "casca de laranja"
+            ],
+            "secondary": [
+              "biscoito",
+              "notas de leveduras (16mo borras)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "marisco",
+              "sushi",
+              "tempura",
+              "ostras",
+              "peixe branco",
+              "aperitivo"
+            ],
+            "notes": "Blanc des Noirs espumante — elegância cítrica com profundidade de borras longas. Para contexto Nanban: Sashimi de peixe branco (a frescura cítrica espelha a delicadeza do peixe cru), Temaki (sushi em cone), Kaki Fry (ostra frita em panko — a bolha fina e a acidez cortam a fritura). O carácter floral de limoeiro cria ponte com pratos que usam yuzu ou ponzu."
+          }
+        },
+        {
+          "id": "cadaval-gouveio-2023",
+          "name": "Casa Cadaval Gouveio",
+          "quinta": "Quinta de Muge",
+          "vintage": 2023,
+          "doc": "Tejo DOP",
+          "type": "white",
+          "varieties": [
+            "Gouveio"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.52,
+          "ph": 3.38,
+          "winemaking": "Câmara de frio 24h pós-colheita. Fermentação em barricas de carvalho francês. 30% do vinho permaneceu nas barricas sur lies com batonnage semanal durante 4 meses.",
+          "notes": "Gouveio é casta tipicamente duriense — a sua presença no Tejo é rara. 6.52 g/L acidez total é a mais alta de todos os brancos Tejo nesta base de dados. pH 3.38 baixo. 30% sur lies 4 meses dá volume e textura. 'Ataque muito fresco, vibrante e envolvente'. Tropical, fruta branca, mineral, notas de carvalho francês. Densidade e final longo. Produção de baixo rendimento.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta tropical",
+              "fruta branca"
+            ],
+            "secondary": [
+              "notas de carvalho francês (70% barrica)"
+            ],
+            "tertiary": [
+              "mineral"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "peixe grelhado",
+              "marisco",
+              "tempura",
+              "tofu",
+              "legumes grelhados",
+              "queijo fresco"
+            ],
+            "notes": "Gouveio do Tejo com acidez excecional — o branco mais fresco e vibrante da secção Tejo. Para contexto Nanban: Sashimi de peixe branco magro (a acidez alta complementa a delicadeza), Agedashi Tofu (frescura da casta equilibra o dashi e óleo de fritura), Tempura de legumes. A 'densidade' e a mineralidade criam pont com pratos de algas (wakame, kombu)."
+          }
+        },
+        {
+          "id": "cadaval-blanc-des-noirs-2022",
+          "name": "Casa Cadaval Blanc des Noirs",
+          "quinta": "Quinta de Muge",
+          "vintage": 2022,
+          "doc": "Tejo DOC",
+          "type": "white",
+          "varieties": [
+            "Pinot Noir"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 4.8,
+          "ph": 3.44,
+          "winemaking": "Vindima manual meados de agosto, caixas de 20kg. Desengace total. Prensagem suave imediata. Fermentação em inox a temperatura controlada. Estágio 12 meses em barricas de 500L de carvalho francês de segunda utilização. 6 meses estágio em garrafa.",
+          "notes": "Vinho tranquilo Blanc des Noirs de Pinot Noir — branco vinificado de uvas tintas, sem extração de cor. Produção limitada, projeto exclusivo. 'Vinho sério na boca' com 'untuosidade e frescura soberba'. 4.80 g/L é a acidez mais baixa entre os brancos Cadaval mas a barrica de 500L usada e o estágio em garrafa conferem complexidade. Perfil floral e mineral delicado.",
+          "structure": {
+            "acidity": 5,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral delicado"
+            ],
+            "secondary": [
+              "carvalho usado suave"
+            ],
+            "tertiary": [
+              "mineral"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi de atum",
+              "peixe gordo grelhado",
+              "cogumelos",
+              "tofu",
+              "risoto de cogumelos",
+              "queijo fresco"
+            ],
+            "notes": "Blanc des Noirs tranquilo — o Pinot Noir confere corpo e textura que um branco convencional não teria, mas sem cor nem taninos. Para contexto Nanban: Sashimi de atum magro (a textura do Pinot suporta o peixe mais encorpado), Mushiyaki de cogumelos (shiitake grelhado), pratos com dashi de cogumelo. A untuosidade e a frescura equilibram-se com preparações delicadas de umami."
+          }
+        },
+        {
+          "id": "cadaval-trincadeira-preta-vinhas-velhas-2019",
+          "name": "Trincadeira Preta Vinhas Velhas",
+          "quinta": "Quinta de Muge",
+          "vintage": 2019,
+          "doc": "Tejo DOC",
+          "type": "red",
+          "varieties": [
+            "Trincadeira"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.24,
+          "ph": 3.68,
+          "winemaking": "Vinha em arbusto com mais de 80 anos. Colheita manual. Extração a frio. Fermentação em lagares durante 2 semanas. Estágio 12 meses em barricas usadas de 500L de carvalho francês.",
+          "notes": "Trincadeira pura de vinhas em arbusto com mais de 80 anos — raridade no Tejo. Extração a frio preserva fruta e frescura. Barrica usada de grande formato (500L) integra sem dominar. 'Carácter frutado e especiado representativo desta casta, notas balsâmicas e de cedro'. 'Elegante, fresco, excelente acidez, taninos sedosos'. pH 3.68 alto — Trincadeira naturalmente de pH mais elevado.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 5,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha",
+              "especiaria"
+            ],
+            "secondary": [
+              "balsâmico",
+              "cedro",
+              "barrica usada integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves grelhadas",
+              "yakitori",
+              "borrego",
+              "pato",
+              "pratos de cogumelos",
+              "enchidos",
+              "queijo semi-curado"
+            ],
+            "notes": "Trincadeira de vinhas velhas — elegante, especiada, com notas balsâmicas e cedro. Para contexto Nanban: Yakitori de coxa de pato com tare (as notas balsâmicas e especiadas são complementares ao molho tare), Kamonabe (ensopado de pato japonês), Shio-koji de frango (o cedro e a especiaria criam harmonia com marinados à base de koji)."
+          }
+        },
+        {
+          "id": "cadaval-fernao-pires-2022",
+          "name": "Casa Cadaval Fernão Pires",
+          "quinta": "Quinta de Muge",
+          "vintage": 2022,
+          "doc": "Tejo DOC",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 5.47,
+          "ph": 3.51,
+          "winemaking": "Câmara de frio 24h pós-colheita. Fermentação em barricas de carvalho francês com tampos em acácia (madeira de acácia). Estágio sur lies 8 meses com batonnage semanal.",
+          "notes": "Fernão Pires fermentado em barrica com tampos de acácia — técnica invulgar. A acácia é mais delicada que o carvalho francês: confere frescura floral e cremosidade suave sem taninos de extração. 8 meses sur lies com batonnage semanal adiciona untuosidade. Resultado distinto das outras vinificações de Fernão Pires em barrica francesa convencional. 'Acidez dominante equilibrada pela estrutura e untuosidade'.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "flor de meloa",
+              "frutos de polpa branca"
+            ],
+            "secondary": [
+              "baunilha leve (acácia)",
+              "untuosidade de borras (8mo)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "marisco",
+              "tofu",
+              "sashimi",
+              "legumes grelhados",
+              "aves leves",
+              "queijo fresco"
+            ],
+            "notes": "Fernão Pires com acácia — floral e cremoso sem a tosta/baunilha forte do carvalho francês convencional. Para contexto Nanban: Hiyayakko (tofu frio — a untuosidade das borras complementa a textura do tofu), Sashimi de peixe branco delicado, Chawanmushi (a cremosidade de borras harmoniza com o pudim de ovo). O floral de meloa cria afinidade com pratos de dashi ligeiro."
+          }
+        },
+        {
+          "id": "cadaval-merlot-2021",
+          "name": "Casa Cadaval Merlot",
+          "quinta": "Quinta de Muge",
+          "vintage": 2021,
+          "doc": "Tejo DOC",
+          "type": "red",
+          "varieties": [
+            "Merlot"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 4.93,
+          "ph": 3.72,
+          "winemaking": "Colheita manual início de setembro. Desengace total. Maceração pré-fermentativa 48 horas. Fermentação em inox com remontagem automática a 23°C. Sem estágio em madeira indicado.",
+          "notes": "Merlot puro sem madeira — expressão varietal limpa de groselha, menta e especiaria. pH 3.72 — muito alto (Merlot em clima quente tende a perder acidez). 4.93 g/L acidez. Sem oak: perfil frutado puro sem baunilha ou tosta. 'Taninos sedosos, acidez equilibrada'. Estilo mais internacional e imediato.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 5,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "groselha",
+              "menta",
+              "fruta vermelha"
+            ],
+            "secondary": [
+              "especiaria"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves",
+              "yakitori de frango",
+              "pato",
+              "pratos leves de carne",
+              "salmão grelhado",
+              "enchidos suaves",
+              "queijo fresco"
+            ],
+            "notes": "Merlot sem madeira — frutado, fresco, herbal. Versátil e imediato. Para contexto Nanban: Yakitori de frango (sem tare ou com shio — a menta e a fruta fresca não sobrecarregam o frango simples), Teriyaki de salmão (groselha e menta complementam o salmão gordo com molho adocicado), Karaage (frango frito japonês — taninos sedosos e frescura herbal equilibram a gordura da fritura)."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta da Lagoalva",
+      "region": "Tejo – Alpiarça",
+      "quintas": [
+        "Quinta da Lagoalva"
+      ],
+      "producer_notes": "Quinta com tradição vitivinícola de várias gerações em Alpiarça, Tejo. Solo argiloso — diferencia-se de todos os outros produtores Tejo desta base de dados (que têm solos arenosos ou calhau rolado). A argila retém mais água e confere estrutura e acidez diferentes. Portfolio com amplitude clara: linha de entrada acessível (Reserva ~€10) e linha Grande Reserva premium (~€30). Destaque para vinificações cuidadas: colheita noturna nos mecânicos, barricas de 500L, bio certificado em alguns vinhos. Presença de Alfrocheiro (casta de Dão) como pilar do portfolio de tintos.",
+      "wines": [
+        {
+          "id": "lagoalva-grande-reserva-fernao-pires-2022",
+          "name": "Quinta da Lagoalva Grande Reserva Fernão Pires",
+          "quinta": "Quinta da Lagoalva",
+          "vintage": 2022,
+          "doc": "Tejo DOC",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.0,
+          "ph": null,
+          "winemaking": "Vinha velha. Vindima manual. Prensagem de cachos inteiros em prensa pneumática. Decantação 24h. Fermentação a 20°C em barricas de 500L de carvalho francês. Estágio 10 meses sobre borras com batonnage semanal durante os primeiros 2 meses. Solo argiloso.",
+          "notes": "Grande Reserva premium de vinha velha. Fernão Pires em 500L de carvalho francês com longa estadia sobre borras. 'Gordo, fresco e equilibrado'. Fruta branca complexa, florais, mineral, baunilha integrada. Acidity_gl 6.0 g/L estimada: 'fresco' confirmado; alinhado com outros Lagoalva brancos (Arinto GR = 6.0, Reserva Tinto = 5.0); FP de vinha velha em solo argiloso preserva acidez natural.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta branca",
+              "floral"
+            ],
+            "secondary": [
+              "baunilha (barrica 500L)",
+              "notas de borras"
+            ],
+            "tertiary": [
+              "mineral"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "marisco",
+              "sashimi",
+              "tofu",
+              "chawanmushi",
+              "aves",
+              "queijo de massa mole"
+            ],
+            "notes": "Fernão Pires de vinha velha em 500L — corpo e textura superiores à média para a casta. Para contexto Nanban: Chawanmushi (a textura amanteigada de borras complementa o pudim de ovo), Sashimi de peixe branco com wasabi (mineral e florais bridging), Tofu Dengaku (tofu grelhado com miso — o corpo do vinho suporta o umami do miso)."
+          }
+        },
+        {
+          "id": "lagoalva-reserva-branco-2024",
+          "name": "Lagoalva Reserva Branco",
+          "quinta": "Quinta da Lagoalva",
+          "vintage": 2024,
+          "doc": "Tejo DOC",
+          "type": "white",
+          "varieties": [
+            "Arinto",
+            "Chardonnay"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 6.2,
+          "ph": null,
+          "winemaking": "Vindima mecânica noturna. Vinificação separada por casta. Arinto: flotação, fermentação em inox a 16°C. Chardonnay: fermentação a 18°C em barricas de carvalho francês + 4 meses batonnage semanal. Lote feito após vinificação. Solo argiloso.",
+          "notes": "Blend Arinto + Chardonnay com vinificação diferenciada — Arinto preserva frescura e acidez em inox, Chardonnay ganha corpo e baunilha em barrica (4 meses). Linha acessível (~€10). 'Gordo, fresco e equilibrado'. Pêra, alperce, baunilha. Acidity_gl 6.2 g/L estimada: Arinto é o motor ácido (vs FP no GR); 12% alc = grapes menos maduros = acidez natural mais elevada.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "pêra",
+              "alperce",
+              "fruta branca"
+            ],
+            "secondary": [
+              "baunilha (Chardonnay em barrica)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "sushi",
+              "sashimi",
+              "tempura",
+              "marisco",
+              "aves leves",
+              "queijo fresco"
+            ],
+            "notes": "Branco versátil de entrada — Arinto dá acidez e frescura, Chardonnay dá corpo e fruta. Para contexto Nanban: Tempura de camarão e legumes, Sushi de peixe branco, Karaage de frango (a acidez do Arinto corta a gordura da fritura). Boa polivalência para pratos variados do menu."
+          }
+        },
+        {
+          "id": "lagoalva-grande-reserva-alfrocheiro-bio-2018",
+          "name": "Quinta da Lagoalva Grande Reserva Alfrocheiro Bio",
+          "quinta": "Quinta da Lagoalva",
+          "vintage": 2018,
+          "doc": "Tejo DOC",
+          "type": "red",
+          "varieties": [
+            "Alfrocheiro"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 5.8,
+          "ph": null,
+          "winemaking": "Certificado biológico. Parcelas pequenas, seleção prévia na vinha. Vindima manual para caixas em Setembro (manhã). Maceração pré-fermentativa 3 dias. Fermentação alcoólica em lagares de inox a 24°C. Prensagem hidráulica. Fermentação malolática em barricas novas e de 2º ano de carvalho francês. Estágio 14 meses em barrica. Solo argiloso.",
+          "notes": "Alfrocheiro puro, biológico, apenas feito em anos excecionais — raridade no Tejo. Casta tipicamente de Dão, aqui expressa em terroir argiloso do Tejo com 14 meses em barrica nova/2º ano. 14.5% álcool. 'Frescura, taninos elegantes, final longo'. Acidity_gl 5.8 g/L estimada: 'frescura' confirmada em prova; Lagoalva Reserva (Alfrocheiro+Syrah, mesmo solo) = 6.66 g/L — GR monovarietal com 14mo barrica nova integra acidez percebida.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 6,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha madura",
+              "especiaria"
+            ],
+            "secondary": [
+              "tabaco",
+              "barrica nova integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "aves de capoeira",
+              "yakitori de carne",
+              "enchidos",
+              "queijo curado"
+            ],
+            "notes": "Alfrocheiro biológico de terroir argiloso — elegância e especiaria são assinaturas da casta. Para contexto Nanban: Yakitori de coxa com tare intenso (os taninos elegantes e a especiaria harmonizam com o molho tare caramelizado), Gyudon (tigela de carne de vaca com cebola), Nikujaga (estufado japonês de carne e batata). A frescura natural da casta equilibra pratos de umami concentrado."
+          }
+        },
+        {
+          "id": "lagoalva-reserva-tinto",
+          "name": "Lagoalva Reserva Tinto",
+          "quinta": "Quinta da Lagoalva",
+          "vintage": null,
+          "doc": "Tejo DOC",
+          "type": "red",
+          "varieties": [
+            "Alfrocheiro",
+            "Syrah"
+          ],
+          "alcohol": 12.9,
+          "acidity_gl": 6.66,
+          "ph": 3.49,
+          "winemaking": "Vindima mecânica noturna. Maceração pré-fermentativa 3 dias. Fermentação alcoólica em lagares de inox a 26°C. Prensagem pneumática. FML em barricas de carvalho francês. Estágio 10 meses em barrica. Solo argiloso.",
+          "notes": "Blend incomum Alfrocheiro 50% + Syrah 50% — combinação rara. 6.66 g/L de acidez total é a mais alta de todos os tintos Tejo desta base de dados; pH 3.49 é igualmente baixo para um tinto — resultado do solo argiloso e da casta Alfrocheiro. 12.9% álcool (moderado). Açúcar residual 2.4 g/L (tecnicamente seco). 'Granada intenso, frutos vermelhos maduros, especiarias, baunilha. Bom volume de boca, taninos elegantes, final longo'.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 6,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos maduros",
+              "especiaria"
+            ],
+            "secondary": [
+              "baunilha (barrica francesa)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha grelhada",
+              "borrego",
+              "yakitori",
+              "pato",
+              "pratos de forno",
+              "queijo curado"
+            ],
+            "notes": "Alfrocheiro + Syrah com acidez excecionalmente alta para um tinto Tejo (6.66 g/L) — a argila e a casta produzem frescura invulgar. Para contexto Nanban: a acidez elevada permite harmonização com Yakitori com tare (a acidez corta o açúcar do molho), Niku Udon (sopa de massa com carne — a acidez equilibra o dashi gordo), Lamb Chops japoneses com ponzu. A Syrah traz corpo e especiaria ao carácter elegante do Alfrocheiro."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Fiuza & Bright",
+      "region": "Tejo – Cartaxo",
+      "quintas": [],
+      "producer_notes": "Grande produtor de Cartaxo, Tejo. Solo argilo-calcário — partilha o mesmo sub-terroir da Quinta da Lagoalva (Alpiarça), ambos distintos dos solos arenosos/calhau rolado dos produtores de Almeirim/Benavente. A argila e o calcário conferem acidez natural mais elevada e estrutura mineral diferente. Portfolio amplo com várias linhas e marcas (Fiuza, Canto do Pedro, Oceanus, Babu, Ducado do Infante, Marquês de Alvito). Destaque para uso de depósitos de cimento na vinificação (Reserva Premium, Tinta Miúda) e aposta em castas internacionais (Sauvignon Blanc, Cabernet Sauvignon) e raras (Tinta Miúda).",
+      "wines": [
+        {
+          "id": "fiuza-reserva-premium-branco-2023",
+          "name": "Fiuza Reserva Premium Branco",
+          "quinta": null,
+          "vintage": 2023,
+          "doc": "Vinho Regional Tejo",
+          "type": "white",
+          "varieties": [
+            "Sauvignon Blanc"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.1,
+          "ph": 3.3,
+          "winemaking": "Uvas selecionadas e prensadas a 5°C. Estágio sobre borras finas (95% colheita nova). 5% da colheita anterior envelhecido em barricas de carvalho francês integrado no lote final. Solo argilo-calcário.",
+          "notes": "Sauvignon Blanc puro no Tejo — incomum. 6.1 g/L acidez, pH 3.30 (muito baixo = acidez percebida elevada). 'Acidez firme, final equilibrado e excelente persistência'. Perfil herbáceo e tropical: espargos, baunilha, ligeiro amanteigado. 5% barrica dá complexidade sem dominar. Sem dados de açúcar residual mencionados: 0.6 g/L — seco.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "espargos",
+              "tropical",
+              "herbáceo"
+            ],
+            "secondary": [
+              "baunilha",
+              "ligeiro amanteigado (5% barrica + borras)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "peixe grelhado",
+              "marisco",
+              "tofu",
+              "legumes",
+              "tempura",
+              "queijo fresco"
+            ],
+            "notes": "Sauvignon Blanc com acidez firme e carácter herbáceo — perfil raro no Tejo. Para contexto Nanban: Sashimi de peixe branco (a acidez cítrica e os espargos complementam a delicadeza do peixe cru), Agedashi Tofu (herbáceo + dashi), Tempura de espargos e legumes verdes. O carácter vegetal do SB cria afinidade com pratos de algas (wakame, mozuku) e edamame."
+          }
+        },
+        {
+          "id": "fiuza-reserva-premium-tinto-2022",
+          "name": "Fiuza Reserva Premium Tinto",
+          "quinta": null,
+          "vintage": 2022,
+          "doc": "Vinho Regional Tejo",
+          "type": "red",
+          "varieties": [
+            "Alicante Bouschet"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 6.1,
+          "ph": 3.5,
+          "winemaking": "Maceração pós-fermentativa prolongada em depósito de cimento. Envelhecimento 8 meses em barricas de carvalho francês novo. Solo argilo-calcário.",
+          "notes": "100% Alicante Bouschet em cimento + 8mo barrica nova — abordagem distinta do CDL 1836 AB (que usa lagar + barrica mista). O cimento preserva frescura e carácter frutal enquanto o carvalho novo adiciona tosta e especiaria. 6.1 g/L acidez (alta para um AB), pH 3.50. 'Ameixa madura, amoras selvagens, madeira tostada, menta, chocolate'.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "ameixa madura",
+              "amoras selvagens"
+            ],
+            "secondary": [
+              "madeira tostada",
+              "menta",
+              "chocolate"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "yakiniku",
+              "enchidos",
+              "queijo curado"
+            ],
+            "notes": "Alicante Bouschet em cimento — frescura e fruta preservadas pela neutralidade do cimento, tosta e especiaria do carvalho novo. Para contexto Nanban: Yakiniku de carne gorda (a menta e o chocolate do vinho criam contraste com a gordura grelhada), Gyutan com tare (língua de boi — a acidez 6.1 g/L corta a untuosidade), Nikujaga com carne estufada (os taninos suportam o umami do estufado)."
+          }
+        },
+        {
+          "id": "fiuza-tinta-miuda",
+          "name": "Fiuza Tinta Miúda",
+          "quinta": null,
+          "vintage": null,
+          "doc": "Vinho Regional Tejo",
+          "type": "red",
+          "varieties": [
+            "Tinta Miúda"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.5,
+          "ph": null,
+          "winemaking": "Maceração pós-fermentativa prolongada em depósito de cimento. Envelhecimento 3 meses em barricas de carvalho francês. Solo argilo-calcário.",
+          "notes": "100% Tinta Miúda — casta rara, pouco representada em bases de dados de vinho português. Relacionada com a Graciano espanhola. Naturalmente de acidez elevada e taninos firmes. Cimento para maceração prolongada sem oxidação prematura; 3mo barrica breve para integrar sem sobreposição. 'Acidez equilibrada, boa estrutura, final longo'. Acidity_gl 5.5 g/L estimada: 'equilibrada' = sem destaque ácido, 14.0% álcool modera perceção; Fiuza Reserva Premium (AB, mesmo solo) = 6.1 g/L — Tinta Miúda com menor extração.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 6,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta"
+            ],
+            "secondary": [
+              "especiarias",
+              "madeira integrada (cimento + curta barrica)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "caça",
+              "borrego",
+              "yakitori de carne",
+              "enchidos",
+              "queijo curado"
+            ],
+            "notes": "Tinta Miúda — casta estruturada com acidez natural elevada e fruta escura. Para contexto Nanban: Yakitori de carne com tare intenso (acidez e tanino suportam o molho caramelizado), Katsu de porco (a estrutura e a acidez cortam a fritura panada), Pratos de caça à japonesa. A raridade da casta e a vinificação em cimento produzem um perfil limpo de fruta que não compete com sabores complexos."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Pinhal da Torre",
+      "region": "Tejo – Almeirim",
+      "quintas": [
+        "Águas Vivas",
+        "Courela",
+        "Alqueve",
+        "Quinta de São João"
+      ],
+      "producer_notes": "Produtor de Almeirim com portfolio focado em qualidade e longevidade. Linha premium 'Série' (Resoluto, Antagonista, Protagonista, Resiliente, Special) — todos fermentados em depósitos de cimento e estagiados 36 meses em barricas de carvalho francês (tempo excecional no Tejo). Linha 'Alqueve' mais acessível. Destaque pela aposta em castas incomuns no Tejo: Grenache (Antagonista, Special), Sousão (Resiliente, Resoluto), Tinta Francisca. Viticultura sustentável, colheita manual nas Séries. Solos maioritariamente arenosos e argilosos. Potencial de guarda declarado de 15-30 anos nas Séries.",
+      "wines": [
+        {
+          "id": "pinhal-da-torre-alqueve-reserva-branco-2020",
+          "name": "Pinhal da Torre Alqueve Reserva Branco",
+          "quinta": "Alqueve",
+          "vintage": 2020,
+          "doc": "Vinho Regional Tejo",
+          "type": "white",
+          "varieties": [
+            "Verdelho",
+            "Alvarinho",
+            "Arinto"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.83,
+          "ph": null,
+          "winemaking": "Fermentação em cubas de inox a 15°C. Estágio 6 meses em barricas de carvalho francês. Solo arenoso e argiloso.",
+          "notes": "Blend Verdelho + Alvarinho + Arinto no Tejo — combinação incomum que mistura castas do Douro (Verdelho), Vinho Verde (Alvarinho) e Tejo/Bucelas (Arinto). 5.83 g/L acidez. 'Notas de menta, citrinos maduros e frutos tropicais. Muito suave na boca, acidez fresca, carácter gastronómico'. 6 meses de carvalho francês integram sem dominar.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "menta",
+              "citrinos maduros",
+              "frutos tropicais"
+            ],
+            "secondary": [
+              "notas de barrica integrada (6mo)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "marisco",
+              "sashimi",
+              "tempura",
+              "saladas",
+              "queijo fresco",
+              "aves"
+            ],
+            "notes": "Blend de três castas do Norte e Centro de Portugal — frescura do Alvarinho, estrutura do Verdelho, acidez do Arinto. Para contexto Nanban: Sashimi de peixe branco (a menta e o cítrico complementam a delicadeza), Tempura de marisco (Alvarinho + Arinto criam frescura suficiente para cortar a fritura), Sunomono (a acidez e os tropicais harmonizam com o vinagre de arroz)."
+          }
+        },
+        {
+          "id": "pinhal-da-torre-antagonista-2021",
+          "name": "Pinhal da Torre Antagonista",
+          "quinta": "Águas Vivas / Alqueve",
+          "vintage": 2021,
+          "doc": "Tejo DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Grenache"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.23,
+          "ph": 3.65,
+          "winemaking": "Viticultura sustentável, colheita manual. Fermentação em depósitos de cimento com controlo de temperatura. Estágio 36 meses em barricas de carvalho francês. Engarrafamento na propriedade.",
+          "notes": "TN 52% + Grenache 48% — blend único no Tejo. 'O nosso Borgonha português': conceito de elegância e finesse sobre extração. Grenache é raro em Portugal (salvo Alentejo e Douro em blends); 48% numa cuvée premium é excecional. Cement + 36mo French oak. 'Sedoso, etéreo, extraordinariamente sofisticado'. Acidez viva (5.23 g/L, pH 3.65). Potencial 25 anos.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 6,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos maduros",
+              "floral"
+            ],
+            "secondary": [
+              "especiaria fina",
+              "carvalho 36mo integrado"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "pato",
+              "borrego",
+              "aves grelhadas",
+              "yakitori",
+              "cogumelos",
+              "queijo semi-curado"
+            ],
+            "notes": "TN + Grenache — sedoso e elegante, estilo Borgonha. Para contexto Nanban: Kamonabe (ensopado de pato japonês — a elegância e a acidez equilibram o pato gordo), Yakitori de coxa com shio (sem tare — a finesse do vinho não compete com molhos intensos), Mushiyaki de cogumelos premium (Matsutake ou Shiitake — a delicadeza do Grenache espelha o umami subtil dos cogumelos)."
+          }
+        },
+        {
+          "id": "pinhal-da-torre-resiliente-2015",
+          "name": "Pinhal da Torre Resiliente",
+          "quinta": "Courela / Alqueve / Quinta de São João",
+          "vintage": 2015,
+          "doc": "Tejo DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Touriga Franca",
+            "Tinta Francisca",
+            "Alicante Bouschet",
+            "Sousão"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 6.39,
+          "ph": 3.2,
+          "winemaking": "Viticultura sustentável, colheita manual. Fermentação em depósitos de cimento com controlo de temperatura. Estágio 36 meses em barricas de carvalho francês. Engarrafamento na propriedade.",
+          "notes": "Blend de 5 castas portuguesas — blend mais completo da Série. Sousão (= Vinhão no Vinho Verde) é casta de acidez e tanino excepcionais, rara em tintos de guarda do Tejo. 6.39 g/L acidez + pH 3.20 — valores excecionais para um tinto desta região; certamente impulsionados pelo Sousão. Cement + 36mo French oak. 'Profundo, sereno e aristocrático... taninos totalmente integrados... frescura rara'. Potencial 25-30 anos.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos negros maduros",
+              "ameixa seca",
+              "cereja"
+            ],
+            "secondary": [
+              "especiarias finas",
+              "tabaco",
+              "cacau",
+              "balsâmico"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha maturada",
+              "caça",
+              "borrego",
+              "yakiniku wagyu",
+              "enchidos curados",
+              "queijo forte"
+            ],
+            "notes": "Tinto de 5 castas portuguesas com acidez excepcional (6.39 g/L) e 36mo de carvalho — potência e frescura em simultâneo. Para contexto Nanban: Wagyu Yakiniku (a acidez vibrante corta a gordura marmoreada, o balsâmico e o tabaco complementam o char da grelha), Pratos de caça com molho teriyaki escuro, Gyutan com carvão de binchōtan. A frescura rara diferencia este vinho dos tintos encorpados convencionais."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Casal da Coelheira",
+      "region": "Tejo – Almeirim",
+      "quintas": [
+        "Casal da Coelheira"
+      ],
+      "producer_notes": "Produtor de Almeirim especializado em brancos varietais de qualidade. Solo arenoso. Linha 'Private Collection' — monovarietais premium com abordagens distintas de vinificação: Fernão Pires com fermentação parcial em madeira, Verdelho 100% em inox. Contraste deliberado de método dentro da mesma linha. Reserva Tinto usa lagares mecânicos e carvalho misto (Francês + Americano), estilo frutado e encorpado com potencial de 8-10 anos.",
+      "wines": [
+        {
+          "id": "casal-da-coelheira-private-collection-fernao-pires",
+          "name": "Casal da Coelheira Private Collection Fernão Pires",
+          "quinta": "Casal da Coelheira",
+          "vintage": null,
+          "doc": "Tejo DOC",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires"
+          ],
+          "alcohol": 13.4,
+          "acidity_gl": 5.8,
+          "ph": 3.37,
+          "winemaking": "Desengace total. Prensagem pneumática. Decantação a frio. Fermentação a temperatura controlada parcialmente em madeira. Estabilização e filtração. Solo arenoso.",
+          "notes": "Fernão Pires com fermentação parcialmente em madeira — confere volume e complexidade adicional sem perder o carácter floral da casta. 13.4% álcool (elevado para Fernão Pires). 5.8 g/L acidez, pH 3.37. Longevidade até 2032. Contraste direto com o Verdelho da mesma linha (inox puro): mesmo solo, casta diferente, método diferente.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "fruta branca",
+              "melão"
+            ],
+            "secondary": [
+              "baunilha suave (fermentação parcial em madeira)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "marisco",
+              "sashimi",
+              "tofu",
+              "aves",
+              "queijo fresco"
+            ],
+            "notes": "Fernão Pires com toque de madeira — mais volume e complexidade que as versões em inox. Para contexto Nanban: Hiyayakko (tofu frio — o floral e a baunilha suave complementam a textura neutra do tofu), Sashimi de peixe branco, Chawanmushi (a parcial madeira dá corpo suficiente para o pudim de ovo com dashi)."
+          }
+        },
+        {
+          "id": "casal-da-coelheira-private-collection-verdelho",
+          "name": "Casal da Coelheira Private Collection Verdelho",
+          "quinta": "Casal da Coelheira",
+          "vintage": null,
+          "doc": "Tejo DOC",
+          "type": "white",
+          "varieties": [
+            "Verdelho"
+          ],
+          "alcohol": 12.3,
+          "acidity_gl": 6.09,
+          "ph": 3.25,
+          "winemaking": "Desengace total. Prensagem pneumática. Decantação a frio. Fermentação a temperatura controlada em inox (100%). Solo arenoso.",
+          "notes": "Verdelho 100% inox — expressão varietal pura. pH 3.25 (baixo) + 6.09 g/L confere acidez percebida elevada e frescura vibrante. 12.3% álcool. 'Perfil muito elegante e fresco, boa estrutura de boca'. Verdelho é casta do Douro e Madeira — pouco comum em Tejo; aqui em solo arenoso produz perfil mais leve e cítrico que nas suas origens.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "cítrico",
+              "tropical",
+              "fruta fresca"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "marisco",
+              "peixe grelhado",
+              "tempura",
+              "saladas",
+              "tofu",
+              "queijo fresco"
+            ],
+            "notes": "Verdelho puro em inox — frescura máxima, sem interferência de madeira. Para contexto Nanban: Sashimi de peixe branco delicado (a acidez vibrante e o cítrico complementam sem sobrepor), Tempura de legumes (acidez corta a fritura), Sunomono (a acidez e o tropical harmonizam com o vinagre de arroz e pepino). O pH 3.25 baixo garante frescura persistente na boca."
+          }
+        },
+        {
+          "id": "casal-da-coelheira-reserva-tinto",
+          "name": "Casal da Coelheira Reserva Tinto",
+          "quinta": "Casal da Coelheira",
+          "vintage": null,
+          "doc": "Tejo DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Touriga Franca",
+            "Cabernet Sauvignon"
+          ],
+          "alcohol": 14.2,
+          "acidity_gl": 5.37,
+          "ph": 3.45,
+          "winemaking": "Desengace total. Maceração e fermentação em lagares mecânicos a temperatura controlada. Fermentação malolática. Estágio 12 meses em barricas de carvalho Francês e Americano. Filtração. Solo arenoso.",
+          "notes": "TN + TF + CabSauv — blend clássico de tintos premium do Tejo. Lagares mecânicos + 12mo carvalho misto (Francês + Americano). 14.2% álcool. 'Encorpado, estilo frutado, frescura da acidez em equilíbrio com taninos sólidos'. Potencial 8-10 anos. O carvalho americano (como no Tyto Alba CDL) adiciona baunilha e coco ao perfil.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 6,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta",
+              "fruta vermelha madura"
+            ],
+            "secondary": [
+              "baunilha (carvalho americano)",
+              "especiaria"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "borrego",
+              "caça vermelha",
+              "carne vermelha",
+              "yakitori de carne",
+              "enchidos",
+              "queijo curado"
+            ],
+            "notes": "Tinto encorpado e frutado com carvalho misto — baunilha americana + estrutura de TN e CabSauv. Para contexto Nanban: Yakitori de carne com tare (a baunilha e a fruta madura harmonizam com o tare caramelizado), Gyudon (tigela de carne com cebola adocicada — o estilo frutado complementa), Katsu de porco (os taninos sólidos e a frescura da acidez cortam a fritura panada)."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Adega Cooperativa de Almeirim",
+      "region": "Tejo – Almeirim",
+      "quintas": [],
+      "producer_notes": "Uma das maiores cooperativas vinícolas de Portugal. Produz sob várias marcas: 'A.C.A.' (premium, vinha velha, barrica), 'Varandas' (DOC, qualidade intermédia), 'Portas do Tejo' (acessível, aromático), 'Planície' e 'Lezíria' (grande volume, mercado de massa). A marca 'Lezíria' é referência nacional do estilo Fernão Pires meio seco do Tejo — 2.5 milhões de garrafas, o perfil que definiu a categoria. Solos arenosos da charneca ribatejana. Importante para cobertura do estilo off-dry que outros produtores desta base de dados não têm.",
+      "wines": [
+        {
+          "id": "almeirim-leziria-meio-seco",
+          "name": "Lezíria Meio Seco Branco",
+          "quinta": null,
+          "vintage": null,
+          "doc": "Vinho Regional Tejo",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires"
+          ],
+          "alcohol": 11.5,
+          "acidity_gl": 5.6,
+          "ph": 3.35,
+          "winemaking": "Pré-maceração pelicular. Fermentação em cubas de inox a 16°C durante 16 dias. Solo argilo-arenoso.",
+          "notes": "O Fernão Pires meio seco canónico do Tejo — 2.5 milhões de garrafas, vinho de referência nacional para o estilo off-dry. 11.5% álcool, 5.6 g/L acidez, pH 3.35. 'Boca acídula e fresca, carácter jovem e frutado'. Sem estágio em madeira — perfil primário puro. O açúcar residual (meio seco: tipicamente 12-45 g/L) equilibrado pela acidez 'acídula' — provavelmente no extremo inferior do meio seco. Preenche o gap crítico de off-dry Fernão Pires para harmonização com miso.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "off-dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutos tropicais",
+              "fruta branca fresca"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "miso",
+              "pratos semi-doces",
+              "peixe",
+              "marisco",
+              "sushi",
+              "tempura",
+              "tofu com miso"
+            ],
+            "notes": "Fernão Pires off-dry — o açúcar residual e a acidez 'acídula' criam o equilíbrio ideal para pratos com componente doce ou salgada intensa. Para contexto Nanban: Misozuke (marinados em miso — o doce residual equilibra a salinidade do miso), Tofu Dengaku (tofu com miso glaceado — o off-dry espelha o glaze doce-salgado), Salmão teriyaki (o açúcar residual harmoniza com o teriyaki sem sobrecarregar). Este é o vinho Tejo para pratos de miso."
+          }
+        },
+        {
+          "id": "almeirim-aca-fernao-pires-2022",
+          "name": "A.C.A. Fernão Pires",
+          "quinta": null,
+          "vintage": 2022,
+          "doc": "Tejo DOC",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.75,
+          "ph": null,
+          "winemaking": "Uvas de vinha velha, charneca ribatejana, solos arenosos pobres. Fermentação cuidada em barricas de carvalho francês a temperatura controlada. Batonage sobre borras finas durante 45 dias.",
+          "notes": "Linha premium da cooperativa — vinha velha em barrica com 45 dias de batonage. Contraste direto com a Lezíria: mesma casta, mesmo produtor, abordagem oposta (barrica vs inox, seco vs meio seco, premium vs volume). 13% álcool — elevado para FP. 'Cor citrina, aromas de frutos de polpa branca com notas de flor de laranjeira, acidez fina e crepitante, longevo'.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos de polpa branca",
+              "flor de laranjeira"
+            ],
+            "secondary": [
+              "notas de barrica integrada (45 dias batonage)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "marisco",
+              "sashimi",
+              "tofu",
+              "chawanmushi",
+              "queijo fresco",
+              "aves"
+            ],
+            "notes": "FP de vinha velha em barrica — complexidade e volume superiores à versão inox. Para contexto Nanban: Chawanmushi (a flor de laranjeira e a textura de borras complementam o pudim de ovo), Sashimi de peixe branco (a acidez 'crepitante' e o floral bridging com o peixe delicado), Tempura de camarão (barrica integrada dá suficiente estrutura para o prato)."
+          }
+        },
+        {
+          "id": "almeirim-portas-do-tejo-2023",
+          "name": "Portas do Tejo Branco",
+          "quinta": null,
+          "vintage": 2023,
+          "doc": "I.G.P. Tejo",
+          "type": "white",
+          "varieties": [
+            "Fernão Pires",
+            "Moscatel"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.9,
+          "ph": 3.38,
+          "winemaking": "Uvas selecionadas de Moscatel e Fernão Pires. Maceração a frio 24 horas. Fermentação em inox a 16°C. Solo franco-arenoso.",
+          "notes": "Blend FP + Moscatel — o Moscatel Galego adiciona intensidade aromática floral e tropical sem off-dry (sem açúcar residual declarado, presumivelmente seco). 5.9 g/L acidez, pH 3.38. 'Aroma intenso, manga e ananás, fresco, boa acidez, final persistente e equilibrado'. O Moscatel amplifica o perfil aromático do FP sem o adoçar.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "manga",
+              "ananás",
+              "floral intenso (Moscatel)"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "marisco",
+              "peixe grelhado",
+              "tofu",
+              "pratos com yuzu",
+              "tempura",
+              "saladas"
+            ],
+            "notes": "FP + Moscatel — intensidade aromática tropical máxima em seco. Para contexto Nanban: Sashimi de peixe gordo (a manga e o ananás criam contraste refrescante com o salmão ou atum), Karaage com molho de yuzu (o floral do Moscatel amplifica o yuzu), Tempura de camarão doce (os tropicais do Moscatel complementam a doçura natural do camarão)."
+          }
+        },
+        {
+          "id": "almeirim-varandas-grande-escolha-branco-2023",
+          "name": "Varandas Grande Escolha Branco",
+          "quinta": null,
+          "vintage": 2023,
+          "doc": "Tejo DOC",
+          "type": "white",
+          "varieties": [
+            "Chardonnay",
+            "Arinto"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.4,
+          "ph": 3.42,
+          "winemaking": "Fermentação parcial em barricas de carvalho francês a 18°C durante 16 dias. Batonage. Solo arenoso, charneca ribatejana, parcela única.",
+          "notes": "Chardonnay + Arinto em parcela única da charneca — blend de internacional e nacional. Fermentação parcial em barrica + batonage. 'Volume e gordura notório, acidez muito viva e omnipresente, fumado e tosta de pão'. 5.4 g/L com 'acidez muito viva' — Arinto imprime frescura que os números não revelam completamente. Premium da gama Varandas.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos de polpa amarela",
+              "cítrico"
+            ],
+            "secondary": [
+              "fumado",
+              "tosta de pão (barrica parcial + batonage)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe assado",
+              "marisco rico",
+              "peixe gordo grelhado",
+              "aves",
+              "chawanmushi",
+              "queijo de pasta mole"
+            ],
+            "notes": "Chardonnay + Arinto com barrica parcial — volume amanteigado com frescura do Arinto. Para contexto Nanban: Chawanmushi rico (a gordura do Chardonnay e o fumado ligeiro complementam o pudim de ovo com trufa ou cogumelo), Sashimi de atum gordo (o fumado cria ponte com o peixe), Peixe assado com molho de manteiga e soja."
+          }
+        },
+        {
+          "id": "almeirim-varandas-grande-escolha-tinto-2021",
+          "name": "Varandas Grande Escolha Tinto",
+          "quinta": null,
+          "vintage": 2021,
+          "doc": "Tejo DOC",
+          "type": "red",
+          "varieties": [
+            "Syrah",
+            "Touriga Nacional"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 6.1,
+          "ph": 3.53,
+          "winemaking": "Vindima e desengace total. Vinificação em lagar com pisa mecanizada. Fermentação malolática. Estágio 9 meses em barricas de carvalho francês. Solo arenoso.",
+          "notes": "Syrah + TN em lagar + 9mo French oak. 6.1 g/L acidez para um tinto — elevado, efeito combinado de Syrah e TN em solo arenoso. 'Fruta preta madura e compotas, elevada estrutura, untuoso, taninos bem presentes, final redondo e amplo'. Produzido apenas em anos excecionais de qualidade.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta madura",
+              "compota"
+            ],
+            "secondary": [
+              "carvalho francês 9mo"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "caça",
+              "borrego",
+              "yakiniku",
+              "enchidos curados",
+              "queijo curado"
+            ],
+            "notes": "Syrah + TN com acidez elevada para um tinto (6.1 g/L) — frescura inesperada para o peso do vinho. Para contexto Nanban: Yakiniku de carne gorda (a acidez corta a gordura, a compota espelha o char da grelha), Lamb Chops com tare (a estrutura suporta o borrego), Gyutan (língua de boi grelhada — os taninos presentes e a compota criam harmonia com a textura untuosa)."
+          }
+        }
+      ]
+    }
+  ]
+}

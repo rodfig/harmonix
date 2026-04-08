@@ -1,0 +1,475 @@
+{
+  "_meta": {
+    "region": "Trás-os-Montes",
+    "description": "Producer wine profiles for Trás-os-Montes DOC and Vinho Regional Transmontano",
+    "schema_version": "2.0",
+    "note": "Producer-centric format. Pairing is derived algorithmically from structure fields via pairing-rules.json. food_tags are NOT stored on wines. Cooking method and dish complements are as important as the main ingredient — see pairing_principles in pairing-rules.json.",
+    "fields_required": [
+      "id",
+      "name",
+      "doc",
+      "type",
+      "varieties",
+      "alcohol",
+      "structure",
+      "aromas",
+      "pairing"
+    ],
+    "fields_optional": [
+      "vintage",
+      "acidity_gl",
+      "ph",
+      "winemaking",
+      "notes",
+      "quinta"
+    ]
+  },
+  "producers": [
+    {
+      "producer": "Valle Pradinhos",
+      "region": "Trás-os-Montes",
+      "quintas": [
+        "Valle Pradinhos"
+      ],
+      "producer_notes": "Produtor atípico em Trás-os-Montes: aposta deliberada em castas internacionais (Riesling, Sauvignon Blanc, Cabernet Sauvignon) em paralelo com as portuguesas (Touriga Nacional, Códega do Larinho). Solos de origem xistosa com teores médios em argila e presença de quartzo. Clima temperado de características continentais — verões quentes, invernos frios, amplitude térmica elevada. Esta combinação — solos xistosos + continental extremo + castas de acidez alta (Riesling) — produz brancos de estrutura acídica excepcional, com pH entre os mais baixos desta base de dados.",
+      "wines": [
+        {
+          "id": "valle-pradinhos-grande-reserva-branco-2020",
+          "name": "Valle Pradinhos Grande Reserva Branco",
+          "quinta": "Valle Pradinhos",
+          "vintage": 2020,
+          "doc": "Vinho Regional Transmontano",
+          "type": "white",
+          "varieties": [
+            "Riesling",
+            "Sauvignon Blanc"
+          ],
+          "alcohol": 14.2,
+          "acidity_gl": 8.11,
+          "ph": 2.98,
+          "winemaking": "Estágio em cascos de carvalho até Abril de 2022 (aprox. 20 meses). Potencial de envelhecimento até 2043.",
+          "notes": "Riesling em Trás-os-Montes é raríssimo em Portugal. A nuance a aroma apetrolado (petróleo) mencionada nas notas de prova é característica clássica do Riesling com evolução — confirma identidade varietalda casta. Castas internacionais — provavelmente classificado como Vinho Regional Transmontano e não DOC.",
+          "structure": {
+            "acidity": 10,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos maduros",
+              "tropical fresco",
+              "flores amarelas e brancas"
+            ],
+            "secondary": [
+              "mineral",
+              "notas de barrica suaves",
+              "nuance apetrolada (Riesling)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "ostra",
+              "marisco nobre",
+              "peixe cru",
+              "sashimi",
+              "peixe gordo assado",
+              "lagosta"
+            ],
+            "notes": "pH 2.98 — partilha o segundo valor mais baixo de toda esta base de dados com o Aphros Ten. Acidez 8.11g/L + pH 2.98 = tensão acídica máxima. 14.2% álcool + barrica compensam com volume e textura. Potencial de guarda excecional (até 2043). Nuance apetrolada do Riesling cria afinidade única com pratos de peixe rico. Para contexto Nanban: acidez extrema corta qualquer gordura e realça sabores marinhos delicados."
+          }
+        },
+        {
+          "id": "valle-pradinhos-lost-corner-branco-2019",
+          "name": "Valle Pradinhos The Lost Corner Branco",
+          "quinta": "Valle Pradinhos",
+          "vintage": 2019,
+          "doc": "Vinho Regional Transmontano",
+          "type": "white",
+          "varieties": [
+            "Riesling",
+            "Verdelho",
+            "Códega do Larinho"
+          ],
+          "alcohol": 13.9,
+          "acidity_gl": 6.6,
+          "ph": 3.05,
+          "winemaking": "Estágio sobre borras totais durante 20 meses. Potencial de envelhecimento até 2034.",
+          "notes": "O único vinho desta seleção com Códega do Larinho — casta branca autóctone de Trás-os-Montes. A combinação Riesling + Verdelho + Códega é singular: une acidez internacional (Riesling), corpo e mineralidade (Verdelho) e carácter local (Códega). 20 meses em borras totais sem barrica confere textura e complexidade sem madeira.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "alperce",
+              "flores amarelas",
+              "ervas aromáticas"
+            ],
+            "secondary": [
+              "especiarias",
+              "mineral",
+              "complexidade de longa borra"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "peixe gordo",
+              "marisco",
+              "aves",
+              "queijo curado",
+              "pratos com ervas aromáticas"
+            ],
+            "notes": "Ponte entre internacional e autóctone: Riesling traz acidez estruturante (pH 3.05), Verdelho adiciona corpo e mineralidade, Códega do Larinho ancora no terroir transmontano. 20 meses sur lies totais = textura cremosa sem madeira. Perfil mais acessível e gastronómico que o Grande Reserva — maior versatilidade à mesa."
+          }
+        },
+        {
+          "id": "valle-pradinhos-t-nacional-reserva-2019",
+          "name": "Valle Pradinhos Touriga Nacional Reserva",
+          "quinta": "Valle Pradinhos",
+          "vintage": 2019,
+          "doc": "Trás-os-Montes DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 13.84,
+          "acidity_gl": 5.0,
+          "ph": 3.69,
+          "winemaking": "Estagiado em barricas de carvalho novas de 500 litros durante 16 meses. Potencial de envelhecimento até 2040.",
+          "notes": "Acidity_gl estimada 5.0 g/L a partir de pH 3.69, calibrado com outros vinhos do mesmo produtor (GR 2015: pH 3.58 = 5.8 g/L; Lost Corner 2010: pH 3.62 = 5.2 g/L). Ficha técnica original apresenta valor impossível de 14.2 %/vol — erro tipográfico confirmado. 100% Touriga Nacional monovarietal — referência para a casta fora do Douro/Dão.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutado intenso",
+              "floral",
+              "especiado"
+            ],
+            "secondary": [
+              "ligeiro mentolado",
+              "barrica integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "enchidos",
+              "queijo curado envelhecido",
+              "pratos de forno"
+            ],
+            "notes": "Touriga Nacional em Trás-os-Montes: clima continental mais extremo que Douro ou Dão produz um TN com mentolado característico e frescura invulgar para a altitude alcoólica. Taninos 8/10 mas descritos como 'finos e macios bem envolvidos pela fruta' — estrutura presente mas não agressiva. pH 3.69 (acidity 5/10) — menos ácido que TN do Dão; compensado pela riqueza de fruta e 16 meses de barrica nova."
+          }
+        },
+        {
+          "id": "valle-pradinhos-grande-reserva-tinto-2015",
+          "name": "Valle Pradinhos Grande Reserva Tinto",
+          "quinta": "Valle Pradinhos",
+          "vintage": 2015,
+          "doc": "Trás-os-Montes DOC",
+          "type": "red",
+          "varieties": [
+            "Cabernet Sauvignon",
+            "Touriga Nacional"
+          ],
+          "alcohol": 14.33,
+          "acidity_gl": 5.8,
+          "ph": 3.58,
+          "winemaking": "Cabernet Sauvignon (75%) + Touriga Nacional (25%). Vindima manual, seleção rigorosa de cachos. Desengace total, maceração pré-fermentativa. Fermentação com controlo moderado de temperatura, remontagens manuais. Longa maceração pós-fermentativa. 22 meses em barricas de carvalho. Não filtrado nem estabilizado pelo frio. Solo xistoso com argila e quartzo, Macedo de Cavaleiros.",
+          "notes": "CabSauv dominante (75%) com ancoragem em TN. 22 meses de barrica + não filtrado = estrutura de guarda. 'Anormalmente fresco para a sua bela estrutura' — o clima continental de Macedo de Cavaleiros preserva acidez a 14.33% álcool. 'Bons taninos, finos e macios bem envolvidos pela fruta' — estrutura presente mas elegante. Potencial até 2040.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "amora",
+              "mirtilo",
+              "fruta preta madura"
+            ],
+            "secondary": [
+              "esteva",
+              "rosmaninho",
+              "pimenta preta",
+              "cravinho",
+              "barrica integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "queijo ovelha curado",
+              "enchidos"
+            ],
+            "notes": "CabSauv 75% com 22 meses de barrica — estrutura clássica para carnes de carácter. 'Anormalmente fresco' para 14.33% álcool — a acidez 5.8 g/L surpreende e dá longevidade. Para contexto Nanban: Wagyu Yakiniku (frescura incomum + taninos finos equilibram a gordura marmoreada), Gyutan com char de binchōtan, Kakuni (barriga de porco com soja e mirin — a riqueza encontra a estrutura)."
+          }
+        },
+        {
+          "id": "valle-pradinhos-rose-2023",
+          "name": "Valle Pradinhos Rosé",
+          "quinta": "Valle Pradinhos",
+          "vintage": 2023,
+          "doc": "Trás-os-Montes DOC",
+          "type": "rosé",
+          "varieties": [
+            "Tinta Roriz",
+            "Touriga Nacional"
+          ],
+          "alcohol": 12.8,
+          "acidity_gl": 8.8,
+          "ph": 2.86,
+          "winemaking": "Tinta Roriz (60%) + Touriga Nacional (40%). Vindima manual por casta, seleção manual. Desengace total, ligeiro esmagamento. Ligeiríssima maceração pelicular a frio da TN. Clarificação estática. Fermentação a baixa temperatura em inox. Estágio sobre borras finas até Janeiro (~4 meses).",
+          "notes": "pH 2.86 — o valor mais baixo desta base de dados. Acidez 8.80 g/L para um rosé é excepcional. 'Acidez crocante' confirmada nas notas de prova. Cor salmão claro = maceração pelicular muito breve. Clima continental de Macedo de Cavaleiros + solos xistosos preservam acidez natural elevada mesmo na TR e TN. Potencial até 2027.",
+          "structure": {
+            "acidity": 9,
+            "tannins": 2,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos silvestres frescos",
+              "floral"
+            ],
+            "secondary": [
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "peixe cru",
+              "tempura",
+              "marisco",
+              "aves leves",
+              "tofu",
+              "aperitivos"
+            ],
+            "notes": "pH 2.86 + acidez 8.80 g/L — o rosé mais ácido desta base de dados por margem considerável. 'Acidez crocante' com corpo leve e taninos quase nulos = máxima versatilidade. Para contexto Nanban: acidez extrema corta gordura e realça sabores marinhos — sashimi de atum ou peixe branco, tempura de camarão, Hassun (aperitivos variados). Alternativa regional aos espumantes de Bairrada para pratos delicados."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta de Arcossó",
+      "region": "Trás-os-Montes – Chaves",
+      "quintas": [
+        "Quinta de Arcossó"
+      ],
+      "producer_notes": "Quinta na sub-região de Chaves, Trás-os-Montes. Solos graníticos, 375m altitude, encosta a Sul, viticultura biológica. A seleção 'Bago a Bago' indica método de seleção manual de bagos individuais — nível de exigência vitícola incomum para a região. Portfolio atual inclui vinhos de Touriga Nacional, Touriga Franca, e vinhos históricos de Tinta Amarela + Tinta Roriz.",
+      "wines": [
+        {
+          "id": "arcosso-bago-a-bago-2021",
+          "name": "Quinta de Arcossó Superior Bago a Bago",
+          "quinta": "Quinta de Arcossó",
+          "vintage": 2021,
+          "doc": "Trás-os-Montes DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Touriga Franca"
+          ],
+          "alcohol": 13.8,
+          "acidity_gl": 5.41,
+          "ph": 3.51,
+          "winemaking": "Vindima manual, 28-30 de Setembro. Viticultura biológica. Seleção bago a bago (grão a grão). Fermentação alcoólica de 13 dias com remontagens suaves. Estágio 18 meses em barricas de carvalho francês de 500 litros.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "fruta escura",
+              "Touriga Nacional varietal"
+            ],
+            "secondary": [
+              "eucalipto",
+              "frescura mentolada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "cogumelos",
+              "pratos de forno",
+              "queijo curado"
+            ],
+            "notes": "TN 60% + Touriga Franca 40% em viticultura biológica, clima continental de Chaves. Acidez 5.41 g/L (ficha técnica confirmada), pH 3.51. 18 meses barrica francesa — estrutura presente mas elegante. 'Bago a bago' indica seleção vitícola de máxima exigência. Nota de eucalipto/mentolado é característica marcante do TN em amplitude térmica elevada de Trás-os-Montes."
+          }
+        },
+        {
+          "id": "arcosso-syrah-2009",
+          "name": "Quinta de Arcossó Syrah",
+          "quinta": "Quinta de Arcossó",
+          "vintage": 2009,
+          "doc": "Vinho Regional Transmontano",
+          "type": "red",
+          "varieties": [
+            "Tinta Amarela",
+            "Tinta Roriz",
+            "Outras"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 5.55,
+          "ph": 3.65,
+          "winemaking": "Vindima 16 de Setembro. Vinificação em lagar com pisa a pé. Fermentação maloláctica. Estágio 16 meses em barricas novas de carvalho francês e americano (500L). Engarrafado 30 Maio 2011. Estágio em garrafa 6 meses.",
+          "notes": "Classificado como Vinho Regional Transmontano — provavelmente por inclusão de castas não autorizadas no DOC. Blend atípico de Tinta Amarela + Tinta Roriz com 'Outras' (40%). Solos graníticos a 375m, encosta a Sul. Vinificação em lagar com pisa a pé é incomum para um VRT — revela ambição de produtor pequeno. 14.5% álcool com 16 meses em barrica nova = vinho de estrutura considerável.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta madura",
+              "frutos silvestres"
+            ],
+            "secondary": [
+              "especiarias",
+              "tabaco",
+              "barrica integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "enchidos",
+              "queijo ovelha curado"
+            ],
+            "notes": "14.5% álcool + taninos 8/10 + 16 meses barrica nova = vinho de estrutura robusta. Acidez 5.55 g/L moderada (pH 3.65) — menos fresco que outros TM mas compensado pela riqueza de fruta. Pisa a pé confere taninos bem integrados apesar da intensidade. Para contexto Nanban: Gyutan grelhado com binchōtan, Kakuni (barriga de porco longa cozedura), carnes com molhos à base de soja reduzida."
+          }
+        },
+        {
+          "id": "arcosso-rose-bastardo-2010",
+          "name": "Quinta de Arcossó Rosé",
+          "quinta": "Quinta de Arcossó",
+          "vintage": 2010,
+          "doc": "Trás-os-Montes DOC",
+          "type": "rosé",
+          "varieties": [
+            "Bastardo",
+            "Touriga Franca"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 4.7,
+          "ph": 3.5,
+          "winemaking": "Vindima 9 de Setembro. Fermentação alcoólica em cubas de inox.",
+          "notes": "Rosé de Bastardo (90%) é excecional — a casta raramente vinificada a solo é aqui dominante num rosé. Solos graníticos de Chaves a 375m. 14.0% álcool é elevado para um rosé, conferindo corpo invulgar para a categoria. Açúcar residual 4.1 g/L — tecnicamente seco mas na fronteira (percepção de levíssima untuosidade). Referência única de Bastardo em vinho rosé nesta base de dados.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 2,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "cereja fresca",
+              "morango silvestre",
+              "floral delicado"
+            ],
+            "secondary": [
+              "mineral granítico"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "charcutaria",
+              "queijo fresco",
+              "peixe grelhado",
+              "aves leves",
+              "tofu",
+              "aperitivos"
+            ],
+            "notes": "Bastardo 90% em rosé — perfil análogo ao Trousseau rosé do Jura. Acidez 4.7 g/L é modesta para rosé (menos corte que o Arcossó Bastardo tinto), compensada por 14.0% álcool que confere presença em boca. Para contexto Nanban: Hassun (aperitivos variados), Yakitori de frango, tofu levemente temperado, pratos com dashi suave. Mais gastronómico que refrescante — servir a 12-14°C."
+          }
+        },
+        {
+          "id": "arcosso-branco-reserva-2010",
+          "name": "Quinta de Arcossó Branco Reserva",
+          "quinta": "Quinta de Arcossó",
+          "vintage": 2010,
+          "doc": "Trás-os-Montes DOC",
+          "type": "white",
+          "varieties": [
+            "Arinto",
+            "Fernão Pires",
+            "Outras"
+          ],
+          "alcohol": 13.7,
+          "acidity_gl": 5.72,
+          "ph": 3.17,
+          "winemaking": "Vindima 16 de Setembro. Fermentação parcialmente realizada em barricas de carvalho francês e americano com bâtonnage durante 8 meses. Engarrafado 30 Maio 2011. Estágio em garrafa 5 meses.",
+          "notes": "pH 3.17 é excecional para um branco de Trás-os-Montes — região mais conhecida por brancos de acidez moderada. Arinto (50%) é o motor ácido; Fernão Pires (20%) contribui com aromaticidade. Solos graníticos a 375m + clima continental preservam acidez natural elevada. Bâtonnage em barrica 8 meses = textura cremosa sem sacrificar frescura. Um dos brancos com pH mais baixo desta base de dados.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos",
+              "pêra",
+              "maçã verde",
+              "flores brancas"
+            ],
+            "secondary": [
+              "brioche",
+              "mineral granítico",
+              "notas de lias"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "peixe cru",
+              "sashimi",
+              "ostra",
+              "peixe grelhado",
+              "queijo fresco"
+            ],
+            "notes": "pH 3.17 coloca este branco entre os mais ácidos da base de dados — território de Alvarinho e espumantes. Arinto em Trás-os-Montes com solos graníticos desenvolve acidez e mineralidade inesperadas para a região. Bâtonnage 8 meses adiciona textura sem peso. Para contexto Nanban: acidez elevada + mineralidade granítica = afinidade direta com sashimi, marisco nobre, Hassun de seafood. Alternativa a Vinho Verde para pratos delicados."
+          }
+        }
+      ]
+    }
+  ]
+}

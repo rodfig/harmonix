@@ -1,0 +1,94 @@
+{
+  "producer": "Quinta da Murta",
+  "generated_at": "2026-03-01T11:20:27.344287",
+  "found_count": 2,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "murta-arinto-branco-2023",
+      "producer": "Quinta da Murta",
+      "name": "Quinta da Murta Arinto Branco",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta da Biaia 750 Arinto Branco",
+          "confidence": "low",
+          "score": 0.586,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2020 Quinta da Biaia 750 Arinto biológico branco",
+          "confidence": "low",
+          "score": 0.522,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Boa Esperanca Arinto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.428,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 7.65,
+          "name_found": "Quinta da Murta Arinto Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/13310-quinta-da-murta-arinto-white-2014-5605764000300.html"
+        }
+      },
+      "best_retail": 7.65,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 11.5,
+        "2.0x": 15.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "murta-classico-2012",
+      "producer": "Quinta da Murta",
+      "name": "Quinta da Murta Clássico",
+      "vintage": 2012,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta da Fata Clássico Tinto",
+          "confidence": "low",
+          "score": 0.619,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta da Foz tinto",
+          "confidence": "no_match",
+          "score": 0.338,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Crasto Vinha Da Ponte 2016 75 Cl",
+          "confidence": "no_match",
+          "score": 0.212,
+          "url": null
+        },
+        "GrandesEscolhas": {
+          "retail_price": 13.0,
+          "name_found": "Quinta da Murta Clássico",
+          "confidence": "high",
+          "score": 0.99,
+          "url": "https://grandesescolhas.com/pesquisa-de-vinhos/quinta-da-murta-classico/"
+        }
+      },
+      "best_retail": 13.0,
+      "best_source": "GrandesEscolhas",
+      "restaurant_estimates": {
+        "1.5x": 19.5,
+        "2.0x": 26.0
+      },
+      "status": "found"
+    }
+  ]
+}

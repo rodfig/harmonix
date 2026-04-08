@@ -1,0 +1,569 @@
+{
+  "generated_at": "2026-02-22T11:23:38.399558",
+  "updated_at": "2026-02-24",
+  "query_source": "C:\\Users\\rodfi\\Desktop\\Documents\\Wine\\AEP\\Profissional III\\Projeto Final\\scripts\\price-lookup\\price-queries.json",
+  "wine_count": 29,
+  "sites": [
+    "garrafeira_nacional",
+    "vinha_pt",
+    "portugal_vineyards",
+    "producer_direct",
+    "retail"
+  ],
+  "wines": [
+    {
+      "wine_id": "muros-antigos-alvarinho-2024",
+      "producer": "Anselmo Mendes",
+      "name": "Muros Antigos Alvarinho",
+      "vintage": 2024,
+      "query": "Anselmo Mendes Muros Antigos Alvarinho",
+      "prices": {
+        "garrafeira_nacional": {
+          "price": null,
+          "matched_name": "2024 Muros Antigos Escolha branco",
+          "url": null,
+          "confidence": "low",
+          "score": 0.545
+        },
+        "vinha_pt": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "portugal_vineyards": {
+          "price": 12.15,
+          "matched_name": "Muros Antigos Alvarinho White 2024",
+          "url": "https://www.portugalvineyards.com/en/vinho-verde/25508-muros-antigos-alvarinho-white-2024-5606486112708.html",
+          "confidence": "high",
+          "score": 0.717
+        }
+      }
+    },
+    {
+      "wine_id": "muros-antigos-escolha-2024",
+      "producer": "Anselmo Mendes",
+      "name": "Muros Antigos Escolha",
+      "vintage": 2024,
+      "query": "Anselmo Mendes Muros Antigos Escolha",
+      "prices": {
+        "garrafeira_nacional": {
+          "price": 6.55,
+          "matched_name": "2024 Muros Antigos Escolha branco",
+          "url": "https://www.garrafeiranacional.com/2024-muros-antigos-escolha-branco.html",
+          "confidence": "high",
+          "score": 0.737
+        },
+        "vinha_pt": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "portugal_vineyards": {
+          "price": 7.05,
+          "matched_name": "Muros Antigos Escolha White 2024",
+          "url": "https://www.portugalvineyards.com/en/vinho-verde/25509-muros-antigos-escolha-white-2023-5606486102037.html",
+          "confidence": "high",
+          "score": 0.737
+        }
+      }
+    },
+    {
+      "wine_id": "contacto-alvarinho-2024",
+      "producer": "Anselmo Mendes",
+      "name": "Contacto Alvarinho",
+      "vintage": 2024,
+      "query": "Anselmo Mendes Contacto Alvarinho",
+      "prices": {
+        "garrafeira_nacional": {
+          "price": 11.95,
+          "matched_name": "2024 Anselmo Mendes Contacto Alvarinho branco",
+          "url": "https://www.garrafeiranacional.com/2024-anselmo-mendes-contacto-alvarinho-branco.html",
+          "confidence": "high",
+          "score": 1.0
+        },
+        "vinha_pt": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "portugal_vineyards": {
+          "price": 13.45,
+          "matched_name": "Anselmo Mendes Contacto White 2024",
+          "url": "https://www.portugalvineyards.com/en/vinho-verde/1136-anselmo-mendes-contacto-white-2023-5606486180028.html",
+          "confidence": "high",
+          "score": 0.885
+        }
+      }
+    },
+    {
+      "wine_id": "contacto-loureiro-2024",
+      "producer": "Anselmo Mendes",
+      "name": "Contacto Loureiro",
+      "vintage": 2024,
+      "query": "Anselmo Mendes Contacto Loureiro",
+      "prices": {
+        "garrafeira_nacional": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "vinha_pt": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "portugal_vineyards": {
+          "price": 11.45,
+          "matched_name": "Anselmo Mendes Contacto Loureiro White 2024",
+          "url": "https://www.portugalvineyards.com/en/vinho-verde/26064-anselmo-mendes-contacto-loureiro-white-2024-5606486180066.html",
+          "confidence": "high",
+          "score": 1.0
+        }
+      }
+    },
+    {
+      "wine_id": "expressoes-alvarinho-2021",
+      "producer": "Anselmo Mendes",
+      "name": "Expressões Alvarinho",
+      "vintage": 2021,
+      "query": "Anselmo Mendes Expressões Alvarinho",
+      "prices": {
+        "garrafeira_nacional": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "vinha_pt": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "portugal_vineyards": {
+          "price": 26.85,
+          "matched_name": "Anselmo Mendes Expressões Alvarinho White 2021",
+          "url": "https://www.portugalvineyards.com/en/vinho-verde/25506-anselmo-mendes-expressoes-alvarinho-white-2019-5606486978670.html",
+          "confidence": "high",
+          "score": 1.0
+        }
+      }
+    },
+    {
+      "wine_id": "a-torre-alvarinho-2019",
+      "producer": "Anselmo Mendes",
+      "name": "A Torre",
+      "vintage": 2019,
+      "query": "Anselmo Mendes A Torre",
+      "prices": {
+        "garrafeira_nacional": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "vinha_pt": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "portugal_vineyards": {
+          "price": 49.35,
+          "matched_name": "Anselmo Mendes A Torre White 2019",
+          "url": "https://www.portugalvineyards.com/en/vinho-verde/25558-anselmo-mendes-a-torre-white-2019-5606486535514.html",
+          "confidence": "high",
+          "score": 1.0
+        }
+      }
+    },
+    {
+      "wine_id": "soalheiro-classico-2020",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro Alvarinho Clássico",
+      "vintage": 2020,
+      "query": "Quinta de Soalheiro Soalheiro Alvarinho Clássico",
+      "prices": {
+        "garrafeira_nacional": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "vinha_pt": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "portugal_vineyards": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        }
+      }
+    },
+    {
+      "wine_id": "soalheiro-granit-2021",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro Granit Alvarinho",
+      "vintage": 2021,
+      "query": "Quinta de Soalheiro Soalheiro Granit Alvarinho",
+      "prices": {
+        "garrafeira_nacional": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "vinha_pt": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "portugal_vineyards": {
+          "price": null,
+          "matched_name": "Soalheiro Granit White 2024",
+          "url": null,
+          "confidence": "low",
+          "score": 0.667
+        }
+      }
+    },
+    {
+      "wine_id": "soalheiro-primeiras-vinhas-2022",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro Primeiras Vinhas Alvarinho",
+      "vintage": 2022,
+      "query": "Quinta de Soalheiro Soalheiro Primeiras Vinhas Alvarinho",
+      "prices": {
+        "garrafeira_nacional": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "vinha_pt": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "portugal_vineyards": {
+          "price": 20.15,
+          "matched_name": "Soalheiro Primeiras Vinhas Alvarinho White 2024",
+          "url": "https://www.portugalvineyards.com/en/vinho-verde/27476-soalheiro-primeiras-vinhas-alvarinho-white-2023-5602640000447.html",
+          "confidence": "high",
+          "score": 0.865
+        }
+      }
+    },
+    {
+      "wine_id": "soalheiro-espumante-bruto-alvarinho",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro Espumante Bruto Alvarinho",
+      "vintage": null,
+      "query": "Quinta de Soalheiro Soalheiro Espumante Bruto Alvarinho",
+      "prices": {
+        "garrafeira_nacional": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "vinha_pt": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        },
+        "portugal_vineyards": {
+          "price": null,
+          "matched_name": null,
+          "url": null,
+          "confidence": "no_result",
+          "score": 0.0
+        }
+      }
+    },
+
+    {
+      "wine_id": "adega-mae-reserva-branco-2022",
+      "producer": "Adega Mãe",
+      "name": "Adega Mãe Reserva Branco",
+      "vintage": 2022,
+      "query": "Adega Mae Reserva Branco",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "producer_direct":     { "price": 14.95, "matched_name": "Adega Mãe Reserva Branco 2022", "url": null, "confidence": "exact", "score": 1.0, "note": "Price confirmed directly from producer" }
+      }
+    },
+    {
+      "wine_id": "adega-mae-atlantico-2021",
+      "producer": "Adega Mãe",
+      "name": "Adega Mãe Atlântico",
+      "vintage": 2021,
+      "query": "Adega Mae Atlantico Pinot Noir",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "producer_direct":     { "price": 23.00, "matched_name": "Adega Mãe Atlântico 2021", "url": null, "confidence": "exact", "score": 1.0, "note": "Price confirmed directly from producer" }
+      }
+    },
+    {
+      "wine_id": "adega-mae-vinhas-velhas-2022",
+      "producer": "Adega Mãe",
+      "name": "Adega Mãe Vinhas Velhas",
+      "vintage": 2022,
+      "query": "Adega Mae Vinhas Velhas Vital",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "producer_direct":     { "price": 23.00, "matched_name": "Adega Mãe Vinhas Velhas 2022", "url": null, "confidence": "exact", "score": 1.0, "note": "Price confirmed directly from producer" }
+      }
+    },
+    {
+      "wine_id": "adega-mae-colheita-tardia-2021",
+      "producer": "Adega Mãe",
+      "name": "Adega Mãe Colheita Tardia",
+      "vintage": 2021,
+      "query": "Adega Mae Colheita Tardia",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "producer_direct":     { "price": 40.00, "matched_name": "Adega Mãe Colheita Tardia 2021", "url": null, "confidence": "exact", "score": 1.0, "note": "Price confirmed directly from producer (375ml)" }
+      }
+    },
+
+    {
+      "wine_id": "casal-branco-falcoaria-branco-2022",
+      "producer": "Quinta do Casal Branco",
+      "name": "Falcoaria Branco Vinhas Velhas",
+      "vintage": 2022,
+      "query": "Quinta do Casal Branco Falcoaria Branco",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "retail":              { "price": 17.99, "matched_name": "Falcoaria Branco Vinhas Velhas 2022", "url": null, "confidence": "exact", "score": 1.0, "note": "Price from wprofile source" }
+      }
+    },
+    {
+      "wine_id": "casal-branco-falcoaria-tinto-2022",
+      "producer": "Quinta do Casal Branco",
+      "name": "Falcoaria Tinto",
+      "vintage": 2022,
+      "query": "Quinta do Casal Branco Falcoaria Tinto",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "retail":              { "price": 17.99, "matched_name": "Falcoaria Tinto 2022", "url": null, "confidence": "exact", "score": 1.0, "note": "Price from wprofile source" }
+      }
+    },
+    {
+      "wine_id": "casal-branco-falcoaria-colheita-tardia-2018",
+      "producer": "Quinta do Casal Branco",
+      "name": "Falcoaria Colheita Tardia",
+      "vintage": 2018,
+      "query": "Quinta do Casal Branco Falcoaria Colheita Tardia",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "retail":              { "price": 32.00, "matched_name": "Falcoaria Colheita Tardia 2018", "url": null, "confidence": "exact", "score": 1.0, "note": "Price from wprofile source" }
+      }
+    },
+    {
+      "wine_id": "casal-branco-reserva-branco-2022",
+      "producer": "Quinta do Casal Branco",
+      "name": "Quinta do Casal Branco Reserva Branco",
+      "vintage": 2022,
+      "query": "Quinta do Casal Branco Reserva Branco",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "retail":              { "price": 10.99, "matched_name": "Quinta do Casal Branco Reserva Branco 2022", "url": null, "confidence": "exact", "score": 1.0, "note": "Price from wprofile source" }
+      }
+    },
+    {
+      "wine_id": "casal-branco-reserva-tinto-2022",
+      "producer": "Quinta do Casal Branco",
+      "name": "Quinta do Casal Branco Reserva Tinto",
+      "vintage": 2022,
+      "query": "Quinta do Casal Branco Reserva Tinto",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "retail":              { "price": 10.99, "matched_name": "Quinta do Casal Branco Reserva Tinto 2022", "url": null, "confidence": "exact", "score": 1.0, "note": "Price from wprofile source" }
+      }
+    },
+
+    {
+      "wine_id": "lagoalva-grande-reserva-fernao-pires-2022",
+      "producer": "Quinta da Lagoalva",
+      "name": "Quinta da Lagoalva Grande Reserva Fernão Pires",
+      "vintage": 2022,
+      "query": "Quinta da Lagoalva Grande Reserva Fernao Pires",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "retail":              { "price": 29.90, "matched_name": "Quinta da Lagoalva Grande Reserva Fernão Pires 2022", "url": null, "confidence": "exact", "score": 1.0, "note": "Price from wprofile source" }
+      }
+    },
+    {
+      "wine_id": "lagoalva-grande-reserva-alfrocheiro-bio-2018",
+      "producer": "Quinta da Lagoalva",
+      "name": "Quinta da Lagoalva Grande Reserva Alfrocheiro Bio",
+      "vintage": 2018,
+      "query": "Quinta da Lagoalva Grande Reserva Alfrocheiro",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "retail":              { "price": 29.90, "matched_name": "Quinta da Lagoalva Grande Reserva Alfrocheiro Bio 2018", "url": null, "confidence": "exact", "score": 1.0, "note": "Price from wprofile source" }
+      }
+    },
+    {
+      "wine_id": "lagoalva-reserva-branco-2024",
+      "producer": "Quinta da Lagoalva",
+      "name": "Quinta da Lagoalva Reserva Branco",
+      "vintage": 2024,
+      "query": "Quinta da Lagoalva Reserva Branco",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "retail":              { "price": 9.99, "matched_name": "Lagoalva Reserva Branco Arinto e Chardonnay 2024", "url": null, "confidence": "exact", "score": 1.0, "note": "Price from wprofile source" }
+      }
+    },
+
+    {
+      "wine_id": "murta-arinto-branco-2023",
+      "producer": "Quinta da Murta",
+      "name": "Quinta da Murta Arinto Branco",
+      "vintage": 2023,
+      "query": "Quinta da Murta Arinto Branco",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": 7.65, "matched_name": "Quinta da Murta Arinto Branco 2023", "url": null, "confidence": "high", "score": 1.0, "note": "Price from Portugal Vineyards via wprofile" },
+        "producer_direct":     { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 }
+      }
+    },
+    {
+      "wine_id": "murta-classico-2012",
+      "producer": "Quinta da Murta",
+      "name": "Quinta da Murta Clássico",
+      "vintage": 2012,
+      "query": "Quinta da Murta Classico Arinto",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "retail":              { "price": 13.00, "matched_name": "Quinta da Murta Clássico 2012", "url": null, "confidence": "high", "score": 1.0, "note": "Price from Grandes Escolhas via wprofile" }
+      }
+    },
+
+    {
+      "wine_id": "romeira-prova-regia-branco-2024",
+      "producer": "Quinta da Romeira",
+      "name": "Prova Régia Branco",
+      "vintage": 2024,
+      "query": "Quinta da Romeira Prova Regia Branco",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": 8.05, "matched_name": "Prova Régia Branco 2024", "url": null, "confidence": "high", "score": 1.0, "note": "Price from Portugal Vineyards via wprofile" },
+        "producer_direct":     { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 }
+      }
+    },
+    {
+      "wine_id": "romeira-morgado-santa-catherina-2023",
+      "producer": "Quinta da Romeira",
+      "name": "Morgado de Santa Catherina Branco",
+      "vintage": 2023,
+      "query": "Quinta da Romeira Morgado Santa Catherina",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": 21.35, "matched_name": "Morgado de Santa Catherina Branco 2023", "url": null, "confidence": "high", "score": 1.0, "note": "Price from Portugal Vineyards via wprofile" },
+        "producer_direct":     { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 }
+      }
+    },
+    {
+      "wine_id": "romeira-bruto-espumante-2021",
+      "producer": "Quinta da Romeira",
+      "name": "Quinta da Romeira Bruto Espumante",
+      "vintage": 2021,
+      "query": "Quinta da Romeira Bruto Espumante",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": 15.15, "matched_name": "Quinta da Romeira Bruto Espumante 2021", "url": null, "confidence": "high", "score": 1.0, "note": "Price from Portugal Vineyards via wprofile" },
+        "producer_direct":     { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 }
+      }
+    },
+
+    {
+      "wine_id": "sousa-merlot-2018",
+      "producer": "Sidónio de Sousa",
+      "name": "Sidónio de Sousa Merlot",
+      "vintage": 2018,
+      "query": "Sidonio de Sousa Merlot",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "retail":              { "price": 14.35, "matched_name": "Sidónio de Sousa Merlot 2018", "url": null, "confidence": "exact", "score": 1.0, "note": "Price from online retailer via wprofile" }
+      }
+    },
+
+    {
+      "wine_id": "luis-pato-pato-doiro-2010",
+      "producer": "Luís Pato",
+      "name": "Pato d'Oiro",
+      "vintage": 2010,
+      "query": "Luis Pato Pato d'Oiro",
+      "prices": {
+        "garrafeira_nacional": { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "vinha_pt":            { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "portugal_vineyards":  { "price": null, "matched_name": null, "url": null, "confidence": "no_result", "score": 0.0 },
+        "producer_direct":     { "price": 30.00, "matched_name": "Pato d'Oiro 2010", "url": null, "confidence": "exact", "score": 1.0, "note": "PVP Ref. from producer tech sheet" }
+      }
+    }
+  ]
+}

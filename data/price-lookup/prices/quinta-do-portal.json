@@ -1,0 +1,352 @@
+{
+  "producer": "Quinta do Portal",
+  "generated_at": "2026-03-01T11:20:27.339398",
+  "found_count": 8,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "portal-quinta-dos-muros-m7-2019",
+      "producer": "Quinta do Portal",
+      "name": "Quinta dos Muros M7",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 91.52,
+          "name_found": "Quinta dos Muros M7 Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-muros-m7-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos branco",
+          "confidence": "no_match",
+          "score": 0.409,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Monte Meão Vinha Dos Novos 2022 75 Cl",
+          "confidence": "no_match",
+          "score": 0.208,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 145.55,
+          "name_found": "Quinta dos Muros Parcela M7 Tinto 2019",
+          "confidence": "high",
+          "score": 0.85,
+          "url": "https://www.portugalvineyards.com/pt/douro/26054-quinta-dos-muros-parcela-m7-red-2019-5604242011258.html"
+        }
+      },
+      "best_retail": 91.52,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 137.5,
+        "2.0x": 183.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "portal-auru-tinto-2019",
+      "producer": "Quinta do Portal",
+      "name": "Auru Tinto",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 335.61,
+          "name_found": "Quinta do Portal Auru 3L Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-do-portal-auru-3l-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 127.15,
+          "name_found": "Quinta do Portal AURU Tinto 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/25936-quinta-do-portal-auru-red-2019-5604242007404.html"
+        }
+      },
+      "best_retail": 127.15,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 191.0,
+        "2.0x": 254.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "portal-grande-reserva-tinto-2019",
+      "producer": "Quinta do Portal",
+      "name": "Grande Reserva Tinto",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 22.58,
+          "name_found": "Quinta do Portal Grande Reserva Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-do-portal-grande-reserva-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 149.0,
+          "name_found": " 2019 Quinta da Vacaria Grande Reserva tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2019-quinta-da-vacaria-grande-reserva-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 26.95,
+          "name_found": "Vinho Branco Qta. Cardo Grande Reserva 2021 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-qta.-cardo-grande-reserva-2021-75-cl/item_64539.html?id=203&cat=254&pc=7"
+        },
+        "PortugalVineyards": {
+          "retail_price": 50.25,
+          "name_found": "Quinta Várzea da Pedra Grande Reserva Tinto 2016",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/15935-quinta-varzia-da-pedra-grand-reserve-red-2015-5600735368298.html"
+        }
+      },
+      "best_retail": 22.58,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 34.0,
+        "2.0x": 45.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "portal-reserva-tinto-2019",
+      "producer": "Quinta do Portal",
+      "name": "Reserva Tinto",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 25.63,
+          "name_found": "Covela Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/covela-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 9.95,
+          "name_found": " 2022 Quinta do Sobreiró de Cima Reserva tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2022-quinta-do-sobreiro-de-cima-reserva-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 13.95,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-qta.-cardo-reserva-75-cl/item_64530.html?id=203&cat=254&pc=11"
+        },
+        "PortugalVineyards": {
+          "retail_price": 22.25,
+          "name_found": "Quinta Várzea da Pedra Reserva Branco 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/13416-quinta-varzia-da-pedra-reserve-white-2016-5600735368489.html"
+        }
+      },
+      "best_retail": 9.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "portal-grande-reserva-branco-2022",
+      "producer": "Quinta do Portal",
+      "name": "Grande Reserva Branco",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 22.58,
+          "name_found": "Quinta do Portal Grande Reserva Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-do-portal-grande-reserva-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 149.0,
+          "name_found": " 2019 Quinta da Vacaria Grande Reserva tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2019-quinta-da-vacaria-grande-reserva-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 26.95,
+          "name_found": "Vinho Branco Qta. Cardo Grande Reserva 2021 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-qta.-cardo-grande-reserva-2021-75-cl/item_64539.html?id=203&cat=254&pc=7"
+        },
+        "PortugalVineyards": {
+          "retail_price": 50.25,
+          "name_found": "Quinta Várzea da Pedra Grande Reserva Tinto 2016",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/15935-quinta-varzia-da-pedra-grand-reserve-red-2015-5600735368298.html"
+        }
+      },
+      "best_retail": 22.58,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 34.0,
+        "2.0x": 45.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "portal-reserva-branco-2022",
+      "producer": "Quinta do Portal",
+      "name": "Reserva Branco",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 25.63,
+          "name_found": "Covela Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/covela-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 9.95,
+          "name_found": " 2022 Quinta do Sobreiró de Cima Reserva tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2022-quinta-do-sobreiro-de-cima-reserva-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 13.95,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-qta.-cardo-reserva-75-cl/item_64530.html?id=203&cat=254&pc=11"
+        },
+        "PortugalVineyards": {
+          "retail_price": 22.25,
+          "name_found": "Quinta Várzea da Pedra Reserva Branco 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/13416-quinta-varzia-da-pedra-reserve-white-2016-5600735368489.html"
+        }
+      },
+      "best_retail": 9.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "portal-moscatel-galego-branco-2024",
+      "producer": "Quinta do Portal",
+      "name": "Moscatel Galego Branco",
+      "vintage": 2024,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 13.9,
+          "name_found": "Pacheca Moscatel Galego Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/pacheca-moscatel-galego-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 13.95,
+          "name_found": " 2022 Pacheca Moscatel Galego branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2022-quinta-da-pacheca-moscatel-galego-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 19.55,
+          "name_found": "Quinta do Sobral de Santar Moscatel Galego Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/dao/24885-quinta-do-sobral-de-santar-moscatel-galego-white-2023.html"
+        }
+      },
+      "best_retail": 13.9,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 21.0,
+        "2.0x": 28.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "portal-mural-reserva-tinto-2020",
+      "producer": "Quinta do Portal",
+      "name": "Mural Reserva Tinto",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Covela Reserva Tinto",
+          "confidence": "no_match",
+          "score": 0.369,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta do Sobreiró de Cima Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.361,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.446,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 10.25,
+          "name_found": "Mural Reserva Tinto 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/27135-mural-reserve-red-2021.html"
+        }
+      },
+      "best_retail": 10.25,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 15.5,
+        "2.0x": 20.5
+      },
+      "status": "found"
+    }
+  ]
+}

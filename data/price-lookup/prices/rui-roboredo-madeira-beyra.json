@@ -1,0 +1,395 @@
+{
+  "producer": "Rui Roboredo Madeira – Beyra",
+  "generated_at": "2026-03-01T11:20:27.316489",
+  "found_count": 9,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "beyra-fonte-cal-2021",
+      "producer": "Rui Roboredo Madeira – Beyra",
+      "name": "Beyra Fonte Cal",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 10.69,
+          "name_found": "Beyra Superior Fonte Cal Branco",
+          "confidence": "high",
+          "score": 0.875,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/beyra-superior-fonte-cal-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Beyra tinto",
+          "confidence": "low",
+          "score": 0.484,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 12.49,
+          "name_found": "Vinho Branco Beyra Fonte Cal 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-beyra-fonte-cal-75-cl/item_9375.html?id=203&cat=254&pc=19"
+        },
+        "PortugalVineyards": {
+          "retail_price": 13.85,
+          "name_found": "Beyra Fonte Cal Branco 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/beiras/22819-beyra-fonte-cal-white-2021-5609851521273.html"
+        }
+      },
+      "best_retail": 10.69,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 16.5,
+        "2.0x": 21.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "beyra-gouveio-2023",
+      "producer": "Rui Roboredo Madeira – Beyra",
+      "name": "Beyra Gouveio",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 10.16,
+          "name_found": "Beyra Gouveio Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/beyra-gouveio-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Beyra tinto",
+          "confidence": "low",
+          "score": 0.679,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 12.95,
+          "name_found": "Vinho Branco Beyra Gouveio 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-beyra-gouveio-75-cl/item_62233.html?id=203&cat=254&pc=13"
+        },
+        "PortugalVineyards": {
+          "retail_price": 13.85,
+          "name_found": "Beyra Gouveio Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/beiras/22820-beyra-gouveio-white-2023-5609851523109.html"
+        }
+      },
+      "best_retail": 10.16,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 15.5,
+        "2.0x": 20.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "beyra-siria-prado-novo-2023",
+      "producer": "Rui Roboredo Madeira – Beyra",
+      "name": "Beyra Vinha do Prado Novo Síria",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 10.95,
+          "name_found": "Beyra Vinha do Prado Novo Síria Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/beyra-vinha-do-prado-novo-siria-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Beyra tinto",
+          "confidence": "no_match",
+          "score": 0.299,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Beyra 75 Cl",
+          "confidence": "no_match",
+          "score": 0.23,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 15.35,
+          "name_found": "Beyra Síria Vinha do Prado Novo Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/beiras/23387-beyra-siria-vinha-do-prado-novo-white-2023-5609851523833.html"
+        }
+      },
+      "best_retail": 10.95,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 16.5,
+        "2.0x": 22.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "beyra-moscatel-galego-2021",
+      "producer": "Rui Roboredo Madeira – Beyra",
+      "name": "Beyra Moscatel Galego Branco",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 8.46,
+          "name_found": "Beyra Moscatel Galego Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/beyra-moscatel-galego-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Beyra tinto",
+          "confidence": "low",
+          "score": 0.507,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Beyra Moscatel Biologico 75 Cl",
+          "confidence": "low",
+          "score": 0.661,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 11.15,
+          "name_found": "Beyra Moscatel Galego Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/beiras/15803-beyra-moscatel-galego-white-2019-5609851523291.html"
+        }
+      },
+      "best_retail": 8.46,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 13.0,
+        "2.0x": 17.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "beyra-reserva-branco-2023",
+      "producer": "Rui Roboredo Madeira – Beyra",
+      "name": "Beyra Reserva Branco",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 7.9,
+          "name_found": "Beyra Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/beyra-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 9.95,
+          "name_found": " 2022 Beyra Reserva tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2022-beyra-reserva-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 9.69,
+          "name_found": "Vinho Tinto Beyra Reserva 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-tinto-beyra-reserva-75-cl/item_9250.html?id=202&cat=254&pc=17"
+        },
+        "PortugalVineyards": {
+          "retail_price": 9.05,
+          "name_found": "Beyra Reserva Tinto 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/beiras/4099-beyra-reserve-red-2016-5609851521020.html"
+        }
+      },
+      "best_retail": 7.9,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 12.0,
+        "2.0x": 16.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "beyra-tinta-roriz-santa-maria-2018",
+      "producer": "Rui Roboredo Madeira – Beyra",
+      "name": "Beyra Vinha da Santa Maria Tinta Roriz",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Beyra Tinta Roriz Tinto",
+          "confidence": "low",
+          "score": 0.648,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Beyra tinto",
+          "confidence": "no_match",
+          "score": 0.296,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Beyra Tinta Roriz 2019 75 Cl",
+          "confidence": "low",
+          "score": 0.628,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 33.85,
+          "name_found": "Beyra Tinta Roriz Vinha da Santa Maria Tinto 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/beiras/15805-beyra-tinta-roriz-vinha-da-santa-maria-red-2017-5609851523321.html"
+        }
+      },
+      "best_retail": 33.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 51.0,
+        "2.0x": 68.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "beyra-grande-reserva-tinto-2018",
+      "producer": "Rui Roboredo Madeira – Beyra",
+      "name": "Beyra Grande Reserva Tinto",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 22.54,
+          "name_found": "Beyra Grande Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/beyra-grande-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 31.95,
+          "name_found": " 2021 Beyra Grande Reserva tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2021-beyra-grande-reserva-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 27.95,
+          "name_found": "Vinho Tinto Beyra Grande Reserva 2021 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-tinto-beyra-grande-reserva-2021-75-cl/item_62100.html?id=202&cat=254&pc=1"
+        },
+        "PortugalVineyards": {
+          "retail_price": 26.65,
+          "name_found": "Beyra Grande Reserva Branco 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/beiras/15544-beyra-grand-reserve-white-2019-5609851523741.html"
+        }
+      },
+      "best_retail": 22.54,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 34.0,
+        "2.0x": 45.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "beyra-jaen-2017",
+      "producer": "Rui Roboredo Madeira – Beyra",
+      "name": "Beyra Jaen",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 17.8,
+          "name_found": "Beyra Jaen Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/beyra-jaen-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Beyra tinto",
+          "confidence": "low",
+          "score": 0.695,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 21.95,
+          "name_found": "Vinho Tinto Beyra Jaen 2022 Biologico 75 Cl",
+          "confidence": "high",
+          "score": 0.848,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-tinto-beyra-jaen-2022-biologico-75-cl/item_13517.html?id=202&cat=254&pc=2"
+        },
+        "PortugalVineyards": {
+          "retail_price": 24.05,
+          "name_found": "Beyra Jaen Tinto 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/beiras/15804-beyra-jaen-red-2017-5609851523161.html"
+        }
+      },
+      "best_retail": 17.8,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 27.0,
+        "2.0x": 36.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "beyra-reserva-tinto-2020",
+      "producer": "Rui Roboredo Madeira – Beyra",
+      "name": "Beyra Reserva Tinto",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 7.9,
+          "name_found": "Beyra Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/beyra-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 9.95,
+          "name_found": " 2022 Beyra Reserva tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2022-beyra-reserva-tinto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 9.69,
+          "name_found": "Vinho Tinto Beyra Reserva 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-tinto-beyra-reserva-75-cl/item_9250.html?id=202&cat=254&pc=17"
+        },
+        "PortugalVineyards": {
+          "retail_price": 9.05,
+          "name_found": "Beyra Reserva Tinto 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/beiras/4099-beyra-reserve-red-2016-5609851521020.html"
+        }
+      },
+      "best_retail": 7.9,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 12.0,
+        "2.0x": 16.0
+      },
+      "status": "found"
+    }
+  ]
+}

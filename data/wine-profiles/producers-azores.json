@@ -1,0 +1,463 @@
+{
+  "_meta": {
+    "region": "Madeira",
+    "description": "Producer wine profiles for Madeira DOC (fortified system)",
+    "schema_version": "2.0",
+    "note": "Producer-centric format. Pairing is derived algorithmically from structure fields via pairing-rules.json. food_tags are NOT stored on wines. Cooking method and dish complements are as important as the main ingredient — see pairing_principles in pairing-rules.json.",
+    "fields_required": [
+      "id",
+      "name",
+      "doc",
+      "type",
+      "varieties",
+      "alcohol",
+      "structure",
+      "aromas",
+      "pairing"
+    ],
+    "fields_optional": [
+      "vintage",
+      "acidity_gl",
+      "ph",
+      "winemaking",
+      "notes",
+      "quinta"
+    ],
+    "fields_producer_optional": [
+      "quintas"
+    ]
+  },
+  "producers": [
+	{
+	  "producer": "Azores Wine Company",
+	  "region": "Açores – Pico",
+	  "quintas": [],
+	  "producer_notes": "Projeto focado na recuperação da viticultura histórica do Pico, com vinhas plantadas em currais de pedra vulcânica junto ao Atlântico. Estilo marcado por elevada frescura, salinidade e expressão mineral dos solos basálticos, privilegiando fermentações espontâneas e mínima intervenção.",
+	  "wines": [
+
+		{
+		  "id": "awc-branco-vulcanico-2023",
+		  "name": "Branco Vulcânico",
+		  "vintage": 2023,
+		  "doc": "IG Açores",
+		  "type": "white",
+		  "varieties": ["Arinto dos Açores", "Verdelho"],
+		  "alcohol": 12.0,
+		  "acidity_gl": null,
+		  "ph": null,
+		  "winemaking": "Prensagem de cacho inteiro; fermentação espontânea em inox (70%) e barrica (30%).",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "medium-light",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["citrinos", "ananás", "maracujá"],
+			"secondary": ["mineral", "salino"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["ostras", "bivalves", "peixe grelhado", "marisco"],
+			"notes": "Branco atlântico tenso e salino, centrado na frescura e mineralidade."
+		  }
+		},
+
+		{
+		  "id": "awc-arinto-sur-lies-3-colheitas",
+		  "name": "Arinto dos Açores Sur Lies 3 Colheitas",
+		  "vintage": null,
+		  "doc": "IG Açores",
+		  "type": "white",
+		  "varieties": ["Arinto dos Açores"],
+		  "alcohol": 12.0,
+		  "acidity_gl": null,
+		  "ph": null,
+		  "winemaking": "Segundas prensas; fermentação espontânea em inox e barrica usada; estágio prolongado sobre borras.",
+		  "structure": {
+			"acidity": 9,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["toranja", "citrinos"],
+			"secondary": ["mineral", "salino", "brioche"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["ostras", "marisco", "peixes com manteiga"],
+			"notes": "Expressão profunda do Arinto dos Açores com elevada tensão e textura de borras."
+		  }
+		},
+
+		{
+		  "id": "awc-verdelho-o-original-2024",
+		  "name": "Verdelho O Original",
+		  "vintage": 2024,
+		  "doc": "IG Açores",
+		  "type": "white",
+		  "varieties": ["Verdelho"],
+		  "alcohol": 12.0,
+		  "acidity_gl": null,
+		  "ph": null,
+		  "winemaking": "Prensagem inteira; fermentação espontânea em inox e barrica usada; estágio parcial sobre borras.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "medium-light",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["toranja", "maracujá", "goiaba"],
+			"secondary": ["mineral", "salino"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["bivalves", "saladas", "peixe grelhado"],
+			"notes": "Verdelho atlântico focado na frescura e salinidade."
+		  }
+		},
+
+		{
+		  "id": "awc-tinto-vulcanico-2021",
+		  "name": "Tinto Vulcânico",
+		  "vintage": 2021,
+		  "doc": "IG Açores",
+		  "type": "red",
+		  "varieties": ["Field blend"],
+		  "alcohol": 11.0,
+		  "acidity_gl": null,
+		  "ph": null,
+		  "winemaking": "Fermentação espontânea com 30% cacho inteiro; maceração longa sem barrica.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": 4,
+			"body": "medium-light",
+			"sweetness": "dry",
+			"finish": "medium-long"
+		  },
+		  "aromas": {
+			"primary": ["cereja", "fruta vermelha"],
+			"secondary": ["iodado", "especiarias"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["carnes grelhadas", "pratos condimentados"],
+			"notes": "Tinto leve, fresco e salino, expressão atlântica incomum."
+		  }
+		},
+
+		{
+		  "id": "awc-a-proibida-rose",
+		  "name": "A Proibida Rosé",
+		  "vintage": null,
+		  "doc": "IG Açores",
+		  "type": "rose",
+		  "varieties": ["Vinhas velhas"],
+		  "alcohol": 11.0,
+		  "acidity_gl": null,
+		  "ph": null,
+		  "winemaking": "Maceração curta e fermentação espontânea a baixa temperatura.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "light",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["morango fresco"],
+			"secondary": ["salino", "mineral"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["peixe", "marisco", "sushi", "comida asiática"],
+			"notes": "Rosé atlântico muito fresco e salino."
+		  }
+		}
+
+	  ]
+	},
+	{
+	  "producer": "Pico Wines – Cooperativa Vitivinícola da Ilha do Pico",
+	  "region": "Açores – Pico",
+	  "quintas": [],
+	  "producer_notes": "Cooperativa histórica do Pico responsável pela preservação das vinhas tradicionais em currais de pedra vulcânica. Estilo marcado por elevada frescura atlântica, salinidade e expressão mineral basáltica, com foco nas castas autóctones Arinto dos Açores, Verdelho e Terrantez do Pico, e uma linha de tintos atlânticos de baixo álcool e final salino.",
+	  "wines": [
+		{
+		  "id": "pico-arinto-garrafeira-2020",
+		  "name": "Arinto dos Açores – Garrafeira",
+		  "vintage": 2020,
+		  "doc": "IG Açores",
+		  "type": "white",
+		  "varieties": ["Arinto dos Açores"],
+		  "alcohol": 12.5,
+		  "acidity_gl": 6.38,
+		  "ph": null,
+		  "winemaking": "Após desengace, 3 dias de maceração a frio com películas; fermentação iniciada com leveduras indígenas e concluída em balseiro de carvalho francês; estágio sobre borras finas 8 meses; engarrafado em julho de 2021 e estágio em garrafa por quase 3 anos.",
+		  "notes": "Cor amarelo-esverdeado. Toranja, araçá e lima com notas de pólvora/enxofre, algas e maresia. Boca com muita frescura e mineralidade, em camadas; final longo e muito salgado.",
+		  "structure": {
+			"acidity": 9,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["toranja", "lima", "aráçá"],
+			"secondary": ["algas", "maresia", "mineral"],
+			"tertiary": ["pólvora", "enxofre"]
+		  },
+		  "pairing": {
+			"affinities": ["ostras", "marisco", "peixe grelhado", "peixe gordo"],
+			"notes": "Branco vulcânico de grande tensão e salinidade; ideal com mar e gordura (atum, peixe azul)."
+		  }
+		},
+
+		{
+		  "id": "pico-verdelho-2021",
+		  "name": "Verdelho",
+		  "vintage": 2021,
+		  "doc": "IG Açores",
+		  "type": "white",
+		  "varieties": ["Verdelho"],
+		  "alcohol": 12.5,
+		  "acidity_gl": 6.58,
+		  "ph": null,
+		  "winemaking": "Fermentação em inox (80%) e barrica usada (20%); estágio 6 meses com borras finas.",
+		  "notes": "Notas de citrinos com perfil vulcânico muito mineral. Boca elegante e refrescante com clara influência marítima.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "medium-light",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["citrinos"],
+			"secondary": ["mineral", "vulcânico"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["bivalves", "peixe grelhado", "marisco"],
+			"notes": "Perfil cítrico-mineral e muito fresco, excelente com cozinha atlântica."
+		  }
+		},
+
+		{
+		  "id": "pico-terrantez-2023",
+		  "name": "Terrantez do Pico",
+		  "vintage": 2023,
+		  "doc": "IG Açores",
+		  "type": "white",
+		  "varieties": ["Terrantez do Pico"],
+		  "alcohol": 12.0,
+		  "acidity_gl": 6.70,
+		  "ph": null,
+		  "winemaking": "Fermentação espontânea em barricas muito antigas de 650 L; uma barrica com malolática parcial; estágio nas mesmas barricas sobre borras finas 8 meses.",
+		  "notes": "Caráter mineral forte; surgem goiaba, pêssego e notas amanteigadas sobre fundo vulcânico. Boca com volume, muito mineral e profunda; final untuoso, salgado e muito persistente.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["goiaba", "pêssego"],
+			"secondary": ["amanteigado", "mineral", "vulcânico"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["peixe assado", "marisco", "aves leves"],
+			"notes": "Mais volume e textura; aguenta pratos mais ricos mantendo final salino."
+		  }
+		},
+
+		{
+		  "id": "pico-rola-pipa-2023",
+		  "name": "Rola Pipa",
+		  "vintage": 2023,
+		  "doc": "IG Açores",
+		  "type": "white",
+		  "varieties": ["Arinto dos Açores", "Verdelho", "Terrantez do Pico"],
+		  "alcohol": 12.0,
+		  "acidity_gl": 6.5,
+		  "ph": null,
+		  "winemaking": "Prensagem muito suave; fermentação a 15ºC durante três semanas; estágio 10 meses sobre borras finas.",
+		  "notes": "Elegante, com iodo, fruta fresca, algas do mar e mineralidade. Prova envolvente e vibrante; final muito longo e salgado.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "medium-light",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["fruta fresca"],
+			"secondary": ["iodo", "algas", "mineral"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["marisco", "sushi", "peixe grelhado"],
+			"notes": "Vibrante e iodado; excelente com pratos de mar e cozinha japonesa."
+		  }
+		},
+
+		{
+		  "id": "pico-gruta-das-torres-2020",
+		  "name": "Gruta das Torres",
+		  "vintage": 2020,
+		  "doc": "IG Açores",
+		  "type": "white",
+		  "varieties": ["Arinto dos Açores"],
+		  "alcohol": 12.5,
+		  "acidity_gl": 6.4,
+		  "ph": null,
+		  "winemaking": "Uvas de vinhas centenárias da Criação Velha; 3 dias de maceração a frio; fermentação com leveduras indígenas e conclusão em balseiro de carvalho francês; estágio 8 meses sobre borras finas; estágio em garrafa na Gruta das Torres (cone lávico) durante 15 meses a 17 m de profundidade.",
+		  "notes": "Hino às sensações vulcânicas: toranja, araçá e lima com pólvora/enxofre, algas e maresia. Cheio e envolvente; final longo e deliciosamente salgado.",
+		  "structure": {
+			"acidity": 9,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["toranja", "lima", "aráçá"],
+			"secondary": ["algas", "maresia", "mineral"],
+			"tertiary": ["pólvora", "enxofre"]
+		  },
+		  "pairing": {
+			"affinities": ["ostras", "marisco", "peixe grelhado", "pratos iodados"],
+			"notes": "Expressão máxima de vulcânico+salinidade; ideal com marisco cru e pratos muito marítimos."
+		  }
+		},
+
+		{
+		  "id": "pico-frei-gigante-2023",
+		  "name": "Frei Gigante",
+		  "vintage": 2023,
+		  "doc": "IG Açores",
+		  "type": "white",
+		  "varieties": ["Arinto dos Açores", "Verdelho", "Terrantez do Pico"],
+		  "alcohol": 12.0,
+		  "acidity_gl": 5.78,
+		  "ph": null,
+		  "winemaking": "Fermentação individual das variedades em inox; estágio 6 meses sobre borras com baixa oxidação e temperatura para manter caráter fresco.",
+		  "notes": "Aroma de citrinos e tropicais com fundo de algas e brisa marítima em ambiente vulcânico. Boca envolvente com acidez vibrante e final salino.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "medium-light",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["citrinos", "fruta tropical"],
+			"secondary": ["algas", "brisa marítima", "vulcânico"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["marisco", "saladas", "peixe", "aves leves"],
+			"notes": "Branco muito fresco e marítimo; versátil para refeições leves."
+		  }
+		},
+
+		{
+		  "id": "pico-terras-de-lava-syrah-2021",
+		  "name": "Terras de Lava",
+		  "vintage": 2021,
+		  "doc": "IG Açores",
+		  "type": "red",
+		  "varieties": ["Syrah"],
+		  "alcohol": 12.5,
+		  "acidity_gl": 5.4,
+		  "ph": null,
+		  "winemaking": "Fermentação em contacto com a casca para obter mais cor e tanino; estágio 12 meses em barricas de carvalho francês.",
+		  "notes": "Cor rubi. Frutos vermelhos maduros e ameixa preta; notas vulcânicas com especiarias, baunilha e algum fumado.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 5,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "medium-long"
+		  },
+		  "aromas": {
+			"primary": ["frutos vermelhos maduros", "ameixa preta"],
+			"secondary": ["especiarias", "baunilha", "fumado"],
+			"tertiary": ["vulcânico"]
+		  },
+		  "pairing": {
+			"affinities": ["carnes grelhadas", "aves assadas", "pratos condimentados"],
+			"notes": "Tinto atlântico fresco e especiado; ótimo para grelhados."
+		  }
+		},
+
+		{
+		  "id": "pico-terras-de-lava-reserva-cabernet-sauvignon-2021",
+		  "name": "Terras de Lava Reserva",
+		  "vintage": 2021,
+		  "doc": "IG Açores",
+		  "type": "red",
+		  "varieties": ["Cabernet Sauvignon"],
+		  "alcohol": 13.0,
+		  "acidity_gl": 5.16,
+		  "ph": null,
+		  "winemaking": "Fermentação em pequenas balsas de 1.000 kg; maceração 10 dias para extração suave; estágio 14 meses em barricas (70% carvalho francês, 30% carvalho português).",
+		  "notes": "Cor rubi. Cassis, pimentos maduros, mentol e funcho; notas vulcânicas, chocolate branco e ligeiro tostado. Boca elegante com boa acidez e taninos muito suaves; final longo e salgado.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 4,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["cassis"],
+			"secondary": ["pimento maduro", "mentol", "funcho", "tostado leve", "chocolate branco"],
+			"tertiary": ["vulcânico"]
+		  },
+		  "pairing": {
+			"affinities": ["carnes assadas", "pratos de forno", "queijos curados"],
+			"notes": "Tinto mais estruturado mas com tanino suave e final salino."
+		  }
+		},
+
+		{
+		  "id": "pico-terras-de-lava-merlot-2021",
+		  "name": "Terras de Lava Merlot",
+		  "vintage": 2021,
+		  "doc": "IG Açores",
+		  "type": "red",
+		  "varieties": ["Merlot"],
+		  "alcohol": 13.0,
+		  "acidity_gl": 5.0,
+		  "ph": null,
+		  "winemaking": "Fermentação em contacto com a casca com temperaturas controladas para manter aroma frutado; estágio 12 meses em barricas de carvalho francês.",
+		  "notes": "Cor rubi. Groselha e framboesa com algum vegetal e discretas notas de pimentos numa envolvência fumada. Boca elegante, com boa acidez e suave; final longo.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 3,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["groselha", "framboesa"],
+			"secondary": ["vegetal", "pimento", "fumado leve"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["aves assadas", "massas", "pratos de forno"],
+			"notes": "Merlot atlântico suave e elegante, com boa frescura."
+		  }
+		}
+	  ]
+	}	
+  ]
+}

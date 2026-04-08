@@ -1,0 +1,51 @@
+{
+  "_meta": {
+    "menu_id": "sushi-test",
+    "description": "EXPERIMENTAL dish profiles — uses soy_condiment as primary_tag (more specific than soy_based) and adds pickled tag to hosomaki for tsukemono conflict detection."
+  },
+
+  "meal_arcs": {
+    "savory_light": [1, 2]
+  },
+
+  "pairing_config": {
+    "meal_suggestion": {
+      "role_light":   ["savory_light"],
+      "role_red":     [],
+      "role_dessert": []
+    },
+    "pack_pairings": []
+  },
+
+  "dishes": [
+
+    {
+      "id":          "futomaki",
+      "meal_arc":    "savory_light",
+      "primary_tag": "soy_condiment",
+      "food_tags":   ["soy_condiment", "soy_based", "umami", "egg", "mushroom", "dashi_based", "sweet_sour", "raw", "lemon_based", "delicate", "light"],
+      "hard_filters": {
+        "type_allow":    ["white"],
+        "body_exclude":  ["full", "medium-full"],
+        "tannins_max":   3,
+        "alcohol_max":   13.5
+      },
+      "notes": "EXPERIMENTAL: primary_tag changed from soy_based to soy_condiment. Keeps soy_based in food_tags so existing aromatic-white-umami rule still fires. No pickled tag — kampyo is sweet-savory, not acidic-fermented."
+    },
+
+    {
+      "id":          "hosomaki",
+      "meal_arc":    "savory_light",
+      "primary_tag": "soy_condiment",
+      "food_tags":   ["soy_condiment", "soy_based", "umami", "raw", "pickled", "lemon_based", "fermented", "delicate", "light"],
+      "hard_filters": {
+        "type_allow":    ["white"],
+        "body_exclude":  ["full", "medium-full"],
+        "tannins_max":   3,
+        "alcohol_max":   13.5
+      },
+      "notes": "EXPERIMENTAL: primary_tag soy_condiment; pickled tag added for tsukemono (nabo em pickle). This triggers conflict-sweetness-pickled for off-dry/semi-sweet wines, penalising Lezíria Meio Seco and Soalheiro 9%."
+    }
+
+  ]
+}

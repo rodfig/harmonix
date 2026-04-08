@@ -1,0 +1,2546 @@
+{
+  "_meta": {
+    "region": "Dão",
+    "description": "Producer wine profiles for Dão DOC",
+    "schema_version": "2.0",
+    "note": "Producer-centric format. Pairing is derived algorithmically from structure fields via pairing-rules.json. food_tags are NOT stored on wines. Cooking method and dish complements are as important as the main ingredient — see pairing_principles in pairing-rules.json.",
+    "fields_required": [
+      "id",
+      "name",
+      "doc",
+      "type",
+      "varieties",
+      "alcohol",
+      "structure",
+      "aromas",
+      "pairing"
+    ],
+    "fields_optional": [
+      "vintage",
+      "acidity_gl",
+      "ph",
+      "winemaking",
+      "notes",
+      "quinta"
+    ]
+  },
+  "producers": [
+    {
+      "producer": "Quinta dos Roques",
+      "region": "Dão – Cunha Baixa",
+      "quintas": [
+        "Quinta dos Roques",
+        "Quinta das Maias"
+      ],
+      "producer_notes": "Uma das quintas de referência absoluta no Dão. Pioneiros na vinificação monovarietal no DOC — incluindo raridades como Tinto Cão, Bical e Cerceal Branco, castas quase extintas ou raramente vinificadas a solo. A Quinta das Maias é uma segunda propriedade do mesmo grupo familiar. Solos graníticos e argilosos em Cunha Baixa. Clima continental temperado pela altitude característica do Dão interior. Abordagem de mínima intervenção no engarrafamento (filtração leve por cartuchos de celulose). O campo de variedades da 'Peach Tree Vineyard' é um field blend histórico com 8+ castas plantadas juntas.",
+      "wines": [
+        {
+          "id": "roques-encruzado-2023",
+          "name": "Quinta dos Roques Encruzado",
+          "quinta": "Quinta dos Roques",
+          "vintage": 2023,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Encruzado"
+          ],
+          "alcohol": 13.7,
+          "acidity_gl": 4.96,
+          "ph": null,
+          "winemaking": "100% Encruzado. Desengace parcial, prensagem suave. Clarificação por gravidade. 50% fermentado e estagiado em barricas de carvalho francês 500L durante 7 meses com batonnage 2x por semana. 50% em inox 16-18°C. Collage leve, estabilização tartárica pelo frio, filtração leve. Engarrafado julho 2024.",
+          "notes": "Encruzado é a casta branca nobre do Dão — equivalente ao papel do Alvarinho em Monção e Melgaço. A divisão 50/50 (barrica/inox) é a abordagem clássica de Quinta dos Roques: barrica dá estrutura e complexidade, inox preserva frescura e expressão varietal. 4.96 g/L acidez tartárica (acidity 5/10) — baixo em valor absoluto mas a frescura percebida é elevada graças à metade em inox. O produtor descreve 'grande estrutura e complexidade' e 'final muito longo e persistente'.",
+          "structure": {
+            "acidity": 5,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos",
+              "tropical",
+              "resina suave"
+            ],
+            "secondary": [
+              "barrica integrada",
+              "notas de carvalho elegantes"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo",
+              "marisco",
+              "lagosta",
+              "vieiras",
+              "aves em molho cremoso",
+              "risotto",
+              "queijo de pasta mole a média cura"
+            ],
+            "notes": "Encruzado de referência do Dão — 50% barrica 500L dá volume e complexidade sem dominar. 4.96 g/L tartárica é baixo mas a frescura percebida compensa. Estrutura e corpo médio permitem acompanhar pratos com alguma untuosidade (lagosta, vieiras, aves em molho). Para contexto Nanban: corpo e textura harmonizam com tofu sedoso (Goma Doufu), pratos de umami moderado e marisco nobre."
+          }
+        },
+        {
+          "id": "roques-cerceal-branco-2023",
+          "name": "Quinta dos Roques Cerceal Branco",
+          "quinta": "Quinta dos Roques",
+          "vintage": 2023,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Cerceal Branco"
+          ],
+          "alcohol": 12.2,
+          "acidity_gl": 6.02,
+          "ph": null,
+          "winemaking": "100% Cerceal Branco. Desengace parcial, prensagem suave. Clarificação por gravidade. Fermentação em inox 16-18°C. Collage, estabilização tartárica, filtração leve. Engarrafado abril 2024.",
+          "notes": "Cerceal Branco monovarietal é extremamente raro no Dão — casta autóctone de acidez naturalmente elevada, quase sempre usada em lote. 12.2% álcool (o mais baixo desta seleção de Quinta dos Roques) + 6.02 g/L acidez tartárica = perfil delicado e muito fresco. O produtor descreve 'notas de fruta ácida', corpo leve e boa adequação para envelhecimento. pH não disponível; structural values derivados das notas de prova.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "fruta ácida",
+              "citrinos frescos"
+            ],
+            "secondary": [
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "ostras",
+              "marisco cru",
+              "sashimi",
+              "ceviche",
+              "peixe branco cozinhado simplesmente",
+              "queijo fresco"
+            ],
+            "notes": "Cerceal Branco monovarietal — raridade absoluta no Dão. 12.2% álcool + 6.02 g/L acidez tartárica + corpo leve = perfil próximo de um Vinho Verde de alta qualidade. Ideal para pratos delicados onde acidez e leveza são prioritárias. Para contexto Nanban: perfil ligeiro e ácido é excelente com pratos crus (ceviche de tofu, sashimi), preparações leves e pratos com yuzu."
+          }
+        },
+        {
+          "id": "roques-bical-2017",
+          "name": "Quinta dos Roques Bical",
+          "quinta": "Quinta dos Roques",
+          "vintage": 2017,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Bical"
+          ],
+          "alcohol": 13.8,
+          "acidity_gl": 5.23,
+          "ph": null,
+          "winemaking": "100% Bical. Desengace parcial, prensagem suave. Clarificação por gravidade. Fermentação em inox 16-18°C. Collage, estabilização tartárica, filtração leve. Engarrafado janeiro 2018. Colhido 2 semanas mais cedo que o habitual para preservar frescura e aromas florais.",
+          "notes": "Quinta dos Roques afirma ter sido o primeiro produtor de Dão a vinificar Bical como monovarietal. Casta quase sempre usada em lote. A colheita antecipada (2 semanas antes do habitual) é uma decisão consciente para preservar frescura e carácter floral. 2017 foi ano quente e seco com acidity 'astonishingly high' declarado pelo produtor apesar das condições — confirma a tendência de alta acidez natural do Bical. pH não disponível.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "alperce",
+              "pêssego",
+              "laranja"
+            ],
+            "secondary": [
+              "mineral",
+              "floral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo grelhado",
+              "marisco",
+              "aves",
+              "massas com molho de marisco",
+              "queijo de pasta mole"
+            ],
+            "notes": "Bical monovarietal — pioneiro no Dão segundo o produtor. Perfil de fruta de caroço (alperce, pêssego) diferencia-o do Encruzado (mais estruturado) e do Cerceal (mais ácido e leve). 13.8% álcool + inox = volume sem madeira. Versatilidade boa para pratos com fruta e ervas. Para contexto Nanban: notas de alperce e pêssego harmonizam com molhos agridoces e preparações com fruta."
+          }
+        },
+        {
+          "id": "roques-reserva-branco-2022",
+          "name": "Quinta dos Roques Reserva Branco",
+          "quinta": "Quinta dos Roques",
+          "vintage": 2022,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Encruzado",
+            "Cerceal Branco",
+            "Bical",
+            "Malvasia Fina",
+            "Gouveio"
+          ],
+          "alcohol": 13.8,
+          "acidity_gl": 5.19,
+          "ph": null,
+          "winemaking": "Encruzado 80% fermentado e estagiado 10 meses em barricas novas de carvalho francês com batonnage. Restantes 20% (Cerceal, Bical, Malvasia Fina, Gouveio) em inox 16-18°C. Collage leve, estabilização tartárica pelo frio, filtração leve. Engarrafado julho 2023.",
+          "notes": "O branco de Reserva da quinta — lote de 5 castas brancas do Dão. Encruzado (80%) com 10 meses em barrica nova: maior complexidade e integração de madeira que o Encruzado standard (50% barrica 500L). 2022 foi o ano mais quente desde 1931, mas os brancos mostram 'frescura notável' declarada pelo produtor. pH não disponível.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos",
+              "tropical"
+            ],
+            "secondary": [
+              "carvalho integrado",
+              "notas de madeira elegantes"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo",
+              "lagosta",
+              "vieiras",
+              "aves em molho cremoso",
+              "risotto de marisco",
+              "queijo curado médio"
+            ],
+            "notes": "Reserva Branco de 5 castas: Encruzado dominante (80%) com 10 meses barrica nova — o branco de maior complexidade e estrutura de Quinta dos Roques. Notas de carvalho integradas com cítrico e tropical. 'Bom volume e estrutura, frescura notável, final longo e persistente.' Feito para longa guarda. Para contexto Nanban: estrutura para Goma Doufu (sedoso, umami), Cataplana de tofu, pratos de marisco nobre."
+          }
+        },
+        {
+          "id": "roques-jaen-2022",
+          "name": "Quinta dos Roques Jaen",
+          "quinta": "Quinta dos Roques",
+          "vintage": 2022,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Jaen"
+          ],
+          "alcohol": 13.2,
+          "acidity_gl": 5.59,
+          "ph": null,
+          "winemaking": "100% Jaen. Desengace total. Fermentação em inox 28-30°C. Maceração de 7 dias com remontagens suaves. Estágio em inox até engarrafamento. Filtração leve. Engarrafado agosto 2023.",
+          "notes": "Jaen (Mencía) monovarietal em Dão — casta autóctone associada principalmente ao Dão e Beira Interior. O perfil inox-only com maceração curta (7 dias) resulta num tinto de perfil fresco e acessível: 'elegant, full, with well-present but very soft tannins'. Potencial de guarda 15 anos declarado pelo produtor apesar da leveza aparente. 2022 foi o ano mais quente desde 1931 — a frescura do vinho neste contexto é notável. pH não disponível.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "cassis",
+              "ameixa",
+              "amora",
+              "especiarias"
+            ],
+            "secondary": [
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves",
+              "pato",
+              "porco",
+              "cogumelos",
+              "massas com molho de tomate",
+              "queijo curado médio",
+              "enchidos"
+            ],
+            "notes": "Jaen monovarietal de Dão — inox sem madeira: máxima expressão varietal. 7 dias maceração + inox = tannins suaves, cor intensa, fruta fresca. Perfil entre tinto leve (Rufete, Bastardo) e médio (TN). Para contexto Nanban: tannins suaves e especiaria natural harmonizam com pratos de umami médio, tofu gratin, arroz misto com legumes."
+          }
+        },
+        {
+          "id": "roques-tinta-roriz-2019",
+          "name": "Quinta dos Roques Tinta Roriz",
+          "quinta": "Quinta dos Roques",
+          "vintage": 2019,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Tinta Roriz"
+          ],
+          "alcohol": 13.4,
+          "acidity_gl": 5.42,
+          "ph": null,
+          "winemaking": "100% Tinta Roriz. Desengace total. Fermentação em inox 28-30°C. Maceração 13 dias com remontagens suaves. Estágio em inox até engarrafamento. Filtração leve. Engarrafado outubro 2020.",
+          "notes": "Tinta Roriz monovarietal em inox — casta temperamental no Dão (Tempranillo ibérico). 2019 foi ano equilibrado: maturação perfeita, excelente saúde. 13 dias maceração + inox = tannins integrados sem madeira. Potencial de guarda 10-20 anos declarado. pH não disponível. Nota: ficha técnica declara 'notas de baunilha dadas pelo carvalho' nas notas de prova mas vinificação indica inox — possível contaminação cruzada com outro vinho da ficha.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "amora",
+              "ameixa",
+              "frutos negros"
+            ],
+            "secondary": [
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves",
+              "borrego",
+              "porco assado",
+              "cogumelos",
+              "queijo curado médio",
+              "enchidos",
+              "massas com molho de tomate"
+            ],
+            "notes": "Tinta Roriz monovarietal de Dão em inox: 13 dias maceração sem barrica = fruta pura, taninos integrados. 5.42 g/L acidez + 13.4% álcool = equilíbrio clássico de Tempranillo ibérico. Menos pesado que o Tinto Cão (8/10 tannins) ou Reserva (8/10): versatilidade com pratos de complexidade média. Para contexto Nanban: boa harmonização com Arroz Misto, Gratin de Tofu leve, yakitori."
+          }
+        },
+        {
+          "id": "roques-tinto-cao-2017",
+          "name": "Quinta dos Roques Tinto Cão",
+          "quinta": "Quinta dos Roques",
+          "vintage": 2017,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Tinto Cão"
+          ],
+          "alcohol": 14.3,
+          "acidity_gl": 5.91,
+          "ph": null,
+          "winemaking": "100% Tinto Cão. Desengace total. Fermentação em inox 28-30°C. Maceração de 14 dias com remontagens suaves. Estágio em barricas de carvalho francês 225L durante 14 meses. Filtração leve. Engarrafado agosto 2019.",
+          "notes": "Tinto Cão é uma das castas mais raras de Portugal — quase extinta, sobrevive maioritariamente em parcelas antigas do Douro e Dão. Monovarietal é excepcional. Quinta dos Roques é uma das únicas quintas a produzir Tinto Cão a solo em quantidade regular. 14.3% álcool + 14 meses barrica 225L + 5.91 g/L acidez tartárica = estrutura para envelhecimento excecionalmente longo ('20 anos' declarado pelo produtor). 'Wild flowers and red fruits' — perfil aromático único. pH não disponível.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "flores silvestres",
+              "frutos vermelhos",
+              "cereja"
+            ],
+            "secondary": [
+              "carvalho integrado",
+              "balsâmico"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "queijo curado envelhecido",
+              "pratos de forno ricos",
+              "javali"
+            ],
+            "notes": "Tinto Cão monovarietal — raridade absoluta, provavelmente única nesta base de dados. 14 meses 225L barrica + 14.3% álcool + taninos 8/10: vinho de guarda de longa duração ('20 anos'). 'Flores silvestres + frutos vermelhos' = perfil aromático distinto de TN (mais floral) e Alfrocheiro (mais frutado). Para pairing: estrutura de carne vermelha e caça, mas o perfil floral permite harmonização com pratos menos agressivos que TN."
+          }
+        },
+        {
+          "id": "roques-2castas-2018",
+          "name": "Quinta dos Roques 2 Castas",
+          "quinta": "Quinta dos Roques",
+          "vintage": 2018,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Alfrocheiro"
+          ],
+          "alcohol": 13.4,
+          "acidity_gl": 5.67,
+          "ph": null,
+          "winemaking": "Touriga Nacional 50% + Alfrocheiro 50%. Desengace total. Fermentação em inox 28-30°C. Maceração de 14 dias com remontagens suaves. Estágio em barricas de carvalho francês 225L durante 10 meses. Filtração leve. Engarrafado agosto 2021.",
+          "notes": "Conceito pedagógico interessante: o produtor escolheu TN+Alfrocheiro especificamente porque em 2018 estas duas castas representavam 'o melhor que a região tem para oferecer'. 2018 teve calor extremo (45°C durante 4 dias em agosto) que danificou Gouveio, Cerceal, Alfrocheiro e TN — apesar disso o '2 Castas' mostra que a seleção cuidadosa dos melhores parcelas compensa. TN dá o carácter floral, Alfrocheiro dá fruta vermelha leve. 13.4% álcool — mais moderado que o Reserva e Tinto Cão. pH não disponível.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "frutos vermelhos leves"
+            ],
+            "secondary": [
+              "carvalho elegante",
+              "balsâmico suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves",
+              "pato",
+              "borrego jovem",
+              "cogumelos nobres",
+              "queijo curado médio",
+              "pratos mediterrâneos"
+            ],
+            "notes": "TN 50% + Alfrocheiro 50% — lote que captura o floral de TN com a leveza frutada de Alfrocheiro. 10 meses 225L barrica: mais integrado que o Tinto Cão (14 meses). 13.4% álcool + tannins 7/10 = equilíbrio entre estrutura e elegância. Para contexto Nanban: floral + fruta vermelha + acidez moderada harmonizam com Cataplana de tofu e ameijoas, pratos de umami elevado com molho claro."
+          }
+        },
+        {
+          "id": "roques-reserva-tinto-2021",
+          "name": "Quinta dos Roques Reserva Tinto",
+          "quinta": "Quinta dos Roques",
+          "vintage": 2021,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Jaen",
+            "Alfrocheiro",
+            "Tinta Roriz",
+            "Tinto Cão",
+            "Rufete"
+          ],
+          "alcohol": 14.8,
+          "acidity_gl": 5.69,
+          "ph": null,
+          "winemaking": "Field blend de 8 castas da 'Peach Tree Vineyard' (vinha única): TN 45%, Jaen 15%, Alfrocheiro 15%, Tinta Roriz 10%, Tinto Cão 3%, Rufete 2%, outras 10%. Desengace total. Fermentação em inox 28-30°C. Maceração de 11 dias com remontagens suaves. Estágio em barricas de carvalho francês 225L durante 10 meses. Filtração leve. Engarrafado julho 2024.",
+          "notes": "Reserva como field blend de vinha única (Peach Tree Vineyard) — todas as castas plantadas juntas e colhidas em conjunto. Esta é a abordagem histórica do Dão antes da especialização monovarietal. 14.8% álcool (o mais elevado da seleção) com 'astonishing freshness, less alcohol than usual and very smooth tannins' declarado para a vindima 2021. pH não disponível.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "groselha negra silvestre",
+              "folha de pinheiro"
+            ],
+            "secondary": [
+              "baunilha",
+              "chocolate",
+              "barrica integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "queijo curado envelhecido",
+              "enchidos ibéricos",
+              "pratos de forno ricos"
+            ],
+            "notes": "Reserva field blend — o vinho que melhor representa o terroir completo da Quinta dos Roques. 8 castas em co-plantação: complexidade que nenhum lote em adega consegue replicar. 14.8% álcool + 10 meses 225L + taninos 8/10: estrutura de grande guarda. 'Wild blackcurrants and pine leaves' — marcador aromático característico de Dão continental. Para contexto Nanban: estrutura de carne vermelha e caça, possivelmente Gratin de Tofu enriquecido."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Magnum – Carlos Lucas Vinhos",
+      "region": "Dão – Carregal do Sal",
+      "quintas": [
+        "Quinta do Ribeiro Santo"
+      ],
+      "producer_notes": "Carlos Lucas é um dos nomes históricos da enologia do Dão, com carreira que remonta ao uso tradicional de depósitos de cimento — um dos quais, de 1939, ainda é utilizado ativamente. Opera a partir da Quinta do Ribeiro Santo, Oliveira do Conde, Carregal do Sal. Solos graníticos com grandes afloramentos rochosos, 400-600m de altitude, influência dos rios Dão e Mondego. Filosofia marcada por experimentação técnica: fermentação com leveduras indígenas, uso de borras cruzadas entre vindimas, engaço total em alguns tintos, cimento como alternativa à barrica. A etiqueta 'Bastardo' usa Rabo-de-Ovelha — uma casta branca autóctone rara no Dão, quase ausente de outras produções.",
+      "wines": [
+        {
+          "id": "magnum-vsm-branco-2024",
+          "name": "Magnum Vinha de Santa Maria Branco",
+          "quinta": "Quinta do Ribeiro Santo",
+          "vintage": 2024,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Encruzado"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.8,
+          "ph": 3.3,
+          "winemaking": "100% Encruzado, vinha única. Desengace total, prensagem. Clarificação e decantação a baixa temperatura 24h. Fermentação em inox ~15°C, 20 dias, leveduras indígenas. Sem estágio em barrica.",
+          "notes": "Encruzado inox-only de vinha única — expressão varietal pura sem madeira. 6.8 g/L + pH 3.3 = acidez mais elevada que o Encruzado de Quinta dos Roques (4.96 g/L). Linha de entrada Magnum, concebida para consumo jovem com potencial 5-7 anos. 'Green peach and white flowers' — perfil fresco e direto da casta.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "pêssego verde",
+              "flores brancas",
+              "citrinos"
+            ],
+            "secondary": [
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "peixe branco grelhado",
+              "sushi",
+              "sashimi",
+              "queijo fresco",
+              "saladas frescas"
+            ],
+            "notes": "Encruzado inox sem madeira: acidez 8/10 (6.8 g/L, pH 3.3) + corpo leve = perfil de frescura máxima. Comparação direta com roques-encruzado-2023 (4.96 g/L, 50% barrica): muito mais ácido e leve. Para contexto Nanban: ideal para pratos delicados e crus — ceviche de tofu, sopa clara de Yuba, pratos com yuzu."
+          }
+        },
+        {
+          "id": "magnum-rs-branco-2019",
+          "name": "Magnum Ribeiro Santo Branco",
+          "quinta": "Quinta do Ribeiro Santo",
+          "vintage": 2019,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Encruzado"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 6.6,
+          "ph": 3.2,
+          "winemaking": "100% Encruzado, vinha velha ~40 anos. Fermentação do mosto de 2019 sobre borras selecionadas da vindima de 2018/2019 (borras cruzadas). Fermentação terminada em barricas novas de carvalho francês 500L. Batonnage 6 meses. 6 meses estágio em garrafa.",
+          "notes": "Técnica de borras cruzadas entre vindimas (2018+2019) é extremamente incomum em Portugal — resulta em complexidade e textura que um único ano de borras não consegue. pH 3.2 = segunda acidez percebida mais alta desta seleção de Magnum. 'Vegetal e austero no nariz' + 'volume impressionante e amanteigado no palato' — tensão entre frescura e riqueza. Potencial de guarda 12-15 anos declarado.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta branca",
+              "pedra molhada"
+            ],
+            "secondary": [
+              "vegetal austero",
+              "tosta de madeira",
+              "amanteigado"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "lagosta",
+              "lavagante",
+              "peixe gordo assado",
+              "aves em molho rico",
+              "risotto de marisco",
+              "queijo curado médio"
+            ],
+            "notes": "Encruzado de 40 anos com borras cruzadas + 500L nova barrica: o Encruzado mais estruturado e complexo desta base de dados. pH 3.2 preserva frescura apesar da riqueza de borras e madeira. 'Volume impressionante' + 'amanteigado' = versatilidade para pratos untuosos. Para contexto Nanban: estrutura suficiente para Gratin de Tofu, Cataplana e pratos de umami elevado."
+          }
+        },
+        {
+          "id": "magnum-rs-rabo-de-ovelha-2022",
+          "name": "Magnum Ribeiro Santo Rabo-de-Ovelha",
+          "quinta": "Quinta do Ribeiro Santo",
+          "vintage": 2022,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Rabo-de-Ovelha"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 7.0,
+          "ph": 3.0,
+          "winemaking": "100% Rabo-de-Ovelha, vinha velha +40 anos. Desengace total, prensagem. Decantação a baixa temperatura. Fermentação em inox com leveduras indígenas. Sem estágio em barrica.",
+          "notes": "Rabo-de-Ovelha monovarietal — única referência desta casta em toda a base de dados. Casta branca autóctone do Dão e Trás-os-Montes, raramente vinificada a solo. pH 3.0 = terceiro valor mais baixo de toda a base de dados (partilhado com o Aphros Ten e Valle Pradinhos GR). 7.0 g/L acidez + pH 3.0 + inox = tensão acídica máxima. 'Mineral e vibrant' com 'citrinos e pedra molhada'. O nome comercial do produtor é 'Ribeiro Santo Bastardo' — nome de fantasia, não indicação de casta.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos",
+              "pedra molhada"
+            ],
+            "secondary": [
+              "mineral",
+              "floral elegante"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "ostras",
+              "marisco cru",
+              "sashimi",
+              "ceviche",
+              "peixe branco delicado",
+              "queijo fresco"
+            ],
+            "notes": "Rabo-de-Ovelha monovarietal — único na base de dados. pH 3.0 + 7.0 g/L + inox + corpo leve: perfil de acidez extrema próximo de Vinho Verde de alta qualidade ou Chablis Premier Cru. Potencial de guarda 3-10 anos. Para contexto Nanban: acidez máxima + mineralidade = harmonização perfeita com preparações cruas, tofu fresco, pratos com yuzu e marisco nobre."
+          }
+        },
+        {
+          "id": "magnum-rs-cimento-2023",
+          "name": "Magnum Ribeiro Santo Cimento",
+          "quinta": "Quinta do Ribeiro Santo",
+          "vintage": 2023,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Cerceal Branco",
+            "Encruzado",
+            "Malvasia Fina"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 7.1,
+          "ph": 3.3,
+          "winemaking": "Lote de Cerceal Branco + Encruzado + Malvasia Fina. Filosofia de baixa intervenção. Fermentação com leveduras indígenas em inox com temperatura controlada. Estágio em depósito de cimento de 1939, 8 meses, com batonnage.",
+          "notes": "O único vinho desta base de dados estagiado em cimento histórico (depósito de 1939 da própria adega). Cimento confere micro-oxidação controlada + untuosidade sem as notas de barrica. 7.1 g/L + pH 3.3 = acidez muito elevada apesar da cor dourada e notas tropicais. Lote de 3 castas brancas do Dão (Cerceal + Encruzado + Malvasia Fina) — blend que não existe noutros produtores desta base de dados. 'Vinho de carácter forte' declarado pelo produtor.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "tropical",
+              "fruta de caroço",
+              "flor de laranjeira"
+            ],
+            "secondary": [
+              "untuoso",
+              "micro-oxidativo suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo assado",
+              "aves",
+              "pratos com especiarias suaves",
+              "queijo de pasta semi-mole",
+              "mariscos ricos"
+            ],
+            "notes": "Cimento 1939 + 3 castas brancas + 7.1 g/L acidez: vinho único pela técnica e pelo perfil aromático. A micro-oxidação do cimento cria complexidade sem peso de barrica. Notas tropicais + floral + acidez elevada = versatilidade gastronómica invulgar. Para contexto Nanban: perfil aromático mais exuberante que os outros brancos — harmoniza com pratos de sabores mais pronunciados como Arroz Misto ou Cataplana."
+          }
+        },
+        {
+          "id": "magnum-rs-tinto-2018",
+          "name": "Magnum Ribeiro Santo Tinto",
+          "quinta": "Quinta do Ribeiro Santo",
+          "vintage": 2018,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Alfrocheiro",
+            "Tinta Roriz",
+            "Tinto Cão"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 5.7,
+          "ph": 3.6,
+          "winemaking": "Vinha velha 40 anos, lote TN+Alfrocheiro+TR+Tinto Cão. Vinificação com 100% de engaço (cacho inteiro). Maceração interrompida a meio do processo para evitar adstringência dos taninos. 12 meses em barricas de carvalho francês 300L. 8 meses em garrafa.",
+          "notes": "Técnica dupla: 100% engaço (cacho inteiro) + interrupção da maceração. O engaço eleva acidez e confere taninos vegetais/especiados; a interrupção da maceração controla adstringência — equilíbrio delicado. 'Cor límpida e aberta' + 'muito fresco, marcadamente mineral': o engaço total em Dão é incomum e produz um perfil muito diferente dos tintos convencionais. 300L barrica (vs 225L standard) = extração de madeira mais suave.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos silvestres",
+              "frutos vermelhos"
+            ],
+            "secondary": [
+              "mineral",
+              "especiarias",
+              "redução leve"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves assadas",
+              "pato",
+              "cogumelos",
+              "queijo curado médio",
+              "pratos mediterrâneos",
+              "enchidos"
+            ],
+            "notes": "100% engaço + interrupção de maceração: tinto de perfil fresco e mineral pouco comum no Dão. Vinha de 40 anos + 4 castas = complexidade, mas a técnica mantém leveza. pH 3.6 com 5.7 g/L = acidez média, elevada para um tinto. Para contexto Nanban: frescura e mineralidade harmonizam com Tofu Nanban-zuke (pickles, especiarias), pratos de umami médio com molhos leves."
+          }
+        },
+        {
+          "id": "magnum-familia-2014",
+          "name": "Carlos Lucas Família",
+          "quinta": "Quinta do Ribeiro Santo",
+          "vintage": 2014,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Alfrocheiro",
+            "Tinta Roriz",
+            "Tinto Cão"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.5,
+          "ph": 3.6,
+          "winemaking": "Conceito familiar: cada membro da família escolheu um barril favorito para a mistura final. Vindima manual, desengace total. Fermentação em barricas abertas a baixa temperatura. 18 meses em barricas novas de carvalho francês 225L. 12 meses em garrafa.",
+          "notes": "Cuvée de topo da Carlos Lucas. Conceito de barris escolhidos individualmente por membros da família — seleção ultra-rigorosa lote a lote. Fermentação em barricas abertas (incomum) + 18 meses 225L nova barrica + 12 meses garrafa = 30 meses total de maturação. 2014 é uma vindima com condições equilibradas no Dão. Aromáticos terciários já presentes: trufa, cacau, especiarias. 'Poderoso, envolvente e ao mesmo tempo delicado' — equilíbrio raro.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta"
+            ],
+            "secondary": [
+              "especiarias",
+              "tostados"
+            ],
+            "tertiary": [
+              "trufa",
+              "cacau"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "queijo curado envelhecido",
+              "enchidos ibéricos",
+              "pratos de forno ricos"
+            ],
+            "notes": "Cuvée de topo com 30 meses de maturação total: aromáticos terciários (trufa, cacau) já desenvolvidos no 2014. 14% álcool + taninos 8/10 + 18 meses nova barrica 225L: estrutura de guarda longa (10-20 anos declarado). Para contexto Nanban: o tinto mais estruturado da seleção de Magnum — Gratin de Tofu rico, pratos de caça, harmonizações de alta gastronomia."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta de Lemos",
+      "region": "Dão",
+      "producer_notes": "Quinta de referência no Dão, focada em monovarietais de solos graníticos. Todos os tintos fazem fermentação maloláctica e estágio em madeira. Destaca-se pela amplitude de castas vinificadas individualmente — TR, Jaen, Alfrocheiro e Touriga Nacional — bem como por cuvées de autor Três Armandos e Lucita.",
+      "wines": [
+        {
+          "id": "lemos-tinta-roriz-2015",
+          "name": "Quinta de Lemos Tinta Roriz",
+          "vintage": 2015,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Tinta Roriz"
+          ],
+          "alcohol": 14.4,
+          "acidity_gl": 6.42,
+          "ph": 3.71,
+          "winemaking": "Maloláctica + estágio em madeira",
+          "structure": {
+            "acidity": 7,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta madura",
+              "ameixa desidratada",
+              "compota"
+            ],
+            "secondary": [
+              "especiarias"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "enchidos",
+              "queijo curado"
+            ],
+            "notes": "Denso e volumoso, taninos presentes de corpo robusto. 14.4% álcool + 6.42 g/L: estrutura para carnes de carácter."
+          }
+        },
+        {
+          "id": "lemos-jaen-2007",
+          "name": "Quinta de Lemos Jaen",
+          "vintage": 2007,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Jaen"
+          ],
+          "alcohol": 14.6,
+          "acidity_gl": 5.9,
+          "ph": 3.7,
+          "winemaking": "Maloláctica + estágio em madeira",
+          "structure": {
+            "acidity": 6,
+            "tannins": 5,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha",
+              "cereja",
+              "morango"
+            ],
+            "secondary": [
+              "especiarias",
+              "tostado"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves",
+              "porco",
+              "vitela",
+              "queijo semi-curado"
+            ],
+            "notes": "Taninos de grande delicadeza, estilo moderno e versátil. Jaen no Dão: frescura e elegância, menos estrutura que Touriga — bom com pratos de média intensidade."
+          }
+        },
+        {
+          "id": "lemos-alfrocheiro-2008",
+          "name": "Quinta de Lemos Alfrocheiro",
+          "vintage": 2008,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Alfrocheiro"
+          ],
+          "alcohol": 14.6,
+          "acidity_gl": 5.8,
+          "ph": 3.67,
+          "winemaking": "Maloláctica + estágio em madeira",
+          "structure": {
+            "acidity": 6,
+            "tannins": 5,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos",
+              "fruta preta"
+            ],
+            "secondary": [
+              "especiarias"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves",
+              "porco",
+              "cogumelos",
+              "queijo semi-curado"
+            ],
+            "notes": "Taninos macios, cheios e delicados em bom equilíbrio com a acidez. Alfrocheiro do Dão: característica floral e elegante."
+          }
+        },
+        {
+          "id": "lemos-touriga-bosque-2015",
+          "name": "Quinta de Lemos Touriga do Bosque",
+          "vintage": 2015,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 14.1,
+          "acidity_gl": 6.55,
+          "ph": 3.72,
+          "winemaking": "Maloláctica + estágio em madeira",
+          "structure": {
+            "acidity": 7,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "violeta",
+              "bergamota",
+              "fruta madura",
+              "floral"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "queijo curado envelhecido"
+            ],
+            "notes": "Nariz floral intenso com bergamota e violeta de elevada pureza. Boca cheia e vigorosa. TN no Dão: mais elegante que Douro, ótimo com caça e carnes vermelhas."
+          }
+        },
+        {
+          "id": "lemos-lucita-2017",
+          "name": "Quinta de Lemos Lucita",
+          "vintage": 2017,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Tinta Roriz",
+            "Jaen",
+            "Alfrocheiro"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 6.25,
+          "ph": 3.59,
+          "winemaking": "Maloláctica + estágio em madeira",
+          "structure": {
+            "acidity": 7,
+            "tannins": 5,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha",
+              "bagas silvestres frescas"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves grelhadas",
+              "porco",
+              "cogumelos",
+              "queijo semi-curado"
+            ],
+            "notes": "Estilo jovem e descomplexado: fruta vermelha fresca, leve e apelativo. Blend de 4 castas do Dão em perfil acessível — ótimo para pratos de média intensidade."
+          }
+        },
+        {
+          "id": "lemos-dona-paulette-2012",
+          "name": "Quinta de Lemos Dona Paulette",
+          "vintage": 2012,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Encruzado"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.54,
+          "ph": 3.33,
+          "winemaking": "Estágio em madeira",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "tamarilho",
+              "cítrico"
+            ],
+            "secondary": [
+              "avelã",
+              "eucalipto",
+              "menta",
+              "resinoso"
+            ],
+            "tertiary": [
+              "mineralidade"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "peixe assado",
+              "bacalhau",
+              "frango grelhado",
+              "queijo de pasta mole"
+            ],
+            "notes": "Encruzado com mineralidade e madeira integrada. Vegetal resinoso com eucalipto e avelã — complexidade de 2012. Acidez 6.54 g/L: versátil com peixe e aves."
+          }
+        },
+        {
+          "id": "lemos-nelita-2016",
+          "name": "Quinta de Lemos Nelita",
+          "vintage": 2016,
+          "doc": "Dão DOC",
+          "type": "rosé",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 12.8,
+          "acidity_gl": 4.95,
+          "ph": 3.48,
+          "winemaking": "Estágio em madeira",
+          "structure": {
+            "acidity": 5,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha",
+              "meloso"
+            ],
+            "secondary": [
+              "madeira integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "atum",
+              "marisco",
+              "porco",
+              "queijo semi-curado"
+            ],
+            "notes": "Rosé TN salmão gastronómico, denso e estruturado. Madeira integrada acrescenta volume — estilo oposto ao rosé leve. Para pratos com alguma gordura ou textura."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Julia Kemper",
+      "region": "Dão – Mangualde",
+      "quinta": "Quinta do Cruzeiro",
+      "producer_notes": "Vinhas em modo biológico na Quinta do Cruzeiro, Mangualde. 400-700m de altitude, solos franco-arenosos de origem granítica, sem rega, vinhas com mais de 20 anos. Linha 2CV é entrada de gama em inox; Julia Kemper é o core biológico; Reserva e Curiosity são topo de gama com barrica; Elpenor é linha de experiências raras (Branco de Tintas e Lagareta). Tintos pisados em lagares de granito tradicionais. Trabalhos em ambiente redutor para minimizar sulfitos.",
+      "wines": [
+        {
+          "id": "kemper-2cv-branco-2023",
+          "name": "2 CV Julia Kemper Branco",
+          "vintage": 2023,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Malvasia Fina",
+            "Encruzado",
+            "Bical"
+          ],
+          "alcohol": 12.3,
+          "acidity_gl": 5.36,
+          "ph": 3.34,
+          "winemaking": "Fermentação parcialmente espontânea em inox, estabilização natural",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutos tropicais",
+              "ananás",
+              "manga",
+              "cítrico"
+            ],
+            "secondary": [
+              "pedra molhada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe leve",
+              "mariscos",
+              "sushi",
+              "tempura",
+              "queijo fresco"
+            ],
+            "notes": "Entrada de gama biológica, suave e elegante. Mineralidade e acidez equilibrada com frutos tropicais: excelente para mariscos e culinária japonesa leve."
+          }
+        },
+        {
+          "id": "kemper-branco-2022",
+          "name": "Julia Kemper Branco",
+          "vintage": 2022,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Malvasia Fina",
+            "Encruzado"
+          ],
+          "alcohol": 13.4,
+          "acidity_gl": 5.48,
+          "ph": 3.31,
+          "winemaking": "Prensagem cachos inteiros, fermentação espontânea em inox, 12mo inox",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "flor de laranjeira",
+              "lima",
+              "manga"
+            ],
+            "secondary": [
+              "mineralidade"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "bacalhau",
+              "mariscos",
+              "sushi",
+              "queijo de pasta mole"
+            ],
+            "notes": "Acidez firme, muita mineralidade e frescura com flor de laranjeira. Biológico sem sulfitos na produção: expressão pura da uva."
+          }
+        },
+        {
+          "id": "kemper-rose-2022",
+          "name": "Julia Kemper Rosé",
+          "vintage": 2022,
+          "doc": "Dão DOC",
+          "type": "rosé",
+          "varieties": [
+            "Jaen",
+            "Touriga Nacional"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 5.48,
+          "ph": 3.3,
+          "winemaking": "Prensagem suave cachos inteiros, fermentação espontânea em inox, 12mo inox",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha fresca",
+              "fruta exótica",
+              "floral"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "sushi",
+              "marisco",
+              "sashimi leve",
+              "queijo fresco"
+            ],
+            "notes": "Fresco, persistente e gastronómico. Rosa muito claro, fruta vermelha delicada: versátil para peixe e culinária japonesa leve."
+          }
+        },
+        {
+          "id": "kemper-tinto-2019",
+          "name": "Julia Kemper Tinto",
+          "vintage": 2019,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Tinta Roriz",
+            "Alfrocheiro",
+            "Jaen"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.77,
+          "ph": 3.67,
+          "winemaking": "Pé em lagar de granito, maceração pré-fermentativa 3-5 dias, inox 1yr+, garrafa 3yr",
+          "structure": {
+            "acidity": 6,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha e azul",
+              "bosque"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves grelhadas",
+              "porco",
+              "vitela",
+              "cogumelos",
+              "queijo semi-curado"
+            ],
+            "notes": "Volumoso, estrutura aveludada, final longo e fresco. Lagar de granito + inox sem madeira: expressão biológica autêntica. Blend de 4 castas do Dão."
+          }
+        },
+        {
+          "id": "kemper-reserva-branco-2021",
+          "name": "Julia Kemper Reserva Branco",
+          "vintage": 2021,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Encruzado"
+          ],
+          "alcohol": 13.8,
+          "acidity_gl": 6.03,
+          "ph": 3.28,
+          "winemaking": "Fermentação espontânea em barricas usadas CF, 15mo barricas usadas CF",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "laranja madura",
+              "fruta exótica"
+            ],
+            "secondary": [
+              "tostado"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe assado",
+              "bacalhau",
+              "frango grelhado",
+              "cogumelos",
+              "queijo de pasta mole"
+            ],
+            "notes": "Encruzado monovarietal biológico, 15mo em barricas usadas: fresco, encorpado, mineral com acidez crocante. Para pratos com alguma complexidade."
+          }
+        },
+        {
+          "id": "kemper-reserva-tinto-2017",
+          "name": "Julia Kemper Reserva Tinto",
+          "vintage": 2017,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Tinta Roriz",
+            "Alfrocheiro",
+            "Jaen"
+          ],
+          "alcohol": 14.3,
+          "acidity_gl": 5.82,
+          "ph": 3.78,
+          "winemaking": "Pé em lagar de granito, maceração 3-5 dias, 24mo barricas CF novas+usadas, 3yr+ garrafa",
+          "structure": {
+            "acidity": 6,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha e preta madura",
+              "bosque"
+            ],
+            "secondary": [
+              "especiarias"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "queijo curado envelhecido",
+              "enchidos"
+            ],
+            "notes": "Longo e estruturado, com extrema elegância. 24mo nova+usada + 3yr garrafa: estrutura de guarda. Topo de gama tinto Julia Kemper."
+          }
+        },
+        {
+          "id": "kemper-reserva-especial-branco-2017",
+          "name": "Julia Kemper Reserva Especial Branco",
+          "vintage": 2017,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Encruzado"
+          ],
+          "alcohol": 12.9,
+          "acidity_gl": 5.71,
+          "ph": 3.24,
+          "winemaking": "Fermentação espontânea em inox e barricas usadas CF, 12mo barricas novas+usadas CF",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "cítrico",
+              "fruta exótica"
+            ],
+            "secondary": [
+              "folha seca",
+              "pólvora",
+              "pedra molhada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe assado",
+              "bacalhau",
+              "risotto",
+              "queijo de pasta mole"
+            ],
+            "notes": "Pólvora e pedra molhada no início, evolui para fruta exótica elegante com arejamento. Encruzado biológico 2017: mineralidade e frescura com acidez muito bem equilibrada."
+          }
+        },
+        {
+          "id": "kemper-curiosity-branco-2016",
+          "name": "Julia Kemper Curiosity Branco",
+          "vintage": 2016,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Encruzado",
+            "Malvasia Fina"
+          ],
+          "alcohol": 13.4,
+          "acidity_gl": 6.7,
+          "ph": 3.08,
+          "winemaking": "Fermentação espontânea em inox e barricas novas CF, bâttonage até 80 dias, 12mo barricas novas CF",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "limão",
+              "tília",
+              "ananás",
+              "laranja cristalizada"
+            ],
+            "secondary": [
+              "fruta exótica"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe de mar gordo",
+              "atum",
+              "sashimi",
+              "bacalhau",
+              "frutos do mar"
+            ],
+            "notes": "pH 3.08 = acidez excecional (8/10). Fresco, mineral, acidez crocante — o mais ácido da gama Julia Kemper. 12mo barrica nova com bâttonage 80 dias: Curiosity justifica o nome."
+          }
+        },
+        {
+          "id": "kemper-elpenor-branco-tintas-2020",
+          "name": "Elpenor Branco de Tintas",
+          "vintage": 2020,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Tinta Roriz",
+            "Jaen"
+          ],
+          "alcohol": 12.7,
+          "acidity_gl": 5.65,
+          "ph": 3.34,
+          "winemaking": "Prensagem suave cachos inteiros, fermentação espontânea lenta 40 dias em inox, estágio sobre borras finas, 2yr+ garrafa",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta de polpa branca",
+              "violeta",
+              "chá"
+            ],
+            "secondary": [
+              "mineralidade"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "sashimi",
+              "aves",
+              "tofu grelhado",
+              "cogumelos"
+            ],
+            "notes": "Branco de castas tintas (TR60+Jaen40): violeta e chá no nariz, volume e mineralidade invulgares. Fermentação 40 dias — carácter único para harmonizações alternativas."
+          }
+        },
+        {
+          "id": "kemper-elpenor-lagareta-2023",
+          "name": "Elpenor Lagareta",
+          "vintage": 2023,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Alfrocheiro",
+            "Touriga Nacional"
+          ],
+          "alcohol": 12.3,
+          "acidity_gl": 5.84,
+          "ph": 3.73,
+          "winemaking": "Pé em lagar de granito, maceração 3-5 dias, inox alguns meses, 1yr garrafa",
+          "structure": {
+            "acidity": 6,
+            "tannins": 4,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "cereja",
+              "groselha",
+              "framboesa",
+              "violeta"
+            ],
+            "secondary": [
+              "terroso"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves grelhadas",
+              "porco",
+              "salmão",
+              "cogumelos",
+              "queijo fresco"
+            ],
+            "notes": "Elegante e mineral: acidez refrescante, taninos macios, final fresco. Lagar de granito + sem madeira: expressão pura de Alf70+TN30 jovem. Versátil com peixe encorpado ou carnes brancas."
+          }
+        },
+        {
+          "id": "kemper-jaen-branco-2024",
+          "name": "Julia Kemper Jaen Branco",
+          "vintage": 2024,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Jaen"
+          ],
+          "alcohol": 12.7,
+          "acidity_gl": 5.42,
+          "ph": 3.29,
+          "winemaking": "Prensagem suave cachos inteiros, fermentação espontânea em inox, 6mo inox",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "pêra",
+              "pêssego",
+              "melão",
+              "rosa",
+              "pedra molhada"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "sushi",
+              "peixe leve",
+              "tofu",
+              "mariscos",
+              "saladas"
+            ],
+            "notes": "Jaen vinificado a branco: raridade do Dão. Muito mineral, acidez firme, frescura e suavidade notáveis. Para culinária japonesa delicada e pratos de peixe sem molhos intensos."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Casa da Passarela",
+      "region": "Dão – Serra da Estrela",
+      "producer_notes": "DOC Dão, sub-região Serra da Estrela. Clima de montanha, solos graníticos pobres. Conhecido pela série 'Fugitivo' de monovarietais de castas raras ou quase extintas do Dão — Tinta Amarela, Bastardo, Tinta Carvalha (Rufete) e Uva-cão. Fermentação em lagar de granito para a maioria dos tintos. Villa Oliveira é o topo de gama TN em cimento. O Enólogo e Villa Oliveira são os vinhos de referência fora da série Fugitivo.",
+      "wines": [
+        {
+          "id": "passarela-enologo-2022",
+          "name": "Casa da Passarela O Enólogo",
+          "vintage": 2022,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Encruzado"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.28,
+          "ph": 3.19,
+          "winemaking": "25% barrica nova 225L + 75% cuba de cimento",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "cítrico",
+              "tangerina",
+              "limonete"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe assado",
+              "bacalhau",
+              "frango grelhado",
+              "mariscos",
+              "queijo fresco"
+            ],
+            "notes": "Volumoso com acidez vibrante, longo e persistente. 25% nova barrica + 75% cimento: preserva frescura com alguma textura. Acidez 6.28 g/L + pH 3.19: perfil de guarda."
+          }
+        },
+        {
+          "id": "passarela-descoberta-tinto-2022",
+          "name": "Casa da Passarela A Descoberta",
+          "vintage": 2022,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Alfrocheiro",
+            "Jaen"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 5.83,
+          "ph": 3.56,
+          "winemaking": "Cuba + lagar, 8mo barrica CF usada 600L, 4mo garrafa",
+          "structure": {
+            "acidity": 6,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos maduros"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves grelhadas",
+              "porco",
+              "vitela",
+              "cogumelos",
+              "queijo semi-curado"
+            ],
+            "notes": "Equilibrado de grande elegância. TN+Alf+Jaen em 8mo barrica 600L: integração suave. Vinho de entrada para a gama — fruta vermelha madura com elegância."
+          }
+        },
+        {
+          "id": "passarela-fugitivo-tinta-amarela-2018",
+          "name": "Casa da Passarela O Fugitivo Tinta Amarela",
+          "vintage": 2018,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Tinta Amarela"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 6.72,
+          "ph": 3.26,
+          "winemaking": "Fermentação espontânea em lagar de granito com engaço parcial, 24mo barricas 500L novas+usadas",
+          "structure": {
+            "acidity": 7,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "vegetal",
+              "pimenta preta"
+            ],
+            "secondary": [
+              "especiarias"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "enchidos"
+            ],
+            "notes": "Tinta Amarela (Trincadeira) a solo: vegetal e pimenta preta em perfeito equilíbrio. Lagar + 24mo barrica 500L. Acidez 6.72 g/L: grande potencial de evolução em garrafa."
+          }
+        },
+        {
+          "id": "passarela-fugitivo-bastardo-2023",
+          "name": "Casa da Passarela O Fugitivo Bastardo",
+          "vintage": 2023,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Bastardo"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.83,
+          "ph": 3.61,
+          "winemaking": "Lagar de granito, 6mo cuba de cimento",
+          "structure": {
+            "acidity": 6,
+            "tannins": 4,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha",
+              "vegetal"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves grelhadas",
+              "porco",
+              "salmão",
+              "cogumelos",
+              "queijo semi-curado"
+            ],
+            "notes": "Bastardo (Trousseau) a solo: boca elegante, delicada e complexa. Lagar + 6mo cimento sem madeira: fruta e terroir puros. Casta rara do Dão — estrutura leve, final surpreendentemente longo."
+          }
+        },
+        {
+          "id": "passarela-fugitivo-tinta-carvalha-2021",
+          "name": "Casa da Passarela O Fugitivo Tinta Carvalha",
+          "vintage": 2021,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Tinta Carvalha"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.79,
+          "ph": 3.49,
+          "winemaking": "Lagar de granito, 2 invernos em barricas usadas (~18mo)",
+          "structure": {
+            "acidity": 6,
+            "tannins": 4,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha",
+              "vegetal"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves grelhadas",
+              "porco",
+              "cogumelos",
+              "queijo semi-curado",
+              "salmão"
+            ],
+            "notes": "Tinta Carvalha (Rufete) a solo: boca elegante e delicada. Lagar + 2 invernos barricas usadas. Casta quase extinta do Dão — leveza e elegância com final longo."
+          }
+        },
+        {
+          "id": "passarela-villa-oliveira-2019",
+          "name": "Casa da Passarela Villa Oliveira",
+          "vintage": 2019,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 6.52,
+          "ph": 3.41,
+          "winemaking": "Cuba de cimento com maceração pré e pós-fermentativa, 2 invernos barricas CF 500L",
+          "structure": {
+            "acidity": 7,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos",
+              "especiarias"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "queijo curado envelhecido",
+              "enchidos ibéricos"
+            ],
+            "notes": "TN topo de gama: encorpado, fresco, elegante. Cimento + 2 invernos barrica 500L: TN estruturado sem excesso de madeira. 14.5% + 6.52 g/L: vinho de guarda com grande potencial."
+          }
+        },
+        {
+          "id": "passarela-fugitivo-uva-cao-2020",
+          "name": "Casa da Passarela O Fugitivo Uva-cão",
+          "vintage": 2020,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Uva-cão"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.8,
+          "ph": 3.56,
+          "winemaking": "Sub-região Serra da Estrela. Solo granítico, clima continental semi-seco. Fermentação em depósito de cimento. Estágio 12 meses em barrica usada de 500L.",
+          "notes": "Uva-cão (Codega do Larinho) a solo no Dão — raridade absoluta. Serra da Estrela: solo granítico + clima continental semi-seco. Acidez 5.8 g/L + pH 3.56 (ficha técnica confirmada). 'Excelente frescura, delicada e grande complexidade'. Gastronomia declarada: peixes gordos e carnes brancas.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta de polpa branca"
+            ],
+            "secondary": [
+              "mineral granítico"
+            ],
+            "tertiary": [
+              "grande complexidade"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo grelhado",
+              "atum",
+              "salmão",
+              "bacalhau",
+              "mariscos",
+              "carnes brancas"
+            ],
+            "notes": "Uva-cão a solo com 12 meses barrica usada: frescura e mineralidade granítica. Acidez 5.8 g/L + pH 3.56. Para contexto Nanban: Sashimi de atum e salmão (mineralidade granítica + frescura), Chawanmushi (delicadeza do branco encaixa com pudim de ovo), Yakizakana (peixe grelhado simples)."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Caminhos Cruzados",
+      "region": "Dão – Terras de Senhorim",
+      "producer_notes": "DOC Dão, sub-região Terras de Senhorim. Solos graníticos entre os rios Dão e Mondego, 400-500m. Linha de entrada em barricas usadas; linha Teixuga é topo de gama — vinhas velhas da Quinta da Teixuga, multi-vintage em barricas usadas durante 3-7 anos. TN Reserva 2024 é novidade fresca e aromática sem barrica.",
+      "wines": [
+        {
+          "id": "cruzados-reserva-tinto-2019",
+          "name": "Caminhos Cruzados Reserva Tinto",
+          "vintage": 2019,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Alfrocheiro"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.67,
+          "ph": 3.72,
+          "winemaking": "20mo barricas CF (parte do lote), restante inox",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos pretos e vermelhos compotados",
+              "especiarias"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "queijo curado",
+              "enchidos"
+            ],
+            "notes": "Complexidade e elegância, taninos firmes e delicados. TN55+Alf45 em 20mo barrica: blend equilibrado entre potência (TN) e elegância (Alf)."
+          }
+        },
+        {
+          "id": "cruzados-reserva-encruzado-2022",
+          "name": "Caminhos Cruzados Reserva Encruzado",
+          "vintage": 2022,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Encruzado"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 5.9,
+          "ph": 3.22,
+          "winemaking": "12mo barricas maioritariamente novas CF",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "cítrico",
+              "frutos secos"
+            ],
+            "secondary": [
+              "mineralidade"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe assado",
+              "bacalhau",
+              "borrego assado",
+              "queijo de pasta mole"
+            ],
+            "notes": "Volume, frescura e mineralidade — elevada capacidade gastronómica. 12mo barricas maioritariamente novas + acidez 5.9 g/L: Encruzado estruturado para pratos complexos."
+          }
+        },
+        {
+          "id": "cruzados-tn-reserva-2024",
+          "name": "Caminhos Cruzados Touriga Nacional Reserva",
+          "vintage": 2024,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 4.74,
+          "ph": 3.8,
+          "winemaking": "Fermentação em inox, sem barrica",
+          "structure": {
+            "acidity": 5,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "frutos silvestres",
+              "bergamota",
+              "cítrico"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves grelhadas",
+              "porco",
+              "salmão",
+              "atum",
+              "cogumelos"
+            ],
+            "notes": "TN sem barrica: expressão aromática pura — violeta, floral e bergamota com taninos firmes mas suaves. 12.5% + sem madeira: TN fresco e versátil com peixe encorpado ou aves."
+          }
+        },
+        {
+          "id": "cruzados-teixuga-branco",
+          "name": "Vinhas da Teixuga Branco",
+          "vintage": null,
+          "doc": "Dão DOC",
+          "type": "white",
+          "notes": "Multi-vintage: colheitas de 2016, 2018 e 2020",
+          "varieties": [
+            "campo de variedades — vinha velha da Teixuga"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.96,
+          "ph": 3.32,
+          "winemaking": "Fermentação em inox, 3-7 anos em barricas CF usadas, bâttonage periódico, seleção de 12 barricas",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "alperce",
+              "avelã"
+            ],
+            "secondary": [
+              "fumado suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe assado",
+              "bacalhau",
+              "borrego",
+              "caça",
+              "queijo curado",
+              "risotto de cogumelos"
+            ],
+            "notes": "Multi-vintage 2016+2018+2020, 3-7yr em barricas usadas — o branco mais complexo da seleção. Cor dourada, alperce, avelã e fumado: peso igual ao de tintos de média estrutura."
+          }
+        },
+        {
+          "id": "cruzados-teixuga-tinto-2021",
+          "name": "Vinhas da Teixuga Tinto",
+          "vintage": 2021,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Alfrocheiro"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.94,
+          "ph": 3.64,
+          "winemaking": "Fermentação em inox, 28mo barricas CF novas+usadas",
+          "structure": {
+            "acidity": 6,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos pretos maduros",
+              "amoras",
+              "ameixas"
+            ],
+            "secondary": [
+              "especiarias",
+              "balsâmico"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "bacalhau assado",
+              "carne vermelha",
+              "caça",
+              "queijo curado",
+              "cogumelos"
+            ],
+            "notes": "Alfrocheiro a solo, 28mo barrica: muito elegante e fresco, taninos delicados — característica da casta. Grande complexidade aromática. Topo de gama tinto Caminhos Cruzados."
+          }
+        },
+        {
+          "id": "cruzados-rose-2023",
+          "name": "Caminhos Cruzados Rosé",
+          "vintage": 2023,
+          "doc": "Dão DOC",
+          "type": "rosé",
+          "varieties": [
+            "Touriga Nacional",
+            "Alfrocheiro"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.99,
+          "ph": 3.22,
+          "winemaking": "Prensagem suave uvas inteiras, fermentação em inox, 4mo barricas CF usadas",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "frutos vermelhos"
+            ],
+            "secondary": [
+              "tostado suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe",
+              "sushi",
+              "bacalhau",
+              "massas",
+              "queijo de pasta mole"
+            ],
+            "notes": "Rosé gastronómico: belo equilíbrio entre volume e acidez. TN+Alf com 4mo barricas usadas — textura acima do rosé leve habitual. Acidez 5.99 g/L + pH 3.22: ótimo para sushi e peixe."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta dos Carvalhais",
+      "region": "Dão",
+      "producer_notes": "DOC Dão. Solo granítico. Viticultura sustentável, produção integrada certificada (OILB/IOBC). Referência absoluta no Dão com o Branco Especial — branco de longevidade excecional, blend de 7 vintages com média de 8 anos em barricas usadas. Único Tinto é topo de gama com 30mo barrica e 18mo garrafa. Alfrocheiro Edição Especial usa 3 vinificações distintas na mesma colheita.",
+      "wines": [
+        {
+          "id": "carvalhais-branco-especial",
+          "name": "Quinta dos Carvalhais Branco Especial",
+          "vintage": null,
+          "doc": "Dão DOC",
+          "type": "white",
+          "notes": "Multi-vintage: blend de 7 anos diferentes com média de 8 anos em barrica",
+          "varieties": [
+            "blend branco do Dão — várias castas"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 6.3,
+          "ph": 3.2,
+          "winemaking": "Estágio em barricas usadas de carvalho de diferentes capacidades, média 8 anos",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "mel",
+              "casca de laranja",
+              "citrinos",
+              "flores"
+            ],
+            "secondary": [
+              "cedro"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe assado condimentado",
+              "bacalhau",
+              "caça de penas",
+              "borrego assado",
+              "queijo curado",
+              "arroz de míscaros"
+            ],
+            "notes": "Branco de longevidade excecional: 8yr média em barricas usadas. Aromas terciários (mel, cedro) já desenvolvidos. Acidez viva muito bem equilibrada. Para pratos com o peso de tintos médios."
+          }
+        },
+        {
+          "id": "carvalhais-unico-tinto-2020",
+          "name": "Quinta dos Carvalhais Único Tinto",
+          "vintage": 2020,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Alfrocheiro"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 5.8,
+          "ph": 3.5,
+          "winemaking": "Maceração pré-fermentativa (4 dias), FML em barricas, 30mo barricas CF novas+usadas 225L/500L/1000L, 18mo garrafa",
+          "structure": {
+            "acidity": 6,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "pinheiro",
+              "eucalipto",
+              "fruta preta e silvestre"
+            ],
+            "secondary": [
+              "cedro",
+              "carvalho",
+              "resinoso",
+              "musgo",
+              "mentol"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "queijo curado envelhecido",
+              "enchidos ibéricos"
+            ],
+            "notes": "TN60+Alf18+outros22 em 30mo barrica + 18mo garrafa: tanino firme e definido mas polido. Aromas de pinheiro e eucalipto — tipicamente Dão. Topo de gama: para carnes de carácter."
+          }
+        },
+        {
+          "id": "carvalhais-rose-reserva-2023",
+          "name": "Quinta dos Carvalhais Rosé Reserva Edição Especial",
+          "vintage": 2023,
+          "doc": "Dão DOC",
+          "type": "rosé",
+          "varieties": [
+            "Alfrocheiro"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.8,
+          "ph": 3.3,
+          "winemaking": "80% barricas ex-Branco Especial com bâttonage, 20% inox, total 9mo",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "ameixa",
+              "framboesa",
+              "morango"
+            ],
+            "secondary": [
+              "cedro",
+              "resina",
+              "mel"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "atum",
+              "salmão",
+              "porco",
+              "queijo semi-curado"
+            ],
+            "notes": "Rosé de volume extraordinário: 80% em barricas ex-Branco Especial confere complexidade e mel invulgares. Acidez viva equilibrada — para pratos com sabor mais afirmado que o típico rosé."
+          }
+        },
+        {
+          "id": "carvalhais-alfrocheiro-especial-2019",
+          "name": "Quinta dos Carvalhais Alfrocheiro Edição Especial",
+          "vintage": 2019,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Alfrocheiro"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.6,
+          "ph": 3.6,
+          "winemaking": "3 vinificações distintas (cacho inteiro, uva esmagada, maceração pré+pós-fermentativa), 3yr barricas CF usadas 225L+500L, 2yr garrafa",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "fruta preta e silvestre",
+              "cedro"
+            ],
+            "secondary": [
+              "cera de abelha",
+              "resinoso",
+              "floresta",
+              "musgo",
+              "mentol"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "queijo curado",
+              "cogumelos"
+            ],
+            "notes": "Alfrocheiro monovarietal de topo: 3yr barrica + 2yr garrafa. Ataque firme, grande frescura, tanino polido em corpo elegante. Terroir da QC impresso nos aromas — tipicamente Dão."
+          }
+        },
+        {
+          "id": "carvalhais-reserva-tinto-2020",
+          "name": "Quinta dos Carvalhais Reserva Tinto",
+          "vintage": 2020,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Alfrocheiro",
+            "Tinta Roriz"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 5.8,
+          "ph": 3.5,
+          "winemaking": "FML em inox e barrica, 12mo barricas CF novas+usadas 225L",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta e silvestre",
+              "resinoso",
+              "floresta",
+              "mentol"
+            ],
+            "secondary": [
+              "floral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "queijo curado",
+              "enchidos"
+            ],
+            "notes": "Típico Dão: fruta preta com resinoso, musgo e mentol. TN49+Alf34+TR17 em 12mo barrica: tanino polido e estruturado. Complexidade aromática confirmada na boca."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Casa de Mouraz",
+      "region": "Dão",
+      "producer_notes": "Dão DOC. Várias parcelas com solos graníticos e idades entre 10-80 anos. Especializada em field blends com castas raras ou quase extintas — Elfa usa vinha velha de 80 anos com ~30 castas co-plantadas (sem TN, pré-era Touriga). Branco inclui ~15 variedades em co-fermentação. Uma das vinhas do Private Selection tem solo argiloso (raro no Dão). Vindima sempre manual.",
+      "wines": [
+        {
+          "id": "mouraz-tinto-2014",
+          "name": "Casa de Mouraz Tinto",
+          "vintage": 2014,
+          "doc": "Dão DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Tinta Roriz",
+            "Alfrocheiro",
+            "Jaen",
+            "Água Santa",
+            "Tinta Pinheira",
+            "Baga"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.1,
+          "ph": null,
+          "winemaking": "Fermentação sem engaço em inox, maceração longa, 8mo barricas CF (parte do lote)",
+          "structure": {
+            "acidity": 5,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "floresta",
+              "caruma"
+            ],
+            "secondary": [
+              "especiarias"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carnes grelhadas",
+              "carnes no forno",
+              "queijo forte"
+            ],
+            "notes": "Field blend de 7 castas — 'verdadeiro blend do Dão'. Aromas de floresta e caruma. Acidez 5.1 g/L + maceração longa: estrutura média para carnes grelhadas e assadas."
+          }
+        },
+        {
+          "id": "mouraz-branco-2015",
+          "name": "Casa de Mouraz Branco",
+          "vintage": 2015,
+          "doc": "Dão DOC",
+          "type": "white",
+          "notes": "~15 variedades co-fermentadas de vinhas velhas 40-50 anos",
+          "varieties": [
+            "Encruzado",
+            "Malvasia Fina",
+            "Bical",
+            "Cerceal Branco",
+            "Rabo-de-Ovelha",
+            "Fernão Pires",
+            "Uva-cão",
+            "Síria"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.7,
+          "ph": null,
+          "winemaking": "Fermentação em inox ~12 semanas, 8mo sobre borras finas com bâtonnage",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "mineral"
+            ],
+            "secondary": [
+              "leveduras"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "queijo",
+              "bacalhau",
+              "salmão",
+              "atum",
+              "massas",
+              "carnes brancas"
+            ],
+            "notes": "~15 castas de vinhas velhas 40-50 anos: grande corpo, estrutura, acidez 6.7 g/L. 8mo bâtonnage. Para pratos com peso e textura — do bacalhau a carnes brancas."
+          }
+        },
+        {
+          "id": "mouraz-encruzado-2016",
+          "name": "Casa de Mouraz Encruzado",
+          "vintage": 2016,
+          "doc": "Dão DOC",
+          "type": "white",
+          "varieties": [
+            "Encruzado"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.3,
+          "ph": null,
+          "winemaking": "Fermentação em inox ~12 semanas, 6mo sobre borras finas com bâtonnage",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "mineral"
+            ],
+            "secondary": [
+              "leveduras"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "bacalhau",
+              "salmão",
+              "atum",
+              "queijo",
+              "massas",
+              "carnes brancas"
+            ],
+            "notes": "Encruzado monovarietal: floral, mineral, fresco e estruturado. 6mo bâtonnage em inox: textura sem oxidação. Acidez 6.3 g/L: versátil com peixe gordo e aves."
+          }
+        },
+        {
+          "id": "mouraz-elfa-2014",
+          "name": "Casa de Mouraz Elfa",
+          "vintage": 2014,
+          "doc": "Dão DOC",
+          "type": "red",
+          "notes": "~30 castas co-plantadas e co-fermentadas, vinha velha 80 anos — sem Touriga Nacional",
+          "varieties": [
+            "Baga",
+            "Jaen",
+            "Tinta Pinheira",
+            "Alvarelhão",
+            "Alfrocheiro"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.45,
+          "ph": null,
+          "winemaking": "Co-fermentação em inox, maceração longa, 2yr inox",
+          "structure": {
+            "acidity": 5,
+            "tannins": 7,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floresta",
+              "fruta vermelha silvestre"
+            ],
+            "secondary": [
+              "terroso"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "risotto de cogumelos",
+              "caça de penas",
+              "borrego",
+              "queijo curado"
+            ],
+            "notes": "Vinha velha 80 anos, ~30 castas pré-era Touriga (Baga, Alvarelhão, TP dominantes). 2yr inox sem madeira: pureza de terroir. 14% + taninos firmes — para caça e cogumelos."
+          }
+        },
+        {
+          "id": "mouraz-private-selection-2014",
+          "name": "Casa de Mouraz Private Selection",
+          "vintage": 2014,
+          "doc": "Dão DOC",
+          "type": "red",
+          "notes": "TN 70% + field blend 30% de vinha velha; uma das vinhas em solo argiloso (raro no Dão)",
+          "varieties": [
+            "Touriga Nacional",
+            "Jaen",
+            "Baga",
+            "Água Santa",
+            "Alfrocheiro",
+            "Trincadeira"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 5.52,
+          "ph": null,
+          "winemaking": "Fermentação sem engaço em inox, maceração longa, 50% 1yr barricas CF",
+          "structure": {
+            "acidity": 5,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta",
+              "floral"
+            ],
+            "secondary": [
+              "especiarias"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "cabrito",
+              "borrego",
+              "vitela estufada",
+              "carnes no forno",
+              "queijo forte"
+            ],
+            "notes": "TN 70% + field blend vinha velha em solo argiloso. 50% 1yr barrica: complexidade e longevidade. Para carnes de carácter — cabrito, borrego, vitela."
+          }
+        }
+      ]
+    }
+  ]
+}

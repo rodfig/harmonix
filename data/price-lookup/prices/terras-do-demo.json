@@ -1,0 +1,323 @@
+{
+  "producer": "Terras do Demo",
+  "generated_at": "2026-03-01T11:20:27.362306",
+  "found_count": 7,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "demo-pata-lebre-branco-2018",
+      "producer": "Terras do Demo",
+      "name": "Terras do Demo Pata de Lebre Branco",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "TERRAS D’ALTER Outeiro Tinto",
+          "confidence": "no_match",
+          "score": 0.192,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Arribas do Côa tinto",
+          "confidence": "no_match",
+          "score": 0.114,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Terras Do Demo 75 Cl",
+          "confidence": "low",
+          "score": 0.591,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Terras de Mogadouro Branco 2023",
+          "confidence": "no_match",
+          "score": 0.319,
+          "url": null
+        },
+        "Granvine": {
+          "retail_price": 18.75,
+          "name_found": "Terras do Demo Pata de Lebre Espumante Reserva Brut 2018",
+          "confidence": "high",
+          "score": 0.9,
+          "url": "https://granvine.com/pt/terras-do-demo-pata-de-lebre-esp-reserva-brut-2018"
+        }
+      },
+      "best_retail": 18.75,
+      "best_source": "Granvine",
+      "restaurant_estimates": {
+        "1.5x": 28.5,
+        "2.0x": 37.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "demo-pinot-noir-2021",
+      "producer": "Terras do Demo",
+      "name": "Terras do Demo Pinot Noir",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "TERRAS D’ALTER Outeiro Tinto",
+          "confidence": "no_match",
+          "score": 0.221,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Arribas do Côa tinto",
+          "confidence": "no_match",
+          "score": 0.136,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Terras Do Demo 75 Cl",
+          "confidence": "low",
+          "score": 0.7,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Terras de Mogadouro Branco 2023",
+          "confidence": "no_match",
+          "score": 0.249,
+          "url": null
+        },
+        "Continente": {
+          "retail_price": 12.99,
+          "name_found": "Terras do Demo Pinot Noir Reserva Blanc de Noirs",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.continente.pt/produto/terras-do-demo-pinot-noir-reserva-blanc-de-noirs-espumante-tavora-varosa-branco-bruto-terras-do-demo-7290500.html"
+        }
+      },
+      "best_retail": 12.99,
+      "best_source": "Continente",
+      "restaurant_estimates": {
+        "1.5x": 19.5,
+        "2.0x": 26.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "demo-malvasia-fina-2022",
+      "producer": "Terras do Demo",
+      "name": "Terras do Demo Malvasia Fina",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "TERRAS D’ALTER Outeiro Tinto",
+          "confidence": "no_match",
+          "score": 0.211,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Arribas do Côa tinto",
+          "confidence": "no_match",
+          "score": 0.128,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Terras Do Demo 75 Cl",
+          "confidence": "low",
+          "score": 0.654,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 13.45,
+          "name_found": "Terras do Demo Malvasia Brut White Sparkling 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/en/tavora-varosa/22634-terras-do-demo-malvasia-brut-white-sparkling-2023-5601578111010.html"
+        }
+      },
+      "best_retail": 13.45,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 20.5,
+        "2.0x": 27.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "demo-olho-perdiz-rose-2022",
+      "producer": "Terras do Demo",
+      "name": "Terras do Demo Olho de Perdiz Rosé",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Arribas do Douro Colheita Rosé",
+          "confidence": "no_match",
+          "score": 0.218,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Arribas do Côa tinto",
+          "confidence": "no_match",
+          "score": 0.107,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Terras Do Demo 75 Cl",
+          "confidence": "low",
+          "score": 0.56,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 13.45,
+          "name_found": "Terras do Demo Bruto Rosé Espumante 2022",
+          "confidence": "high",
+          "score": 0.9,
+          "url": "https://www.portugalvineyards.com/pt/tavora-varosa/22635-terras-do-demo-brut-rose-sparkling-2021-5601578131018.html"
+        }
+      },
+      "best_retail": 13.45,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 20.5,
+        "2.0x": 27.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "demo-tinto-bruto-2022",
+      "producer": "Terras do Demo",
+      "name": "Terras do Demo Tinto Bruto",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "TERRAS D’ALTER Outeiro Tinto",
+          "confidence": "no_match",
+          "score": 0.253,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Arribas do Côa tinto",
+          "confidence": "no_match",
+          "score": 0.161,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 9.95,
+          "name_found": "Espumante Terras Do Demo 75 Cl",
+          "confidence": "high",
+          "score": 0.8,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/espumante-terras-do-demo-75-cl/item_1162.html?id=215&cat=254&pc=2"
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Terras de Mogadouro Branco 2023",
+          "confidence": "no_match",
+          "score": 0.301,
+          "url": null
+        }
+      },
+      "best_retail": 9.95,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "demo-verdelho-2021",
+      "producer": "Terras do Demo",
+      "name": "Terras do Demo Verdelho",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "TERRAS D’ALTER Outeiro Tinto",
+          "confidence": "no_match",
+          "score": 0.245,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Arribas do Côa tinto",
+          "confidence": "no_match",
+          "score": 0.151,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 9.95,
+          "name_found": "Espumante Terras Do Demo 75 Cl",
+          "confidence": "high",
+          "score": 0.792,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/espumante-terras-do-demo-75-cl/item_1162.html?id=215&cat=254&pc=2"
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Cerca dos Frades Verdelho Branco 2021",
+          "confidence": "no_match",
+          "score": 0.434,
+          "url": null
+        }
+      },
+      "best_retail": 9.95,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 15.0,
+        "2.0x": 20.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "demo-fraga-da-pena-2022",
+      "producer": "Terras do Demo",
+      "name": "Terras do Demo Fraga da Pena",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "TERRAS D’ALTER Outeiro Tinto",
+          "confidence": "no_match",
+          "score": 0.187,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Arribas do Côa tinto",
+          "confidence": "no_match",
+          "score": 0.111,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Terras Do Demo 75 Cl",
+          "confidence": "low",
+          "score": 0.594,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 14.35,
+          "name_found": "Terras do Demo Fraga da Pena Bruto Espumante",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/pt/tavora-varosa/22638-terras-do-demo-fraga-da-pena-brut-sparkling-5601578111041.html"
+        }
+      },
+      "best_retail": 14.35,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 22.0,
+        "2.0x": 29.0
+      },
+      "status": "found"
+    }
+  ]
+}

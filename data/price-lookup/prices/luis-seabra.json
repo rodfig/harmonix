@@ -1,0 +1,395 @@
+{
+  "producer": "Luis Seabra",
+  "generated_at": "2026-03-01T11:20:27.331755",
+  "found_count": 9,
+  "not_found_count": 1,
+  "wines": [
+    {
+      "wine_id": "xisto-ilimitado-tinto-2024",
+      "producer": "Luis Seabra",
+      "name": "Xisto Ilimitado Tinto",
+      "vintage": 2024,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 14.29,
+          "name_found": "Xisto Ilimitado Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/xisto-ilimitado-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 16.5,
+          "name_found": " 2024 Xisto Ilimitado branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-xisto-ilimitado-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Monte Xisto 2020 Biologico 75 Cl",
+          "confidence": "no_match",
+          "score": 0.396,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 18.75,
+          "name_found": "Xisto Ilimitado Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/13485-xisto-ilimitado-white-2017-5600790052088.html"
+        }
+      },
+      "best_retail": 14.29,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 21.5,
+        "2.0x": 29.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "xisto-cru-tinto-2023",
+      "producer": "Luis Seabra",
+      "name": "Xisto Cru Tinto",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 32.95,
+          "name_found": "Xisto Cru Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/xisto-cru-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 38.5,
+          "name_found": " 2023 Xisto Cru branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2023-xisto-cru-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Monte Xisto 2020 Biologico 75 Cl",
+          "confidence": "no_match",
+          "score": 0.396,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 42.25,
+          "name_found": "Xisto CRU Douro Branco 2023",
+          "confidence": "high",
+          "score": 0.853,
+          "url": "https://www.portugalvineyards.com/pt/douro/13482-xisto-cru-douro-white-2016-5600790052026.html"
+        }
+      },
+      "best_retail": 32.95,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 49.5,
+        "2.0x": 66.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "indie-xisto-2023",
+      "producer": "Luis Seabra",
+      "name": "Indie Xisto",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Xisto Cru Branco",
+          "confidence": "low",
+          "score": 0.452,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Xisto Ilimitado branco",
+          "confidence": "no_match",
+          "score": 0.44,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Monte Xisto 2020 Biologico 75 Cl",
+          "confidence": "no_match",
+          "score": 0.396,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 35.55,
+          "name_found": "Indie Tinto 2020",
+          "confidence": "high",
+          "score": 0.731,
+          "url": "https://www.portugalvineyards.com/pt/douro/13486-indie-red-2017-5600790052071.html"
+        }
+      },
+      "best_retail": 35.55,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 53.5,
+        "2.0x": 71.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "xisto-cru-branco-2023",
+      "producer": "Luis Seabra",
+      "name": "Xisto Cru Branco",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 32.95,
+          "name_found": "Xisto Cru Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/xisto-cru-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 38.5,
+          "name_found": " 2023 Xisto Cru branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2023-xisto-cru-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Monte Xisto 2020 Biologico 75 Cl",
+          "confidence": "no_match",
+          "score": 0.396,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 42.25,
+          "name_found": "Xisto CRU Douro Branco 2023",
+          "confidence": "high",
+          "score": 0.853,
+          "url": "https://www.portugalvineyards.com/pt/douro/13482-xisto-cru-douro-white-2016-5600790052026.html"
+        }
+      },
+      "best_retail": 32.95,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 49.5,
+        "2.0x": 66.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "mono-c-branco-2023",
+      "producer": "Luis Seabra",
+      "name": "Mono C",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Mono A Tinto",
+          "confidence": "low",
+          "score": 0.538,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Reguengos D.O.C 75 Cl",
+          "confidence": "no_match",
+          "score": 0.349,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 33.85,
+          "name_found": "Mono C Castelão Tinto 2019",
+          "confidence": "high",
+          "score": 0.833,
+          "url": "https://www.portugalvineyards.com/pt/douro/13487-mono-c-red-2016-5600790052095.html"
+        }
+      },
+      "best_retail": 33.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 51.0,
+        "2.0x": 68.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "xisto-ilimitado-branco-2023",
+      "producer": "Luis Seabra",
+      "name": "Xisto Ilimitado Branco",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 14.29,
+          "name_found": "Xisto Ilimitado Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/xisto-ilimitado-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 16.5,
+          "name_found": " 2024 Xisto Ilimitado branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-xisto-ilimitado-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Monte Xisto 2020 Biologico 75 Cl",
+          "confidence": "no_match",
+          "score": 0.396,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 18.75,
+          "name_found": "Xisto Ilimitado Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/13485-xisto-ilimitado-white-2017-5600790052088.html"
+        }
+      },
+      "best_retail": 14.29,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 21.5,
+        "2.0x": 29.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "xisto-cru-branco-2022",
+      "producer": "Luis Seabra",
+      "name": "Xisto Cru Branco",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 32.95,
+          "name_found": "Xisto Cru Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/xisto-cru-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 38.5,
+          "name_found": " 2023 Xisto Cru branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2023-xisto-cru-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Monte Xisto 2020 Biologico 75 Cl",
+          "confidence": "no_match",
+          "score": 0.396,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 42.25,
+          "name_found": "Xisto CRU Douro Branco 2023",
+          "confidence": "high",
+          "score": 0.853,
+          "url": "https://www.portugalvineyards.com/pt/douro/13482-xisto-cru-douro-white-2016-5600790052026.html"
+        }
+      },
+      "best_retail": 32.95,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 49.5,
+        "2.0x": 66.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "mono-c-2022",
+      "producer": "Luis Seabra",
+      "name": "Mono C",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Mono A Tinto",
+          "confidence": "low",
+          "score": 0.538,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Reguengos D.O.C 75 Cl",
+          "confidence": "no_match",
+          "score": 0.349,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 33.85,
+          "name_found": "Mono C Castelão Tinto 2019",
+          "confidence": "high",
+          "score": 0.833,
+          "url": "https://www.portugalvineyards.com/pt/douro/13487-mono-c-red-2016-5600790052095.html"
+        }
+      },
+      "best_retail": 33.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 51.0,
+        "2.0x": 68.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "indie-branco-2023",
+      "producer": "Luis Seabra",
+      "name": "Indie Branco",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 35.55,
+          "name_found": "Indie Tinto 2020",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/13486-indie-red-2017-5600790052071.html"
+        }
+      },
+      "best_retail": 35.55,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 53.5,
+        "2.0x": 71.5
+      },
+      "status": "found"
+    }
+  ]
+}

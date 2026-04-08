@@ -1,0 +1,137 @@
+{
+  "producer": "Pinhal da Torre",
+  "generated_at": "2026-03-01T11:20:27.370623",
+  "found_count": 3,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "pinhal-da-torre-alqueve-reserva-branco-2020",
+      "producer": "Pinhal da Torre",
+      "name": "Pinhal da Torre Alqueve Reserva Branco",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Vinho Quinta da Rede Reserva Branco",
+          "confidence": "no_match",
+          "score": 0.259,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2018 Quinta da Côrte Grande Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.227,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Esporao Torre 2017 75 Cl",
+          "confidence": "no_match",
+          "score": 0.386,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 12.65,
+          "name_found": "Alqueve Reserva Branco 2023",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/pt/tejo/23106-alqueve-reserve-white-2023.html"
+        }
+      },
+      "best_retail": 12.65,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 19.0,
+        "2.0x": 25.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "pinhal-da-torre-antagonista-2021",
+      "producer": "Pinhal da Torre",
+      "name": "Pinhal da Torre Antagonista",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta da Rede Vinha da Seara Tinto",
+          "confidence": "no_match",
+          "score": 0.156,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2018 Quinta da Côrte Grande Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.134,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Esporao Torre 2017 75 Cl",
+          "confidence": "no_match",
+          "score": 0.422,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 55.65,
+          "name_found": "Pinhal da Torre Antagonista Tinto 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/tejo/23100-pinhal-da-torre-antagonista-red-2019.html"
+        }
+      },
+      "best_retail": 55.65,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 83.5,
+        "2.0x": 111.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "pinhal-da-torre-resiliente-2015",
+      "producer": "Pinhal da Torre",
+      "name": "Pinhal da Torre Resiliente",
+      "vintage": 2015,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta da Rede Vinha da Seara Tinto",
+          "confidence": "no_match",
+          "score": 0.156,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2018 Quinta da Côrte Grande Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.134,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Esporao Torre 2017 75 Cl",
+          "confidence": "no_match",
+          "score": 0.422,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 147.85,
+          "name_found": "Pinhal da Torre Resiliente Tinto 2015",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/tejo/23114-pinhal-da-torre-resiliente-red-2015.html"
+        }
+      },
+      "best_retail": 147.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 222.0,
+        "2.0x": 296.0
+      },
+      "status": "found"
+    }
+  ]
+}

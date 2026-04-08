@@ -1,0 +1,266 @@
+{
+  "producer": "Quinta do Ortigão",
+  "generated_at": "2026-03-01T11:20:27.314078",
+  "found_count": 6,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "ortigao-reserva-tinto-2020",
+      "producer": "Quinta do Ortigão",
+      "name": "Ortigão Reserva Tinto",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 11.64,
+          "name_found": "Quinta do Ortigão Reserva Tinto",
+          "confidence": "high",
+          "score": 0.774,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-do-ortigao-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " Espumante Ortigão Bruto rosé",
+          "confidence": "low",
+          "score": 0.601,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "no_match",
+          "score": 0.446,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 12.15,
+          "name_found": "Ortigão Reserva Tinto 2018",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/26582-ortigao-reserve-red-2018.html"
+        }
+      },
+      "best_retail": 11.64,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 17.5,
+        "2.0x": 23.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "ortigao-arinto-bical-2023",
+      "producer": "Quinta do Ortigão",
+      "name": "Ortigão Arinto Bical",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 9.57,
+          "name_found": "Quinta do Ortigão Arinto-Bical Branco",
+          "confidence": "high",
+          "score": 0.875,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-do-ortigao-arinto-bical-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " Espumante Ortigão Bruto rosé",
+          "confidence": "no_match",
+          "score": 0.422,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Boa Esperanca Arinto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.412,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 9.95,
+          "name_found": "Ortigão Arinto Bical Branco 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/13338-ortigao-arinto-bical-white-2016-5606955061575.html"
+        }
+      },
+      "best_retail": 9.57,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 14.5,
+        "2.0x": 19.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "ortigao-cuvee-2020",
+      "producer": "Quinta do Ortigão",
+      "name": "Ortigão Cuvée",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Ortigão Cuvée Bruto Branco",
+          "confidence": "low",
+          "score": 0.648,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " Espumante Ortigão Bruto rosé",
+          "confidence": "low",
+          "score": 0.527,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 22.35,
+          "name_found": "Ortigão Cuveé Bruto Espumante 2018",
+          "confidence": "high",
+          "score": 0.768,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/13343-ortigao-cuvee-brut-sparkling-5606955061520.html"
+        }
+      },
+      "best_retail": 22.35,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 34.0,
+        "2.0x": 45.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "ortigao-espumante-baga-2021",
+      "producer": "Quinta do Ortigão",
+      "name": "Ortigão Espumante Baga",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Ortigão Reserva Bruto Branco",
+          "confidence": "low",
+          "score": 0.542,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " Espumante Ortigão Bruto rosé",
+          "confidence": "low",
+          "score": 0.705,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Conde Villar 75 Cl",
+          "confidence": "no_match",
+          "score": 0.23,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 15.75,
+          "name_found": "Ortigão Baga Bruto Espumante 2021",
+          "confidence": "high",
+          "score": 0.892,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/13446-ortigao-baga-brut-sparkling-5606955061599.html"
+        }
+      },
+      "best_retail": 15.75,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 24.0,
+        "2.0x": 31.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "ortigao-espumante-rose-2022",
+      "producer": "Quinta do Ortigão",
+      "name": "Espumante Ortigão Rosé",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Ortigão Reserva Bruto Branco",
+          "confidence": "low",
+          "score": 0.563,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 11.95,
+          "name_found": " Espumante Ortigão Bruto rosé",
+          "confidence": "high",
+          "score": 0.747,
+          "url": "https://www.garrafeiranacional.com/vinho/espumante-ortig-o-bruto-rose.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Rose Quinta Nova 75 Cl",
+          "confidence": "no_match",
+          "score": 0.355,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Ortigão Rosé 2022",
+          "confidence": "low",
+          "score": 0.838,
+          "url": null
+        }
+      },
+      "best_retail": 11.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 18.0,
+        "2.0x": 24.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "ortigao-blanc-des-blancs-2023",
+      "producer": "Quinta do Ortigão",
+      "name": "Ortigão Blanc des Blancs Brut",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Ortigão Sauvignon Blanc Branco",
+          "confidence": "no_match",
+          "score": 0.406,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 10.95,
+          "name_found": " 2023 Espumante Ortigão Blanc de Blancs Bruto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/2023-espumante-ortigao-blanc-de-blancs-bruto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Boa Esperanca Sauvignon Blanc 75 Cl",
+          "confidence": "no_match",
+          "score": 0.215,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Ortigão Sauvignon Blanc Branco 2022",
+          "confidence": "low",
+          "score": 0.462,
+          "url": null
+        }
+      },
+      "best_retail": 10.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 16.5,
+        "2.0x": 22.0
+      },
+      "status": "found"
+    }
+  ]
+}

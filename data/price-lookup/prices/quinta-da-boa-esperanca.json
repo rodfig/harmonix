@@ -1,0 +1,567 @@
+{
+  "producer": "Quinta da Boa Esperança",
+  "generated_at": "2026-03-01T11:20:27.348135",
+  "found_count": 13,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "boa-esperanca-colheita-tinto-2018",
+      "producer": "Quinta da Boa Esperança",
+      "name": "Quinta da Boa Esperança Colheita Tinto",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 18.69,
+          "name_found": "Quinta da Boa Esperança Reserva Tinto",
+          "confidence": "high",
+          "score": 0.856,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-da-boa-esperanca-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta da Foz tinto",
+          "confidence": "no_match",
+          "score": 0.294,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 14.95,
+          "name_found": "Vinho Branco Qta. Boa Esperanca 75 Cl",
+          "confidence": "high",
+          "score": 0.725,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-qta.-boa-esperanca-75-cl/item_64515.html?id=202&cat=254&pc=16"
+        },
+        "PortugalVineyards": {
+          "retail_price": 8.85,
+          "name_found": "Quinta da Boa Esperança Branco 2022",
+          "confidence": "high",
+          "score": 0.909,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/21030-quinta-da-boa-esperanca-white-2022-5600294093198.html"
+        }
+      },
+      "best_retail": 8.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 13.5,
+        "2.0x": 18.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "boa-esperanca-colheita-seleccionada-2015",
+      "producer": "Quinta da Boa Esperança",
+      "name": "Quinta da Boa Esperança Colheita Seleccionada",
+      "vintage": 2015,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta da Boa Esperança Reserva Tinto",
+          "confidence": "low",
+          "score": 0.709,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta da Foz tinto",
+          "confidence": "no_match",
+          "score": 0.241,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Boa Esperanca 75 Cl",
+          "confidence": "low",
+          "score": 0.598,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 8.85,
+          "name_found": "Quinta da Boa Esperança Branco 2022",
+          "confidence": "high",
+          "score": 0.737,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/21030-quinta-da-boa-esperanca-white-2022-5600294093198.html"
+        }
+      },
+      "best_retail": 8.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 13.5,
+        "2.0x": 18.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "boa-esperanca-syrah-2017",
+      "producer": "Quinta da Boa Esperança",
+      "name": "Quinta da Boa Esperança Syrah",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 17.29,
+          "name_found": "Quinta da Boa Esperança Syrah Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-da-boa-esperanca-syrah-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta da Foz tinto",
+          "confidence": "no_match",
+          "score": 0.291,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 13.95,
+          "name_found": "Vinho Tinto Qta. Boa Esperanca Syrah 75 Cl",
+          "confidence": "high",
+          "score": 0.904,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-tinto-qta.-boa-esperanca-syrah-75-cl/item_64517.html?id=202&cat=254&pc=36"
+        },
+        "PortugalVineyards": {
+          "retail_price": 14.55,
+          "name_found": "Quinta da Boa Esperança Syrah Tinto 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/21028-quinta-da-boa-esperanca-syrah-red-2019-5600294093143.html"
+        }
+      },
+      "best_retail": 13.95,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 21.0,
+        "2.0x": 28.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "boa-esperanca-touriga-nacional-2018",
+      "producer": "Quinta da Boa Esperança",
+      "name": "Quinta da Boa Esperança Touriga Nacional",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 17.29,
+          "name_found": "Quinta da Boa Esperança Touriga Nacional Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-da-boa-esperanca-touriga-nacional-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Quinta do Sobral Touriga Nacional tinto",
+          "confidence": "no_match",
+          "score": 0.444,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 13.95,
+          "name_found": "Vinho Tinto Qta. Boa Esperanca Touriga Nacional 75 Cl",
+          "confidence": "high",
+          "score": 0.921,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-tinto-qta.-boa-esperanca-touriga-nacional-75-cl/item_64518.html?id=202&cat=254&pc=40"
+        },
+        "PortugalVineyards": {
+          "retail_price": 14.55,
+          "name_found": "Quinta da Boa Esperança Touriga Nacional Tinto 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/21029-quinta-da-boa-esperanca-touriga-nacional-red-2018-5600294093082.html"
+        }
+      },
+      "best_retail": 13.95,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 21.0,
+        "2.0x": 28.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "boa-esperanca-alicante-bouschet-2017",
+      "producer": "Quinta da Boa Esperança",
+      "name": "Quinta da Boa Esperança Alicante Bouschet",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 17.29,
+          "name_found": "Quinta da Boa Esperança Alicante Bouschet Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-da-boa-esperanca-alicante-bouschet-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta da Foz tinto",
+          "confidence": "no_match",
+          "score": 0.254,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 13.95,
+          "name_found": "Vinho Tinto Qta. Boa Esperanca Alicante Bouschet 75 Cl",
+          "confidence": "high",
+          "score": 0.926,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-tinto-qta.-boa-esperanca-alicante-bouschet-75-cl/item_64520.html?id=202&cat=254&pc=21"
+        },
+        "PortugalVineyards": {
+          "retail_price": 14.55,
+          "name_found": "Quinta da Boa Esperança Alicante Bouschet Tinto 2018",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/21019-quinta-da-boa-esperanca-alicante-bouschet-red-2018-5600705627899.html"
+        }
+      },
+      "best_retail": 13.95,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 21.0,
+        "2.0x": 28.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "boa-esperanca-reserva-tinto-2017",
+      "producer": "Quinta da Boa Esperança",
+      "name": "Quinta da Boa Esperança Reserva Tinto",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 18.69,
+          "name_found": "Quinta da Boa Esperança Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-da-boa-esperanca-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2020 Quinta da Foz Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.421,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 14.95,
+          "name_found": "Vinho Tinto Qta. Boa Esperanca Reserva 75 Cl",
+          "confidence": "high",
+          "score": 0.895,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-tinto-qta.-boa-esperanca-reserva-75-cl/item_64514.html?id=202&cat=254&pc=26"
+        },
+        "PortugalVineyards": {
+          "retail_price": 16.05,
+          "name_found": "Quinta da Boa Esperança Reserva Branco 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/21025-quinta-da-boa-esperanca-reserve-white-2019-5600705627769.html"
+        }
+      },
+      "best_retail": 14.95,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 22.5,
+        "2.0x": 30.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "boa-esperanca-fernao-pires-2019",
+      "producer": "Quinta da Boa Esperança",
+      "name": "Quinta da Boa Esperança Fernão Pires",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 12.49,
+          "name_found": "Quinta da Boa Esperança Fernão Pires Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-da-boa-esperanca-fernao-pires-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta da Foz tinto",
+          "confidence": "no_match",
+          "score": 0.25,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Boa Esperanca 75 Cl",
+          "confidence": "low",
+          "score": 0.595,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 12.05,
+          "name_found": "Quinta da Boa Esperança Fernão Pires Branco 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/21101-quinta-da-boa-esperanca-fernao-pires-white-2021-5600294093075.html"
+        }
+      },
+      "best_retail": 12.05,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 18.5,
+        "2.0x": 24.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "boa-esperanca-colheita-branco-2021",
+      "producer": "Quinta da Boa Esperança",
+      "name": "Quinta da Boa Esperança Colheita Branco",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 18.69,
+          "name_found": "Quinta da Boa Esperança Reserva Tinto",
+          "confidence": "high",
+          "score": 0.856,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-da-boa-esperanca-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta da Foz tinto",
+          "confidence": "no_match",
+          "score": 0.294,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 14.95,
+          "name_found": "Vinho Branco Qta. Boa Esperanca 75 Cl",
+          "confidence": "high",
+          "score": 0.725,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-qta.-boa-esperanca-75-cl/item_64515.html?id=202&cat=254&pc=16"
+        },
+        "PortugalVineyards": {
+          "retail_price": 8.85,
+          "name_found": "Quinta da Boa Esperança Branco 2022",
+          "confidence": "high",
+          "score": 0.909,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/21030-quinta-da-boa-esperanca-white-2022-5600294093198.html"
+        }
+      },
+      "best_retail": 8.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 13.5,
+        "2.0x": 18.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "boa-esperanca-arinto-2018",
+      "producer": "Quinta da Boa Esperança",
+      "name": "Quinta da Boa Esperança Arinto",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 12.49,
+          "name_found": "Quinta da Boa Esperança Arinto Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-da-boa-esperanca-arinto-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2020 Quinta da Biaia 750 Arinto biológico branco",
+          "confidence": "no_match",
+          "score": 0.439,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 11.49,
+          "name_found": "Vinho Branco Qta. Boa Esperanca Arinto 75 Cl",
+          "confidence": "high",
+          "score": 0.905,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-qta.-boa-esperanca-arinto-75-cl/item_64521.html?id=203&cat=254&pc=16"
+        },
+        "PortugalVineyards": {
+          "retail_price": 12.05,
+          "name_found": "Quinta da Boa Esperança Arinto Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/21020-quinta-da-boa-esperanca-arinto-white-2022-5600294093273.html"
+        }
+      },
+      "best_retail": 11.49,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 17.5,
+        "2.0x": 23.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "boa-esperanca-sauvignon-blanc-2020",
+      "producer": "Quinta da Boa Esperança",
+      "name": "Quinta da Boa Esperança Sauvignon Blanc",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 12.49,
+          "name_found": "Quinta da Boa Esperança Sauvignon Blanc Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-da-boa-esperanca-sauvignon-blanc-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Pacheca Sauvignon Blanc branco",
+          "confidence": "low",
+          "score": 0.477,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 11.49,
+          "name_found": "Vinho Branco Qta. Boa Esperanca Sauvignon Blanc 75 Cl",
+          "confidence": "high",
+          "score": 0.921,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-qta.-boa-esperanca-sauvignon-blanc-75-cl/item_64523.html?id=203&cat=254&pc=9"
+        },
+        "PortugalVineyards": {
+          "retail_price": 12.05,
+          "name_found": "Quinta da Boa Esperança Sauvignon Blanc Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/21027-quinta-da-boa-esperanca-sauvignon-blanc-white-2022-5600294093204.html"
+        }
+      },
+      "best_retail": 11.49,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 17.5,
+        "2.0x": 23.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "boa-esperanca-reserva-branco-2019",
+      "producer": "Quinta da Boa Esperança",
+      "name": "Quinta da Boa Esperança Reserva Branco",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 18.69,
+          "name_found": "Quinta da Boa Esperança Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-da-boa-esperanca-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2020 Quinta da Foz Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.421,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 14.95,
+          "name_found": "Vinho Tinto Qta. Boa Esperanca Reserva 75 Cl",
+          "confidence": "high",
+          "score": 0.895,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-tinto-qta.-boa-esperanca-reserva-75-cl/item_64514.html?id=202&cat=254&pc=26"
+        },
+        "PortugalVineyards": {
+          "retail_price": 16.05,
+          "name_found": "Quinta da Boa Esperança Reserva Branco 2019",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/21025-quinta-da-boa-esperanca-reserve-white-2019-5600705627769.html"
+        }
+      },
+      "best_retail": 14.95,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 22.5,
+        "2.0x": 30.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "boa-esperanca-rose-atlantico-2020",
+      "producer": "Quinta da Boa Esperança",
+      "name": "Quinta da Boa Esperança Rosé Atlântico",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 18.69,
+          "name_found": "Quinta da Boa Esperança Reserva Tinto",
+          "confidence": "high",
+          "score": 0.722,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-da-boa-esperanca-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Vinha da Foz rosé",
+          "confidence": "no_match",
+          "score": 0.264,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 14.95,
+          "name_found": "Vinho Rose Qta. Boa Esperanca Atlantico 75 Cl",
+          "confidence": "high",
+          "score": 0.924,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-rose-qta.-boa-esperanca-atlantico-75-cl/item_64513.html?id=204&cat=254&pc=13"
+        },
+        "PortugalVineyards": {
+          "retail_price": 16.05,
+          "name_found": "Quinta da Boa Esperança Atlântico Rosé 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/lisboa/21740-quinta-da-boa-esperanca-atlantico-rose-2023-5600705627936.html"
+        }
+      },
+      "best_retail": 14.95,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 22.5,
+        "2.0x": 30.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "boa-esperanca-reserva-rose-2018",
+      "producer": "Quinta da Boa Esperança",
+      "name": "Quinta da Boa Esperança Reserva Rosé",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 18.69,
+          "name_found": "Quinta da Boa Esperança Reserva Tinto",
+          "confidence": "high",
+          "score": 0.912,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-da-boa-esperanca-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2020 Quinta da Foz Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.383,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Rose Qta. Boa Esperanca 75 Cl",
+          "confidence": "low",
+          "score": 0.824,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta da Boa Esperança Rosé 2024",
+          "confidence": "low",
+          "score": 0.946,
+          "url": null
+        }
+      },
+      "best_retail": 18.69,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 28.5,
+        "2.0x": 37.5
+      },
+      "status": "found"
+    }
+  ]
+}

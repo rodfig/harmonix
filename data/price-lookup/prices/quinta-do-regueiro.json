@@ -1,0 +1,352 @@
+{
+  "producer": "Quinta do Regueiro",
+  "generated_at": "2026-03-01T11:20:27.377565",
+  "found_count": 8,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "regueiro-jurassico",
+      "producer": "Quinta do Regueiro",
+      "name": "Alvarinho Jurássico",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Regueiro Alvarinho Branco",
+          "confidence": "low",
+          "score": 0.537,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta da Cheira Alvarinho branco",
+          "confidence": "low",
+          "score": 0.511,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 58.85,
+          "name_found": "Quinta do Regueiro Jurássico III Branco",
+          "confidence": "high",
+          "score": 0.8,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/12879-quinta-do-regueiro-jurassico-white-5607031000105.html"
+        }
+      },
+      "best_retail": 58.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 88.5,
+        "2.0x": 118.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "regueiro-barricas-2020",
+      "producer": "Quinta do Regueiro",
+      "name": "Alvarinho Barricas",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Regueiro Alvarinho Branco",
+          "confidence": "low",
+          "score": 0.569,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta da Cheira Alvarinho branco",
+          "confidence": "low",
+          "score": 0.554,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 22.75,
+          "name_found": "Quinta do Regueiro Barricas Alvarinho Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/8903-quinta-do-regueiro-barricas-alvarinho-white-2016-5607031000174.html"
+        }
+      },
+      "best_retail": 22.75,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 34.5,
+        "2.0x": 45.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "regueiro-maturado-2019",
+      "producer": "Quinta do Regueiro",
+      "name": "Alvarinho Maturado",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Regueiro Alvarinho Branco",
+          "confidence": "low",
+          "score": 0.537,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta da Cheira Alvarinho branco",
+          "confidence": "low",
+          "score": 0.511,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 27.45,
+          "name_found": "Quinta do Regueiro Maturado Alvarinho Branco 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/17201-quinta-do-regueiro-maturado-white-2019-5607031000204.html"
+        }
+      },
+      "best_retail": 27.45,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 41.5,
+        "2.0x": 55.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "regueiro-reserva-2020",
+      "producer": "Quinta do Regueiro",
+      "name": "Alvarinho Reserva",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Regueiro Alvarinho Branco",
+          "confidence": "low",
+          "score": 0.798,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 11.5,
+          "name_found": " 2024 Quinta do Mascanho Alvarinho Reserva branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-quinta-do-mascanho-alvarinho-reserva-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Reserva 75 Cl",
+          "confidence": "low",
+          "score": 0.495,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 11.75,
+          "name_found": "Quinta do Regueiro Alvarinho Reserva Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/8902-quinta-do-regueiro-alvarinho-reserve-white-2018-5607031000013.html"
+        }
+      },
+      "best_retail": 11.5,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 17.5,
+        "2.0x": 23.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "regueiro-espumante-2020",
+      "producer": "Quinta do Regueiro",
+      "name": "Espumante Alvarinho",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Regueiro Alvarinho Branco",
+          "confidence": "low",
+          "score": 0.722,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 15.95,
+          "name_found": " 2022 Espumante Quinta do Regueiro Alvarinho Bruto",
+          "confidence": "high",
+          "score": 0.811,
+          "url": "https://www.garrafeiranacional.com/vinho/2022-espumante-quinta-do-regueiro-alvarinho-bruto.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Soalheiro Bruto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.405,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 16.65,
+          "name_found": "Quinta do Regueiro Alvarinho Bruto Espumante 2022",
+          "confidence": "high",
+          "score": 0.809,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/10652-quinta-do-regueiro-alvarinho-brut-sparkling-5607031000044.html"
+        }
+      },
+      "best_retail": 15.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": {
+        "1.5x": 24.0,
+        "2.0x": 32.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "regueiro-trajadura-2020",
+      "producer": "Quinta do Regueiro",
+      "name": "Alvarinho Trajadura",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Regueiro Alvarinho Branco",
+          "confidence": "low",
+          "score": 0.537,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta da Cheira Alvarinho branco",
+          "confidence": "low",
+          "score": 0.545,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 8.05,
+          "name_found": "Quinta do Regueiro Alvarinho Trajadura Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/11242-quinta-do-regueiro-alvarinho-trajadura-white-2018-5607031000037.html"
+        }
+      },
+      "best_retail": 8.05,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 12.5,
+        "2.0x": 16.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "regueiro-primitivo-2020",
+      "producer": "Quinta do Regueiro",
+      "name": "Alvarinho Primitivo",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Regueiro Alvarinho Branco",
+          "confidence": "low",
+          "score": 0.569,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta da Cheira Alvarinho branco",
+          "confidence": "low",
+          "score": 0.532,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 17.95,
+          "name_found": "Quinta do Regueiro Primitivo Branco 2023",
+          "confidence": "high",
+          "score": 0.787,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/8904-quinta-do-regueiro-primitivo-white-2017-5607031000150.html"
+        }
+      },
+      "best_retail": 17.95,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 27.0,
+        "2.0x": 36.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "regueiro-secreto-2020",
+      "producer": "Quinta do Regueiro",
+      "name": "Alvarinho Secreto",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 7.79,
+          "name_found": "Quinta do Regueiro Secreto Reserva Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-do-regueiro-secreto-reserva-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta da Cheira Alvarinho branco",
+          "confidence": "low",
+          "score": 0.511,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta dos Castelares Alvarinho Branco 2021",
+          "confidence": "low",
+          "score": 0.512,
+          "url": null
+        }
+      },
+      "best_retail": 7.79,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 12.0,
+        "2.0x": 16.0
+      },
+      "status": "found"
+    }
+  ]
+}

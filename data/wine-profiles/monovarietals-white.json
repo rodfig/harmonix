@@ -1,0 +1,481 @@
+{
+  "_meta": {
+    "description": "Portuguese white grape variety profiles for food pairing",
+    "acidity_scale": "1–10 (1=very low, 10=very high)",
+    "body_scale": "light | medium | full",
+    "sweetness": "dry | off-dry | semi-sweet | sweet",
+    "finish": "short | medium | long",
+    "source": "AromasCastas.pdf + Módulo 5 + Claude wine synthesis"
+  },
+
+  "varieties": [
+
+    {
+      "id": "alvarinho",
+      "name": "Alvarinho",
+      "type": "white",
+      "category": "monovarietal",
+      "region": "Vinho Verde – Monção e Melgaço",
+      "doc": "Vinho Verde",
+      "varieties": ["Alvarinho"],
+      "structure": {
+        "acidity": 9,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "12–13%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["flor de laranjeira", "jasmim", "bergamota", "madressilva", "tília", "pêssego", "damasco", "toranja"],
+        "secondary": ["notas de lias", "brioche leve"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["mariscos", "sashimi", "peixe cru", "peixe leve", "queijo fresco", "ostra"],
+        "conflicts": ["carne vermelha intensa", "molhos muito pesados", "taninos fortes"],
+        "notes": "Acidez muito elevada ilumina sabores delicados de peixes crus e corta a gordura dos mariscos; mineralidade salina dos vinhedos costeiros complementa mariscos e frutos do mar"
+      },
+      "japanese_pairing": {
+        "dishes": ["sashimi", "nigiri", "tofu fresco", "tempura de camarão", "ceviche de tofu"],
+        "notes": "Acidez crisp faz ponte com molhos à base de soja leve; mineralidade complementa umami sutil"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+
+    {
+      "id": "loureiro",
+      "name": "Loureiro",
+      "type": "white",
+      "category": "monovarietal",
+      "region": "Vinho Verde – Lima, Cávado",
+      "doc": "Vinho Verde",
+      "varieties": ["Loureiro"],
+      "structure": {
+        "acidity": 8,
+        "tannins": null,
+        "body": "light",
+        "alcohol": "11–12%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["flor de laranjeira", "rosa", "jasmim", "erva fresca", "hortelã leve", "folha de louro", "lima", "pêra"],
+        "secondary": ["banana", "pera caramelizada", "notas de fermentação leve"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["mariscos", "peixe branco", "saladas", "queijo fresco", "pratos vegetarianos leves"],
+        "conflicts": ["carne vermelha", "pratos muito condimentados", "taninos altos"],
+        "notes": "Perfil floral intenso (rosa, jasmim) com toque herbáceo e mentolado — considerado o \"Riesling português\"; acidez alta com corpo leve ideal para pratos delicados"
+      },
+      "japanese_pairing": {
+        "dishes": ["sopa de yuba", "tofu fresco", "sashimi de peixe branco", "saladas japonesas"],
+        "notes": "Notas florais e herbáceas harmonizam com ervas e algas; leveza não domina pratos subtis"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+
+    {
+      "id": "arinto",
+      "name": "Arinto",
+      "type": "white",
+      "category": "monovarietal",
+      "region": "Bucelas, Vinho Verde, Dão",
+      "doc": "Bucelas / Vinho Verde / Dão",
+      "varieties": ["Arinto"],
+      "structure": {
+        "acidity": 9,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "11.5–13%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["limão", "lima", "toranja", "erva fresca", "folha de louro"],
+        "secondary": ["pedra de isqueiro", "fósforo", "brioche (espumantes)", "massa fermentada"],
+        "tertiary": ["resina leve", "bálsamo", "petróleo", "querosene (versões evoluídas)"]
+      },
+      "pairing": {
+        "affinities": ["mariscos", "ostra", "peixe branco", "sushi", "salada de mar", "queijo de cabra"],
+        "conflicts": ["carne vermelha gordurosa", "pratos muito doces", "molhos cremosos pesados"],
+        "notes": "Acidez muito elevada e mineralidade pronunciada; excelente longevidade; espumantes de Arinto são excecionais para aperitivos"
+      },
+      "japanese_pairing": {
+        "dishes": ["sashimi", "temaki", "ceviche de tofu com yuzu", "goma doufu"],
+        "notes": "Notas cítricas espelham yuzu; acidez alta equilibra riqueza do gergelim e molhos de citrinos"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+
+    {
+      "id": "encruzado",
+      "name": "Encruzado",
+      "type": "white",
+      "category": "monovarietal",
+      "region": "Dão",
+      "doc": "Dão",
+      "varieties": ["Encruzado"],
+      "structure": {
+        "acidity": 7,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "13–14%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["maçã", "pêra", "pêssego", "maracujá", "bergamota", "frutas de polpa branca"],
+        "secondary": ["manteiga", "nata", "iogurte (após malolática)", "notas tostadas leves"],
+        "tertiary": ["avelã", "resina de pinheiro", "pinheiro", "mel", "petróleo (versões evoluídas)"]
+      },
+      "pairing": {
+        "affinities": ["peixe nobre", "aves", "cogumelos", "vitela", "queijos de pasta mole", "pratos com nata"],
+        "conflicts": ["peixe cru muito delicado", "pratos extremamente picantes"],
+        "notes": "O Chardonnay português: corpo médio a pleno, cremosidade após malolática, complexidade resinosa com 5–10 anos de idade; bergamota e maracujá na juventude evoluem para avelã e resina de pinheiro"
+      },
+      "japanese_pairing": {
+        "dishes": ["chawan-mushi", "tofu gratin com queijo", "pratos de cogumelos", "frango teriyaki"],
+        "notes": "Cremosidade do Encruzado harmoniza com textura sedosa do chawan-mushi; corpo suficiente para queijo gratinado"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+
+    {
+      "id": "fernao-pires",
+      "name": "Fernão Pires / Maria Gomes",
+      "type": "white",
+      "category": "monovarietal",
+      "region": "Tejo, Bairrada",
+      "doc": "Tejo / Bairrada",
+      "varieties": ["Fernão Pires"],
+      "structure": {
+        "acidity": 6,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "12–13%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["flor de laranjeira", "madressilva", "jasmim", "pétalas de rosa", "lichia", "anis", "mel", "tangerina", "capim-limão", "fruta tropical leve"],
+        "secondary": ["notas cremosas suaves (lias)", "notas amiláceas (espumantes)", "brioche (espumantes)"],
+        "tertiary": ["mel", "mineral (versões envelhecidas)"]
+      },
+      "pairing": {
+        "affinities": ["pratos asiáticos ligeiros", "mariscos", "peixe com molhos aromáticos", "pratos com especiarias suaves", "queijo de cabra aromático"],
+        "conflicts": ["taninos altos", "pratos muito ácidos", "carne vermelha intensa"],
+        "notes": "A casta branca mais perfumada de Portugal; assinatura floral intensa (flor de laranjeira, jasmim) com lichia e anis; beber jovem (1–3 anos) para preservar a característica floral que se perde com o tempo; excelente base para espumantes"
+      },
+      "japanese_pairing": {
+        "dishes": ["pratos com miso suave", "tempura vegetal", "soba fria", "tofu cozido em dashi"],
+        "notes": "Aromas florais e de lichia complementam doçura do miso; acidez moderada não conflita com dashi delicado; compatível com especiarias asiáticas suaves"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+
+    {
+      "id": "antao-vaz",
+      "name": "Antão Vaz",
+      "type": "white",
+      "category": "monovarietal",
+      "region": "Alentejo – Vidigueira",
+      "doc": "Alentejo",
+      "varieties": ["Antão Vaz"],
+      "structure": {
+        "acidity": 5,
+        "tannins": null,
+        "body": "full",
+        "alcohol": "12.5–14%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["abacaxi", "manga", "papaia", "tangerina", "casca de laranja", "damasco", "pêssego (colheita precoce)"],
+        "secondary": ["baunilha", "tosta suave", "creme", "manteiga (versões em barrica)", "noz/amêndoa torrada"],
+        "tertiary": ["damasco seco", "marmelo", "caju", "amêndoa", "mel (versões envelhecidas)"]
+      },
+      "pairing": {
+        "affinities": ["peixe gordo (tamboril, robalo)", "aves assadas", "pratos mediterrâneos", "frutos do mar cremosos", "queijo de pasta semidura"],
+        "conflicts": ["peixe cru delicado", "mariscos muito subtis", "pratos leves"],
+        "notes": "A casta branca mais resistente ao calor do Alentejo; a colheita precoce (meados de agosto) é crítica para preservar acidez; versões em barrica atingem 3–5 anos de evolução; acidez mais suave compensada por corpo e aromas tropicais intensos"
+      },
+      "japanese_pairing": {
+        "dishes": ["tofu gratin", "cataplana de tofu com ameijoas", "frango teriyaki rico"],
+        "notes": "Corpo pleno aguenta pratos mais ricos; aromas tropicais adicionam complexidade sem dominar"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+
+    {
+      "id": "bical",
+      "name": "Bical",
+      "type": "white",
+      "category": "monovarietal",
+      "region": "Bairrada",
+      "doc": "Bairrada",
+      "varieties": ["Bical"],
+      "structure": {
+        "acidity": 8,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "11.5–13%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["pêssego", "damasco", "maçã verde", "pêra", "flores brancas", "mineral/salino (solos argilo-calcários da Bairrada)", "abacaxi (anos mais quentes)"],
+        "secondary": ["brioche", "massa de pão", "cremoso", "biscoito (espumantes/lias)"],
+        "tertiary": ["mel", "tosta de manteiga", "lanolina", "querosene (envelhecimento — como Riesling)"]
+      },
+      "pairing": {
+        "affinities": ["aperitivo", "mariscos", "ostras", "peixe branco grelhado", "queijo fresco", "bacalhau (preparações suaves)"],
+        "conflicts": ["carne vermelha", "pratos muito picantes"],
+        "notes": "Base excelente para espumantes de Bairrada; das raras castas brancas portuguesas com envelhecimento ao estilo Riesling — desenvolve mel, tosta de manteiga e querosene com o tempo; a colheita precoce é crítica para preservar a acidez; beber jovem ou com 5–10 anos de garrafa"
+      },
+      "japanese_pairing": {
+        "dishes": ["aperitivos variados", "tempura leve", "sashimi de peixe branco"],
+        "notes": "Como espumante, limpa o palato entre pratos variados; acidez alta complementa fritura leve da tempura; acidez persistente realça delicadeza do peixe cru"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+
+    {
+      "id": "siria-roupeiro",
+      "name": "Síria / Roupeiro",
+      "type": "white",
+      "category": "monovarietal",
+      "region": "Beira Interior, Alentejo",
+      "doc": "Beira Interior / Alentejo",
+      "varieties": ["Síria", "Roupeiro"],
+      "aliases": ["Alva (Alentejo)", "Crato (Algarve)"],
+      "structure": {
+        "acidity": 7,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "12–13.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["laranja", "limão", "melão branco", "cantaloupe", "pêssego", "damasco", "figo branco", "flores silvestres", "flor branca", "folha de louro"],
+        "secondary": ["pimenta branca", "cravo (terroir/fermentação)"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["peixe branco assado", "mariscos (camarão, mexilhão, ostra)", "sushi", "pratos com arroz", "legumes grelhados"],
+        "conflicts": ["sashimi muito delicado", "carne vermelha intensa", "pratos para envelhecer"],
+        "notes": "Considerada a casta branca mais antiga de Portugal; perfil cítrico e melão abundante; beber jovem — propensa a oxidação prematura que apaga rapidamente os aromas cítricos; acidez moderada a alta (mais elevada nos locais de altitude como Beira Interior)"
+      },
+      "japanese_pairing": {
+        "dishes": ["sushi", "arroz misto de legumes", "tofu agedashi", "pratos de mariscos"],
+        "notes": "Aromas cítricos complementam preparações japonesas com citrinos; acidez corta gorduras suaves dos fritos"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+
+    {
+      "id": "trajadura",
+      "name": "Trajadura",
+      "type": "white",
+      "category": "monovarietal",
+      "region": "Vinho Verde",
+      "doc": "Vinho Verde",
+      "varieties": ["Trajadura"],
+      "aliases": ["Treixadura (Galiza/Espanha)"],
+      "structure": {
+        "acidity": 6,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "11–12.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["pêssego", "damasco", "pêra madura", "maçã", "flor de laranjeira", "madressilva", "toranja", "lima"],
+        "secondary": ["massa de pão (com lias)", "notas minerais e erváticas (lias)"],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": ["mariscos", "peixe branco grelhado", "amêijoas", "mexilhões", "saladas", "queijo fresco", "aves suaves"],
+        "conflicts": ["pratos muito ricos", "carne vermelha", "queijos curados"],
+        "notes": "Acidez mais baixa que Alvarinho e Loureiro — o que a distingue dentro do Vinho Verde; contribui com corpo e redondeza nos blends; alta concentração de terpenos e norisoprenoides; mais forgiving com preparações mais ricas como peixes com molho cremoso suave; beber jovem"
+      },
+      "japanese_pairing": {
+        "dishes": ["sopa de yuba", "tofu fresco", "saladas japonesas leves", "peixe branco grelhado"],
+        "notes": "Corpo médio e aromas frutados toleram pratos com alguma riqueza; acidez moderada equilibra texturas cremosas suaves"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+
+    {
+      "id": "rabigato",
+      "name": "Rabigato",
+      "type": "white",
+      "category": "monovarietal",
+      "region": "Douro Superior, Trás-os-Montes",
+      "doc": "Douro",
+      "varieties": ["Rabigato"],
+      "aliases": ["Rabo de Ovelha"],
+      "structure": {
+        "acidity": 8,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "12.5–13.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["limão", "lima", "toranja", "maçã verde", "pêssego branco", "damasco subtil", "acácia", "flor de laranjeira", "jasmim", "flores silvestres", "relva cortada", "alecrim e tomilho (terroir xistoso)", "mineralidade de ardósia molhada"],
+        "secondary": ["brioche (lias/batonnage)", "iogurte/lático suave (malolática parcial)"],
+        "tertiary": ["petróleo/querosene (sutil — não tão intenso como Riesling)", "lanolina", "cera de abelha", "amêndoa", "avelã (barrica)", "damasco seco", "casca de citrino confitada", "mel", "salinidade mineral que se intensifica com o tempo"]
+      },
+      "pairing": {
+        "affinities": ["peixe branco grelhado (robalo, dourada)", "polvo à lagareiro", "arroz de marisco", "percebes", "amêijoas", "ostra", "ceviche"],
+        "conflicts": ["pratos gordurosos pesados", "carne vermelha"],
+        "notes": "Acidez viva e penetrante com final salino característico dos Douro Brancos de qualidade; tratado por muitos produtores como Riesling (fermentação a frio em inox, sem carvalho); alta relação pele/sumo confere textura sem taninos; aging potential de 5–8 anos subestimado — a acidez preserva frescura e a mineralidade intensifica-se; alias Rabo de Ovelha em outras regiões"
+      },
+      "japanese_pairing": {
+        "dishes": ["sashimi", "peixe grelhado levemente", "pratos de mar subtis", "nigiri"],
+        "notes": "Final salino espelha frescura do oceano; acidez viva realça umami sutil do peixe cru; mineralidade complementa ponzu e molhos cítricos"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+
+    {
+      "id": "viosinho",
+      "name": "Viosinho",
+      "type": "white",
+      "category": "monovarietal",
+      "region": "Douro",
+      "doc": "Douro",
+      "varieties": ["Viosinho"],
+      "structure": {
+        "acidity": 8,
+        "tannins": null,
+        "body": "full",
+        "alcohol": "12.5–14%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["damasco", "abacaxi caramelizado", "manga", "maçã verde", "pêra", "limão", "flores brancas", "flor de limão", "mineralidade salina"],
+        "secondary": ["cremoso", "baunilha suave (barrica)", "notas lácticas (malolática)"],
+        "tertiary": ["baunilha", "especiarias de confeitaria", "damasco seco", "marmelada de laranja", "amêndoa", "fruta confitada (versões envelhecidas)"]
+      },
+      "pairing": {
+        "affinities": ["peixe nobre", "peixe gordo grelhado", "bacalhau (preparações suaves)", "aves", "vitela", "pratos com molho cremoso", "cogumelos"],
+        "conflicts": ["peixe cru muito delicado", "mariscos simples"],
+        "notes": "O \"Sauvignon Blanc português\" — intensidade aromática e floral excepcional; acidez quasi-salina e corpo pleno; componente de prestígio nos blends de Douro Branco; boa aptidão para barrica e envelhecimento"
+      },
+      "japanese_pairing": {
+        "dishes": ["frango teriyaki", "pratos de cogumelos", "tofu gratin", "peixe grelhado"],
+        "notes": "Corpo pleno e aromas intensos aguenta pratos com molhos mais ricos; mineralidade salina complementa frutos do mar"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+
+    {
+      "id": "moscatel-galego-branco",
+      "name": "Moscatel Galego Branco",
+      "type": "white",
+      "category": "monovarietal",
+      "region": "Douro, Setúbal",
+      "doc": "Douro / Setúbal",
+      "varieties": ["Moscatel Galego Branco"],
+      "structure": {
+        "acidity": 5,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "11–13% (seco) / 17–20% (licoroso)",
+        "sweetness": "off-dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["flor de laranjeira (neroli)", "pétalas de rosa e água de rosas", "jasmim", "lavanda (linalool)", "verbena", "capim-limão", "acácia", "lichia", "tangerina e casca de tangerina", "toranja", "damasco", "uva fresca (carácter muscatel — assinatura varietal)"],
+        "secondary": ["brioche e creme (lias/barrica)", "manteiga suave (malolática parcial)", "aguardente integrada (versão licorosa)"],
+        "tertiary": ["damasco seco", "figo seco", "laranja confitada", "marmelada de laranja", "mel e cera de abelha", "marzipan e pasta de amêndoa", "caramelo", "noz torrada e avelã", "café e chocolate negro (Superiores envelhecidos)", "rancio discreto (estilo Garrafeira 20+ anos)"]
+      },
+      "pairing": {
+        "affinities": ["sobremesas (versão licorosa)", "queijos azuis", "foie gras", "pastéis de amêndoa", "cozinha tailandesa/vietnamita (versão seca)", "pratos com capim-limão e coentros"],
+        "conflicts": ["peixe cru", "pratos salgados intensos sem doçura complementar"],
+        "notes": "A casta mais aromática da família Muscat — terpenos excepcionalmente elevados (linalool, geraniol, nerol, citronelol) criam perfil floral inigualável; \"carácter de uva fresca\" é assinatura varietal única; versão seca: beber jovem (1–4 anos); versão licorosa (Moscatel de Setúbal): mínimo 3 meses de maceração com películas + barrica — envelhece 10–40+ anos; versão seca harmoniza surpreendentemente com cozinha asiática aromática (capim-limão, galanga, coentros)"
+      },
+      "japanese_pairing": {
+        "dishes": ["parfait de tofu", "sobremesas japonesas", "pratos com miso doce", "sushi com ponzu cítrico (versão seca)"],
+        "notes": "Aromas de mel e figo seco (versão licorosa) combinam com doçura do parfait; versão seca harmoniza com ervas aromáticas japonesas; ponzu cítrico ressoa com os terpenos florais-cítricos"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+
+    {
+      "id": "gouveio",
+      "name": "Gouveio",
+      "type": "white",
+      "category": "monovarietal",
+      "region": "Douro, Trás-os-Montes",
+      "doc": "Douro",
+      "varieties": ["Gouveio"],
+      "aliases": ["Verdelho do Douro", "Godello (Espanha — geneticamente idêntico)"],
+      "structure": {
+        "acidity": 7,
+        "tannins": null,
+        "body": "medium",
+        "alcohol": "11–14%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": ["limão", "lima", "toranja", "maçã verde", "pêra", "pêssego branco", "damasco", "flor branca", "camomila", "erva-doce", "folha de louro", "mineralidade pederneira (terroir)"],
+        "secondary": ["massa de pão", "levedura", "creme (lias)", "manteiga (malolática)", "baunilha e tosta suave (barrica)"],
+        "tertiary": ["avelã", "amêndoa torrada", "cera de abelha", "mel", "fumo/pederneira", "baunilha cremosa (barrica)"]
+      },
+      "pairing": {
+        "affinities": ["bacalhau (com natas)", "peixe nobre", "mariscos", "frango assado", "vitela", "pratos com molho cremoso", "cogumelos"],
+        "conflicts": ["peixe cru muito delicado", "pratos muito leves"],
+        "notes": "Geneticamente idêntico ao Godello espanhol — o \"Borgonha branco\" de Portugal; transmite o terroir com mineralidade de pederneira e salinidade; estilos em inox: fresco e cítrico; estilos em barrica: cremoso e complexo estilo Borgonha; uma das melhores castas brancas para envelhecimento em Portugal"
+      },
+      "japanese_pairing": {
+        "dishes": ["bacalhau ao forno (versão portuguesa)", "pratos de cogumelos", "tofu gratin", "aves assadas"],
+        "notes": "Mineralidade e acidez integrada acompanham pratos com alguma riqueza; corpo médio a pleno versátil para múltiplos preparos"
+      },
+      "source": "Infovini Castas Brancas + Claude + web"
+    },
+
+    {
+      "id": "malvasia-fina",
+      "name": "Malvasia Fina",
+      "type": "white",
+      "category": "monovarietal",
+      "region": "Douro, Dão",
+      "doc": "Douro / Dão",
+      "varieties": ["Malvasia Fina"],
+      "aliases": ["Assario Branco (Dão)", "Arinto Galego (Portalegre)", "Boal (Madeira)"],
+      "structure": {
+        "acidity": 6,
+        "tannins": null,
+        "body": "light",
+        "alcohol": "11.5–13%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": ["pêssego branco", "damasco", "cítrico", "rosa", "acácia", "flores silvestres", "manjericão", "amêndoa verde", "mineralidade (conchas do mar)"],
+        "secondary": ["notas de levedura leve (lias/leveduras selvagens)", "cremoso discreto"],
+        "tertiary": ["cera de abelha", "mel", "noz-moscada", "fumo leve (mesmo sem barrica)", "noz", "fruta seca (versões envelhecidas)"]
+      },
+      "pairing": {
+        "affinities": ["peixe branco grelhado", "mariscos suaves", "bacalhau", "coelho estufado (Dão)", "queijo fresco", "saladas"],
+        "conflicts": ["pratos muito condimentados", "carne vermelha", "pratos muito gordurosos"],
+        "notes": "Casta de blending por excelência; carácter aromático floral intenso e distinto; o toque de cera, mel e fumo aparece mesmo em versões sem barrica — é varietal, não de envelhecimento. Raramente encontrada como monovarietal mas produz vinhos de grande elegância quando vinificada isolada. Mesma família da Boal da Madeira"
+      },
+      "japanese_pairing": {
+        "dishes": ["sopa de yuba", "tofu fresco", "pratos de vapor delicados", "pratos com dashi suave"],
+        "notes": "Delicadeza da Malvasia Fina complementa pratos subtis sem os dominar; carácter floral harmoniza com ingredientes aromáticos japoneses"
+      },
+      "source": "Infovini Castas Brancas + Claude + web"
+    }
+
+  ]
+}

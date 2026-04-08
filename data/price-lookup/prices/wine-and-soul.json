@@ -1,0 +1,223 @@
+{
+  "producer": "Wine and Soul",
+  "generated_at": "2026-03-01T11:20:27.333460",
+  "found_count": 5,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "manoella-branco-2021",
+      "producer": "Wine and Soul",
+      "name": "Manoella Branco",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 13.72,
+          "name_found": "Manoella Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/manoella-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 15.95,
+          "name_found": " 2024 Manoella branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-manoella-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 16.65,
+          "name_found": "Manoella Branco 2024",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/9387-manoella-white-2018-5600353700425.html"
+        }
+      },
+      "best_retail": 13.72,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 21.0,
+        "2.0x": 27.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "manoella-tinto-2018",
+      "producer": "Wine and Soul",
+      "name": "Manoella Tinto",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 13.72,
+          "name_found": "Manoella Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/manoella-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 15.95,
+          "name_found": " 2024 Manoella branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2024-manoella-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 16.65,
+          "name_found": "Manoella Branco 2024",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/9387-manoella-white-2018-5600353700425.html"
+        }
+      },
+      "best_retail": 13.72,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 21.0,
+        "2.0x": 27.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "manoella-rose-2023",
+      "producer": "Wine and Soul",
+      "name": "Manoella Rosé",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 13.72,
+          "name_found": "Manoella Rosé",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/manoella-rose/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 15.95,
+          "name_found": " 2023 Manoella rosé",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2023-manoella-rose.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 16.65,
+          "name_found": "Manoella Rosé 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/14352-manoella-rose-2018-5600353700449.html"
+        }
+      },
+      "best_retail": 13.72,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 21.0,
+        "2.0x": 27.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "guru-branco-2020",
+      "producer": "Wine and Soul",
+      "name": "Guru Branco",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 39.69,
+          "name_found": "Guru Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/guru-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 44.95,
+          "name_found": " 2023 Wine & Soul Guru branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2023-wine-soul-guru-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 37.95,
+          "name_found": "Vinho Branco Guru 2024 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-guru-2024-75-cl/item_12274.html?id=203&cat=254&pc=35"
+        },
+        "PortugalVineyards": {
+          "retail_price": 42.35,
+          "name_found": "Guru Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/372-guru-white-2017-5600353700258.html"
+        }
+      },
+      "best_retail": 37.95,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 57.0,
+        "2.0x": 76.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "vinha-do-altar-reserva-branco-2020",
+      "producer": "Wine and Soul",
+      "name": "Vinha do Altar Reserva Branco",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 10.64,
+          "name_found": "Vinha do Altar Reserva Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/vinha-do-altar-reserva-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Guru Vinha da Calçada branco",
+          "confidence": "no_match",
+          "score": 0.216,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 12.95,
+          "name_found": "Vinha do Altar Reserva Branco 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/douro/16183-vinha-do-altar-white-2019-5600353700319.html"
+        }
+      },
+      "best_retail": 10.64,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 16.0,
+        "2.0x": 21.5
+      },
+      "status": "found"
+    }
+  ]
+}

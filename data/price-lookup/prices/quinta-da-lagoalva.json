@@ -1,0 +1,180 @@
+{
+  "producer": "Quinta da Lagoalva",
+  "generated_at": "2026-03-01T11:20:27.368963",
+  "found_count": 4,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "lagoalva-grande-reserva-fernao-pires-2022",
+      "producer": "Quinta da Lagoalva",
+      "name": "Quinta da Lagoalva Grande Reserva Fernão Pires",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta da Boa Esperança Fernão Pires Branco",
+          "confidence": "low",
+          "score": 0.592,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta da Pacheca Grande Reserva branco",
+          "confidence": "low",
+          "score": 0.478,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Qta. Cardo Grande Reserva 2021 75 Cl",
+          "confidence": "no_match",
+          "score": 0.432,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 35.75,
+          "name_found": "Quinta da Lagoalva Grande Reserva Fernão Pires Branco 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/tejo/22559-quinta-da-lagoalva-grand-reserve-fernao-pires-white-2021.html"
+        }
+      },
+      "best_retail": 35.75,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 54.0,
+        "2.0x": 71.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "lagoalva-reserva-branco-2024",
+      "producer": "Quinta da Lagoalva",
+      "name": "Lagoalva Reserva Branco",
+      "vintage": 2024,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Covela Reserva Tinto",
+          "confidence": "no_match",
+          "score": 0.369,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta de La Rosa Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.361,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 8.69,
+          "name_found": "Vinho Branco Lagoalva Reserva 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-lagoalva-reserva-75-cl/item_13335.html?id=203&cat=254&pc=29"
+        },
+        "PortugalVineyards": {
+          "retail_price": 10.95,
+          "name_found": "Quinta da Lagoalva Reserva Branco 2023",
+          "confidence": "high",
+          "score": 0.776,
+          "url": "https://www.portugalvineyards.com/pt/tejo/21175-lagoalva-reserve-white-2022-5603002000426.html"
+        }
+      },
+      "best_retail": 8.69,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 13.5,
+        "2.0x": 17.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "lagoalva-grande-reserva-alfrocheiro-bio-2018",
+      "producer": "Quinta da Lagoalva",
+      "name": "Quinta da Lagoalva Grande Reserva Alfrocheiro Bio",
+      "vintage": 2018,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta da Rede Grande Reserva Branco",
+          "confidence": "low",
+          "score": 0.45,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta da Pacheca Grande Reserva branco",
+          "confidence": "low",
+          "score": 0.453,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Taboadella Reserva  Alfrocheiro 2021 75 Cl",
+          "confidence": "no_match",
+          "score": 0.448,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 35.75,
+          "name_found": "Quinta da Lagoalva Grande Reserva Alfrocheiro Tinto 2018",
+          "confidence": "high",
+          "score": 0.892,
+          "url": "https://www.portugalvineyards.com/pt/tejo/20966-quinta-da-lagoalva-grand-reserve-alfrocheiro-red-2018-5603002000372.html"
+        }
+      },
+      "best_retail": 35.75,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 54.0,
+        "2.0x": 71.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "lagoalva-reserva-tinto",
+      "producer": "Quinta da Lagoalva",
+      "name": "Lagoalva Reserva Tinto",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Covela Reserva Tinto",
+          "confidence": "no_match",
+          "score": 0.369,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta de La Rosa Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.361,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 8.69,
+          "name_found": "Vinho Branco Lagoalva Reserva 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-lagoalva-reserva-75-cl/item_13335.html?id=203&cat=254&pc=29"
+        },
+        "PortugalVineyards": {
+          "retail_price": 10.95,
+          "name_found": "Quinta da Lagoalva Reserva Branco 2023",
+          "confidence": "high",
+          "score": 0.776,
+          "url": "https://www.portugalvineyards.com/pt/tejo/21175-lagoalva-reserve-white-2022-5603002000426.html"
+        }
+      },
+      "best_retail": 8.69,
+      "best_source": "GarrafeiraSoares",
+      "restaurant_estimates": {
+        "1.5x": 13.5,
+        "2.0x": 17.5
+      },
+      "status": "found"
+    }
+  ]
+}

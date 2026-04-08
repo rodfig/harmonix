@@ -1,0 +1,223 @@
+{
+  "producer": "Quinta dos Carvalhais",
+  "generated_at": "2026-03-01T11:20:27.329443",
+  "found_count": 5,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "carvalhais-branco-especial",
+      "producer": "Quinta dos Carvalhais",
+      "name": "Quinta dos Carvalhais Branco Especial",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 58.75,
+          "name_found": "Quinta dos Carvalhais Especial Branco",
+          "confidence": "high",
+          "score": 0.732,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-carvalhais-especial-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos branco",
+          "confidence": "no_match",
+          "score": 0.395,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Carvalhais 75 Cl",
+          "confidence": "low",
+          "score": 0.575,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta dos Carvalhais Reserva Branco 2020",
+          "confidence": "low",
+          "score": 0.69,
+          "url": null
+        }
+      },
+      "best_retail": 58.75,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 88.5,
+        "2.0x": 117.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "carvalhais-unico-tinto-2020",
+      "producer": "Quinta dos Carvalhais",
+      "name": "Quinta dos Carvalhais Único Tinto",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 93.99,
+          "name_found": "Quinta dos Carvalhais Único Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-carvalhais-unico-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos branco",
+          "confidence": "no_match",
+          "score": 0.42,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Carvalhais 75 Cl",
+          "confidence": "low",
+          "score": 0.575,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 115.35,
+          "name_found": "Quinta dos Carvalhais Único Tinto 2017",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/dao/23258-quinta-dos-carvalhais-unico-red-2017-5601012001228.html"
+        }
+      },
+      "best_retail": 93.99,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 141.0,
+        "2.0x": 188.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "carvalhais-rose-reserva-2023",
+      "producer": "Quinta dos Carvalhais",
+      "name": "Quinta dos Carvalhais Rosé Reserva Edição Especial",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 54.99,
+          "name_found": "Quinta dos Carvalhais Reserva Rosé Edição Especial 1,5L",
+          "confidence": "high",
+          "score": 0.754,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-carvalhais-reserva-rose-1-5l/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos Reserva branco",
+          "confidence": "no_match",
+          "score": 0.385,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Rose Dão Quinta Carvalhais 75 Cl",
+          "confidence": "no_match",
+          "score": 0.45,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta dos Carvalhais Reserva Branco 2020",
+          "confidence": "low",
+          "score": 0.616,
+          "url": null
+        }
+      },
+      "best_retail": 54.99,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 82.5,
+        "2.0x": 110.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "carvalhais-alfrocheiro-especial-2019",
+      "producer": "Quinta dos Carvalhais",
+      "name": "Quinta dos Carvalhais Alfrocheiro Edição Especial",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 24.49,
+          "name_found": "Quinta dos Carvalhais Alfrocheiro Edição Especial Tinto",
+          "confidence": "high",
+          "score": 0.844,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-carvalhais-alfrocheiro-edicao-especial-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Quinta dos Termos Vinha das Colmeias Alfrocheiro Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.367,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Quinta Carvalhais 75 Cl",
+          "confidence": "no_match",
+          "score": 0.384,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Quinta dos Carvalhais Alfrocheiro Tinto 2019",
+          "confidence": "low",
+          "score": 0.703,
+          "url": null
+        }
+      },
+      "best_retail": 24.49,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 37.0,
+        "2.0x": 49.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "carvalhais-reserva-tinto-2020",
+      "producer": "Quinta dos Carvalhais",
+      "name": "Quinta dos Carvalhais Reserva Tinto",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 35.99,
+          "name_found": "Quinta dos Carvalhais Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/quinta-dos-carvalhais-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quinta dos Termos Reserva branco",
+          "confidence": "low",
+          "score": 0.604,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Dão Quinta Carvalhais Reserva 2020 75 Cl",
+          "confidence": "low",
+          "score": 0.7,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 41.45,
+          "name_found": "Quinta dos Carvalhais Reserva Branco 2020",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/dao/1308-quinta-dos-carvalhais-reserve-white-2017-5601012000764.html"
+        }
+      },
+      "best_retail": 35.99,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 54.0,
+        "2.0x": 72.0
+      },
+      "status": "found"
+    }
+  ]
+}

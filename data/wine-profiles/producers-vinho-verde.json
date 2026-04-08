@@ -1,0 +1,1750 @@
+{
+  "_meta": {
+    "region": "Vinho Verde",
+    "description": "Producer wine profiles for Vinho Verde DOC",
+    "schema_version": "2.0",
+    "note": "Producer-centric format. Pairing is derived algorithmically from structure fields via pairing-rules.json. food_tags are NOT stored on wines. Cooking method and dish complements are as important as the main ingredient — see pairing_principles in pairing-rules.json.",
+    "fields_required": [
+      "id",
+      "name",
+      "doc",
+      "type",
+      "varieties",
+      "alcohol",
+      "structure",
+      "aromas",
+      "pairing"
+    ],
+    "fields_optional": [
+      "vintage",
+      "acidity_gl",
+      "ph",
+      "winemaking",
+      "notes",
+      "quinta"
+    ],
+    "fields_producer_optional": [
+      "quintas"
+    ]
+  },
+  "producers": [
+    {
+      "producer": "Anselmo Mendes",
+      "region": "Vinho Verde",
+      "quintas": [
+        "Quinta da Torre"
+      ],
+      "producer_notes": "Referência máxima em Alvarinho de Monção e Melgaço. Winemaker individual — não é quinta própria mas trabalha uvas de quintas parceiras na sub-região, com destaque para a Quinta da Torre. Portfolio diverso: desde blends acessíveis (Muros Antigos) até expressões de topo com maceração pelicular (Contacto) e estágio em madeira (A Torre).",
+      "wines": [
+        {
+          "id": "muros-antigos-alvarinho-2024",
+          "name": "Muros Antigos Alvarinho",
+          "vintage": 2024,
+          "doc": "Vinho Verde – Alvarinho, Monção e Melgaço",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.0,
+          "ph": 3.2,
+          "winemaking": null,
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "limão",
+              "toranja",
+              "citrinos pronunciados"
+            ],
+            "secondary": [
+              "mineralidade intensa"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe cru",
+              "sashimi",
+              "ostra",
+              "mariscos",
+              "sushi"
+            ],
+            "notes": "Expressão clássica e pura do Alvarinho. Mineralidade e acidez cítricas fazem-no ideal para peixe cru e mariscos de sabor delicado. Grande potencial de guarda para um Vinho Verde (10 anos)."
+          }
+        },
+        {
+          "id": "muros-antigos-escolha-2024",
+          "name": "Muros Antigos Escolha",
+          "vintage": 2024,
+          "doc": "Vinho Verde",
+          "type": "white",
+          "varieties": [
+            "Alvarinho",
+            "Loureiro",
+            "Avesso"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.3,
+          "ph": 3.2,
+          "winemaking": "Mínimo 3 meses sobre borras finas com bâtonnage regular",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "tangerina",
+              "maçã verde",
+              "cítricos doces"
+            ],
+            "secondary": [
+              "notas de lias suaves"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "mariscos",
+              "peixe cru",
+              "sushi",
+              "pratos delicados",
+              "aperitivo"
+            ],
+            "notes": "Blend de três sub-regiões — cada casta contribui terroir distinto. Mais versátil que o Alvarinho puro: Loureiro acrescenta floral, Avesso mineralidade e acidez de Baião. Estágio em lias dá textura adicional."
+          }
+        },
+        {
+          "id": "contacto-alvarinho-2024",
+          "name": "Contacto Alvarinho",
+          "vintage": 2024,
+          "doc": "Vinho Verde – Alvarinho, Monção e Melgaço",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 7.0,
+          "ph": 3.3,
+          "winemaking": "Maceração pelicular (skin contact) — confere untuosidade, cremosidade e leves notas tánicas. Nota: não explicitado na ficha técnica mas confirmado pelo perfil organolético e conhecimento da linha.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "toranja",
+              "citrinos",
+              "notas de chá"
+            ],
+            "secondary": [
+              "mineral intenso"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "peixe fumado",
+              "queijo de pasta mole",
+              "pratos com umami moderado",
+              "aves"
+            ],
+            "notes": "Perfil radicalmente diferente do Alvarinho standard — maceração pelicular acrescenta textura, untuosidade e leve tanino que permitem acompanhar pratos mais ricos. Acidez total mais alta (7.0 g/L) mas pH mais elevado (3.30) pela textura de skin contact. Evitar peixe muito cru e delicado."
+          }
+        },
+        {
+          "id": "contacto-loureiro-2024",
+          "name": "Contacto Loureiro",
+          "vintage": 2024,
+          "doc": "Vinho Verde",
+          "type": "white",
+          "varieties": [
+            "Loureiro"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 6.6,
+          "ph": 3.26,
+          "winemaking": "Maceração pelicular (skin contact) — linha Contacto. Solos graníticos, influência atlântica.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "jasmim",
+              "pétalas brancas",
+              "citrinos",
+              "floral exuberante"
+            ],
+            "secondary": [
+              "frescura salina"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "pratos delicados",
+              "peixe cru",
+              "sushi",
+              "tempura vegetal",
+              "pratos florais ou cítricos"
+            ],
+            "notes": "Loureiro com skin contact — o floral da casta (jasmim, pétalas brancas) combina com a textura adicional da maceração. Mais elegante e leve que o Contacto Alvarinho. Acidez crocante e redonda. Excelente com pratos que tenham elemento floral ou cítrico nos complementos."
+          }
+        },
+        {
+          "id": "expressoes-alvarinho-2021",
+          "name": "Expressões Alvarinho",
+          "quinta": "Quinta da Torre",
+          "vintage": 2021,
+          "doc": "Vinho Verde – Alvarinho, Monção e Melgaço",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.5,
+          "ph": 3.32,
+          "winemaking": null,
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "jasmim",
+              "flor de laranjeira"
+            ],
+            "secondary": [
+              "baunilha suave",
+              "amêndoa"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe nobre grelhado",
+              "aves",
+              "mariscos ricos",
+              "queijo de pasta mole",
+              "pratos de média complexidade"
+            ],
+            "notes": "Alvarinho de maior complexidade e guarda longa (15 anos). Notas florais de jasmim e laranjeira com nuances de baunilha e amêndoa sugerem maior complexidade que as entradas da gama. pH mais elevado (3.32) = acidez menos agressiva, mais adequado para pratos com alguma riqueza."
+          }
+        },
+        {
+          "id": "a-torre-alvarinho-2019",
+          "name": "A Torre",
+          "quinta": "Quinta da Torre",
+          "vintage": 2019,
+          "doc": "Vinho Verde – Alvarinho, Monção e Melgaço",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.3,
+          "ph": 3.2,
+          "winemaking": "Estágio em madeira (delicado e subtil). Produção limitada: 4.800 garrafas.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos",
+              "carácter varietal Alvarinho"
+            ],
+            "secondary": [
+              "baunilha",
+              "amêndoa",
+              "madeira subtil"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe nobre",
+              "lagosta",
+              "vieira",
+              "aves nobres",
+              "risotto",
+              "pratos com molho cremoso leve"
+            ],
+            "notes": "Topo de gama — único com estágio em madeira. A barrica é subtil e não domina o Alvarinho, acrescentando complexidade e suporte para pratos mais ricos. pH 3.20 preserva acidez estruturante apesar do oak. Potencial de guarda excecional (20 anos). 4.800 garrafas — produção de culto."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta de Soalheiro",
+      "region": "Vinho Verde",
+      "quintas": [
+        "Quinta de Soalheiro"
+      ],
+      "producer_notes": "Pioneiro do Alvarinho premium em Portugal — fundada em 1974, foi a primeira quinta a produzir Alvarinho engarrafado em Monção e Melgaço e o primeiro espumante de Alvarinho pelo método clássico. Estate producer (quinta própria) em solos graníticos e xistosos de altitude. Portfolio vasto e inovador.",
+      "wines": [
+        {
+          "id": "soalheiro-classico-2020",
+          "name": "Soalheiro Alvarinho Clássico",
+          "quinta": "Quinta de Soalheiro",
+          "vintage": 2020,
+          "doc": "Vinho Verde – Alvarinho, Monção e Melgaço",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 7.0,
+          "ph": 3.14,
+          "winemaking": null,
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "tropical",
+              "citrinos",
+              "mineral"
+            ],
+            "secondary": [
+              "mineralidade intensa"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivo",
+              "mariscos",
+              "peixe grelhado",
+              "carne branca",
+              "queijo curado",
+              "carne fumada",
+              "cozinha asiática"
+            ],
+            "notes": "Flagship e referência máxima do Alvarinho português. pH muito baixo (3.14) — acidez percebida extremamente estruturante. Produtor recomenda explicitamente cozinha asiática. Versatilidade notável: cobre desde aperitivo até carne branca e queijo curado."
+          }
+        },
+        {
+          "id": "soalheiro-granit-2021",
+          "name": "Soalheiro Granit Alvarinho",
+          "quinta": "Quinta de Soalheiro",
+          "vintage": 2021,
+          "doc": "Vinho Verde – Alvarinho, Monção e Melgaço",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 7.1,
+          "ph": 3.19,
+          "winemaking": "Parcelas específicas em solo granítico — vinificação orientada para expressar mineralidade e salinidade do terroir",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "mineral",
+              "salinidade",
+              "citrinos"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "mariscos",
+              "peixe grelhado",
+              "peixe gordo assado",
+              "sushi",
+              "dim sum",
+              "carnes fumadas",
+              "queijo curado"
+            ],
+            "notes": "Expressão pura do granito — mais austero e mineral que o Clássico. Salinidade saliente no palato. Produtor recomenda explicitamente sushi e dim sum. Acidez viva e mineral ideal para peixe gordo (contraste corta gordura). Mais magro e preciso que o Clássico."
+          }
+        },
+        {
+          "id": "soalheiro-primeiras-vinhas-2022",
+          "name": "Soalheiro Primeiras Vinhas Alvarinho",
+          "quinta": "Quinta de Soalheiro",
+          "vintage": 2022,
+          "doc": "Vinho Verde – Alvarinho, Monção e Melgaço",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.8,
+          "ph": 3.17,
+          "winemaking": "Vinhas velhas (primeiras vinhas da quinta, fundação 1974). Estágio em madeira — perfil ligeiramente amanteigado.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta madura",
+              "especiarias"
+            ],
+            "secondary": [
+              "amanteigado",
+              "madeira subtil"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco rico",
+              "todos os tipos de peixe",
+              "carne branca",
+              "queijo curado",
+              "carne fumada",
+              "cozinha asiática"
+            ],
+            "notes": "Velhas vinhas + madeira = Alvarinho mais complexo e encorpado da gama. 'Corpo cheio' declarado explicitamente. pH 3.17 mantém acidez estruturante apesar de menor acidez total (5.8 g/L). Capaz de acompanhar pratos mais ricos que qualquer outro Alvarinho desta seleção. Boa capacidade de envelhecimento."
+          }
+        },
+        {
+          "id": "soalheiro-espumante-bruto-alvarinho",
+          "name": "Soalheiro Espumante Bruto Alvarinho",
+          "quinta": "Quinta de Soalheiro",
+          "vintage": null,
+          "doc": "IG Minho",
+          "type": "sparkling",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 7.2,
+          "ph": 3.06,
+          "winemaking": "Método clássico (tradicional) — o primeiro espumante de Alvarinho produzido em Portugal pelo método clássico. Bolhas finas e persistentes.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutado",
+              "fresco",
+              "Alvarinho varietal"
+            ],
+            "secondary": [
+              "mineral",
+              "efervescência"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivo",
+              "ostra",
+              "marisco",
+              "fritura",
+              "carne assada",
+              "queijo salgado curado",
+              "lampreia"
+            ],
+            "notes": "pH 3.06 — o mais ácido desta seleção. Ícone histórico: primeiro espumante de Alvarinho em Portugal. Versatilidade surpreendente: produtor recomenda desde aperitivo à carne assada e fritura (borbulha corta gordura). Recomendação específica com lampreia — iguaria minhota de gordura intensa, a borbulha e acidez extrema equilibram perfeitamente."
+          }
+        },
+        {
+          "id": "soalheiro-9pct-2024",
+          "name": "Soalheiro 9% Alvarinho",
+          "quinta": "Quinta de Soalheiro",
+          "vintage": 2024,
+          "doc": "IG Minho",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 9.0,
+          "acidity_gl": 5.7,
+          "ph": 3.25,
+          "winemaking": "Fermentação interrompida — preserva açúcar residual natural (44.6 g/L) e baixo teor alcoólico.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "semi-sweet",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos",
+              "frutos tropicais"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivo de verão",
+              "foie gras",
+              "queijo forte e salgado",
+              "sobremesas frescas",
+              "pratos levemente picantes"
+            ],
+            "notes": "Perfil radicalmente diferente — 9% álcool, 44.6 g/L açúcar residual (semi-doce). Pairing por contraste: doçura + acidez equilibra intensidade de foie gras e queijos fortes salgados. Baixo álcool especialmente indicado com pratos picantes (álcool elevado amplifica a picância). Produtor recomenda fim de refeição ou sozinho."
+          }
+        },
+        {
+          "id": "soalheiro-reserva-2023",
+          "name": "Soalheiro Reserva Alvarinho",
+          "quinta": "Quinta de Soalheiro",
+          "vintage": 2023,
+          "doc": "Vinho Verde – Alvarinho, Monção e Melgaço",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 6.7,
+          "ph": 3.2,
+          "winemaking": "Fermentado em barricas de carvalho.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta Alvarinho madura"
+            ],
+            "secondary": [
+              "madeira equilibrada",
+              "complexidade"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo",
+              "carne vermelha",
+              "borrego",
+              "pato",
+              "cabra",
+              "caça",
+              "frango",
+              "cogumelos",
+              "molho de natas",
+              "cozinha asiática"
+            ],
+            "notes": "Nota excecional: produtor recomenda explicitamente com pratos 'tradicionalmente associados a vinhos tintos' — borrego, pato, caça, carne vermelha. A barrica e acidez estruturante criam um branco com alcance de tinto. Justifica inclusão apesar de sobreposição parcial com A Torre (Anselmo Mendes) — pairing range é genuinamente mais amplo e inclui caça e carne vermelha."
+          }
+        },
+        {
+          "id": "soalheiro-aghora-loureiro-2022",
+          "name": "Soalheiro Ag.hora Loureiro",
+          "quinta": "Quinta de Soalheiro",
+          "vintage": 2022,
+          "doc": "Vinho Verde",
+          "type": "white",
+          "varieties": [
+            "Loureiro"
+          ],
+          "alcohol": 11.0,
+          "acidity_gl": 6.2,
+          "ph": 3.36,
+          "winemaking": "Maceração pelicular de inspiração georgiana — fermentação em contacto com as películas. Taninos suaves, textura delicada e elegante.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "floral delicado",
+              "Loureiro varietal"
+            ],
+            "secondary": [
+              "complexidade skin contact"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo",
+              "borrego",
+              "pato",
+              "frango assado",
+              "queijo curado",
+              "cogumelos",
+              "molho de natas",
+              "risotto"
+            ],
+            "notes": "Skin-contact Loureiro georgiano — distinto do Contacto Loureiro (Anselmo Mendes) pelo perfil mais delicado (pH 3.36 mais suave, 11% álcool). Loureiro preserva carácter floral apesar da maceração. Pairing com pratos ricos beneficia da textura adicional do skin contact. Produtor destaca 'suave e elegante — difícil de conseguir neste estilo'."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta do Regueiro",
+      "region": "Vinho Verde – Monção e Melgaço",
+      "quintas": [
+        "Quinta do Regueiro"
+      ],
+      "producer_notes": "Especialista em 100% Alvarinho de Monção e Melgaço. Portfolio centrado em expressões de casta pura com forte identidade de terroir: desde blends acessíveis até single-vineyard de vinhas velhas (30-35 anos) com longevidade excepcional. O Jurássico é o seu vinho ícone — um dos Alvarinhos com maior potencial de guarda de Portugal (15 anos). Notas de prova propositadamente sóbrias, focadas na estrutura e não no marketing.",
+      "wines": [
+        {
+          "id": "regueiro-jurassico",
+          "name": "Alvarinho Jurássico",
+          "quinta": "Quinta do Regueiro",
+          "vintage": null,
+          "doc": "Vinho Verde – Alvarinho, Monção e Melgaço",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 8.0,
+          "ph": 3.2,
+          "winemaking": null,
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "grande complexidade aromática"
+            ],
+            "secondary": [
+              "notas de evolução"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "ostra",
+              "marisco nobre",
+              "peixe cru",
+              "sashimi",
+              "sushi",
+              "peixe grelhado"
+            ],
+            "notes": "Vinho ícone da Quinta do Regueiro e um dos Alvarinhos com maior potencial de guarda de Portugal (15 anos). Acidez de 8g/L é das mais altas da seleção — estrutura mineral excepcional. Encorpado mas não pesado. Ideal para peixe cru de alta qualidade e mariscos onde a mineralidade e acidez são protagonistas."
+          }
+        },
+        {
+          "id": "regueiro-barricas-2020",
+          "name": "Alvarinho Barricas",
+          "quinta": "Quinta do Regueiro",
+          "vintage": 2020,
+          "doc": "Vinho Verde – Alvarinho, Monção e Melgaço",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 7.0,
+          "ph": 3.2,
+          "winemaking": "100% Alvarinho. Vinhas velhas, idade média 30 anos. Fermentação a temperatura controlada em barricas de carvalho Francês de 300 litros. Estágio de 8 meses com batonnage.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "grande complexidade aromática"
+            ],
+            "secondary": [
+              "toque de madeira integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo grelhado",
+              "carne branca",
+              "cogumelos",
+              "queijo curado",
+              "pratos com molho"
+            ],
+            "notes": "Alvarinho de vinhas velhas (30 anos médios) fermentado e estagiado 8 meses em barrica 300L com batonnage. Acidez 7.0 g/L + pH 3.20 = estrutura ácida elevada preservada apesar da barrica. 13% alc com 'muito encorpado e volume de boca' — densidade das vinhas velhas. Capaz de acompanhar pratos mais ricos que Alvarinhos em inox desta seleção."
+          }
+        },
+        {
+          "id": "regueiro-maturado-2019",
+          "name": "Alvarinho Maturado",
+          "quinta": "Quinta do Regueiro",
+          "vintage": 2019,
+          "doc": "Vinho Verde – Alvarinho, Monção e Melgaço",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 7.0,
+          "ph": 3.2,
+          "winemaking": "Vinhas velhas, idade média 30 anos.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "grande complexidade"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "peixe grelhado",
+              "peixe gordo",
+              "carne branca",
+              "queijo curado"
+            ],
+            "notes": "Vinhas velhas de 30 anos conferem concentração e profundidade ao Alvarinho. Acidez de 7g/L mais equilibrada que o Jurássico, com corpo presente. Expressão maturada e complexa da casta, apta para pratos de maior riqueza."
+          }
+        },
+        {
+          "id": "regueiro-reserva-2020",
+          "name": "Alvarinho Reserva",
+          "quinta": "Quinta do Regueiro",
+          "vintage": 2020,
+          "doc": "Vinho Verde – Alvarinho, Monção e Melgaço",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 7.0,
+          "ph": 3.2,
+          "winemaking": null,
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutado",
+              "floral"
+            ],
+            "secondary": [
+              "complexidade equilibrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "peixe grelhado",
+              "salmão",
+              "atum",
+              "carne branca",
+              "sushi"
+            ],
+            "notes": "Contraponto frutado e floral ao Jurássico mais mineral. Acidez 7g/L com final longo e muito persistente. Perfil acessível e versátil dentro da gama Regueiro — entrada natural na casa para quem prefere fruta a mineralidade."
+          }
+        },
+        {
+          "id": "regueiro-espumante-2020",
+          "name": "Espumante Alvarinho",
+          "quinta": "Quinta do Regueiro",
+          "vintage": 2020,
+          "doc": "Vinho Verde",
+          "type": "sparkling",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 7.0,
+          "ph": 3.2,
+          "winemaking": "Bruto. Bolha fina e persistente.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutado",
+              "fresco"
+            ],
+            "secondary": [
+              "efervescência"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivo",
+              "ostra",
+              "marisco",
+              "fritura leve",
+              "sushi",
+              "sashimi"
+            ],
+            "notes": "Alvarinho em espumante Bruto — bolha fina e persistente, equilíbrio acidez-álcool notável. Alvarinho mantém carácter varietal mesmo em método espumante. Versátil: funciona como aperitivo isolado ou a acompanhar mariscos e peixe cru."
+          }
+        },
+        {
+          "id": "regueiro-trajadura-2020",
+          "name": "Alvarinho Trajadura",
+          "quinta": "Quinta do Regueiro",
+          "vintage": 2020,
+          "doc": "Vinho Verde",
+          "type": "white",
+          "varieties": [
+            "Alvarinho",
+            "Trajadura"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.0,
+          "ph": 3.2,
+          "winemaking": null,
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "complexo",
+              "tradicional"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "mariscos leves",
+              "peixe branco",
+              "petiscos",
+              "aperitivo",
+              "pratos leves"
+            ],
+            "notes": "O único blend desta seleção Regueiro — Trajadura suaviza o Alvarinho, reduz acidez (6g/L) e álcool (12.5%). Perfil mais acessível e menos intenso. 'Tradicional' — referência a estilo clássico de Vinho Verde com blend de castas. Longevidade curta (3 anos): beber jovem."
+          }
+        },
+        {
+          "id": "regueiro-primitivo-2020",
+          "name": "Alvarinho Primitivo",
+          "quinta": "Quinta do Regueiro",
+          "vintage": 2020,
+          "doc": "Vinho Verde DOC – Monção e Melgaço",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 7.0,
+          "ph": 3.2,
+          "winemaking": "100% Alvarinho. Vinhas muito velhas, idade média 35 anos. Monção e Melgaço.",
+          "notes": "Alvarinho de vinhas muito velhas (35 anos média) — notas de prova sumárias no ficheiro de origem: 'grande complexidade, frescura'. Estrutura idêntica ao Maturado (7g/L, pH 3.20) mas vinha mais velha. Longevidade 4-6 anos.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos",
+              "complexo"
+            ],
+            "secondary": [
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "peixe grelhado",
+              "sushi",
+              "sashimi",
+              "peixe gordo",
+              "queijo curado"
+            ],
+            "notes": "Alvarinho de vinhas muito velhas em Monção e Melgaço: 7.0 g/L + pH 3.20 = acidez elevada característica da sub-região. Perfil estrutural semelhante ao Maturado mas com maior concentração de vinha velha. Para contexto Nanban: versatilidade clássica com pratos de peixe e marisco."
+          }
+        },
+        {
+          "id": "regueiro-secreto-2020",
+          "name": "Alvarinho Secreto",
+          "quinta": "Quinta do Regueiro",
+          "vintage": 2020,
+          "doc": "Vinho Verde DOC – Monção e Melgaço",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 7.0,
+          "ph": 3.2,
+          "winemaking": "100% Alvarinho. Monção e Melgaço.",
+          "notes": "Alvarinho com nome de linha 'Secreto'. Parâmetros idênticos a outros Alvarinhos da quinta (7g/L, pH 3.20, 13%). Notas de prova: 'grande complexidade'. Longevidade 4-6 anos. Detalhes de vinificação não disponíveis no ficheiro de origem.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "complexo"
+            ],
+            "secondary": [
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "peixe grelhado",
+              "sushi",
+              "sashimi",
+              "peixe gordo",
+              "queijo curado"
+            ],
+            "notes": "Alvarinho de Monção e Melgaço: parâmetros estruturais idênticos às outras linhas da quinta. Diferenciação por nome de linha — vinificação específica não documentada na fonte."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta de Covela",
+      "region": "Vinho Verde – Baião",
+      "quintas": [
+        "Quinta de Covela"
+      ],
+      "producer_notes": "Quinta de Covela situa-se em Baião, na margem direita do Douro, no limite sul da DOC Vinho Verde — o ponto de contacto entre as duas denominações. Terroir único: solos de granito e xisto em altitude, clima mais continental que o resto de VV. Especialistas em Avesso, casta autóctone de Baião, e pioneiros em viticultura biológica/biodinâmica em VV. Portfolio reflete este carácter distinto: vinhos mais tensos, minerais e de maior estrutura que o Alvarinho de Monção e Melgaço.",
+      "wines": [
+        {
+          "id": "covela-edicao-nacional-avesso-2018",
+          "name": "Covela Edição Nacional Avesso",
+          "quinta": "Quinta de Covela",
+          "vintage": 2018,
+          "doc": "Vinho Verde",
+          "type": "white",
+          "varieties": [
+            "Avesso"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.2,
+          "ph": 3.21,
+          "winemaking": "Desengace total, suave prensagem. Estágio em borra fina até Janeiro.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "toranja",
+              "citrinos",
+              "fruta de árvore"
+            ],
+            "secondary": [
+              "floral",
+              "ervas aromáticas",
+              "amêndoa doce",
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "marisco",
+              "hors d'oeuvre variados",
+              "peixe branco",
+              "petiscos"
+            ],
+            "notes": "Primeiro Vinho Verde DOC da Quinta de Covela e vinho de entrada na gama. 100% Avesso de Baião — casta característica da sub-região, 100% portuguesa. Vinho dinâmico, fresco e elegante 'sem excesso de acidez': perfil mais contido e texturado que os Alvarinhos de Monção e Melgaço. Final salivante é marca do Avesso bem feito."
+          }
+        },
+        {
+          "id": "covela-arinto-2019",
+          "name": "Covela Arinto",
+          "quinta": "Quinta de Covela",
+          "vintage": 2019,
+          "doc": "Vinho Verde",
+          "type": "white",
+          "varieties": [
+            "Arinto"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 7.2,
+          "ph": 3.03,
+          "winemaking": "Estágio sobre borras com batonnage ocasional até meados de Fevereiro 2020. Filtração leve.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "tangerina",
+              "maracujá",
+              "citrinos"
+            ],
+            "secondary": [
+              "tropical exuberante"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "ostra",
+              "marisco",
+              "peixe cru",
+              "sashimi",
+              "peixe grelhado",
+              "salmão",
+              "tempura"
+            ],
+            "notes": "pH 3.03 é dos mais baixos desta seleção inteira — acidez percebida muito alta apesar de 7.2g/L ser moderado em valor absoluto. Arinto em Vinho Verde ganha exuberância tropical que não tem noutras regiões (Bucelas). Lees aging + batonnage dão textura e redondeza sem comprometer frescura."
+          }
+        },
+        {
+          "id": "covela-avesso-reserva-2019",
+          "name": "Covela Avesso Reserva Bio",
+          "quinta": "Quinta de Covela",
+          "vintage": 2019,
+          "doc": "Vinho Verde",
+          "type": "white",
+          "varieties": [
+            "Avesso"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 8.0,
+          "ph": 3.04,
+          "winemaking": "Agricultura biológica certificada. Fermentação espontânea em cascos de carvalho usados de 300L (florestas austríacas e francesas). Estágio sobre borra total com batonnage periódica até Abril 2020.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "maçã",
+              "pêssego",
+              "ananás"
+            ],
+            "secondary": [
+              "complexidade de barrica integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo",
+              "carne branca",
+              "cogumelos",
+              "queijo curado",
+              "pratos com molho cremoso",
+              "risotto"
+            ],
+            "notes": "O Avesso mais complexo e estruturado desta seleção: acidez 8g/L + pH 3.04 = tensão máxima. Fermentação espontânea em carvalho usado (não domina) + borra total = textura excepcional. Biológico certificado. 'Integração perfeita entre barrica e vinho' e 'final guloso' — incomum para VV. Capaz de acompanhar pratos normalmente reservados a brancos do Douro ou Borgonha."
+          }
+        },
+        {
+          "id": "covela-branco-2017",
+          "name": "Covela Branco",
+          "quinta": "Quinta de Covela",
+          "vintage": 2017,
+          "doc": "Vinho Verde",
+          "type": "white",
+          "varieties": [
+            "Loureiro",
+            "Avesso"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.62,
+          "ph": 3.18,
+          "winemaking": "Estágio sobre borras finas até meados de Março. Sem enzimas. Colagem com bentonite quando necessária. Estabilização pelo frio. Filtração leve.",
+          "notes": "Composição de castas não declarada na ficha técnica — blend de castas brancas do Vinho Verde típicas da quinta (Loureiro e Avesso). Perfil aromático indica dominância Loureiro (lavanda, salva, floral).",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "fruta de caroço",
+              "ervas aromáticas (lavanda, salva)"
+            ],
+            "secondary": [
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe branco",
+              "marisco",
+              "peixe grelhado",
+              "carne branca",
+              "queijo fresco",
+              "pratos mediterrânicos"
+            ],
+            "notes": "Branco de blend com acidez mais moderada (5.62g/L) e perfil floral-aromático dominado provavelmente pelo Loureiro. Ataque cremoso do lees aging + acidez equilibrada = versatilidade. Acesso ao perfil aromático floral da quinta sem a tensão do Avesso puro."
+          }
+        },
+        {
+          "id": "covela-edicao-nacional-arinto-2017",
+          "name": "Covela Edição Nacional Arinto",
+          "quinta": "Quinta de Covela",
+          "vintage": 2017,
+          "doc": "Vinho Verde",
+          "type": "white",
+          "varieties": [
+            "Arinto"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.1,
+          "ph": 3.2,
+          "winemaking": null,
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "tangerina",
+              "maracujá",
+              "citrinos"
+            ],
+            "secondary": [
+              "tropical"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "marisco",
+              "peixe branco",
+              "sashimi",
+              "aperitivo"
+            ],
+            "notes": "Arinto de Vinho Verde (Baião) — casta mais típica de Bucelas aqui expressa com carácter tropical de maracujá e tangerina. Acidez 6.1g/L mais moderada que o Arinto 2019 (7.2g/L), com pH 3.20 mais elevado — perfil menos tenso e mais arredondado. Corpo médio com final persistente. Vintage mais maduro (2017)."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta da Aveleda",
+      "region": "Vinho Verde – Penafiel",
+      "quintas": [
+        "Quinta da Aveleda"
+      ],
+      "producer_notes": "Uma das mais históricas quintas de Portugal, fundada no séc. XVIII em Penafiel. Um dos maiores produtores de Vinho Verde. A gama selecionada aqui representa o topo da pirâmide: vinhos de parcela única ('Parcelas'), seleção de solos ('Solos de Xisto') e o vinho de prestígio Manoel Pedro Guedes. Em contraste com a escala da produção comercial, estes vinhos de topo evidenciam ambição terroir comparável às melhores quintas de Borgonha — single-parcels de 3 a 10 anos de guarda.",
+      "wines": [
+        {
+          "id": "aveleda-manoel-pedro-guedes-2022",
+          "name": "Aveleda Manoel Pedro Guedes",
+          "quinta": "Quinta da Aveleda",
+          "vintage": 2022,
+          "doc": "Vinho Verde",
+          "type": "white",
+          "varieties": [
+            "Alvarinho",
+            "Loureiro"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 6.4,
+          "ph": 3.2,
+          "winemaking": "50% fermentação em cubas de inox + 50% em barricas de carvalho Francês. Estágio de 8 meses: 50% inox, 50% barrica (50% madeira nova, 50% usada). Seleção das melhores barricas e cubas para lote final. Repouso em garrafa antes de lançamento.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "madressilva",
+              "flor de lima"
+            ],
+            "secondary": [
+              "notas ligeiramente fumadas",
+              "nuances cítricas"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo",
+              "carne branca",
+              "lagosta",
+              "marisco nobre",
+              "queijo curado",
+              "pratos com molho"
+            ],
+            "notes": "80% Alvarinho + 20% Loureiro + 50% barrica = o Vinho Verde mais encorpado desta seleção (13.5% álcool). Blend equilibra a estrutura mineral do Alvarinho com o perfil floral do Loureiro. Notas fumadas da madeira nova adicionam complexidade. Vinho de homenagem ao fundador da família Guedes — prestígio máximo da casa."
+          }
+        },
+        {
+          "id": "aveleda-parcela-roseiral-2023",
+          "name": "Aveleda Parcela do Roseiral",
+          "vintage": 2023,
+          "doc": "Vinho Verde DOC",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.7,
+          "ph": 3.35,
+          "winemaking": "Colheita manual com seleção de cacho. Fermentação a baixa temperatura. Estágio 80% barrica francesa e 20% inox com 6 meses de contacto com borras finas e bâtonnage.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "manga",
+              "ananás",
+              "cítricos"
+            ],
+            "secondary": [
+              "flores brancas",
+              "baunilha subtil",
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "tofu cremoso",
+              "shiizakana",
+              "marisco"
+            ],
+            "notes": "Alvarinho estruturado com estágio parcial em madeira, combinando frescura atlântica e textura gastronómica."
+          }
+        },
+        {
+          "id": "aveleda-parcela-convento-2023",
+          "name": "Aveleda Parcela do Convento",
+          "quinta": "Quinta da Aveleda",
+          "vintage": 2023,
+          "doc": "Vinho Verde",
+          "type": "white",
+          "varieties": [
+            "Loureiro"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.9,
+          "ph": 3.2,
+          "winemaking": "Fermentação a baixa temperatura em inox seguida de estágio prolongado sobre borras finas com bâtonnage e estágio em garrafa.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "maracujá maduro",
+              "toranja",
+              "casca de lima"
+            ],
+            "secondary": [
+              "fruta branca",
+              "mineralidade"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "ostra",
+              "marisco leve",
+              "sashimi",
+              "peixe branco",
+              "tempura",
+              "petiscos frescos"
+            ],
+            "notes": "100% Loureiro de parcela única — referência para a casta no contexto da quinta. pH pode ser tão baixo quanto 2.9 — acidez percebida potencialmente muito alta. Perfil mais leve e fresco que o Roseiral (Alvarinho). Tropical maduro (maracujá) + cítrico (toranja, lima) = complexidade frutada com frescura. Beber jovem (até 3 anos)."
+          }
+        },
+        {
+          "id": "aveleda-solos-xisto-2023",
+          "name": "Aveleda Solos de Xisto",
+          "quinta": "Quinta da Aveleda",
+          "vintage": 2023,
+          "doc": "Vinho Verde",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.8,
+          "ph": 3.3,
+          "winemaking": "Fermentação e estágio prolongado em inox com contacto com borras finas e bâtonnage, seguido de estágio em garrafa.",
+          "notes": "Solos de xisto — incomuns em Vinho Verde, onde o granito domina. Terroir de xisto confere carácter mineral distinto: mais terroso, menos salino que o granito de Monção e Melgaço.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "lima",
+              "limão",
+              "flor branca leve"
+            ],
+            "secondary": [
+              "mineral terroso (xisto)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "peixe grelhado",
+              "peixe cru",
+              "sushi",
+              "tempura",
+              "pratos de vegetais"
+            ],
+            "notes": "Alvarinho sobre solos de xisto — proposta de terroir única dentro desta seleção. Textura aveludada e frescura elegante: xisto suaviza a tensão mineral do granito típico do Alvarinho de Monção. Cítrico limpo (lima, limão) sem fruta tropical exuberante. Versatilidade: adapta-se a pratos mais delicados que o Manoel Pedro Guedes ou Roseiral."
+          }
+        },
+        {
+          "id": "aveleda-loureiro-2024",
+          "name": "Aveleda Loureiro",
+          "quinta": "Quinta da Aveleda",
+          "vintage": 2024,
+          "doc": "Vinho Verde",
+          "type": "white",
+          "varieties": [
+            "Loureiro"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 6.0,
+          "ph": 3.15,
+          "winemaking": "Vindima noturna, prensagem suave a baixa pressão e fermentação alcoólica a temperaturas controladas em inox.",
+          "notes": "Solo granítico. pH declarado em gama 2.9-3.5 (não valor fixo). Entrada acessível na gama Aveleda para Loureiro monovarietal.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "flor de sabugueiro",
+              "camomila",
+              "folha de lima"
+            ],
+            "secondary": [
+              "meloa",
+              "maracujá"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivo",
+              "peixe branco",
+              "marisco leve",
+              "tempura",
+              "petiscos frescos",
+              "saladas"
+            ],
+            "notes": "Loureiro de granito da Quinta da Aveleda — perfil aromático distinto com flor de sabugueiro, camomila e lima, diferente da sub-região do Lima (Aphros). Suave e mineral no palato com crocância no final. 12% álcool e acidez moderada (6g/L) tornam-no o mais acessível dos Lourieiros desta seleção."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Aphros Wine",
+      "region": "Vinho Verde – Lima",
+      "quintas": [
+        "Aphros Wine"
+      ],
+      "producer_notes": "Fundada por Vasco Croft, um dos pioneiros da viticultura biodinâmica em Portugal. Sub-região do Lima, solos graníticos. Duas linhas distintas: 'Aphros' (biodinâmico, vinificação convencional) e 'Phaunus' (natural, maceração pelicular em ânforas de argila com cera de abelha). Produção muito baixa (±4.000 L/ha). Portfolio único em Vinho Verde: único produtor desta seleção com Vinhão (tinto VV) e Alvarelhão (casta rara autóctone). Os vinhos Phaunus representam o limite experimental do que é possível em VV.",
+      "wines": [
+        {
+          "id": "aphros-loureiro-2024",
+          "name": "Aphros Loureiro",
+          "quinta": "Aphros Wine",
+          "vintage": 2024,
+          "doc": "Vinho Verde – Lima",
+          "type": "white",
+          "varieties": [
+            "Loureiro"
+          ],
+          "alcohol": 11.0,
+          "acidity_gl": 7.0,
+          "ph": 3.2,
+          "winemaking": "Biodinâmico.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "Loureiro varietal — floral, cítrico"
+            ],
+            "secondary": [
+              "mineralidade granítica"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "peixe assado",
+              "bacalhau com natas",
+              "marisco",
+              "sushi",
+              "saladas"
+            ],
+            "notes": "Referência de entrada para Loureiro da sub-região do Lima. 11% álcool — leveza estrutural para pratos delicados. pH 3.20 + 7g/L mantém acidez presente sem agressividade. Produtor menciona sushi explicitamente — relevante para o contexto Nanban. Biodinâmico certificado."
+          }
+        },
+        {
+          "id": "aphros-loureiro-2022",
+          "name": "Aphros Loureiro",
+          "quinta": "Aphros Wine",
+          "vintage": 2022,
+          "doc": "Vinho Verde – Lima",
+          "type": "white",
+          "varieties": [
+            "Loureiro"
+          ],
+          "alcohol": 11.0,
+          "acidity_gl": 7.4,
+          "ph": 3.1,
+          "winemaking": "Biodinâmico.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "Loureiro varietal — floral, cítrico"
+            ],
+            "secondary": [
+              "mineralidade granítica"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "peixe assado",
+              "bacalhau",
+              "marisco",
+              "sushi",
+              "saladas"
+            ],
+            "notes": "Vintage 2022 do Aphros Loureiro: acidez 7.4g/L e pH 3.10 — mais tenso e mineral que o 2024 (7.0g/L, pH 3.20). Maior tensão acídica neste ano. 11% álcool preserva leveza para pratos delicados. Biodinâmico da sub-região do Lima."
+          }
+        },
+        {
+          "id": "aphros-ten-2023",
+          "name": "Aphros Ten",
+          "quinta": "Aphros Wine",
+          "vintage": 2023,
+          "doc": "Vinho Verde – Lima",
+          "type": "white",
+          "varieties": [
+            "Loureiro"
+          ],
+          "alcohol": 10.0,
+          "acidity_gl": 8.0,
+          "ph": 2.99,
+          "winemaking": "Biodinâmico. Fermentação espontânea.",
+          "structure": {
+            "acidity": 10,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "off-dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "lima",
+              "laranja",
+              "óleos essenciais de citrinos"
+            ],
+            "secondary": [
+              "mineralidade granítica intensa",
+              "floral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "ostra",
+              "peixe cru",
+              "sashimi",
+              "sushi",
+              "marisco delicado",
+              "tempura leve"
+            ],
+            "notes": "pH 2.99 — o mais baixo de toda esta seleção VV e um dos mais baixos em Vinho Verde. Acidez percebida excepcional. 5g/L açúcar residual (off-dry) equilibra a tensão acídica sem doçura aparente. Notas cítricas de lima e laranja com óleos essenciais — afinidade natural com cozinha japonesa cítrica (yuzu). 10% álcool: não interfere com sabores delicados. Vinho de tensão extrema."
+          }
+        },
+        {
+          "id": "aphros-melissae-2021",
+          "name": "Aphros Melissae",
+          "quinta": "Aphros Wine",
+          "vintage": 2021,
+          "doc": "Vinho Verde – Lima",
+          "type": "white",
+          "varieties": [
+            "Loureiro"
+          ],
+          "alcohol": 11.0,
+          "acidity_gl": 5.9,
+          "ph": 3.36,
+          "winemaking": "Desengace parcial. Estágio de 3 meses sur lies em ovos de cimento (concrete eggs).",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "Loureiro floral",
+              "cítrico suave"
+            ],
+            "secondary": [
+              "mineral",
+              "textura de estágio em cimento"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe branco",
+              "peixe grelhado",
+              "marisco delicado",
+              "tempura",
+              "pratos leves",
+              "legumes grelhados"
+            ],
+            "notes": "Loureiro em ovos de cimento — técnica que acrescenta textura sem oxidação nem madeira. Acidez 5.9g/L com pH 3.36 = perfil mais suave que o Loureiro standard. Estruturalmente entre o Aphros Loureiro (mais ácido) e o Phaunus (skin contact). 3 meses sur lies adicionam cremosidade ligeira. Produção biodinâmica."
+          }
+        },
+        {
+          "id": "phaunus-loureiro-2023",
+          "name": "Phaunus Loureiro",
+          "quinta": "Aphros Wine",
+          "vintage": 2023,
+          "doc": "Vinho Verde",
+          "type": "white",
+          "varieties": [
+            "Loureiro"
+          ],
+          "alcohol": 10.0,
+          "acidity_gl": 5.3,
+          "ph": 3.61,
+          "winemaking": "Fermentação espontânea com maceração pelicular em ânforas de argila revestidas com cera de abelha. Estágio sur lies durante 7 meses.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 2,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "Loureiro floral transformado",
+              "fruta de pele"
+            ],
+            "secondary": [
+              "textura skin-contact",
+              "mineral suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo",
+              "queijo curado",
+              "cogumelos",
+              "pratos de inspiração georgiana",
+              "charcutaria leve"
+            ],
+            "notes": "Orange wine de Loureiro — o oposto estrutural do Aphros Ten. pH 3.61 (alta) + acidity 5.3g/L = acidez percebida baixa para VV. A maceração pelicular confere taninos suaves (2/10) e textura adicional ausente nos brancos standard. Ânforas de argila com cera de abelha são raríssimas em Portugal. Perfil mais versátil com pratos ricos que um Loureiro convencional não acompanharia."
+          }
+        },
+        {
+          "id": "phaunus-vinhao-2020",
+          "name": "Phaunus Vinhão",
+          "quinta": "Aphros Wine",
+          "vintage": 2020,
+          "doc": "Vinho Verde – Lima",
+          "type": "red",
+          "varieties": [
+            "Vinhão"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.8,
+          "ph": 3.47,
+          "winemaking": "Biodinâmico.",
+          "structure": {
+            "acidity": 8,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha intensa",
+              "mirtilo",
+              "violeta"
+            ],
+            "secondary": [
+              "mineral",
+              "terroso"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo grelhado",
+              "sardinhas",
+              "atum",
+              "churrasco",
+              "pratos fumados",
+              "enchidos"
+            ],
+            "notes": "O único tinto desta seleção VV. Vinhão é casta tinta com cor muito intensa e acidez caracteristicamente alta — harmonização regional clássica com peixe gordo (sardinha, cavala), inversão da regra tinto-com-carne. 13% álcool dá estrutura mas mantém frescura. Para contexto Nanban: potencial com pratos de atum gordo, yakitori fumado ou pratos com miso escuro. Produção biodinâmica."
+          }
+        },
+        {
+          "id": "aphros-ouranos-2020",
+          "name": "Aphros Ouranos",
+          "quinta": "Aphros Wine",
+          "vintage": 2020,
+          "doc": "Vinho Verde",
+          "type": "red",
+          "varieties": [
+            "Alvarelhão"
+          ],
+          "alcohol": 11.5,
+          "acidity_gl": 6.2,
+          "ph": 3.6,
+          "winemaking": "Biodinâmico. 100% Alvarelhão — casta autóctone rara.",
+          "notes": "Alvarelhão é uma das castas tintas mais raras e antigas de Portugal, quase desaparecida. Encontrada sobretudo no Minho e Trás-os-Montes. Produção monovarietal de Alvarelhão é excepcional — Aphros é um dos pouquíssimos produtores a fazê-la.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 4,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "fruta vermelha fresca",
+              "framboesa",
+              "floral"
+            ],
+            "secondary": [
+              "mineral suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo",
+              "cogumelos",
+              "carne branca leve",
+              "aves",
+              "pratos de vegetais ricos"
+            ],
+            "notes": "Tinto leve e de baixa extração: 11.5% álcool, pH 3.60 (alta), taninos suaves (4/10). Perfil invulgar para tinto — mais próximo de Pinot Noir leve do que de Touriga Nacional. Alvarelhão preserva frescura e delicadeza raras numa casta tinta. Para contexto Nanban: versatilidade excepcional com pratos que normalmente exigem branco encorpado ou tinto muito leve."
+          }
+        }
+      ]
+    }
+  ]
+}

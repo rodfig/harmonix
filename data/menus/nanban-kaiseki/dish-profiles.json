@@ -1,0 +1,225 @@
+{
+  "_meta": {
+    "menu_id":     "nanban-kaiseki",
+    "menu_source": "menu.json",
+    "description": "Pairing annotations for the Nanban 10-course kaiseki menu. Presentation fields (name, course_label, description, image, properties) live in menu.json. Food tags match pairing-rules.json.",
+    "food_tags_source":    "data/wine-profiles/pairing-rules.json → food_tags_reference",
+    "dry_run_reference":   "doc/partial_pairing_example.md"
+  },
+
+  "meal_arcs": {
+    "_note": "Course groupings for meal-level pairing (meal_suggestion and pack_pairing modes). Numbers refer to sequence field in menu.json.",
+    "aperitivo":    [1, 2],
+    "savory_light": [3, 9],
+    "savory_medium":[4, 6],
+    "savory_rich":  [5, 7, 8],
+    "dessert":      [10]
+  },
+
+  "pairing_config": {
+    "meal_suggestion": {
+      "_note": "Arc groups used to build the 3-role meal suggestion",
+      "role_light":   ["aperitivo", "savory_light", "savory_medium"],
+      "role_red":     ["savory_rich"],
+      "role_dessert": ["dessert"]
+    },
+    "pack_pairings": [
+      {
+        "id":      "pack_a",
+        "label":   "Harmonia Clássica",
+        "tagline": "Espumante, branco, tinto e sobremesa — um vinho para cada momento do menu",
+        "slots": [
+          {
+            "arc": "sparkling", "arc_label": "Espumante",
+            "type_filter": ["sparkling"],
+            "dish_arcs":   ["aperitivo"],
+            "prefer_body": "light"
+          },
+          {
+            "arc": "white", "arc_label": "Branco",
+            "type_filter": ["white"],
+            "dish_arcs":   ["savory_light", "savory_medium"],
+            "prefer_body": "light"
+          },
+          {
+            "arc": "red", "arc_label": "Tinto",
+            "type_filter": ["red"],
+            "dish_arcs":   ["savory_rich"],
+            "prefer_body": "medium"
+          },
+          {
+            "arc": "dessert", "arc_label": "Sobremesa",
+            "type_filter": null,
+            "dish_arcs":   ["dessert"],
+            "prefer_fortified": false
+          }
+        ]
+      },
+      {
+        "id":      "pack_b",
+        "label":   "Dois Brancos",
+        "tagline": "Dois brancos de carácter distinto, tinto e sobremesa — maior profundidade",
+        "slots": [
+          {
+            "arc": "white_light", "arc_label": "Branco Leve",
+            "type_filter": ["white"],
+            "dish_arcs":   ["aperitivo", "savory_light"],
+            "prefer_body": "light"
+          },
+          {
+            "arc": "white_rich", "arc_label": "Branco Encorpado",
+            "type_filter": ["white"],
+            "dish_arcs":   ["savory_medium", "savory_rich"],
+            "prefer_body": "full"
+          },
+          {
+            "arc": "red", "arc_label": "Tinto",
+            "type_filter": ["red"],
+            "dish_arcs":   ["savory_rich"],
+            "prefer_body": "medium-full"
+          },
+          {
+            "arc": "dessert", "arc_label": "Sobremesa",
+            "type_filter": null,
+            "dish_arcs":   ["dessert"],
+            "prefer_fortified": true
+          }
+        ]
+      }
+    ]
+  },
+
+  "dishes": [
+
+    {
+      "id":          "goma-doufu",
+      "meal_arc":    "aperitivo",
+      "primary_tag": "shellfish",
+      "food_tags":   ["shellfish", "delicate", "umami", "silky", "light", "layered"],
+      "hard_filters": {
+        "type_allow": ["white", "sparkling"],
+        "body_exclude": ["full", "medium-full"],
+        "tannins_max": 3,
+        "alcohol_max": 13.5
+      },
+      "notes": "The uni dominates over the tofu. High-acidity white, mineral, light-bodied. Alvarinho is the benchmark. Wasabi calls for low alcohol (enforced: alcohol_max 13.5%)."
+    },
+
+    {
+      "id":          "aperitivos-variados",
+      "meal_arc":    "aperitivo",
+      "primary_tag": "fried",
+      "food_tags":   ["variety", "fried", "fatty", "light"],
+      "hard_filters": {
+        "type_prefer": ["sparkling"],
+        "tannins_max": 4,
+        "sweetness_exclude": ["sweet"]
+      },
+      "notes": "Sparkling is the only category that handles heterogeneous textures and flavors. Espumante método tradicional is ideal (Távora-Varosa). High acidity + bubbles clean the fat."
+    },
+
+    {
+      "id":          "ceviche-tofu",
+      "meal_arc":    "savory_light",
+      "primary_tag": "citrus",
+      "food_tags":   ["raw", "delicate", "citrus", "yuzu", "light", "lemon_based"],
+      "hard_filters": {
+        "type_allow": ["white"],
+        "body_exclude": ["full", "medium-full"],
+        "tannins_max": 2
+      },
+      "notes": "Yuzu defines this dish entirely. Mirror pairing: wine with grapefruit or citrus notes. Quinta da Biaia Síria (grapefruit + lime) is the benchmark. Acidity ≥8 essential."
+    },
+
+    {
+      "id":          "agedashi-doufu",
+      "meal_arc":    "savory_medium",
+      "primary_tag": "dashi_based",
+      "food_tags":   ["dashi_based", "umami", "tofu", "fried"],
+      "hard_filters": {
+        "type_allow": ["white"],
+        "body_exclude": ["full"],
+        "tannins_max": 3
+      },
+      "notes": "Dashi-shoyu-mirin broth (not miso). Classic agedashi profile: umami-driven, delicate, lightly sweet from mirin. Light-to-medium white with good acidity and no oak. Off-dry still welcome — mirrors mirin sweetness. Uva-cão (Passarela) remains a benchmark."
+    },
+
+    {
+      "id":          "cataplana-tofu",
+      "meal_arc":    "savory_rich",
+      "primary_tag": "shellfish",
+      "food_tags":   ["shellfish", "clam", "rich", "braised", "portuguese_dish", "cataplana", "layered"],
+      "hard_filters": {
+        "type_allow": ["white"],
+        "body_exclude": ["light"],
+        "sweetness_exclude": ["sweet"],
+        "tannins_max": 5
+      },
+      "notes": "Dual priority: shellfish (high acidity) + stew richness (body). Regional affinity bonus applies — Portuguese wine with Portuguese cooking technique. Encruzado with barrica is the benchmark (Quinta dos Roques)."
+    },
+
+    {
+      "id":          "tofu-nanban",
+      "meal_arc":    "savory_medium",
+      "primary_tag": "sweet_sour",
+      "food_tags":   ["fried", "sweet_sour", "marinade", "acidic"],
+      "hard_filters": {
+        "type_allow": ["white", "sparkling", "rosé", "fortified"],
+        "body_exclude": ["full"],
+        "tannins_max": 4
+      },
+      "notes": "Sweet-sour marinade needs acidity to match and body to handle the frying. Rosé is the most versatile category here. Madeira off-dry also scores highly (madeira-acidic-fortified-acidic-dishes rule). Julia Kemper Rosé is the benchmark."
+    },
+
+    {
+      "id":          "gratin-tofu",
+      "meal_arc":    "savory_rich",
+      "primary_tag": "miso_based",
+      "food_tags":   ["rich", "creamy", "fatty", "gratin", "miso_based", "mushroom", "complex"],
+      "hard_filters": {
+        "type_allow": ["white", "red"],
+        "body_exclude": ["light", "medium-light"],
+        "tannins_max": 6
+      },
+      "notes": "The richest savory course. Conflict rule eliminates light-bodied wines. Full-bodied white with oak (Encruzado barrica) is the benchmark. A low-tannin red is the only viable red option. Julia Kemper Reserva Branco 2021 is the benchmark."
+    },
+
+    {
+      "id":          "arroz-misto",
+      "meal_arc":    "savory_rich",
+      "primary_tag": "dashi_based",
+      "food_tags":   ["dashi_based", "light", "delicate", "umami"],
+      "hard_filters": {
+        "type_allow": ["white"],
+        "tannins_max": 3
+      },
+      "notes": "Gohan (rice course) in kaiseki is a palate cleanser. In practice, continue with the previous course wine. If pairing independently: a neutral, light-medium white works. Not a priority for per-dish display."
+    },
+
+    {
+      "id":          "sopa-yuba",
+      "meal_arc":    "savory_light",
+      "primary_tag": "dashi_based",
+      "food_tags":   ["dashi_based", "delicate", "steamed", "citrus", "yuzu", "light"],
+      "hard_filters": {
+        "type_allow": ["white"],
+        "body_allow": ["light"],
+        "tannins_max": 2
+      },
+      "notes": "The most delicate course on the menu. Body MUST be light — hard filter. Three bonus rules stack here (light-body-delicate-dishes + floral-delicate-steam + citrus-mirror). Score potential is the highest of any savory course. Quinta dos Roques Cerceal Branco is the benchmark — its limitations are virtues here."
+    },
+
+    {
+      "id":          "parfait-tofu",
+      "meal_arc":    "dessert",
+      "primary_tag": "sweet",
+      "food_tags":   ["sweet", "dessert", "nuts", "caramel", "custard", "layered"],
+      "hard_filters": {
+        "sweetness_allow": ["sweet", "semi-sweet"],
+        "tannins_max": 5
+      },
+      "notes": "Absolute rule: wine cannot be drier than the dessert. Porto Tawny 10 anos (nutty caramel mirror with okara biscuit) and Madeira Malmsey are the benchmarks. Colheita Tardia (Adega Mãe, Magnum Ribeiro Santo) also valid. Moscatel de Setúbal scores top if available."
+    }
+
+  ]
+}

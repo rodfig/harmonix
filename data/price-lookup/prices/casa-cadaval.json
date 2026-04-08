@@ -1,0 +1,273 @@
+{
+  "producer": "Casa Cadaval",
+  "generated_at": "2026-03-01T11:20:27.367904",
+  "found_count": 6,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "cadaval-espumante-blanc-des-noirs-2019",
+      "producer": "Casa Cadaval",
+      "name": "Tuisca Espumante Bruto Blanc des Noirs",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa da Passarella O Fugitivo Baga Bruto Branco",
+          "confidence": "no_match",
+          "score": 0.259,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2018 Espumante Casa da Passarella O Fugitivo Baga Bruto Natural",
+          "confidence": "no_match",
+          "score": 0.228,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Marques Marialva Blanc Des Noirs Baga 75 Cl",
+          "confidence": "low",
+          "score": 0.606,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 23.95,
+          "name_found": "Casa de Cadaval Tuísca Bruto Espumante 2019",
+          "confidence": "high",
+          "score": 0.9,
+          "url": "https://www.portugalvineyards.com/pt/tejo/6819-casa-de-cadaval-tuisca-brut-sparkling-6819-5604030001911.html"
+        }
+      },
+      "best_retail": 23.95,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 36.0,
+        "2.0x": 48.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "cadaval-gouveio-2023",
+      "producer": "Casa Cadaval",
+      "name": "Casa Cadaval Gouveio",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa do Cadaval Pinot Noir Tinto",
+          "confidence": "low",
+          "score": 0.54,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Casa Cadaval Pinot Noir tinto",
+          "confidence": "low",
+          "score": 0.567,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Serenada Gouveio 75 Cl",
+          "confidence": "low",
+          "score": 0.503,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 10.35,
+          "name_found": "Casa Cadaval Gouveio Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/tejo/26990-casa-cadaval-gouveio-white-2023.html"
+        }
+      },
+      "best_retail": 10.35,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 16.0,
+        "2.0x": 21.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "cadaval-blanc-des-noirs-2022",
+      "producer": "Casa Cadaval",
+      "name": "Casa Cadaval Blanc des Noirs",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa do Cadaval Pinot Noir Tinto",
+          "confidence": "no_match",
+          "score": 0.412,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Casa Cadaval Pinot Noir tinto",
+          "confidence": "no_match",
+          "score": 0.422,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Marques Marialva Blanc Des Noirs Baga 75 Cl",
+          "confidence": "low",
+          "score": 0.531,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 21.95,
+          "name_found": "Casa de Cadaval Pinot Noir Blanc de Noirs Branco 2022",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/pt/tejo/24920-casa-de-cadaval-pinot-noir-blanc-de-noirs-white-2022-5604030002376.html"
+        }
+      },
+      "best_retail": 21.95,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 33.0,
+        "2.0x": 44.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "cadaval-trincadeira-preta-vinhas-velhas-2019",
+      "producer": "Casa Cadaval",
+      "name": "Trincadeira Preta Vinhas Velhas",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa da Passarella O Enólogo – Vinhas Velhas Tinto",
+          "confidence": "no_match",
+          "score": 0.399,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Casa da Passarella O Oenólogo Vinhas Velhas tinto",
+          "confidence": "no_match",
+          "score": 0.372,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Tiago Cabaço Vinhas Velhas 75 Cl",
+          "confidence": "low",
+          "score": 0.615,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Casas Altas Quinta Vale do Ruivo Vinhas Velhas Tinto 2019",
+          "confidence": "no_match",
+          "score": 0.429,
+          "url": null
+        },
+        "Vinha": {
+          "retail_price": 15.49,
+          "name_found": "Vinhas Velhas Trincadeira Preta 2023",
+          "confidence": "high",
+          "score": 0.9,
+          "url": "https://www.vinha.pt/vinho/vinho-tinto-casa-cadaval-vinhas-velhas-trincadeira-preta-2023-75cl-tejo/"
+        }
+      },
+      "best_retail": 15.49,
+      "best_source": "Vinha",
+      "restaurant_estimates": {
+        "1.5x": 23.5,
+        "2.0x": 31.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "cadaval-fernao-pires-2022",
+      "producer": "Casa Cadaval",
+      "name": "Casa Cadaval Fernão Pires",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa do Cadaval Pinot Noir Tinto",
+          "confidence": "low",
+          "score": 0.456,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Casa Cadaval Pinot Noir tinto",
+          "confidence": "low",
+          "score": 0.495,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Joao Pires 75 Cl",
+          "confidence": "no_match",
+          "score": 0.323,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 21.95,
+          "name_found": "Casa Cadaval Fernão Pires Branco 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/tejo/24917-casa-cadaval-fernao-pires-white-2021.html"
+        }
+      },
+      "best_retail": 21.95,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 33.0,
+        "2.0x": 44.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "cadaval-merlot-2021",
+      "producer": "Casa Cadaval",
+      "name": "Casa Cadaval Merlot",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa do Cadaval Pinot Noir Tinto",
+          "confidence": "low",
+          "score": 0.539,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Casa Cadaval Pinot Noir tinto",
+          "confidence": "low",
+          "score": 0.557,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa Santos Lima Merlot 75 Cl",
+          "confidence": "low",
+          "score": 0.552,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 16.55,
+          "name_found": "Casa Cadaval Merlot Tinto 2021",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/tejo/24918-casa-cadaval-merlot-red-2021-5604030002338.html"
+        }
+      },
+      "best_retail": 16.55,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 25.0,
+        "2.0x": 33.5
+      },
+      "status": "found"
+    }
+  ]
+}

@@ -1,0 +1,2311 @@
+{
+  "_meta": {
+    "region": "Douro",
+    "description": "Producer wine profiles for Douro DOC",
+    "schema_version": "2.0",
+    "note": "Producer-centric format. Pairing is derived algorithmically from structure fields via pairing-rules.json. food_tags are NOT stored on wines. Cooking method and dish complements are as important as the main ingredient — see pairing_principles in pairing-rules.json.",
+    "fields_required": [
+      "id",
+      "name",
+      "doc",
+      "type",
+      "varieties",
+      "alcohol",
+      "structure",
+      "aromas",
+      "pairing"
+    ],
+    "fields_optional": [
+      "vintage",
+      "acidity_gl",
+      "ph",
+      "winemaking",
+      "notes",
+      "quinta"
+    ],
+    "fields_producer_optional": [
+      "quintas"
+    ]
+  },
+  "producers": [
+    {
+      "producer": "Luis Seabra",
+      "region": "Douro – Cima Corgo & Douro Superior",
+      "quintas": [],
+      "producer_notes": "Projeto pessoal do enólogo Luís Seabra após passagem por produtores de referência do Douro. Foco em vinhos de parcela e vinhas velhas, privilegiando altitude, exposição norte e solos xistosos mais frescos. Abordagem de mínima intervenção, extração moderada e uso contido de madeira, procurando reinterpretar o Douro através de maior precisão, tensão e expressão de terroir em vez de concentração clássica. Trabalho frequente com field blends antigos e fermentações espontâneas.",
+      "wines": [
+        {
+          "id": "xisto-ilimitado-tinto-2024",
+          "name": "Xisto Ilimitado Tinto",
+          "vintage": 2024,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Franca",
+            "Malvasia Preta",
+            "Alicante Bouschet",
+            "Tinta Roriz",
+            "Tinta Barroca",
+            "Tinta Amarela"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.0,
+          "ph": 3.64,
+          "winemaking": "Fermentação em inox e cimento com 100% cacho inteiro. 14–18 meses em barricas usadas e tonéis.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 4,
+            "body": "medium-light",
+            "sweetness": "dry",
+            "finish": "medium-long"
+          },
+          "aromas": {
+            "primary": [
+              "cereja vermelha",
+              "framboesa"
+            ],
+            "secondary": [
+              "grafite",
+              "erva seca",
+              "pimenta branca"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "tempura",
+              "tofu agedashi",
+              "yakitori",
+              "legumes grelhados"
+            ],
+            "notes": "Expressão fresca do Douro com estrutura moderada e boa versatilidade gastronómica."
+          }
+        },
+        {
+          "id": "xisto-cru-tinto-2023",
+          "name": "Xisto Cru Tinto",
+          "vintage": 2023,
+          "doc": "Douro DOC – Cima Corgo",
+          "type": "red",
+          "varieties": [
+            "Rufete",
+            "Touriga Franca",
+            "Tinta Carvalha",
+            "Alicante Bouschet",
+            "Donzelinho Tinto",
+            "Malvasia Preta",
+            "Field Blend"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 5.8,
+          "ph": 3.53,
+          "winemaking": "Fermentação em balseiros de madeira. Estágio em barricas de 228L.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 4,
+            "body": "medium-light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "cereja",
+              "ameixa fresca"
+            ],
+            "secondary": [
+              "terra húmida",
+              "xisto azul",
+              "especiaria leve"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "nimono",
+              "lotus root",
+              "cogumelos em dashi",
+              "beringela grelhada"
+            ],
+            "notes": "Álcool baixo e acidez equilibrada favorecem pratos com umami delicado."
+          }
+        },
+        {
+          "id": "indie-xisto-2023",
+          "name": "Indie Xisto",
+          "vintage": 2023,
+          "doc": "Douro DOC – Cima Corgo",
+          "type": "red",
+          "varieties": [
+            "Tinta Roriz",
+            "Touriga Franca",
+            "Tinta Amarela",
+            "Rufete",
+            "Tinta Barroca",
+            "Field Blend"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 6.02,
+          "ph": 3.66,
+          "winemaking": "100% cacho inteiro, fermentação em betão, 18 meses em barricas usadas de 500L e tonéis de 2500L.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 5,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "ameixa vermelha",
+              "cereja fresca",
+              "framboesa"
+            ],
+            "secondary": [
+              "xisto",
+              "grafite",
+              "erva seca"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "yakitori",
+              "pato grelhado",
+              "beringela miso",
+              "cogumelos assados"
+            ],
+            "notes": "Perfil equilibrado com tanino moderado e acidez firme. Adequado para pratos grelhados e elementos com molho tare."
+          }
+        },
+        {
+          "id": "xisto-cru-branco-2023",
+          "name": "Xisto Cru Branco",
+          "vintage": 2023,
+          "doc": "Douro DOC – Cima Corgo",
+          "type": "white",
+          "varieties": [
+            "Rabigato",
+            "Codega",
+            "Donzelinho Branco",
+            "Arinto",
+            "Gouveio",
+            "Field Blend"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.4,
+          "ph": 3.12,
+          "winemaking": "Fermentação espontânea em barricas usadas de 228L.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "limão",
+              "pera verde",
+              "maçã"
+            ],
+            "secondary": [
+              "sílex",
+              "mineralidade intensa"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "ostra",
+              "sushi",
+              "tempura leve",
+              "vegetais cozidos"
+            ],
+            "notes": "Elevada acidez e tensão mineral permitem acompanhar frituras leves e mariscos."
+          }
+        },
+        {
+          "id": "mono-c-branco-2023",
+          "name": "Mono C",
+          "vintage": 2023,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Códega do Larinho"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 5.9,
+          "ph": 3.25,
+          "winemaking": "Fermentação espontânea em barrica usada.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium-light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "pera",
+              "maçã madura"
+            ],
+            "secondary": [
+              "floral seco",
+              "pedra molhada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "tofu",
+              "legumes cozidos",
+              "chawanmushi"
+            ],
+            "notes": "Perfil textural moderado e acidez equilibrada adaptam-se a pratos de textura macia."
+          }
+        },
+        {
+          "id": "xisto-ilimitado-branco-2023",
+          "name": "Xisto Ilimitado Branco",
+          "vintage": 2023,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Rabigato",
+            "Códega do Larinho",
+            "Gouveio",
+            "Viosinho"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.1,
+          "ph": 3.18,
+          "winemaking": "Fermentação espontânea em inox e barrica usada. Estágio sobre borras finas sem bâtonnage.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "limão",
+              "maçã verde",
+              "pêra"
+            ],
+            "secondary": [
+              "mineral",
+              "pedra molhada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "tofu agedashi",
+              "tempura",
+              "yuba",
+              "dashi",
+              "legumes sazonais"
+            ],
+            "notes": "Perfil tenso e mineral com acidez marcada. Funciona bem com frituras leves e caldos claros."
+          }
+        },
+        {
+          "id": "xisto-cru-branco-2022",
+          "name": "Xisto Cru Branco",
+          "vintage": 2022,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Rabigato",
+            "Códega do Larinho",
+            "Gouveio",
+            "Donzelinho Branco"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.4,
+          "ph": 3.14,
+          "winemaking": "Fermentação espontânea em barricas usadas. Estágio prolongado sobre borras finas.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "medium-light",
+            "sweetness": "dry",
+            "finish": "very long"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos",
+              "maçã verde"
+            ],
+            "secondary": [
+              "fumo leve",
+              "pedra"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sopa clara",
+              "tofu",
+              "goma doufu",
+              "mukozuke vegetal"
+            ],
+            "notes": "Grande tensão e mineralidade. Excelente afinidade com pratos de umami subtil."
+          }
+        },
+        {
+          "id": "mono-c-2022",
+          "name": "Mono C",
+          "vintage": 2022,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Códega do Larinho"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 6.6,
+          "ph": 3.12,
+          "winemaking": "Fermentação espontânea em barrica usada com estágio sobre borras.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "limão",
+              "toranja"
+            ],
+            "secondary": [
+              "giz",
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "tempura",
+              "tofu nanban",
+              "yuba"
+            ],
+            "notes": "Alta acidez e perfil cítrico favorecem pratos fritos leves."
+          }
+        },
+        {
+          "id": "indie-branco-2023",
+          "name": "Indie Branco",
+          "vintage": 2023,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Rabigato",
+            "Códega",
+            "Viosinho"
+          ],
+          "alcohol": 11.5,
+          "acidity_gl": 6.5,
+          "ph": 3.15,
+          "winemaking": "Fermentação espontânea em inox e cimento. Estágio curto sobre borras.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos",
+              "maçã"
+            ],
+            "secondary": [
+              "erva seca"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "mukozuke",
+              "tomewan",
+              "gohan",
+              "tofu ceviche"
+            ],
+            "notes": "Perfil leve e salino com boa integração com caldos e preparações delicadas."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Wine and Soul",
+      "region": "Douro – Vale de Mendiz, Pinhão (Cima Corgo)",
+      "quintas": [
+        "Quinta da Manoella"
+      ],
+      "producer_notes": "Projeto familiar de Sandra Tavares da Silva e Jorge Serôdio Borges. Baseado em vinhas velhas históricas do Vale do Pinhão, incluindo parcelas com elevada diversidade varietal plantadas em field blend. Solos de xisto e encostas íngremes típicas do Cima Corgo. Filosofia centrada na elegância e equilíbrio, combinando métodos tradicionais durienses com vinificação precisa e uso moderado de barrica para preservar identidade de vinha.",
+      "wines": [
+        {
+          "id": "manoella-branco-2021",
+          "name": "Manoella Branco",
+          "vintage": 2021,
+          "doc": "Douro DOC – Cima Corgo",
+          "type": "white",
+          "varieties": [
+            "Gouveio",
+            "Viosinho",
+            "Rabigato",
+            "Códega do Larinho"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.6,
+          "ph": 3.21,
+          "winemaking": "Fermentação lenta em inox a baixa temperatura durante 6 semanas. Estágio sur lies durante 8 meses.",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium-light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "lima",
+              "pêssego branco"
+            ],
+            "secondary": [
+              "flores brancas",
+              "mineralidade"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "mukozuke",
+              "tofu fresco",
+              "peixe branco",
+              "tempura leve"
+            ],
+            "notes": "Branco equilibrado com textura de borras finas e frescura moderada, adequado para fases iniciais do menu."
+          }
+        },
+        {
+          "id": "manoella-tinto-2018",
+          "name": "Manoella Tinto",
+          "vintage": 2018,
+          "doc": "Douro DOC – Vale de Mendiz",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Touriga Franca",
+            "Tinta Roriz",
+            "Tinta Francisca"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.6,
+          "ph": 3.64,
+          "winemaking": "Pisa a pé em lagares de granito seguida de fermentação em inox. Estágio 16 meses em barricas usadas.",
+          "structure": {
+            "acidity": 4,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "framboesa",
+              "amora"
+            ],
+            "secondary": [
+              "especiarias",
+              "madeira subtil"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "yakimono",
+              "shiizakana",
+              "cogumelos",
+              "grelhados"
+            ],
+            "notes": "Tanino aveludado e concentração moderada. Melhor nas fases estruturadas do percurso gastronómico."
+          }
+        },
+        {
+          "id": "manoella-rose-2023",
+          "name": "Manoella Rosé",
+          "vintage": 2023,
+          "doc": "Douro DOC – Cima Corgo",
+          "type": "rose",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.6,
+          "ph": 3.37,
+          "winemaking": "Prensagem direta e fermentação em inox a baixa temperatura. Estágio sur lies durante 6 meses.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 2,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "framboesa",
+              "clementina"
+            ],
+            "secondary": [
+              "rosa",
+              "mineralidade"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "hassun",
+              "nanban-zuke",
+              "tempura",
+              "legumes sazonais"
+            ],
+            "notes": "Perfil fresco e mineral, funcionando bem com pratos ligeiramente ácidos ou fritos leves."
+          }
+        },
+        {
+          "id": "guru-branco-2020",
+          "name": "Guru Branco",
+          "vintage": 2020,
+          "doc": "Douro DOC – Cima Corgo",
+          "type": "white",
+          "varieties": [
+            "Viosinho",
+            "Rabigato",
+            "Códega do Larinho",
+            "Gouveio"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.0,
+          "ph": 3.34,
+          "winemaking": "Fermentação em barrica francesa (9% nova) com estágio 8 meses e bâtonnage.",
+          "structure": {
+            "acidity": 5,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "very long"
+          },
+          "aromas": {
+            "primary": [
+              "toranja",
+              "lima"
+            ],
+            "secondary": [
+              "flores brancas",
+              "toque mineral",
+              "nota cremosa"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "tofu gratinado",
+              "shiizakana",
+              "peixe gordo",
+              "pratos cremosos"
+            ],
+            "notes": "Maior textura e influência de barrica tornam-no adequado para pratos com gordura e umami."
+          }
+        },
+        {
+          "id": "vinha-do-altar-reserva-branco-2020",
+          "name": "Vinha do Altar Reserva Branco",
+          "vintage": 2020,
+          "doc": "Douro DOC – Sabrosa Highland",
+          "type": "white",
+          "varieties": [
+            "Viosinho",
+            "Gouveio",
+            "Arinto"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 7.88,
+          "ph": 3.0,
+          "winemaking": "Fermentação em inox a baixa temperatura com estágio sur lies durante 6 meses.",
+          "structure": {
+            "acidity": 10,
+            "tannins": null,
+            "body": "medium-light",
+            "sweetness": "dry",
+            "finish": "very long"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos",
+              "pêssego branco"
+            ],
+            "secondary": [
+              "floral",
+              "mineral intenso"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "tomewan",
+              "sashimi",
+              "marisco",
+              "tofu delicado"
+            ],
+            "notes": "Acidez muito elevada e pH baixo criam perfil extremamente tenso e gastronómico, ideal para pratos subtis."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Niepoort",
+      "region": "Douro – Vale do Pinhão, Cima Corgo e Douro Superior",
+      "quintas": [
+        "Quinta de Nápoles",
+        "Quinta do Carril"
+      ],
+      "producer_notes": "Casa histórica fundada em 1842, originalmente dedicada ao Vinho do Porto, hoje referência também nos vinhos DOC Douro. Sob direção de Dirk Niepoort, destacou-se pela valorização de vinhas velhas, fermentações tradicionais em lagares e procura de frescura e elegância num contexto regional tradicionalmente associado à concentração. Trabalho extensivo com field blends antigos e diferentes altitudes do vale do Douro.",
+      "wines": [
+        {
+          "id": "redoma-rose-2017",
+          "name": "Redoma Rosé",
+          "vintage": 2017,
+          "doc": "Douro DOC",
+          "type": "rose",
+          "varieties": [
+            "Tinta Amarela",
+            "Touriga Franca",
+            "Outras (vinhas velhas)"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.5,
+          "ph": 3.25,
+          "winemaking": "Prensagem breve a baixa temperatura. Fermentação em barricas novas de carvalho francês (~2 meses). Estágio 7 meses em inox. Engarrafado Maio 2018.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 2,
+            "body": "medium-light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "cereja",
+              "algodão doce"
+            ],
+            "secondary": [
+              "geleia de marmelo",
+              "especiaria subtil"
+            ],
+            "tertiary": [
+              "complexidade de evolução (maturidade)"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "hassun",
+              "tofu nanban-zuke",
+              "tempura",
+              "peixe assado",
+              "aves"
+            ],
+            "notes": "Rosé gastronómico com frescura de branco e alguma estrutura. Muito útil como ‘ponte’ em menus kaiseki com fritos leves e notas agridoce (nanban)."
+          }
+        },
+        {
+          "id": "natcool-douro-dourado-2024-1l",
+          "name": "Nat'Cool Douro Branco Dourado",
+          "vintage": 2024,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Mistura de castas típicas do Douro"
+          ],
+          "alcohol": 11.8,
+          "acidity_gl": 5.6,
+          "ph": 3.28,
+          "winemaking": "Maceração pelicular ~10 dias com cacho inteiro em lagar (vinho de maceração/‘laranja’ de tonalidade dourada). Fermentação espontânea em lagar (~11 dias) e continuação em cimento com alcoólica+malolática completas. 1 ano em borras finas (cimento), 2 meses de decantação em inox, leve filtragem. Engarrafado Junho 2025.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 3,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "mel silvestre",
+              "damasco seco",
+              "casca de laranja"
+            ],
+            "secondary": [
+              "toque salgado",
+              "textura de borras finas"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "shiizakana",
+              "miso",
+              "queijo",
+              "cogumelos",
+              "yakimono"
+            ],
+            "notes": "Branco de maceração com textura e ligeiro amargor fenólico: ótimo para pratos mais ricos/cremosos e elementos tostados (miso/queijo), menos indicado para courses ultra-delicados (tomewan)."
+          }
+        },
+        {
+          "id": "vertente-2014",
+          "name": "Vertente",
+          "vintage": 2014,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Tinta Roriz",
+            "Touriga Franca",
+            "Outras (vinhas velhas)"
+          ],
+          "alcohol": 12.4,
+          "acidity_gl": 5.0,
+          "ph": 3.58,
+          "winemaking": "Fermentação maioritariamente em inox (inclui lagares inox com pisa automática). Estágio 20 meses em barricas de carvalho francês (MLF em barrica). Engarrafado Junho 2016.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruto preto silvestre"
+            ],
+            "secondary": [
+              "mineral",
+              "fumado",
+              "especiarias"
+            ],
+            "tertiary": [
+              "evolução de cave (potencial)"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "yakimono",
+              "shiizakana",
+              "grelhados",
+              "peixe gordo",
+              "cogumelos"
+            ],
+            "notes": "Douro tenso e elegante com madeira bem integrada. Melhor nas etapas mais estruturadas do menu (grelhados, pratos com gordura/umami)."
+          }
+        },
+        {
+          "id": "bioma-tinto-2018",
+          "name": "Bioma Tinto",
+          "vintage": 2018,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Tinta Amarela",
+            "Touriga Franca",
+            "Tinta Roriz",
+            "Sousão",
+            "Touriga Nacional"
+          ],
+          "alcohol": 11.6,
+          "acidity_gl": 4.8,
+          "ph": 3.7,
+          "winemaking": "Viticultura biológica. Fermentação espontânea a baixa temperatura (~1 mês) com ~50% engaço em inox troncocónico. MLF em inox. 4 meses em inox + 12 meses em tonel 5000L (madeira velha). Sem colagem/filtração.",
+          "structure": {
+            "acidity": 3,
+            "tannins": 5,
+            "body": "medium-light",
+            "sweetness": "dry",
+            "finish": "medium-long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta fresca",
+              "ameixa"
+            ],
+            "secondary": [
+              "herbal",
+              "xisto",
+              "toque de engaço"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "yakimono",
+              "tofu frito",
+              "tempura",
+              "cogumelos",
+              "grelhados leves"
+            ],
+            "notes": "Álcool baixo e alguma inclusão de engaço sugerem serviço ligeiramente refrescado. Útil para courses fritos/grelhados sem esmagar os sabores."
+          }
+        },
+        {
+          "id": "ururabo-2019-500ml",
+          "name": "Ururabo",
+          "vintage": 2019,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Gouveio"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.78,
+          "ph": 3.1,
+          "winemaking": "Estágio 12 meses em botas de Jerez sob ‘véu’ de flor (caráter oxidativo tipo Jerez). Malolática em bota. Fermentação em inox. Engarrafado Janeiro 2021.",
+          "structure": {
+            "acidity": 10,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "very long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos secos"
+            ],
+            "secondary": [
+              "especiarias",
+              "toque oxidativo (flor)"
+            ],
+            "tertiary": [
+              "evolução oxidativa controlada"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "tomewan (versão mais rica)",
+              "shiizakana",
+              "dashi",
+              "peixe",
+              "umami intenso"
+            ],
+            "notes": "Perfil com flor (tipo fino/amontillado seco) e acidez muito alta: excelente com umami e salinidade, ótimo ‘curinga’ para pratos difíceis (caldos, algas, cogumelos)."
+          }
+        },
+        {
+          "id": "redoma-tinto-2022",
+          "name": "Redoma Tinto",
+          "vintage": 2022,
+          "doc": "Douro DOC – Cima Corgo",
+          "type": "red",
+          "varieties": [
+            "Tinta Amarela",
+            "Touriga Franca",
+            "Touriga Nacional",
+            "Tinta Roriz",
+            "Tinto Cão"
+          ],
+          "alcohol": 12.3,
+          "acidity_gl": 4.7,
+          "ph": 3.72,
+          "winemaking": "100% engaço em lagar inox com pisa automática e curta maceração. MLF em tonéis de madeira antiga. Estágio 22 meses em tonéis de madeira antiga. Engarrafado Junho 2024.",
+          "structure": {
+            "acidity": 3,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta escura contida"
+            ],
+            "secondary": [
+              "xisto",
+              "nota de engaço",
+              "especiaria leve"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "yakimono",
+              "shiizakana",
+              "cogumelos",
+              "tare",
+              "grelhados"
+            ],
+            "notes": "Estrutura e tanino presentes com extração controlada. Melhor nos pratos mais ‘carneados’ do kaiseki (grelhados/umami), não para entradas ultra-delicadas."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta da Boa Vista",
+      "region": "Douro – Pinhão, Cima Corgo",
+      "quintas": [
+        "Quinta da Boa Vista"
+      ],
+      "producer_notes": "Propriedade histórica situada nas encostas do rio Douro junto ao Pinhão, atualmente integrada no grupo Niepoort. Vinhas em socalcos tradicionais sobre solos xistosos, com grande presença de vinhas velhas em field blend. Produção orientada para vinhos de parcela que expressam a identidade clássica do Cima Corgo, conciliando estrutura duriense com frescura e precisão moderna.",
+      "wines": [
+        {
+          "id": "boa-vista-touriga-nacional",
+          "name": "Boa-Vista Touriga Nacional",
+          "vintage": 2020,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.6,
+          "ph": 3.53,
+          "winemaking": "Desengace total, fermentação em inox com extração suave. Estágio mínimo 15 meses em barricas francesas.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 7,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos pretos maduros"
+            ],
+            "secondary": [
+              "flor de laranjeira",
+              "especiarias",
+              "madeira integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "yakimono",
+              "shiizakana",
+              "cogumelos",
+              "carne grelhada"
+            ],
+            "notes": "Touriga Nacional clássico com tanino polido e perfil floral. Adequado para fases finais do menu."
+          }
+        },
+        {
+          "id": "vinha-do-levante",
+          "name": "Vinha do Levante",
+          "vintage": 2021,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Arinto",
+            "Viosinho"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.3,
+          "ph": 3.27,
+          "winemaking": "Fermentação parcial em inox e barrica (novas e usadas). Maceração pelicular do Arinto. Estágio em barrica.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta branca",
+              "citrinos"
+            ],
+            "secondary": [
+              "ervas frescas",
+              "mineral",
+              "especiaria leve"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo",
+              "marisco",
+              "tofu cremoso",
+              "tempura"
+            ],
+            "notes": "Combina textura de barrica com frescura do Arinto, permitindo harmonizações mais amplas."
+          }
+        },
+        {
+          "id": "vinha-do-oratorio-2018",
+          "name": "Vinha do Oratório",
+          "vintage": 2018,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Field Blend (25+ castas)"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 5.5,
+          "ph": 3.54,
+          "winemaking": "Fermentação em lagares de granito com pisa a pé. Estágio mínimo 18 meses em barrica francesa.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "very long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta"
+            ],
+            "secondary": [
+              "tabaco",
+              "bálsamo",
+              "especiarias"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "shiizakana robusto",
+              "miso intenso",
+              "carne"
+            ],
+            "notes": "Vinho de concentração elevada; usar apenas nas fases mais estruturadas do percurso gastronómico."
+          }
+        },
+        {
+          "id": "boa-vista-reserva-2016",
+          "name": "Boa-Vista Reserva",
+          "vintage": 2016,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Field Blend (vinhas novas e velhas)"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.7,
+          "ph": 3.39,
+          "winemaking": "Fermentação em lagares granito e inox. Estágio 15–20 meses em barrica francesa.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos"
+            ],
+            "secondary": [
+              "esteva",
+              "íris",
+              "anis",
+              "funcho",
+              "tostado"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "yakimono",
+              "grelhados",
+              "cogumelos",
+              "pratos ricos"
+            ],
+            "notes": "Estrutura clássica do Douro com frescura relativamente alta para o estilo."
+          }
+        },
+        {
+          "id": "boa-vista-donzelinho-tinto-2021",
+          "name": "Boa-Vista Donzelinho Tinto",
+          "vintage": 2021,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Donzelinho Tinto"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 6.0,
+          "ph": 3.3,
+          "winemaking": "Fermentação em inox com extração suave. Estágio mínimo 15 meses em barrica francesa.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 5,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos do bosque"
+            ],
+            "secondary": [
+              "pimenta preta",
+              "especiaria fina"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "pato",
+              "yakitori",
+              "tofu frito",
+              "cogumelos"
+            ],
+            "notes": "Perfil mais gastronómico e fresco dentro do Douro, com boa adaptabilidade culinária."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta do Vallado",
+      "region": "Douro – Peso da Régua (Baixo Corgo) & Vila Nova de Foz Côa (Douro Superior)",
+      "quintas": [
+        "Quinta do Vallado",
+        "Quinta do Orgal"
+      ],
+      "producer_notes": "Uma das propriedades mais antigas do Douro, fundada em 1716 e historicamente ligada à família Ferreira. Combina vinhas antigas do Baixo Corgo com plantações modernas no Douro Superior. Solos de xisto e clima quente continental. Estilo que equilibra tradição regional e abordagem contemporânea, com forte trabalho em vinhas velhas e controlo rigoroso de maturação para preservar frescura estrutural.",
+      "wines": [
+        {
+          "id": "vallado-branco-2022",
+          "name": "Vallado Branco",
+          "vintage": 2022,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Rabigato",
+            "Códega",
+            "Viosinho",
+            "Gouveio",
+            "Arinto"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.4,
+          "ph": 3.32,
+          "winemaking": "Fermentação em inox a 14–16ºC durante cerca de 1 mês. Estágio 3 meses em inox.",
+          "structure": {
+            "acidity": 5,
+            "tannins": null,
+            "body": "medium-light",
+            "sweetness": "dry",
+            "finish": "medium-long"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos"
+            ],
+            "secondary": [
+              "floral",
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "mukozuke",
+              "peixe branco",
+              "tofu leve"
+            ],
+            "notes": "Perfil fresco e mineral adequado para pratos delicados."
+          }
+        },
+        {
+          "id": "vallado-prima-branco-2021",
+          "name": "Vallado Prima Branco",
+          "vintage": 2021,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Moscatel Galego"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 6.7,
+          "ph": 3.23,
+          "winemaking": "Fermentação em inox com temperatura controlada. Estágio 3 meses em inox.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "flores",
+              "hortelã"
+            ],
+            "secondary": [
+              "cítrico leve"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "hassun",
+              "vegetais",
+              "entradas leves"
+            ],
+            "notes": "Aromático mas seco, funciona bem como aperitivo gastronómico."
+          }
+        },
+        {
+          "id": "vallado-tres-melros-branco-2021",
+          "name": "Vallado Três Melros Branco",
+          "vintage": 2021,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Rabigato",
+            "Códega",
+            "Viosinho",
+            "Gouveio",
+            "Arinto",
+            "Alvarinho"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.6,
+          "ph": 3.3,
+          "winemaking": "Fermentação maioritária em inox com pequena parte em barrica usada (batonnage).",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta madura",
+              "citrinos"
+            ],
+            "secondary": [
+              "mineral",
+              "toque de barrica"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "tempura",
+              "tofu agedashi",
+              "peixe grelhado"
+            ],
+            "notes": "Maior estrutura permite acompanhar pratos com alguma gordura."
+          }
+        },
+        {
+          "id": "vallado-alvarinho-2024",
+          "name": "Vallado Alvarinho",
+          "vintage": 2024,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Alvarinho"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.1,
+          "ph": 3.36,
+          "winemaking": "Fermentação em inox com 25% em barrica usada (8 meses estágio).",
+          "structure": {
+            "acidity": 5,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "maracujá",
+              "floral"
+            ],
+            "secondary": [
+              "nota cremosa subtil"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "peixe cru",
+              "mukozuke"
+            ],
+            "notes": "Combina frescura com leve untuosidade."
+          }
+        },
+        {
+          "id": "vallado-reserva-branco-2023",
+          "name": "Vallado Reserva Branco",
+          "vintage": 2023,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Rabigato",
+            "Gouveio",
+            "Arinto"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.7,
+          "ph": 3.47,
+          "winemaking": "Fermentação em barricas 500L (20% novas) com batonnage durante 7 meses.",
+          "structure": {
+            "acidity": 5,
+            "tannins": null,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "very long"
+          },
+          "aromas": {
+            "primary": [
+              "cítrico"
+            ],
+            "secondary": [
+              "fumado",
+              "mineral",
+              "barrica integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "shiizakana",
+              "tofu gratinado",
+              "peixe gordo"
+            ],
+            "notes": "Estrutura e textura adequadas para pratos ricos."
+          }
+        },
+        {
+          "id": "vallado-baga-2021",
+          "name": "Vallado Baga",
+          "vintage": 2021,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.1,
+          "ph": 3.59,
+          "winemaking": "Extração suave com 20% cacho inteiro e fermentação curta. Estágio 12 meses em barrica usada.",
+          "structure": {
+            "acidity": 4,
+            "tannins": 6,
+            "body": "medium-light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos silvestres"
+            ],
+            "secondary": [
+              "vegetal leve",
+              "tostado subtil"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "yakitori",
+              "cogumelos",
+              "tempura"
+            ],
+            "notes": "Extração leve torna-o mais gastronómico que Baga clássica."
+          }
+        },
+        {
+          "id": "vallado-douro-superior-2019",
+          "name": "Vallado Douro Superior",
+          "vintage": 2019,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Touriga Franca",
+            "Sousão"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.1,
+          "ph": 3.67,
+          "winemaking": "Fermentação parcelar em inox com estágio 16 meses em barrica usada.",
+          "structure": {
+            "acidity": 4,
+            "tannins": 7,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta",
+              "floral"
+            ],
+            "secondary": [
+              "especiaria",
+              "madeira subtil"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "yakimono",
+              "carne",
+              "pratos ricos"
+            ],
+            "notes": "Estrutura clássica Douro Superior."
+          }
+        },
+        {
+          "id": "vallado-tres-melros-tinto-2019",
+          "name": "Vallado Três Melros Tinto",
+          "vintage": 2019,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Franca",
+            "Touriga Nacional",
+            "Tinta Roriz",
+            "Sousão",
+            "Vinhas Velhas"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 5.3,
+          "ph": 3.64,
+          "winemaking": "Fermentação em inox com estágio parcial em barrica francesa (16 meses).",
+          "structure": {
+            "acidity": 4,
+            "tannins": 6,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos"
+            ],
+            "secondary": [
+              "balsâmico",
+              "carvalho"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "shiizakana",
+              "yakimono",
+              "grelhados"
+            ],
+            "notes": "Perfil equilibrado com tanino redondo."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta do Crasto",
+      "region": "Douro – Cima Corgo & Douro Superior",
+      "quintas": [
+        "Quinta do Crasto",
+        "Quinta da Cabreira"
+      ],
+      "producer_notes": "Produtor de referência do Douro com base no Cima Corgo e forte presença no Douro Superior (Quinta da Cabreira). Estilo consistente: fruta expressiva, extração controlada e foco em equilíbrio e frescura, com vinificações precisas (inox/barrica) e uso frequente de estágio sobre borras e barrica usada/nova conforme o vinho. Trabalha quer lotes clássicos do Douro, quer vinhos de castas e vinhas velhas (field blend).",
+      "wines": [
+        {
+          "id": "crasto-branco-2021",
+          "name": "Crasto Branco",
+          "vintage": 2021,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Viosinho",
+            "Gouveio",
+            "Rabigato"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 6.3,
+          "ph": 3.27,
+          "winemaking": "Uvas de talhões selecionados. Desengace e prensagem. Decantação a 8ºC por 48h. Fermentação em inox a 14ºC (~30 dias).",
+          "notes": "Lote: 85% inox + 15% barrica usada 225L carvalho francês. Estágio total 3 meses com bâtonnage (parcial em inox; em barrica usada no componente de 15%). Cor limão pálido; citrinos e flor de laranjeira; volume e textura elegante com mineralidade; final fresco e persistente.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "citrinos",
+              "flor de laranjeira"
+            ],
+            "secondary": [
+              "mineralidade"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "peixe branco",
+              "peixe grelhado",
+              "saladas",
+              "queijos frescos"
+            ],
+            "notes": "Branco com boa frescura e textura (borras finas). Versátil com marisco, peixe e pratos leves com citrinos/ervas."
+          }
+        },
+        {
+          "id": "crasto-tinto-2017",
+          "name": "Crasto Tinto",
+          "vintage": 2017,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Tinta Roriz",
+            "Touriga Franca",
+            "Tinta Barroca"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 4.9,
+          "ph": 3.73,
+          "winemaking": "Triagem, desengace, esmagamento. Fermentação em cubas de inox com temperatura controlada (~7 dias).",
+          "notes": "Estágio: 85% inox; 15% barrica 225L carvalho francês (~6 meses). Perfil rubi escuro; violeta e frutos silvestres; boca equilibrada com volume e estrutura, taninos suaves; final persistente e fresco.",
+          "structure": {
+            "acidity": 4,
+            "tannins": 6,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "violeta",
+              "frutos silvestres"
+            ],
+            "secondary": [
+              "especiaria leve",
+              "toque de madeira discreto"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "cordeiro",
+              "porco assado",
+              "bife grelhado",
+              "enchidos",
+              "cogumelos"
+            ],
+            "notes": "Tinto de volume e tanino macio; acompanha grelhados/assados e pratos de umami (cogumelos, enchidos)."
+          }
+        },
+        {
+          "id": "crasto-rose-2023",
+          "name": "Crasto Rosé",
+          "vintage": 2023,
+          "doc": "Douro DOC",
+          "type": "rose",
+          "varieties": [
+            "Touriga Nacional",
+            "Tinta Roriz"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.2,
+          "ph": 3.56,
+          "winemaking": "Triagem, desengace e prensagem suave (mosto lágrima). Decantação a 8ºC por 48h. Fermentação em inox a 14ºC (~30 dias).",
+          "notes": "Estágio 3 meses em inox com trabalho parcial de borras finas/bâtonnage. Cor salmão; frutos silvestres e floral; boca fresca, equilibrada, mineral; final fresco e persistente.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 2,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium-long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos silvestres",
+              "notas florais"
+            ],
+            "secondary": [
+              "mineralidade"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "saladas",
+              "peixe grelhado",
+              "marisco",
+              "aves frias",
+              "cozinha asiática leve"
+            ],
+            "notes": "Rosé seco e fresco; ótimo com pratos leves, marisco e peixe, e preparações com ervas/cítricos."
+          }
+        },
+        {
+          "id": "crasto-altitude-430-tinto-2021",
+          "name": "Crasto Altitude 430 Tinto",
+          "vintage": 2021,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Tinta Francisca",
+            "Touriga Nacional"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 4.8,
+          "ph": 3.57,
+          "winemaking": "Triagem, desengace, esmagamento ligeiro. Fermentação em inox com controlo de temperatura (~4 dias) com maceração e extração muito ligeiras; prensagem para barrica e final de fermentação.",
+          "notes": "Estágio 12 meses em barrica usada de carvalho francês. Perfil granada; frutos vermelhos, bosque e especiaria fina; boca com volume e textura fina; frescura e elegância (altitude 430m, exposição norte).",
+          "structure": {
+            "acidity": 5,
+            "tannins": 5,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos"
+            ],
+            "secondary": [
+              "bosque",
+              "especiaria fina"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves assadas",
+              "porco",
+              "coelho",
+              "cogumelos",
+              "grelhados médios"
+            ],
+            "notes": "Tinto de extração leve e frescura notória; excelente com aves e carnes mais delicadas, e pratos com cogumelos."
+          }
+        },
+        {
+          "id": "crasto-superior-branco-2020",
+          "name": "Crasto Superior Branco",
+          "vintage": 2020,
+          "doc": "Douro DOC",
+          "type": "white",
+          "varieties": [
+            "Viosinho",
+            "Verdelho"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": 6.5,
+          "ph": 3.17,
+          "winemaking": "Uvas do Douro Superior (Quinta da Cabreira). Desengace e prensagem. Decantação a 8ºC por 48h. Fermentação iniciada em inox e finalizada em barrica francesa a 14ºC (~45 dias).",
+          "notes": "Estágio 6 meses em barrica francesa com bâtonnage (50% nova / 50% usada; 85% carvalho francês; 15% topos em acácia). Perfil cítrico e mineral; boca séria com volume e textura; final sedutor e persistente.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium-full",
+            "sweetness": "dry",
+            "finish": "very long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos citrinos"
+            ],
+            "secondary": [
+              "mineralidade",
+              "nota de barrica integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo",
+              "marisco",
+              "pratos cremosos",
+              "aves",
+              "queijos curados"
+            ],
+            "notes": "Branco com acidez firme e textura de barrica/borras: aguenta pratos mais ricos e peixe gordo."
+          }
+        },
+        {
+          "id": "crasto-superior-tinto-2019",
+          "name": "Crasto Superior Tinto",
+          "vintage": 2019,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Touriga Franca",
+            "Tinta Roriz",
+            "Sousão"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.1,
+          "ph": 3.66,
+          "winemaking": "Uvas do Douro Superior (Quinta da Cabreira). Desengace total e esmagamento ligeiro. Fermentação em inox com controlo de temperatura.",
+          "notes": "Estágio ~12 meses em barrica de carvalho francês. Cor violeta carregada; frutos silvestres, bosque e especiaria fina; boca elegante com volume e estrutura sólida; taninos sedosos; final harmonioso e persistente.",
+          "structure": {
+            "acidity": 4,
+            "tannins": 7,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "very long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos silvestres"
+            ],
+            "secondary": [
+              "bosque",
+              "especiaria fina",
+              "toque de madeira integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne grelhada",
+              "cordeiro",
+              "caça",
+              "pratos de forno",
+              "queijos curados"
+            ],
+            "notes": "Estrutura sólida e tanino sedoso: ideal para pratos intensos, assados e carnes com gordura."
+          }
+        },
+        {
+          "id": "crasto-reserva-vinhas-velhas-2021",
+          "name": "Crasto Reserva Vinhas Velhas",
+          "vintage": 2021,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Field Blend (25–30 castas, vinhas velhas)"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.2,
+          "ph": 3.66,
+          "winemaking": "Uvas de vinhas velhas (mistura de castas). Triagem, desengace total e esmagamento ligeiro. Fermentação em inox com temperatura controlada; prensagem suave no final.",
+          "notes": "Estágio ~18 meses em barrica (85% carvalho francês + 15% carvalho americano). Cor rubi profunda; frutos vermelhos maduros e esteva; boca sólida e estruturada com taninos aveludados; final equilibrado e muito persistente.",
+          "structure": {
+            "acidity": 4,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "very long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos maduros"
+            ],
+            "secondary": [
+              "esteva",
+              "bosque",
+              "madeira integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "cordeiro assado",
+              "carne de vaca",
+              "pratos de caça",
+              "molhos escuros",
+              "queijos muito curados"
+            ],
+            "notes": "Reserva de vinhas velhas com grande estrutura: adequado para pratos mais intensos e ricos."
+          }
+        },
+        {
+          "id": "crasto-touriga-franca-2018",
+          "name": "Quinta do Crasto Touriga Franca",
+          "vintage": 2018,
+          "doc": "Douro DOC",
+          "type": "red",
+          "varieties": [
+            "Touriga Franca"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 5.8,
+          "ph": 3.65,
+          "winemaking": "Uvas de talhões selecionados. Desengace total e esmagamento ligeiro. Fermentação em inox com temperatura controlada; prensagem suave no final.",
+          "notes": "Estágio 18 meses em barrica de carvalho francês. Cor violeta carregada; frutos do bosque e especiaria; boca com excelente volume e estrutura séria; taninos finos e persistentes; final fresco e persistente.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "very long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos do bosque"
+            ],
+            "secondary": [
+              "especiaria",
+              "madeira integrada"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne grelhada",
+              "cordeiro",
+              "javali",
+              "pratos intensos de forno",
+              "queijos curados"
+            ],
+            "notes": "Monovarietal de grande volume e tanino fino: pede pratos intensos e gordos, grelhados ou assados."
+          }
+        }
+      ]
+    },
+	{
+	  "producer": "Quinta do Portal",
+	  "region": "Douro – Cima Corgo",
+	  "quintas": [
+		"Quinta do Portal",
+		"Quinta dos Muros"
+	  ],
+	  "producer_notes": "Produtor familiar sediado em Celeirós (Sabrosa), no coração do Cima Corgo. Estilo marcado por vinificações cuidadas com recurso frequente a lagares e macerações controladas, privilegiando equilíbrio entre fruta, frescura e integração de madeira. Portefólio abrangente que cobre desde vinhos de perfil acessível até reservas estruturados, mantendo consistência técnica e clareza de expressão duriense.",
+	  "wines": [
+
+		{
+		  "id": "portal-quinta-dos-muros-m7-2019",
+		  "name": "Quinta dos Muros M7",
+		  "vintage": 2019,
+		  "doc": "Douro DOC",
+		  "type": "red",
+		  "varieties": ["Field Blend (vinha velha)"],
+		  "alcohol": 14.5,
+		  "acidity_gl": 5.1,
+		  "ph": 3.6,
+		  "winemaking": "Fermentação em pequenos lagares a 24–26ºC com movimentação por gravidade. Estágio 18 meses em carvalho francês novo.",
+		  "notes": "Ano fresco com extração mais suave. Perfil elegante com diversidade aromática e tanino fino.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 6,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["fruta preta", "notas silvestres"],
+			"secondary": ["especiaria fina", "madeira integrada"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["caça", "carnes assadas", "queijos suaves"],
+			"notes": "Estrutura elegante com boa acidez; adequado para carnes e pratos de intensidade média-alta."
+		  }
+		},
+
+		{
+		  "id": "portal-auru-tinto-2019",
+		  "name": "Auru Tinto",
+		  "vintage": 2019,
+		  "doc": "Douro DOC",
+		  "type": "red",
+		  "varieties": ["Tinta Roriz", "Touriga Nacional"],
+		  "alcohol": 14.5,
+		  "acidity_gl": 5.3,
+		  "ph": 3.7,
+		  "winemaking": "Maceração em lagares a 28–30ºC com utilização exclusiva de gravidade. Estágio 18 meses em carvalho francês novo.",
+		  "notes": "Aromas de amora, cacau e especiarias; taninos sedosos e final muito longo.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 7,
+			"body": "full",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["amora"],
+			"secondary": ["cacau", "canela", "notas tostadas"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["carne vermelha", "cordeiro", "pratos de forno"],
+			"notes": "Tinto estruturado com tanino sedoso; beneficia de decantação."
+		  }
+		},
+
+		{
+		  "id": "portal-grande-reserva-tinto-2019",
+		  "name": "Grande Reserva Tinto",
+		  "vintage": 2019,
+		  "doc": "Douro DOC",
+		  "type": "red",
+		  "varieties": ["Touriga Nacional", "Tinta Roriz", "Touriga Franca"],
+		  "alcohol": 14.5,
+		  "acidity_gl": 5.3,
+		  "ph": 3.7,
+		  "winemaking": "Fermentação em inox a 24–26ºC. Estágio 14 meses em carvalho francês novo.",
+		  "notes": "Fruto maduro, taninos polidos e final longo com ligeiro amargo elegante.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 8,
+			"body": "full",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["amora", "cereja preta"],
+			"secondary": ["aromas silvestres", "madeira integrada"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["carne assada", "queijos curados"],
+			"notes": "Grande reserva com estrutura firme e evolução positiva em garrafa."
+		  }
+		},
+
+		{
+		  "id": "portal-reserva-tinto-2019",
+		  "name": "Reserva Tinto",
+		  "vintage": 2019,
+		  "doc": "Douro DOC",
+		  "type": "red",
+		  "varieties": ["Touriga Nacional", "Tinta Roriz", "Touriga Franca"],
+		  "alcohol": 14.5,
+		  "acidity_gl": 5.3,
+		  "ph": 3.7,
+		  "winemaking": "Fermentação em inox a 24–26ºC. Estágio 9 meses em carvalho francês.",
+		  "notes": "Fruta preta madura, notas florais e madeira elegante.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 6,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["fruta preta"],
+			"secondary": ["notas florais", "carvalho"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["carnes grelhadas", "queijos"],
+			"notes": "Perfil equilibrado e gastronómico."
+		  }
+		},
+
+		{
+		  "id": "portal-grande-reserva-branco-2022",
+		  "name": "Grande Reserva Branco",
+		  "vintage": 2022,
+		  "doc": "Douro DOC",
+		  "type": "white",
+		  "varieties": ["Gouveio", "Viosinho", "Rabigato"],
+		  "alcohol": 13.5,
+		  "acidity_gl": 6.1,
+		  "ph": null,
+		  "winemaking": "Fermentação parcial em inox e final em cascos antigos; estágio 22 meses em madeira.",
+		  "notes": "Complexidade aromática floral e fruta madura com acidez firme e grande volume.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["flores brancas", "fruta de polpa amarela"],
+			"secondary": ["tosta", "fruta desidratada"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["peixe gordo", "aves", "queijos de pasta dura"],
+			"notes": "Branco estruturado que suporta pratos normalmente associados a tintos."
+		  }
+		},
+
+		{
+		  "id": "portal-reserva-branco-2022",
+		  "name": "Reserva Branco",
+		  "vintage": 2022,
+		  "doc": "Douro DOC",
+		  "type": "white",
+		  "varieties": ["Viosinho", "Gouveio"],
+		  "alcohol": 13.5,
+		  "acidity_gl": 5.9,
+		  "ph": 3.1,
+		  "winemaking": "Fermentação e estágio de 5 meses em barrica.",
+		  "notes": "Notas tostadas integradas com fruta madura e forte frescura.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["flores brancas", "fruta madura"],
+			"secondary": ["tosta", "chá verde"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["peixe", "marisco", "aves"],
+			"notes": "Branco versátil e gastronómico."
+		  }
+		},
+
+		{
+		  "id": "portal-moscatel-galego-branco-2024",
+		  "name": "Moscatel Galego Branco",
+		  "vintage": 2024,
+		  "doc": "Douro DOC",
+		  "type": "white",
+		  "varieties": ["Moscatel Galego Branco"],
+		  "alcohol": 13.0,
+		  "acidity_gl": 5.8,
+		  "ph": 3.3,
+		  "winemaking": "Maceração pelicular a frio seguida de fermentação em inox; estágio sobre borras finas.",
+		  "notes": "Perfil floral exuberante com citrinos e forte mineralidade.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": null,
+			"body": "medium-light",
+			"sweetness": "dry",
+			"finish": "medium-long"
+		  },
+		  "aromas": {
+			"primary": ["flor de laranjeira", "casca de laranja", "rosa"],
+			"secondary": ["mineralidade"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["sushi", "marisco", "saladas"],
+			"notes": "Branco aromático e fresco, altamente gastronómico."
+		  }
+		},
+
+		{
+		  "id": "portal-mural-reserva-tinto-2020",
+		  "name": "Mural Reserva Tinto",
+		  "vintage": 2020,
+		  "doc": "Douro DOC",
+		  "type": "red",
+		  "varieties": ["Tinta Roriz", "Touriga Franca", "Touriga Nacional"],
+		  "alcohol": 14.0,
+		  "acidity_gl": 4.9,
+		  "ph": 3.8,
+		  "winemaking": "Fermentação em inox com técnicas suaves; 25% do lote estagia 9 meses em carvalho francês usado.",
+		  "notes": "Perfil frutado com taninos firmes e final longo.",
+		  "structure": {
+			"acidity": 4,
+			"tannins": 6,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["fruta vermelha"],
+			"secondary": ["notas silvestres"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["carnes", "queijos"],
+			"notes": "Tinto equilibrado com boa aptidão gastronómica."
+		  }
+		}
+	  ]
+	},
+	{
+	  "producer": "Mateus Nicolau de Almeida",
+	  "region": "Douro – Douro Superior",
+	  "quintas": [],
+	  "producer_notes": "Projeto independente focado na expressão parcelar e na leitura geológica do Douro Superior. Vinificações de mínima intervenção, frequentemente em cimento e lagares tradicionais, privilegiando frescura, textura e identidade do lugar. Uso recorrente de fermentações espontâneas, cachos inteiros e estágios prolongados em recipientes neutros.",
+	  "wines": [
+
+		{
+		  "id": "trans-douro-express-douro-superior-2022",
+		  "name": "Trans-Douro Express Douro Superior",
+		  "vintage": 2022,
+		  "doc": "Douro DOC",
+		  "type": "red",
+		  "varieties": ["Field Blend (vinhas velhas)"],
+		  "alcohol": 12.5,
+		  "acidity_gl": null,
+		  "ph": 3.68,
+		  "winemaking": "Fermentação e estágio de 8 meses em cuba de betão.",
+		  "notes": "Perfil robusto com fruta madura e firmeza estrutural.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 6,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["figo", "ameixa", "fruta madura"],
+			"secondary": [],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["carnes assadas", "cordeiro", "cozinha mediterrânica"],
+			"notes": "Equilíbrio entre frescura e firmeza permite acompanhar pratos estruturados sem excesso de peso."
+		  }
+		},
+
+		{
+		  "id": "trans-douro-express-cima-corgo-2022",
+		  "name": "Trans-Douro Express Cima Corgo",
+		  "vintage": 2022,
+		  "doc": "Douro DOC",
+		  "type": "red",
+		  "varieties": ["Field Blend (vinhas velhas)"],
+		  "alcohol": 12.5,
+		  "acidity_gl": null,
+		  "ph": 3.72,
+		  "winemaking": "Fermentação e estágio de 8 meses em cuba de betão.",
+		  "notes": "Perfil complexo com fruta vermelha madura e nuances terrosas.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 5,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "medium-long"
+		  },
+		  "aromas": {
+			"primary": ["frutos vermelhos maduros"],
+			"secondary": ["terra húmida"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["aves assadas", "porco", "cogumelos"],
+			"notes": "Expressão equilibrada do Cima Corgo, gastronómica e versátil."
+		  }
+		},
+
+		{
+		  "id": "trans-douro-express-baixo-corgo-2022",
+		  "name": "Trans-Douro Express Baixo Corgo",
+		  "vintage": 2022,
+		  "doc": "Douro DOC",
+		  "type": "red",
+		  "varieties": ["Field Blend (vinhas velhas)"],
+		  "alcohol": 12.5,
+		  "acidity_gl": null,
+		  "ph": 3.70,
+		  "winemaking": "Fermentação e estágio de 8 meses em cuba de betão.",
+		  "notes": "Perfil mais fluído e fresco com especiaria e tanino presente no final.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 4,
+			"body": "medium-light",
+			"sweetness": "dry",
+			"finish": "medium"
+		  },
+		  "aromas": {
+			"primary": ["mirtilo", "fruta escura"],
+			"secondary": ["pimenta", "notas de floresta"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["charcutaria", "aves", "pratos leves de carne"],
+			"notes": "Perfil mais atlântico e fresco dentro da série Trans-Douro."
+		  }
+		},
+
+		{
+		  "id": "eremitas-paulo-de-tebas-2020",
+		  "name": "Eremitas Paulo de Tebas",
+		  "vintage": 2020,
+		  "doc": "Douro DOC",
+		  "type": "white",
+		  "varieties": ["Rabigato"],
+		  "alcohol": 12.5,
+		  "acidity_gl": null,
+		  "ph": 3.42,
+		  "winemaking": "Pisa a pé com cachos inteiros; fermentação espontânea e estágio 2 anos em cubas de cimento.",
+		  "notes": "Branco austero e salino, com grande profundidade e precisão.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["citrinos"],
+			"secondary": ["amêndoa", "rosmaninho"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["peixe gordo", "marisco", "cozinha mineral"],
+			"notes": "Perfil tenso e salino que favorece pratos marítimos intensos."
+		  }
+		},
+
+		{
+		  "id": "eremitas-amon-de-kelia-2023",
+		  "name": "Eremitas Amón de Kélia",
+		  "vintage": 2023,
+		  "doc": "Douro DOC",
+		  "type": "white",
+		  "varieties": ["Rabigato"],
+		  "alcohol": 12.0,
+		  "acidity_gl": null,
+		  "ph": 3.58,
+		  "winemaking": "Pisa a pé com cachos inteiros; fermentação espontânea e estágio 1 ano em cimento.",
+		  "notes": "Expressivo e equilibrado, com caráter floral e toque salino.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["flores brancas"],
+			"secondary": ["notas minerais"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["marisco", "peixe grelhado", "cozinha leve"],
+			"notes": "Equilíbrio entre frescura e textura."
+		  }
+		},
+
+		{
+		  "id": "eremitas-antao-do-deserto-2020",
+		  "name": "Eremitas Antão do Deserto",
+		  "vintage": 2020,
+		  "doc": "Douro DOC",
+		  "type": "white",
+		  "varieties": ["Rabigato"],
+		  "alcohol": 12.0,
+		  "acidity_gl": null,
+		  "ph": 3.35,
+		  "winemaking": "Pisa a pé com cachos inteiros; fermentação espontânea e estágio 1 ano em cimento.",
+		  "notes": "Textura rica com fruta de caroço e final prolongado.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["alperce"],
+			"secondary": ["notas florais"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["aves", "peixe assado", "pratos cremosos"],
+			"notes": "Branco textural e gastronómico."
+		  }
+		}
+	  ]
+	}
+  ]
+}

@@ -1,0 +1,1448 @@
+{
+  "_meta": {
+    "region": "Alentejo",
+    "description": "Producer wine profiles for Alentejo DOC",
+    "schema_version": "2.0",
+    "note": "Producer-centric format. Pairing is derived algorithmically from structure fields via pairing-rules.json. food_tags are NOT stored on wines. Cooking method and dish complements are as important as the main ingredient — see pairing_principles in pairing-rules.json.",
+    "fields_required": [
+      "id",
+      "name",
+      "doc",
+      "type",
+      "varieties",
+      "alcohol",
+      "structure",
+      "aromas",
+      "pairing"
+    ],
+    "fields_optional": [
+      "vintage",
+      "acidity_gl",
+      "ph",
+      "winemaking",
+      "notes",
+      "quinta"
+    ],
+    "fields_producer_optional": [
+      "quintas"
+    ]
+  },
+  "producers": [
+	{
+	  "producer": "Herdade do Mouchão",
+	  "region": "Alentejo – Reguengos de Monsaraz",
+	  "quintas": [
+		"Herdade do Mouchão"
+	  ],
+	  "producer_notes": "Produtor histórico do Alentejo. Assinatura técnica baseada em vinificação de tintos em lagares de pedra abertos com pisa a pé e inclusão de cachos completos com engaço, procurando equilíbrio entre açúcares, ácidos e maturação fenólica. Maloláctica e estágio prolongado em grandes tonéis de madeira (5000L), com lançamentos após afinamento em garrafa. Nos brancos, fermentações em inox a baixa temperatura e/ou trabalho de borras para volume mantendo frescura.",
+	  "wines": [
+		{
+		  "id": "mouchao-dom-rafael-tinto-2018",
+		  "name": "Dom Rafael Tinto",
+		  "vintage": 2018,
+		  "doc": "Alentejo",
+		  "type": "red",
+		  "varieties": [
+			"Aragonêz",
+			"Trincadeira",
+			"Castelão",
+			"Alicante Bouschet"
+		  ],
+		  "alcohol": 14.0,
+		  "acidity_gl": 5.7,
+		  "ph": 3.72,
+		  "winemaking": "Lagares de pedra abertos com cachos completos e engaço; pisa a pé 2x/dia. Fermentação ~4–6 dias. Maloláctica no outono em tonéis de 5000L e barricas novas/usadas (até 25% do lote). Filtrado no inverno; estágio sem intervenção ~12–15 meses. Após engarrafamento, amadurece ~6–9 meses.",
+		  "notes": "Fruta vermelha e preta madura com chocolate preto e especiarias mentoladas. Denso, de textura aveludada, com frescura e final persistente.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 6,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "fruta vermelha",
+			  "fruta preta"
+			],
+			"secondary": [
+			  "chocolate preto",
+			  "especiarias mentoladas"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "carnes",
+			  "petiscos",
+			  "bacalhau",
+			  "peixes gordos"
+			],
+			"notes": "Corpo médio-cheio e taninos presentes com final longo; aguenta pratos com gordura e proteína."
+		  }
+		},
+		{
+		  "id": "mouchao-dom-rafael-branco-2021",
+		  "name": "Dom Rafael Branco",
+		  "vintage": 2021,
+		  "doc": "Alentejo",
+		  "type": "white",
+		  "varieties": [
+			"Antão Vaz",
+			"Arinto"
+		  ],
+		  "alcohol": 13.0,
+		  "acidity_gl": 6.0,
+		  "ph": 3.24,
+		  "winemaking": "Vindima manual; fermentação a frio em inox (~15ºC) durante 2–4 semanas. Após primeira filtragem, estágio sobre borras finas 5–6 meses. Ligeiramente filtrado e engarrafado em Março de 2022.",
+		  "notes": "Fresco e volumoso, com perfil mineral e cítrico e aromas verdes vivos. Concentrado mas elegante, com palato crocante.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 1,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "cítrico",
+			  "mineral",
+			  "aromas verdes"
+			],
+			"secondary": [
+			  "tropical jovem"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "marisco",
+			  "petiscos",
+			  "queijos",
+			  "enchidos"
+			],
+			"notes": "Acidez firme e boca com volume; muito bom com marisco e petiscos salgados."
+		  }
+		},
+		{
+		  "id": "mouchao-ponte-mouchao-tinto-2021",
+		  "name": "Ponte Mouchão Tinto",
+		  "vintage": 2021,
+		  "doc": "Alentejo DOC",
+		  "type": "red",
+		  "varieties": [
+			"Touriga Franca",
+			"Touriga Nacional",
+			"Syrah"
+		  ],
+		  "alcohol": 15.5,
+		  "acidity_gl": 6.4,
+		  "ph": 3.48,
+		  "winemaking": "Lagares de pedra com cachos completos e engaço; pisa a pé. Fermentação ~5–7 dias. Maloláctica em tonéis de 5000L. Filtrado no inverno; estágio sem intervenção ~3 anos. Após engarrafamento, estagia ~10 meses antes do lançamento.",
+		  "notes": "Intenso e rico, com fruta preta e doce de ameixa, menta e especiarias, e notas florais. Taninos exuberantes e frescura surpreendente; final muito persistente.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 9,
+			"body": "full",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "fruta preta",
+			  "doce de ameixa"
+			],
+			"secondary": [
+			  "menta",
+			  "especiarias",
+			  "floral"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "grelhados",
+			  "caça",
+			  "assados"
+			],
+			"notes": "Estrutura de grande escala (taninos altos, corpo cheio, final muito longo) pede pratos intensos."
+		  }
+		},
+		{
+		  "id": "mouchao-ponte-branco-verdelho-2023",
+		  "name": "Ponte Branco (Verdelho)",
+		  "vintage": 2019,
+		  "doc": "Alentejano VR",
+		  "type": "white",
+		  "varieties": [
+			"Verdelho"
+		  ],
+		  "alcohol": 13.0,
+		  "acidity_gl": 6.0,
+		  "ph": 3.19,
+		  "winemaking": "Vindima manual. Fermentação alcoólica em barricas novas e usadas (~3 semanas) com bâtonnage. Após fermentação, estágio em barrica com borras finas durante cerca de 9 meses antes do engarrafamento.",
+		  "notes": "Verdelho plantado em solos arenosos junto à barragem do Alqueva. Branco textural e estruturado, combinando frescura com volume e capacidade de evolução em garrafa. Expressão rara da casta fora do contexto da Madeira.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 1,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "cítrico maduro",
+			  "fruta branca"
+			],
+			"secondary": [
+			  "especiaria suave",
+			  "toque fumado",
+			  "mineral"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "peixe assado",
+			  "marisco estruturado",
+			  "aves",
+			  "arroz de peixe"
+			],
+			"notes": "Branco gastronómico com textura e persistência; a acidez sustenta pratos ricos e preparações assadas."
+		  }
+		}
+	  ]
+	},
+	{
+	  "producer": "Tapada do Chaves",
+	  "region": "Alentejo – Portalegre",
+	  "quintas": [
+		"Tapada do Chaves"
+	  ],
+	  "producer_notes": "Produtor histórico da sub-região de Portalegre, implantado nas encostas graníticas da Serra de São Mamede a 350–400 m de altitude. Vinhas antigas e microclima mais fresco permitem maturações lentas e preservação de acidez, originando vinhos de perfil clássico, mineral e longevidade invulgar no contexto alentejano.",
+	  "wines": [
+		{
+		  "id": "tapada-chaves-portalegre-branco-2022",
+		  "name": "Portalegre Branco",
+		  "vintage": 2022,
+		  "doc": "Alentejo DOC",
+		  "type": "white",
+		  "varieties": ["Arinto","Antão Vaz","Fernão Pires"],
+		  "alcohol": 12.5,
+		  "acidity_gl": 5.2,
+		  "ph": 3.26,
+		  "winemaking": "Vindima manual a ~400 m altitude. Prensagem em cachos inteiros, clarificação por gravidade e fermentação em inox a temperatura controlada. Estágio 9 meses sobre borras finas com batonnage e 12 meses em garrafa.",
+		  "notes": "Perfil clássico e mineral, fruta branca e citrina com notas florais e brioche subtil. Volumoso mas elegante, com acidez firme e final muito persistente.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": 1,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["fruta branca","cítrico","floral"],
+			"secondary": ["brioche","mineral"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["marisco","peixe assado","aves leves"],
+			"notes": "Acidez firme e textura equilibrada favorecem pratos delicados mas estruturados."
+		  }
+		},
+		{
+		  "id": "tapada-chaves-vinhas-velhas-branco-2022",
+		  "name": "Portalegre Branco Vinhas Velhas",
+		  "vintage": 2022,
+		  "doc": "Alentejo DOC",
+		  "type": "white",
+		  "varieties": ["Field blend"],
+		  "alcohol": 13.0,
+		  "acidity_gl": 5.8,
+		  "ph": 3.16,
+		  "winemaking": "Vinha centenária (1903). Prensagem em cachos inteiros; fermentação em inox e barrica francesa. Estágio 6 meses com batonnage e 24 meses em garrafa.",
+		  "notes": "Grande complexidade aromática com citrinos, flor de laranjeira, pederneira e frutos secos. Equilibrado e profundo, com acidez firme e enorme persistência.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": 1,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["cítrico","flor de laranjeira"],
+			"secondary": ["pederneira","frutos secos"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["peixe assado","aves","cozinha mediterrânica"],
+			"notes": "Branco gastronómico com capacidade de evolução e grande persistência."
+		  }
+		},
+		{
+		  "id": "tapada-chaves-reserva-tinto-2018",
+		  "name": "Portalegre Reserva Tinto",
+		  "vintage": 2018,
+		  "doc": "Alentejo DOC",
+		  "type": "red",
+		  "varieties": ["Aragonez","Trincadeira","Alicante Bouschet"],
+		  "alcohol": 15.0,
+		  "acidity_gl": 5.4,
+		  "ph": 3.57,
+		  "winemaking": "Vindima manual entre 350–400 m altitude. Maceração pré-fermentativa a frio, fermentação com leveduras indígenas em inox e maceração pós-fermentativa prolongada. Estágio 14 meses em barrica e 24 meses em garrafa.",
+		  "notes": "Perfil clássico e evolutivo, fruta madura, figo, couro e mato mediterrânico. Grande volume aliado a acidez marcante e taninos robustos, conferindo elegância e longevidade.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 7,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["fruta vermelha madura","figo"],
+			"secondary": ["couro","esteva","terra"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["carnes assadas","caça","cozinha tradicional"],
+			"notes": "Estrutura firme e acidez equilibrada favorecem pratos ricos e de longa cozedura."
+		  }
+		}
+	  ]
+	},
+	{
+	  "producer": "Cartuxa (Fundação Eugénio de Almeida)",
+	  "region": "Alentejo – Évora",
+	  "quintas": [
+		"Quinta de Valbom"
+	  ],
+	  "producer_notes": "Produtor histórico de Évora cuja atividade vitivinícola remonta à tradição monástica cartuxa. Combina vinificação moderna de precisão com recuperação de métodos históricos como o vinho de talha, criando uma ponte entre tradição alentejana e expressão contemporânea equilibrada.",
+	  "wines": [
+		{
+		  "id": "cartuxa-talha-tinto-2023",
+		  "name": "Vinho de Talha Tinto",
+		  "vintage": 2022,
+		  "doc": "Alentejo DOC – Évora",
+		  "type": "red",
+		  "varieties": ["Aragonez","Trincadeira","Alicante Bouschet"],
+		  "alcohol": 13.5,
+		  "acidity_gl": 5.0,
+		  "ph": 3.81,
+		  "winemaking": "Fermentação em talhas de barro com maceração pós-fermentativa prolongada até São Martinho. Estágio adicional nas talhas antes do engarrafamento.",
+		  "notes": "Perfil austero e textural com compota de framboesa, ervas secas e toque terroso. Taninos presentes e frescura suculenta típica da vinificação em talha.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 7,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["framboesa","amora"],
+			"secondary": ["ervas secas","pinheiro"],
+			"tertiary": ["terra"]
+		  },
+		  "pairing": {
+			"affinities": ["massas","carnes brancas","salmão grelhado"],
+			"notes": "Estrutura rústica mas equilibrada, adequada a pratos de intensidade média."
+		  }
+		},
+		{
+		  "id": "cartuxa-talha-branco-2019",
+		  "name": "Vinho de Talha Branco",
+		  "vintage": 2019,
+		  "doc": "Alentejo DOC – Évora",
+		  "type": "white",
+		  "varieties": ["Antão Vaz"],
+		  "alcohol": 12.5,
+		  "acidity_gl": 5.0,
+		  "ph": 3.46,
+		  "winemaking": "Fermentação com curtimenta completa em talha de barro do século XIX, permanecendo com películas e grainhas até Novembro. Estágio nas mesmas talhas até à primavera seguinte.",
+		  "notes": "Branco textural e encorpado, com intensidade aromática e final longo, expressão rara de curtimenta integral em contexto alentejano.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 2,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["fruta branca"],
+			"secondary": ["ervas","argila"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["marisco","peixe grelhado","aves"],
+			"notes": "Volume e textura permitem acompanhar pratos mais estruturados."
+		  }
+		},
+		{
+		  "id": "cartuxa-foral-evora-tinto-2019",
+		  "name": "Foral de Évora Tinto",
+		  "vintage": 2019,
+		  "doc": "Alentejo DOC – Évora",
+		  "type": "red",
+		  "varieties": ["Trincadeira","Alicante Bouschet","Aragonez"],
+		  "alcohol": 14.5,
+		  "acidity_gl": 5.5,
+		  "ph": 3.74,
+		  "winemaking": "Fermentação em inox com maceração prolongada. Estágio cerca de 12 meses em barricas de carvalho francês e americano seguido de estágio em garrafa.",
+		  "notes": "Tinto elegante e concentrado com fruta madura, especiarias e notas balsâmicas. Taninos firmes e aveludados com final persistente.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 6,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["fruta madura"],
+			"secondary": ["especiarias","balsâmico"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["carnes vermelhas","caça","queijos"],
+			"notes": "Estrutura equilibrada e persistência adequada a pratos intensos."
+		  }
+		}
+	  ]
+	},
+	{
+	  "producer": "Fitapreta",
+	  "region": "Alentejo",
+	  "quintas": [
+		"Chão dos Eremitas"
+	  ],
+	  "producer_notes": "Projeto focado na recuperação de castas e estilos do antigo encepamento alentejano, com ênfase em frescura 'por desenho' (vindimas noturnas, fermentações espontâneas, uso de barricas velhas/neutras e mínima intervenção durante a fermentação). Vários vinhos exploram identidade de vinha velha e expressão mineral de solos granitóides com presença de calcário ativo.",
+	  "wines": [
+		{
+		  "id": "fitapreta-trincadeira-das-pratas-2021",
+		  "name": "Trincadeira-das-Pratas",
+		  "vintage": 2021,
+		  "doc": "Alentejo",
+		  "type": "white",
+		  "varieties": [
+			"Trincadeira-das-Pratas"
+		  ],
+		  "alcohol": 13.0,
+		  "acidity_gl": null,
+		  "ph": null,
+		  "winemaking": "Vindima manual noturna; prensagem direta; sem sulfitos até ao final da fermentação; decantação após ~12h; fermentação espontânea em barricas velhas.",
+		  "notes": "Cor amarelo-citrino. Nariz intenso e fresco com notas citrinas (quase ananás) de forma subtil. Ataque tenso e muito fino, boa textura, excelente persistência e frescura.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": 1,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "cítrico",
+			  "ananás subtil"
+			],
+			"secondary": [
+			  "mineral"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "peixes gordos",
+			  "marisco",
+			  "peixe no forno"
+			],
+			"notes": "Boa acidez e textura; funciona com peixe gordo grelhado/no forno e marisco com componentes mais gordas."
+		  }
+		},
+		{
+		  "id": "fitapreta-baga-ao-sol-2022",
+		  "name": "Baga ao Sol",
+		  "vintage": 2022,
+		  "doc": "Alentejo",
+		  "type": "red",
+		  "varieties": [
+			"Baga"
+		  ],
+		  "alcohol": 13.5,
+		  "acidity_gl": null,
+		  "ph": null,
+		  "winemaking": "Vindima manual noturna; seleção em mesa; esmagamento suave com queda por gravidade na cuba; pré-maceração a frio; fermentações alcoólica e malolática espontâneas; cuvaison ~30 dias. Estágio 12 meses em inox (sem barrica).",
+		  "notes": "Interpretação alentejana de Baga: mais quente e com maior maturação, mantendo rusticidade e identidade; vinificado sem contacto com barrica para leitura direta da casta em região mais a sul.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 6,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "fruta vermelha madura"
+			],
+			"secondary": [
+			  "terroso",
+			  "rústico"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "carnes de tacho",
+			  "caça",
+			  "borrego"
+			],
+			"notes": "A frescura e estrutura acompanham pratos de tacho e carnes mais gordas; bom com caça e borrego."
+		  }
+		},
+		{
+		  "id": "fitapreta-branco-ancestral-2024",
+		  "name": "Branco Ancestral",
+		  "vintage": 2024,
+		  "doc": "Alentejo",
+		  "type": "white",
+		  "varieties": [
+			"Roupeiro",
+			"Rabo de Ovelha",
+			"Trincadeira-das-Pratas",
+			"Alicante Branco",
+			"Arinto"
+		  ],
+		  "alcohol": 12.5,
+		  "acidity_gl": null,
+		  "ph": null,
+		  "winemaking": "Vindima a partir das 23h para chegada fresca à adega (~7h). Prensagem de cacho inteiro. Sólidos suspensos assentam naturalmente (6–12h). Fermentação espontânea: 85% em cubas verticais, 5% em pequenas cubas horizontais e 10% em barricas neutras. Estágio em borras até final de fevereiro, com engarrafamento nessa altura.",
+		  "notes": "Cor amarelo citrino. Aroma intenso a citrinos com notas minerais. Ataca com bom volume e riqueza em retro-olfação, terminando com frescura impressionante e boa fruta em harmonia.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": 1,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "cítrico"
+			],
+			"secondary": [
+			  "mineral"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "peixe grelhado",
+			  "saladas",
+			  "marisco"
+			],
+			"notes": "Fresco com boa acidez e alguma untuosidade; adequado para peixe grelhado, saladas e marisco."
+		  }
+		},
+		{
+		  "id": "fitapreta-chao-dos-eremitas-moreto-2023",
+		  "name": "Chão dos Eremitas Moreto",
+		  "vintage": 2023,
+		  "doc": "Alentejo",
+		  "type": "red",
+		  "varieties": [
+			"Moreto"
+		  ],
+		  "alcohol": 14.0,
+		  "acidity_gl": null,
+		  "ph": null,
+		  "winemaking": "Vindima manual noturna. Uvas selecionadas em mesa; 100% desengaçadas com queda por gravidade na cuba. Fermentação espontânea e maceração pelicular prolongada (~35 dias). Estágio de 16 meses em barricas velhas.",
+		  "notes": "100% Moreto de vinhas velhas (1969–1970). Cor ruby intenso e concentração média; fruto preto quase maduro com notas de bosque. Ataque cheio e concentrado, com boa frescura e estrutura persistente no final de prova.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 5,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "fruta preta"
+			],
+			"secondary": [
+			  "bosque"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "carnes grelhadas",
+			  "pratos de tacho",
+			  "carnes vermelhas"
+			],
+			"notes": "Estrutura equilibrada com frescura e persistência; acompanha grelhados e pratos de cozedura lenta."
+		  }
+		}
+	  ]
+	},
+	{
+	  "producer": "Herdade do Esporão",
+	  "region": "Alentejo",
+	  "producer_notes": "Produtor de referência do Alentejo moderno, combinando escala, viticultura biológica certificada e forte consistência técnica. Atua como calibrador estilístico regional, representando o equilíbrio entre maturação solar, frescura controlada e precisão enológica.",
+	  "wines": [
+		{
+		  "id": "esporao-reserva-branco-2024",
+		  "name": "Esporão Reserva Branco",
+		  "vintage": 2024,
+		  "doc": "Alentejo",
+		  "type": "white",
+		  "varieties": ["Antão Vaz","Arinto","Roupeiro"],
+		  "alcohol": 13.5,
+		  "acidity_gl": 5.5,
+		  "ph": 3.29,
+		  "winemaking": "Desengace, maceração pelicular, fermentação controlada (74% inox, 26% barrica). Estágio 6 meses sobre borras finas.",
+		  "notes": "Branco amplo e untuoso com fruta de polpa branca, citrinos e flor de laranjeira. Final longo e equilibrado.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 1,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["fruta branca","cítrico"],
+			"secondary": ["floral","especiarias"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["peixe assado","marisco","aves"],
+			"notes": "Volume e acidez equilibrada permitem pratos de média intensidade."
+		  }
+		},
+		{
+		  "id": "esporao-reserva-tinto-2023",
+		  "name": "Esporão Reserva Tinto",
+		  "vintage": 2023,
+		  "doc": "Alentejo",
+		  "type": "red",
+		  "varieties": ["Aragonês","Alicante Bouschet","Touriga Nacional","Cabernet Sauvignon","Syrah","Trincadeira"],
+		  "alcohol": 14.0,
+		  "acidity_gl": 5.7,
+		  "ph": 3.61,
+		  "winemaking": "Fermentação em betão, inox e lagares de mármore. Estágio 12 meses em barrica seguido de estágio em garrafa.",
+		  "notes": "Perfil equilibrado com fruta vermelha e especiarias, taninos finos e final persistente.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 6,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["fruta vermelha"],
+			"secondary": ["especiarias"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["carnes assadas","borrego","queijos curados"],
+			"notes": "Equilíbrio estrutural adequado a pratos clássicos de carne."
+		  }
+		},
+		{
+		  "id": "esporao-talha-branco-2019",
+		  "name": "Vinho de Talha Branco",
+		  "vintage": 2019,
+		  "doc": "Alentejo",
+		  "type": "white",
+		  "varieties": ["Roupeiro"],
+		  "alcohol": 13.5,
+		  "acidity_gl": 5.7,
+		  "ph": 3.5,
+		  "winemaking": "Fermentação espontânea em talha com contacto prolongado com massas vínicas.",
+		  "notes": "Branco textural com notas de figo branco, especiarias e ervas secas. Final persistente.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 2,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["figo branco","alperce"],
+			"secondary": ["ervas secas","especiarias"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["peixe grelhado","aves","cozinha mediterrânica"],
+			"notes": "Textura permite pratos mais estruturados."
+		  }
+		},
+		{
+		  "id": "esporao-private-selection-branco-2022",
+		  "name": "Private Selection Branco",
+		  "vintage": 2022,
+		  "doc": "Alentejo",
+		  "type": "white",
+		  "varieties": ["Semillon"],
+		  "alcohol": 13.5,
+		  "acidity_gl": 5.85,
+		  "ph": 3.14,
+		  "winemaking": "Fermentação em barricas de 500L com bâtonnage. Estágio 6 meses em barrica e posterior estágio em garrafa.",
+		  "notes": "Branco rico e complexo com alperce, limão maduro e amêndoa fresca. Final longo e elegante.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": 1,
+			"body": "full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["alperce","limão maduro"],
+			"secondary": ["amêndoa","especiarias"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["peixe rico","aves","pratos cremosos"],
+			"notes": "Volume e acidez permitem pratos intensos."
+		  }
+		},
+		{
+		  "id": "esporao-private-selection-tinto-2019",
+		  "name": "Private Selection Tinto",
+		  "vintage": 2019,
+		  "doc": "Alentejo",
+		  "type": "red",
+		  "varieties": ["Alicante Bouschet","Touriga Nacional","Aragonez","Touriga Franca"],
+		  "alcohol": 14.5,
+		  "acidity_gl": 6.71,
+		  "ph": 3.5,
+		  "winemaking": "Vinificação parcelar com pisa a pé e estágio prolongado em barrica seguido de envelhecimento em garrafa.",
+		  "notes": "Tinto profundo com fruta preta madura, especiarias e textura sedosa. Persistência elevada.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 7,
+			"body": "full",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["fruta preta"],
+			"secondary": ["alcaçuz","pimenta"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["carnes vermelhas","caça","queijos curados"],
+			"notes": "Estrutura e persistência para pratos intensos."
+		  }
+		}
+	  ]
+	},
+	{
+	  "producer": "Quinta da Fonte Souto",
+	  "region": "Alentejo – Portalegre",
+	  "quintas": [
+		"Quinta da Fonte Souto"
+	  ],
+	  "producer_notes": "Projeto da família Symington na Serra de São Mamede, em Portalegre, implantado entre cerca de 450 e 550 metros de altitude. O clima mais fresco e húmido e os solos graníticos permitem maturações lentas e preservação natural de acidez, originando vinhos alentejanos de perfil mais elegante e preciso, onde a frescura e o equilíbrio prevalecem sobre a concentração.",
+	  "wines": [
+		{
+		  "id": "fonte-souto-taifa-branco-2020",
+		  "name": "TAIFA Branco",
+		  "vintage": 2020,
+		  "doc": "Alentejo DOC",
+		  "type": "white",
+		  "varieties": [
+			"Arinto"
+		  ],
+		  "alcohol": 13.0,
+		  "acidity_gl": 6.3,
+		  "ph": 3.2,
+		  "winemaking": "Vindima manual em altitude. Fermentação em barricas de carvalho com estágio sobre borras finas e bâtonnage.",
+		  "notes": "Arinto de altitude com perfil mineral e cítrico, combinando tensão e volume. Branco preciso e profundo, marcado pela frescura natural da Serra de São Mamede.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": 1,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "cítrico",
+			  "fruta branca"
+			],
+			"secondary": [
+			  "mineral",
+			  "toque fumado"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "peixe assado",
+			  "marisco",
+			  "aves"
+			],
+			"notes": "Acidez elevada e textura permitem pratos estruturados mantendo frescura."
+		  }
+		},
+		{
+		  "id": "fonte-souto-branco-2021",
+		  "name": "Quinta da Fonte Souto Branco",
+		  "vintage": 2021,
+		  "doc": "Alentejo DOC",
+		  "type": "white",
+		  "varieties": [
+			"Arinto",
+			"Verdelho"
+		  ],
+		  "alcohol": 13.0,
+		  "acidity_gl": 6.1,
+		  "ph": 3.23,
+		  "winemaking": "Fermentação parcial em inox e barrica, seguida de estágio sobre borras finas.",
+		  "notes": "Branco equilibrado e fresco, combinando notas citrinas e minerais com textura elegante. Expressão moderna da altitude de Portalegre.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": 1,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "cítrico",
+			  "fruta branca"
+			],
+			"secondary": [
+			  "mineral"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "peixe grelhado",
+			  "marisco",
+			  "aves leves"
+			],
+			"notes": "Perfil fresco e equilibrado adequado a cozinha mediterrânica."
+		  }
+		},
+		{
+		  "id": "fonte-souto-tinto-2018",
+		  "name": "Quinta da Fonte Souto Tinto",
+		  "vintage": 2018,
+		  "doc": "Alentejo DOC",
+		  "type": "red",
+		  "varieties": [
+			"Alicante Bouschet",
+			"Aragonez",
+			"Touriga Nacional",
+			"Trincadeira"
+		  ],
+		  "alcohol": 14.0,
+		  "acidity_gl": 5.5,
+		  "ph": 3.6,
+		  "winemaking": "Fermentação em lagares e cubas inox com estágio posterior em barricas de carvalho.",
+		  "notes": "Tinto elegante e fresco para o contexto alentejano, com fruta madura, notas balsâmicas e taninos finos. A altitude contribui para equilíbrio e persistência.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 6,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "fruta vermelha",
+			  "fruta preta"
+			],
+			"secondary": [
+			  "balsâmico",
+			  "especiarias"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "carnes assadas",
+			  "borrego",
+			  "aves"
+			],
+			"notes": "Equilíbrio entre frescura e estrutura acompanha pratos tradicionais."
+		  }
+		},
+		{
+		  "id": "fonte-souto-florao-branco-2022",
+		  "name": "Florão Branco",
+		  "vintage": 2022,
+		  "doc": "Alentejo DOC",
+		  "type": "white",
+		  "varieties": [
+			"Arinto",
+			"Verdelho",
+			"Antão Vaz"
+		  ],
+		  "alcohol": 12.5,
+		  "acidity_gl": 6.0,
+		  "ph": 3.3,
+		  "winemaking": "Fermentação em inox a temperatura controlada com estágio curto sobre borras.",
+		  "notes": "Branco fresco e acessível que evidencia a influência da altitude de Portalegre num estilo mais imediato e gastronómico.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": 1,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "medium-long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "cítrico",
+			  "fruta branca"
+			],
+			"secondary": [
+			  "floral leve"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "saladas",
+			  "peixe grelhado",
+			  "marisco"
+			],
+			"notes": "Perfil leve e fresco ideal para pratos de média intensidade."
+		  }
+		}
+	  ]
+	},
+	{
+	  "producer": "João Portugal Ramos – Marquês de Borba",
+	  "region": "Alentejo – Borba",
+	  "producer_notes": "Marca emblemática criada em 1997 na sub-região de Borba, representando um estilo clássico e consistente do Alentejo. Os vinhos procuram equilíbrio entre maturação solar, frescura proporcionada pela amplitude térmica e tradição de vinificação em lagares de mármore.",
+	  "wines": [
+		{
+		  "id": "marques-de-borba-branco-2023",
+		  "name": "Marquês de Borba Branco",
+		  "vintage": 2023,
+		  "doc": "Alentejo DOC",
+		  "type": "white",
+		  "varieties": ["Arinto", "Antão Vaz", "Viognier"],
+		  "alcohol": 12.5,
+		  "acidity_gl": 6.0,
+		  "ph": null,
+		  "winemaking": "Vindima manual matinal com arrefecimento das uvas. Fermentação em inox a temperatura controlada.",
+		  "notes": "Perfil citrino e fresco com ligeiro carácter mineral. Branco equilibrado e gastronómico representativo do estilo regional.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 1,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "medium-long"
+		  },
+		  "aromas": {
+			"primary": ["cítrico"],
+			"secondary": ["mineral leve"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["peixe", "pratos vegetarianos", "saladas"],
+			"notes": "Acidez equilibrada e perfil direto adequado a refeições leves."
+		  }
+		},
+		{
+		  "id": "marques-de-borba-tinto-2022",
+		  "name": "Marquês de Borba Tinto",
+		  "vintage": 2022,
+		  "doc": "Alentejo DOC",
+		  "type": "red",
+		  "varieties": [
+			"Alicante Bouschet",
+			"Aragonez",
+			"Trincadeira",
+			"Touriga Nacional",
+			"Petit Verdot",
+			"Merlot"
+		  ],
+		  "alcohol": 14.0,
+		  "acidity_gl": 4.9,
+		  "ph": null,
+		  "winemaking": "Maceração pré-fermentativa; fermentação em lagares de mármore e inox; estágio 6 meses em carvalho usado.",
+		  "notes": "Tinto equilibrado com fruta madura e taninos suaves, representando o perfil clássico acessível do Alentejo.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 5,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "medium-long"
+		  },
+		  "aromas": {
+			"primary": ["amora", "cassis"],
+			"secondary": ["compota leve"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["carnes grelhadas", "massas", "aves"],
+			"notes": "Perfil equilibrado e versátil para cozinha quotidiana."
+		  }
+		},
+		{
+		  "id": "marques-de-borba-reserva-2019",
+		  "name": "Marquês de Borba Reserva",
+		  "vintage": 2019,
+		  "doc": "Alentejo DOC",
+		  "type": "red",
+		  "varieties": [
+			"Trincadeira",
+			"Aragonez",
+			"Alicante Bouschet",
+			"Cabernet Sauvignon"
+		  ],
+		  "alcohol": 14.5,
+		  "acidity_gl": 6.1,
+		  "ph": 3.34,
+		  "winemaking": "Pisa a pé em lagares de mármore e estágio 18 meses em carvalho francês.",
+		  "notes": "Reserva clássico de Borba com concentração, especiarias e taninos compactos aliados a elegância e potencial de guarda.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 7,
+			"body": "full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["fruta vermelha madura"],
+			"secondary": ["especiarias", "barrica"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["borrego", "carnes assadas", "caça"],
+			"notes": "Estrutura e concentração adequadas a pratos intensos."
+		  }
+		},
+		{
+		  "id": "marques-de-borba-vinhas-velhas-2021",
+		  "name": "Marquês de Borba Vinhas Velhas",
+		  "vintage": 2021,
+		  "doc": "Alentejo DOC",
+		  "type": "red",
+		  "varieties": [
+			"Alicante Bouschet",
+			"Aragonez",
+			"Castelão",
+			"Syrah"
+		  ],
+		  "alcohol": 14.5,
+		  "acidity_gl": 5.6,
+		  "ph": 3.56,
+		  "winemaking": "Pisa em lagares seguida de fermentação em inox e estágio 12 meses em barrica.",
+		  "notes": "Grande volume e taninos aveludados com fruta preta e notas balsâmicas provenientes do estágio.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 6,
+			"body": "full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["fruta preta"],
+			"secondary": ["eucalipto", "especiarias"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["carnes vermelhas", "ensopados"],
+			"notes": "Volume e textura adequados a pratos tradicionais alentejanos."
+		  }
+		},
+		{
+		  "id": "marques-de-borba-late-harvest-2017",
+		  "name": "Marquês de Borba Late Harvest",
+		  "vintage": 2017,
+		  "doc": "Alentejo DOC",
+		  "type": "white",
+		  "varieties": ["Arinto"],
+		  "alcohol": 12.5,
+		  "acidity_gl": 7.7,
+		  "ph": null,
+		  "winemaking": "Uvas congeladas após vindima tardia; fermentação em inox com paragem a frio; estágio 24 meses em barrica.",
+		  "notes": "Vinho doce equilibrado entre açúcar e elevada acidez, com notas de mel e toranja.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": 1,
+			"body": "full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["mel", "toranja"],
+			"secondary": ["floral"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["sobremesas", "queijos azuis", "foie gras"],
+			"notes": "Doçura equilibrada por elevada acidez."
+		  }
+		}
+	  ]
+	},
+	{
+	  "producer": "Adega Cooperativa de Borba",
+	  "region": "Alentejo",
+	  "producer_notes": "Fundada em 1955, a Adega Cooperativa de Borba é uma das referências históricas do cooperativismo alentejano. Representa o estilo regional de larga escala, centrado no equilíbrio, acessibilidade e expressão frutada das castas tradicionais do Alentejo, com vinificações predominantemente em inox e foco na consistência anual.",
+	  "wines": [
+		{
+		  "id": "montes-claros-tinto-2023",
+		  "name": "Montes Claros Tinto",
+		  "vintage": 2023,
+		  "doc": "Alentejo DOC",
+		  "type": "red",
+		  "varieties": [
+			"Aragonez",
+			"Trincadeira",
+			"Castelão"
+		  ],
+		  "alcohol": 14.0,
+		  "acidity_gl": 5.4,
+		  "ph": 3.6,
+		  "winemaking": "Desengace total seguido de fermentação em cubas de inox com controlo de temperatura e maceração curta. Estágio maioritariamente em inox antes do engarrafamento.",
+		  "notes": "Tinto representativo do perfil cooperativo do Alentejo, focado na fruta madura, equilíbrio e taninos macios, privilegiando acessibilidade e vocação gastronómica quotidiana.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 4,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "medium"
+		  },
+		  "aromas": {
+			"primary": [
+			  "fruta vermelha madura",
+			  "ameixa"
+			],
+			"secondary": [
+			  "especiarias suaves"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "carnes grelhadas",
+			  "aves",
+			  "massas",
+			  "cozinha regional"
+			],
+			"notes": "Perfil equilibrado e taninos suaves adequados a consumo diário e pratos tradicionais."
+		  }
+		},
+		{
+		  "id": "montes-claros-branco-2024",
+		  "name": "Montes Claros Branco",
+		  "vintage": 2024,
+		  "doc": "Alentejo DOC",
+		  "type": "white",
+		  "varieties": [
+			"Antão Vaz",
+			"Roupeiro",
+			"Arinto"
+		  ],
+		  "alcohol": 13.0,
+		  "acidity_gl": 6.0,
+		  "ph": 3.2,
+		  "winemaking": "Vindima noturna seguida de prensagem suave e fermentação em inox a temperatura controlada. Estágio curto sobre borras finas antes do engarrafamento.",
+		  "notes": "Branco fresco e equilibrado, de perfil cítrico e frutado, representativo do estilo quotidiano do Alentejo moderno.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 1,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "medium"
+		  },
+		  "aromas": {
+			"primary": [
+			  "cítrico",
+			  "fruta branca"
+			],
+			"secondary": [
+			  "floral leve"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "peixe grelhado",
+			  "marisco",
+			  "saladas",
+			  "aperitivos"
+			],
+			"notes": "Acidez equilibrada e perfil leve adequados a pratos simples e cozinha mediterrânica."
+		  }
+		},
+		{
+		  "id": "montes-claros-rose-2025",
+		  "name": "Montes Claros Rosé",
+		  "vintage": 2025,
+		  "doc": "Alentejo DOC",
+		  "type": "rosé",
+		  "varieties": [
+			"Aragonez",
+			"Syrah"
+		  ],
+		  "alcohol": 12.0,
+		  "acidity_gl": 5.8,
+		  "ph": 3.25,
+		  "winemaking": "Maceração pelicular muito curta seguida de prensagem direta e fermentação em inox a baixa temperatura para preservação aromática.",
+		  "notes": "Rosé leve e fresco, centrado na fruta vermelha jovem e perfil refrescante, representando o estilo descontraído e gastronómico do Alentejo.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 1,
+			"body": "light",
+			"sweetness": "dry",
+			"finish": "medium"
+		  },
+		  "aromas": {
+			"primary": [
+			  "morango",
+			  "frutos vermelhos frescos"
+			],
+			"secondary": [
+			  "floral leve"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "saladas",
+			  "peixe grelhado",
+			  "marisco",
+			  "aperitivos"
+			],
+			"notes": "Perfil leve e refrescante adequado a refeições informais e cozinha mediterrânica."
+		  }
+		}
+	  ]
+	},
+	{
+	  "producer": "Adega Cooperativa de Borba",
+	  "region": "Alentejo",
+	  "producer_notes": "Linha dedicada à tradição do vinho de talha alentejano, baseada no método ancestral romano de fermentação e conservação em ânforas de barro. Os vinhos fermentam e permanecem com as massas até São Martinho, sendo naturalmente filtrados pela 'mãe', resultando em perfis texturais, diretos e de tipicidade regional marcada.",
+	  "wines": [
+		{
+		  "id": "talhas-de-borba-tinto-2024",
+		  "name": "Talhas de Borba Tinto",
+		  "vintage": 2024,
+		  "doc": "Alentejo DOC",
+		  "type": "red",
+		  "varieties": [
+			"Trincadeira",
+			"Castelão",
+			"Alicante Bouschet"
+		  ],
+		  "alcohol": 13.5,
+		  "acidity_gl": 5.4,
+		  "ph": 3.7,
+		  "winemaking": "Fermentação e conservação integral em talhas de barro após desengace e esmagamento. Maceração com remontagens durante 3–4 semanas. Permanência com a 'mãe' até São Martinho, sem estágio em madeira.",
+		  "notes": "Vinho de perfil tradicional e rústico, centrado na expressão direta da uva e na textura proporcionada pela fermentação em talha. Fruta vermelha madura, frescura surpreendente e final macio.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 5,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "frutos vermelhos maduros"
+			],
+			"secondary": [
+			  "terroso leve"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "petiscos alentejanos",
+			  "enchidos",
+			  "pratos tradicionais regionais"
+			],
+			"notes": "Textura e rusticidade moderada adequadas a cozinha regional e pratos de partilha."
+		  }
+		},
+		{
+		  "id": "talhas-de-borba-branco-2024",
+		  "name": "Talhas de Borba Branco",
+		  "vintage": 2024,
+		  "doc": "Alentejo DOC",
+		  "type": "white",
+		  "varieties": [
+			"Rabo de Ovelha",
+			"Tamarez",
+			"Roupeiro"
+		  ],
+		  "alcohol": 11.5,
+		  "acidity_gl": 5.0,
+		  "ph": 3.4,
+		  "winemaking": "Fermentação espontânea em talhas de barro com contacto prolongado com massas vínicas. Permanência com a 'mãe' até São Martinho. Vinho não filtrado e sem estágio em madeira.",
+		  "notes": "Branco de talha de perfil tradicional, com expressão varietal direta e textura suave. Notas de marmelo e fruta madura, mantendo frescura e autenticidade regional.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 2,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "marmelo",
+			  "fruta branca madura"
+			],
+			"secondary": [
+			  "ervas secas"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "petiscos",
+			  "peixe grelhado",
+			  "cozinha tradicional alentejana"
+			],
+			"notes": "Perfil textural e ligeiramente rústico adequado a pratos regionais e cozinha mediterrânica."
+		  }
+		}
+	  ]
+	},
+	{
+	  "producer": "Quinta do Mouro",
+	  "region": "Alentejo",
+	  "producer_notes": "Projeto de Miguel Louro em Estremoz, situado a cerca de 450 m de altitude. Representa uma interpretação clássica e gastronómica do Alentejo, privilegiando frescura, equilíbrio estrutural e elegância tânica através de vindima manual, pisa a pé e estágios moderados em madeira portuguesa.",
+	  "wines": [
+		{
+		  "id": "vinha-do-mouro-reserva-2020",
+		  "name": "Vinha do Mouro Reserva",
+		  "vintage": 2020,
+		  "doc": "Vinho Regional Alentejano",
+		  "type": "red",
+		  "varieties": [
+			"Trincadeira",
+			"Aragonez",
+			"Alicante Bouschet",
+			"Cabernet Sauvignon"
+		  ],
+		  "alcohol": 14.0,
+		  "acidity_gl": 5.5,
+		  "ph": 3.53,
+		  "winemaking": "Vindima manual em caixas pequenas. Pisa a pé em lagar com maceração pré-fermentativa a frio. Fermentação em inox a 24–26°C. Estágio de cerca de 12 meses parcialmente em barricas novas de carvalho português.",
+		  "notes": "Perfil elegante e gastronómico, centrado na frescura e precisão da fruta. Estrutura equilibrada, taninos finos e final vibrante e persistente.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 5,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "fruta vermelha",
+			  "fruta preta fresca"
+			],
+			"secondary": [
+			  "especiarias",
+			  "vegetal leve",
+			  "bosque"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "carnes assadas",
+			  "borrego",
+			  "cozinha mediterrânica"
+			],
+			"notes": "Equilíbrio entre frescura e estrutura favorece pratos gastronómicos de média intensidade."
+		  }
+		},
+		{
+		  "id": "zagalos-reserva-tinto-2019",
+		  "name": "Zagalos Reserva Tinto",
+		  "vintage": 2019,
+		  "doc": "Vinho Regional Alentejano",
+		  "type": "red",
+		  "varieties": [
+			"Trincadeira",
+			"Aragonez",
+			"Alicante Bouschet",
+			"Cabernet Sauvignon"
+		  ],
+		  "alcohol": 14.0,
+		  "acidity_gl": 5.9,
+		  "ph": 3.35,
+		  "winemaking": "Vindima manual com pisa a pé em lagar. Fermentação em inox com controlo térmico seguida de estágio de 12 meses em barricas usadas de carvalho português e estágio prolongado em garrafa.",
+		  "notes": "Reserva de perfil clássico, marcado por frescura evidente e complexidade aromática com notas terrosas e especiadas. Taninos redondos e final fresco e longo.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 6,
+			"body": "medium-full",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "fruta vermelha",
+			  "fruta preta"
+			],
+			"secondary": [
+			  "mentol",
+			  "terra húmida",
+			  "especiarias"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "carnes vermelhas",
+			  "caça",
+			  "pratos de forno"
+			],
+			"notes": "Acidez firme e tanino equilibrado permitem harmonizações gastronómicas mais intensas."
+		  }
+		},
+		{
+		  "id": "quinta-do-mouro-tinto",
+		  "name": "Quinta do Mouro Tinto",
+		  "doc": "Vinho Regional Alentejano",
+		  "type": "red",
+		  "varieties": [
+			"Aragonez",
+			"Alicante Bouschet",
+			"Touriga Nacional",
+			"Cabernet Sauvignon",
+			"Trincadeira"
+		  ],
+		  "alcohol": 13.5,
+		  "acidity_gl": 6.0,
+		  "ph": 3.40,
+		  "winemaking": "Vindima manual com pisa a pé em lagar, fermentação em inox a temperatura controlada e estágio prolongado em barricas de carvalho português seguido de envelhecimento em garrafa.",
+		  "notes": "Tinto de autor austero e complexo, combinando estrutura sólida com frescura invulgar para o Alentejo. Perfil vegetal, mineral e elegante, orientado para gastronomia.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": 7,
+			"body": "full",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "fruta preta"
+			],
+			"secondary": [
+			  "vegetal",
+			  "terroso",
+			  "especiarias"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "carnes de caça",
+			  "borrego",
+			  "cozinha tradicional portuguesa"
+			],
+			"notes": "Estrutura firme e frescura elevada favorecem pratos intensos e de longa cocção."
+		  }
+		}
+	  ]
+	}
+  ]
+}

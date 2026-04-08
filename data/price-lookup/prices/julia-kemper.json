@@ -1,0 +1,495 @@
+{
+  "producer": "Julia Kemper",
+  "generated_at": "2026-03-01T11:20:27.325451",
+  "found_count": 11,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "kemper-2cv-branco-2023",
+      "producer": "Julia Kemper",
+      "name": "2 CV Julia Kemper Branco",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 12.2,
+          "name_found": "Julia Kemper Branco",
+          "confidence": "high",
+          "score": 0.745,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/julia-kemper-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        }
+      },
+      "best_retail": 12.2,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 18.5,
+        "2.0x": 24.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "kemper-branco-2022",
+      "producer": "Julia Kemper",
+      "name": "Julia Kemper Branco",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 12.2,
+          "name_found": "Julia Kemper Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/julia-kemper-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        }
+      },
+      "best_retail": 12.2,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 18.5,
+        "2.0x": 24.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "kemper-rose-2022",
+      "producer": "Julia Kemper",
+      "name": "Julia Kemper Rosé",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 12.2,
+          "name_found": "Julia Kemper Branco",
+          "confidence": "high",
+          "score": 0.864,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/julia-kemper-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Kelman rosé",
+          "confidence": "no_match",
+          "score": 0.305,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Rosé Convento Paraiso 2022 75 Cl",
+          "confidence": "no_match",
+          "score": 0.29,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        }
+      },
+      "best_retail": 12.2,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 18.5,
+        "2.0x": 24.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "kemper-tinto-2019",
+      "producer": "Julia Kemper",
+      "name": "Julia Kemper Tinto",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 12.2,
+          "name_found": "Julia Kemper Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/julia-kemper-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        }
+      },
+      "best_retail": 12.2,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 18.5,
+        "2.0x": 24.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "kemper-reserva-branco-2021",
+      "producer": "Julia Kemper",
+      "name": "Julia Kemper Reserva Branco",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 19.37,
+          "name_found": "Julia Kemper Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/julia-kemper-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2015 Lima Mayer Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.221,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Macanita Reserva 2023 75 Cl",
+          "confidence": "no_match",
+          "score": 0.287,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        }
+      },
+      "best_retail": 19.37,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 29.5,
+        "2.0x": 39.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "kemper-reserva-tinto-2017",
+      "producer": "Julia Kemper",
+      "name": "Julia Kemper Reserva Tinto",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 19.37,
+          "name_found": "Julia Kemper Reserva Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/julia-kemper-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2015 Lima Mayer Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.221,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Macanita Reserva 2023 75 Cl",
+          "confidence": "no_match",
+          "score": 0.287,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        }
+      },
+      "best_retail": 19.37,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 29.5,
+        "2.0x": 39.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "kemper-reserva-especial-branco-2017",
+      "producer": "Julia Kemper",
+      "name": "Julia Kemper Reserva Especial Branco",
+      "vintage": 2017,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 19.37,
+          "name_found": "Julia Kemper Reserva Tinto",
+          "confidence": "high",
+          "score": 0.778,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/julia-kemper-reserva-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2015 Lima Mayer Reserva tinto",
+          "confidence": "no_match",
+          "score": 0.159,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Macanita Reserva 2023 75 Cl",
+          "confidence": "no_match",
+          "score": 0.212,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        }
+      },
+      "best_retail": 19.37,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 29.5,
+        "2.0x": 39.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "kemper-curiosity-branco-2016",
+      "producer": "Julia Kemper",
+      "name": "Julia Kemper Curiosity Branco",
+      "vintage": 2016,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 33.89,
+          "name_found": "Julia Kemper Curiosity Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/julia-kemper-curiosity-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "JK Curiosity Tinto 2012",
+          "confidence": "no_match",
+          "score": 0.4,
+          "url": null
+        }
+      },
+      "best_retail": 33.89,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 51.0,
+        "2.0x": 68.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "kemper-elpenor-branco-tintas-2020",
+      "producer": "Julia Kemper",
+      "name": "Elpenor Branco de Tintas",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Elpenor Tinto",
+          "confidence": "low",
+          "score": 0.585,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Jose De Sousa 75 Cl",
+          "confidence": "no_match",
+          "score": 0.274,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "JuliaKemperWines": {
+          "retail_price": 11.5,
+          "name_found": "Elpenor Branco de Tintas 2020",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.juliakemperwines.com/pt-pt/produto/vinho-elpenor-branco-de-tintas-2020/"
+        }
+      },
+      "best_retail": 11.5,
+      "best_source": "JuliaKemperWines",
+      "restaurant_estimates": {
+        "1.5x": 17.5,
+        "2.0x": 23.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "kemper-elpenor-lagareta-2023",
+      "producer": "Julia Kemper",
+      "name": "Elpenor Lagareta",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Elpenor Tinto",
+          "confidence": "low",
+          "score": 0.628,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "JuliaKemperWines": {
+          "retail_price": 16.0,
+          "name_found": "Elpenor Lagareta Tinto 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.juliakemperwines.com/pt-pt/produto/vinho-elpenor-lagareta-tinto-2023/"
+        }
+      },
+      "best_retail": 16.0,
+      "best_source": "JuliaKemperWines",
+      "restaurant_estimates": {
+        "1.5x": 24.0,
+        "2.0x": 32.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "kemper-jaen-branco-2024",
+      "producer": "Julia Kemper",
+      "name": "Julia Kemper Jaen Branco",
+      "vintage": 2024,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 12.2,
+          "name_found": "Julia Kemper Branco",
+          "confidence": "high",
+          "score": 0.82,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/julia-kemper-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Serenada Jaen 75 Cl",
+          "confidence": "low",
+          "score": 0.462,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        }
+      },
+      "best_retail": 12.2,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 18.5,
+        "2.0x": 24.5
+      },
+      "status": "found"
+    }
+  ]
+}

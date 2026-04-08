@@ -1,0 +1,131 @@
+{
+  "producer": "Cartuxa (Fundação Eugénio de Almeida)",
+  "generated_at": "2026-03-01T11:20:27.276962",
+  "found_count": 3,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "cartuxa-talha-tinto-2023",
+      "producer": "Cartuxa (Fundação Eugénio de Almeida)",
+      "name": "Vinho de Talha Tinto",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Foral de Évora Branco",
+          "confidence": "no_match",
+          "score": 0.206,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Foral de Évora branco",
+          "confidence": "no_match",
+          "score": 0.222,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Eugenio De Almeida 75 Cl",
+          "confidence": "no_match",
+          "score": 0.294,
+          "url": null
+        },
+        "ProducerPrice": {
+          "retail_price": 44.99,
+          "name_found": "Cartuxa, DOC Alentejo – Évora Tinto 2023 – Vinho de Talha Biológico",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.cartuxa.pt/produto/cartuxa-doc-alentejo-evora-tinto-2023-vinho-de-talha-biologico/"
+        }
+      },
+      "best_retail": 44.99,
+      "best_source": "ProducerPrice",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "cartuxa-talha-branco-2019",
+      "producer": "Cartuxa (Fundação Eugénio de Almeida)",
+      "name": "Vinho de Talha Branco",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Foral de Évora Branco",
+          "confidence": "no_match",
+          "score": 0.206,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Foral de Évora branco",
+          "confidence": "no_match",
+          "score": 0.222,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Eugenio De Almeida 75 Cl",
+          "confidence": "no_match",
+          "score": 0.294,
+          "url": null
+        },
+        "ProducerPrice": {
+          "retail_price": 44.99,
+          "name_found": "Cartuxa, DOC Alentejo – Évora, Branco 2019 – Vinho de Talha",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.cartuxa.pt/categoria-produto/vinhos/vinho-de-talha/"
+        }
+      },
+      "best_retail": 44.99,
+      "best_source": "ProducerPrice",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "cartuxa-foral-evora-tinto-2019",
+      "producer": "Cartuxa (Fundação Eugénio de Almeida)",
+      "name": "Foral de Évora Tinto",
+      "vintage": 2019,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 11.58,
+          "name_found": "Foral de Évora Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/foral-de-evora-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 13.95,
+          "name_found": " 2022 Foral de Évora branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/vinho/2022-foral-de-evora-branco.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 11.95,
+          "name_found": "Vinho Branco Foral De Évora 75 Cl",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeirasoares.pt/pt/portugal/vinhos/vinho-branco-foral-de-evora-75-cl/item_9350.html?id=203&cat=254&pc=27"
+        },
+        "PortugalVineyards": {
+          "retail_price": 15.25,
+          "name_found": "Foral de Évora Branco 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/alentejo/20954-foral-de-evora-white-2021-5602720130224.html"
+        }
+      },
+      "best_retail": 11.58,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 17.5,
+        "2.0x": 23.5
+      },
+      "status": "found"
+    }
+  ]
+}

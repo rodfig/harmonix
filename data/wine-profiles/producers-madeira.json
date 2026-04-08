@@ -1,0 +1,490 @@
+{
+  "_meta": {
+    "region": "Madeira",
+    "description": "Producer wine profiles for Madeira DOC (fortified system)",
+    "schema_version": "2.0",
+    "note": "Producer-centric format. Pairing is derived algorithmically from structure fields via pairing-rules.json. food_tags are NOT stored on wines. Cooking method and dish complements are as important as the main ingredient — see pairing_principles in pairing-rules.json.",
+    "fields_required": [
+      "id",
+      "name",
+      "doc",
+      "type",
+      "varieties",
+      "alcohol",
+      "structure",
+      "aromas",
+      "pairing"
+    ],
+    "fields_optional": [
+      "vintage",
+      "acidity_gl",
+      "ph",
+      "winemaking",
+      "notes",
+      "quinta"
+    ],
+    "fields_producer_optional": [
+      "quintas"
+    ]
+  },
+  "producers": [
+	{
+	  "producer": "Blandy’s",
+	  "region": "Madeira DOC – Ilha da Madeira",
+	  "quintas": [],
+	  "producer_notes": "Casa histórica fundada em 1811 e uma das principais referências do vinho Madeira. Produção baseada no método tradicional Canteiro, com envelhecimento oxidativo prolongado em cascos sob condições naturais de temperatura. Cada casta expressa um nível clássico de doçura mantendo elevada acidez e estabilidade oxidativa característica do vinho Madeira.",
+	  "wines": [
+
+		{
+		  "id": "blandys-sercial-10-years",
+		  "name": "Sercial 10 Years Old",
+		  "vintage": null,
+		  "doc": "Madeira DOC",
+		  "type": "fortified",
+		  "varieties": ["Sercial"],
+		  "alcohol": 19.0,
+		  "acidity_gl": 6.8,
+		  "ph": 3.35,
+		  "winemaking": "Fermentação parcial seguida de fortificação e envelhecimento médio de 10 anos em cascos segundo o método Canteiro.",
+		  "notes": "Perfil seco com frutos secos, amêndoas amargas e citrinos cristalizados; frescura marcada e final longo especiado.",
+		  "structure": {
+			"acidity": 9,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["citrinos", "frutos secos"],
+			"secondary": ["amêndoa amarga", "especiarias"],
+			"tertiary": ["oxidativo", "madeira"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "aperitivos",
+			  "marisco",
+			  "queijos curados",
+			  "pratos salgados intensos"
+			],
+			"notes": "Madeira seco onde elevada acidez equilibra o envelhecimento oxidativo."
+		  }
+		},
+
+		{
+		  "id": "blandys-verdelho-10-years",
+		  "name": "Verdelho 10 Years Old",
+		  "vintage": null,
+		  "doc": "Madeira DOC",
+		  "type": "fortified",
+		  "varieties": ["Verdelho"],
+		  "alcohol": 19.0,
+		  "acidity_gl": 6.5,
+		  "ph": 3.40,
+		  "winemaking": "Fortificação durante fermentação e envelhecimento médio de 10 anos em cascos pelo método Canteiro.",
+		  "notes": "Estilo meio seco com frutas cristalizadas, figos secos e especiarias; equilíbrio entre frescura, salinidade e doçura moderada.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "off-dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["fruta cristalizada", "figo seco"],
+			"secondary": ["especiarias", "resina"],
+			"tertiary": ["oxidativo", "iodado"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "sopas ricas",
+			  "aves assadas",
+			  "pratos agridoce"
+			],
+			"notes": "Equilíbrio entre frescura e doçura torna-o versátil gastronomicamente."
+		  }
+		},
+
+		{
+		  "id": "blandys-bual-10-years",
+		  "name": "Bual 10 Years Old",
+		  "vintage": null,
+		  "doc": "Madeira DOC",
+		  "type": "fortified",
+		  "varieties": ["Boal"],
+		  "alcohol": 19.0,
+		  "acidity_gl": 6.5,
+		  "ph": 3.40,
+		  "winemaking": "Fermentação interrompida por fortificação e envelhecimento oxidativo médio de 10 anos em cascos.",
+		  "notes": "Perfil meio doce com figos, ameixas secas, amêndoas e notas caramelizadas; textura suave e persistente.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": null,
+			"body": "medium-full",
+			"sweetness": "medium",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["figo", "ameixa seca"],
+			"secondary": ["amêndoa", "caramelo", "baunilha"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "sobremesas de frutos secos",
+			  "queijos curados",
+			  "tarte de maçã"
+			],
+			"notes": "Doçura equilibrada por acidez típica do Madeira."
+		  }
+		},
+
+		{
+		  "id": "blandys-malvasia-10-years",
+		  "name": "Malvasia 10 Years Old",
+		  "vintage": null,
+		  "doc": "Madeira DOC",
+		  "type": "fortified",
+		  "varieties": ["Malvasia"],
+		  "alcohol": 19.0,
+		  "acidity_gl": 6.5,
+		  "ph": 3.42,
+		  "winemaking": "Fortificação precoce seguida de envelhecimento oxidativo prolongado em cascos pelo método Canteiro.",
+		  "notes": "Estilo doce e encorpado com madeira, frutos secos, mel, especiarias e melaço; final longo com frescura surpreendente.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": null,
+			"body": "full",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["frutos secos"],
+			"secondary": ["mel", "especiarias", "caramelo"],
+			"tertiary": ["oxidativo", "melaço"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "sobremesas ricas",
+			  "chocolate",
+			  "queijo azul"
+			],
+			"notes": "Grande Madeira doce onde acidez elevada evita saturação gustativa."
+		  }
+		}
+
+	  ]
+	},
+	{
+	  "producer": "Barbeito",
+	  "region": "Madeira DOC – Ilha da Madeira",
+	  "quintas": [],
+	  "producer_notes": "Produtor independente focado numa expressão mais fresca e precisa do vinho Madeira. Estilo marcado por elevada tensão mineral, acidez vibrante e envelhecimento em Canteiro privilegiando pureza aromática e equilíbrio natural entre açúcar e frescura.",
+	  "wines": [
+
+		{
+		  "id": "barbeito-sercial-10-years",
+		  "name": "Sercial 10 Years Old",
+		  "vintage": null,
+		  "doc": "Madeira DOC",
+		  "type": "fortified",
+		  "varieties": ["Sercial"],
+		  "alcohol": 19.22,
+		  "acidity_gl": 7.45,
+		  "ph": 3.52,
+		  "winemaking": "Fortificação durante fermentação e envelhecimento em Canteiro entre 10 e 14 anos em cascos de carvalho francês.",
+		  "notes": "Perfil seco e mineral com frutos secos, resina e folha de laranjeira. Boca salgada com acidez marcada e final quase interminável.",
+		  "structure": {
+			"acidity": 9,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["citrinos", "frutos secos"],
+			"secondary": ["resina", "folha de laranjeira"],
+			"tertiary": ["oxidativo", "madeira"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "ostras",
+			  "salada de polvo",
+			  "sopa de cebola",
+			  "queijos curados"
+			],
+			"notes": "Madeira seco de elevada tensão gastronómica, ideal como aperitivo."
+		  }
+		},
+
+		{
+		  "id": "barbeito-verdelho-10-years",
+		  "name": "Verdelho 10 Years Old",
+		  "vintage": null,
+		  "doc": "Madeira DOC",
+		  "type": "fortified",
+		  "varieties": ["Verdelho"],
+		  "alcohol": 19.20,
+		  "acidity_gl": 6.54,
+		  "ph": 3.27,
+		  "winemaking": "Fermentação interrompida por fortificação e envelhecimento em Canteiro durante cerca de 10 anos.",
+		  "notes": "Cítricos maduros, notas florais, uvas passas e mel; textura macia com acidez energética e final persistente.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "off-dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["citrinos maduros", "passas"],
+			"secondary": ["mel", "floral"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "salmão fumado",
+			  "presunto",
+			  "consommé",
+			  "massa com amêijoas"
+			],
+			"notes": "Equilíbrio entre frescura e doçura moderada permite grande versatilidade."
+		  }
+		},
+
+		{
+		  "id": "barbeito-boal-10-years",
+		  "name": "Boal 10 Years Old",
+		  "vintage": null,
+		  "doc": "Madeira DOC",
+		  "type": "fortified",
+		  "varieties": ["Boal"],
+		  "alcohol": 19.20,
+		  "acidity_gl": 6.59,
+		  "ph": 3.47,
+		  "winemaking": "Envelhecimento oxidativo em Canteiro durante cerca de 10 anos em cascos.",
+		  "notes": "Frutos secos, caramelo e figo com toque iodado; boca melada sustentada por acidez fresca e final picante.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": null,
+			"body": "medium-full",
+			"sweetness": "medium",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["figo", "frutos secos"],
+			"secondary": ["caramelo", "noz"],
+			"tertiary": ["oxidativo", "iodado"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "foie gras",
+			  "pudins",
+			  "bolos ricos",
+			  "queijos"
+			],
+			"notes": "Madeira meio doce equilibrado por acidez persistente."
+		  }
+		},
+
+		{
+		  "id": "barbeito-malvasia-10-years",
+		  "name": "Malvasia 10 Years Old",
+		  "vintage": null,
+		  "doc": "Madeira DOC",
+		  "type": "fortified",
+		  "varieties": ["Malvasia"],
+		  "alcohol": 19.17,
+		  "acidity_gl": 6.85,
+		  "ph": 3.48,
+		  "winemaking": "Fortificação precoce seguida de envelhecimento em Canteiro durante cerca de 10 anos.",
+		  "notes": "Aromas florais, citrinos maduros, amêndoas e mel; textura volumosa equilibrada por frescura longa.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": null,
+			"body": "full",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["citrinos maduros"],
+			"secondary": ["amêndoa", "mel"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "sobremesas ricas",
+			  "fruta cristalizada",
+			  "queijos",
+			  "foie gras"
+			],
+			"notes": "Madeira doce equilibrado por elevada frescura."
+		  }
+		},
+
+		{
+		  "id": "barbeito-island-dry-5-years",
+		  "name": "Island Dry 5 Years",
+		  "vintage": null,
+		  "doc": "Madeira DOC",
+		  "type": "fortified",
+		  "varieties": ["Tinta Negra", "Sercial"],
+		  "alcohol": 19.20,
+		  "acidity_gl": 5.50,
+		  "ph": 3.43,
+		  "winemaking": "Blend envelhecido em Canteiro durante 5 anos em cascos de carvalho.",
+		  "notes": "Frutos secos, pistacho e citrinos com final fresco e persistente.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": null,
+			"body": "medium-light",
+			"sweetness": "dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["citrinos"],
+			"secondary": ["pistacho", "frutos secos"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "aperitivos",
+			  "tapas",
+			  "azeitonas",
+			  "queijos"
+			],
+			"notes": "Madeira leve e fresco ideal para início de refeição."
+		  }
+		}
+
+	  ]
+	},
+	{
+	  "producer": "Henriques & Henriques",
+	  "region": "Madeira DOC – Ilha da Madeira",
+	  "quintas": [],
+	  "producer_notes": "Produtor histórico fundado em 1850, especializado em Madeiras de idade indicada envelhecidos pelo método Canteiro. Estilo clássico focado na clareza varietal, evolução oxidativa controlada e elevada acidez natural característica da ilha.",
+	  "wines": [
+
+		{
+		  "id": "hh-sercial-10-years",
+		  "name": "Sercial 10 Years Old",
+		  "vintage": null,
+		  "doc": "Madeira DOC",
+		  "type": "fortified",
+		  "varieties": ["Sercial"],
+		  "alcohol": 20.0,
+		  "acidity_gl": 5.8,
+		  "ph": null,
+		  "winemaking": "Envelhecimento oxidativo prolongado em cascos segundo o método tradicional Canteiro.",
+		  "notes": "Perfil seco com frutos secos e notas fumadas; boca fresca e muito persistente.",
+		  "structure": {
+			"acidity": 9,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "dry",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["frutos secos"],
+			"secondary": ["fumado", "baunilha"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": ["marisco", "consommé", "queijos curados"],
+			"notes": "Madeira seco onde a acidez domina o equilíbrio."
+		  }
+		},
+
+		{
+		  "id": "hh-verdelho-10-years",
+		  "name": "Verdelho 10 Years Old",
+		  "vintage": null,
+		  "doc": "Madeira DOC",
+		  "type": "fortified",
+		  "varieties": ["Verdelho"],
+		  "alcohol": 20.0,
+		  "acidity_gl": 5.6,
+		  "ph": null,
+		  "winemaking": "Estágio oxidativo prolongado em casco.",
+		  "notes": "Notas de passas, mel e madeira envelhecida; meio seco e equilibrado.",
+		  "structure": {
+			"acidity": 8,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "off-dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["passas"],
+			"secondary": ["mel", "madeira"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": ["aves assadas", "pratos agridoce"],
+			"notes": "Equilíbrio entre frescura e leve doçura."
+		  }
+		},
+
+		{
+		  "id": "hh-boal-10-years",
+		  "name": "Boal 10 Years Old",
+		  "vintage": null,
+		  "doc": "Madeira DOC",
+		  "type": "fortified",
+		  "varieties": ["Boal"],
+		  "alcohol": 20.0,
+		  "acidity_gl": 6.0,
+		  "ph": null,
+		  "winemaking": "Envelhecimento oxidativo médio em casco.",
+		  "notes": "Perfil meio doce com passas e mel; textura ampla sustentada por frescura.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": null,
+			"body": "medium-full",
+			"sweetness": "medium",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["passas"],
+			"secondary": ["mel"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": ["tarte de frutos secos", "queijos"],
+			"notes": "Madeira equilibrado entre riqueza e acidez."
+		  }
+		},
+
+		{
+		  "id": "hh-malvasia-10-years",
+		  "name": "Malvasia 10 Years Old",
+		  "vintage": null,
+		  "doc": "Madeira DOC",
+		  "type": "fortified",
+		  "varieties": ["Malvasia"],
+		  "alcohol": 20.0,
+		  "acidity_gl": 5.8,
+		  "ph": null,
+		  "winemaking": "Envelhecimento prolongado em casco.",
+		  "notes": "Frutos secos, caramelo e mel; textura cheia com final longo.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": null,
+			"body": "full",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["frutos secos"],
+			"secondary": ["caramelo", "mel"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": ["sobremesas ricas", "chocolate", "queijo azul"],
+			"notes": "Madeira doce clássico equilibrado por frescura."
+		  }
+		}
+	  ]
+	}
+  ]
+}

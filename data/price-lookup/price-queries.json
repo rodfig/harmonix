@@ -1,0 +1,251 @@
+{
+  "generated_at": "2026-02-24",
+  "source_files": [
+    "producers-vinho-verde.json",
+    "producers-lisboa.json",
+    "producers-tejo.json",
+    "producers-bairrada.json"
+  ],
+  "wine_count": 29,
+  "wines": [
+    {
+      "wine_id": "muros-antigos-alvarinho-2024",
+      "producer": "Anselmo Mendes",
+      "name": "Muros Antigos Alvarinho",
+      "vintage": 2024,
+      "query": "Anselmo Mendes Muros Antigos Alvarinho",
+      "source_file": "producers-vinho-verde.json"
+    },
+    {
+      "wine_id": "muros-antigos-escolha-2024",
+      "producer": "Anselmo Mendes",
+      "name": "Muros Antigos Escolha",
+      "vintage": 2024,
+      "query": "Anselmo Mendes Muros Antigos Escolha",
+      "source_file": "producers-vinho-verde.json"
+    },
+    {
+      "wine_id": "contacto-alvarinho-2024",
+      "producer": "Anselmo Mendes",
+      "name": "Contacto Alvarinho",
+      "vintage": 2024,
+      "query": "Anselmo Mendes Contacto Alvarinho",
+      "source_file": "producers-vinho-verde.json"
+    },
+    {
+      "wine_id": "contacto-loureiro-2024",
+      "producer": "Anselmo Mendes",
+      "name": "Contacto Loureiro",
+      "vintage": 2024,
+      "query": "Anselmo Mendes Contacto Loureiro",
+      "source_file": "producers-vinho-verde.json"
+    },
+    {
+      "wine_id": "expressoes-alvarinho-2021",
+      "producer": "Anselmo Mendes",
+      "name": "Expressões Alvarinho",
+      "vintage": 2021,
+      "query": "Anselmo Mendes Expressões Alvarinho",
+      "source_file": "producers-vinho-verde.json"
+    },
+    {
+      "wine_id": "a-torre-alvarinho-2019",
+      "producer": "Anselmo Mendes",
+      "name": "A Torre",
+      "vintage": 2019,
+      "query": "Anselmo Mendes A Torre",
+      "source_file": "producers-vinho-verde.json"
+    },
+    {
+      "wine_id": "soalheiro-classico-2020",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro Alvarinho Clássico",
+      "vintage": 2020,
+      "query": "Quinta de Soalheiro Soalheiro Alvarinho Clássico",
+      "source_file": "producers-vinho-verde.json"
+    },
+    {
+      "wine_id": "soalheiro-granit-2021",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro Granit Alvarinho",
+      "vintage": 2021,
+      "query": "Quinta de Soalheiro Soalheiro Granit Alvarinho",
+      "source_file": "producers-vinho-verde.json"
+    },
+    {
+      "wine_id": "soalheiro-primeiras-vinhas-2022",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro Primeiras Vinhas Alvarinho",
+      "vintage": 2022,
+      "query": "Quinta de Soalheiro Soalheiro Primeiras Vinhas Alvarinho",
+      "source_file": "producers-vinho-verde.json"
+    },
+    {
+      "wine_id": "soalheiro-espumante-bruto-alvarinho",
+      "producer": "Quinta de Soalheiro",
+      "name": "Soalheiro Espumante Bruto Alvarinho",
+      "vintage": null,
+      "query": "Quinta de Soalheiro Soalheiro Espumante Bruto Alvarinho",
+      "source_file": "producers-vinho-verde.json"
+    },
+
+    {
+      "wine_id": "adega-mae-reserva-branco-2022",
+      "producer": "Adega Mãe",
+      "name": "Adega Mãe Reserva Branco",
+      "vintage": 2022,
+      "query": "Adega Mae Reserva Branco",
+      "source_file": "producers-lisboa.json"
+    },
+    {
+      "wine_id": "adega-mae-atlantico-2021",
+      "producer": "Adega Mãe",
+      "name": "Adega Mãe Atlântico",
+      "vintage": 2021,
+      "query": "Adega Mae Atlantico Pinot Noir",
+      "source_file": "producers-lisboa.json"
+    },
+    {
+      "wine_id": "adega-mae-vinhas-velhas-2022",
+      "producer": "Adega Mãe",
+      "name": "Adega Mãe Vinhas Velhas",
+      "vintage": 2022,
+      "query": "Adega Mae Vinhas Velhas Vital",
+      "source_file": "producers-lisboa.json"
+    },
+    {
+      "wine_id": "adega-mae-colheita-tardia-2021",
+      "producer": "Adega Mãe",
+      "name": "Adega Mãe Colheita Tardia",
+      "vintage": 2021,
+      "query": "Adega Mae Colheita Tardia",
+      "source_file": "producers-lisboa.json"
+    },
+
+    {
+      "wine_id": "casal-branco-falcoaria-branco-2022",
+      "producer": "Quinta do Casal Branco",
+      "name": "Falcoaria Branco Vinhas Velhas",
+      "vintage": 2022,
+      "query": "Quinta do Casal Branco Falcoaria Branco",
+      "source_file": "producers-tejo.json"
+    },
+    {
+      "wine_id": "casal-branco-falcoaria-tinto-2022",
+      "producer": "Quinta do Casal Branco",
+      "name": "Falcoaria Tinto",
+      "vintage": 2022,
+      "query": "Quinta do Casal Branco Falcoaria Tinto",
+      "source_file": "producers-tejo.json"
+    },
+    {
+      "wine_id": "casal-branco-falcoaria-colheita-tardia-2018",
+      "producer": "Quinta do Casal Branco",
+      "name": "Falcoaria Colheita Tardia",
+      "vintage": 2018,
+      "query": "Quinta do Casal Branco Falcoaria Colheita Tardia",
+      "source_file": "producers-tejo.json"
+    },
+    {
+      "wine_id": "casal-branco-reserva-branco-2022",
+      "producer": "Quinta do Casal Branco",
+      "name": "Quinta do Casal Branco Reserva Branco",
+      "vintage": 2022,
+      "query": "Quinta do Casal Branco Reserva Branco",
+      "source_file": "producers-tejo.json"
+    },
+    {
+      "wine_id": "casal-branco-reserva-tinto-2022",
+      "producer": "Quinta do Casal Branco",
+      "name": "Quinta do Casal Branco Reserva Tinto",
+      "vintage": 2022,
+      "query": "Quinta do Casal Branco Reserva Tinto",
+      "source_file": "producers-tejo.json"
+    },
+
+    {
+      "wine_id": "lagoalva-grande-reserva-fernao-pires-2022",
+      "producer": "Quinta da Lagoalva",
+      "name": "Quinta da Lagoalva Grande Reserva Fernão Pires",
+      "vintage": 2022,
+      "query": "Quinta da Lagoalva Grande Reserva Fernao Pires",
+      "source_file": "producers-tejo.json"
+    },
+    {
+      "wine_id": "lagoalva-grande-reserva-alfrocheiro-bio-2018",
+      "producer": "Quinta da Lagoalva",
+      "name": "Quinta da Lagoalva Grande Reserva Alfrocheiro Bio",
+      "vintage": 2018,
+      "query": "Quinta da Lagoalva Grande Reserva Alfrocheiro",
+      "source_file": "producers-tejo.json"
+    },
+    {
+      "wine_id": "lagoalva-reserva-branco-2024",
+      "producer": "Quinta da Lagoalva",
+      "name": "Quinta da Lagoalva Reserva Branco",
+      "vintage": 2024,
+      "query": "Quinta da Lagoalva Reserva Branco",
+      "source_file": "producers-tejo.json"
+    },
+
+    {
+      "wine_id": "murta-arinto-branco-2023",
+      "producer": "Quinta da Murta",
+      "name": "Quinta da Murta Arinto Branco",
+      "vintage": 2023,
+      "query": "Quinta da Murta Arinto Branco",
+      "source_file": "producers-lisboa.json"
+    },
+    {
+      "wine_id": "murta-classico-2012",
+      "producer": "Quinta da Murta",
+      "name": "Quinta da Murta Clássico",
+      "vintage": 2012,
+      "query": "Quinta da Murta Classico Arinto",
+      "source_file": "producers-lisboa.json"
+    },
+
+    {
+      "wine_id": "romeira-prova-regia-branco-2024",
+      "producer": "Quinta da Romeira",
+      "name": "Prova Régia Branco",
+      "vintage": 2024,
+      "query": "Quinta da Romeira Prova Regia Branco",
+      "source_file": "producers-lisboa.json"
+    },
+    {
+      "wine_id": "romeira-morgado-santa-catherina-2023",
+      "producer": "Quinta da Romeira",
+      "name": "Morgado de Santa Catherina Branco",
+      "vintage": 2023,
+      "query": "Quinta da Romeira Morgado Santa Catherina",
+      "source_file": "producers-lisboa.json"
+    },
+    {
+      "wine_id": "romeira-bruto-espumante-2021",
+      "producer": "Quinta da Romeira",
+      "name": "Quinta da Romeira Bruto Espumante",
+      "vintage": 2021,
+      "query": "Quinta da Romeira Bruto Espumante",
+      "source_file": "producers-lisboa.json"
+    },
+
+    {
+      "wine_id": "sousa-merlot-2018",
+      "producer": "Sidónio de Sousa",
+      "name": "Sidónio de Sousa Merlot",
+      "vintage": 2018,
+      "query": "Sidonio de Sousa Merlot",
+      "source_file": "producers-bairrada.json"
+    },
+
+    {
+      "wine_id": "luis-pato-pato-doiro-2010",
+      "producer": "Luís Pato",
+      "name": "Pato d'Oiro",
+      "vintage": 2010,
+      "query": "Luis Pato Pato d'Oiro",
+      "source_file": "producers-bairrada.json"
+    }
+  ]
+}

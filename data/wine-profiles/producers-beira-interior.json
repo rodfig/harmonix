@@ -1,0 +1,1417 @@
+{
+  "_meta": {
+    "region": "Beira Interior",
+    "description": "Producer wine profiles for Beira Interior DOC",
+    "schema_version": "2.0",
+    "note": "Producer-centric format. Pairing is derived algorithmically from structure fields via pairing-rules.json. food_tags are NOT stored on wines. Cooking method and dish complements are as important as the main ingredient — see pairing_principles in pairing-rules.json.",
+    "fields_required": [
+      "id",
+      "name",
+      "doc",
+      "type",
+      "varieties",
+      "alcohol",
+      "structure",
+      "aromas",
+      "pairing"
+    ],
+    "fields_optional": [
+      "vintage",
+      "acidity_gl",
+      "ph",
+      "winemaking",
+      "notes",
+      "quinta"
+    ]
+  },
+  "producers": [
+    {
+      "producer": "Marquês de Almeida",
+      "region": "Beira Interior",
+      "quintas": [],
+      "producer_notes": "Label de Beira Interior do grupo Casa Agrícola Roboredo Madeira (CARM), produtor primariamente do Douro. Marquês de Almeida é a expressão da mesma família em DOC Beira Interior, com foco em castas autóctones da região incluindo a rara Fonte Cal.",
+      "wines": [
+        {
+          "id": "marques-almeida-grande-reserva-branco-2016",
+          "name": "Marquês de Almeida Grande Reserva Branco",
+          "quinta": null,
+          "vintage": 2016,
+          "doc": "Beira Interior DOC",
+          "type": "white",
+          "varieties": [
+            "Síria",
+            "Fonte Cal",
+            "Arinto"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 5.87,
+          "ph": 3.27,
+          "winemaking": "Estágio em madeira (presença elegante e harmoniosa). Cepas Velhas (vinhas velhas).",
+          "notes": "Fonte Cal é uma casta branca autóctone de Beira Interior extremamente rara, quase exclusiva desta região. A sua presença neste blend é o principal elemento distintivo. Percentagens das castas não declaradas na ficha técnica. Açúcar residual 4.4 g/L — tecnicamente seco.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta cítrica",
+              "floral delicado"
+            ],
+            "secondary": [
+              "mineral intenso (terroir)",
+              "madeira elegante"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe grelhado",
+              "marisco",
+              "carne branca",
+              "bacalhau",
+              "queijo fresco"
+            ],
+            "notes": "Blend de três castas brancas autóctones de Beira Interior: Síria (base aromática floral), Fonte Cal (raridade regional — acidez e mineralidade), Arinto (estrutura e frescura). Forte carácter mineral declarado como 'típico do Terroir' — solos graníticos de altitude. Vinhas velhas + madeira elegante = branco com profundidade e potencial de guarda invulgar para a região."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Rui Roboredo Madeira – Beyra",
+      "region": "Beira Interior – Figueira de Castelo Rodrigo",
+      "quintas": [
+        "Beyra"
+      ],
+      "producer_notes": "Criador da marca Beyra (nome histórico da região). Parte do grupo CARM/Casa Agrícola Roboredo Madeira, mas foco exclusivo em DOC Beira Interior. Pioneiro na vinificação monovarietal de castas autóctones raras da região, em especial a Fonte Cal. Vinhas situadas na freguesia da Vermiosa, Parque Natural do Douro Internacional, em solos graníticos e xistosos a 700-800m de altitude. Viticultura de sequeiro (sem rega), maioritariamente biológica. Utilização de cubas de cimento e ovos de cimento em paralelo com barricas — abordagem de vinificação minimalista e de terroir.",
+      "wines": [
+        {
+          "id": "beyra-fonte-cal-2021",
+          "name": "Beyra Fonte Cal",
+          "quinta": "Beyra",
+          "vintage": 2021,
+          "doc": "Beira Interior DOC",
+          "type": "white",
+          "varieties": [
+            "Fonte Cal"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 6.1,
+          "ph": 3.35,
+          "winemaking": "Vindima manual. Prensagem do cacho inteiro sem desengace. Fermentação espontânea com leveduras indígenas em inox. Batonnage até engarrafamento (final de Janeiro). 3 meses estágio em garrafa. Solo granítico, 750m altitude.",
+          "notes": "100% Fonte Cal monovarietal — referência única desta casta em toda esta base de dados. Fonte Cal é uma casta branca autóctone de Beira Interior de distribuição extremamente restrita, quase inexistente fora desta região.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "toranja",
+              "lima",
+              "flores brancas",
+              "fruta com polpa"
+            ],
+            "secondary": [
+              "mineral intenso"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "ostra",
+              "peixe cru",
+              "sashimi",
+              "peixe grelhado",
+              "mariscos delicados"
+            ],
+            "notes": "A única expressão monovarietal de Fonte Cal nesta base de dados. Acidez vibrante (6.10g/L, pH 3.35) com grande potencial de envelhecimento declarado pelo produtor. Prensagem de cacho inteiro preserva máximo de aromas primários. Perfil mineral + cítrico (toranja, lima) com notas florais — estrutura ideal para peixe cru e mariscos de sabor delicado."
+          }
+        },
+        {
+          "id": "beyra-gouveio-2023",
+          "name": "Beyra Gouveio",
+          "quinta": "Beyra",
+          "vintage": 2023,
+          "doc": "Beira Interior DOC",
+          "type": "white",
+          "varieties": [
+            "Gouveio"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 6.74,
+          "ph": 3.16,
+          "winemaking": "Vindima manual. Prensagem de cacho inteiro sem desengace. Fermentação em inox 16-18°C. Batonnage durante 2 meses. Breve estágio em garrafa até Março. Vinha de sequeiro, solo xistoso, 700m altitude.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "maracujá",
+              "ananás",
+              "casca de tangerina",
+              "lima"
+            ],
+            "secondary": [
+              "pedra húmida (mineral xisto)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo",
+              "marisco",
+              "peixe grelhado",
+              "tempura",
+              "pratos com molho cítrico"
+            ],
+            "notes": "Gouveio em Beira Interior sobre solos xistosos a 700m — contexto muito diferente do Douro onde a casta é mais comum. pH 3.16 com 6.74g/L = acidez alta e percebida. Paladar 'gordo' (riqueza de batonnage) em contraste com acidez fresca vibrante: perfil ideal para peixe gordo grelhado ou fritura (acidez corta gordura, corpo aguenta o prato)."
+          }
+        },
+        {
+          "id": "beyra-siria-prado-novo-2023",
+          "name": "Beyra Vinha do Prado Novo Síria",
+          "quinta": "Beyra",
+          "vintage": 2023,
+          "doc": "Beira Interior DOC",
+          "type": "white",
+          "varieties": [
+            "Síria"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 6.1,
+          "ph": 3.35,
+          "winemaking": "Parcela de vinha muito velha (Prado Novo, Vermiosa). Solo argilo-calcário com veios de quartzo, 700m altitude. Vindima manual, esmagamento sem desengace. Fermentação espontânea em inox. Batonnage até engarrafamento (final de Fevereiro). 3 meses garrafa.",
+          "notes": "Single-parcel de Síria de vinhas muito velhas. Síria (Roupeiro) é a casta branca mais plantada de Beira Interior e Alentejo — este vinho representa a expressão de altitude e vinha velha da casta.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "cítrico fresco",
+              "floral delicado"
+            ],
+            "secondary": [
+              "mineral (quartzo)",
+              "complexidade de borras finas"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe branco",
+              "peixe grelhado",
+              "marisco",
+              "carne branca",
+              "pratos leves"
+            ],
+            "notes": "Síria de vinha muito velha a 700m em solo argilo-calcário com quartzo — expressa máxima mineralidade da casta. 'Muito amplo e mineral na boca, acidez envolvente' declarado pelo produtor. Fermentação espontânea + batonnage prolongado = complexidade de borras sem madeira. Perfil fino e elegante."
+          }
+        },
+        {
+          "id": "beyra-moscatel-galego-2021",
+          "name": "Beyra Moscatel Galego Branco",
+          "quinta": "Beyra",
+          "vintage": 2021,
+          "doc": "Beira Interior DOC",
+          "type": "white",
+          "varieties": [
+            "Moscatel Galego Branco"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 5.95,
+          "ph": 3.39,
+          "winemaking": "Agricultura biológica de sequeiro (sem rega). Vindima manual em caixas de 20kg. Prensagem suave de cachos inteiros sem desengace. Fermentação natural com leveduras indígenas 16-17°C. Batonnage durante 1 mês. 3 meses garrafa. Solo argilo-xistoso com filões de quartzo, 725m altitude.",
+          "notes": "Moscatel Galego Branco vinificado a seco — invulgar para a casta, habitualmente associada a vinhos doces (Moscatel de Setúbal) ou ao Douro. Aqui em BI expressa-se como vinho seco mineral e floral. Biológico certificado.",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "rosa",
+              "violeta",
+              "casca de tangerina",
+              "toranja"
+            ],
+            "secondary": [
+              "mineral",
+              "notas florais intensas"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "peixe branco",
+              "pratos florais",
+              "cozinha asiática aromática",
+              "pratos com especiarias suaves"
+            ],
+            "notes": "Moscatel Galego a seco em BI — perfil radicalmente distinto do Moscatel de Setúbal (doce). Aromas primários florais intensos (rosas, violetas) preservados pela fermentação a temperatura baixa + biológico. Mineral + floral = afinidade natural com cozinha japonesa aromática e pratos de especiarias delicadas. 'Noites frias preservam o potencial aromático' — altitude 725m."
+          }
+        },
+        {
+          "id": "beyra-reserva-branco-2023",
+          "name": "Beyra Reserva Branco",
+          "quinta": "Beyra",
+          "vintage": 2023,
+          "doc": "Beira Interior DOC",
+          "type": "white",
+          "varieties": [
+            "Fonte Cal",
+            "Gouveio",
+            "Síria",
+            "Verdelho"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.05,
+          "ph": 3.31,
+          "winemaking": "Vindima manual, desengace total. Fermentação 16-18°C, 20 dias, leveduras selecionadas. 5 meses sobre borras finas em inox. Vinhas com mais de 40 anos, solos graníticos com filões de quartzo, 700m altitude.",
+          "notes": "Fonte Cal (40%) + Gouveio (25%) + Síria (20%) + Verdelho (15%). Fonte Cal como casta dominante — vinho-manifesto da identidade branca de Beira Interior. Vinhas 40+ anos em granito/quartzo. Produtor descreve como 'a alma deste vinho está na combinação única entre uvas das castas autóctones'.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "toranja",
+              "mineral intenso"
+            ],
+            "secondary": [
+              "ligeiro fumado",
+              "cítrico",
+              "complexidade de borras"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "peixe gordo",
+              "queijo de ovelha curado",
+              "peixe grelhado",
+              "lagosta"
+            ],
+            "notes": "O branco flagship de Beyra: blend de 4 castas autóctones dominadas pela Fonte Cal (40%) sobre granito/quartzo a 700m com vinhas de 40+ anos. Mineralidade e acidez vibrantes com estrutura para envelhecimento declarada pelo produtor. 'Muito mineral e cítrico, ligeiro fumado' — perfil distinto dos Alvarinhos do norte. Produtor recomenda explicitamente queijo de ovelha curado — harmonização regional de Beira Interior."
+          }
+        },
+        {
+          "id": "beyra-tinta-roriz-santa-maria-2018",
+          "name": "Beyra Vinha da Santa Maria Tinta Roriz",
+          "quinta": "Beyra",
+          "vintage": 2018,
+          "doc": "Beira Interior DOC",
+          "type": "red",
+          "varieties": [
+            "Tinta Roriz"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": 5.68,
+          "ph": 3.63,
+          "winemaking": "Vinha única (Santa Maria, Vermiosa). Solo argilo-calcário, altitude 800m+, viticultura de sequeiro. Vindima manual, desengace parcial. Fermentação natural com leveduras indígenas em cubas de cimento sem controlo de temperatura. FML em barricas. 12 meses: 50% barricas carvalho francês + 50% ovos de cimento. Engarrafamento Abril 2020 sem filtração.",
+          "notes": "Single-vineyard 100% Tinta Roriz (Tempranillo) em Beira Interior — contexto muito diferente da Rioja ou Douro. Altitude 800m+ em solo argilo-calcário. Combinação inovadora de ovos de cimento + barricas francesas. Fermentação natural sem controlo de temperatura em cimento. Poderá criar depósito em garrafa.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos negros",
+              "alcaçuz"
+            ],
+            "secondary": [
+              "especiarias discretas",
+              "notas suaves de barrica"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "enchidos ibéricos",
+              "queijo curado envelhecido"
+            ],
+            "notes": "Tinta Roriz monovarietal de single-vineyard a 800m+ — expressão de altitude extrema da casta. Taninos firmes e volumosos (8/10) mas 'muito fresco' para a estrutura: altitude compensa o álcool 14%. Fermentação natural em cimento + ovos de cimento = pureza de terroir. 'Grande longevidade em garrafa' declarada. Perfil austero e mineral distinto do Tinta Roriz do Douro."
+          }
+        },
+        {
+          "id": "beyra-grande-reserva-tinto-2018",
+          "name": "Beyra Grande Reserva Tinto",
+          "quinta": "Beyra",
+          "vintage": 2018,
+          "doc": "Beira Interior DOC",
+          "type": "red",
+          "varieties": [
+            "Tinta Roriz",
+            "Touriga Nacional",
+            "Jaen"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 6.23,
+          "ph": 3.57,
+          "winemaking": "Tinta Roriz (80%) + TN (10%) + Jaen/Mencia (10%). Vinhas de idade média 40 anos, solos argilo-xistosos, 750m altitude. Vindima manual, desengace total. Fermentação 22-26°C, 7 dias, maceração suave em cimento, técnica de delestage (3-4 por fermentação). FML em barricas usadas. 12 meses em barricas de carvalho francês.",
+          "notes": "Blend flagship com Jaen/Mencía como elemento de complexidade (10%) — inclusão rara em Beira Interior. Vinhas de 40 anos em xisto a 750m. Delestage (rack-and-return) 3-4 vezes por fermentação = extração suave mas completa.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "bagas silvestres",
+              "especiarias",
+              "alcaçuz intenso"
+            ],
+            "secondary": [
+              "baunilha discreta",
+              "tosta de barrica"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego assado",
+              "caça",
+              "queijo curado",
+              "enchidos",
+              "pratos de forno ricos"
+            ],
+            "notes": "O tinto de maior complexidade de Beyra: 40 anos de vinha em xisto 750m + delestage + 12 meses barrica. 14.5% álcool com taninos 'muito volumosos e suaves' — riqueza de vinha velha em xisto. Jaen/Mencia (10%) adiciona nota de cereja e frescura que diferencia do Grande Reserva monotónico. Acidity 7/10 (6.23g/L) — superior ao Santa Maria (5.68g/L), dá mais frescura ao conjunto. 'Pronto a beber' declarado — tannins já integrados."
+          }
+        },
+        {
+          "id": "beyra-jaen-2017",
+          "name": "Beyra Jaen",
+          "quinta": "Beyra",
+          "vintage": 2017,
+          "doc": "Beira Interior DOC",
+          "type": "red",
+          "varieties": [
+            "Jaen"
+          ],
+          "alcohol": 15.0,
+          "acidity_gl": 5.29,
+          "ph": 3.79,
+          "winemaking": "100% Jaen. Vinho biológico. Solo granítico, 700m altitude. Vindima manual, desengace total. Fermentação em inox 16-17°C, ~20 dias. 8 meses em barricas carvalho francês (2/3) + americano (1/3). Não filtrado.",
+          "notes": "Jaen (Mencía) monovarietal como vinho biológico — extremamente raro em Portugal como expressão singular. 15% álcool é surpreendentemente alto para Jaen/Mencía (na Galiza/Ribeira Sacra a mesma casta produz 12-13%) — reflexo do clima continental extremo de Beira Interior. Poderá criar depósito com a idade.",
+          "structure": {
+            "acidity": 5,
+            "tannins": 6,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "framboesa",
+              "cereja madura"
+            ],
+            "secondary": [
+              "notas muito discretas de barrica"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves",
+              "pato",
+              "perdiz",
+              "borrego",
+              "carne branca rica",
+              "cogumelos",
+              "enchidos"
+            ],
+            "notes": "Jaen/Mencía monovarietal biológico — único exemplar desta casta como vinho individual nesta base de dados (Arcossó tem uma entrada mas com menos dados). 15% álcool num Jaen é excepcional: clima continental de altitude transforma uma casta normalmente fresca e leve numa expressão concentrada. Taninos suaves (6/10) e fruta vermelha fresca (framboesa, cereja) criam versatilidade gastronómica incomum para um tinto tão alcoólico."
+          }
+        },
+        {
+          "id": "beyra-reserva-tinto-2020",
+          "name": "Beyra Reserva Tinto",
+          "quinta": "Beyra",
+          "vintage": 2020,
+          "doc": "Beira Interior DOC",
+          "type": "red",
+          "varieties": [
+            "Tinta Roriz",
+            "Touriga Nacional",
+            "Jaen"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 4.37,
+          "ph": 3.9,
+          "winemaking": "TR 80% + TN 15% + Jaen 5%. Solos xistosos, 700m altitude. Vindima manual, desengace total, fermentação 22-26°C, 7 dias maceração suave. 6 meses em barricas usadas de carvalho francês.",
+          "structure": {
+            "acidity": 4,
+            "tannins": 5,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutos silvestres",
+              "especiarias"
+            ],
+            "secondary": [
+              "baunilha discreta",
+              "tosta",
+              "mineral elegante"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne assada",
+              "presunto ibérico",
+              "queijo curado",
+              "enchidos",
+              "borrego",
+              "aves"
+            ],
+            "notes": "Entrada na gama de tintos Beyra com barrica: TR 80%+TN 15%+Jaen 5% em xisto 700m. Acidez 4.37g/L e pH 3.90 — dos perfis mais suaves (baixa acidez) desta seleção BI. Tannins moderados (5/10) com 6 meses em barricas usadas — oak integrado sem dominar. 13.5% álcool — mais acessível que o Santa Maria ou Grande Reserva. Perfil frutado e elegante, bebível jovem."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta da Biaia",
+      "region": "Beira Interior – Castelo Rodrigo",
+      "quintas": [
+        "Quinta da Biaia"
+      ],
+      "producer_notes": "Produtor biológico em Castelo Rodrigo, sub-região mais a nordeste de Beira Interior. Altitude 700-750m. Três parcelas de características distintas: Alvandeira (argilo-calcário), Souto (transição granito/xisto), Lameiras (granito e quartzo). Envolvida pelos rios Douro, Côa e Águeda. A vinha da Fonte da Vila, plantada à moda antiga com múltiplas castas autóctones em consociação (Rufete, Mourisco, Baga, Jaen entre outras), é o activo mais valioso da quinta e a base do vinho de topo. Fermentação por pisa a pé em lagar para os vinhos de topo. Programas de estágio muito prolongados em barrica nova (até 50 meses).",
+      "wines": [
+        {
+          "id": "biaia-reserva-branco-siria-2020",
+          "name": "Quinta da Biaia Reserva Branco Síria",
+          "quinta": "Quinta da Biaia",
+          "vintage": 2020,
+          "doc": "Beira Interior DOC – Castelo Rodrigo",
+          "type": "white",
+          "varieties": [
+            "Síria"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 7.21,
+          "ph": 3.01,
+          "winemaking": "Uvas selecionadas dos talhões 7 e 8 da vinha da Lavandeira. Vindima manual em caixas de 20kg. Prensagem de cacho inteiro em prensa pneumática. Fermentação em inox + 9 meses em barricas de carvalho francês e húngaro sobre borras finas. Produção biológica.",
+          "notes": "Carvalho húngaro em paralelo com francês — incomum nesta seleção. pH 3.01 é o segundo mais baixo de toda a base de dados (apenas o Aphros Ten tem pH 2.99). Síria a pH 3.01 é excepcional.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "toranja",
+              "lima"
+            ],
+            "secondary": [
+              "folha de chá",
+              "pastelaria",
+              "pão tostado (barrica húngara)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "ostra",
+              "peixe cru",
+              "sashimi",
+              "peixe grelhado",
+              "tempura"
+            ],
+            "notes": "Síria com acidez excepcional (pH 3.01, 7.21g/L) — perfil muito distinto do Síria de Alentejo (mais neutro e de baixa acidez). Altitude 700-750m + biológico + carvalho húngaro: notas de folha de chá e pastelaria são marcadores de estágio em carvalho húngaro. 'Muito fresco, cheio de camadas de sabor e volume' — acidez cria tensão e frescura raras para a casta."
+          }
+        },
+        {
+          "id": "biaia-fonte-da-vila-branco-siria-2019",
+          "name": "Quinta da Biaia Single Vineyard Fonte da Vila Branco Síria",
+          "quinta": "Quinta da Biaia",
+          "vintage": 2019,
+          "doc": "Beira Interior DOC – Castelo Rodrigo",
+          "type": "white",
+          "varieties": [
+            "Síria"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 7.35,
+          "ph": 3.12,
+          "winemaking": "Single vineyard (Vinha Fonte da Vila — vinhas mais velhas da quinta). Vindima manual em caixas de 20kg. Prensagem de cacho inteiro em prensa pneumática. Fermentação em inox + 30 meses em barricas de carvalho francês sobre borras finas + 4 meses garrafa. Produção biológica.",
+          "notes": "30 meses de barrica sobre borras finas é um programa de estágio extraordinariamente prolongado para um branco — incomum mesmo em Portugal. As notas de pólvora e trufas são resultado direto deste estágio prolongado. Das vinhas mais velhas da quinta.",
+          "structure": {
+            "acidity": 9,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "toranja",
+              "frutos secos"
+            ],
+            "secondary": [
+              "pólvora",
+              "trufas",
+              "cremosidade de borras longas"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo assado",
+              "lagosta",
+              "vieira",
+              "cogumelos",
+              "queijo de ovelha curado",
+              "pratos com trufas"
+            ],
+            "notes": "O branco mais ambicioso de Beira Interior nesta seleção: 30 meses barrica + 4 garrafa sobre borras finas. Notas de pólvora e trufas são raríssimas num branco português — marcadores de estágio longo em madeira com contacto prolongado com borras. Acidez 7.35g/L + pH 3.12 mantém frescura apesar da riqueza do estágio. Perfil próximo de um grande Borgonha de estágio longo."
+          }
+        },
+        {
+          "id": "biaia-reserva-tinto-2018",
+          "name": "Quinta da Biaia Reserva Tinto",
+          "quinta": "Quinta da Biaia",
+          "vintage": 2018,
+          "doc": "Beira Interior DOC – Castelo Rodrigo",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Touriga Franca",
+            "Jaen"
+          ],
+          "alcohol": 15.0,
+          "acidity_gl": 5.35,
+          "ph": 3.92,
+          "winemaking": "TN (40%) + TF (40%) + Jaen (20%). Vindima manual. Maceração pré-fermentativa 10 dias. Fermentação 14 dias em inox. 32 meses em barricas de carvalho francês. Produção biológica.",
+          "notes": "pH 3.92 = acidez percebida muito baixa. 15% álcool + 32 meses de barrica = vinho de grande concentração e extração. As notas de pinheiro e resina são muito incomuns em vinhos portugueses — reflexo do Parque Natural do Douro Internacional envolvente.",
+          "structure": {
+            "acidity": 4,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos silvestres",
+              "alcaçuz"
+            ],
+            "secondary": [
+              "pinheiro",
+              "resina",
+              "café",
+              "folha de tabaco"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "caça grossa",
+              "borrego assado",
+              "queijo curado envelhecido",
+              "enchidos ibéricos"
+            ],
+            "notes": "Acidez 4/10 (pH 3.92) é invulgarmente baixa — o vinho compensa com 15% álcool, 32 meses de barrica e taninos sólidos. Notas de pinheiro e resina são únicas nesta base de dados: marcadores do ecossistema de Parque Natural e altitude. Jaen (20%) acrescenta toque de cereja e frescura relativa. Para pratos muito ricos e gordurosos onde acidez baixa não é desvantagem — a riqueza e concentração do vinho equiparam a riqueza do prato."
+          }
+        },
+        {
+          "id": "biaia-fonte-da-vila-tinto-2016",
+          "name": "Quinta da Biaia Single Vineyard Fonte da Vila Tinto",
+          "quinta": "Quinta da Biaia",
+          "vintage": 2016,
+          "doc": "Beira Interior DOC – Castelo Rodrigo",
+          "type": "red",
+          "varieties": [
+            "Rufete",
+            "Touriga Nacional",
+            "Touriga Franca",
+            "Baga",
+            "Jaen",
+            "Mourisco"
+          ],
+          "alcohol": 15.0,
+          "acidity_gl": 6.35,
+          "ph": 3.72,
+          "winemaking": "Field blend de castas autóctones plantadas à moda antiga (Rufete, TN, TF, Baga, Jaen, Mourisco, entre outras). Vindima manual. Fermentação iniciada por pisa a pé em lagar, terminada em cuba de inox com cuvaison de 30 dias. 50 meses em barricas novas de carvalho francês + 8 meses garrafa. Produção biológica.",
+          "notes": "O vinho mais ambicioso de toda a seleção de Beira Interior. 50 meses em barrica nova + 8 garrafa = 58 meses do início ao lançamento. Pisa a pé em lagar + cuvaison de 30 dias = extração máxima de suavidade. Field blend com Rufete (raro como monovarietal) e Mourisco (uma das castas mais raras de Portugal). 2016 vintage = vinho com 8+ anos à data desta base de dados.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 9,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta preta",
+              "compota de frutos silvestres"
+            ],
+            "secondary": [
+              "tinta da china",
+              "alcaçuz",
+              "tabaco",
+              "chocolate preto",
+              "especiarias"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha muito rica",
+              "caça grossa",
+              "javali",
+              "borrego assado longo",
+              "queijo curado de longa cura"
+            ],
+            "notes": "O único vinho nesta base de dados com Mourisco e com Rufete em field blend histórico. 50 meses de barrica nova + pisa a pé = extração e concentração máximas. Taninos 9/10 mas descritos como 'de seda' — vinha velha + longo estágio integrou completamente. 'Sabor e volume que parece não ter fim'. Acidez 6/10 (6.35g/L, pH 3.72) é suficiente para equilibrar a riqueza. Vinho de cerimónia — emparelhar com os pratos mais ricos e complexos."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta dos Currais",
+      "region": "Beira Interior – Cova da Beira",
+      "quintas": [
+        "Quinta dos Currais"
+      ],
+      "producer_notes": "Produtor em Capinha, Fundão, sub-região Cova da Beira — distinto de Castelo Rodrigo onde se situam Beyra e Biaia. Altitude menor (~500m) em solos xistosos e graníticos com exposição sul. Produtor estabelecido desde 2001, pioneiro em monovarietal de Síria em BI. O Reserva Tinto é descrito como 'um dos vinhos mais icónicos da Beira Interior' com prémios nacionais e internacionais. Vinho de topo Talabara (homenagem a antiga povoação celta) feito exclusivamente de Touriga Nacional das vinhas mais velhas.",
+      "wines": [
+        {
+          "id": "currais-siria-2022",
+          "name": "Quinta dos Currais Síria Branco",
+          "quinta": "Quinta dos Currais",
+          "vintage": 2022,
+          "doc": "Beira Interior DOC – Cova da Beira",
+          "type": "white",
+          "varieties": [
+            "Síria"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 7.92,
+          "ph": 2.94,
+          "winemaking": "Maceração pré-fermentativa seguida de bica aberta clássica. Fermentação a temperatura controlada até 15°C, 4 semanas com batonnage. 6 meses em inox. Solo xistoso, exposição sul, ~500m altitude.",
+          "notes": "pH 2.94 — o valor mais baixo de toda esta base de dados. 7.92 g/L de acidez total. Síria a este nível de acidez é surpreendente — a casta é habitualmente associada a perfis mais neutros e de acidez moderada (ex. Alentejo). O terroir de xisto + exposição sul + altitude 500m de Cova da Beira expressa um carácter radicalmente diferente do Síria de Alentejo.",
+          "structure": {
+            "acidity": 10,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "maracujá",
+              "fruta madura exótica"
+            ],
+            "secondary": [
+              "mineral xisto"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "ostra",
+              "peixe cru",
+              "sashimi",
+              "marisco delicado",
+              "peixe branco grelhado",
+              "tempura leve"
+            ],
+            "notes": "pH 2.94 + 7.92g/L = a maior tensão acídica de toda a base de dados. Supera o Aphros Ten (pH 2.99) e o Grande Reserva Branco de Valle Pradinhos (pH 2.98). Apenas inox — acidez é puramente de terroir e casta, não de vinificação. Maracujá + mineral = afinidade natural com cozinha japonesa de influência cítrica. Para contexto Nanban: emparelhamento ideal com peixe cru de qualidade e mariscos onde a acidez é protagonista."
+          }
+        },
+        {
+          "id": "currais-reserva-branco-2023",
+          "name": "Quinta dos Currais Reserva Branco",
+          "quinta": "Quinta dos Currais",
+          "vintage": 2023,
+          "doc": "Beira Interior DOC – Cova da Beira",
+          "type": "white",
+          "varieties": [
+            "Fonte Cal",
+            "Arinto",
+            "Síria"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": 6.13,
+          "ph": 3.13,
+          "winemaking": "Fonte Cal (50%) + Arinto (25%) + Síria (25%). Fermentação em inox. 6 meses em inox. Solos graníticos e xistosos, ~500m.",
+          "notes": "Fonte Cal como casta dominante (50%) em Cova da Beira — sub-região diferente do Beyra Reserva Branco (Fonte Cal 40%, Castelo Rodrigo). Comparação entre as duas expressões de Fonte Cal dominante em diferentes sub-regiões de BI é relevante para a base de dados.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "marmelo",
+              "nectarina",
+              "manga",
+              "lima"
+            ],
+            "secondary": [
+              "acácia",
+              "madressilva",
+              "pimenta branca"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe assado",
+              "marisco",
+              "queijo",
+              "carne branca",
+              "pratos aromáticos"
+            ],
+            "notes": "Fonte Cal 50% em Cova da Beira: textura aveludada e volume cremoso com acidez vibrante — perfil mais frutado e exuberante que o Beyra Reserva Branco (mais mineral e cítrico). Arinto (25%) contribui com estrutura e frescura; Síria (25%) arredonda. Flores brancas (acácia, madressilva) + fruta tropical (manga) + pimenta branca = perfil aromático complexo e versátil."
+          }
+        },
+        {
+          "id": "currais-colheita-seleccionada-tinto-2021",
+          "name": "Quinta dos Currais Colheita Seleccionada Tinto",
+          "quinta": "Quinta dos Currais",
+          "vintage": 2021,
+          "doc": "Beira Interior DOC – Cova da Beira",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Aragonês",
+            "Castelão",
+            "Rufete"
+          ],
+          "alcohol": 14.5,
+          "acidity_gl": 5.26,
+          "ph": 3.49,
+          "winemaking": "Fermentação a temperatura controlada até 28°C, 8-10 dias, maceração pós-fermentativa leve. 6 meses em carvalho francês e americano. Solos graníticos e argilo-calcários, ~500m.",
+          "notes": "Percentagens das castas não declaradas. Castelão em Beira Interior é incomum — casta primariamente de Palmela/Setúbal. Rufete presente no blend.",
+          "structure": {
+            "acidity": 7,
+            "tannins": 7,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "ameixa",
+              "amora preta"
+            ],
+            "secondary": [
+              "baunilha fina",
+              "chocolate negro"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "aves",
+              "queijo curado",
+              "enchidos",
+              "pratos de forno"
+            ],
+            "notes": "Blend invulgar: TN + Aragonês + Castelão + Rufete — quatro castas de origens geográficas distintas unidas em Cova da Beira. Castelão (Setúbal) e Rufete (BI autóctone) em conjunto é incomum. 'Boa consistência e maturidade de taninos' — 14.5% álcool bem integrado. pH 3.49 = acidez moderada-alta para equilíbrio."
+          }
+        },
+        {
+          "id": "currais-reserva-tinto-2020",
+          "name": "Quinta dos Currais Reserva Tinto",
+          "quinta": "Quinta dos Currais",
+          "vintage": 2020,
+          "doc": "Beira Interior DOC – Cova da Beira",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional",
+            "Aragonês",
+            "Castelão"
+          ],
+          "alcohol": 15.0,
+          "acidity_gl": 5.4,
+          "ph": 3.62,
+          "winemaking": "TN das vinhas mais velhas (dominante) + Tinta Roriz + Castelão. Fermentação a 28°C, 8-12 dias, maceração pós-fermentativa. 12 meses em carvalho francês. Solo xistoso, exposição sul, ~500m.",
+          "notes": "Descrito pelo produtor como 'um dos vinhos mais icónicos da Beira Interior' com prémios nacionais e internacionais. Touriga Nacional das vinhas mais velhas da quinta é o pilar. Percentagens não declaradas.",
+          "structure": {
+            "acidity": 6,
+            "tannins": 8,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos vermelhos maduros"
+            ],
+            "secondary": [
+              "baunilha",
+              "especiarias",
+              "chocolate",
+              "frutos secos",
+              "balsâmico leve"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha",
+              "borrego",
+              "caça",
+              "queijo curado envelhecido",
+              "pratos de forno ricos"
+            ],
+            "notes": "Vinho ícone de Quinta dos Currais — prémios nacionais e internacionais. TN de vinhas velhas em xisto de Cova da Beira: perfil mais balsâmico e redondo que os tintos de Castelo Rodrigo (mais austeros e minerais). 15% álcool + 12 meses carvalho + taninos presentes mas 'personalizados'. Nota balsâmica leve é marcador do terroir de xisto com exposição sul."
+          }
+        },
+        {
+          "id": "currais-talabara-2019",
+          "name": "Talabara Premium Edition",
+          "quinta": "Quinta dos Currais",
+          "vintage": 2019,
+          "doc": "Beira Interior DOC – Cova da Beira",
+          "type": "red",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 15.0,
+          "acidity_gl": 5.6,
+          "ph": null,
+          "winemaking": "100% TN da parcela mais velha da quinta. Produção máxima 4000 kg/ha. Fermentação em inox a temperatura controlada. 12 meses em barricas de carvalho francês Allier. 3 anos de estágio em garrafa. Engarrafado Junho 2023.",
+          "notes": "pH não disponível na ficha técnica. Vinho topo de gama — segunda edição. Nome homenageia antiga povoação celta da região. Engarrafado em Junho 2023 após 3 anos garrafa, o que é invulgar. Produção da parcela mais velha de TN da quinta, rendimento muito baixo (4000 kg/ha).",
+          "structure": {
+            "acidity": 7,
+            "tannins": 9,
+            "body": "full",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "ameixa madura",
+              "amora preta"
+            ],
+            "secondary": [
+              "mentolado",
+              "especiarias finas",
+              "mineralidade"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne vermelha de alta qualidade",
+              "caça grossa",
+              "borrego assado",
+              "queijo curado de longa cura"
+            ],
+            "notes": "100% TN de parcela velha + 4000 kg/ha + 12 meses Allier + 3 anos garrafa = o vinho de maior ambição de Quinta dos Currais. Nota mentolada em TN de baixo rendimento é típica de grande maturação fenólica completa. Taninos 9/10 mas 'aveludados e intensos' — envelhecimento prolongado em garrafa integrou completamente. Mineralidade declarada pelo produtor como 'única'. Para os pratos mais exigentes e ricos."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta dos Termos",
+      "region": "Beira Interior – Cova da Beira",
+      "quintas": [
+        "Quinta dos Termos"
+      ],
+      "producer_notes": "Produtor em Cova da Beira, Beira Interior. Inclui a marca secundária Herdade do Lousial. Trabalha com castas autóctones da região incluindo Rufete e Fonte Cal.",
+      "wines": [
+        {
+          "id": "termos-talhao-serra-rufete-2022",
+          "name": "Quinta dos Termos Reserva Talhão da Serra Rufete",
+          "quinta": "Quinta dos Termos",
+          "vintage": 2022,
+          "doc": "Beira Interior DOC – Cova da Beira",
+          "type": "red",
+          "varieties": [
+            "Rufete"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": 6.8,
+          "ph": null,
+          "winemaking": null,
+          "notes": "DADOS ESTRUTURAIS NÃO DISPONÍVEIS — pH e acidez total ausentes na ficha técnica. Valores de acidity e tannins estimados a partir do conhecimento da casta. Rufete monovarietal é extremamente raro — único exemplar desta casta como vinho singular nesta base de dados (Biaia tem Rufete apenas em field blend). A nota de prova descreve o paradoxo clássico do Rufete: cor aberta que engana, escondendo estrutura poderosa.",
+          "structure": {
+            "acidity": 8,
+            "tannins": 5,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "intenso e complexo"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carnes assadas",
+              "carnes grelhadas",
+              "enchidos",
+              "massas com molho de tomate",
+              "aves",
+              "cogumelos"
+            ],
+            "notes": "Rufete monovarietal — referência única de casta nesta base de dados. Cor aberta (rubi claro) engana: por baixo há 'estrutura poderosa, boa acidez e final longo e complexo'. Perfil análogo ao Pinot Noir de clima continental — leveza visual com substância real. Acidity 8/10 e tannins 5/10 são estimativas baseadas no perfil típico da casta; não derivados de dados analíticos do produtor. Sugestão do produtor inclui massas com molho de tomate — acidez alta do Rufete complementa acidez do tomate (harmonização por semelhança)."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Souvall",
+      "region": "Beira Interior",
+      "quintas": [
+        "Souvall"
+      ],
+      "producer_notes": "Produtor pequeno de Beira Interior com portfolio incomum: Baga em contexto de montanha (incomum fora de Bairrada), blends de Rufete+Marufo+Baga em vinhas velhas de 40-80 anos, e um vinho de vindima tardia botrytizado. Opera sob múltiplos rótulos: Souvall (linha principal), Seara (single-vineyard de vinhas velhas 60-80 anos) e Villamayor (single-vineyard vinhas novas). Viticultura de sequeiro em ambiente de montanha, solos de granito, em conversão para produção biológica. Altitude 600-700m, clima continental extremo.",
+      "wines": [
+        {
+          "id": "souvall-baga-2022",
+          "name": "Souvall Baga",
+          "quinta": "Souvall",
+          "vintage": 2022,
+          "doc": "Beira Interior DOC",
+          "type": "red",
+          "varieties": [
+            "Baga"
+          ],
+          "alcohol": 13.2,
+          "acidity_gl": 6.6,
+          "ph": 3.23,
+          "winemaking": "Vinhas velhas. Viticultura de sequeiro, produção biológica. FML completa. 10 meses em barris de carvalho francês.",
+          "notes": "Baga em Beira Interior é geograficamente incomum — a casta é primariamente associada a Bairrada. Em contexto de montanha/BI com FML completa, o perfil é radicalmente diferente do Baga de Bairrada: mais leve, fresco e delicado, sem a adstringência característica. Comparação interessante com o archetype bairrada-tinto no pairing engine.",
+          "structure": {
+            "acidity": 8,
+            "tannins": 6,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "cereja",
+              "amora"
+            ],
+            "secondary": [
+              "balsâmico",
+              "leve vegetal",
+              "tosta suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carnes grelhadas leves",
+              "aves",
+              "pato",
+              "cogumelos",
+              "enchidos",
+              "massas com molho de tomate"
+            ],
+            "notes": "Baga de montanha em BI: textura delicada e leveza corporal muito distinta do Baga de Bairrada (normalmente muito tânico e estruturado). FML completa + 10 meses carvalho suavizaram a acidez natural da casta. 13.2% álcool, pH 3.23 — equilíbrio cuidado. Versatilidade maior que o Baga típico: pratos que normalmente exigiriam branco encorpado ou tinto leve."
+          }
+        },
+        {
+          "id": "souvall-vale-ladroens-2022",
+          "name": "Souvall Vale dos Ladroens Garrafeira Vinhas Velhas",
+          "quinta": "Souvall",
+          "vintage": 2022,
+          "doc": "Beira Interior DOC",
+          "type": "red",
+          "varieties": [
+            "Rufete",
+            "Marufo",
+            "Baga"
+          ],
+          "alcohol": 12.8,
+          "acidity_gl": 6.21,
+          "ph": 3.29,
+          "winemaking": "Vinhas velhas 40-60 anos. 1/3 do lote em carvalho francês 15 meses, restante em inox. Viticultura de sequeiro.",
+          "notes": "Percentagens das castas não declaradas. Blend de três castas pouco comuns: Rufete (autóctone BI), Marufo (raro) e Baga (Bairrada em contexto BI). Vinhas de 40-60 anos. A nota de 'pedra e pó de granito molhado' no final é um marcador de terroir granítico altamente específico.",
+          "structure": {
+            "acidity": 8,
+            "tannins": 5,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "cereja",
+              "ginja",
+              "amora pouco madura"
+            ],
+            "secondary": [
+              "leve vegetal",
+              "granito molhado (mineral)"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves",
+              "perdiz",
+              "coelho",
+              "cogumelos",
+              "queijo curado",
+              "pratos delicados de carne"
+            ],
+            "notes": "O blend mais incomum desta seleção de BI: Rufete + Marufo + Baga de vinhas 40-60 anos em granito. 12.8% álcool + corpo leve + acidez alta = tinto de grande frescura e digestibilidade. 'Pedra e pó de granito molhado' no final é marcador de terroir singular — reflexo direto dos solos graníticos a 600-700m. Versátil com pratos que normalmente exigiriam branco encorpado."
+          }
+        },
+        {
+          "id": "seara-vinhas-velhas-branco-2023",
+          "name": "Seara Vinhas Velhas Grande Reserva Branco",
+          "quinta": "Souvall",
+          "vintage": 2023,
+          "doc": "Beira Interior DOC",
+          "type": "white",
+          "varieties": [
+            "Síria",
+            "Gouveio",
+            "Arinto",
+            "Rabigato",
+            "Fernão Pires"
+          ],
+          "alcohol": 13.8,
+          "acidity_gl": 6.53,
+          "ph": 3.12,
+          "winemaking": "Field blend da parcela Seara. Vinhas 60-80 anos, exposição nascente, 600m altitude, granite soils, dryland, converting to organic. Curtimenta a frio, FML completa. Parte em inox + parte em carvalho francês e americano 10 meses. 6 meses garrafa. Estilo ligeiramente oxidativo declarado.",
+          "notes": "Field blend com Rabigato — primeiro aparecimento desta casta branca (típica do Douro/TM) em contexto de BI nesta base de dados. Vinhas de 60-80 anos é a maior idade de vinhas num branco em toda a base de dados. 'Estilo mais clássico e estruturado... opção por evolução mais oxidativa' declarado pelo produtor.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "alperce",
+              "pêssego",
+              "nêspera"
+            ],
+            "secondary": [
+              "leve vegetal",
+              "especiaria",
+              "frutos secos",
+              "evolução oxidativa discreta"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "queijo variado",
+              "peixe gordo assado",
+              "carnes condimentadas",
+              "aves assadas",
+              "cogumelos"
+            ],
+            "notes": "Field blend de 60-80 anos com estilo oxidativo declarado: alperce, pêssego, nêspera e frutos secos sugerem evolução intencional. Rabigato (normalmente Douro/TM) em BI a 600m acrescenta carácter mineral. 13.8% álcool com pH 3.12 dá estrutura e frescura simultâneas. Produtor recomenda tábua de queijos — oxidação leve complementa queijos curados e azuis."
+          }
+        },
+        {
+          "id": "souvall-vindima-tardia-2023",
+          "name": "Souvall Vindima Tardia",
+          "quinta": "Souvall",
+          "vintage": 2023,
+          "doc": "Beira Interior DOC",
+          "type": "white",
+          "varieties": [
+            "Viosinho",
+            "Fernão Pires",
+            "Rabigato"
+          ],
+          "alcohol": 11.76,
+          "acidity_gl": 6.4,
+          "ph": 3.3,
+          "winemaking": "Cerca de metade dos bagos botrytizados, desidratados e em sobrematuração. Colheita manual. Longa maceração de cacho inteiro sem desengace nem esmagamento em prensa. Fermentação alcoólica longa em inox. 24 meses de estágio em inox com borras finas. 79.6 g/L açúcar residual.",
+          "notes": "O único vinho doce/botrytizado de Beira Interior nesta base de dados. 79.6 g/L RS com 6.4 g/L acidez + pH 3.30 = equilíbrio doce-ácido muito bem conseguido. 24 meses de inox com borras preservam frescura sem oxidação. Sensação salina no final é marcador de altitude + granito.",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "sweet",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "mel de rosmaninho",
+              "folha de chá",
+              "uva passa sultana"
+            ],
+            "secondary": [
+              "alperce desidratado",
+              "frutas brancas cristalizadas",
+              "flor de laranjeira"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "foie gras",
+              "paté",
+              "queijo azul",
+              "frutos secos",
+              "sobremesas não excessivamente doces",
+              "galantine"
+            ],
+            "notes": "Vindima tardia botrytizada com 79.6 g/L RS — doçura natural de botrytis equilibrada por 6.4 g/L acidez (pH 3.30): o vinho nunca pesa. 'Doçura e acidez em perfeito equilíbrio' declarado pelo produtor. Mel de rosmaninho + salinidade no final = marcadores de montanha granítica. Produtor sugere foie gras e queijo azul — clássicas harmonizações doce+salgado/gordo."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Quinta da Ribeira da Pêga",
+      "region": "Beira Interior – Pinhel",
+      "quintas": [
+        "Quinta da Ribeira da Pêga"
+      ],
+      "producer_notes": "Quinta em Pinhel, sub-região da Beira Interior. Solos graníticos pobres com quartzo — contraste relevante com o xisto de Cova da Beira que domina outros produtores desta base de dados. Altitude de 600m, clima continental extremo: verões muito quentes, invernos frios e secos, amplitude térmica elevada. Foco quase exclusivo em monovarietais de castas autóctones, incluindo o Marufo — casta ancestral de Pinhel e Castelo Rodrigo, quase ausente em forma monovarietal. Enólogo: José Ribeiro Brandão. Abordagem de preservação de identidade varietal: mínima intervenção, inox para brancos e tintos leves, barricas usadas para reservas.",
+      "wines": [
+        {
+          "id": "pega-marufo-2024",
+          "name": "Quinta da Ribeira da Pêga Marufo",
+          "quinta": "Quinta da Ribeira da Pêga",
+          "vintage": 2024,
+          "doc": "Beira Interior DOC – Pinhel",
+          "type": "red",
+          "varieties": [
+            "Marufo"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "100% Marufo. Vinha com ~30 anos, 600m altitude, solos graníticos. Vindima manual, seleção manual de cachos. Desengace total, fermentação em inox com temperatura controlada. Estágio exclusivamente em inox.",
+          "notes": "O único Marufo monovarietal nesta base de dados. Marufo é casta ancestral usada em lotes no Douro e Beira Interior mas raramente vinificada a solo — a Quinta da Ribeira da Pêga é uma das pouquíssimas exceções documentadas. Cor rubi aberta, corpo leve: perfil análogo ao Bastardo (Trousseau) em termos de leveza tânica e cromática. 'Vinho original e desconcertante' na descrição do produtor. Valores acidity_gl e pH não disponíveis; structural values estimados das notas de prova ('fresco e suave de boca', 'framboesa e mirtilo pouco maduros').",
+          "structure": {
+            "acidity": 7,
+            "tannins": 5,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "framboesa pouco madura",
+              "mirtilo pouco maduro"
+            ],
+            "secondary": [
+              "vegetal leve",
+              "balsâmico suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aves",
+              "pato",
+              "cogumelos",
+              "peixe gordo grelhado",
+              "queijo fresco",
+              "salada de verão",
+              "pratos leves de legumes"
+            ],
+            "notes": "Marufo monovarietal — única referência nesta base de dados. Corpo leve + tannins suaves + acidez moderada = versatilidade incomum para um tinto. 'Fresco e suave de boca' com fruta pouco madura aponta para servir ligeiramente fresco (14-16°C). 'Rompe com estereótipos pré-estabelecidos' — pode acompanhar pratos que normalmente pedem branco. Para contexto Nanban: temperatura de serviço baixa e perfil delicado combinam com pratos leves de tofu, cogumelos ou peixe grelhado sem molho intenso."
+          }
+        },
+        {
+          "id": "pega-rufete-2023",
+          "name": "Quinta da Ribeira da Pêga Rufete",
+          "quinta": "Quinta da Ribeira da Pêga",
+          "vintage": 2023,
+          "doc": "Beira Interior DOC – Pinhel",
+          "type": "red",
+          "varieties": [
+            "Rufete"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "100% Rufete. Vinha com ~30 anos, 600m altitude, solos graníticos. Vindima manual, seleção manual. Desengace total, fermentação em inox com temperatura controlada. Estágio em barricas usadas + inox.",
+          "notes": "Segundo Rufete monovarietal nesta base de dados (ver termos-talhao-serra-rufete-2022 de Quinta dos Termos). Pinhel vs. Serra da Estrela: terroir granítico de Pinhel vs. valores não documentados de Termos. Descrição do produtor: 'cumpre sem dificuldade as funções de um branco e tinto de qualidade' — confirmação da versatilidade invulgar do Rufete. Evolução em garrafa documentada: ervas balsâmicas em novo → cereja madura, resinas e terrosos com envelhecimento. Valores acidity_gl e pH não disponíveis; estrutura estimada das notas ('natural acidez', 'boca longa e suave', longa guarda).",
+          "structure": {
+            "acidity": 8,
+            "tannins": 5,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "framboesa",
+              "morango",
+              "mirtilo",
+              "ervas balsâmicas",
+              "mentolado",
+              "poejo",
+              "orégãos",
+              "rosmaninho"
+            ],
+            "secondary": [
+              "resina",
+              "pinheiro",
+              "caruma",
+              "esteva",
+              "terroso",
+              "bosque"
+            ],
+            "tertiary": [
+              "cereja madura",
+              "aromas resinosos",
+              "terrosos complexos"
+            ]
+          },
+          "pairing": {
+            "affinities": [
+              "aves",
+              "pato",
+              "cogumelos",
+              "peixe gordo",
+              "queijo de pasta mole",
+              "pratos mediterrâneos de ervas"
+            ],
+            "notes": "Rufete de Pinhel em granito — acidez alta natural (estimada 8/10) mas tannins suaves criam equilíbrio incomum. 'Versatilidade de branco e tinto': pode acompanhar peixe gordo grelhado ou aves confitadas. Evolução em garrafa bem documentada pelo produtor: jovem = ervas e fruta vermelha fresca; envelhecido = cereja, resinas e terrosos. Para contexto Nanban: aromatic profile (ervas + mentolado) harmoniza com molhos à base de ervas e pratos com umami moderado."
+          }
+        },
+        {
+          "id": "pega-tinta-roriz-grande-reserva-2021",
+          "name": "Quinta da Ribeira da Pêga Tinta Roriz Grande Reserva",
+          "quinta": "Quinta da Ribeira da Pêga",
+          "vintage": 2021,
+          "doc": "Beira Interior DOC – Pinhel",
+          "type": "red",
+          "varieties": [
+            "Tinta Roriz"
+          ],
+          "alcohol": 14.0,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "100% Tinta Roriz. Vinha com ~15 anos, 600m altitude, solos graníticos. Vindima manual, desengace total, fermentação em inox. Estágio em barricas usadas de carvalho francês durante 24 meses, seguido de 15 meses em garrafa.",
+          "notes": "Grande Reserva de Tinta Roriz com estágio total de 24mo barrica + 15mo garrafa = 39 meses de maturação antes de comercialização. 'Pedra molhada, rama e casca de cedro' no final = terroir granítico de Pinhel bem expresso apesar da madeira. 14% álcool. Valores acidity_gl e pH não disponíveis; structural values estimados ('sensação tânica harmoniosa', 'final de boca longo e fresco').",
+          "structure": {
+            "acidity": 6,
+            "tannins": 7,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "ameixa preta",
+              "cereja",
+              "amora silvestre madura"
+            ],
+            "secondary": [
+              "especiarias suaves",
+              "pedra molhada",
+              "casca de cedro",
+              "rama"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "presunto ibérico",
+              "enchidos",
+              "queijos curados",
+              "carne vermelha grelhada",
+              "borrego",
+              "caça"
+            ],
+            "notes": "TR Grande Reserva de Pinhel — 24mo barrica usada (não nova) preserva carácter de fruta e terroir sem dominar com madeira. 'Já capaz de enfrentar a melhor tábua de presunto Ibérico' — produtor confirma harmonização clássica. Notas de pedra molhada + cedro = minerais graníticos que distinguem de TR do Douro/Dão. 14% álcool bem integrado com 39 meses de maturação total."
+          }
+        },
+        {
+          "id": "pega-siria-2022",
+          "name": "Quinta da Ribeira da Pêga Síria",
+          "quinta": "Quinta da Ribeira da Pêga",
+          "vintage": 2022,
+          "doc": "Beira Interior DOC – Pinhel",
+          "type": "white",
+          "varieties": [
+            "Síria"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "100% Síria. Vinha com ~30 anos, 600m altitude, solos graníticos. Vindima manual, desengace total, suave esmagamento. Fermentação em inox com temperatura controlada. Estágio exclusivamente em inox.",
+          "notes": "Síria monovarietal em granito de Pinhel — contraste com biaia-reserva-branco-siria-2020 (Hungarian+French oak) e currais-siria-2022 (xisto, pH 2.94). Nota 'flint/granito molhado' no final é marcador terroir distinto: granito Pinhel vs. xisto Cova da Beira. 'Abordagem diferente, mais delicada e exigente da casta Síria' declarado pelo produtor. Valores acidity_gl e pH não disponíveis; estrutura estimada ('refrescante e longa sensação de frescura ácida', 'volumoso de boca sem excessos').",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "erva-cidreira",
+              "lima",
+              "louro",
+              "alperce",
+              "pêssego"
+            ],
+            "secondary": [
+              "flint",
+              "granito molhado",
+              "mineral"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "entradas elaboradas",
+              "carnes brancas guisadas",
+              "peixe gordo",
+              "mariscos",
+              "queijo de pasta mole",
+              "queijo pouco curado"
+            ],
+            "notes": "Síria de Pinhel em granito: 'flint' e 'granito molhado' no final distinguem do Síria de xisto. Acidez alta (estimada 8/10) + inox puro = máxima expressão varietal e terroir. Comparação direta com currais-siria-2022 (xisto, pH 2.94) e biaia-reserva-branco-siria-2020 (carvalho) é pedagogicamente interessante — mesma casta, três terroirs diferentes, três perfis distintos. Para contexto Nanban: acidez elevada + notas cítricas (lima) e de ervas (louro, erva-cidreira) harmonizam com tempuras, ceviche e pratos de tofu com molhos leves."
+          }
+        }
+      ]
+    }
+  ]
+}

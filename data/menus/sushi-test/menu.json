@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "menu_id":   "sushi-test",
+    "menu_name": "Sushi Vegetariano",
+    "language":  "pt"
+  },
+  "dishes": [
+    {
+      "id":           "futomaki",
+      "sequence":     1,
+      "name":         "Futomaki",
+      "description":  "Rolo grosso de nori com arroz temperado com limão e açúcar, cenoura, omeleta, feijão verde, shiitake e kampyo",
+      "properties": {}
+    },
+    {
+      "id":           "hosomaki",
+      "sequence":     2,
+      "name":         "Hosomaki",
+      "description":  "Rolo fino de nori com arroz temperado, pepino, cenoura e nabo em pickle (tsukemono)",
+      "properties": {}
+    }
+  ]
+}

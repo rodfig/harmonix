@@ -1,0 +1,177 @@
+{
+  "producer": "Fitapreta",
+  "generated_at": "2026-03-01T11:20:27.293867",
+  "found_count": 4,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "fitapreta-trincadeira-das-pratas-2021",
+      "producer": "Fitapreta",
+      "name": "Trincadeira-das-Pratas",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 24.91,
+          "name_found": "Trincadeira das Pratas",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/trincadeira-das-pratas/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2000 João Portugal Ramos Trincadeira tinto",
+          "confidence": "low",
+          "score": 0.534,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Vidigueira Trincadeira 75 Cl",
+          "confidence": "low",
+          "score": 0.48,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Fita Preta Chão dos Eremitas Trincadeira das Pratas...",
+          "confidence": "low",
+          "score": 0.696,
+          "url": null
+        }
+      },
+      "best_retail": 24.91,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 37.5,
+        "2.0x": 50.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "fitapreta-baga-ao-sol-2022",
+      "producer": "Fitapreta",
+      "name": "Baga ao Sol",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2019 Encontro Baga tinto",
+          "confidence": "no_match",
+          "score": 0.394,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Niepoort Poeirinho Baga Biologico 2020 75 Cl",
+          "confidence": "no_match",
+          "score": 0.309,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 25.95,
+          "name_found": "Fita Preta Baga ao Sol Tinto 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/alentejo/8660-fita-preta-signature-series-baga-ao-sol-red-2014-5600301740572.html"
+        }
+      },
+      "best_retail": 25.95,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 39.0,
+        "2.0x": 52.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "fitapreta-branco-ancestral-2024",
+      "producer": "Fitapreta",
+      "name": "Branco Ancestral",
+      "vintage": 2024,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " Espumante Cravaz Ancestral Malvasia Fina Pet Nat Bruto Natural",
+          "confidence": "no_match",
+          "score": 0.289,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "Vinha": {
+          "retail_price": 12.14,
+          "name_found": "Fita Preta Ancestral 2024",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.vinha.pt/vinho/vinho-branco-macanita-fita-preta-ancestral-2024-75cl-alentejo/"
+        }
+      },
+      "best_retail": 12.14,
+      "best_source": "Vinha",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "fitapreta-chao-dos-eremitas-moreto-2023",
+      "producer": "Fitapreta",
+      "name": "Chão dos Eremitas Moreto",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 33.95,
+          "name_found": "Chão dos Eremitas Moreto Tinto",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/chao-dos-eremitas-moreto-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Esporão Moreto Vinho de Talha tinto",
+          "confidence": "no_match",
+          "score": 0.383,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Chao Eremitas Tinta Carvalha 2020 75 Cl",
+          "confidence": "low",
+          "score": 0.49,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 39.05,
+          "name_found": "Fita Preta Chão dos Eremitas Moreto Tinto 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/alentejo/14755-fita-preta-chao-dos-eremitas-moreto-red-2018-5600301740947.html"
+        }
+      },
+      "best_retail": 33.95,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 51.0,
+        "2.0x": 68.0
+      },
+      "status": "found"
+    }
+  ]
+}

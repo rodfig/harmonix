@@ -1,0 +1,773 @@
+{
+  "_meta": {
+    "description": "Portuguese red grape variety profiles for food pairing",
+    "acidity_scale": "1–10 (1=very low, 10=very high)",
+    "tannins_scale": "1–10 (1=very low, 10=very high)",
+    "body_scale": "light | medium | full",
+    "sweetness": "dry | off-dry | semi-sweet | sweet",
+    "finish": "short | medium | long",
+    "source": "AromasCastas.pdf + Módulo 5 + Claude wine synthesis"
+  },
+  "varieties": [
+    {
+      "id": "touriga-nacional",
+      "name": "Touriga Nacional",
+      "type": "red",
+      "category": "monovarietal",
+      "region": "Dão, Douro",
+      "doc": "Dão / Douro",
+      "varieties": [
+        "Touriga Nacional"
+      ],
+      "structure": {
+        "acidity": 7,
+        "tannins": 9,
+        "body": "full",
+        "alcohol": "13.5–15%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": [
+          "violeta",
+          "rosa",
+          "pimenta preta",
+          "resina",
+          "bergamota",
+          "chá Earl Grey"
+        ],
+        "secondary": [
+          "grafite",
+          "pedra de isqueiro",
+          "notas redutivas"
+        ],
+        "tertiary": [
+          "baunilha",
+          "cravo",
+          "noz-moscada",
+          "ameixa seca",
+          "uva passa",
+          "eucalipto",
+          "pinho",
+          "notas balsâmicas"
+        ]
+      },
+      "pairing": {
+        "affinities": [
+          "carne vermelha",
+          "caça",
+          "cordeiro",
+          "queijo curado",
+          "pratos robustos com ervas"
+        ],
+        "conflicts": [
+          "peixe delicado",
+          "mariscos",
+          "pratos leves",
+          "sashimi"
+        ],
+        "notes": "A casta emblemática de Portugal. Taninos muito altos requerem pratos proteicos e gordurosos. Excelente com envelhecimento"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+    {
+      "id": "touriga-franca",
+      "name": "Touriga Franca",
+      "type": "red",
+      "category": "monovarietal",
+      "region": "Douro",
+      "doc": "Douro",
+      "varieties": [
+        "Touriga Franca"
+      ],
+      "structure": {
+        "acidity": 6,
+        "tannins": 7,
+        "body": "full",
+        "alcohol": "13–14.5%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": [
+          "amora",
+          "cassis",
+          "mirtilo",
+          "ameixa preta",
+          "rosa",
+          "cistus/esteva",
+          "toque cítrico"
+        ],
+        "secondary": [
+          "notas empireumáticas suaves",
+          "café",
+          "cacau"
+        ],
+        "tertiary": [
+          "café",
+          "cacau",
+          "chocolate amargo",
+          "especiarias de madeira"
+        ]
+      },
+      "pairing": {
+        "affinities": [
+          "cordeiro",
+          "carne vermelha",
+          "cozidos",
+          "queijo de pasta semidura",
+          "javali"
+        ],
+        "conflicts": [
+          "peixe branco",
+          "pratos leves",
+          "mariscos"
+        ],
+        "notes": "Espinha dorsal dos blends do Douro e do Porto. Mais suave que Touriga Nacional, muito aromática e com bom volume"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+    {
+      "id": "tinta-roriz",
+      "name": "Tinta Roriz / Aragonez",
+      "type": "red",
+      "category": "monovarietal",
+      "region": "Douro, Dão, Alentejo",
+      "doc": "Douro / Dão / Alentejo",
+      "varieties": [
+        "Tinta Roriz",
+        "Aragonez"
+      ],
+      "structure": {
+        "acidity": 6,
+        "tannins": 6,
+        "body": "medium",
+        "alcohol": "13–14%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": [
+          "pimenta preta",
+          "resina",
+          "morango maduro",
+          "cereja escura"
+        ],
+        "secondary": [
+          "notas de carvalho",
+          "especiarias tostadas"
+        ],
+        "tertiary": [
+          "ameixa seca",
+          "uva passa",
+          "couro leve"
+        ]
+      },
+      "pairing": {
+        "affinities": [
+          "grelhados",
+          "ensopados",
+          "aves assadas",
+          "porco",
+          "queijo médio"
+        ],
+        "conflicts": [
+          "peixe delicado",
+          "pratos muito leves"
+        ],
+        "notes": "A Tempranillo portuguesa. Versátil, com bom equilíbrio entre fruta e especiaria. Amadurece bem em carvalho"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+    {
+      "id": "trincadeira",
+      "name": "Trincadeira / Tinta Amarela",
+      "type": "red",
+      "category": "monovarietal",
+      "region": "Alentejo, Ribatejo",
+      "doc": "Alentejo / Tejo",
+      "varieties": [
+        "Trincadeira",
+        "Tinta Amarela"
+      ],
+      "structure": {
+        "acidity": 6,
+        "tannins": 5,
+        "body": "medium",
+        "alcohol": "13–14%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": [
+          "amora silvestre",
+          "ameixa preta",
+          "frutos vermelhos silvestres",
+          "chá preto",
+          "notas herbáceas",
+          "toque floral"
+        ],
+        "secondary": [
+          "especiarias suaves"
+        ],
+        "tertiary": [
+          "couro curtido",
+          "caça",
+          "notas animais"
+        ]
+      },
+      "pairing": {
+        "affinities": [
+          "carnes grelhadas",
+          "caça",
+          "pratos de forno",
+          "embutidos",
+          "queijo curado"
+        ],
+        "conflicts": [
+          "peixe",
+          "mariscos",
+          "pratos leves"
+        ],
+        "notes": "Casta irregular — brilhante em bons anos, problemática em anos quentes. Quando equilibrada: taninos sedosos, acidez equilibrada, finish salgado persistente e complexidade aromática notável"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+    {
+      "id": "castelao",
+      "name": "Castelão / Periquita",
+      "type": "red",
+      "category": "monovarietal",
+      "region": "Palmela, Setúbal, Lisboa",
+      "doc": "Palmela / Setúbal",
+      "varieties": [
+        "Castelão"
+      ],
+      "structure": {
+        "acidity": 7,
+        "tannins": 6,
+        "body": "medium",
+        "alcohol": "12.5–14%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": [
+          "cereja ácida",
+          "mirtilo",
+          "ameixa damasco",
+          "framboesa",
+          "flores azuis",
+          "ervas mediterrânicas"
+        ],
+        "secondary": [
+          "mineralidade salina",
+          "cereal tostado (espumantes rosé)"
+        ],
+        "tertiary": [
+          "eucalipto",
+          "pinho",
+          "notas balsâmicas",
+          "tabaco",
+          "couro leve"
+        ]
+      },
+      "pairing": {
+        "affinities": [
+          "frango grelhado",
+          "carnes magras",
+          "porco",
+          "embutidos",
+          "peixe azul grelhado"
+        ],
+        "conflicts": [
+          "peixe muito delicado",
+          "sobremesas"
+        ],
+        "notes": "Casta adaptável das zonas costeiras. Mineralidade salina característica dos solos arenosos de Setúbal/Palmela — único entre as castas portuguesas. Acidez média-alta e taninos macios resultam em vinhos acessíveis com identidade distinta. Excelente para espumantes rosé"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+    {
+      "id": "baga",
+      "name": "Baga",
+      "type": "red",
+      "category": "monovarietal",
+      "region": "Bairrada",
+      "doc": "Bairrada",
+      "varieties": [
+        "Baga"
+      ],
+      "structure": {
+        "acidity": 9,
+        "tannins": 10,
+        "body": "full",
+        "alcohol": "12–13.5%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": [
+          "morango",
+          "cereja",
+          "ameixa vermelha",
+          "framboesa",
+          "notas fumadas/herbáceas"
+        ],
+        "secondary": [
+          "massa de pão",
+          "notas de levedura (espumante rosé)"
+        ],
+        "tertiary": [
+          "couro curtido",
+          "caça",
+          "notas animais",
+          "alcatrão",
+          "tabaco",
+          "azeitonas",
+          "fumo",
+          "cedro"
+        ]
+      },
+      "pairing": {
+        "affinities": [
+          "leitão da Bairrada",
+          "carne gorda",
+          "queijo curado",
+          "pratos muito ricos",
+          "enchidos"
+        ],
+        "conflicts": [
+          "peixe delicado",
+          "pratos leves",
+          "mariscos",
+          "pratos não proteicos"
+        ],
+        "notes": "O vinho mais estruturado de Portugal. Taninos muito altos e acidez altíssima — precisa de envelhecimento ou pratos muito ricos. Espumante rosé de Baga é extraordinário"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+    {
+      "id": "alfrocheiro",
+      "name": "Alfrocheiro",
+      "type": "red",
+      "category": "monovarietal",
+      "region": "Dão",
+      "doc": "Dão",
+      "varieties": [
+        "Alfrocheiro"
+      ],
+      "structure": {
+        "acidity": 7,
+        "tannins": 6,
+        "body": "medium",
+        "alcohol": "13–14%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": [
+          "violeta",
+          "rosa",
+          "flores silvestres",
+          "amora",
+          "cereja ácida",
+          "morango selvagem"
+        ],
+        "secondary": [],
+        "tertiary": [
+          "alcaçuz",
+          "especiarias",
+          "balsâmico",
+          "rosmaninho",
+          "pinho",
+          "cogumelo",
+          "terra húmida"
+        ]
+      },
+      "pairing": {
+        "affinities": [
+          "cogumelos",
+          "aves",
+          "vitela",
+          "caça leve",
+          "queijo médio",
+          "enchidos tradicionais"
+        ],
+        "conflicts": [
+          "carne muito pesada",
+          "pratos muito condimentados"
+        ],
+        "notes": "A casta mais elegante do Dão. Acidez vibrante que mantém frescura mesmo em anos quentes. Perfil floral único combinado com frutos negros, especiaria e notas balsâmicas — estrutura média mas aromática e persistente"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+    {
+      "id": "jaen",
+      "name": "Jaen / Mencía",
+      "type": "red",
+      "category": "monovarietal",
+      "region": "Dão",
+      "doc": "Dão",
+      "varieties": [
+        "Jaen",
+        "Mencía"
+      ],
+      "structure": {
+        "acidity": 6,
+        "tannins": 5,
+        "body": "light",
+        "alcohol": "12.5–13.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": [
+          "morango",
+          "cereja",
+          "framboesa",
+          "romã",
+          "notas florais suaves",
+          "ervas aromáticas"
+        ],
+        "secondary": [],
+        "tertiary": [
+          "cogumelo",
+          "folhas secas",
+          "terra úmida"
+        ]
+      },
+      "pairing": {
+        "affinities": [
+          "frango",
+          "cogumelos",
+          "pratos levemente condimentados",
+          "queijo médio",
+          "peixe azul leve"
+        ],
+        "conflicts": [
+          "carne vermelha muito intensa",
+          "pratos de caça pesados"
+        ],
+        "notes": "O tinto mais leve e fresco do Dão. Acidez média e taninos suaves (comparável ao Pinot Noir e Gamay) permitem harmonizações versáteis. Aromas terpenóides únicos — o segundo mais aromático do Dão a seguir à Touriga Nacional"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+    {
+      "id": "alicante-bouschet",
+      "name": "Alicante Bouschet",
+      "type": "red",
+      "category": "monovarietal",
+      "region": "Alentejo",
+      "doc": "Alentejo",
+      "varieties": [
+        "Alicante Bouschet"
+      ],
+      "structure": {
+        "acidity": 6,
+        "tannins": 8,
+        "body": "full",
+        "alcohol": "14–15.5%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": [
+          "amora",
+          "cassis",
+          "mirtilo",
+          "ameixa preta",
+          "pimenta preta",
+          "frutas negras muito maduras"
+        ],
+        "secondary": [],
+        "tertiary": [
+          "baunilha",
+          "cravo",
+          "canela",
+          "café",
+          "cacau",
+          "chocolate amargo",
+          "azeitonas",
+          "tabaco"
+        ]
+      },
+      "pairing": {
+        "affinities": [
+          "carne vermelha intensa",
+          "caça",
+          "queijo curado",
+          "pratos de forno ricos",
+          "enchidos"
+        ],
+        "conflicts": [
+          "peixe",
+          "pratos leves",
+          "mariscos"
+        ],
+        "notes": "Tinto-tinto (polpa e casca pigmentadas) — cor muito intensa, uma das mais escuras do mundo. Retém acidez no calor do Alentejo — vantagem única. Jovens podem ser rústicos e fechados; com envelhecimento revelam taninos sedosos e complexidade extraordinária"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+    {
+      "id": "vinhao",
+      "name": "Vinhão",
+      "type": "red",
+      "category": "monovarietal",
+      "region": "Vinho Verde",
+      "doc": "Vinho Verde",
+      "varieties": [
+        "Vinhão"
+      ],
+      "structure": {
+        "acidity": 9,
+        "tannins": 8,
+        "body": "medium",
+        "alcohol": "10.5–12%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": [
+          "frutos silvestres",
+          "ameixa ácida",
+          "peónia",
+          "pimenta",
+          "notas herbáceas"
+        ],
+        "secondary": [
+          "banana",
+          "maçã cozida (fermentação, em vinhos muito jovens)"
+        ],
+        "tertiary": []
+      },
+      "pairing": {
+        "affinities": [
+          "sardinhas grelhadas",
+          "peixe azul gordo",
+          "linguiça",
+          "pratos gordurosos",
+          "bacalhau"
+        ],
+        "conflicts": [
+          "pratos leves e delicados",
+          "sobremesas",
+          "queijos subtis"
+        ],
+        "notes": "Raridade mundial: tinto com acidez muito alta (estruturante, não agressiva) que harmoniza com peixe gordo. Aromas pimentados e silvestres. Cor quase opaca. Servido fresco (12–14°C). Único no NW português — combinação regional clássica com sardinhas e peixe azul"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+    {
+      "id": "tinta-barroca",
+      "name": "Tinta Barroca",
+      "type": "red",
+      "category": "monovarietal",
+      "region": "Douro",
+      "doc": "Douro",
+      "varieties": [
+        "Tinta Barroca"
+      ],
+      "structure": {
+        "acidity": 5,
+        "tannins": 5,
+        "body": "medium",
+        "alcohol": "13–14.5%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": [
+          "ameixa madura",
+          "cereja preta",
+          "framboesa",
+          "amoreira",
+          "toque floral suave"
+        ],
+        "secondary": [
+          "notas de carvalho suave"
+        ],
+        "tertiary": [
+          "especiarias suaves",
+          "chocolate suave",
+          "café leve",
+          "figo seco leve"
+        ]
+      },
+      "pairing": {
+        "affinities": [
+          "carne de porco",
+          "frango assado",
+          "pratos robustos",
+          "queijo médio",
+          "cozidos"
+        ],
+        "conflicts": [
+          "peixe delicado",
+          "pratos leves"
+        ],
+        "notes": "Essencial nos blends de Porto pela suavidade dos taninos e concentração alcoólica em altitude. Sozinha produz tintos acessíveis, redondos e frutados com acidez moderada. Terceira casta mais plantada do Douro"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    },
+    {
+      "id": "rufete",
+      "name": "Rufete",
+      "type": "red",
+      "category": "monovarietal",
+      "region": "Beira Interior, Dão",
+      "doc": "Beira Interior / Dão",
+      "varieties": [
+        "Rufete"
+      ],
+      "aliases": [
+        "Tinta Pinheira"
+      ],
+      "structure": {
+        "acidity": 8,
+        "tannins": 5,
+        "body": "light",
+        "alcohol": "12–13%",
+        "sweetness": "dry",
+        "finish": "medium"
+      },
+      "aromas": {
+        "primary": [
+          "frutos vermelhos silvestres",
+          "amora silvestre",
+          "cereja",
+          "notas mentoladas (quando não maduro)"
+        ],
+        "secondary": [],
+        "tertiary": [
+          "especiarias suaves",
+          "notas de envelhecimento elegante"
+        ]
+      },
+      "pairing": {
+        "affinities": [
+          "frango",
+          "aves assadas",
+          "cogumelos",
+          "vitela",
+          "queijo médio",
+          "pratos leves de carne"
+        ],
+        "conflicts": [
+          "carne vermelha muito intensa",
+          "pratos gordurosos pesados"
+        ],
+        "notes": "Estilo elegante e rústico comparado ao Pinot Noir — acidez alta, taninos sedosos. Produz bons vinhos apenas em microclimas específicos (ex: Pinhel) e anos favoráveis; em anos difíceis perde maturação e ganha notas mentoladas. Boa longevidade em garrafa quando bem vinificado. Uso crescente como monovarietal de autor"
+      },
+      "source": "Claude + web"
+    },
+    {
+      "id": "ramisco",
+      "name": "Ramisco",
+      "type": "red",
+      "category": "monovarietal",
+      "region": "Colares",
+      "doc": "Colares",
+      "varieties": [
+        "Ramisco"
+      ],
+      "structure": {
+        "acidity": 9,
+        "tannins": 8,
+        "body": "medium",
+        "alcohol": "11–12%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": [
+          "violeta",
+          "cereja",
+          "amora",
+          "notas herbáceas",
+          "carácter balsâmico"
+        ],
+        "secondary": [
+          "notas salinas (influência atlântica)"
+        ],
+        "tertiary": [
+          "couro",
+          "tabaco",
+          "especiarias finas",
+          "notas perfumadas complexas (envelhecido)"
+        ]
+      },
+      "pairing": {
+        "affinities": [
+          "carnes grelhadas",
+          "caça",
+          "cogumelos",
+          "queijo curado intenso",
+          "cordeiro"
+        ],
+        "conflicts": [
+          "peixe delicado",
+          "pratos leves",
+          "mariscos"
+        ],
+        "notes": "Uma das raridades absolutas do vinho português. Colares DOC (1903) — vinhas pé-franco em areia, imunes à filoxera. Comparado ao Nebbiolo ou Carmenère antigo pelo binómio acidez alta + taninos amplos. Carácter salino único pela proximidade ao Atlântico. Álcool baixo (~11%). Longevidade excecional — garrafas antigas de 50+ anos ainda vivas. Produção extremamente reduzida"
+      },
+      "source": "Claude + web"
+    },
+    {
+      "id": "tinto-cao",
+      "name": "Tinto Cão",
+      "type": "red",
+      "category": "monovarietal",
+      "region": "Douro, Dão",
+      "doc": "Douro / Dão",
+      "varieties": [
+        "Tinto Cão"
+      ],
+      "structure": {
+        "acidity": 8,
+        "tannins": 7,
+        "body": "medium",
+        "alcohol": "13–14%",
+        "sweetness": "dry",
+        "finish": "long"
+      },
+      "aromas": {
+        "primary": [
+          "cereja vermelha",
+          "frutos vermelhos frescos",
+          "violeta",
+          "flores brancas",
+          "tomilho",
+          "lavanda"
+        ],
+        "secondary": [
+          "mineral",
+          "ervas secas",
+          "grafite suave"
+        ],
+        "tertiary": [
+          "especiarias finas",
+          "terra húmida",
+          "notas de envelhecimento elegante"
+        ]
+      },
+      "pairing": {
+        "affinities": [
+          "aves assadas",
+          "vitela",
+          "cogumelos",
+          "queijo semiduro",
+          "cordeiro leve",
+          "pratos com ervas aromáticas"
+        ],
+        "conflicts": [
+          "peixe delicado",
+          "pratos muito leves"
+        ],
+        "notes": "Casta histórica do Douro desde o séc. XVIII — redescoberta nos anos 80 como nobre. Acidez alta mantém-se mesmo em climas quentes — raro e valioso. Perfil aromático distintivo: cereja, tomilho e lavanda criam um vinho elegante e tenso. Raramente monovarietal mas essencial para longevidade nos blends de Porto e Douro"
+      },
+      "source": "AromasCastas.pdf + Módulo 5 + Claude + web"
+    }
+  ]
+}

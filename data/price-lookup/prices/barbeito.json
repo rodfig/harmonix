@@ -1,0 +1,208 @@
+{
+  "producer": "Barbeito",
+  "generated_at": "2026-03-01T11:20:27.351570",
+  "found_count": 0,
+  "not_found_count": 5,
+  "wines": [
+    {
+      "wine_id": "barbeito-sercial-10-years",
+      "producer": "Barbeito",
+      "name": "Sercial 10 Years Old",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "Vinha": {
+          "retail_price": 45.29,
+          "name_found": "Vinho da Madeira Barbeito 10 Anos Verdelho",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.vinha.pt/vinho/vinho-da-madeira-barbeito-10-anos-cercial-75cl-madeira/"
+        }
+      },
+      "best_retail": 45.29,
+      "best_source": "Vinha",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "barbeito-verdelho-10-years",
+      "producer": "Barbeito",
+      "name": "Verdelho 10 Years Old",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Barbeito Verdelho Branco",
+          "confidence": "no_match",
+          "score": 0.411,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Barbeito Vinhas do Lanço Verdelho branco",
+          "confidence": "no_match",
+          "score": 0.275,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Tiago Cabaço Verdelho 75 Cl",
+          "confidence": "no_match",
+          "score": 0.398,
+          "url": null
+        },
+        "Vinha": {
+          "retail_price": 45.29,
+          "name_found": "Vinho da Madeira Barbeito 10 Anos Verdelho",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.vinha.pt/vinho/vinho-da-madeira-barbeito-10-anos-verdelho-75cl-madeira/"
+        }
+      },
+      "best_retail": 45.29,
+      "best_source": "Vinha",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "barbeito-boal-10-years",
+      "producer": "Barbeito",
+      "name": "Boal 10 Years Old",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "Vinha": {
+          "retail_price": 45.29,
+          "name_found": "Vinho da Madeira Barbeito 10 Anos Boal",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.vinha.pt/vinho/vinho-da-madeira-barbeito-10-anos-boal-75cl-madeira/"
+        }
+      },
+      "best_retail": 45.29,
+      "best_source": "Vinha",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "barbeito-malvasia-10-years",
+      "producer": "Barbeito",
+      "name": "Malvasia 10 Years Old",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": 44.95,
+          "name_found": "Madeira Barbeito Malvasia 10 anos",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.garrafeiranacional.com/madeira-barbeito-malvasia-10-anos.html"
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Murganheira Malvasia Fina Bruto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.313,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": "GarrafeiraNacional",
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        }
+      },
+      "best_retail": 44.95,
+      "best_source": "GarrafeiraNacional",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "barbeito-island-dry-5-years",
+      "producer": "Barbeito",
+      "name": "Island Dry 5 Years",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Rosé Mateus Dry 75 Cl",
+          "confidence": "no_match",
+          "score": 0.363,
+          "url": null
+        },
+        "Privatecellar": {
+          "retail_price": 14.95,
+          "name_found": null,
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://privateceller.es/pt/vinho-doce-vinho/4537665-vinho-doce-barbeito-island-rich-sweet-doce-reserva-ig-madeira-madeira-portugal-tinta-5-anos-75-cl.htm"
+        }
+      },
+      "best_retail": 14.95,
+      "best_source": "Privatecellar",
+      "restaurant_estimates": null,
+      "status": "found"
+    }
+  ]
+}

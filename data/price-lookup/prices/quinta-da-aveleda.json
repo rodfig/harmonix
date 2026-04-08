@@ -1,0 +1,223 @@
+{
+  "producer": "Quinta da Aveleda",
+  "generated_at": "2026-03-01T11:20:27.379833",
+  "found_count": 5,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "aveleda-manoel-pedro-guedes-2022",
+      "producer": "Quinta da Aveleda",
+      "name": "Aveleda Manoel Pedro Guedes",
+      "vintage": 2022,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 64.9,
+          "name_found": "Aveleda Manoel Pedro Guedes Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/aveleda-manoel-pedro-guedes-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 69.05,
+          "name_found": "Aveleda Manoel Pedro Guedes Reserva Branco 2018",
+          "confidence": "high",
+          "score": 0.961,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/14318-aveleda-manoel-pedro-guedes-white-2018-5601096020559.html"
+        }
+      },
+      "best_retail": 64.9,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 97.5,
+        "2.0x": 130.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "aveleda-parcela-roseiral-2023",
+      "producer": "Quinta da Aveleda",
+      "name": "Aveleda Parcela do Roseiral",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 20.97,
+          "name_found": "Aveleda Parcela Roseiral Branco",
+          "confidence": "high",
+          "score": 0.936,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/aveleda-parcela-roseiral-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2020 Quinta do Covão tinto",
+          "confidence": "no_match",
+          "score": 0.165,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Quinta Do Rol Sauvignon Blanc 75 Cl",
+          "confidence": "no_match",
+          "score": 0.163,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 25.05,
+          "name_found": "Aveleda Parcela do Roseiral Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/14343-aveleda-parcela-do-roseiral-white-2018-5601096020542.html"
+        }
+      },
+      "best_retail": 20.97,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 31.5,
+        "2.0x": 42.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "aveleda-parcela-convento-2023",
+      "producer": "Quinta da Aveleda",
+      "name": "Aveleda Parcela do Convento",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 20.97,
+          "name_found": "Aveleda Parcela Convento Branco",
+          "confidence": "high",
+          "score": 0.934,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/aveleda-parcela-convento-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2020 Quinta do Covão tinto",
+          "confidence": "no_match",
+          "score": 0.17,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Quinta Do Rol Sauvignon Blanc 75 Cl",
+          "confidence": "no_match",
+          "score": 0.171,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 25.05,
+          "name_found": "Aveleda Parcela do Convento Branco 2024",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/14344-aveleda-parcela-do-convento-white-2018-5601096020535.html"
+        }
+      },
+      "best_retail": 20.97,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 31.5,
+        "2.0x": 42.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "aveleda-solos-xisto-2023",
+      "producer": "Quinta da Aveleda",
+      "name": "Aveleda Solos de Xisto",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 9.99,
+          "name_found": "Aveleda Solos de Xisto Alvarinho Branco",
+          "confidence": "high",
+          "score": 0.904,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/aveleda-solos-de-xisto-alvarinho-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Quinta de Saes Reserva branco",
+          "confidence": "no_match",
+          "score": 0.157,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Duque De Viseu 75 Cl",
+          "confidence": "no_match",
+          "score": 0.194,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 9.25,
+          "name_found": "Aveleda Solos de Xisto Branco 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/14342-aveleda-solos-de-xisto-white-2018-5601096020528.html"
+        }
+      },
+      "best_retail": 9.25,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 14.0,
+        "2.0x": 18.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "aveleda-loureiro-2024",
+      "producer": "Quinta da Aveleda",
+      "name": "Aveleda Loureiro",
+      "vintage": 2024,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Quinta do Ameal Loureiro Branco",
+          "confidence": "low",
+          "score": 0.643,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Quintas de Melgaço QM Alvarinho & Loureiro branco",
+          "confidence": "no_match",
+          "score": 0.389,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 4.05,
+          "name_found": "Aveleda Loureiro Branco 2024",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/vinho-verde/8705-aveleda-loureiro-white-2018-5601096260313.html"
+        }
+      },
+      "best_retail": 4.05,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 6.5,
+        "2.0x": 8.5
+      },
+      "status": "found"
+    }
+  ]
+}

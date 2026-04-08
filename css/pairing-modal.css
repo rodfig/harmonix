@@ -1,0 +1,291 @@
+/**
+ * WINE PAIRING MODAL STYLES
+ * ==========================
+ *
+ * STATUS: TEMPLATE - Not integrated yet
+ *
+ * These styles are for the wine pairing popup modal.
+ * Add to index.html and mobile.html when implementing the feature.
+ *
+ * See PAIRING-PLAN.md for complete documentation.
+ */
+
+/* ============================================================================
+   WINE GLASS ICON (clickable)
+   ============================================================================ */
+
+.wine-link {
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: all 0.25s ease;
+    display: inline-block;
+    user-select: none;
+}
+
+.wine-link:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+/* ============================================================================
+   PAIRING MODAL - Overlay
+   ============================================================================ */
+
+.pairing-modal {
+    display: none;
+    position: fixed;
+    z-index: 10001;  /* Higher than image modal (10000) */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.pairing-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============================================================================
+   PAIRING MODAL - Content Container
+   ============================================================================ */
+
+.pairing-modal-content {
+    background: linear-gradient(180deg, #fdfbf7 0%, #f5f0e8 50%, #fdfbf7 100%);
+    margin: auto;
+    padding: 40px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 55vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    border: 1px solid #e8dcc8;
+}
+
+.pairing-modal-content h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    color: #2c1810;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* ============================================================================
+   PAIRING MODAL - Close Button
+   ============================================================================ */
+
+.pairing-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #2c1810;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    line-height: 1;
+}
+
+.pairing-modal-close:hover,
+.pairing-modal-close:focus {
+    color: #c44536;
+}
+
+/* ============================================================================
+   PAIRING CARDS - Container
+   ============================================================================ */
+
+.pairings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ============================================================================
+   PAIRING CARD - Individual Wine
+   ============================================================================ */
+
+.pairing-card {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-left: 4px solid #c44536;
+    border-radius: 4px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pairing-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Wine Score */
+.wine-score {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.score-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    color: #8b4513;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Wine Name */
+.wine-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: #2c1810;
+    margin: 0 0 6px 0;
+    font-weight: 600;
+}
+
+/* Wine Producer */
+.wine-meta {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    color: #6a5d4f;
+    margin: 0 0 4px 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Wine Type · Region · Price */
+.wine-details {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: #8b4513;
+    margin: 0 0 12px 0;
+    font-weight: 500;
+}
+
+/* Wine Price (legacy alias — kept for compatibility) */
+.wine-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: #8b4513;
+    margin: 0 0 12px 0;
+    font-weight: 500;
+}
+
+/* Pairing Reason */
+.pairing-reason {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+
+/* ============================================================================
+   NO PAIRINGS MESSAGE
+   ============================================================================ */
+
+.no-pairings {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: #6a5d4f;
+    font-style: italic;
+    padding: 40px 20px;
+}
+
+/* ============================================================================
+   MOBILE RESPONSIVE
+   ============================================================================ */
+
+@media (max-width: 768px) {
+    .pairing-modal {
+        padding: 10px;
+    }
+
+    .pairing-modal-content {
+        width: 95%;
+        padding: 30px 20px;
+        margin: 20px auto;
+    }
+
+    .pairing-modal-content h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pairing-modal-close {
+        top: 10px;
+        right: 15px;
+        font-size: 30px;
+    }
+
+    .pairing-card {
+        padding: 15px;
+    }
+
+    .wine-name {
+        font-size: 18px;
+    }
+
+    .wine-price {
+        font-size: 14px;
+    }
+
+    .pairing-reason {
+        font-size: 14px;
+    }
+
+    .wine-score {
+        font-size: 16px;
+    }
+
+    .score-label {
+        font-size: 13px;
+    }
+}
+
+/* ============================================================================
+   PRINT STYLES (hide pairing modal when printing)
+   ============================================================================ */
+
+@media print {
+    .pairing-modal {
+        display: none !important;
+    }
+}
+
+/* ============================================================================
+   ACCESSIBILITY
+   ============================================================================ */
+
+/* Focus styles for keyboard navigation */
+.wine-link:focus {
+    outline: 2px solid #c44536;
+    outline-offset: 2px;
+}
+
+.pairing-modal-close:focus {
+    outline: 2px solid #c44536;
+    outline-offset: 2px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    .wine-link,
+    .pairing-card,
+    .pairing-modal-close {
+        transition: none;
+    }
+}

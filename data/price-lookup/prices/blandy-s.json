@@ -1,0 +1,168 @@
+{
+  "producer": "Blandy’s",
+  "generated_at": "2026-03-01T11:20:27.350678",
+  "found_count": 0,
+  "not_found_count": 4,
+  "wines": [
+    {
+      "wine_id": "blandys-sercial-10-years",
+      "producer": "Blandy’s",
+      "name": "Sercial 10 Years Old",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Horácio Simões Old School Branco",
+          "confidence": "no_match",
+          "score": 0.375,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Madame Pió Sercial Reserva branco",
+          "confidence": "no_match",
+          "score": 0.322,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "",
+          "confidence": "no_match",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 44.85,
+          "name_found": "Blandys 10 years Sercial Madeira",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/en/brand/97_blandy-s"
+        }
+      },
+      "best_retail": 44.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "blandys-verdelho-10-years",
+      "producer": "Blandy’s",
+      "name": "Verdelho 10 Years Old",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Bacalhoa Verdelho Branco",
+          "confidence": "no_match",
+          "score": 0.411,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Bacalhôa Verdelho branco",
+          "confidence": "no_match",
+          "score": 0.417,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Branco Tiago Cabaço Verdelho 75 Cl",
+          "confidence": "no_match",
+          "score": 0.398,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 44.85,
+          "name_found": null,
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/en/medium-dry/1018-blandys-10-years-verdelho-madeira-5600455022098.html"
+        }
+      },
+      "best_retail": 44.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "blandys-bual-10-years",
+      "producer": "Blandy’s",
+      "name": "Bual 10 Years Old",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Horácio Simões Old School Branco",
+          "confidence": "no_match",
+          "score": 0.375,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": null,
+          "confidence": "no_result",
+          "score": 0.0,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 44.85,
+          "name_found": null,
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/en/medium-rich/1015-blandys-10-years-boal-madeira-5600455022104.html"
+        }
+      },
+      "best_retail": 44.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "blandys-malvasia-10-years",
+      "producer": "Blandy’s",
+      "name": "Malvasia 10 Years Old",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Horácio Simões Old School Branco",
+          "confidence": "no_match",
+          "score": 0.397,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2017 Fundação Oriente Colares Malvasia branco",
+          "confidence": "no_match",
+          "score": 0.36,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": 44.85,
+          "name_found": "Espumante Murganheira Malvasia Fina Bruto 75 Cl",
+          "confidence": "no_match",
+          "score": 0.313,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 44.85,
+          "name_found": null,
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/en/full-rich/1016-blandys-10-years-rich-malmsey-madeira-5600455022111.html"
+        }
+      },
+      "best_retail": 44.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    }
+  ]
+}

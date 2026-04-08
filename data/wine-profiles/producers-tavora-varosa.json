@@ -1,0 +1,793 @@
+{
+  "_meta": {
+    "region": "Távora-Varosa",
+    "description": "Producer wine profiles for DOC Távora-Varosa — Portugal's oldest sparkling wine appellation",
+    "schema_version": "2.0",
+    "note": "All wines are espumante by método tradicional (méthode champenhoise). Most profiles lack full analytical data (no pH/acidity_gl). Structure fields are inferred from dosage classification and lees aging. Pairing is derived algorithmically from structure fields via pairing-rules.json.",
+    "fields_required": [
+      "id",
+      "name",
+      "doc",
+      "type",
+      "varieties",
+      "alcohol",
+      "structure",
+      "aromas",
+      "pairing"
+    ],
+    "fields_optional": [
+      "vintage",
+      "acidity_gl",
+      "ph",
+      "winemaking",
+      "notes"
+    ]
+  },
+  "producers": [
+    {
+      "producer": "Caves Raposeira",
+      "region": "Távora-Varosa",
+      "producer_notes": "Produtor histórico de DOC Távora-Varosa. Toda a gama usa método tradicional champanhês com segunda fermentação em garrafa. Distingue-se pelos longos períodos de estágio sobre borras — Velha Reserva com mínimo 7 anos. Gama diversificada: brancos, rosé, blanc de blancs e blanc de noirs.",
+      "wines": [
+        {
+          "id": "raposeira-velha-reserva-bruto",
+          "name": "Raposeira Velha Reserva Bruto",
+          "vintage": null,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Chardonnay",
+            "Cerceal"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional, mínimo 7 anos sobre borras em garrafa",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos maduros"
+            ],
+            "secondary": [
+              "brioche",
+              "tostado"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "mariscos",
+              "peixe grelhado",
+              "frango",
+              "queijo curado",
+              "aperitivo"
+            ],
+            "notes": "Topo de gama Raposeira: 7yr sobre borras. Chard+Cerceal com aromas terciários já desenvolvidos. Versatilidade ampla — do aperitivo a pratos de peso médio."
+          }
+        },
+        {
+          "id": "raposeira-super-reserva-bruto",
+          "name": "Raposeira Super Reserva Bruto",
+          "vintage": null,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Malvasia Fina",
+            "Cerceal"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional, mínimo 5 anos sobre borras em garrafa",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "fruta madura",
+              "frutado intenso"
+            ],
+            "secondary": [
+              "pão",
+              "leveduras"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne assada",
+              "frango",
+              "peixe",
+              "mariscos",
+              "queijo semi-curado"
+            ],
+            "notes": "MF+Cerceal, 5yr sobre borras. Aroma frutado harmonioso. Mais versátil que o habitual espumante — adequado para carnes brancas assadas."
+          }
+        },
+        {
+          "id": "raposeira-reserva-bruto",
+          "name": "Raposeira Reserva Bruto",
+          "vintage": null,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Malvasia Fina",
+            "Cerceal",
+            "Gouveio Real"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional, mínimo 3 anos sobre borras em garrafa",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "frutado fresco",
+              "delicado"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivo",
+              "mariscos",
+              "peixe leve",
+              "sushi",
+              "queijo fresco"
+            ],
+            "notes": "Entrada de gama Raposeira: 3yr sobre borras. Aroma frutado fresco e delicado — aperitivo clássico ou para pratos leves."
+          }
+        },
+        {
+          "id": "raposeira-peerless-bruto",
+          "name": "Raposeira Gourmet Peerless Bruto",
+          "vintage": null,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Pinot Blanc",
+            "Viosinho"
+          ],
+          "alcohol": 13.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional, mínimo 4 anos sobre borras em garrafa",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutado fresco",
+              "delicado"
+            ],
+            "secondary": [
+              "mineralidade"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe",
+              "marisco",
+              "sashimi",
+              "aperitivo",
+              "tofu"
+            ],
+            "notes": "PB+Viosinho: bolha muito fina e persistente, boa acidez, equilibrado e fino. Blend incomum — ideal para peixe e marisco delicado, incluindo sashimi."
+          }
+        },
+        {
+          "id": "raposeira-rose-bruto",
+          "name": "Raposeira Gourmet Super Reserva Rosé Bruto",
+          "vintage": null,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Touriga Franca",
+            "Tinta Roriz"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional, mínimo 5 anos sobre borras em garrafa",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutado intenso",
+              "frutos vermelhos"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carnes brancas",
+              "massas",
+              "mariscos grelhados",
+              "salmão"
+            ],
+            "notes": "TF+TR rosé, 5yr sobre borras. Aroma frutado intenso com excelente final de boca. Para pratos com alguma gordura ou textura."
+          }
+        },
+        {
+          "id": "raposeira-blanc-de-noirs-bruto",
+          "name": "Raposeira Gourmet Blanc de Noirs Bruto",
+          "vintage": null,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Touriga Franca"
+          ],
+          "alcohol": 13.0,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional, mínimo 4 anos sobre borras em garrafa",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutado intenso",
+              "amora"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carnes assadas",
+              "leitão",
+              "cabrito",
+              "enchidos",
+              "queijo semi-curado"
+            ],
+            "notes": "100% TF blanc de noirs: paladar frutado muito persistente. Espumante de carácter — cor palha mas alma de tinto. Para carnes assadas e pratos tradicionais."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Terras do Demo",
+      "region": "Távora-Varosa",
+      "producer_notes": "DOC Távora-Varosa. Gama de espumantes diversificada com monovarietais de castas pouco comuns no espumante nacional — Verdelho, Malvasia Fina, Pinot Noir, Touriga Franca. Inclui espumante tinto (Tinto Bruto 100% TF) e um espumante rosé (Olho de Perdiz). Dados analíticos parciais — acidez não fornecida, assume-se média-alta para todos.",
+      "wines": [
+        {
+          "id": "demo-pata-lebre-branco-2018",
+          "name": "Terras do Demo Pata de Lebre Branco",
+          "vintage": 2018,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Malvasia Fina",
+            "Gouveio"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "flores de malvasia",
+              "frutado"
+            ],
+            "secondary": [
+              "verdelho"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivos",
+              "peixes",
+              "marisco",
+              "aves",
+              "carnes brancas"
+            ],
+            "notes": "MF+Gouveio: flores de malvasia com toque de verdelho. Fresco, frutado, final prolongado — versátil para toda a refeição."
+          }
+        },
+        {
+          "id": "demo-pinot-noir-2021",
+          "name": "Terras do Demo Pinot Noir",
+          "vintage": 2021,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Pinot Noir"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional (blanc de noirs)",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "notas cítricas"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivos",
+              "peixes",
+              "mariscos",
+              "sushi"
+            ],
+            "notes": "PN blanc de noirs: cor amarela claro, bolha fina, acidez média equilibrada e untuosidade agradável. Não muito expansivo — estilo elegante e discreto."
+          }
+        },
+        {
+          "id": "demo-malvasia-fina-2022",
+          "name": "Terras do Demo Malvasia Fina",
+          "vintage": 2022,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Malvasia Fina"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional, evolução lenta com arredondamento do frutado a partir dos 12 meses",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "frutado"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "mariscos",
+              "ostras",
+              "peixes",
+              "aves",
+              "carnes brancas"
+            ],
+            "notes": "MF monovarietal: espumante premiado. Bolha fina e persistente, aromas complexos na fase de envelhecimento. Para mariscos e ostras."
+          }
+        },
+        {
+          "id": "demo-olho-perdiz-rose-2022",
+          "name": "Terras do Demo Olho de Perdiz Rosé",
+          "vintage": 2022,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional (rosé)",
+          "structure": {
+            "acidity": 6,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "morango fresco",
+              "floral"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "massas",
+              "mariscos grelhados",
+              "carnes brancas",
+              "sushi"
+            ],
+            "notes": "TN rosé: acidez viva média, corpo leve. Fruta vermelha fresca — estilo leve e agradável para refeições descontraídas."
+          }
+        },
+        {
+          "id": "demo-tinto-bruto-2022",
+          "name": "Terras do Demo Tinto Bruto",
+          "vintage": 2022,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Touriga Franca"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional (espumante tinto)",
+          "structure": {
+            "acidity": 7,
+            "tannins": 4,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "rosa",
+              "amora"
+            ],
+            "secondary": [
+              "leveduras",
+              "pão torrado"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "leitão",
+              "cabrito",
+              "grelhados",
+              "pratos tradicionais portugueses"
+            ],
+            "notes": "100% TF espumante tinto: tons violáceos, bolha fina. Aroma floral e frutado com notas de leveduras. Raridade — espumante tinto para carnes assadas e pratos tradicionais."
+          }
+        },
+        {
+          "id": "demo-verdelho-2021",
+          "name": "Terras do Demo Verdelho",
+          "vintage": 2021,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Verdelho"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional, 9mo 2ª fermentação em garrafa",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutos tropicais",
+              "cítrico"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "marisco",
+              "aves",
+              "carnes brancas",
+              "sushi",
+              "tofu"
+            ],
+            "notes": "Verdelho monovarietal: acidez vibrante, muito fresco e intenso. Sabor singular com frutos tropicais. Para mariscos e aves — acidez alta para culinária japonesa delicada."
+          }
+        },
+        {
+          "id": "demo-fraga-da-pena-2022",
+          "name": "Terras do Demo Fraga da Pena",
+          "vintage": 2022,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Malvasia Fina",
+            "Verdelho",
+            "Folgosão"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional, evolução lenta a baixas temperaturas",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "medium"
+          },
+          "aromas": {
+            "primary": [
+              "floral",
+              "frutado"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivo",
+              "mariscos",
+              "peixe",
+              "queijo fresco"
+            ],
+            "notes": "MF+Verdelho+Folgosão: blend de 3 castas regionais com carácter delicioso. Toque floral e frescura excecional. Adequado para qualquer ocasião."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Casa de Vinhago",
+      "region": "Távora-Varosa",
+      "producer_notes": "DOC Távora-Varosa. Solo granítico a 500m de altitude. Espumante produzido com castas autóctones portuguesas — Cerceal, Arinto, Fernão Pires e Rabo-de-ovelha. Dados analíticos completos disponíveis para o Reserva Bruto.",
+      "wines": [
+        {
+          "id": "vinhago-reserva-bruto-2021",
+          "name": "Casa de Vinhago Reserva Bruto",
+          "vintage": 2021,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Cerceal",
+            "Arinto",
+            "Fernão Pires",
+            "Rabo-de-ovelha"
+          ],
+          "alcohol": 12.5,
+          "acidity_gl": 7.16,
+          "ph": 3.09,
+          "winemaking": "Prensagem suave, fermentação em inox 14-16ºC, 2ª fermentação em garrafa 18 meses",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "maçã",
+              "cítrico"
+            ],
+            "secondary": [
+              "feno"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "sashimi",
+              "sushi",
+              "mariscos",
+              "peixe leve",
+              "tempura",
+              "tofu"
+            ],
+            "notes": "pH 3.09 + 7.16 g/L: acidez muito alta (8/10) — ideal para culinária japonesa delicada. 18mo sobre borras. Bolha fina e persistente. Blend de 4 castas autóctones do Távora-Varosa."
+          }
+        }
+      ]
+    },
+    {
+      "producer": "Família Hehn",
+      "region": "Távora-Varosa",
+      "producer_notes": "DOC Távora-Varosa. Vinhas a 700m de altitude, solos de xisto com quartzo, textura franco-arenosa. Espumantes de longa permanência sobre borras. Inclui Blanc de Noirs de Pinot Noir — raro em Portugal.",
+      "wines": [
+        {
+          "id": "hehn-bruto-2021",
+          "name": "Família Hehn Bruto",
+          "vintage": 2021,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Cercial",
+            "Malvasia Fina"
+          ],
+          "alcohol": 11.5,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional, estágio em inox ~18mo, 2ª fermentação em garrafa >24 meses",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "pêssego",
+              "damasco",
+              "cítrico"
+            ],
+            "secondary": [
+              "brioche suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "aperitivo",
+              "mariscos",
+              "sushi",
+              "peixe leve",
+              "tempura",
+              "queijo fresco"
+            ],
+            "notes": "Cercial+MF, >24mo sobre borras: muito fresco e crocante, mousse suave, frutado e elegante. Guarda 2025-2031. Versatilidade total — do aperitivo à culinária japonesa leve."
+          }
+        },
+        {
+          "id": "hehn-reserva-bruto-2016",
+          "name": "Família Hehn Reserva Bruto",
+          "vintage": 2016,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Cercial",
+            "Malvasia Fina",
+            "Touriga Nacional"
+          ],
+          "alcohol": 12.0,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional, estágio em inox ~3 anos, 2ª fermentação em garrafa >36 meses",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "frutado complexo"
+            ],
+            "secondary": [
+              "brioche",
+              "leveduras"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "carne assada",
+              "frango",
+              "peixe grelhado",
+              "queijo semi-curado"
+            ],
+            "notes": "Reserva com TN incluído: >36mo sobre borras. Guarda 2023-2030. Mais estrutura que o Bruto — para pratos de peso médio."
+          }
+        },
+        {
+          "id": "hehn-blanc-de-noirs-2021",
+          "name": "Família Hehn Blanc de Noirs Bruto Natural",
+          "vintage": 2021,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "varieties": [
+            "Pinot Noir"
+          ],
+          "alcohol": 11.79,
+          "acidity_gl": 6.96,
+          "ph": 3.18,
+          "winemaking": "Prensagem suave (1ª fração do mosto), fermentação em inox 16-20ºC, 11mo inox, 31mo garrafa sobre borras",
+          "structure": {
+            "acidity": 8,
+            "tannins": null,
+            "body": "light",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "groselha",
+              "amora"
+            ],
+            "secondary": [],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo",
+              "salmão",
+              "atum",
+              "mariscos",
+              "queijo curado"
+            ],
+            "notes": "PN blanc de noirs, Bruto Natural (<3g/L açúcar residual). pH 3.18 + 6.96 g/L: acidez alta e seca. 31mo sobre borras. Guarda 2025-2031. Seco, acidez vincada e vibrante — para peixe com alguma gordura."
+          }
+        },
+        {
+          "id": "hehn-rose-bruto-2016",
+          "name": "Família Hehn Bruto Rosé",
+          "vintage": 2016,
+          "doc": "Távora-Varosa DOC",
+          "type": "sparkling",
+          "notes": "Guarda declarada 2019-2025 — consumir com brevidade",
+          "varieties": [
+            "Touriga Nacional"
+          ],
+          "alcohol": 12.6,
+          "acidity_gl": null,
+          "ph": null,
+          "winemaking": "Método tradicional, estágio em inox ~18mo, 17mo garrafa sobre borras",
+          "structure": {
+            "acidity": 7,
+            "tannins": null,
+            "body": "medium",
+            "sweetness": "dry",
+            "finish": "long"
+          },
+          "aromas": {
+            "primary": [
+              "groselha",
+              "morango",
+              "cravo",
+              "madressilva"
+            ],
+            "secondary": [
+              "menta",
+              "fumado suave"
+            ],
+            "tertiary": []
+          },
+          "pairing": {
+            "affinities": [
+              "peixe gordo",
+              "carnes brancas",
+              "mariscos grelhados",
+              "queijo semi-curado"
+            ],
+            "notes": "TN rosé salmão: volumoso e redondo. Frutos vermelhos bem maduros com notas florais e mentol. 12.6% — mais corpo que o típico rosé espumante."
+          }
+        }
+      ]
+    }
+  ]
+}

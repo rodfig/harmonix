@@ -1,0 +1,58 @@
+{
+  "producer": "Casa de Vinhago",
+  "generated_at": "2026-03-01T11:20:27.363467",
+  "found_count": 1,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "vinhago-reserva-bruto-2021",
+      "producer": "Casa de Vinhago",
+      "name": "Casa de Vinhago Reserva Bruto",
+      "vintage": 2021,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Casa de Saima Reserva Bruto Branco",
+          "confidence": "low",
+          "score": 0.595,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Espumante Casa de Saima Reserva Bruto",
+          "confidence": "low",
+          "score": 0.588,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto Casa De Santar 75 Cl",
+          "confidence": "low",
+          "score": 0.451,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Casa de Saima Reserva Bruto Espumante 2018",
+          "confidence": "low",
+          "score": 0.565,
+          "url": null
+        },
+        "TerraDosAvos": {
+          "retail_price": 17.5,
+          "name_found": "Espumante Casa de Vinhago Reserva Extra Bruto 2020",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://terradosavos.pt/loja/espumante-casa-de-vinhago-reserva-extra-bruto-2020/"
+        }
+      },
+      "best_retail": 17.5,
+      "best_source": "TerraDosAvos",
+      "restaurant_estimates": {
+        "1.5x": 26.5,
+        "2.0x": 35.0
+      },
+      "status": "found"
+    }
+  ]
+}

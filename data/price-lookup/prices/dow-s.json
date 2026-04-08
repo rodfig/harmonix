@@ -1,0 +1,168 @@
+{
+  "producer": "Dow's",
+  "generated_at": "2026-03-01T11:20:27.355803",
+  "found_count": 4,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "dows-fine-ruby",
+      "producer": "Dow's",
+      "name": "Dow's Fine Ruby",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Dow’s Vintage 1994 Ruby",
+          "confidence": "low",
+          "score": 0.686,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Lambéria's tinto",
+          "confidence": "no_match",
+          "score": 0.239,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto S. Quinta São Sebastião 75 Cl",
+          "confidence": "no_match",
+          "score": 0.217,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 8.35,
+          "name_found": "Dows Fine Ruby Porto",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/pt/porto-ruby/1047-dows-fine-ruby-port-5010867220126.html"
+        }
+      },
+      "best_retail": 8.35,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "dows-lbv-2020",
+      "producer": "Dow's",
+      "name": "Dow's Late Bottled Vintage",
+      "vintage": 2020,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Dow’s Vintage 1994 Ruby",
+          "confidence": "low",
+          "score": 0.6,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2015 Espumante Murganheira Vintage Pinot Noir Bruto",
+          "confidence": "no_match",
+          "score": 0.246,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Murganheira Vintage 75 Cl",
+          "confidence": "no_match",
+          "score": 0.305,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 18.15,
+          "name_found": "Dows LBV Porto 2020",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/pt/porto-lbv/1052-dows-lbv-port-2012-5608309002876.html"
+        }
+      },
+      "best_retail": 18.15,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "dows-10-year-old-tawny",
+      "producer": "Dow's",
+      "name": "Dow's 10 Year Old Tawny",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Dow’s Colheita 1974 Tawny",
+          "confidence": "low",
+          "score": 0.585,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Lambéria's tinto",
+          "confidence": "no_match",
+          "score": 0.2,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto S. Quinta São Sebastião 75 Cl",
+          "confidence": "no_match",
+          "score": 0.186,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 22.15,
+          "name_found": "Dows 10 Anos Tawny Porto",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/pt/tawny-envelhecido/1040-dows-10-years-old-tawny-port-5010867200067.html"
+        }
+      },
+      "best_retail": 22.15,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    },
+    {
+      "wine_id": "dows-20-year-old-tawny",
+      "producer": "Dow's",
+      "name": "Dow's 20 Year Old Tawny",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Dow’s Colheita 1974 Tawny",
+          "confidence": "low",
+          "score": 0.585,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2023 Lambéria's tinto",
+          "confidence": "no_match",
+          "score": 0.2,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Vinho Tinto S. Quinta São Sebastião 75 Cl",
+          "confidence": "no_match",
+          "score": 0.186,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 41.85,
+          "name_found": "Dows 20 Anos Tawny Porto",
+          "confidence": "high",
+          "score": 1,
+          "url": "https://www.portugalvineyards.com/pt/tawny-envelhecido/1041-dows-20-years-old-tawny-port-5010867200036.html"
+        }
+      },
+      "best_retail": 41.85,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": null,
+      "status": "found"
+    }
+  ]
+}

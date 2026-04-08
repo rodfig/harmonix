@@ -1,0 +1,323 @@
+{
+  "producer": "Filipa Pato",
+  "generated_at": "2026-03-01T11:20:27.306026",
+  "found_count": 7,
+  "not_found_count": 0,
+  "wines": [
+    {
+      "wine_id": "filipa-pato-nossa-missao-baga-2023",
+      "producer": "Filipa Pato",
+      "name": "Filipa Pato Nossa Missão Baga",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 167.48,
+          "name_found": "Filipa Pato Nossa Missão Tinto",
+          "confidence": "high",
+          "score": 0.911,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/filipa-pato-nossa-missao-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Espumante Luís Pato Baga Bruto rosé",
+          "confidence": "no_match",
+          "score": 0.384,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Filipa Pato 3B Rose 75 Cl",
+          "confidence": "low",
+          "score": 0.455,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 189.95,
+          "name_found": "Filipa Pato Missão Tinto 2019",
+          "confidence": "high",
+          "score": 0.764,
+          "url": "https://www.portugalvineyards.com/pt/beiras/13110-filipa-pato-missao-red-2015.html"
+        }
+      },
+      "best_retail": 167.48,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 251.5,
+        "2.0x": 335.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "filipa-pato-nossa-calcario-baga-2023",
+      "producer": "Filipa Pato",
+      "name": "Filipa Pato Nossa Calcário Baga",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 28.95,
+          "name_found": "Filipa Pato Nossa Calcário Tinto",
+          "confidence": "high",
+          "score": 0.91,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/filipa-pato-nossa-calcario-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2021 Espumante Luís Pato Baga Bruto rosé",
+          "confidence": "no_match",
+          "score": 0.394,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Filipa Pato 3B Rose 75 Cl",
+          "confidence": "low",
+          "score": 0.455,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 28.75,
+          "name_found": "Filipa Pato Nossa Branco 2024",
+          "confidence": "high",
+          "score": 0.754,
+          "url": "https://www.portugalvineyards.com/pt/beiras/6287-filipa-pato-nossa-white-2018-5600816160315.html"
+        }
+      },
+      "best_retail": 28.75,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 43.5,
+        "2.0x": 57.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "filipa-pato-nossa-tola-bical-2023",
+      "producer": "Filipa Pato",
+      "name": "Filipa Pato Nossa Tola Bical",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Filipa Pato Nossa Calcário Tinto",
+          "confidence": "low",
+          "score": 0.577,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Luís Pato Vinhas Velhas branco",
+          "confidence": "no_match",
+          "score": 0.184,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Filipa Pato 3B Rose 75 Cl",
+          "confidence": "no_match",
+          "score": 0.404,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 29.95,
+          "name_found": "Filipa Pato Nossa Branco 2024",
+          "confidence": "high",
+          "score": 1.0,
+          "url": null
+        },
+        "VinhaAlvarinho": {
+          "retail_price": 32.5,
+          "name_found": "Filipa Pato Nossa Tola Bio 2023 Bairrada Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.vinhalvarinho.pt/filipa-pato-nossa-tola-bio-bairrada-branco-75cl"
+        }
+      },
+      "best_retail": 32.5,
+      "best_source": "VinhaAlvarinho",
+      "restaurant_estimates": {
+        "1.5x": 49.0,
+        "2.0x": 65.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "filipa-pato-nossa-calcario-bical-2024",
+      "producer": "Filipa Pato",
+      "name": "Filipa Pato Nossa Calcário Bical",
+      "vintage": 2024,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 28.95,
+          "name_found": "Filipa Pato Nossa Calcário Tinto",
+          "confidence": "high",
+          "score": 0.892,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/filipa-pato-nossa-calcario-tinto/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Luís Pato Vinhas Velhas branco",
+          "confidence": "no_match",
+          "score": 0.209,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Filipa Pato 3B Rose 75 Cl",
+          "confidence": "no_match",
+          "score": 0.447,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 28.75,
+          "name_found": "Filipa Pato Nossa Branco 2024",
+          "confidence": "high",
+          "score": 0.74,
+          "url": "https://www.portugalvineyards.com/pt/beiras/6287-filipa-pato-nossa-white-2018-5600816160315.html"
+        }
+      },
+      "best_retail": 28.75,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 43.5,
+        "2.0x": 57.5
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "filipa-pato-flos-castanea-2023",
+      "producer": "Filipa Pato",
+      "name": "Filipa Pato Flos Castanea",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Filipa Pato Dinamica Tinto",
+          "confidence": "low",
+          "score": 0.5,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Luís Pato Vinhas Velhas branco",
+          "confidence": "no_match",
+          "score": 0.234,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Filipa Pato 3B Rose 75 Cl",
+          "confidence": "low",
+          "score": 0.507,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 29.95,
+          "name_found": "Filipa Pato Flos Castanea Branco 2022",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/24937-filipa-pato-flos-castanea-white-2022-5600816160025.html"
+        }
+      },
+      "best_retail": 29.95,
+      "best_source": "PortugalVineyards",
+      "restaurant_estimates": {
+        "1.5x": 45.0,
+        "2.0x": 60.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "filipa-pato-nossa-solera-4ed",
+      "producer": "Filipa Pato",
+      "name": "Filipa Pato Nossa Solera",
+      "vintage": null,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": null,
+          "name_found": "Filipa Pato Nossa Calcário Tinto",
+          "confidence": "low",
+          "score": 0.584,
+          "url": null
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2022 Espumante Luís Pato Vinha Pan Bruto s/Sulfitos",
+          "confidence": "no_match",
+          "score": 0.257,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Filipa Pato 3B Rose 75 Cl",
+          "confidence": "no_match",
+          "score": 0.414,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": null,
+          "name_found": "Filipa Pato Nossa Branco 2024",
+          "confidence": "low",
+          "score": 0.635,
+          "url": null
+        },
+        "VinhaAlvarinho": {
+          "retail_price": 65.5,
+          "name_found": "Filipa Pato ESPUMANTE NOSSA SOLERA Bairrada Branco",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.vinhalvarinho.pt/filipa-pato-espumante-nossa-solera-bairrada-branco-75cl"
+        }
+      },
+      "best_retail": 65.5,
+      "best_source": "VinhaAlvarinho",
+      "restaurant_estimates": {
+        "1.5x": 98.5,
+        "2.0x": 131.0
+      },
+      "status": "found"
+    },
+    {
+      "wine_id": "filipa-pato-roleta-russa-rose-2023",
+      "producer": "Filipa Pato",
+      "name": "Filipa Pato Roleta Russa Rosé",
+      "vintage": 2023,
+      "prices": {
+        "CaveLusa": {
+          "retail_price": 19.15,
+          "name_found": "Filipa Pato Roleta Russa Branco",
+          "confidence": "high",
+          "score": 0.935,
+          "url": "https://www.cavelusa.pt/loja/vinho/portugueses/filipa-pato-roleta-russa-branco/"
+        },
+        "GarrafeiraNacional": {
+          "retail_price": null,
+          "name_found": " 2024 Luís Pato Vinhas Velhas branco",
+          "confidence": "no_match",
+          "score": 0.217,
+          "url": null
+        },
+        "GarrafeiraSoares": {
+          "retail_price": null,
+          "name_found": "Espumante Filipa Pato 3B Rose 75 Cl",
+          "confidence": "low",
+          "score": 0.478,
+          "url": null
+        },
+        "PortugalVineyards": {
+          "retail_price": 23.15,
+          "name_found": "Filipa Pato Roleta Russa Rosé 2023",
+          "confidence": "high",
+          "score": 1.0,
+          "url": "https://www.portugalvineyards.com/pt/bairrada/25078-filipa-pato-roleta-russa-rose-2023.html"
+        }
+      },
+      "best_retail": 19.15,
+      "best_source": "CaveLusa",
+      "restaurant_estimates": {
+        "1.5x": 29.0,
+        "2.0x": 38.5
+      },
+      "status": "found"
+    }
+  ]
+}

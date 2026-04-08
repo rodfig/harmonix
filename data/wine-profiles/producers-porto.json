@@ -1,0 +1,971 @@
+{
+  "_meta": {
+    "region": "Porto",
+    "description": "Producer wine profiles for Porto DOC (fortified system)",
+    "schema_version": "2.0",
+    "note": "Producer-centric format. Pairing is derived algorithmically from structure fields via pairing-rules.json. food_tags are NOT stored on wines. Cooking method and dish complements are as important as the main ingredient — see pairing_principles in pairing-rules.json.",
+    "fields_required": [
+      "id",
+      "name",
+      "doc",
+      "type",
+      "varieties",
+      "alcohol",
+      "structure",
+      "aromas",
+      "pairing"
+    ],
+    "fields_optional": [
+      "vintage",
+      "acidity_gl",
+      "ph",
+      "winemaking",
+      "notes",
+      "quinta"
+    ],
+    "fields_producer_optional": [
+      "quintas"
+    ]
+  },
+  "producers": [
+	{
+	  "producer": "Graham's",
+	  "region": "Porto DOC – Vila Nova de Gaia",
+	  "quintas": [
+		"Quinta dos Malvedos",
+		"Quinta do Tua",
+		"Quinta da Vila Velha",
+		"Quinta do Vale de Malhadas"
+	  ],
+	  "producer_notes": "Casa histórica fundada em 1820 e hoje integrada no grupo Symington. Estilo clássico caracterizado por textura rica, fruta negra madura e integração equilibrada da doçura com estrutura alcoólica. Referência especialmente forte nos estilos Ruby e Tawny envelhecidos.",
+	  "wines": [
+
+		{
+		  "id": "grahams-fine-ruby",
+		  "name": "Graham's Fine Ruby",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": ["Field Blend (castas tradicionais do Douro)"],
+		  "alcohol": 19.0,
+		  "acidity_gl": 4.15,
+		  "ph": null,
+		  "winemaking": "Estágio curto em grandes balseiros para preservar caráter frutado.",
+		  "notes": "Perfil rubi intenso com fruta vermelha e preta madura e final equilibrado.",
+		  "structure": {
+			"acidity": 4,
+			"tannins": 5,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["cereja preta", "frutos vermelhos", "fruta preta"],
+			"secondary": [],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["chocolate", "queijos curados", "sobremesas intensas"],
+			"notes": "Ruby clássico focado na fruta; excelente com chocolate negro."
+		  }
+		},
+
+		{
+		  "id": "grahams-six-grapes-reserve-ruby",
+		  "name": "Six Grapes Reserve Ruby",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Touriga Franca",
+			"Touriga Nacional",
+			"Tinta Roriz",
+			"Tinta Barroca"
+		  ],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.5,
+		  "ph": null,
+		  "winemaking": "1–2 anos em madeira usada antes do lote final.",
+		  "notes": "Perfil concentrado com ameixa madura, cereja e notas de alcaçuz.",
+		  "structure": {
+			"acidity": 4,
+			"tannins": 6,
+			"body": "full",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["ameixa", "cereja"],
+			"secondary": ["alcaçuz"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["chocolate negro", "sobremesas ricas", "queijos azuis"],
+			"notes": "Reserva ruby com maior densidade e intensidade aromática."
+		  }
+		},
+
+		{
+		  "id": "grahams-lbv-quinta-dos-malvedos-2018",
+		  "name": "Late Bottled Vintage Quinta dos Malvedos",
+		  "vintage": 2018,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Touriga Franca",
+			"Touriga Nacional",
+			"Sousão",
+			"Alicante Bouschet"
+		  ],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.6,
+		  "ph": null,
+		  "winemaking": "LBV de quinta única com envelhecimento prolongado antes do engarrafamento.",
+		  "notes": "Floral intenso com violeta, fruta negra, chocolate e grande concentração.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 7,
+			"body": "full",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["fruta negra", "violeta"],
+			"secondary": ["mocha", "chocolate negro"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["chocolate", "queijos curados", "sobremesas densas"],
+			"notes": "LBV estruturado que funciona como ponte entre Ruby e Vintage."
+		  }
+		},
+
+		{
+		  "id": "grahams-10-year-old-tawny",
+		  "name": "10 Year Old Tawny",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": ["Field Blend (castas tradicionais)"],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.5,
+		  "ph": null,
+		  "winemaking": "Envelhecimento oxidativo em casco durante cerca de uma década.",
+		  "notes": "Perfil oxidativo com frutos secos, mel e figo.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 2,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["figo", "fruta madura"],
+			"secondary": ["frutos secos", "mel"],
+			"tertiary": ["caramelo leve"]
+		  },
+		  "pairing": {
+			"affinities": ["tarte de maçã", "frutos secos", "sobremesas de canela"],
+			"notes": "Equilíbrio entre frescura e oxidação; muito gastronómico."
+		  }
+		},
+
+		{
+		  "id": "grahams-20-year-old-tawny",
+		  "name": "20 Year Old Tawny",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": ["Field Blend (castas tradicionais)"],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.7,
+		  "ph": null,
+		  "winemaking": "Longo envelhecimento oxidativo em casco.",
+		  "notes": "Notas complexas de frutos secos, casca de laranja e evolução oxidativa elegante.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 1,
+			"body": "medium",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["fruta seca"],
+			"secondary": ["noz", "laranja cristalizada"],
+			"tertiary": ["caramelo", "oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": ["crème brûlée", "frutos secos", "queijos curados"],
+			"notes": "Grande complexidade oxidativa ideal para sobremesas de textura cremosa."
+		  }
+		},
+
+		{
+		  "id": "grahams-fine-white",
+		  "name": "Graham's Fine White",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": ["Castas brancas tradicionais do Douro"],
+		  "alcohol": 19.0,
+		  "acidity_gl": 3.5,
+		  "ph": null,
+		  "winemaking": "Estilo jovem preservando caráter frutado.",
+		  "notes": "Frutado leve com toque de amêndoa.",
+		  "structure": {
+			"acidity": 4,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "sweet",
+			"finish": "medium"
+		  },
+		  "aromas": {
+			"primary": ["uva fresca"],
+			"secondary": ["amêndoa"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["sobremesas leves", "fruta fresca", "aperitivo"],
+			"notes": "Entrada ideal ao estilo Porto branco."
+		  }
+		},
+
+		{
+		  "id": "grahams-extra-dry-white",
+		  "name": "Extra Dry White",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": ["Malvasia Fina", "Gouveio", "Rabigato", "Viosinho"],
+		  "alcohol": 19.0,
+		  "acidity_gl": 4.2,
+		  "ph": null,
+		  "winemaking": "Fermentação mais prolongada reduzindo açúcares naturais.",
+		  "notes": "Perfil seco com citrinos e final fresco.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": null,
+			"body": "medium-light",
+			"sweetness": "off-dry",
+			"finish": "medium-long"
+		  },
+		  "aromas": {
+			"primary": ["toranja", "citrinos"],
+			"secondary": ["floral leve"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["aperitivos", "marisco", "port tonic", "pratos agridoce"],
+			"notes": "Porto branco gastronómico com grande versatilidade."
+		  }
+		}
+	  ]
+	},
+	{
+	  "producer": "Sogevinus",
+	  "region": "Porto DOC – Vila Nova de Gaia",
+	  "quintas": [],
+	  "producer_notes": "Grupo histórico do vinho do Porto que integra várias casas clássicas como Kopke, Cálem, Barros e Burmester. Estilos focados na expressão tradicional dos Portos Ruby, Tawny e White, com forte presença de envelhecimento oxidativo em casco e perfis gastronómicos bem definidos.",
+	  "wines": [
+
+		{
+		  "id": "barros-10-year-old-tawny",
+		  "name": "Barros 10 Year Old Tawny",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": ["Tinta Barroca","Tinta Roriz","Touriga Franca","Touriga Nacional"],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.36,
+		  "ph": 3.59,
+		  "winemaking": "Envelhecimento oxidativo prolongado em casco.",
+		  "notes": "Frutos secos, baunilha e chocolate com textura sedosa e final elegante.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 2,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["fruta seca"],
+			"secondary": ["baunilha","chocolate"],
+			"tertiary": ["oxidativo","madeira"]
+		  },
+		  "pairing": {
+			"affinities": ["crème brûlée","tarte de maçã","frutos secos","brownies"],
+			"notes": "Tawny clássico com equilíbrio entre oxidação e frescura."
+		  }
+		},
+
+		{
+		  "id": "calem-special-reserve-tawny",
+		  "name": "Cálem Special Reserve Tawny",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": ["Tinta Roriz","Touriga Franca","Touriga Nacional"],
+		  "alcohol": 19.5,
+		  "acidity_gl": 3.8,
+		  "ph": 3.69,
+		  "winemaking": "Estágio oxidativo em madeira.",
+		  "notes": "Perfil suave e equilibrado com frutos secos e especiaria.",
+		  "structure": {
+			"acidity": 4,
+			"tannins": 2,
+			"body": "medium",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["frutos secos"],
+			"secondary": ["especiarias","madeira"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["doces de ovos","tarte de maçã","sobremesas com frutos secos"],
+			"notes": "Tawny acessível com textura aveludada."
+		  }
+		},
+
+		{
+		  "id": "burmester-white-reserve-helmsman",
+		  "name": "Burmester White Reserve Helmsman",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": ["Malvasia Fina","Rabigato","Viosinho","Arinto"],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.10,
+		  "ph": 3.34,
+		  "winemaking": "Lote envelhecido mínimo 7 anos em madeira de pequena dimensão.",
+		  "notes": "Notas de damasco, mel e frutos secos com grande complexidade.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": null,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["alperce","damasco"],
+			"secondary": ["mel","frutos secos"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": ["tempura de camarão","tarte de amêndoa","mousse de abacaxi"],
+			"notes": "Porto branco envelhecido com grande versatilidade gastronómica."
+		  }
+		},
+
+		{
+		  "id": "burmester-white-extra-dry",
+		  "name": "Burmester White Extra Dry",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": ["Castas tradicionais do Douro"],
+		  "alcohol": 19.5,
+		  "acidity_gl": 3.3,
+		  "ph": 3.35,
+		  "winemaking": "Estilo branco seco preservando frescura aromática.",
+		  "notes": "Perfil fresco com citrinos, melão e elevada acidez.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": null,
+			"body": "medium-light",
+			"sweetness": "off-dry",
+			"finish": "medium-long"
+		  },
+		  "aromas": {
+			"primary": ["limão","melão","fruta tropical"],
+			"secondary": [],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["aperitivos","entradas leves","port tonic"],
+			"notes": "Excelente Porto branco gastronómico."
+		  }
+		},
+
+		{
+		  "id": "burmester-sotto-voce-ruby",
+		  "name": "Burmester Sotto Voce Ruby",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": ["Tinta Roriz","Touriga Franca","Touriga Nacional"],
+		  "alcohol": 19.5,
+		  "acidity_gl": 4.3,
+		  "ph": 3.52,
+		  "winemaking": "Estágio curto preservando caráter frutado.",
+		  "notes": "Fruta silvestre madura com textura sedosa e final persistente.",
+		  "structure": {
+			"acidity": 4,
+			"tannins": 5,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["fruta silvestre"],
+			"secondary": [],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": ["cheesecake","sobremesas de chocolate","queijos médios"],
+			"notes": "Ruby elegante focado na fruta."
+		  }
+		}
+
+	  ]
+	},
+	{
+	  "producer": "Dow's",
+	  "region": "Porto DOC – Vila Nova de Gaia",
+	  "quintas": [
+		"Quinta do Bomfim",
+		"Quinta da Senhora da Ribeira"
+	  ],
+	  "producer_notes": "Casa histórica do grupo Symington com assinatura estilística reconhecida pela 'drier edge' (perceção mais seca no final) e por taninos apimentados/firmes. Nos tawnies procura equilibrar caráter de madeira/oxidação com retenção de fruta, envelhecendo parte do lote em balseiros de grande capacidade para preservar frescura e cor mais profunda.",
+	  "wines": [
+		{
+		  "id": "dows-fine-ruby",
+		  "name": "Dow's Fine Ruby",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Touriga Nacional",
+			"Touriga Franca",
+			"Tinta Barroca",
+			"Tinta Roriz",
+			"Tinto Cão"
+		  ],
+		  "alcohol": 19.0,
+		  "acidity_gl": 4.0,
+		  "ph": null,
+		  "winemaking": "Lote de castas tradicionais do Douro. Estágio médio de 3 anos em cascos de carvalho usado em Vila Nova de Gaia; engarrafado pronto a beber.",
+		  "notes": "Cor rubi viva. Aromas de fruta vermelha. Boca jovem e fresca com framboesa e cereja; final longo e intenso.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 5,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "fruta vermelha",
+			  "framboesa",
+			  "cereja"
+			],
+			"secondary": [],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "chocolate",
+			  "sobremesas de frutos vermelhos",
+			  "queijos curados"
+			],
+			"notes": "Ruby jovem focado na fruta; funciona com chocolate e sobremesas de bagas."
+		  }
+		},
+		{
+		  "id": "dows-lbv-2020",
+		  "name": "Dow's Late Bottled Vintage",
+		  "vintage": 2020,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Touriga Franca",
+			"Touriga Nacional",
+			"Sousão",
+			"Tinta Barroca",
+			"Tinta Roriz"
+		  ],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.8,
+		  "ph": 3.6,
+		  "winemaking": "Proveniência de Quinta do Bomfim e Quinta da Senhora da Ribeira. Uvas pisadas em lagares modernos nas quintas; estilo estruturado com 'drier edge'.",
+		  "notes": "Roxo profundo com centro opaco. Amora e alcaçuz com notas de cacau e menta; elemento floral (rosas). Boca cheia e larga com concentração, estrutura fina e taninos apimentados; final longo, especiado e mais seco.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 7,
+			"body": "full",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "amora",
+			  "alcaçuz",
+			  "rosas"
+			],
+			"secondary": [
+			  "cacau",
+			  "menta",
+			  "especiaria"
+			],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "chocolate negro",
+			  "sobremesas intensas",
+			  "queijos azuis"
+			],
+			"notes": "LBV com grande concentração e tanino apimentado; o final mais seco equilibra sobremesas muito ricas e queijos fortes."
+		  }
+		},
+		{
+		  "id": "dows-10-year-old-tawny",
+		  "name": "Dow's 10 Year Old Tawny",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Field Blend (castas tradicionais do Douro)"
+		  ],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.2,
+		  "ph": null,
+		  "winemaking": "Envelhecido 10 anos em madeira na lodge da Boa Vista. Parte do lote amadurece em balseiros bem usados (5.000–10.000 L) para reter caráter frutado e cor mais profunda; estilo com 'drier edge'.",
+		  "notes": "Centro russet profundo com rebordo granada/âmbar. Aromas de cereja vermelha e amêndoa com toffee e baunilha. Boca cheia com especiaria apimentada e toque de marmelada; final pleno com perceção mais seca.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 2,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "cereja vermelha",
+			  "amêndoa"
+			],
+			"secondary": [
+			  "toffee",
+			  "baunilha",
+			  "especiaria apimentada",
+			  "marmelada"
+			],
+			"tertiary": [
+			  "oxidativo"
+			]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "tarte de maçã",
+			  "sobremesas com frutos secos",
+			  "queijo curado",
+			  "pratos agridoce"
+			],
+			"notes": "Tawny 10 com equilíbrio entre fruta e oxidação; o final mais seco funciona bem com sobremesas de canela/maçã e pratos agridoce."
+		  }
+		},
+		{
+		  "id": "dows-20-year-old-tawny",
+		  "name": "Dow's 20 Year Old Tawny",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Field Blend (castas tradicionais do Douro)"
+		  ],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.6,
+		  "ph": null,
+		  "winemaking": "Envelhecimento oxidativo prolongado em madeira; estilo procura equilibrar fruto com complexidade de casco e preservar a assinatura mais seca.",
+		  "notes": "Centro castanho polido com bordos âmbar/laranja. Aroma a madressilva com butterscotch discreto. Boca refinada e equilibrada; taninos polidos e 'flinty' com fruta vermelha concentrada e frescura mineral; nuances de tabaco; final focado e seco.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 1,
+			"body": "medium",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": [
+			  "fruta vermelha concentrada"
+			],
+			"secondary": [
+			  "madressilva",
+			  "butterscotch",
+			  "mineral",
+			  "tabaco"
+			],
+			"tertiary": [
+			  "oxidativo"
+			]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "crème brûlée",
+			  "nozes e amêndoas",
+			  "queijos curados",
+			  "pratos agridoce"
+			],
+			"notes": "Tawny 20 de grande complexidade oxidativa com final mais seco; excelente com sobremesas cremosas e queijos de cura longa."
+		  }
+		}
+	  ]
+	},
+	{
+	  "producer": "Porto Ferreira",
+	  "region": "Porto DOC – Vila Nova de Gaia",
+	  "quintas": [],
+	  "producer_notes": "Casa histórica fundada no século XVIII e associada à figura de Dona Antónia Adelaide Ferreira. Estilo clássico marcado por equilíbrio entre doçura, frescura e evolução oxidativa controlada em casco, privilegiando elegância e versatilidade gastronómica.",
+	  "wines": [
+
+		{
+		  "id": "ferreira-dona-antonia-reserva-tawny",
+		  "name": "Dona Antónia Reserva Tawny",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Tinta Barroca",
+			"Tinta Roriz",
+			"Touriga Franca",
+			"Touriga Nacional"
+		  ],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.0,
+		  "ph": 3.5,
+		  "winemaking": "Vinificação em inox com maceração controlada; envelhecimento oxidativo em cascos de carvalho em Vila Nova de Gaia.",
+		  "notes": "Aromas intensos de ameixa madura, notas florais, especiarias e frutos secos provenientes da evolução oxidativa. Boca encorpada com taninos suaves e final elegante e persistente.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 2,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["ameixa madura"],
+			"secondary": ["canela", "frutos secos"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": ["doces de ovos", "pão-de-ló", "queijos", "aperitivos ricos"],
+			"notes": "Tawny reserva equilibrado, adequado tanto para sobremesa como para entradas ricas."
+		  }
+		},
+
+		{
+		  "id": "ferreira-dona-antonia-10-year-tawny",
+		  "name": "Dona Antónia Tawny 10 Anos",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Tinta Barroca",
+			"Tinta Roriz",
+			"Tinto Cão",
+			"Touriga Franca",
+			"Touriga Nacional"
+		  ],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.0,
+		  "ph": 3.33,
+		  "winemaking": "Fermentação em inox seguida de envelhecimento prolongado em casco.",
+		  "notes": "Aroma intenso com frutos vermelhos maduros, compotas, frutos secos e especiarias. Boca densa e rica com acidez viva e final longo e equilibrado.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 2,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["frutos vermelhos maduros"],
+			"secondary": ["compota", "frutos secos", "especiarias"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": ["foie gras", "gratinados de marisco", "crème brûlée", "sobremesas de frutos secos"],
+			"notes": "Excelente ponte entre pratos salgados ricos e sobremesas."
+		  }
+		},
+
+		{
+		  "id": "ferreira-dona-antonia-20-year-tawny",
+		  "name": "Dona Antónia Tawny 20 Anos",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Tinta Barroca",
+			"Tinta Roriz",
+			"Touriga Franca",
+			"Touriga Nacional"
+		  ],
+		  "alcohol": 20.0,
+		  "acidity_gl": 5.5,
+		  "ph": 3.2,
+		  "winemaking": "Longo envelhecimento oxidativo em cascos de carvalho com lotes de 15–30 anos.",
+		  "notes": "Extremamente complexo com canela, gengibre, madeiras exóticas, frutos secos e compotas. Estrutura elegante com grande frescura e persistência.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": 1,
+			"body": "medium",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["frutos maduros"],
+			"secondary": ["avelã", "amêndoa", "canela", "gengibre"],
+			"tertiary": ["cedro", "oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": ["leite creme", "tarte de maçã", "sobremesas caramelizadas"],
+			"notes": "Grande tawny gastronómico com elevada complexidade oxidativa."
+		  }
+		},
+
+		{
+		  "id": "ferreira-dona-antonia-reserva-branco",
+		  "name": "Dona Antónia Reserva Branco",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Códega do Larinho",
+			"Gouveio",
+			"Malvasia Fina",
+			"Rabigato",
+			"Viosinho"
+		  ],
+		  "alcohol": 20.0,
+		  "acidity_gl": 3.8,
+		  "ph": 3.4,
+		  "winemaking": "Fermentação em inox seguida de envelhecimento em madeira.",
+		  "notes": "Aroma intenso com laranja amarga, flores, madeira exótica e frutos secos. Boca estruturada com equilíbrio entre acidez e doçura e final longo.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": null,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["laranja amarga"],
+			"secondary": ["frutos secos", "notas florais"],
+			"tertiary": ["resina", "oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": ["soufflé de alheira", "mousse de manga", "toucinho do céu"],
+			"notes": "Branco oxidativo versátil entre salgado e sobremesa."
+		  }
+		},
+
+		{
+		  "id": "ferreira-dona-antonia-10-year-white",
+		  "name": "Dona Antónia Branco 10 Anos",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Códega do Larinho",
+			"Gouveio",
+			"Malvasia Fina",
+			"Rabigato",
+			"Viosinho"
+		  ],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.0,
+		  "ph": 3.3,
+		  "winemaking": "Envelhecimento prolongado em cascos de carvalho (8–15 anos de lotes).",
+		  "notes": "Aroma complexo com manga, maracujá, especiarias e madeiras exóticas. Boca equilibrada com frutos secos e final longo e rico.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["manga", "maracujá"],
+			"secondary": ["frutos secos", "especiarias"],
+			"tertiary": ["oxidativo", "madeira"]
+		  },
+		  "pairing": {
+			"affinities": ["queijos intensos", "leite creme", "sobremesas de frutos secos"],
+			"notes": "Branco envelhecido complexo ideal para sobremesas ricas."
+		  }
+		}
+
+	  ]
+	},
+	{
+	  "producer": "Dalva",
+	  "region": "Porto DOC – Vila Nova de Gaia",
+	  "quintas": [],
+	  "producer_notes": "Casa histórica fundada em 1862 e atualmente integrada no grupo C. da Silva. Reconhecida pela precisão técnica e clareza estilística, produz Portos Ruby, Tawny e White com forte definição aromática e equilíbrio entre doçura, frescura e evolução oxidativa.",
+	  "wines": [
+
+		{
+		  "id": "dalva-dry-white-10-years",
+		  "name": "Dry White 10 Years Old",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Malvasia Fina",
+			"Viosinho",
+			"Donzelinho",
+			"Gouveio"
+		  ],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.3,
+		  "ph": 3.34,
+		  "winemaking": "Fermentação interrompida por adição de aguardente e envelhecimento em cascos de madeira; lote de diferentes colheitas com perfil de branco seco envelhecido.",
+		  "notes": "Cor dourada brilhante. Aromas de noz tostada e amêndoa com leve toque de menta. Boca fresca e suave com doçura equilibrada e final elegante.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": null,
+			"body": "medium",
+			"sweetness": "off-dry",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["amêndoa", "noz tostada"],
+			"secondary": ["menta"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "aperitivos",
+			  "marisco",
+			  "pratos agridoce",
+			  "queijos curados"
+			],
+			"notes": "Branco envelhecido com frescura inesperada; excelente para cozinha agridoce e serviço aperitivo."
+		  }
+		},
+
+		{
+		  "id": "dalva-lbv-2019",
+		  "name": "Late Bottled Vintage",
+		  "vintage": 2019,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Touriga Nacional",
+			"Touriga Franca",
+			"Sousão"
+		  ],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.3,
+		  "ph": 3.68,
+		  "winemaking": "Maceração intensa inicial seguida de fermentação controlada; engarrafado entre o quarto e sexto ano após a vindima.",
+		  "notes": "Cor rubi profunda. Aroma de fruta madura com notas frescas mentoladas. Boca elegante com taninos redondos e caráter frutado persistente.",
+		  "structure": {
+			"acidity": 5,
+			"tannins": 6,
+			"body": "full",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["fruta madura"],
+			"secondary": ["menta"],
+			"tertiary": []
+		  },
+		  "pairing": {
+			"affinities": [
+			  "chocolate negro",
+			  "queijos intensos",
+			  "carnes condimentadas"
+			],
+			"notes": "LBV equilibrado entre frescura e concentração; versátil entre sobremesa e pratos robustos."
+		  }
+		},
+
+		{
+		  "id": "dalva-10-year-old-tawny",
+		  "name": "10 Year Old Tawny",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Tinta Barroca",
+			"Tinto Cão",
+			"Touriga Nacional",
+			"Tinta Roriz",
+			"Touriga Franca"
+		  ],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.3,
+		  "ph": 3.47,
+		  "winemaking": "Lote de vinhos envelhecidos em cascos durante diferentes períodos até atingir perfil médio de 10 anos.",
+		  "notes": "Aromas típicos de envelhecimento em madeira com frutos secos, mel e especiarias. Boca suave e harmoniosa com textura sedosa.",
+		  "structure": {
+			"acidity": 6,
+			"tannins": 2,
+			"body": "medium-full",
+			"sweetness": "sweet",
+			"finish": "long"
+		  },
+		  "aromas": {
+			"primary": ["frutos secos"],
+			"secondary": ["mel", "especiarias"],
+			"tertiary": ["oxidativo"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "tarte de frutos secos",
+			  "sobremesas caramelizadas",
+			  "queijos"
+			],
+			"notes": "Tawny equilibrado com textura envolvente e perfil clássico."
+		  }
+		},
+
+		{
+		  "id": "dalva-20-year-old-tawny",
+		  "name": "20 Year Old Tawny",
+		  "vintage": null,
+		  "doc": "Porto DOC",
+		  "type": "fortified",
+		  "varieties": [
+			"Tinta Barroca",
+			"Tinto Cão",
+			"Touriga Nacional",
+			"Tinta Roriz",
+			"Touriga Franca"
+		  ],
+		  "alcohol": 20.0,
+		  "acidity_gl": 4.9,
+		  "ph": 3.46,
+		  "winemaking": "Blend de vinhos envelhecidos longamente em casco, resultando num perfil oxidativo complexo.",
+		  "notes": "Aromas intensos de frutos secos e cristalizados, melaço, baunilha e especiarias. Boca aveludada com taninos finos e final persistente.",
+		  "structure": {
+			"acidity": 7,
+			"tannins": 1,
+			"body": "medium",
+			"sweetness": "sweet",
+			"finish": "very long"
+		  },
+		  "aromas": {
+			"primary": ["frutos cristalizados"],
+			"secondary": ["baunilha", "especiarias"],
+			"tertiary": ["oxidativo", "melaço"]
+		  },
+		  "pairing": {
+			"affinities": [
+			  "crème brûlée",
+			  "nozes",
+			  "amêndoas",
+			  "sobremesas ricas"
+			],
+			"notes": "Grande tawny oxidativo com textura sedosa e elevada persistência."
+		  }
+		}
+
+	  ]
+	}	
+  ]
+}  
