@@ -433,6 +433,50 @@
 
   ],
 
+  "systemic_interactions": [
+    {
+      "_note": "Applied when the listed tag pair appears across components in a composed dish (Modes 1 and 3). 'effect' modifies the effective constraint strength of the target tag before hard filter derivation and scoring weight computation.",
+      "tags": ["salty", "sweet"],    "effect": "attenuation", "target": "sweet",  "factor": 0.3
+    },
+    {
+      "tags": ["salty", "bitter"],   "effect": "attenuation", "target": "bitter", "factor": 0.2
+    },
+    {
+      "tags": ["acidic", "acidic"],  "effect": "stacking",    "target": "acidic", "factor": 1.4
+    },
+    {
+      "tags": ["bitter", "bitter"],  "effect": "stacking",    "target": "bitter", "factor": 1.4
+    },
+    {
+      "tags": ["fatty_animal", "bitter"], "effect": "attenuation", "target": "bitter", "factor": 0.25
+    }
+  ],
+
+  "component_schema": {
+    "_note": "Schema reference for composed dish profiles (Phase 2). Mode is auto-detected — no explicit flag needed.",
+    "_modes": {
+      "mode_2": "food_tags present, no components — unified dish, current model, unchanged",
+      "mode_1": "components present, no food_tags — profile fully derived from components",
+      "mode_3": "both food_tags and components present — dish base profile + highlight modifiers"
+    },
+    "_roles": {
+      "dominant_challenge": "The binding constraint. If generates_hard_filter: true, its extreme tags (sweet, bitter, spicy) automatically derive hard filters. Contributes to primary_tag.",
+      "primary":            "The dish's identity. Full scoring weight.",
+      "secondary":          "Important but not dominant. Partial scoring weight.",
+      "accent":             "Shapes aromatics. Minimal structural weight.",
+      "highlight":          "Mode 3 only. Added to dish base profile; may generate additional hard filters."
+    },
+    "_generates_hard_filter": "When true, extreme tags on this component derive hard filters automatically (e.g. sweet → sweetness_allow: [sweet, semi-sweet]). When false, the component affects scoring only.",
+    "_example": {
+      "id": "tabua-queijo",
+      "components": [
+        { "name": "queijo-sao-jorge-8m",  "role": "primary",            "food_tags": ["salty", "umami", "fatty_dairy", "cured", "medium_intensity"], "generates_hard_filter": false },
+        { "name": "tamaras",              "role": "dominant_challenge",  "food_tags": ["sweet", "caramel", "medium_intensity"],                       "generates_hard_filter": true  },
+        { "name": "crackers-alecrim",     "role": "accent",              "food_tags": ["bitter", "herbaceous"],                                       "generates_hard_filter": false }
+      ]
+    }
+  },
+
   "pairing_principles": {
     "_note": "Princípios gerais para guiar o motor de harmonização",
 
