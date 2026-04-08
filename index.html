@@ -4,133 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rodrigo Figueiredo">
-    <title>Harmonix · Wine Pairing Engine</title>
+    <title>Harmonix</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg:        #f7f6f4;
+            --ink:       #1a1a1a;
+            --muted:     #9a9690;
+            --accent:    #7c3d2e;
+            --rule:      #e0deda;
+        }
 
         body {
-            background: #111010;
+            background: var(--bg);
+            color: var(--ink);
+            font-family: 'Inter', system-ui, sans-serif;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: flex-start;
+            padding: clamp(40px, 8vw, 96px);
+        }
+
+        /* ── Badge ── */
+        .badge {
+            display: inline-flex;
             align-items: center;
-            overflow: hidden;
+            gap: 7px;
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            font-weight: 400;
+            color: var(--muted);
+            letter-spacing: 0.04em;
+            margin-bottom: 48px;
         }
 
-        .line-top,
-        .line-bottom {
-            position: fixed;
-            left: 6%;
-            right: 6%;
-            height: 1px;
-            background: linear-gradient(to right, transparent, #c4a574 20%, #c4a574 80%, transparent);
-            opacity: 0.3;
+        .badge-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+            opacity: 0.7;
         }
-        .line-top    { top: 40px; }
-        .line-bottom { bottom: 40px; }
 
-        .content {
-            text-align: center;
+        /* ── Wordmark ── */
+        .wordmark {
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(48px, 8vw, 88px);
+            font-weight: 300;
+            letter-spacing: -0.03em;
+            color: var(--ink);
+            line-height: 1;
+            margin-bottom: 32px;
+        }
+
+        .wordmark span {
+            color: var(--accent);
+        }
+
+        /* ── Description ── */
+        .description {
+            font-size: clamp(15px, 1.8vw, 18px);
+            font-weight: 300;
+            color: var(--muted);
+            line-height: 1.7;
+            max-width: 480px;
+            margin-bottom: 56px;
+        }
+
+        /* ── Rule list ── */
+        .rule-list {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            gap: 10px;
+            margin-bottom: 72px;
         }
 
-        .eyebrow {
-            font-family: 'Cinzel', serif;
-            font-size: clamp(9px, 1.1vw, 11px);
-            font-weight: 400;
-            color: #5a4a38;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            margin-bottom: 28px;
+        .rule {
+            display: flex;
+            align-items: baseline;
+            gap: 14px;
+            font-family: 'DM Mono', monospace;
+            font-size: 12px;
+            color: var(--muted);
         }
 
-        .name {
-            font-family: 'Cinzel', serif;
-            font-size: clamp(52px, 9vw, 96px);
-            font-weight: 600;
-            color: #e8dcc8;
-            letter-spacing: 12px;
-            margin-right: -12px;
-            text-transform: uppercase;
-            text-shadow: 0 2px 32px rgba(196, 165, 116, 0.1);
-            line-height: 1;
+        .rule-id {
+            color: var(--accent);
+            opacity: 0.6;
+            min-width: 22px;
+            text-align: right;
+            font-size: 10px;
         }
 
-        .separator {
-            width: 120px;
+        /* ── Footer rule ── */
+        .footer-rule {
+            width: 100%;
+            max-width: 640px;
             height: 1px;
-            background: linear-gradient(to right, transparent, #6b5a44, transparent);
-            margin: 28px auto;
+            background: var(--rule);
+            margin-bottom: 24px;
         }
 
-        .tagline {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(15px, 2vw, 20px);
-            font-weight: 300;
-            font-style: italic;
-            color: #9a8468;
-            letter-spacing: 2px;
-            line-height: 1.7;
-        }
-
-        .tagline em {
-            color: #c4a574;
-            font-style: normal;
-        }
-
-        .separator-thin {
-            width: 48px;
-            height: 1px;
-            background: linear-gradient(to right, transparent, #3a2e22, transparent);
-            margin: 36px auto;
-        }
-
-        .status {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(11px, 1.3vw, 13px);
-            font-weight: 400;
-            color: #3d3228;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-        }
-
-        .status-dot {
-            display: inline-block;
-            width: 5px;
-            height: 5px;
-            background: #c4a574;
-            border-radius: 50%;
-            margin: 0 10px 1px;
-            opacity: 0.5;
-            vertical-align: middle;
+        .footer {
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            color: var(--muted);
+            opacity: 0.6;
+            letter-spacing: 0.02em;
         }
     </style>
 </head>
 <body>
-    <div class="line-top"></div>
 
-    <div class="content">
-        <p class="eyebrow">Portuguese Wine</p>
-        <h1 class="name">Harmonix</h1>
-        <div class="separator"></div>
-        <p class="tagline">
-            A deterministic pairing engine for <em>Portuguese wines</em>.<br>
-            Rule-based. No inference. No guesswork.
-        </p>
-        <div class="separator-thin"></div>
-        <p class="status">
-            <span class="status-dot"></span>
-            In development
-            <span class="status-dot"></span>
-        </p>
+    <div class="badge">
+        <span class="badge-dot"></span>
+        in development
     </div>
 
-    <div class="line-bottom"></div>
+    <h1 class="wordmark">Harmon<span>ix</span></h1>
+
+    <p class="description">
+        A rule-based wine pairing engine for Portuguese wines.
+        Deterministic scoring. No inference. No guesswork.
+    </p>
+
+    <div class="rule-list">
+        <div class="rule"><span class="rule-id">R2</span> wine acidity ≥ dish acidity</div>
+        <div class="rule"><span class="rule-id">R5</span> tannins pair with animal fat</div>
+        <div class="rule"><span class="rule-id">R7</span> body equivalence — wine matches dish weight</div>
+        <div class="rule"><span class="rule-id">R9</span> spicy dishes → off-dry, high acidity</div>
+        <div class="rule"><span class="rule-id">R13</span> salt softens tannin perception</div>
+    </div>
+
+    <div class="footer-rule"></div>
+    <p class="footer">harmonix · portuguese wines · harrington sensorial pyramid</p>
+
 </body>
 </html>
