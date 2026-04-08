@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,109 +8,113 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/harmonix.css">
     <style>
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-        :root {
-            --bg:        #f7f6f4;
-            --ink:       #1a1a1a;
-            --muted:     #9a9690;
-            --accent:    #7c3d2e;
-            --rule:      #e0deda;
+        /* Index-only: centered hero layout */
+        body {
+            display: flex;
+            flex-direction: column;
         }
 
-        body {
-            background: var(--bg);
-            color: var(--ink);
-            font-family: 'Inter', system-ui, sans-serif;
-            min-height: 100vh;
+        .hero {
+            flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            padding: clamp(40px, 8vw, 96px);
+            padding: clamp(48px, 10vw, 100px) var(--pad-page);
         }
 
-        /* ── Badge ── */
-        .badge {
+        .hero-badge {
             display: inline-flex;
             align-items: center;
             gap: 7px;
             font-family: 'DM Mono', monospace;
             font-size: 11px;
-            font-weight: 400;
             color: var(--muted);
             letter-spacing: 0.04em;
             margin-bottom: 48px;
         }
 
-        .badge-dot {
-            width: 6px;
-            height: 6px;
+        .hero-badge-dot {
+            width: 6px; height: 6px;
             border-radius: 50%;
             background: var(--accent);
             opacity: 0.7;
         }
 
-        /* ── Wordmark ── */
-        .wordmark {
-            font-family: 'Inter', sans-serif;
-            font-size: clamp(48px, 8vw, 88px);
+        .hero-wordmark {
+            font-size: clamp(52px, 9vw, 96px);
             font-weight: 300;
             letter-spacing: -0.03em;
-            color: var(--ink);
             line-height: 1;
-            margin-bottom: 32px;
+            margin-bottom: 28px;
         }
 
-        .wordmark span {
-            color: var(--accent);
-        }
+        .hero-wordmark span { color: var(--accent); }
 
-        /* ── Description ── */
-        .description {
+        .hero-desc {
             font-size: clamp(15px, 1.8vw, 18px);
             font-weight: 300;
             color: var(--muted);
             line-height: 1.7;
             max-width: 480px;
-            margin-bottom: 72px;
+            margin-bottom: 56px;
         }
 
-        /* ── Footer rule ── */
-        .footer-rule {
-            width: 100%;
-            max-width: 640px;
-            height: 1px;
-            background: var(--rule);
-            margin-bottom: 24px;
+        .hero-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
         }
 
-        .footer {
+        .hero-footer {
+            padding: 20px var(--pad-page);
+            border-top: 1px solid var(--rule);
             font-family: 'DM Mono', monospace;
             font-size: 11px;
             color: var(--muted);
-            opacity: 0.6;
+            opacity: 0.55;
             letter-spacing: 0.02em;
         }
     </style>
 </head>
 <body>
 
-    <div class="badge">
-        <span class="badge-dot"></span>
-        in development
-    </div>
+    <nav class="site-nav">
+        <a href="index.html" class="nav-wordmark">Harmon<span>ix</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="menus.html">Menus</a></li>
+            <li><a href="explorador.html">Explorador</a></li>
+            <li><a href="sandbox.html">Sandbox</a></li>
+        </ul>
+    </nav>
 
-    <h1 class="wordmark">Harmon<span>ix</span></h1>
+    <main class="hero">
+        <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            em desenvolvimento
+        </div>
 
-    <p class="description">
-        A rule-based wine pairing engine for Portuguese wines.
-        Deterministic scoring. No inference. No guesswork.
-    </p>
+        <h1 class="hero-wordmark">Harmon<span>ix</span></h1>
 
-    <div class="footer-rule"></div>
-    <p class="footer">harmonix · portuguese wines · harrington sensorial pyramid</p>
+        <p class="hero-desc">
+            Motor de harmonização de vinhos portugueses baseado em regras determinísticas.
+            Sem inferência. Sem suposições. Apenas pontuação estrutural.
+        </p>
 
+        <div class="hero-links">
+            <a href="explorador.html" class="btn btn-primary">Explorador de Harmonização</a>
+            <a href="menus.html" class="btn btn-secondary">Menu Kaiseki Nanban</a>
+            <a href="sandbox.html" class="btn btn-secondary">Sandbox</a>
+        </div>
+    </main>
+
+    <footer class="hero-footer">
+        harmonix · vinhos portugueses · pirâmide sensorial de harrington
+    </footer>
+
+    <script src="js/harmonix.js"></script>
 </body>
 </html>

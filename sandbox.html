@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rodrigo Figueiredo">
+    <title>Harmonix — Sandbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/harmonix.css">
+    <style>
+        /* ── Two-panel layout ── */
+        .sandbox-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        @media (max-width: 800px) { .sandbox-layout { grid-template-columns: 1fr; } }
+
+        .panel {
+            border: 1px solid var(--rule);
+            border-radius: 6px;
+            padding: 20px;
+            background: var(--surface);
+        }
+
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .panel-title { font-size: 13px; font-weight: 500; }
+
+        /* ── Item chips (dishes and wines added) ── */
+        .item-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+
+        .item-chip {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            padding: 9px 12px;
+            border: 1px solid var(--rule);
+            border-radius: 4px;
+            font-size: 13px;
+            background: var(--bg);
+        }
+
+        .item-chip-tags {
+            font-family: 'DM Mono', monospace;
+            font-size: 10px;
+            color: var(--muted);
+            margin-top: 2px;
+        }
+
+        .item-chip-body { flex: 1; min-width: 0; }
+        .item-chip-name { font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+        .item-chip-remove {
+            background: none;
+            border: none;
+            color: var(--muted);
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 1;
+            padding: 0 2px;
+            flex-shrink: 0;
+        }
+
+        .item-chip-remove:hover { color: var(--error); }
+
+        /* ── Add dish form ── */
+        .add-dish-form { border-top: 1px solid var(--rule); padding-top: 14px; }
+
+        .dish-name-row {
+            display: flex;
+            gap: 8px;
+            align-items: flex-end;
+            margin-bottom: 10px;
+        }
+
+        .dish-name-row .form-input { flex: 1; }
+
+        /* ── Add wine form tabs ── */
+        .wine-form-tabs {
+            display: flex;
+            gap: 0;
+            margin-bottom: 14px;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .wine-form-tab {
+            padding: 7px 14px;
+            font-size: 12px;
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            color: var(--muted);
+            margin-bottom: -1px;
+        }
+
+        .wine-form-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+        .wine-form-panel { display: none; }
+        .wine-form-panel.active { display: block; }
+
+        /* ── Matrix area ── */
+        .matrix-area { margin-top: 8px; }
+
+        .matrix-controls {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* ── Session sidebar ── */
+        .session-list { display: flex; flex-direction: column; gap: 6px; }
+
+        .session-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 8px 12px;
+            border: 1px solid var(--rule);
+            border-radius: 4px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: border-color 0.13s;
+        }
+
+        .session-item:hover { border-color: var(--accent); }
+
+        .session-item-meta { font-size: 11px; color: var(--muted); font-family: 'DM Mono', monospace; }
+
+        .session-item-del {
+            background: none;
+            border: none;
+            color: var(--muted);
+            cursor: pointer;
+            font-size: 15px;
+            padding: 0;
+        }
+
+        .session-item-del:hover { color: var(--error); }
+
+        /* ── Breakdown modal extras ── */
+        .breakdown-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .breakdown-title { font-size: 16px; font-weight: 400; line-height: 1.3; }
+
+        .breakdown-subtitle {
+            font-size: 12px;
+            color: var(--muted);
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="site-nav">
+        <a href="index.html" class="nav-wordmark">Harmon<span>ix</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="menus.html">Menus</a></li>
+            <li><a href="explorador.html">Explorador</a></li>
+            <li><a href="sandbox.html">Sandbox</a></li>
+        </ul>
+    </nav>
+
+    <main class="page">
+        <h1 class="page-title">Sandbox</h1>
+        <p class="page-subtitle">Analise múltiplos pratos e vinhos simultaneamente. Compare pontuações e explore as razões por detrás de cada harmonização.</p>
+
+        <div id="notify" class="notify-bar"></div>
+
+        <!-- ── Two-panel: Dishes & Wines ── -->
+        <div class="sandbox-layout">
+
+            <!-- Left: Dishes -->
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="panel-title">Pratos</span>
+                    <span class="label" id="dishCount">0 pratos</span>
+                </div>
+
+                <div class="item-list" id="dishList"></div>
+
+                <div class="add-dish-form">
+                    <div class="dish-name-row">
+                        <input class="form-input" id="newDishName" placeholder="Nome do prato (ex: Bife Grelhado)" />
+                        <button class="btn btn-secondary btn-sm" id="btnPickDishTags">Tags ▾</button>
+                    </div>
+                    <div id="selectedDishTagsRow" class="selected-tags-row" style="margin-bottom:10px">
+                        <span class="tags-empty-hint">Selecione tags do prato</span>
+                    </div>
+                    <button class="btn btn-secondary btn-sm" id="btnAddDish" disabled>+ Adicionar prato</button>
+                </div>
+            </div>
+
+            <!-- Right: Wines -->
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="panel-title">Vinhos</span>
+                    <span class="label" id="wineCount">0 vinhos</span>
+                </div>
+
+                <div class="item-list" id="wineList"></div>
+
+                <div style="border-top:1px solid var(--rule);padding-top:14px">
+                    <div class="wine-form-tabs">
+                        <button class="wine-form-tab active" data-wf="wf-db">Base de dados</button>
+                        <button class="wine-form-tab" data-wf="wf-custom">Vinho personalizado</button>
+                    </div>
+
+                    <!-- Mode A: DB search -->
+                    <div class="wine-form-panel active" id="wf-db">
+                        <div class="autocomplete-wrap">
+                            <input class="form-input" id="wineSearch" placeholder="Pesquisar por nome, produtor, região…" />
+                            <div class="autocomplete-dropdown" id="wineDropdown"></div>
+                        </div>
+                    </div>
+
+                    <!-- Mode B: Custom wine -->
+                    <div class="wine-form-panel" id="wf-custom">
+                        <div class="form-group" style="margin-bottom:10px">
+                            <label class="label" for="cwName">Nome</label>
+                            <input class="form-input" id="cwName" placeholder="Nome do vinho" />
+                        </div>
+                        <div class="form-row" style="margin-bottom:10px">
+                            <div class="form-group" style="flex:1">
+                                <label class="label" for="cwType">Tipo</label>
+                                <select class="form-select" id="cwType">
+                                    <option value="white">Branco</option>
+                                    <option value="red">Tinto</option>
+                                    <option value="rosé">Rosé</option>
+                                    <option value="sparkling">Espumante</option>
+                                    <option value="fortified">Licoroso</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="flex:1">
+                                <label class="label" for="cwBody">Corpo</label>
+                                <select class="form-select" id="cwBody">
+                                    <option value="light">Leve</option>
+                                    <option value="medium-light">Médio-Leve</option>
+                                    <option value="medium" selected>Médio</option>
+                                    <option value="medium-full">Médio-Encorp.</option>
+                                    <option value="full">Encorpado</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="flex:1">
+                                <label class="label" for="cwSweetness">Doçura</label>
+                                <select class="form-select" id="cwSweetness">
+                                    <option value="dry" selected>Seco</option>
+                                    <option value="off-dry">Meio-Seco</option>
+                                    <option value="semi-sweet">Meio-Doce</option>
+                                    <option value="sweet">Doce</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row" style="margin-bottom:10px">
+                            <div class="form-group" style="flex:1">
+                                <label class="label">Acidez <span id="cwAcidityVal" style="color:var(--accent)">7</span></label>
+                                <div class="range-row">
+                                    <input type="range" min="1" max="10" value="7" id="cwAcidity" />
+                                </div>
+                            </div>
+                            <div class="form-group" style="flex:1">
+                                <label class="label">Taninos <span id="cwTanninsVal" style="color:var(--accent)">5</span></label>
+                                <div class="range-row">
+                                    <input type="range" min="1" max="10" value="5" id="cwTannins" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row" style="align-items:center">
+                            <div class="form-group" style="flex:1">
+                                <label class="label" for="cwAlcohol">Álcool % (opcional)</label>
+                                <input class="form-input" type="number" id="cwAlcohol" min="8" max="22" step="0.5" placeholder="13.5" style="width:100px" />
+                            </div>
+                            <button class="btn btn-secondary btn-sm" id="btnAddCustomWine" style="flex-shrink:0">+ Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Matrix ── -->
+        <div class="matrix-controls">
+            <button class="btn btn-primary" id="btnAnalyze" disabled>Analisar harmonizações</button>
+            <button class="btn btn-ghost btn-sm" id="btnClearAll">Limpar tudo</button>
+            <span class="label" id="matrixStatus"></span>
+        </div>
+
+        <div class="matrix-area" id="matrixArea" style="display:none">
+            <div class="matrix-wrap">
+                <table class="matrix-table" id="matrixTable"></table>
+            </div>
+            <p style="font-size:12px;color:var(--muted);margin-top:10px">
+                Clique num valor para ver o detalhe das regras que dispararam para esse par.
+            </p>
+        </div>
+
+        <!-- ── Drive sessions ── -->
+        <div class="rule-line"></div>
+        <div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start">
+            <div style="flex:1;min-width:240px">
+                <p class="label" style="margin-bottom:14px">Sessões guardadas</p>
+                <div id="sessionList">
+                    <p style="font-size:13px;color:var(--muted)">Ligue ao Google Drive para guardar e carregar sessões.</p>
+                </div>
+            </div>
+            <div style="flex-shrink:0">
+                <p class="label" style="margin-bottom:14px">Google Drive</p>
+                <div style="display:flex;gap:8px;flex-direction:column">
+                    <button class="btn btn-secondary btn-sm" id="btnDriveConnect">Ligar ao Drive</button>
+                    <button class="btn btn-ghost btn-sm" id="btnDriveDisconnect" style="display:none">Desligar</button>
+                    <button class="btn btn-secondary btn-sm" id="btnSaveSession" disabled>Guardar sessão</button>
+                </div>
+                <div id="driveStatus" style="margin-top:10px;font-size:12px;color:var(--muted);font-family:'DM Mono',monospace"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Tag picker modal (for dish tags) -->
+    <div id="tagModal" class="pairing-modal" role="dialog" aria-modal="true">
+        <div class="pairing-modal-content" style="max-width:680px;max-height:88vh">
+            <button class="pairing-modal-close" id="btnCloseTagModal" aria-label="Fechar">×</button>
+            <h2 class="pairing-modal-title">Selecionar tags do prato</h2>
+            <div id="modalTagPicker"></div>
+            <div style="margin-top:20px;display:flex;gap:10px">
+                <button class="btn btn-primary" id="btnConfirmDishTags">Confirmar</button>
+                <button class="btn btn-ghost btn-sm" id="btnClearDishTags">Limpar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Score breakdown modal -->
+    <div id="breakdownModal" class="pairing-modal" role="dialog" aria-modal="true">
+        <div class="pairing-modal-content" style="max-width:600px">
+            <button class="pairing-modal-close" id="btnCloseBreakdown" aria-label="Fechar">×</button>
+            <div id="breakdownBody"></div>
+        </div>
+    </div>
+
+    <!-- Google API scripts (needed for Drive integration) -->
+    <script src="https://apis.google.com/js/api.js" async defer onload="onGapiLoad()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="onGsiLoad()"></script>
+
+    <script src="js/pairing-scorer.js"></script>
+    <script src="js/harmonix.js"></script>
+    <script src="js/drive-harmonix.js"></script>
+    <script>
+    // ── State ───────────────────────────────────────────────────────────────────
+
+    let winesDB   = null;
+    let rulesData = null;
+
+    const dishes    = [];   // [{ id, name, food_tags }]
+    const wines     = [];   // [{ id, name, type, structure: {acidity,tannins,body,sweetness,finish}, source:'db'|'custom', ...rest }]
+    let   matrix    = null; // { rows: dish[], cols: wine[], cells: [[result]] }
+
+    let dishTagsModal = new Set();  // tags being edited in the modal
+    let modalPicker   = null;
+
+    // ── Data loading ────────────────────────────────────────────────────────────
+
+    async function ensureData() {
+        if (winesDB && rulesData) return true;
+        try {
+            const [wR, rR] = await Promise.all([
+                fetch('data/wine-profiles/wines-compiled.json'),
+                fetch('data/wine-profiles/pairing-rules.json'),
+            ]);
+            if (!wR.ok || !rR.ok) throw new Error('Ficheiro não encontrado');
+            [winesDB, rulesData] = await Promise.all([wR.json(), rR.json()]);
+            // Initialize wine autocomplete once data is loaded
+            attachWineAutocomplete(
+                document.getElementById('wineSearch'),
+                document.getElementById('wineDropdown'),
+                winesDB,
+                (wine) => addWineFromDB(wine)
+            );
+            return true;
+        } catch (err) {
+            notify('error', `Erro ao carregar base de dados: ${err.message}`);
+            return false;
+        }
+    }
+
+    // ── Notify bar ──────────────────────────────────────────────────────────────
+
+    function notify(type, msg, durationMs = 4000) {
+        const el = document.getElementById('notify');
+        el.className = `notify-bar ${type} show`;
+        el.textContent = msg;
+        if (durationMs) setTimeout(() => el.classList.remove('show'), durationMs);
+    }
+
+    // ── Dish management ─────────────────────────────────────────────────────────
+
+    let pendingDishTags = new Set();
+
+    function addDish(name, tags) {
+        const id = `dish_${Date.now()}`;
+        dishes.push({ id, name, food_tags: [...tags] });
+        renderDishList();
+        updateAnalyzeBtn();
+    }
+
+    function removeDish(id) {
+        const i = dishes.findIndex(d => d.id === id);
+        if (i >= 0) dishes.splice(i, 1);
+        renderDishList();
+        updateAnalyzeBtn();
+    }
+
+    function renderDishList() {
+        const list  = document.getElementById('dishList');
+        const count = document.getElementById('dishCount');
+        count.textContent = `${dishes.length} prato${dishes.length !== 1 ? 's' : ''}`;
+        list.innerHTML = '';
+        for (const d of dishes) {
+            const chip = document.createElement('div');
+            chip.className = 'item-chip';
+            chip.innerHTML = `
+                <div class="item-chip-body">
+                    <div class="item-chip-name">${d.name}</div>
+                    <div class="item-chip-tags">${d.food_tags.map(t => PT_TAG[t] || t).join(' · ')}</div>
+                </div>
+                <button class="item-chip-remove" aria-label="Remover">×</button>
+            `;
+            chip.querySelector('button').addEventListener('click', () => removeDish(d.id));
+            list.appendChild(chip);
+        }
+    }
+
+    // ── Wine management ─────────────────────────────────────────────────────────
+
+    function addWineFromDB(wine) {
+        if (wines.find(w => w.id === wine.id)) { notify('info', 'Vinho já adicionado'); return; }
+        wines.push(Object.assign({ source: 'db' }, wine));
+        renderWineList();
+        updateAnalyzeBtn();
+    }
+
+    function addCustomWine() {
+        const name = document.getElementById('cwName').value.trim();
+        if (!name) { notify('info', 'Introduza um nome para o vinho'); return; }
+
+        const wine = {
+            id:       `custom_${Date.now()}`,
+            name,
+            producer: 'Personalizado',
+            source:   'custom',
+            type:     document.getElementById('cwType').value,
+            structure: {
+                acidity:   parseInt(document.getElementById('cwAcidity').value),
+                tannins:   parseInt(document.getElementById('cwTannins').value),
+                body:      document.getElementById('cwBody').value,
+                sweetness: document.getElementById('cwSweetness').value,
+                finish:    'medium',
+            },
+        };
+        const alc = document.getElementById('cwAlcohol').value;
+        if (alc) wine.alcohol = parseFloat(alc);
+
+        wines.push(wine);
+        renderWineList();
+        updateAnalyzeBtn();
+        document.getElementById('cwName').value = '';
+    }
+
+    function removeWine(id) {
+        const i = wines.findIndex(w => w.id === id);
+        if (i >= 0) wines.splice(i, 1);
+        renderWineList();
+        updateAnalyzeBtn();
+    }
+
+    function renderWineList() {
+        const list  = document.getElementById('wineList');
+        const count = document.getElementById('wineCount');
+        count.textContent = `${wines.length} vinho${wines.length !== 1 ? 's' : ''}`;
+        list.innerHTML = '';
+        for (const w of wines) {
+            const type   = PT_TYPE[w.type] || w.type || '';
+            const region = w.doc || w.region || (w.source === 'custom' ? 'personalizado' : '');
+            const chip   = document.createElement('div');
+            chip.className = 'item-chip';
+            chip.innerHTML = `
+                <div class="item-chip-body">
+                    <div class="item-chip-name">${w.name}</div>
+                    <div class="item-chip-tags">${[type, region].filter(Boolean).join(' · ')}</div>
+                </div>
+                <button class="item-chip-remove" aria-label="Remover">×</button>
+            `;
+            chip.querySelector('button').addEventListener('click', () => removeWine(w.id));
+            list.appendChild(chip);
+        }
+    }
+
+    // ── Analyze (build matrix) ──────────────────────────────────────────────────
+
+    async function analyze() {
+        const ok = await ensureData();
+        if (!ok) return;
+
+        if (!dishes.length || !wines.length) return;
+
+        const rules            = rulesData.rules;
+        const interactionTable = rulesData.systemic_interactions || [];
+
+        // Resolve dish profiles (for Mode 1/2/3 components)
+        const resolvedDishes = dishes.map(d => resolveDishProfile(d, interactionTable));
+
+        // Build matrix: [dish][wine] = scoreResult
+        const cells = resolvedDishes.map(dish =>
+            wines.map(wine => {
+                if (!passesFilters(wine, dish.hard_filters || {})) {
+                    return { score: null, ruleId: null, reason: 'Filtro hard: eliminado' };
+                }
+                return scoreWine(wine, dish, rules);
+            })
+        );
+
+        matrix = { rows: resolvedDishes, cols: wines, cells };
+        renderMatrix();
+        document.getElementById('matrixArea').style.display = 'block';
+        document.getElementById('btnSaveSession').disabled = !driveIsConnected();
+    }
+
+    function renderMatrix() {
+        if (!matrix) return;
+        const tbl = document.getElementById('matrixTable');
+        tbl.innerHTML = '';
+
+        // Header row
+        const thead = document.createElement('thead');
+        const hrow  = document.createElement('tr');
+        hrow.innerHTML = '<th style="min-width:160px">Prato</th>';
+        matrix.cols.forEach((w, ci) => {
+            const th = document.createElement('th');
+            th.style.textAlign = 'center';
+            th.textContent = w.name;
+            if (ci > 0) th.style.borderLeft = '1px solid var(--rule)';
+            hrow.appendChild(th);
+        });
+        thead.appendChild(hrow);
+        tbl.appendChild(thead);
+
+        // Body rows
+        const tbody = document.createElement('tbody');
+        matrix.rows.forEach((dish, ri) => {
+            const row = document.createElement('tr');
+            const td0 = document.createElement('td');
+            td0.className = 'matrix-dish-name';
+            td0.textContent = dish.name;
+            row.appendChild(td0);
+
+            matrix.cols.forEach((wine, ci) => {
+                const result = matrix.cells[ri][ci];
+                const td     = document.createElement('td');
+                td.style.textAlign = 'center';
+                if (ci > 0) td.style.borderLeft = '1px solid var(--rule)';
+
+                if (result.score === null) {
+                    td.innerHTML = '<span class="matrix-score score-none">—</span>';
+                } else {
+                    const s   = result.score;
+                    const cls = s >= 16 ? 'score-high' : s >= 8 ? 'score-mid' : 'score-low';
+                    const cell = document.createElement('span');
+                    cell.className = `matrix-score ${cls}`;
+                    cell.textContent = s.toFixed(1);
+                    cell.title = 'Ver detalhe';
+                    cell.addEventListener('click', () => showBreakdown(dish, wine, result, dishes[ri], wines[ci]));
+                    td.appendChild(cell);
+                }
+
+                row.appendChild(td);
+            });
+
+            tbody.appendChild(row);
+        });
+
+        tbl.appendChild(tbody);
+    }
+
+    // ── Breakdown modal ─────────────────────────────────────────────────────────
+
+    function showBreakdown(dish, wine, quickResult, originalDish, originalWine) {
+        if (!rulesData) return;
+
+        const verbose = scoreWineVerbose(wine, dish, rulesData.rules);
+        const body    = document.getElementById('breakdownBody');
+
+        const wineType = PT_TYPE[wine.type] || wine.type || '';
+
+        let html = `
+            <div class="breakdown-header">
+                <div>
+                    <div class="breakdown-title">${wine.name}</div>
+                    <div class="breakdown-subtitle">${[wine.producer, wineType, wine.doc || wine.region].filter(Boolean).join(' · ')}</div>
+                </div>
+                <div style="text-align:right">
+                    <div style="font-family:'DM Mono',monospace;font-size:22px;color:var(--accent)">${verbose.score.toFixed(1)}</div>
+                    <div class="label">pts</div>
+                </div>
+            </div>
+            <div class="breakdown-subtitle" style="margin-bottom:20px">
+                Prato: <strong>${dish.name}</strong> · Tags: ${(dish.food_tags || []).map(t => PT_TAG[t] || t).join(', ')}
+            </div>
+        `;
+
+        // Positive rules
+        if (verbose.fired_positive.length) {
+            html += `<div class="breakdown-section">
+                <p class="breakdown-section-title">Regras positivas</p>`;
+            const sortedPos = [...verbose.fired_positive].sort((a, b) => b.ptsWithPrimary - a.ptsWithPrimary);
+            for (const r of sortedPos) {
+                const dimCls = r.is_best_in_dim ? 'best' : '';
+                html += `
+                    <div class="rule-row">
+                        <span class="rule-reason">${r.reason || r.id}</span>
+                        <span class="rule-dim ${dimCls}">${r.dimension}</span>
+                        <span class="rule-pts positive">+${r.ptsWithPrimary}</span>
+                    </div>
+                `;
+            }
+            html += `</div>`;
+        }
+
+        // Bonus rules
+        if (verbose.fired_bonus.length) {
+            html += `<div class="breakdown-section">
+                <p class="breakdown-section-title">Bónus</p>`;
+            for (const r of verbose.fired_bonus) {
+                html += `
+                    <div class="rule-row">
+                        <span class="rule-reason">${r.reason || r.id}</span>
+                        <span class="rule-pts bonus">+${r.pts}</span>
+                    </div>
+                `;
+            }
+            html += `</div>`;
+        }
+
+        // Conflict rules
+        if (verbose.fired_conflicts.length) {
+            html += `<div class="breakdown-section">
+                <p class="breakdown-section-title">Conflitos</p>`;
+            for (const r of verbose.fired_conflicts) {
+                html += `
+                    <div class="rule-row">
+                        <span class="rule-reason">${r.reason || r.id}</span>
+                        <span class="rule-dim">${r.dimension}</span>
+                        <span class="rule-pts negative">${r.pts}</span>
+                    </div>
+                `;
+            }
+            html += `</div>`;
+        }
+
+        if (!verbose.fired_positive.length && !verbose.fired_bonus.length && !verbose.fired_conflicts.length) {
+            html += `<p class="loading-text">Nenhuma regra disparou para este par.</p>`;
+        }
+
+        // Dimension totals
+        const dimEntries = Object.entries(verbose.dim_scores);
+        if (dimEntries.length) {
+            html += `<div class="breakdown-section" style="margin-top:16px">
+                <p class="breakdown-section-title">Por dimensão</p>
+                ${dimEntries.sort(([,a],[,b]) => b - a).map(([dim, pts]) => `
+                    <div class="rule-row">
+                        <span class="rule-reason" style="font-family:'DM Mono',monospace;font-size:12px">${dim}</span>
+                        <span class="rule-pts ${pts >= 0 ? 'positive' : 'negative'}">${pts >= 0 ? '+' : ''}${pts}</span>
+                    </div>
+                `).join('')}
+            </div>`;
+        }
+
+        html += `
+            <div class="breakdown-score-line">
+                <span>Total</span>
+                <span class="breakdown-score-total">${verbose.score.toFixed(1)} pts</span>
+            </div>
+        `;
+
+        body.innerHTML = html;
+        document.getElementById('breakdownModal').classList.add('active');
+    }
+
+    // ── Session management ──────────────────────────────────────────────────────
+
+    function buildSessionObj(label) {
+        return {
+            id:         `s_${Date.now()}`,
+            label:      label || `Sessão ${new Date().toLocaleDateString('pt-PT')}`,
+            created_at: new Date().toISOString(),
+            dishes:     dishes.map(d => ({ ...d })),
+            wines:      wines.map(w => ({ ...w })),
+        };
+    }
+
+    async function saveSession() {
+        if (!driveIsConnected()) return;
+        const label = prompt('Nome da sessão:', `Sessão ${new Date().toLocaleDateString('pt-PT')}`);
+        if (label === null) return;
+        try {
+            await driveSaveSession(buildSessionObj(label));
+            notify('success', 'Sessão guardada com sucesso');
+            await loadSessionList();
+        } catch (err) {
+            notify('error', `Erro ao guardar: ${err.message}`);
+        }
+    }
+
+    async function loadSessionList() {
+        const listEl = document.getElementById('sessionList');
+        if (!driveIsConnected()) {
+            listEl.innerHTML = '<p style="font-size:13px;color:var(--muted)">Ligue ao Google Drive para ver sessões guardadas.</p>';
+            return;
+        }
+        try {
+            const sessions = await driveLoadSessions();
+            if (!sessions.length) {
+                listEl.innerHTML = '<p style="font-size:13px;color:var(--muted)">Nenhuma sessão guardada.</p>';
+                return;
+            }
+            listEl.innerHTML = '';
+            for (const s of sessions) {
+                const item = document.createElement('div');
+                item.className = 'session-item';
+                item.innerHTML = `
+                    <div>
+                        <div style="font-size:13px">${s.label}</div>
+                        <div class="session-item-meta">${new Date(s.updated_at || s.created_at).toLocaleDateString('pt-PT')}</div>
+                    </div>
+                    <button class="session-item-del" title="Eliminar">×</button>
+                `;
+                item.addEventListener('click', (e) => {
+                    if (e.target.tagName === 'BUTTON') return;
+                    loadSession(s.id);
+                });
+                item.querySelector('button').addEventListener('click', () => deleteSession(s.id));
+                listEl.appendChild(item);
+            }
+        } catch (err) {
+            listEl.innerHTML = `<p style="font-size:13px;color:var(--error)">${err.message}</p>`;
+        }
+    }
+
+    async function loadSession(id) {
+        try {
+            const session = await driveLoadSession(id);
+            if (!session) { notify('error', 'Sessão não encontrada'); return; }
+            dishes.length = 0;
+            wines.length  = 0;
+            (session.dishes || []).forEach(d => dishes.push(d));
+            (session.wines  || []).forEach(w => wines.push(w));
+            renderDishList();
+            renderWineList();
+            updateAnalyzeBtn();
+            matrix = null;
+            document.getElementById('matrixArea').style.display = 'none';
+            notify('success', `Sessão "${session.label}" carregada`);
+        } catch (err) {
+            notify('error', `Erro ao carregar sessão: ${err.message}`);
+        }
+    }
+
+    async function deleteSession(id) {
+        if (!confirm('Eliminar esta sessão?')) return;
+        try {
+            await driveDeleteSession(id);
+            notify('success', 'Sessão eliminada');
+            await loadSessionList();
+        } catch (err) {
+            notify('error', `Erro ao eliminar: ${err.message}`);
+        }
+    }
+
+    // ── Drive integration ───────────────────────────────────────────────────────
+
+    let _gapiReady = false;
+    let _gsiReady  = false;
+
+    function onGapiLoad() { _gapiReady = true; tryInitDrive(); }
+    function onGsiLoad()  { _gsiReady  = true; tryInitDrive(); }
+
+    function tryInitDrive() {
+        if (!_gapiReady || !_gsiReady) return;
+        driveInit((status, msg) => {
+            const statusEl = document.getElementById('driveStatus');
+            const dot = status === 'connected' ? '🟢' : status === 'error' ? '🔴' : '🟡';
+            statusEl.textContent = msg ? `${dot} ${msg}` : '';
+            document.getElementById('btnDriveConnect').style.display    = status === 'connected' ? 'none'  : 'inline-flex';
+            document.getElementById('btnDriveDisconnect').style.display = status === 'connected' ? 'inline-flex' : 'none';
+            document.getElementById('btnSaveSession').disabled = !(status === 'connected' && (dishes.length || wines.length));
+            if (status === 'connected') loadSessionList();
+            if (status === 'disconnected') {
+                document.getElementById('sessionList').innerHTML =
+                    '<p style="font-size:13px;color:var(--muted)">Ligue ao Google Drive para ver sessões guardadas.</p>';
+            }
+        });
+    }
+
+    // ── Helpers ─────────────────────────────────────────────────────────────────
+
+    function updateAnalyzeBtn() {
+        document.getElementById('btnAnalyze').disabled = !(dishes.length && wines.length);
+        document.getElementById('matrixStatus').textContent =
+            dishes.length && wines.length
+                ? `${dishes.length} × ${wines.length}`
+                : '';
+    }
+
+    // ── Init ────────────────────────────────────────────────────────────────────
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Wine form tabs
+        document.querySelectorAll('.wine-form-tab').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.wine-form-tab').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.wine-form-panel').forEach(p => p.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.wf).classList.add('active');
+            });
+        });
+
+        // Range value display
+        ['cwAcidity','cwTannins'].forEach(id => {
+            const input = document.getElementById(id);
+            const val   = document.getElementById(id + 'Val');
+            input.addEventListener('input', () => { val.textContent = input.value; });
+        });
+
+        // Tag picker modal
+        const tagModal    = document.getElementById('tagModal');
+        const modalTagEl  = document.getElementById('modalTagPicker');
+        const selDishRow  = document.getElementById('selectedDishTagsRow');
+
+        document.getElementById('btnPickDishTags').addEventListener('click', () => {
+            if (!modalPicker) {
+                modalPicker = createTagPicker(modalTagEl, (tags) => {
+                    dishTagsModal = tags;
+                }, pendingDishTags);
+            } else {
+                modalPicker.setSelected(pendingDishTags);
+            }
+            tagModal.classList.add('active');
+        });
+
+        document.getElementById('btnCloseTagModal').addEventListener('click', () => {
+            tagModal.classList.remove('active');
+        });
+
+        function onRemoveDishTag(tag) {
+            pendingDishTags.delete(tag);
+            if (modalPicker) modalPicker.setSelected(pendingDishTags);
+            renderSelectedTags(selDishRow, pendingDishTags, onRemoveDishTag);
+            document.getElementById('btnAddDish').disabled = !pendingDishTags.size;
+        }
+
+        document.getElementById('btnConfirmDishTags').addEventListener('click', () => {
+            pendingDishTags = new Set(dishTagsModal);
+            renderSelectedTags(selDishRow, pendingDishTags, onRemoveDishTag);
+            document.getElementById('btnAddDish').disabled = !pendingDishTags.size;
+            tagModal.classList.remove('active');
+        });
+
+        document.getElementById('btnClearDishTags').addEventListener('click', () => {
+            dishTagsModal.clear();
+            if (modalPicker) modalPicker.clear();
+        });
+
+        tagModal.addEventListener('click', e => { if (e.target === tagModal) tagModal.classList.remove('active'); });
+
+        // Add dish
+        document.getElementById('btnAddDish').addEventListener('click', () => {
+            const name = document.getElementById('newDishName').value.trim() || 'Prato sem nome';
+            if (!pendingDishTags.size) { notify('info', 'Selecione pelo menos um tag'); return; }
+            addDish(name, pendingDishTags);
+            document.getElementById('newDishName').value = '';
+            pendingDishTags = new Set();
+            renderSelectedTags(selDishRow, pendingDishTags, () => {});
+            document.getElementById('btnAddDish').disabled = true;
+        });
+
+        // Add custom wine
+        document.getElementById('btnAddCustomWine').addEventListener('click', addCustomWine);
+
+        // Analyze
+        document.getElementById('btnAnalyze').addEventListener('click', analyze);
+
+        // Clear all
+        document.getElementById('btnClearAll').addEventListener('click', () => {
+            if (!confirm('Limpar todos os pratos e vinhos?')) return;
+            dishes.length = 0;
+            wines.length  = 0;
+            matrix        = null;
+            renderDishList();
+            renderWineList();
+            updateAnalyzeBtn();
+            document.getElementById('matrixArea').style.display = 'none';
+        });
+
+        // Breakdown modal close
+        document.getElementById('btnCloseBreakdown').addEventListener('click', () => {
+            document.getElementById('breakdownModal').classList.remove('active');
+        });
+        document.getElementById('breakdownModal').addEventListener('click', e => {
+            if (e.target === document.getElementById('breakdownModal'))
+                document.getElementById('breakdownModal').classList.remove('active');
+        });
+
+        // Drive buttons
+        document.getElementById('btnDriveConnect').addEventListener('click', driveConnect);
+        document.getElementById('btnDriveDisconnect').addEventListener('click', () => {
+            driveDisconnect();
+        });
+        document.getElementById('btnSaveSession').addEventListener('click', saveSession);
+
+        // ESC closes modals
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') {
+                document.getElementById('tagModal').classList.remove('active');
+                document.getElementById('breakdownModal').classList.remove('active');
+            }
+        });
+
+        // Pre-load data in background so autocomplete is ready immediately
+        ensureData();
+    });
+    </script>
+</body>
+</html>

@@ -239,6 +239,90 @@ function scoreWine(wine, dish, rules) {
     };
 }
 
+/**
+ * scoreWineVerbose(wine, dish, rules)
+ *
+ * Full scoring breakdown — for display in the Sandbox detail modal.
+ * Not used in the hot scoring loop; only called for one cell at a time.
+ *
+ * Returns:
+ *   score           — total
+ *   dim_scores      — { dimension: best_pts }
+ *   bonus_total
+ *   fired_positive  — [{ id, reason, pts, primary_bonus, ptsWithPrimary, dimension, is_best_in_dim }]
+ *   fired_bonus     — [{ id, reason, pts }]
+ *   fired_conflicts — [{ id, reason, pts, dimension }]
+ *   primary_rule    — id of the highest-scoring positive rule
+ *   reason          — reason of the primary rule
+ */
+function scoreWineVerbose(wine, dish, rules) {
+    const dishTags   = new Set(dish.food_tags || []);
+    const primaryTag = dish.primary_tag || null;
+
+    const firedPositive  = [];
+    const firedBonus     = [];
+    const firedConflicts = [];
+    const dimScores      = {};
+    let bonusTotal = 0;
+
+    for (const rule of rules) {
+        const ruleTags = new Set(rule.food_tags || []);
+        if (![...dishTags].some(t => ruleTags.has(t))) continue;
+        if (!checkCondition(wine, rule.wine_condition || {})) continue;
+
+        if ('score_bonus' in rule) {
+            firedBonus.push({ id: rule.id, reason: rule.reason || '', pts: rule.score_bonus });
+            bonusTotal += rule.score_bonus;
+        } else {
+            const pts          = rule.score || 0;
+            const primaryBonus = (primaryTag && ruleTags.has(primaryTag)) ? PRIMARY_BONUS : 0;
+            const ptsWithPrimary = pts + primaryBonus;
+            const dim  = rule.dimension || '_unassigned';
+
+            if (pts < 0) {
+                firedConflicts.push({ id: rule.id, reason: rule.reason || '', pts: ptsWithPrimary, dimension: dim });
+            } else {
+                firedPositive.push({
+                    id: rule.id, reason: rule.reason || '',
+                    pts, primary_bonus: primaryBonus, ptsWithPrimary, dimension: dim,
+                    is_best_in_dim: false,
+                });
+            }
+
+            if (!(dim in dimScores) || ptsWithPrimary > dimScores[dim]) dimScores[dim] = ptsWithPrimary;
+        }
+    }
+
+    // Mark best rule in each dimension
+    const bestPerDim = {};
+    for (const e of firedPositive) {
+        if (!(e.dimension in bestPerDim) || e.ptsWithPrimary > bestPerDim[e.dimension])
+            bestPerDim[e.dimension] = e.ptsWithPrimary;
+    }
+    for (const e of firedPositive) {
+        e.is_best_in_dim = (e.ptsWithPrimary === bestPerDim[e.dimension]);
+    }
+
+    const positiveSum = Object.values(dimScores).filter(v => v > 0).reduce((a, b) => a + b, 0);
+    const conflictSum = Object.values(dimScores).filter(v => v < 0).reduce((a, b) => a + b, 0);
+    const score       = positiveSum + conflictSum + bonusTotal;
+
+    const primaryEntry = firedPositive.length
+        ? firedPositive.reduce((best, e) => e.ptsWithPrimary > best.ptsWithPrimary ? e : best)
+        : null;
+
+    return {
+        score,
+        dim_scores:      dimScores,
+        bonus_total:     bonusTotal,
+        fired_positive:  firedPositive,
+        fired_bonus:     firedBonus,
+        fired_conflicts: firedConflicts,
+        primary_rule:    primaryEntry ? primaryEntry.id    : null,
+        reason:          primaryEntry ? primaryEntry.reason : null,
+    };
+}
+
 function toGrapes(score) {
     if (score >= 22) return 5;
     if (score >= 16) return 4;
