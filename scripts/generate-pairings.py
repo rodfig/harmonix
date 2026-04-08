@@ -72,6 +72,7 @@ def load_data(menu_name):
             wines = [w for w in wines if w['id'] in allowed]
 
     rules = rules_data['rules']
+    interaction_table = rules_data.get('systemic_interactions', [])
 
     # Merge menu.json (presentation + properties) into dish-profiles (pairing) by id.
     # Menu fields are the base; dish-profile fields overlay (food_tags, hard_filters, etc.)
@@ -80,7 +81,7 @@ def load_data(menu_name):
     for dp in dishes_data['dishes']:
         dish = dict(menu_by_id.get(dp['id'], {}))  # start with menu fields
         dish.update(dp)                              # overlay pairing fields
-        dishes.append(dish)
+        dishes.append(resolve_dish_profile(dish, interaction_table))
 
     pairing_config = dishes_data['pairing_config']
 
@@ -178,6 +179,143 @@ def passes_filters(wine, filt):
         if alcohol is not None and alcohol > filt['alcohol_max']:
             return False
     return True
+
+# ---------------------------------------------------------------------------
+# Dish profile resolution (Modes 1 / 2 / 3)
+# ---------------------------------------------------------------------------
+#
+# Mode 2 (food_tags only, no components) — pass through unchanged.
+# Mode 1 (components only, no food_tags) — derive food_tags, primary_tag,
+#         and hard_filters from components + interaction table.
+# Mode 3 (both food_tags and components) — merge highlight component tags
+#         into the dish base; derive extra hard_filters from highlights.
+#
+# score_wine() always receives a flat resolved profile — it is unchanged.
+# ---------------------------------------------------------------------------
+
+# Tags that can auto-derive hard filters when they appear on a dominant_challenge
+# or highlight component with generates_hard_filter: true.
+_EXTREME_TAG_FILTERS = {
+    'sweet':  {'sweetness_allow': ['sweet', 'semi-sweet']},
+    'bitter': {'type_prefer':     ['sparkling']},
+    'spicy':  {'sweetness_allow': ['off-dry', 'semi-sweet'], 'tannins_max': 5},
+}
+
+# Effective weight must be at or above this to generate a hard filter.
+_HARD_FILTER_WEIGHT_THRESHOLD = 0.5
+
+
+def _compute_tag_weights(tag_set, interaction_table):
+    """
+    Compute effective weight for each tag in tag_set.
+    Starts at 1.0; interaction table attenuates or amplifies.
+    Skips entries without a 'tags' key (e.g. _note-only entries).
+    """
+    weights = {tag: 1.0 for tag in tag_set}
+    for entry in interaction_table:
+        pair = entry.get('tags')
+        if not pair or len(pair) != 2:
+            continue
+        tag_a, tag_b = pair[0], pair[1]
+        if tag_a in tag_set and tag_b in tag_set:
+            target = entry.get('target')
+            if target in weights:
+                weights[target] *= entry.get('factor', 1.0)
+    return weights
+
+
+def _derive_hard_filters(tags, weights):
+    """
+    For each extreme tag present in tags whose effective weight meets the
+    threshold, return the corresponding hard filter dict.
+    """
+    filters = {}
+    for tag, filt in _EXTREME_TAG_FILTERS.items():
+        if tag in tags and weights.get(tag, 1.0) >= _HARD_FILTER_WEIGHT_THRESHOLD:
+            for k, v in filt.items():
+                if k not in filters:   # don't overwrite a more specific filter
+                    filters[k] = v
+    return filters
+
+
+def resolve_dish_profile(dish, interaction_table):
+    """
+    Resolve a dish into a flat profile ready for score_wine().
+
+    Mode 2 (no components): returned unchanged.
+    Mode 1 (components, no food_tags): derives food_tags, primary_tag,
+        hard_filters from components.
+    Mode 3 (both): merges highlight component tags into dish food_tags;
+        adds hard_filters derived from highlight extreme tags.
+    """
+    components = dish.get('components', [])
+    has_dish_tags = bool(dish.get('food_tags'))
+
+    if not components:
+        return dish   # Mode 2 — pass through
+
+    if has_dish_tags:
+        # ── Mode 3 ──────────────────────────────────────────────────────────
+        highlights = [c for c in components if c.get('role') == 'highlight']
+        if not highlights:
+            return dish   # no highlights → nothing to merge
+
+        effective_tags = set(dish['food_tags'])
+        for comp in highlights:
+            effective_tags |= set(comp.get('food_tags', []))
+
+        weights = _compute_tag_weights(effective_tags, interaction_table)
+
+        extra_filters = {}
+        for comp in highlights:
+            if comp.get('generates_hard_filter'):
+                derived = _derive_hard_filters(set(comp.get('food_tags', [])), weights)
+                extra_filters.update(derived)
+
+        resolved = dict(dish)
+        resolved['food_tags'] = list(effective_tags)
+        if extra_filters:
+            merged = dict(resolved.get('hard_filters', {}))
+            for k, v in extra_filters.items():
+                if k not in merged:
+                    merged[k] = v
+            resolved['hard_filters'] = merged
+        return resolved
+
+    else:
+        # ── Mode 1 ──────────────────────────────────────────────────────────
+        all_tags = set()
+        dominant = None
+        for comp in components:
+            all_tags |= set(comp.get('food_tags', []))
+            if comp.get('role') == 'dominant_challenge':
+                dominant = comp
+
+        weights = _compute_tag_weights(all_tags, interaction_table)
+
+        # Hard filters — from dominant_challenge only if generates_hard_filter
+        hard_filters = dict(dish.get('hard_filters', {}))
+        if dominant and dominant.get('generates_hard_filter'):
+            derived = _derive_hard_filters(set(dominant.get('food_tags', [])), weights)
+            hard_filters.update(derived)
+
+        # primary_tag — most structurally constraining tag on dominant_challenge,
+        # falling back to its first tag, then None
+        primary_tag = dish.get('primary_tag')
+        if not primary_tag and dominant:
+            dom_tags = dominant.get('food_tags', [])
+            primary_tag = next(
+                (t for t in dom_tags if t in _EXTREME_TAG_FILTERS),
+                dom_tags[0] if dom_tags else None
+            )
+
+        resolved = dict(dish)
+        resolved['food_tags'] = list(all_tags)
+        resolved['hard_filters'] = hard_filters
+        if primary_tag:
+            resolved['primary_tag'] = primary_tag
+        return resolved
+
 
 # ---------------------------------------------------------------------------
 # Scoring
