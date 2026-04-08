@@ -148,7 +148,7 @@
       "id":          "cataplana-tofu",
       "meal_arc":    "savory_rich",
       "primary_tag": "shellfish",
-      "food_tags":   ["shellfish", "clam", "rich", "braised", "portuguese_dish", "cataplana", "layered"],
+      "food_tags":   ["shellfish", "clam", "rich", "braised", "salty", "portuguese_dish", "cataplana", "layered"],
       "hard_filters": {
         "type_allow": ["white"],
         "body_exclude": ["light"],

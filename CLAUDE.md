@@ -114,17 +114,17 @@ Add 6 new rules:
 Also add to `food_tags_reference`:
 - New tier-1 tags: `salty`, `bitter`, `spicy`
 - Add `"tier"` field (1 = universal structural, 2 = cuisine-specific/aromatic) to all existing tags
+- Document two-tier governance rules
 
 Add `salty` to `cataplana-tofu` food_tags in `data/menus/nanban-kaiseki/dish-profiles.json`.
 
-After editing, regenerate pairings:
-```bash
-python scripts/generate-pairings.py --menu nanban-kaiseki
-```
+**Not added:** R1 violation (enforced by hard filters at dish level), R6/R12 (redundant with existing acidity coverage), R15 (meta-principle).
 
 ### Phase 2 — Three-Mode Dish Profile Schema
-**Files:** `data/wine-profiles/pairing-rules.json` (new section), `scripts/generate-pairings.py`
-**Type:** Schema definition + one code change.
+
+#### Phase 2a — Schema Definition + Interaction Table
+**Files:** `data/wine-profiles/pairing-rules.json` (new section), `doc/dish-profiling-guide.md` (new)
+**Type:** Data + docs. No code changes.
 
 #### The Three Modes
 
@@ -176,9 +176,6 @@ Mode is auto-detected from data structure — no explicit flag:
 - `accent` — shapes aromatics; minimal structural weight
 - `highlight` — Mode 3 only; added to dish base profile
 
-**Component weight in scoring:**
-`dominant_challenge: 0.5` · `primary: 0.3` · `secondary: 0.15` · `accent: 0.05`
-
 #### Systemic Interaction Table
 
 New section in `pairing-rules.json`:
@@ -195,7 +192,16 @@ New section in `pairing-rules.json`:
 
 Applied automatically when tag pairs appear across components. Modifies effective constraint strength before hard filter derivation.
 
-#### Code Change — `resolve_dish_profile()`
+#### Phase 2b — Annotation Guidance Document
+**File:** `doc/dish-profiling-guide.md` (new)
+**Type:** Docs only.
+
+Short markdown defining when to use each mode. The criterion is the experience at the table, not the recipe:
+- **Mode 2** when components cook or integrate together and the result presents as a unified flavor experience
+- **Mode 1** when components are consumed simultaneously but independently — the eater controls the proportion of each (boards, platters, sushi, composed salads)
+- **Mode 3** when the dish has a clear primary identity but one or two components are structurally significant and would be invisible in the flat profile (sauces, glazes, garnishes that alter the dominant flavor dimension)
+
+#### Phase 2c — Code Change — `resolve_dish_profile()`
 
 Add one preprocessing function in `scripts/generate-pairings.py`, called in `load_data()` before scoring. The `score_wine()` function is unchanged — it always receives a flat resolved profile.
 
@@ -244,6 +250,12 @@ Functions to port: `parse_cond`, `check_condition`, `passes_filters`, `score_win
 Total: ~200 lines JS. No external dependencies.
 
 The pre-computed `pairings.json` becomes optional (performance cache). The engine works from source data.
+
+**The Form Extension** (also Phase 3): a client-side dish profiling form that:
+1. Loads tag vocabulary from `food_tags_reference` in `pairing-rules.json`
+2. Collects dish profile (mode, components, food_tags, hard filters) via UI
+3. Calls the in-browser scoring function with the new dish profile
+4. Displays results immediately — no backend, no API call, no AI inference
 
 ---
 
@@ -382,8 +394,8 @@ Feature branches for planned work:
 | Branch | Phase | Scope |
 |---|---|---|
 | `feature/harrington-rules` | Phase 1 | Add 6 rules + tag tier system + `salty` on cataplana |
-| `feature/component-profiling` | Phase 2 | Three-mode schema + `resolve_dish_profile()` |
-| `feature/engine-js-port` | Phase 3 | Port scoring to JS, remove pairings.json dependency |
+| `feature/component-profiling` | Phase 2a/2b/2c | Three-mode schema + annotation guide + `resolve_dish_profile()` |
+| `feature/engine-js-port` | Phase 3 | Port scoring to JS + form extension, remove pairings.json dependency |
 
 Phase 3 is independent of 1 and 2 — can be developed in parallel.
 Phase 2 depends on Phase 1 being merged first (needs new tags defined).

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rodrigo Figueiredo">
+    <title>Harmonix · Wine Pairing Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #111010;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .line-top,
+        .line-bottom {
+            position: fixed;
+            left: 6%;
+            right: 6%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #c4a574 20%, #c4a574 80%, transparent);
+            opacity: 0.3;
+        }
+        .line-top    { top: 40px; }
+        .line-bottom { bottom: 40px; }
+
+        .content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .eyebrow {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(9px, 1.1vw, 11px);
+            font-weight: 400;
+            color: #5a4a38;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+
+        .name {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(52px, 9vw, 96px);
+            font-weight: 600;
+            color: #e8dcc8;
+            letter-spacing: 12px;
+            margin-right: -12px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 32px rgba(196, 165, 116, 0.1);
+            line-height: 1;
+        }
+
+        .separator {
+            width: 120px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #6b5a44, transparent);
+            margin: 28px auto;
+        }
+
+        .tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(15px, 2vw, 20px);
+            font-weight: 300;
+            font-style: italic;
+            color: #9a8468;
+            letter-spacing: 2px;
+            line-height: 1.7;
+        }
+
+        .tagline em {
+            color: #c4a574;
+            font-style: normal;
+        }
+
+        .separator-thin {
+            width: 48px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #3a2e22, transparent);
+            margin: 36px auto;
+        }
+
+        .status {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(11px, 1.3vw, 13px);
+            font-weight: 400;
+            color: #3d3228;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .status-dot {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            background: #c4a574;
+            border-radius: 50%;
+            margin: 0 10px 1px;
+            opacity: 0.5;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="line-top"></div>
+
+    <div class="content">
+        <p class="eyebrow">Portuguese Wine</p>
+        <h1 class="name">Harmonix</h1>
+        <div class="separator"></div>
+        <p class="tagline">
+            A deterministic pairing engine for <em>Portuguese wines</em>.<br>
+            Rule-based. No inference. No guesswork.
+        </p>
+        <div class="separator-thin"></div>
+        <p class="status">
+            <span class="status-dot"></span>
+            In development
+            <span class="status-dot"></span>
+        </p>
+    </div>
+
+    <div class="line-bottom"></div>
+</body>
+</html>
