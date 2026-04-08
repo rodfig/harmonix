@@ -13,6 +13,39 @@
     ]
   },
 
+  "_pending_rules": {
+    "_note": "Rules known to be missing from Harrington coverage. Not blockers for the current nanban-kaiseki menu — the scoring architecture compensates indirectly. Implement when a menu with strongly umami, spicy, or bitter dishes exposes the gap.",
+    "rules": [
+      {
+        "id": "conflict-tannin-umami",
+        "harrington": "R5 / aula-11 slide 14",
+        "rationale": "Umami (glutamato) makes high-tannin young reds taste metallic and bitter. Aula-11: 'evitar tintos jovens muito tânicos' for umami dishes.",
+        "fires_on": ["umami", "dashi_based", "soy_based", "miso_based"],
+        "wine_condition": { "tannins": ">= 7", "type": "red" },
+        "score": -7,
+        "dimension": "conflict_tannin"
+      },
+      {
+        "id": "conflict-high-alcohol-spicy",
+        "harrington": "R9 / aula-11 slide 15",
+        "rationale": "Alcohol dissolves and amplifies capsaicin — high-alcohol wines intensify heat perception. Aula-11: 'álcool amplifica sensação'.",
+        "fires_on": ["spicy"],
+        "wine_condition": { "alcohol": ">= 14" },
+        "score": -5,
+        "dimension": "conflict_body"
+      },
+      {
+        "id": "conflict-tannin-bitter",
+        "harrington": "R4 / aula-11 slide 17",
+        "rationale": "Bitter + bitter amplifies unpleasantly. Aula-11: 'amargo + amargo = amplificação desagradável'. Tannic reds with bitter vegetables or garnishes.",
+        "fires_on": ["bitter"],
+        "wine_condition": { "tannins": ">= 6", "type": "red" },
+        "score": -6,
+        "dimension": "conflict_tannin"
+      }
+    ]
+  },
+
   "food_tags_reference": {
     "_note": "Apply these tags to each dish. A dish can have multiple tags.",
     "_tiers": "Tier 1 = universal structural (every dish expressible with these alone; rules on tier-1 tags apply to any cuisine). Tier 2 = cuisine-specific or aromatic (optional; trigger bonus rules for aromatic concordance and cultural affinity; adding a tier-2 tag with no corresponding rule is harmless and forward-declares future rules).",
