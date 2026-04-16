@@ -2,13 +2,12 @@
  * harmonix.js
  * ===========
  * Shared utilities for the Harmonix website.
- * - Portuguese label maps
- * - Tag vocabulary (Harrington pyramid groups)
- * - Tag picker factory
- * - Wine autocomplete helper
- * - Nav active-link resolver
  *
- * No external dependencies. Loaded before page-specific scripts.
+ * - Portuguese label maps
+ * - Tag vocabulary (loaded from pairing-rules.json or hardcoded fallback)
+ * - Two-tier-aware tag picker
+ * - Three-mode dish form (Mode 1: composed / Mode 2: unified / Mode 3: highlights)
+ * - Wine autocomplete, card builder, nav helpers
  */
 
 // ── Portuguese label maps ─────────────────────────────────────────────────────
@@ -30,10 +29,10 @@ const PT_BODY = {
 };
 
 const PT_SWEETNESS = {
-    'dry':         'Seco',
-    'off-dry':     'Meio-Seco',
-    'semi-sweet':  'Meio-Doce',
-    'sweet':       'Doce',
+    'dry':        'Seco',
+    'off-dry':    'Meio-Seco',
+    'semi-sweet': 'Meio-Doce',
+    'sweet':      'Doce',
 };
 
 const PT_FINISH = {
@@ -44,19 +43,19 @@ const PT_FINISH = {
 };
 
 const PT_TAG = {
-    // Tier 1 — flavor (SAUDA)
+    // Sabor
     salty:           'Salgado',
     acidic:          'Ácido',
     sweet:           'Doce',
     bitter:          'Amargo',
     umami:           'Umami',
     spicy:           'Picante',
-    // Fat type
+    // Gordura
     fatty_animal:    'Gordura Animal',
     fatty_dairy:     'Gordura Láctea',
     fatty_vegetal:   'Gordura Vegetal',
     lean:            'Magro',
-    // Method
+    // Método
     raw:             'Cru',
     fried:           'Frito',
     grilled:         'Grelhado',
@@ -64,93 +63,194 @@ const PT_TAG = {
     steamed:         'Cozido a Vapor',
     cured:           'Curado',
     smoked:          'Fumado',
-    // Protein
+    gratin:          'Gratin',
+    // Proteína
     red_meat:        'Carne Vermelha',
+    white_meat:      'Carne Branca',
     poultry:         'Aves',
-    fish_lean:       'Peixe Magro',
+    pork:            'Porco',
+    game:            'Caça',
+    oily_fish:       'Peixe Azul',
     fish_fatty:      'Peixe Gordo',
+    fish_lean:       'Peixe Magro',
     shellfish:       'Marisco',
+    egg:             'Ovo',
     plant_protein:   'Proteína Vegetal',
-    // Intensity
+    tofu:            'Tofu',
+    // Intensidade
     delicate:        'Delicado',
     medium_intensity:'Intensidade Média',
     rich:            'Rico',
     intense:         'Intenso',
+    // Textura
     light:           'Leve',
-    // Tier 2 — aromatic
+    creamy:          'Cremoso',
+    crunchy:         'Crocante',
+    silky:           'Sedoso',
+    robust:          'Robusto',
+    fatty:           'Gorduroso',
+    // Aromáticos
     citrus:          'Cítrico',
     floral:          'Floral',
     herbaceous:      'Herbáceo',
     earthy:          'Terroso',
-    smoky:           'Fumado',
-    nutty:           'Avelã/Nozes',
+    mushroom:        'Cogumelos',
+    marine:          'Marinho',
+    nutty:           'Nozes/Avelã',
+    smoky:           'Fumado/Defumado',
     resinous:        'Resinoso',
     oxidative:       'Oxidativo',
-    marine:          'Marinho',
-    caramel:         'Caramel',
+    // Sabores e descritores
+    sweet_sour:      'Agridoce',
+    marinade:        'Marinada',
+    fermented:       'Fermentado',
+    pickled:         'Conservado/Pickled',
+    layered:         'Camadas',
+    complex:         'Complexo',
+    dessert:         'Sobremesa',
+    nuts:            'Frutos Secos',
+    caramel:         'Caramelo',
+    chocolate:       'Chocolate',
+    custard:         'Creme/Custard',
     lemon_based:     'Limão',
-    // Portuguese
+    variety:         'Variedade',
+    // Cultural
     portuguese_dish: 'Prato Português',
     cataplana:       'Cataplana',
     bacalhau_based:  'Bacalhau',
-    // Japanese
     dashi_based:     'Dashi',
     miso_based:      'Miso',
     yuzu:            'Yuzu',
-    umami_dashi:     'Umami Dashi',
+    soy_based:       'Soja',
+    soy_condiment:   'Molho de Soja',
+    umami_dashi:     'Umami-Dashi',
+    // Rule-internal only (not shown in picker)
+    raw_fish:        'Peixe Cru',
+    cooked_fish:     'Peixe Cozinhado',
+    lingering:       'Persistente',
+    acidic_light:    'Acidez Leve',
 };
 
-// ── Tag groups for the picker (Harrington pyramid) ────────────────────────────
+// Role labels for Mode 1 / 3 components
+const PT_ROLE = {
+    dominant_challenge: 'Dominante',
+    primary:            'Principal',
+    secondary:          'Secundário',
+    accent:             'Acento',
+    highlight:          'Destaque',
+};
 
-const TAG_GROUPS = [
+// ── Tag group labels (from pairing-rules.json keys) ───────────────────────────
+
+const PT_GROUP_LABEL = {
+    flavor_sauda:     'Sabor',
+    fat_type:         'Gordura',
+    cooking_method:   'Método',
+    protein:          'Proteína',
+    intensity:        'Intensidade',
+    texture:          'Textura',
+    aromatic:         'Aromáticos',
+    flavor_descriptor:'Descritores',
+    cultural:         'Cultural',
+    // legacy keys
+    japanese:         'Cultural',
+    portuguese:       'Cultural',
+    misc_flavor:      'Descritores',
+};
+
+// ── Hardcoded fallback tag groups ─────────────────────────────────────────────
+// Used if pairing-rules.json is not yet loaded. Mirrors food_tags_reference.
+
+const TAG_GROUPS_FALLBACK = [
     {
-        section: 'Base — SAUDA',
+        tier: 1, section: 'Perfil estrutural',
         groups: [
-            { label: 'Sabores',     tags: ['salty','acidic','sweet','bitter','umami','spicy'] },
+            { label: 'Sabor',       tags: ['salty','acidic','sweet','bitter','umami','spicy'] },
+            { label: 'Gordura',     tags: ['fatty_animal','fatty_dairy','fatty_vegetal','lean'] },
+            { label: 'Método',      tags: ['raw','fried','grilled','braised','steamed','cured','smoked','gratin'] },
+            { label: 'Proteína',    tags: ['red_meat','white_meat','poultry','pork','game','oily_fish','fish_fatty','fish_lean','shellfish','egg','plant_protein','tofu'] },
             { label: 'Intensidade', tags: ['delicate','medium_intensity','rich','intense'] },
+            { label: 'Textura',     tags: ['light','creamy','crunchy','silky','robust','fatty'] },
         ],
     },
     {
-        section: 'Textura — GMPC',
+        tier: 2, section: 'Aromáticos e sabores',
         groups: [
-            { label: 'Gordura',   tags: ['fatty_animal','fatty_dairy','fatty_vegetal','lean'] },
-            { label: 'Método',    tags: ['raw','fried','grilled','braised','steamed','cured','smoked'] },
-            { label: 'Proteína',  tags: ['red_meat','poultry','fish_lean','fish_fatty','shellfish','plant_protein'] },
-        ],
-    },
-    {
-        section: 'Aromáticos & Específicos',
-        groups: [
-            { label: 'Aromáticos',  tags: ['citrus','floral','herbaceous','earthy','marine','nutty','smoky','resinous','oxidative'] },
-            { label: 'Português',   tags: ['portuguese_dish','cataplana','bacalhau_based'] },
-            { label: 'Japonês',     tags: ['dashi_based','miso_based','yuzu','umami_dashi'] },
+            { label: 'Aromáticos',  tags: ['citrus','floral','herbaceous','earthy','mushroom','marine','nutty','smoky'] },
+            { label: 'Descritores', tags: ['sweet_sour','marinade','fermented','pickled','layered','complex','dessert','nuts','caramel','chocolate','custard','lemon_based'] },
+            { label: 'Cultural',    tags: ['portuguese_dish','cataplana','bacalhau_based','dashi_based','miso_based','yuzu','soy_based','soy_condiment'] },
         ],
     },
 ];
 
-// ── Tag picker factory ────────────────────────────────────────────────────────
+// ── Build tag groups from loaded pairing-rules.json ───────────────────────────
 
 /**
- * Renders an interactive tag picker into `container`.
- * @param {HTMLElement} container
- * @param {Function}    onChange   — called with (Set<string>) on each change
- * @param {Set}         [initial]  — pre-selected tags
- * @returns {{ getSelected, setSelected, clear }}
+ * Builds the two-tier TAG_GROUPS structure from food_tags_reference.
+ * @param {Object} rulesData — parsed pairing-rules.json
+ * @returns {Array} same shape as TAG_GROUPS_FALLBACK
  */
-function createTagPicker(container, onChange, initial = new Set()) {
+function buildTagGroupsFromRules(rulesData) {
+    const ref = (rulesData || {}).food_tags_reference || {};
+
+    const tier1Groups  = [];
+    const tier2Aromatic  = [];
+    const tier2Specific  = [];
+    const tier2Other     = [];
+
+    for (const [key, val] of Object.entries(ref)) {
+        if (key.startsWith('_')) continue;
+        const tier = val._tier || 2;
+        const tags = (val.tags || []).filter(t => t);
+        if (!tags.length) continue;
+        const label = PT_GROUP_LABEL[key] || key;
+
+        if (tier === 1) {
+            tier1Groups.push({ label, tags });
+        } else if (key === 'aromatic') {
+            tier2Aromatic.push(...tags);
+        } else if (key === 'cultural' || key === 'japanese' || key === 'portuguese') {
+            tier2Specific.push(...tags);
+        } else {
+            // flavor_descriptor, misc_flavor, etc.
+            tier2Other.push(...tags);
+        }
+    }
+
+    const sections = [
+        { tier: 1, section: 'Perfil estrutural', groups: tier1Groups },
+    ];
+
+    const t2groups = [];
+    if (tier2Aromatic.length) t2groups.push({ label: 'Aromáticos',  tags: [...new Set(tier2Aromatic)] });
+    if (tier2Other.length)    t2groups.push({ label: 'Descritores', tags: [...new Set(tier2Other)]    });
+    if (tier2Specific.length) t2groups.push({ label: 'Cultural',    tags: [...new Set(tier2Specific)] });
+
+    if (t2groups.length) sections.push({ tier: 2, section: 'Aromáticos e sabores', groups: t2groups });
+
+    return sections;
+}
+
+// ── Tier-aware tag picker ─────────────────────────────────────────────────────
+
+/**
+ * Creates an interactive tag picker, tier-aware.
+ * @param {HTMLElement} container
+ * @param {Function}    onChange   — (Set<string>) => void
+ * @param {Set}         [initial]
+ * @param {Array}       [tagGroups] — from buildTagGroupsFromRules or TAG_GROUPS_FALLBACK
+ */
+function createTagPicker(container, onChange, initial = new Set(), tagGroups = TAG_GROUPS_FALLBACK) {
     let selected = new Set(initial);
+
+    function updatePill(pill) {
+        const tag = pill.dataset.tag;
+        pill.className = 'tag-pill' + (selected.has(tag) ? ' selected' : '');
+    }
 
     function render() {
         container.innerHTML = '';
-        for (const section of TAG_GROUPS) {
-            const secEl = document.createElement('div');
-            secEl.className = 'tag-section';
-
-            const secTitle = document.createElement('span');
-            secTitle.className = 'tag-section-title';
-            secTitle.textContent = section.section;
-            secEl.appendChild(secTitle);
-
+        for (const section of tagGroups) {
             for (const group of section.groups) {
                 const gEl = document.createElement('div');
                 gEl.className = 'tag-group';
@@ -165,24 +265,21 @@ function createTagPicker(container, onChange, initial = new Set()) {
 
                 for (const tag of group.tags) {
                     const pill = document.createElement('button');
+                    pill.type = 'button';
                     pill.className = 'tag-pill' + (selected.has(tag) ? ' selected' : '');
                     pill.textContent = PT_TAG[tag] || tag;
                     pill.dataset.tag = tag;
-                    pill.type = 'button';
                     pill.addEventListener('click', () => {
                         selected.has(tag) ? selected.delete(tag) : selected.add(tag);
-                        // Re-render just this pill for performance
-                        pill.className = 'tag-pill' + (selected.has(tag) ? ' selected' : '');
+                        updatePill(pill);
                         onChange(new Set(selected));
                     });
                     listEl.appendChild(pill);
                 }
 
                 gEl.appendChild(listEl);
-                secEl.appendChild(gEl);
+                container.appendChild(gEl);
             }
-
-            container.appendChild(secEl);
         }
     }
 
@@ -192,30 +289,18 @@ function createTagPicker(container, onChange, initial = new Set()) {
         getSelected: () => new Set(selected),
         setSelected: (s) => {
             selected = new Set(s);
-            // Update pills without full re-render
-            container.querySelectorAll('.tag-pill').forEach(pill => {
-                pill.className = 'tag-pill' + (selected.has(pill.dataset.tag) ? ' selected' : '');
-            });
+            container.querySelectorAll('.tag-pill').forEach(updatePill);
         },
         clear: () => {
             selected.clear();
-            container.querySelectorAll('.tag-pill').forEach(p => {
-                p.className = 'tag-pill';
-            });
+            container.querySelectorAll('.tag-pill').forEach(p => { p.className = 'tag-pill'; });
             onChange(new Set());
         },
     };
 }
 
-// ── Selected tags summary row ─────────────────────────────────────────────────
+// ── Selected tags chip row ────────────────────────────────────────────────────
 
-/**
- * Renders selected-tag chips into `rowEl`.
- * Each chip has an ×-remove button.
- * @param {HTMLElement} rowEl
- * @param {Set}         selected
- * @param {Function}    onRemove — called with (tag) when chip is removed
- */
 function renderSelectedTags(rowEl, selected, onRemove) {
     rowEl.innerHTML = '';
     if (!selected.size) {
@@ -228,20 +313,514 @@ function renderSelectedTags(rowEl, selected, onRemove) {
     for (const tag of selected) {
         const chip = document.createElement('span');
         chip.className = 'selected-tag-chip';
+        chip.innerHTML = `<span>${PT_TAG[tag] || tag}</span>`;
+        const rm = document.createElement('button');
+        rm.type = 'button';
+        rm.textContent = '×';
+        rm.setAttribute('aria-label', `Remover ${PT_TAG[tag] || tag}`);
+        rm.addEventListener('click', () => onRemove(tag));
+        chip.appendChild(rm);
+        rowEl.appendChild(chip);
+    }
+}
 
-        const label = document.createElement('span');
-        label.textContent = PT_TAG[tag] || tag;
-        chip.appendChild(label);
+// ── Three-mode dish form ──────────────────────────────────────────────────────
+
+const MODE_INFO = {
+    mode2: {
+        label:    'Integrado',
+        hint:     'Ingredientes cozinhados juntos — cataplana, estufado, sopa, risotto.',
+    },
+    mode1: {
+        label:    'Composto',
+        hint:     'Ingredientes servidos separadamente — tábua de queijos, sushi, charcutaria.',
+    },
+    mode3: {
+        label:    'Com destaque',
+        hint:     'Prato com identidade clara + componente significativo (molho, glacê, guarnição amarga).',
+    },
+};
+
+const COMPONENT_ROLES = ['dominant_challenge', 'primary', 'secondary', 'accent'];
+
+/**
+ * Renders a full three-mode dish profiling form.
+ *
+ * @param {HTMLElement} container   — where to render
+ * @param {Function}    onChange    — called with the current dish object on any change
+ * @param {Array}       [tagGroups] — from buildTagGroupsFromRules; defaults to fallback
+ *
+ * @returns {{ getDish, reset }}
+ *   getDish() → dish object ready for resolveDishProfile + scoreWine
+ *   reset()   → clears all state and re-renders
+ */
+function createDishForm(container, onChange, tagGroups = TAG_GROUPS_FALLBACK) {
+    let mode = 'mode2';
+
+    // Mode 2 / Mode 3 base tags
+    let baseTags = new Set();
+
+    // Mode 1 components / Mode 3 highlights
+    // Each: { id, name, role, tags: Set, generates_hard_filter }
+    let components = [];
+
+    let basePicker = null;
+
+    // ── Emit current dish object ────────────────────────────────────────────
+
+    function emit() {
+        onChange(buildDishObj());
+    }
+
+    function buildDishObj() {
+        if (mode === 'mode2') {
+            const tags = [...baseTags];
+            return {
+                food_tags:   tags,
+                primary_tag: tags[0] || null,
+            };
+        }
+
+        if (mode === 'mode1') {
+            return {
+                components: components.map(c => ({
+                    name:                 c.name,
+                    role:                 c.role,
+                    food_tags:            [...c.tags],
+                    generates_hard_filter: c.generates_hard_filter,
+                })),
+            };
+        }
+
+        // mode3
+        const tags = [...baseTags];
+        return {
+            food_tags:  tags,
+            primary_tag: tags[0] || null,
+            components: components.map(c => ({
+                name:                 c.name,
+                role:                 'highlight',
+                food_tags:            [...c.tags],
+                generates_hard_filter: c.generates_hard_filter,
+            })),
+        };
+    }
+
+    // ── Render ──────────────────────────────────────────────────────────────
+
+    function render() {
+        container.innerHTML = '';
+        renderModeSelector();
+        renderFormBody();
+    }
+
+    function renderModeSelector() {
+        const wrap = document.createElement('div');
+
+        const sel = document.createElement('div');
+        sel.className = 'mode-selector';
+
+        for (const [key, info] of Object.entries(MODE_INFO)) {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'mode-btn' + (mode === key ? ' active' : '');
+            btn.textContent = info.label;
+            btn.addEventListener('click', () => {
+                mode = key;
+                // Reset state on mode switch
+                baseTags.clear();
+                components = [];
+                render();
+                emit();
+            });
+            sel.appendChild(btn);
+        }
+
+        wrap.appendChild(sel);
+
+        const hint = document.createElement('p');
+        hint.className = 'mode-hint';
+        hint.textContent = MODE_INFO[mode].hint;
+        wrap.appendChild(hint);
+
+        container.appendChild(wrap);
+    }
+
+    function renderFormBody() {
+        if (mode === 'mode2') renderMode2();
+        else if (mode === 'mode1') renderMode1();
+        else renderMode3();
+    }
+
+    // ── Mode 2: flat tags ───────────────────────────────────────────────────
+
+    function renderMode2() {
+        const wrap = document.createElement('div');
+        basePicker = createTagPicker(wrap, (tags) => {
+            baseTags = tags;
+            emit();
+        }, baseTags, tagGroups);
+        container.appendChild(wrap);
+    }
+
+    // ── Mode 1: components with roles ───────────────────────────────────────
+
+    function renderMode1() {
+        const wrap = document.createElement('div');
+
+        // Component list
+        const listEl = document.createElement('div');
+        listEl.className = 'component-list';
+        listEl.id = 'comp-list';
+        rebuildComponentList(listEl);
+        wrap.appendChild(listEl);
+
+        // Add component button
+        const addBtn = document.createElement('button');
+        addBtn.type = 'button';
+        addBtn.className = 'btn btn-secondary btn-sm';
+        addBtn.textContent = '+ Adicionar componente';
+        addBtn.style.marginBottom = '6px';
+
+        const formWrap = document.createElement('div');
+        formWrap.id = 'comp-form-wrap';
+
+        addBtn.addEventListener('click', () => {
+            addBtn.style.display = 'none';
+            renderAddComponentForm(formWrap, () => {
+                addBtn.style.display = '';
+                formWrap.innerHTML = '';
+                rebuildComponentList(listEl);
+                emit();
+            }, () => {
+                addBtn.style.display = '';
+                formWrap.innerHTML = '';
+            });
+        });
+
+        wrap.appendChild(addBtn);
+        wrap.appendChild(formWrap);
+        container.appendChild(wrap);
+    }
+
+    function rebuildComponentList(listEl) {
+        listEl.innerHTML = '';
+        if (!components.length) {
+            const hint = document.createElement('p');
+            hint.className = 'tags-empty-hint';
+            hint.style.marginBottom = '10px';
+            hint.textContent = 'Nenhum componente adicionado';
+            listEl.appendChild(hint);
+            return;
+        }
+        for (const comp of components) {
+            listEl.appendChild(buildComponentChip(comp, () => {
+                components = components.filter(c => c.id !== comp.id);
+                rebuildComponentList(listEl);
+                emit();
+            }));
+        }
+    }
+
+    function buildComponentChip(comp, onRemove) {
+        const card = document.createElement('div');
+        card.className = 'component-card';
+
+        const hdr = document.createElement('div');
+        hdr.className = 'component-card-header';
+
+        const roleBadge = document.createElement('span');
+        roleBadge.className = 'component-role-badge' + (comp.role === 'dominant_challenge' ? ' dominant' : '');
+        roleBadge.textContent = PT_ROLE[comp.role] || comp.role;
+        hdr.appendChild(roleBadge);
+
+        const nameEl = document.createElement('span');
+        nameEl.className = 'component-card-name';
+        nameEl.textContent = comp.name || '—';
+        hdr.appendChild(nameEl);
+
+        const tagsEl = document.createElement('span');
+        tagsEl.className = 'component-card-tags';
+        tagsEl.textContent = [...comp.tags].map(t => PT_TAG[t] || t).join(', ');
+        hdr.appendChild(tagsEl);
 
         const rmBtn = document.createElement('button');
         rmBtn.type = 'button';
+        rmBtn.className = 'component-remove';
         rmBtn.textContent = '×';
-        rmBtn.setAttribute('aria-label', `Remover ${PT_TAG[tag] || tag}`);
-        rmBtn.addEventListener('click', () => onRemove(tag));
-        chip.appendChild(rmBtn);
+        rmBtn.addEventListener('click', (e) => { e.stopPropagation(); onRemove(); });
+        hdr.appendChild(rmBtn);
 
-        rowEl.appendChild(chip);
+        card.appendChild(hdr);
+        return card;
     }
+
+    function renderAddComponentForm(wrap, onConfirm, onCancel) {
+        wrap.innerHTML = '';
+        const form = document.createElement('div');
+        form.className = 'add-component-form';
+
+        // Name + Role row
+        const topRow = document.createElement('div');
+        topRow.className = 'form-row';
+
+        const nameGroup = document.createElement('div');
+        nameGroup.className = 'form-group';
+        nameGroup.style.flex = '1';
+        nameGroup.innerHTML = `<label class="label">Nome</label>`;
+        const nameInput = document.createElement('input');
+        nameInput.className = 'form-input';
+        nameInput.placeholder = 'ex: molho de laranja, dashi';
+        nameGroup.appendChild(nameInput);
+        topRow.appendChild(nameGroup);
+
+        const roleGroup = document.createElement('div');
+        roleGroup.className = 'form-group';
+        roleGroup.innerHTML = `<label class="label">Papel</label>`;
+        const roleSelect = document.createElement('select');
+        roleSelect.className = 'form-select';
+        for (const r of COMPONENT_ROLES) {
+            const opt = document.createElement('option');
+            opt.value = r;
+            opt.textContent = PT_ROLE[r];
+            roleSelect.appendChild(opt);
+        }
+        roleGroup.appendChild(roleSelect);
+        topRow.appendChild(roleGroup);
+
+        form.appendChild(topRow);
+
+        // generates_hard_filter checkbox (shown conditionally)
+        const hfRow = document.createElement('div');
+        hfRow.style.marginBottom = '10px';
+        const hfLabel = document.createElement('label');
+        hfLabel.style.cssText = 'display:flex;align-items:center;gap:8px;font-size:12px;cursor:pointer;color:var(--muted)';
+        const hfCheck = document.createElement('input');
+        hfCheck.type = 'checkbox';
+        hfCheck.style.accentColor = 'var(--accent)';
+        hfLabel.appendChild(hfCheck);
+        hfLabel.appendChild(document.createTextNode('Impõe restrições ao vinho (hard filter)'));
+        hfRow.appendChild(hfLabel);
+
+        function updateHfVisibility() {
+            hfRow.style.display = roleSelect.value === 'dominant_challenge' ? '' : 'none';
+        }
+        roleSelect.addEventListener('change', updateHfVisibility);
+        updateHfVisibility();
+        form.appendChild(hfRow);
+
+        // Tags toggle
+        const tagsToggle = document.createElement('button');
+        tagsToggle.type = 'button';
+        tagsToggle.className = 'comp-tags-toggle';
+        tagsToggle.textContent = '▶ Selecionar tags';
+        form.appendChild(tagsToggle);
+
+        const tagsBox = document.createElement('div');
+        tagsBox.className = 'comp-tags-picker';
+        form.appendChild(tagsBox);
+
+        let compTags = new Set();
+        let compPicker = null;
+
+        tagsToggle.addEventListener('click', () => {
+            const isOpen = tagsBox.classList.toggle('open');
+            tagsToggle.textContent = (isOpen ? '▼' : '▶') + ' Selecionar tags';
+            if (isOpen && !compPicker) {
+                compPicker = createTagPicker(tagsBox, (tags) => {
+                    compTags = tags;
+                    tagsToggle.textContent = `▼ Tags (${tags.size} selecionados)`;
+                }, new Set(), tagGroups);
+            }
+        });
+
+        // Confirm / Cancel
+        const btnRow = document.createElement('div');
+        btnRow.style.cssText = 'display:flex;gap:8px;margin-top:8px';
+
+        const confirmBtn = document.createElement('button');
+        confirmBtn.type = 'button';
+        confirmBtn.className = 'btn btn-primary btn-sm';
+        confirmBtn.textContent = 'Adicionar';
+        confirmBtn.addEventListener('click', () => {
+            const name = nameInput.value.trim() || 'Componente';
+            components.push({
+                id:                   `comp_${Date.now()}`,
+                name,
+                role:                 roleSelect.value,
+                tags:                 new Set(compTags),
+                generates_hard_filter: hfCheck.checked,
+            });
+            onConfirm();
+        });
+
+        const cancelBtn = document.createElement('button');
+        cancelBtn.type = 'button';
+        cancelBtn.className = 'btn btn-ghost btn-sm';
+        cancelBtn.textContent = 'Cancelar';
+        cancelBtn.addEventListener('click', onCancel);
+
+        btnRow.appendChild(confirmBtn);
+        btnRow.appendChild(cancelBtn);
+        form.appendChild(btnRow);
+
+        wrap.appendChild(form);
+    }
+
+    // ── Mode 3: base tags + highlight components ─────────────────────────────
+
+    function renderMode3() {
+        const wrap = document.createElement('div');
+
+        // Base tag picker
+        const baseLabel = document.createElement('p');
+        baseLabel.className = 'label';
+        baseLabel.style.marginBottom = '12px';
+        baseLabel.textContent = 'Perfil base do prato';
+        wrap.appendChild(baseLabel);
+
+        const pickerWrap = document.createElement('div');
+        basePicker = createTagPicker(pickerWrap, (tags) => {
+            baseTags = tags;
+            emit();
+        }, baseTags, tagGroups);
+        wrap.appendChild(pickerWrap);
+
+        // Divider
+        const divider = document.createElement('div');
+        divider.className = 'rule-line';
+        wrap.appendChild(divider);
+
+        // Highlight list
+        const hlLabel = document.createElement('p');
+        hlLabel.className = 'label';
+        hlLabel.style.marginBottom = '12px';
+        hlLabel.textContent = 'Componentes em destaque';
+        wrap.appendChild(hlLabel);
+
+        const listEl = document.createElement('div');
+        listEl.className = 'component-list';
+        rebuildComponentList(listEl);
+        wrap.appendChild(listEl);
+
+        // Add highlight button
+        const addBtn = document.createElement('button');
+        addBtn.type = 'button';
+        addBtn.className = 'btn btn-secondary btn-sm';
+        addBtn.textContent = '+ Adicionar destaque';
+
+        const formWrap = document.createElement('div');
+
+        addBtn.addEventListener('click', () => {
+            addBtn.style.display = 'none';
+            renderAddHighlightForm(formWrap, () => {
+                addBtn.style.display = '';
+                formWrap.innerHTML = '';
+                rebuildComponentList(listEl);
+                emit();
+            }, () => {
+                addBtn.style.display = '';
+                formWrap.innerHTML = '';
+            });
+        });
+
+        wrap.appendChild(addBtn);
+        wrap.appendChild(formWrap);
+        container.appendChild(wrap);
+    }
+
+    function renderAddHighlightForm(wrap, onConfirm, onCancel) {
+        wrap.innerHTML = '';
+        const form = document.createElement('div');
+        form.className = 'add-component-form';
+
+        const nameGroup = document.createElement('div');
+        nameGroup.className = 'form-group';
+        nameGroup.style.marginBottom = '10px';
+        nameGroup.innerHTML = '<label class="label">Nome do destaque</label>';
+        const nameInput = document.createElement('input');
+        nameInput.className = 'form-input';
+        nameInput.placeholder = 'ex: molho de laranja, glacê de mel';
+        nameGroup.appendChild(nameInput);
+        form.appendChild(nameGroup);
+
+        const hfLabel = document.createElement('label');
+        hfLabel.style.cssText = 'display:flex;align-items:center;gap:8px;font-size:12px;cursor:pointer;color:var(--muted);margin-bottom:10px';
+        const hfCheck = document.createElement('input');
+        hfCheck.type = 'checkbox';
+        hfCheck.style.accentColor = 'var(--accent)';
+        hfLabel.appendChild(hfCheck);
+        hfLabel.appendChild(document.createTextNode('Impõe restrições ao vinho'));
+        form.appendChild(hfLabel);
+
+        const tagsToggle = document.createElement('button');
+        tagsToggle.type = 'button';
+        tagsToggle.className = 'comp-tags-toggle';
+        tagsToggle.textContent = '▶ Selecionar tags';
+        form.appendChild(tagsToggle);
+
+        const tagsBox = document.createElement('div');
+        tagsBox.className = 'comp-tags-picker';
+        form.appendChild(tagsBox);
+
+        let hlTags = new Set();
+        let hlPicker = null;
+
+        tagsToggle.addEventListener('click', () => {
+            const isOpen = tagsBox.classList.toggle('open');
+            tagsToggle.textContent = (isOpen ? '▼' : '▶') + ' Selecionar tags';
+            if (isOpen && !hlPicker) {
+                hlPicker = createTagPicker(tagsBox, (tags) => {
+                    hlTags = tags;
+                    tagsToggle.textContent = `▼ Tags (${tags.size})`;
+                }, new Set(), tagGroups);
+            }
+        });
+
+        const btnRow = document.createElement('div');
+        btnRow.style.cssText = 'display:flex;gap:8px;margin-top:8px';
+
+        const confirmBtn = document.createElement('button');
+        confirmBtn.type = 'button';
+        confirmBtn.className = 'btn btn-primary btn-sm';
+        confirmBtn.textContent = 'Adicionar';
+        confirmBtn.addEventListener('click', () => {
+            components.push({
+                id:                   `hl_${Date.now()}`,
+                name:                 nameInput.value.trim() || 'Destaque',
+                role:                 'highlight',
+                tags:                 new Set(hlTags),
+                generates_hard_filter: hfCheck.checked,
+            });
+            onConfirm();
+        });
+
+        const cancelBtn = document.createElement('button');
+        cancelBtn.type = 'button';
+        cancelBtn.className = 'btn btn-ghost btn-sm';
+        cancelBtn.textContent = 'Cancelar';
+        cancelBtn.addEventListener('click', onCancel);
+
+        btnRow.appendChild(confirmBtn);
+        btnRow.appendChild(cancelBtn);
+        form.appendChild(btnRow);
+
+        wrap.appendChild(form);
+    }
+
+    // ── Public API ───────────────────────────────────────────────────────────
+
+    render();
+
+    return {
+        getDish: buildDishObj,
+        reset: () => {
+            mode = 'mode2';
+            baseTags.clear();
+            components = [];
+            render();
+        },
+    };
 }
 
 // ── Wine card DOM builder ─────────────────────────────────────────────────────
@@ -250,12 +829,6 @@ function fmtPrice(eur) {
     return eur != null ? `€${Number(eur).toFixed(2)}` : null;
 }
 
-/**
- * Builds and returns a .wine-card DOM element.
- * @param {Object}  w           — wine card object (from per_dish / scoreWine)
- * @param {Object}  [opts]
- * @param {boolean} [opts.hideReason]
- */
 function buildWineCardEl(w, opts = {}) {
     const price  = fmtPrice(w.carta_price ?? w.price_eur);
     const type   = PT_TYPE[w.type]  || w.type  || '';
@@ -298,11 +871,6 @@ function buildWineCardEl(w, opts = {}) {
 
 // ── Wine autocomplete ─────────────────────────────────────────────────────────
 
-/**
- * Attaches a fuzzy autocomplete on `inputEl` searching `winesArray`.
- * On select, calls `onSelect(wine)`.
- * Returns { destroy }.
- */
 function attachWineAutocomplete(inputEl, dropdownEl, winesArray, onSelect) {
     let debounce = null;
 
@@ -311,35 +879,29 @@ function attachWineAutocomplete(inputEl, dropdownEl, winesArray, onSelect) {
         dropdownEl.innerHTML = '';
         if (!q || q.length < 2) { dropdownEl.classList.remove('open'); return; }
 
-        const matches = winesArray
-            .filter(w => {
-                const hay = `${w.name} ${w.producer} ${w.region || ''} ${w.doc || ''}`.toLowerCase();
-                return hay.includes(q);
-            })
-            .slice(0, 12);
+        const matches = winesArray.filter(w => {
+            const hay = `${w.name} ${w.producer} ${w.region || ''} ${w.doc || ''}`.toLowerCase();
+            return hay.includes(q);
+        }).slice(0, 12);
 
         if (!matches.length) { dropdownEl.classList.remove('open'); return; }
 
         for (const wine of matches) {
             const item = document.createElement('div');
             item.className = 'ac-item';
-
             const nameEl = document.createElement('span');
             nameEl.textContent = wine.name;
             item.appendChild(nameEl);
-
             const metaEl = document.createElement('span');
             metaEl.className = 'ac-item-meta';
             metaEl.textContent = [wine.producer, PT_TYPE[wine.type] || wine.type, wine.doc || wine.region].filter(Boolean).join(' · ');
             item.appendChild(metaEl);
-
             item.addEventListener('mousedown', (e) => {
                 e.preventDefault();
                 inputEl.value = '';
                 dropdownEl.classList.remove('open');
                 onSelect(wine);
             });
-
             dropdownEl.appendChild(item);
         }
 
@@ -354,29 +916,17 @@ function attachWineAutocomplete(inputEl, dropdownEl, winesArray, onSelect) {
     inputEl.addEventListener('blur', () => {
         setTimeout(() => dropdownEl.classList.remove('open'), 150);
     });
-
-    return {
-        destroy: () => {
-            clearTimeout(debounce);
-            inputEl.removeEventListener('input', showMatches);
-        },
-    };
 }
 
-// ── Tabs ──────────────────────────────────────────────────────────────────────
+// ── Tab / accordion helpers ───────────────────────────────────────────────────
 
-/**
- * Initializes tab switching for a .tabs container.
- * Buttons have data-tab="id"; panels have id matching that value.
- */
 function initTabs(tabsEl) {
-    const btns   = tabsEl.querySelectorAll('.tab-btn');
+    const btns = tabsEl.querySelectorAll('.tab-btn');
     const panels = [];
 
     btns.forEach(btn => {
         const panel = document.getElementById(btn.dataset.tab);
         if (panel) panels.push(panel);
-
         btn.addEventListener('click', () => {
             btns.forEach(b => b.classList.remove('active'));
             panels.forEach(p => p.classList.remove('active'));
@@ -385,17 +935,13 @@ function initTabs(tabsEl) {
         });
     });
 
-    // Activate first by default
     if (btns[0]) btns[0].click();
 }
-
-// ── Accordion ─────────────────────────────────────────────────────────────────
 
 function initAccordions(containerEl) {
     containerEl.querySelectorAll('.accordion-trigger').forEach(trigger => {
         trigger.addEventListener('click', () => {
-            const item = trigger.closest('.accordion-item');
-            item.classList.toggle('open');
+            trigger.closest('.accordion-item').classList.toggle('open');
         });
     });
 }
@@ -406,8 +952,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const path = location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.nav-links a').forEach(a => {
         const href = (a.getAttribute('href') || '').split('/').pop();
-        if (href === path || (path === '' && href === 'index.html')) {
+        if (href === path || (path === '' && href === 'index.html'))
             a.classList.add('active');
-        }
     });
 });

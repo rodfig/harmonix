@@ -30,6 +30,28 @@
         }
 
         .results-panel {}
+
+        .type-filter-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .type-filter-btn {
+            font-size: 11px;
+            font-family: 'DM Mono', monospace;
+            padding: 3px 10px;
+            border: 1px solid var(--rule);
+            border-radius: 20px;
+            background: transparent;
+            color: var(--muted);
+            cursor: pointer;
+            transition: all 0.13s;
+            white-space: nowrap;
+        }
+
+        .type-filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+        .type-filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
     </style>
 </head>
 <body>
@@ -38,7 +60,6 @@
         <a href="index.html" class="nav-wordmark">Harmon<span>ix</span></a>
         <ul class="nav-links">
             <li><a href="index.html">Início</a></li>
-            <li><a href="menus.html">Menus</a></li>
             <li><a href="explorador.html">Explorador</a></li>
             <li><a href="sandbox.html">Sandbox</a></li>
         </ul>
@@ -54,33 +75,36 @@
 
             <!-- Left: tag picker -->
             <div class="picker-panel">
+                <div class="form-group" style="margin-bottom:16px">
+                    <label class="label" for="dishName">Nome do prato</label>
+                    <input class="form-input" id="dishName" placeholder="ex: Polvo grelhado, Bacalhau à Brás…" />
+                </div>
+
                 <div class="picker-actions">
                     <button class="btn btn-primary" id="btnCalcular" disabled>Harmonizar</button>
                     <button class="btn btn-ghost btn-sm" id="btnLimpar">Limpar</button>
                 </div>
 
-                <div class="selected-tags-row" id="selectedTagsRow">
-                    <span class="tags-empty-hint">Selecione características do prato</span>
-                </div>
-
-                <div class="rule-line" style="margin:16px 0 20px"></div>
-
-                <div id="tagPickerContainer"></div>
+                <div id="dishFormContainer"></div>
             </div>
 
             <!-- Right: results -->
             <div class="results-panel">
                 <div id="resultsEmpty" style="padding-top:8px">
                     <p style="font-size:14px;color:var(--muted)">Selecione tags à esquerda e clique em <strong>Harmonizar</strong> para ver sugestões de vinhos.</p>
-                    <p style="font-size:13px;color:var(--muted);margin-top:8px">Os vinhos são pontuados contra o perfil descrito pelos tags, usando as regras da Pirâmide Sensorial de Harrington.</p>
+                    <p style="font-size:13px;color:var(--muted);margin-top:8px">Os vinhos são pontuados contra o perfil que descrever, usando regras determinísticas de harmonização.</p>
                 </div>
 
                 <div id="resultsPanel" style="display:none">
-                    <div class="results-header" style="margin-bottom:16px">
+                    <div class="results-header" style="margin-bottom:12px">
                         <span class="results-title" id="resultsTitle"></span>
                         <span class="label" id="resultsCount"></span>
                     </div>
-                    <div id="resultsContext" class="notify-bar info" style="margin-bottom:16px"></div>
+                    <div id="resultsContext" class="notify-bar info" style="margin-bottom:12px"></div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px;flex-wrap:wrap">
+                        <div class="type-filter-row" id="typeFilterRow"></div>
+                        <button class="btn btn-ghost btn-sm" id="btnReshuffle" style="flex-shrink:0">↺ Baralhar</button>
+                    </div>
                     <div class="wine-list" id="wineList"></div>
                 </div>
             </div>
@@ -93,10 +117,44 @@
     <script>
     // ── State ───────────────────────────────────────────────────────────────────
 
-    let winesData = null;
-    let rulesData = null;
-    let selectedTags = new Set();
-    let picker = null;
+    let winesData      = null;
+    let rulesData      = null;
+    let dishForm       = null;
+    let tagGroups      = TAG_GROUPS_FALLBACK;
+    let allCandidates  = [];   // all scored wines (score > 0), sorted desc
+    let currentDish    = null; // resolved dish used for last score run
+    let typeFilter     = 'all';
+
+    const TYPE_FILTERS = [
+        { key: 'all',       label: 'Todos' },
+        { key: 'white',     label: 'Branco' },
+        { key: 'red',       label: 'Tinto' },
+        { key: 'sparkling', label: 'Espumante' },
+        { key: 'rosé',      label: 'Rosé' },
+        { key: 'fortified', label: 'Licoroso' },
+    ];
+
+    // ── Helpers ─────────────────────────────────────────────────────────────────
+
+    function isDishValid(dish) {
+        if (!dish) return false;
+        if (dish.components && dish.components.length) return true;
+        return (dish.food_tags || []).length > 0;
+    }
+
+    function getFiltered() {
+        if (typeFilter === 'all') return allCandidates;
+        return allCandidates.filter(c => c.wine.type === typeFilter);
+    }
+
+    function shuffle(arr) {
+        const a = [...arr];
+        for (let i = a.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+    }
 
     // ── Data loading ────────────────────────────────────────────────────────────
 
@@ -109,6 +167,9 @@
             ]);
             if (!wR.ok || !rR.ok) throw new Error('Ficheiro não encontrado');
             [winesData, rulesData] = await Promise.all([wR.json(), rR.json()]);
+            tagGroups = buildTagGroupsFromRules(rulesData);
+            const container = document.getElementById('dishFormContainer');
+            dishForm = createDishForm(container, onDishChange, tagGroups);
             return true;
         } catch (err) {
             const errEl = document.getElementById('loadError');
@@ -118,106 +179,137 @@
         }
     }
 
+    function onDishChange(dish) {
+        document.getElementById('btnCalcular').disabled = !isDishValid(dish);
+    }
+
     // ── Scoring ─────────────────────────────────────────────────────────────────
 
     async function calcular() {
-        if (!selectedTags.size) return;
+        const dish = dishForm ? dishForm.getDish() : null;
+        if (!isDishValid(dish)) return;
 
         const btnEl = document.getElementById('btnCalcular');
         btnEl.disabled = true;
         btnEl.textContent = 'A calcular…';
 
         const ok = await ensureDataLoaded();
-        btnEl.disabled = false;
         btnEl.textContent = 'Harmonizar';
-        if (!ok) return;
+        if (!ok) { btnEl.disabled = false; return; }
 
-        const tags   = [...selectedTags];
-        const dish   = {
-            id:          'explorador',
-            food_tags:   tags,
-            primary_tag: tags[0] || null,
-            hard_filters: {},
-        };
-        const rules  = rulesData.rules;
+        const dishName         = document.getElementById('dishName').value.trim();
+        const rawDish          = dishForm.getDish();
+        const interactionTable = rulesData.systemic_interactions || [];
+        currentDish = resolveDishProfile(
+            Object.assign({ id: 'explorador', name: dishName || 'Prato' }, rawDish),
+            interactionTable
+        );
 
-        const candidates = [];
+        allCandidates = [];
         for (const wine of winesData) {
-            const { score, ruleId, reason } = scoreWine(wine, dish, rules);
-            if (score > 0) candidates.push({ score, wine, ruleId, reason });
+            if (!passesFilters(wine, currentDish.hard_filters || {})) continue;
+            const { score, ruleId, reason } = scoreWine(wine, currentDish, rulesData.rules);
+            if (score > 0) allCandidates.push({ score, wine, ruleId, reason });
         }
-        candidates.sort((a, b) => b.score - a.score);
+        allCandidates.sort((a, b) => b.score - a.score);
 
-        renderResults(candidates.slice(0, 10), tags);
+        typeFilter = 'all';
+        btnEl.disabled = !isDishValid(dishForm.getDish());
+        renderResultsPanel();
     }
 
-    // ── Render results ──────────────────────────────────────────────────────────
+    // ── Render ───────────────────────────────────────────────────────────────────
 
-    function renderResults(candidates, tags) {
-        document.getElementById('resultsEmpty').style.display  = 'none';
-        document.getElementById('resultsPanel').style.display  = 'block';
+    function renderResultsPanel() {
+        document.getElementById('resultsEmpty').style.display = 'none';
+        document.getElementById('resultsPanel').style.display = 'block';
 
-        document.getElementById('resultsTitle').textContent = 'Sugestões de harmonização';
-        document.getElementById('resultsCount').textContent =
-            candidates.length ? `${candidates.length} vinhos` : '';
+        document.getElementById('resultsTitle').textContent =
+            currentDish.name && currentDish.name !== 'Prato'
+                ? `Harmonizações para "${currentDish.name}"`
+                : 'Sugestões de harmonização';
 
-        // Context line: tags used
+        // Context tags
         const ctxEl = document.getElementById('resultsContext');
-        if (tags.length) {
-            ctxEl.textContent = 'Perfil: ' + tags.map(t => PT_TAG[t] || t).join(' · ');
+        if (currentDish.food_tags && currentDish.food_tags.length) {
+            ctxEl.textContent = currentDish.food_tags.map(t => PT_TAG[t] || t).join(' · ');
             ctxEl.classList.add('show');
         } else {
             ctxEl.classList.remove('show');
         }
 
-        const listEl = document.getElementById('wineList');
-        listEl.innerHTML = '';
+        renderTypeFilters();
+        renderWineList(getFiltered().slice(0, 10));
+    }
 
-        if (!candidates.length) {
-            listEl.innerHTML = '<p class="loading-text">Nenhum vinho encontrado para este perfil. Tente adicionar mais tags.</p>';
-            return;
+    function renderTypeFilters() {
+        const row = document.getElementById('typeFilterRow');
+        row.innerHTML = '';
+        for (const f of TYPE_FILTERS) {
+            const count = f.key === 'all'
+                ? allCandidates.length
+                : allCandidates.filter(c => c.wine.type === f.key).length;
+            if (f.key !== 'all' && count === 0) continue;
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'type-filter-btn' + (typeFilter === f.key ? ' active' : '');
+            btn.textContent = f.key === 'all' ? `${f.label} (${count})` : `${f.label} (${count})`;
+            btn.addEventListener('click', () => {
+                typeFilter = f.key;
+                renderTypeFilters();
+                renderWineList(getFiltered().slice(0, 10));
+            });
+            row.appendChild(btn);
         }
 
+        const filtered = getFiltered();
+        document.getElementById('resultsCount').textContent =
+            filtered.length ? `${Math.min(filtered.length, 10)} de ${filtered.length}` : '';
+    }
+
+    function renderWineList(candidates) {
+        const listEl = document.getElementById('wineList');
+        listEl.innerHTML = '';
+        if (!candidates.length) {
+            listEl.innerHTML = '<p class="loading-text">Nenhum vinho encontrado para este filtro.</p>';
+            return;
+        }
         for (const c of candidates) {
-            const w    = c.wine;
-            const card = buildWineCardEl(
-                Object.assign({}, w, { score_raw: c.score, reason: c.reason })
-            );
-            listEl.appendChild(card);
+            listEl.appendChild(buildWineCardEl(
+                Object.assign({}, c.wine, { score_raw: c.score, reason: c.reason })
+            ));
         }
     }
 
     // ── Init ────────────────────────────────────────────────────────────────────
 
     document.addEventListener('DOMContentLoaded', () => {
-        const pickerContainer = document.getElementById('tagPickerContainer');
-        const selectedRow     = document.getElementById('selectedTagsRow');
-        const btnCalc         = document.getElementById('btnCalcular');
-        const btnClear        = document.getElementById('btnLimpar');
+        const container = document.getElementById('dishFormContainer');
+        const btnCalc   = document.getElementById('btnCalcular');
+        const btnClear  = document.getElementById('btnLimpar');
 
-        function onRemoveTag(tag) {
-            selectedTags.delete(tag);
-            picker.setSelected(selectedTags);
-            renderSelectedTags(selectedRow, selectedTags, onRemoveTag);
-            btnCalc.disabled = !selectedTags.size;
-        }
-
-        picker = createTagPicker(pickerContainer, (tags) => {
-            selectedTags = tags;
-            renderSelectedTags(selectedRow, tags, onRemoveTag);
-            btnCalc.disabled = !tags.size;
-        });
+        dishForm = createDishForm(container, onDishChange, TAG_GROUPS_FALLBACK);
 
         btnCalc.addEventListener('click', calcular);
 
-        btnClear.addEventListener('click', () => {
-            picker.clear();
-            selectedTags.clear();
-            renderSelectedTags(selectedRow, selectedTags, () => {});
-            btnCalc.disabled = true;
-            document.getElementById('resultsEmpty').style.display  = 'block';
-            document.getElementById('resultsPanel').style.display  = 'none';
+        document.getElementById('btnReshuffle').addEventListener('click', () => {
+            const filtered = getFiltered();
+            if (!filtered.length) return;
+            renderWineList(shuffle(filtered).slice(0, 10));
         });
+
+        btnClear.addEventListener('click', () => {
+            if (dishForm) dishForm.reset();
+            allCandidates = [];
+            currentDish   = null;
+            typeFilter    = 'all';
+            btnCalc.disabled = true;
+            document.getElementById('dishName').value = '';
+            document.getElementById('resultsEmpty').style.display = 'block';
+            document.getElementById('resultsPanel').style.display = 'none';
+        });
+
+        ensureDataLoaded();
     });
     </script>
 </body>

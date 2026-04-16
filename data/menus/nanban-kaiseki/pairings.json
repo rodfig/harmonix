@@ -1,7 +1,7 @@
 {
   "_meta": {
     "menu": "nanban-kaiseki",
-    "generated_at": "2026-04-08T10:56:30.108808",
+    "generated_at": "2026-04-08T11:13:59.042624",
     "wines_total": 443,
     "wine_list_filter": "full_db",
     "active_pack": "pack_a"
@@ -5795,24 +5795,24 @@
       "tagline": "Espumante, branco, tinto e sobremesa — um vinho para cada momento do menu",
       "wines": [
         {
-          "wine_id": "falua-conde-vimioso-espumante-brut-nature-2019",
-          "name": "Conde Vimioso Espumante Brut Nature",
-          "producer": "Falua — Sociedade de Vinhos",
-          "region": "Tejo – Almeirim",
-          "region_key": "tejo",
-          "doc": "Tejo DOC",
+          "wine_id": "csj-luiz-costa-espumante-2015",
+          "name": "Luiz Costa Espumante Bruto Natural",
+          "producer": "Caves São João",
+          "region": "Bairrada – Anadia",
+          "region_key": "bairrada",
+          "doc": "Bairrada DOC",
           "type": "sparkling",
-          "vintage": 2019,
+          "vintage": 2015,
           "varieties": [
-            "Chardonnay",
-            "Touriga Nacional"
+            "Pinot Noir",
+            "Chardonnay"
           ],
-          "price_eur": 20.35,
-          "carta_price": 26.5,
+          "price_eur": 19.79,
+          "carta_price": 30.0,
           "structure": {
             "acidity": 7,
-            "tannins": null,
-            "body": "medium-light",
+            "tannins": 1,
+            "body": "medium",
             "sweetness": "dry",
             "finish": "long"
           },
@@ -5862,19 +5862,22 @@
           ]
         },
         {
-          "wine_id": "fiuza-tinta-miuda",
-          "name": "Fiuza Tinta Miúda",
-          "producer": "Fiuza & Bright",
-          "region": "Tejo – Cartaxo",
-          "region_key": "tejo",
-          "doc": "Vinho Regional Tejo",
+          "wine_id": "marques-de-borba-vinhas-velhas-2021",
+          "name": "Marquês de Borba Vinhas Velhas",
+          "producer": "João Portugal Ramos – Marquês de Borba",
+          "region": "Alentejo – Borba",
+          "region_key": "alentejo",
+          "doc": "Alentejo DOC",
           "type": "red",
-          "vintage": null,
+          "vintage": 2021,
           "varieties": [
-            "Tinta Miúda"
+            "Alicante Bouschet",
+            "Aragonez",
+            "Castelão",
+            "Syrah"
           ],
-          "price_eur": 6.99,
-          "carta_price": 10.5,
+          "price_eur": 12.49,
+          "carta_price": 19.0,
           "structure": {
             "acidity": 6,
             "tannins": 6,
@@ -5936,28 +5939,31 @@
       "tagline": "Dois brancos de carácter distinto, tinto e sobremesa — maior profundidade",
       "wines": [
         {
-          "wine_id": "aphros-ten-2023",
-          "name": "Aphros Ten",
-          "producer": "Aphros Wine",
-          "region": "Vinho Verde – Lima",
-          "region_key": "vinho-verde",
-          "doc": "Vinho Verde – Lima",
+          "wine_id": "xisto-ilimitado-branco-2023",
+          "name": "Xisto Ilimitado Branco",
+          "producer": "Luis Seabra",
+          "region": "Douro – Cima Corgo & Douro Superior",
+          "region_key": "douro",
+          "doc": "Douro DOC",
           "type": "white",
           "vintage": 2023,
           "varieties": [
-            "Loureiro"
+            "Rabigato",
+            "Códega do Larinho",
+            "Gouveio",
+            "Viosinho"
           ],
-          "price_eur": 13.75,
-          "carta_price": 21.0,
+          "price_eur": 14.29,
+          "carta_price": 21.5,
           "structure": {
-            "acidity": 10,
+            "acidity": 8,
             "tannins": null,
             "body": "light",
-            "sweetness": "off-dry",
+            "sweetness": "dry",
             "finish": "long"
           },
-          "score_raw": 24.0,
-          "score_display": 5,
+          "score_raw": 21.8,
+          "score_display": 4,
           "primary_rule": "high-acidity-shellfish",
           "reason": "Acidez complementa a salinidade e corta a riqueza dos mariscos",
           "arc": "white_light",
@@ -6143,25 +6149,25 @@
       "dish_id": "ceviche-tofu",
       "dish_name": "Ceviche de Tofu Firme",
       "wine": {
-        "wine_id": "currais-siria-2022",
-        "name": "Quinta dos Currais Síria Branco",
-        "producer": "Quinta dos Currais",
-        "region": "Beira Interior – Cova da Beira",
-        "region_key": "beira-interior",
-        "doc": "Beira Interior DOC – Cova da Beira",
+        "wine_id": "magnum-rs-rabo-de-ovelha-2022",
+        "name": "Magnum Ribeiro Santo Rabo-de-Ovelha",
+        "producer": "Magnum – Carlos Lucas Vinhos",
+        "region": "Dão – Carregal do Sal",
+        "region_key": "dao",
+        "doc": "Dão DOC",
         "type": "white",
         "vintage": 2022,
         "varieties": [
-          "Síria"
+          "Rabo-de-Ovelha"
         ],
-        "price_eur": 5.49,
-        "carta_price": 8.5,
+        "price_eur": 11.49,
+        "carta_price": 17.5,
         "structure": {
-          "acidity": 10,
+          "acidity": 9,
           "tannins": null,
           "body": "light",
           "sweetness": "dry",
-          "finish": "long"
+          "finish": "medium"
         },
         "score_raw": 25,
         "score_display": 5,
@@ -6174,16 +6180,17 @@
       "dish_id": "agedashi-doufu",
       "dish_name": "Doufu Agedashi",
       "wine": {
-        "wine_id": "romeira-prova-regia-branco-2024",
-        "name": "Prova Régia Branco",
-        "producer": "Quinta da Romeira",
-        "region": "Lisboa – Bucelas",
-        "region_key": "lisboa",
-        "doc": "Lisboa DOC",
+        "wine_id": "regueiro-trajadura-2020",
+        "name": "Alvarinho Trajadura",
+        "producer": "Quinta do Regueiro",
+        "region": "Vinho Verde – Monção e Melgaço",
+        "region_key": "vinho-verde",
+        "doc": "Vinho Verde",
         "type": "white",
-        "vintage": 2024,
+        "vintage": 2020,
         "varieties": [
-          "Arinto"
+          "Alvarinho",
+          "Trajadura"
         ],
         "price_eur": 8.05,
         "carta_price": 12.5,
@@ -6192,7 +6199,7 @@
           "tannins": null,
           "body": "light",
           "sweetness": "dry",
-          "finish": "long"
+          "finish": "medium"
         },
         "score_raw": 23,
         "score_display": 5,
@@ -6236,21 +6243,22 @@
       "dish_id": "tofu-nanban",
       "dish_name": "Nanban-zuke de Tofu",
       "wine": {
-        "wine_id": "regueiro-secreto-2020",
-        "name": "Alvarinho Secreto",
-        "producer": "Quinta do Regueiro",
-        "region": "Vinho Verde – Monção e Melgaço",
-        "region_key": "vinho-verde",
-        "doc": "Vinho Verde DOC – Monção e Melgaço",
+        "wine_id": "valle-pradinhos-grande-reserva-branco-2020",
+        "name": "Valle Pradinhos Grande Reserva Branco",
+        "producer": "Valle Pradinhos",
+        "region": "Trás-os-Montes",
+        "region_key": "tras-os-montes",
+        "doc": "Vinho Regional Transmontano",
         "type": "white",
         "vintage": 2020,
         "varieties": [
-          "Alvarinho"
+          "Riesling",
+          "Sauvignon Blanc"
         ],
-        "price_eur": 7.79,
-        "carta_price": 12.0,
+        "price_eur": 14.95,
+        "carta_price": 22.5,
         "structure": {
-          "acidity": 9,
+          "acidity": 10,
           "tannins": null,
           "body": "medium",
           "sweetness": "dry",
@@ -6267,22 +6275,24 @@
       "dish_id": "gratin-tofu",
       "dish_name": "Gratin de Tofu e Cogumelos",
       "wine": {
-        "wine_id": "mouchao-ponte-branco-verdelho-2023",
-        "name": "Ponte Branco (Verdelho)",
-        "producer": "Herdade do Mouchão",
-        "region": "Alentejo – Reguengos de Monsaraz",
-        "region_key": "alentejo",
-        "doc": "Alentejano VR",
+        "wine_id": "vallado-reserva-branco-2023",
+        "name": "Vallado Reserva Branco",
+        "producer": "Quinta do Vallado",
+        "region": "Douro – Peso da Régua (Baixo Corgo) & Vila Nova de Foz Côa (Douro Superior)",
+        "region_key": "douro",
+        "doc": "Douro DOC",
         "type": "white",
-        "vintage": 2019,
+        "vintage": 2023,
         "varieties": [
-          "Verdelho"
+          "Rabigato",
+          "Gouveio",
+          "Arinto"
         ],
-        "price_eur": 23.15,
-        "carta_price": 30.5,
+        "price_eur": 22.89,
+        "carta_price": 30.0,
         "structure": {
-          "acidity": 6,
-          "tannins": 1,
+          "acidity": 5,
+          "tannins": null,
           "body": "medium-full",
           "sweetness": "dry",
           "finish": "very long"
@@ -6298,17 +6308,16 @@
       "dish_id": "arroz-misto",
       "dish_name": "Arroz Misto",
       "wine": {
-        "wine_id": "regueiro-trajadura-2020",
-        "name": "Alvarinho Trajadura",
-        "producer": "Quinta do Regueiro",
-        "region": "Vinho Verde – Monção e Melgaço",
-        "region_key": "vinho-verde",
-        "doc": "Vinho Verde",
+        "wine_id": "romeira-prova-regia-branco-2024",
+        "name": "Prova Régia Branco",
+        "producer": "Quinta da Romeira",
+        "region": "Lisboa – Bucelas",
+        "region_key": "lisboa",
+        "doc": "Lisboa DOC",
         "type": "white",
-        "vintage": 2020,
+        "vintage": 2024,
         "varieties": [
-          "Alvarinho",
-          "Trajadura"
+          "Arinto"
         ],
         "price_eur": 8.05,
         "carta_price": 12.5,
@@ -6317,7 +6326,7 @@
           "tannins": null,
           "body": "light",
           "sweetness": "dry",
-          "finish": "medium"
+          "finish": "long"
         },
         "score_raw": 25,
         "score_display": 5,
@@ -6330,24 +6339,24 @@
       "dish_id": "sopa-yuba",
       "dish_name": "Sopa clara com Yuba",
       "wine": {
-        "wine_id": "soalheiro-9pct-2024",
-        "name": "Soalheiro 9% Alvarinho",
-        "producer": "Quinta de Soalheiro",
-        "region": "Vinho Verde",
-        "region_key": "vinho-verde",
-        "doc": "IG Minho",
+        "wine_id": "vallado-prima-branco-2021",
+        "name": "Vallado Prima Branco",
+        "producer": "Quinta do Vallado",
+        "region": "Douro – Peso da Régua (Baixo Corgo) & Vila Nova de Foz Côa (Douro Superior)",
+        "region_key": "douro",
+        "doc": "Douro DOC",
         "type": "white",
-        "vintage": 2024,
+        "vintage": 2021,
         "varieties": [
-          "Alvarinho"
+          "Moscatel Galego"
         ],
-        "price_eur": 10.85,
-        "carta_price": 16.5,
+        "price_eur": 9.89,
+        "carta_price": 15.0,
         "structure": {
           "acidity": 7,
           "tannins": null,
           "body": "light",
-          "sweetness": "semi-sweet",
+          "sweetness": "dry",
           "finish": "medium"
         },
         "score_raw": 27,
@@ -6361,28 +6370,28 @@
       "dish_id": "parfait-tofu",
       "dish_name": "Parfait de Tofu e Castella com Biscoito de Okara",
       "wine": {
-        "wine_id": "bacalhoa-moscatel-20-anos-2000",
-        "name": "Moscatel de Setúbal Superior 20 Anos",
+        "wine_id": "bacalhoa-moscatel-setubal-2022",
+        "name": "Moscatel de Setúbal",
         "producer": "Bacalhôa",
         "region": "Setúbal DOC – Azeitão / Serra da Arrábida",
         "region_key": "setubal",
         "doc": "Setúbal DOC",
         "type": "fortified",
-        "vintage": 2000,
+        "vintage": 2022,
         "varieties": [
           "Moscatel de Setúbal"
         ],
-        "price_eur": 28.65,
-        "carta_price": 37.5,
+        "price_eur": 8.75,
+        "carta_price": 13.5,
         "structure": {
-          "acidity": 8,
+          "acidity": 6,
           "tannins": null,
           "body": "medium-full",
           "sweetness": "sweet",
-          "finish": "very long"
+          "finish": "long"
         },
-        "score_raw": 21,
-        "score_display": 4,
+        "score_raw": 31,
+        "score_display": 5,
         "primary_rule": "sweet-fortified-rich-desserts",
         "reason": "Regra fundamental: vinho deve ser tão doce ou mais doce que a sobremesa; complexidade oxidativa adiciona camadas"
       }

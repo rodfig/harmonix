@@ -77,14 +77,11 @@
         /* ── Add dish form ── */
         .add-dish-form { border-top: 1px solid var(--rule); padding-top: 14px; }
 
-        .dish-name-row {
-            display: flex;
-            gap: 8px;
-            align-items: flex-end;
-            margin-bottom: 10px;
+        #sandboxDishFormContainer {
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 4px;
         }
-
-        .dish-name-row .form-input { flex: 1; }
 
         /* ── Add wine form tabs ── */
         .wine-form-tabs {
@@ -176,7 +173,6 @@
         <a href="index.html" class="nav-wordmark">Harmon<span>ix</span></a>
         <ul class="nav-links">
             <li><a href="index.html">Início</a></li>
-            <li><a href="menus.html">Menus</a></li>
             <li><a href="explorador.html">Explorador</a></li>
             <li><a href="sandbox.html">Sandbox</a></li>
         </ul>
@@ -201,14 +197,12 @@
                 <div class="item-list" id="dishList"></div>
 
                 <div class="add-dish-form">
-                    <div class="dish-name-row">
-                        <input class="form-input" id="newDishName" placeholder="Nome do prato (ex: Bife Grelhado)" />
-                        <button class="btn btn-secondary btn-sm" id="btnPickDishTags">Tags ▾</button>
+                    <div class="form-group" style="margin-bottom:12px">
+                        <label class="label" for="newDishName">Nome do prato</label>
+                        <input class="form-input" id="newDishName" placeholder="ex: Bife Grelhado, Tábua de queijos…" />
                     </div>
-                    <div id="selectedDishTagsRow" class="selected-tags-row" style="margin-bottom:10px">
-                        <span class="tags-empty-hint">Selecione tags do prato</span>
-                    </div>
-                    <button class="btn btn-secondary btn-sm" id="btnAddDish" disabled>+ Adicionar prato</button>
+                    <div id="sandboxDishFormContainer"></div>
+                    <button class="btn btn-secondary btn-sm" id="btnAddDish" disabled style="margin-top:12px">+ Adicionar prato</button>
                 </div>
             </div>
 
@@ -335,19 +329,6 @@
         </div>
     </main>
 
-    <!-- Tag picker modal (for dish tags) -->
-    <div id="tagModal" class="pairing-modal" role="dialog" aria-modal="true">
-        <div class="pairing-modal-content" style="max-width:680px;max-height:88vh">
-            <button class="pairing-modal-close" id="btnCloseTagModal" aria-label="Fechar">×</button>
-            <h2 class="pairing-modal-title">Selecionar tags do prato</h2>
-            <div id="modalTagPicker"></div>
-            <div style="margin-top:20px;display:flex;gap:10px">
-                <button class="btn btn-primary" id="btnConfirmDishTags">Confirmar</button>
-                <button class="btn btn-ghost btn-sm" id="btnClearDishTags">Limpar</button>
-            </div>
-        </div>
-    </div>
-
     <!-- Score breakdown modal -->
     <div id="breakdownModal" class="pairing-modal" role="dialog" aria-modal="true">
         <div class="pairing-modal-content" style="max-width:600px">
@@ -366,15 +347,14 @@
     <script>
     // ── State ───────────────────────────────────────────────────────────────────
 
-    let winesDB   = null;
-    let rulesData = null;
+    let winesDB    = null;
+    let rulesData  = null;
+    let tagGroups  = TAG_GROUPS_FALLBACK;
+    let sandboxDishForm = null;
 
-    const dishes    = [];   // [{ id, name, food_tags }]
-    const wines     = [];   // [{ id, name, type, structure: {acidity,tannins,body,sweetness,finish}, source:'db'|'custom', ...rest }]
+    const dishes    = [];   // [{ id, name, food_tags?, components? }]
+    const wines     = [];   // [{ id, name, type, structure, source:'db'|'custom', ...rest }]
     let   matrix    = null; // { rows: dish[], cols: wine[], cells: [[result]] }
-
-    let dishTagsModal = new Set();  // tags being edited in the modal
-    let modalPicker   = null;
 
     // ── Data loading ────────────────────────────────────────────────────────────
 
@@ -387,6 +367,10 @@
             ]);
             if (!wR.ok || !rR.ok) throw new Error('Ficheiro não encontrado');
             [winesDB, rulesData] = await Promise.all([wR.json(), rR.json()]);
+            // Rebuild dish form with correct tag vocabulary
+            tagGroups = buildTagGroupsFromRules(rulesData);
+            const formContainer = document.getElementById('sandboxDishFormContainer');
+            sandboxDishForm = createDishForm(formContainer, onSandboxDishChange, tagGroups);
             // Initialize wine autocomplete once data is loaded
             attachWineAutocomplete(
                 document.getElementById('wineSearch'),
@@ -412,11 +396,19 @@
 
     // ── Dish management ─────────────────────────────────────────────────────────
 
-    let pendingDishTags = new Set();
+    function isDishValid(dish) {
+        if (!dish) return false;
+        if (dish.components && dish.components.length) return true;
+        return (dish.food_tags || []).length > 0;
+    }
 
-    function addDish(name, tags) {
+    function onSandboxDishChange(dish) {
+        document.getElementById('btnAddDish').disabled = !isDishValid(dish);
+    }
+
+    function addDish(name, dishObj) {
         const id = `dish_${Date.now()}`;
-        dishes.push({ id, name, food_tags: [...tags] });
+        dishes.push(Object.assign({ id, name }, dishObj));
         renderDishList();
         updateAnalyzeBtn();
     }
@@ -426,6 +418,13 @@
         if (i >= 0) dishes.splice(i, 1);
         renderDishList();
         updateAnalyzeBtn();
+    }
+
+    function dishSummaryLine(d) {
+        if (d.components && d.components.length) {
+            return d.components.map(c => c.name || PT_ROLE[c.role] || c.role).join(' · ');
+        }
+        return (d.food_tags || []).map(t => PT_TAG[t] || t).join(' · ');
     }
 
     function renderDishList() {
@@ -439,7 +438,7 @@
             chip.innerHTML = `
                 <div class="item-chip-body">
                     <div class="item-chip-name">${d.name}</div>
-                    <div class="item-chip-tags">${d.food_tags.map(t => PT_TAG[t] || t).join(' · ')}</div>
+                    <div class="item-chip-tags">${dishSummaryLine(d)}</div>
                 </div>
                 <button class="item-chip-remove" aria-label="Remover">×</button>
             `;
@@ -848,55 +847,18 @@
             input.addEventListener('input', () => { val.textContent = input.value; });
         });
 
-        // Tag picker modal
-        const tagModal    = document.getElementById('tagModal');
-        const modalTagEl  = document.getElementById('modalTagPicker');
-        const selDishRow  = document.getElementById('selectedDishTagsRow');
-
-        document.getElementById('btnPickDishTags').addEventListener('click', () => {
-            if (!modalPicker) {
-                modalPicker = createTagPicker(modalTagEl, (tags) => {
-                    dishTagsModal = tags;
-                }, pendingDishTags);
-            } else {
-                modalPicker.setSelected(pendingDishTags);
-            }
-            tagModal.classList.add('active');
-        });
-
-        document.getElementById('btnCloseTagModal').addEventListener('click', () => {
-            tagModal.classList.remove('active');
-        });
-
-        function onRemoveDishTag(tag) {
-            pendingDishTags.delete(tag);
-            if (modalPicker) modalPicker.setSelected(pendingDishTags);
-            renderSelectedTags(selDishRow, pendingDishTags, onRemoveDishTag);
-            document.getElementById('btnAddDish').disabled = !pendingDishTags.size;
-        }
-
-        document.getElementById('btnConfirmDishTags').addEventListener('click', () => {
-            pendingDishTags = new Set(dishTagsModal);
-            renderSelectedTags(selDishRow, pendingDishTags, onRemoveDishTag);
-            document.getElementById('btnAddDish').disabled = !pendingDishTags.size;
-            tagModal.classList.remove('active');
-        });
-
-        document.getElementById('btnClearDishTags').addEventListener('click', () => {
-            dishTagsModal.clear();
-            if (modalPicker) modalPicker.clear();
-        });
-
-        tagModal.addEventListener('click', e => { if (e.target === tagModal) tagModal.classList.remove('active'); });
+        // Initialize inline dish form with fallback tag groups
+        const formContainer = document.getElementById('sandboxDishFormContainer');
+        sandboxDishForm = createDishForm(formContainer, onSandboxDishChange, TAG_GROUPS_FALLBACK);
 
         // Add dish
         document.getElementById('btnAddDish').addEventListener('click', () => {
+            const dishObj = sandboxDishForm ? sandboxDishForm.getDish() : null;
+            if (!isDishValid(dishObj)) { notify('info', 'Defina o perfil do prato antes de adicionar'); return; }
             const name = document.getElementById('newDishName').value.trim() || 'Prato sem nome';
-            if (!pendingDishTags.size) { notify('info', 'Selecione pelo menos um tag'); return; }
-            addDish(name, pendingDishTags);
+            addDish(name, dishObj);
             document.getElementById('newDishName').value = '';
-            pendingDishTags = new Set();
-            renderSelectedTags(selDishRow, pendingDishTags, () => {});
+            sandboxDishForm.reset();
             document.getElementById('btnAddDish').disabled = true;
         });
 
@@ -934,12 +896,10 @@
         });
         document.getElementById('btnSaveSession').addEventListener('click', saveSession);
 
-        // ESC closes modals
+        // ESC closes modal
         document.addEventListener('keydown', e => {
-            if (e.key === 'Escape') {
-                document.getElementById('tagModal').classList.remove('active');
+            if (e.key === 'Escape')
                 document.getElementById('breakdownModal').classList.remove('active');
-            }
         });
 
         // Pre-load data in background so autocomplete is ready immediately

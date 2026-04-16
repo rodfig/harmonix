@@ -800,6 +800,152 @@ body {
     padding: 20px 0;
 }
 
+/* ── Dish form: mode selector ─────────────────────────────────────────────── */
+
+.mode-selector {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--rule);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.mode-btn {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 12px;
+    font-family: inherit;
+    background: transparent;
+    border: none;
+    border-right: 1px solid var(--rule);
+    cursor: pointer;
+    color: var(--muted);
+    transition: all 0.13s;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.mode-btn:last-child { border-right: none; }
+.mode-btn:hover { background: var(--accent-bg); color: var(--ink); }
+.mode-btn.active { background: var(--accent); color: #fff; }
+
+.mode-hint {
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+
+/* ── Dish form: component list (Mode 1 / 3) ───────────────────────────────── */
+
+.component-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+
+.component-card {
+    border: 1px solid var(--rule);
+    border-radius: 5px;
+    background: var(--surface);
+    overflow: hidden;
+}
+
+.component-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.component-card-header:hover { background: var(--accent-bg); }
+
+.component-role-badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 10px;
+    background: var(--accent-bg);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.component-role-badge.dominant { background: var(--accent); color: #fff; }
+
+.component-card-name {
+    font-size: 13px;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.component-card-tags {
+    font-size: 11px;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+}
+
+.component-remove {
+    background: none;
+    border: none;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 2px;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.component-remove:hover { color: var(--error); }
+
+/* ── Dish form: add component inline form ─────────────────────────────────── */
+
+.add-component-form {
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    padding: 16px;
+    background: var(--accent-bg);
+    margin-bottom: 10px;
+}
+
+.add-component-form .form-row { margin-bottom: 12px; }
+
+.comp-tags-toggle {
+    font-size: 12px;
+    color: var(--accent);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.comp-tags-toggle:hover { text-decoration-style: solid; }
+
+.comp-tags-picker {
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 12px;
+    background: var(--surface);
+    margin-bottom: 10px;
+    display: none;
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+.comp-tags-picker.open { display: block; }
+
 /* ── Responsive ───────────────────────────────────────────────────────────── */
 
 @media (max-width: 640px) {

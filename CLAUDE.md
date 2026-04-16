@@ -426,4 +426,34 @@ Phase 2 depends on Phase 1 being merged first (needs new tags defined).
 
 ---
 
+---
+
+## Explorador — Ideas Backlog
+
+Features to consider for future sessions. All client-side, no backend required.
+
+### Result filtering & sorting
+
+| Idea | Description | Notes |
+|---|---|---|
+| **Region filter** | Filter results by wine region (DOC/DOP). Multi-select or indifferent. Regions come from `wine.doc` field in `wines-compiled.json`. | Implemented as pills like the type filter. |
+| **Sort by score** | Results already sort by score by default. Consider explicit sort toggle: score desc / score asc / random. Reshuffle button already covers random. | May be redundant given current defaults. |
+| **Score cutoff** | Slider or input to set minimum score threshold (e.g. only show wines scoring ≥ 10). "Indifferent" = no cutoff. | Currently score > 0 is the only filter. A cutoff of 8–10 would focus on strong matches only. |
+
+### Rules gaps identified
+
+| Tag | Gap | Rule needed |
+|---|---|---|
+| `fatty_dairy` | Rule added (`high-acidity-dairy-fat`, score 7, acidity ≥ 7, no type constraint). | Done. |
+| `fatty_animal` | No dedicated rule — covered indirectly by `high-tannin-red-fatty-meat`. Direct acidity rule missing for animal fat + white wine pairings. | Consider `high-acidity-animal-fat` for grilled fish with butter, etc. |
+| `fatty_vegetal` | No rule — olive oil, nut-based sauces have no scoring signal. | Consider a body/acidity rule for vegetal fat. |
+| `grilled` | No rule — grilling creates Maillard/char complexity that benefits structured wines. | Possible: `structured-wine-grilled-protein` targeting medium+ body and finish. |
+| `poultry` | No dedicated rule — covered by generic body/intensity rules. | Acceptable for now. |
+
+### Tag vocabulary notes
+
+- `steamed` fires `light-body-delicate-dishes` — correct.
+- `variety` (heterogeneous plate) has no rule — sparkling is the logical recommendation but no rule encodes it.
+- Dessert cluster (`dessert`, `nuts`, `caramel`, `chocolate`, `custard`) fires existing sweet-wine rules via the `sweet` tag, but not via the specific descriptors. Consider rules targeting `chocolate` → fortified/tawny, `custard` → moscatel.
+
 *Harmonix — April 2026. Generalized from rodfig/nanban.*

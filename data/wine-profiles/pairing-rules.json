@@ -48,12 +48,11 @@
 
   "food_tags_reference": {
     "_note": "Apply these tags to each dish. A dish can have multiple tags.",
-    "_tiers": "Tier 1 = universal structural (every dish expressible with these alone; rules on tier-1 tags apply to any cuisine). Tier 2 = cuisine-specific or aromatic (optional; trigger bonus rules for aromatic concordance and cultural affinity; adding a tier-2 tag with no corresponding rule is harmless and forward-declares future rules).",
-    "_governance": "New tags must be added here before use in dish-profiles or rules. New tier-2 tags without a matching rule fire nothing — they are safe forward declarations.",
+    "_tiers": "Tier 1 = universal structural (every dish expressible with these alone). Tier 2 = aromatic or cultural (optional; trigger bonus rules; adding a tier-2 tag with no corresponding rule is harmless).",
+    "_governance": "New tags must be added here before use in dish-profiles or rules.",
 
     "flavor_sauda": {
       "_tier": 1,
-      "_label": "SAUDA — base flavor (Harrington pyramid)",
       "tags": ["salty", "acidic", "sweet", "bitter", "umami", "spicy"]
     },
     "fat_type": {
@@ -62,12 +61,13 @@
     },
     "cooking_method": {
       "_tier": 1,
-      "tags": ["raw", "fried", "grilled", "braised", "steamed", "cured", "smoked"]
+      "tags": ["raw", "fried", "grilled", "braised", "steamed", "cured", "smoked", "gratin"]
     },
     "protein": {
       "_tier": 1,
-      "tags": ["red_meat", "poultry", "fish_lean", "fish_fatty", "shellfish", "plant_protein", "egg",
-               "raw_fish", "cooked_fish", "white_meat", "game", "pork", "tofu"]
+      "tags": ["red_meat", "white_meat", "poultry", "pork", "game",
+               "oily_fish", "fish_fatty", "fish_lean", "shellfish",
+               "egg", "plant_protein", "tofu"]
     },
     "intensity": {
       "_tier": 1,
@@ -79,20 +79,19 @@
     },
     "aromatic": {
       "_tier": 2,
-      "tags": ["citrus", "floral", "herbaceous", "smoky", "earthy", "resinous", "oxidative", "nutty"]
+      "tags": ["citrus", "floral", "herbaceous", "earthy", "mushroom", "marine", "nutty", "smoky",
+               "resinous", "oxidative"]
     },
-    "japanese": {
+    "flavor_descriptor": {
       "_tier": 2,
-      "tags": ["dashi_based", "miso_based", "yuzu", "umami_dashi", "soy_based", "soy_condiment"]
+      "tags": ["sweet_sour", "marinade", "fermented", "pickled", "layered", "complex",
+               "dessert", "nuts", "caramel", "chocolate", "custard",
+               "lemon_based", "variety"]
     },
-    "portuguese": {
+    "cultural": {
       "_tier": 2,
-      "tags": ["portuguese_dish", "cataplana", "bacalhau_based"]
-    },
-    "misc_flavor": {
-      "_tier": 2,
-      "tags": ["sweet_sour", "marinade", "fermented", "pickled", "layered", "complex", "lingering",
-               "variety", "lemon_based", "acidic_light"]
+      "tags": ["portuguese_dish", "cataplana", "bacalhau_based",
+               "dashi_based", "miso_based", "yuzu", "soy_based", "soy_condiment", "umami_dashi"]
     }
   },
 
@@ -126,6 +125,16 @@
       "food_tags": ["shellfish", "oyster", "clam", "shrimp"],
       "score": 9,
       "reason": "Acidez complementa a salinidade e corta a riqueza dos mariscos"
+    },
+
+    {
+      "id": "high-acidity-dairy-fat",
+      "description": "Acidez alta corta gordura láctea",
+      "dimension": "acidity",
+      "wine_condition": { "acidity": ">= 7" },
+      "food_tags": ["fatty_dairy", "creamy"],
+      "score": 7,
+      "reason": "Acidez corta a gordura láctea e limpa o paladar"
     },
 
     {
