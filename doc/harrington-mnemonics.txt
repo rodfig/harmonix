@@ -1,0 +1,24 @@
+MNEMONICS — PIRÂMIDE DE HARRINGTON
+====================================
+
++---------------------+------------------------------------------------+----------+---------------------------------------------------------------+
+| Grupo               | Parâmetros                                     | Acrónimo | Mnemónica                                                     |
++---------------------+------------------------------------------------+----------+---------------------------------------------------------------+
+| Base: Vinho         | Acidez · Doçura · Efervescência                | ADE      | "-ade" é o sufixo das bebidas: limonade, laranjADE —          |
+|                     |                                                |          | a base do vinho partilha o sufixo com as bebidas              |
++---------------------+------------------------------------------------+----------+---------------------------------------------------------------+
+| Base: Comida        | Salinidade · Acidez · Umami · Doçura · Amargor | SAUDA    | "O prato saúda o vinho" — os cinco gostos primários que       |
+|                     |                                                |          | o prato apresenta ao vinho no primeiro contacto               |
++---------------------+------------------------------------------------+----------+---------------------------------------------------------------+
+| Textura: Vinho      | Corpo · Álcool · Taninos · cArvalho            | CATA     | "cata de vinhos" — os quatro elementos que definem            |
+|                     |                                                |          | a avaliação estrutural do vinho                               |
++---------------------+------------------------------------------------+----------+---------------------------------------------------------------+
+| Textura: Comida     | Gordura · Método · Proteína · Corpo            | GMPC     | "Gordura Molda, Proteína Constrói" — gordura e método         |
+|                     |                                                |          | determinam a untuosidade; proteína e corpo o volume           |
++---------------------+------------------------------------------------+----------+---------------------------------------------------------------+
+| Sabores             | (tipo de) Aroma · Intensidade · Persistência   | AIP      | "Aromas Intensos Persistem" — a frase descreve o ideal        |
+|                     |                                                |          | e serve de âncora                                             |
++---------------------+------------------------------------------------+----------+---------------------------------------------------------------+
+
+Nota: CATA reordena os elementos originais (T·A·C·C) para formar uma palavra com significado direto.
+ADE reordena D·A·E pela mesma razão. SAUDA reordena D·A·S·A·U. Os restantes mantêm a ordem original.
