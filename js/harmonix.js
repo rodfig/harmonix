@@ -59,6 +59,9 @@ const PT_TAG = {
     raw:             'Cru',
     fried:           'Frito',
     grilled:         'Grelhado',
+    roasted:         'Assado',
+    sauteed:         'Salteado',
+    poached:         'Escalfado',
     braised:         'Estufado',
     steamed:         'Cozido a Vapor',
     cured:           'Curado',
@@ -94,6 +97,7 @@ const PT_TAG = {
     floral:          'Floral',
     herbaceous:      'Herbáceo',
     earthy:          'Terroso',
+    warm_spiced:     'Especiarias Doces',
     mushroom:        'Cogumelos',
     marine:          'Marinho',
     nutty:           'Nozes/Avelã',
@@ -113,22 +117,9 @@ const PT_TAG = {
     chocolate:       'Chocolate',
     custard:         'Creme/Custard',
     lemon_based:     'Limão',
-    variety:         'Variedade',
-    // Cultural
-    portuguese_dish: 'Prato Português',
-    cataplana:       'Cataplana',
-    bacalhau_based:  'Bacalhau',
-    dashi_based:     'Dashi',
-    miso_based:      'Miso',
-    yuzu:            'Yuzu',
-    soy_based:       'Soja',
-    soy_condiment:   'Molho de Soja',
-    umami_dashi:     'Umami-Dashi',
-    // Rule-internal only (not shown in picker)
-    raw_fish:        'Peixe Cru',
-    cooked_fish:     'Peixe Cozinhado',
+    honey:           'Mel',
+    // Internal (not in picker, used in scoring labels)
     lingering:       'Persistente',
-    acidic_light:    'Acidez Leve',
 };
 
 // Role labels for Mode 1 / 3 components
@@ -151,10 +142,6 @@ const PT_GROUP_LABEL = {
     texture:          'Textura',
     aromatic:         'Aromáticos',
     flavor_descriptor:'Descritores',
-    cultural:         'Cultural',
-    // legacy keys
-    japanese:         'Cultural',
-    portuguese:       'Cultural',
     misc_flavor:      'Descritores',
 };
 
@@ -167,7 +154,7 @@ const TAG_GROUPS_FALLBACK = [
         groups: [
             { label: 'Sabor',       tags: ['salty','acidic','sweet','bitter','umami','spicy'] },
             { label: 'Gordura',     tags: ['fatty_animal','fatty_dairy','fatty_vegetal','lean'] },
-            { label: 'Método',      tags: ['raw','fried','grilled','braised','steamed','cured','smoked','gratin'] },
+            { label: 'Método',      tags: ['raw','fried','grilled','roasted','sauteed','poached','braised','steamed','cured','smoked','gratin'] },
             { label: 'Proteína',    tags: ['red_meat','white_meat','poultry','pork','game','oily_fish','fish_fatty','fish_lean','shellfish','egg','plant_protein','tofu'] },
             { label: 'Intensidade', tags: ['delicate','medium_intensity','rich','intense'] },
             { label: 'Textura',     tags: ['light','creamy','crunchy','silky','robust','fatty'] },
@@ -176,9 +163,8 @@ const TAG_GROUPS_FALLBACK = [
     {
         tier: 2, section: 'Aromáticos e sabores',
         groups: [
-            { label: 'Aromáticos',  tags: ['citrus','floral','herbaceous','earthy','mushroom','marine','nutty','smoky'] },
-            { label: 'Descritores', tags: ['sweet_sour','marinade','fermented','pickled','layered','complex','dessert','nuts','caramel','chocolate','custard','lemon_based'] },
-            { label: 'Cultural',    tags: ['portuguese_dish','cataplana','bacalhau_based','dashi_based','miso_based','yuzu','soy_based','soy_condiment'] },
+            { label: 'Aromáticos',  tags: ['citrus','floral','herbaceous','earthy','warm_spiced','mushroom','marine','nutty','smoky'] },
+            { label: 'Descritores', tags: ['sweet_sour','marinade','fermented','pickled','layered','complex','dessert','nuts','caramel','chocolate','custard','lemon_based','honey'] },
         ],
     },
 ];
@@ -193,10 +179,9 @@ const TAG_GROUPS_FALLBACK = [
 function buildTagGroupsFromRules(rulesData) {
     const ref = (rulesData || {}).food_tags_reference || {};
 
-    const tier1Groups  = [];
-    const tier2Aromatic  = [];
-    const tier2Specific  = [];
-    const tier2Other     = [];
+    const tier1Groups   = [];
+    const tier2Aromatic = [];
+    const tier2Other    = [];
 
     for (const [key, val] of Object.entries(ref)) {
         if (key.startsWith('_')) continue;
@@ -209,8 +194,8 @@ function buildTagGroupsFromRules(rulesData) {
             tier1Groups.push({ label, tags });
         } else if (key === 'aromatic') {
             tier2Aromatic.push(...tags);
-        } else if (key === 'cultural' || key === 'japanese' || key === 'portuguese') {
-            tier2Specific.push(...tags);
+        } else if (false) {
+            // cultural group removed — no-op branch kept for structure
         } else {
             // flavor_descriptor, misc_flavor, etc.
             tier2Other.push(...tags);
@@ -224,7 +209,6 @@ function buildTagGroupsFromRules(rulesData) {
     const t2groups = [];
     if (tier2Aromatic.length) t2groups.push({ label: 'Aromáticos',  tags: [...new Set(tier2Aromatic)] });
     if (tier2Other.length)    t2groups.push({ label: 'Descritores', tags: [...new Set(tier2Other)]    });
-    if (tier2Specific.length) t2groups.push({ label: 'Cultural',    tags: [...new Set(tier2Specific)] });
 
     if (t2groups.length) sections.push({ tier: 2, section: 'Aromáticos e sabores', groups: t2groups });
 

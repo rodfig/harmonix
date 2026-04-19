@@ -268,18 +268,17 @@ Tags are the bridge between dishes and rules. A rule fires only if `dish.food_ta
 ```
 Flavor (SAUDA):   salty · acidic · sweet · bitter · umami · spicy
 Fat type:         fatty_animal · fatty_dairy · fatty_vegetal · lean
-Method:           raw · fried · grilled · braised · steamed · cured · smoked
-Protein:          red_meat · poultry · fish_lean · fish_fatty · shellfish · plant_protein
+Method:           raw · fried · grilled · roasted · sauteed · poached · braised · steamed · cured · smoked · gratin
+Protein:          red_meat · white_meat · poultry · pork · game · oily_fish · fish_fatty · fish_lean · shellfish · egg · plant_protein · tofu
 Intensity:        delicate · medium_intensity · rich · intense
+Texture:          light · creamy · crunchy · silky · robust · fatty
 ```
 
-**Tier 2 — Cuisine-specific and aromatic tags.** Optional. Trigger bonus rules for aromatic concordance and cultural affinity. Adding a tier-2 tag with no corresponding rule is harmless.
+**Tier 2 — Aromatic and descriptor tags.** Optional. Trigger bonus rules for aromatic concordance. Adding a tier-2 tag with no corresponding rule is harmless. No cultural or regional tags — all dish description is structural and universal.
 
 ```
-Aromatic:     citrus · floral · herbaceous · smoky · earthy · resinous · oxidative · nutty
-Japanese:     dashi_based · miso_based · yuzu · umami_dashi
-Portuguese:   portuguese_dish · cataplana · bacalhau_based
-(expandable): add new cuisine blocks as needed
+Aromatic:     citrus · floral · herbaceous · earthy · warm_spiced · mushroom · marine · nutty · smoky · resinous · oxidative
+Descriptors:  sweet_sour · marinade · fermented · pickled · layered · complex · dessert · nuts · caramel · chocolate · custard · lemon_based · honey
 ```
 
 **Governance:** New tags are added to `food_tags_reference` in `pairing-rules.json` before use. New tier-2 tags in a dish profile without corresponding rules fire nothing — they are forward declarations for rules not yet written.
@@ -305,7 +304,7 @@ Wine structural fields used in scoring:
 - `type` (white / red / rosé / sparkling / fortified)
 - `alcohol` (%)
 
-**Scope decision (confirmed):** Portuguese wines only. The engine matches any dish from any cuisine to this Portuguese wine list. Regional affinity bonus fires only for `portuguese_dish`-tagged dishes.
+**Scope decision:** Currently Portuguese wines only, but the engine is designed to accept any wine from any region. Dish descriptions are fully structural — no regional or cultural tags. Any cuisine can be described using the universal tag vocabulary.
 
 ---
 
