@@ -428,7 +428,7 @@ Phase 2 depends on Phase 1 being merged first (needs new tags defined).
 
 ---
 
-## Explorador — Ideas Backlog
+## Consulta / Matriz — Ideas Backlog
 
 Features to consider for future sessions. All client-side, no backend required.
 

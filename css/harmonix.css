@@ -2,21 +2,21 @@
  * harmonix.css
  * ============
  * Design system for Harmonix.
- * Inter (300/400/500) + DM Mono (300/400) · #f7f6f4 off-white · #7c3d2e wine-red
+ * Inter (400/500) + DM Mono (400) · #f0ede9 warm off-white · #8c3a26 wine-red
  */
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-    --bg:         #f7f6f4;
-    --ink:        #1a1a1a;
-    --muted:      #9a9690;
-    --accent:     #7c3d2e;
-    --accent-bg:  #f2ebe7;
-    --rule:       #e0deda;
+    --bg:         #f0ede9;
+    --ink:        #141414;
+    --muted:      #5c5752;
+    --accent:     #8c3a26;
+    --accent-bg:  #e8d9d3;
+    --rule:       #c8c2bb;
     --surface:    #ffffff;
-    --success:    #3a7c52;
-    --error:      #c0392b;
+    --success:    #2d6e44;
+    --error:      #b83226;
 
     --pad-page:   clamp(24px, 6vw, 80px);
     --max-w:      880px;
@@ -47,7 +47,7 @@ body {
 
 .nav-wordmark {
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: -0.02em;
     color: var(--ink);
     text-decoration: none;
@@ -63,6 +63,7 @@ body {
 
 .nav-links a {
     font-size: 13px;
+    font-weight: 500;
     color: var(--muted);
     text-decoration: none;
     transition: color 0.15s;
@@ -81,7 +82,7 @@ body {
 
 .page-title {
     font-size: clamp(22px, 3vw, 30px);
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: -0.02em;
     margin-bottom: 8px;
 }
@@ -95,11 +96,11 @@ body {
 /* ── Micro labels ─────────────────────────────────────────────────────────── */
 
 .label {
-    font-size: 11px;
+    font-size: 12px;
     font-family: 'DM Mono', monospace;
     font-weight: 400;
     color: var(--muted);
-    letter-spacing: 0.07em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
@@ -115,10 +116,10 @@ body {
 .tag-section { margin-bottom: 28px; }
 
 .tag-section-title {
-    font-size: 11px;
+    font-size: 12px;
     font-family: 'DM Mono', monospace;
     color: var(--muted);
-    letter-spacing: 0.07em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 14px;
     display: block;
@@ -127,7 +128,7 @@ body {
 .tag-group { margin-bottom: 14px; }
 
 .tag-group-label {
-    font-size: 11px;
+    font-size: 12px;
     font-family: 'DM Mono', monospace;
     color: var(--muted);
     letter-spacing: 0.05em;
@@ -145,11 +146,11 @@ body {
 .tag-pill {
     font-size: 12px;
     font-family: 'DM Mono', monospace;
-    padding: 4px 11px;
+    padding: 5px 12px;
     border: 1px solid var(--rule);
     border-radius: 20px;
-    background: transparent;
-    color: var(--muted);
+    background: var(--surface);
+    color: var(--ink);
     cursor: pointer;
     transition: all 0.13s;
     user-select: none;
@@ -459,7 +460,7 @@ body {
 }
 
 .wine-card-meta {
-    font-size: 12px;
+    font-size: 13px;
     color: var(--muted);
     margin-bottom: 8px;
 }
@@ -831,11 +832,10 @@ body {
 .mode-btn.active { background: var(--accent); color: #fff; }
 
 .mode-hint {
-    font-size: 11px;
+    font-size: 12px;
     color: var(--muted);
-    font-style: italic;
     margin-bottom: 20px;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 
@@ -948,15 +948,65 @@ body {
 
 /* ── Responsive ───────────────────────────────────────────────────────────── */
 
+/* ── 640 px — phones landscape / small tablets ── */
 @media (max-width: 640px) {
     :root { --pad-page: 20px; }
 
+    /* Nav */
     .nav-links { gap: 18px; }
     .nav-links a { font-size: 12px; }
 
+    /* Page */
+    .page-subtitle { margin-bottom: 28px; }
+
+    /* Picker panel: don't stick — after layout collapses, sticky pushes results below fold */
+    .picker-panel { position: static !important; top: auto !important; }
+
+    /* Mode selector: tighter padding so three buttons fit */
+    .mode-btn { padding: 8px 6px; font-size: 11px; }
+
+    /* Tag pills: slightly larger touch area */
+    .tag-pill { padding: 7px 12px; }
+
+    /* Component card tags: no max-width on narrow screens */
+    .component-card-tags { max-width: none; }
+
+    /* Wine card header: let score wrap below name on very narrow screens */
+    .wine-card-header { flex-wrap: wrap; }
+
+    /* Kaiseki table: hide course column, it collapses badly */
     .kc-course { width: auto; display: block; font-size: 10px; }
 
+    /* Modal */
     .pairing-modal-content { padding: 22px 18px; }
+    .pairing-modal { padding: 12px; }
 
+    /* Tabs */
     .tabs { overflow-x: auto; }
+
+    /* Sandbox dish form: shorter max-height on small screens */
+    #sandboxDishFormContainer { max-height: 280px; }
+
+    /* Matrix: allow horizontal scroll (already has .matrix-wrap) */
+    .matrix-wrap { -webkit-overflow-scrolling: touch; }
+}
+
+/* ── 400 px — very small phones ── */
+@media (max-width: 400px) {
+    :root { --pad-page: 14px; }
+
+    .nav-wordmark { font-size: 15px; }
+    .nav-links { gap: 14px; }
+
+    /* Mode buttons: stack if needed */
+    .mode-selector { flex-wrap: wrap; }
+    .mode-btn { flex: 1 1 auto; border-right: none; border-bottom: 1px solid var(--rule); }
+    .mode-btn:last-child { border-bottom: none; }
+
+    /* Picker actions: stack */
+    .picker-actions { flex-direction: column; }
+    .picker-actions .btn { width: 100%; justify-content: center; }
+
+    /* Filter rows: smaller pills */
+    .type-filter-btn { font-size: 10px; padding: 3px 8px; }
 }

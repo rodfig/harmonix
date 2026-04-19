@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rodrigo Figueiredo">
-    <title>Harmonix — Explorador</title>
+    <title>Harmonix — Consulta</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
@@ -22,6 +22,7 @@
         }
 
         .picker-panel { position: sticky; top: 72px; }
+        @media (max-width: 640px) { .picker-panel { position: static; top: auto; } }
 
         .picker-actions {
             display: flex;
@@ -52,6 +53,9 @@
 
         .type-filter-btn:hover { border-color: var(--accent); color: var(--accent); }
         .type-filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+        .type-filter-btn.multi-active { background: var(--accent-bg); border-color: var(--accent); color: var(--accent); }
+
+        .filter-block { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
     </style>
 </head>
 <body>
@@ -60,13 +64,13 @@
         <a href="index.html" class="nav-wordmark">Harmon<span>ix</span></a>
         <ul class="nav-links">
             <li><a href="index.html">Início</a></li>
-            <li><a href="explorador.html">Explorador</a></li>
-            <li><a href="sandbox.html">Sandbox</a></li>
+            <li><a href="consulta.html">Consulta</a></li>
+            <li><a href="matriz.html">Matriz</a></li>
         </ul>
     </nav>
 
     <main class="page">
-        <h1 class="page-title">Explorador de Harmonização</h1>
+        <h1 class="page-title">Consulta de Harmonização</h1>
         <p class="page-subtitle">Selecione as características do prato para encontrar os melhores vinhos portugueses.</p>
 
         <div id="loadError" class="notify-bar error" style="display:none"></div>
@@ -101,9 +105,13 @@
                         <span class="label" id="resultsCount"></span>
                     </div>
                     <div id="resultsContext" class="notify-bar info" style="margin-bottom:12px"></div>
-                    <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px;flex-wrap:wrap">
+                    <div class="filter-block">
                         <div class="type-filter-row" id="typeFilterRow"></div>
-                        <button class="btn btn-ghost btn-sm" id="btnReshuffle" style="flex-shrink:0">↺ Baralhar</button>
+                        <div class="type-filter-row" id="regionFilterRow"></div>
+                        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+                            <div class="type-filter-row" id="cutoffFilterRow"></div>
+                            <button class="btn btn-ghost btn-sm" id="btnReshuffle" style="flex-shrink:0">↺ Baralhar</button>
+                        </div>
                     </div>
                     <div class="wine-list" id="wineList"></div>
                 </div>
@@ -121,9 +129,11 @@
     let rulesData      = null;
     let dishForm       = null;
     let tagGroups      = TAG_GROUPS_FALLBACK;
-    let allCandidates  = [];   // all scored wines (score > 0), sorted desc
-    let currentDish    = null; // resolved dish used for last score run
+    let allCandidates  = [];        // all scored wines (score > 0), sorted desc
+    let currentDish    = null;      // resolved dish used for last score run
     let typeFilter     = 'all';
+    let regionFilter   = new Set(); // empty = all regions
+    let scoreCutoff    = 0;
 
     const TYPE_FILTERS = [
         { key: 'all',       label: 'Todos' },
@@ -132,6 +142,13 @@
         { key: 'sparkling', label: 'Espumante' },
         { key: 'rosé',      label: 'Rosé' },
         { key: 'fortified', label: 'Licoroso' },
+    ];
+
+    const CUTOFF_OPTIONS = [
+        { value: 0,  label: 'Todos' },
+        { value: 5,  label: '≥ 5 pts' },
+        { value: 10, label: '≥ 10 pts' },
+        { value: 15, label: '≥ 15 pts' },
     ];
 
     // ── Helpers ─────────────────────────────────────────────────────────────────
@@ -143,8 +160,12 @@
     }
 
     function getFiltered() {
-        if (typeFilter === 'all') return allCandidates;
-        return allCandidates.filter(c => c.wine.type === typeFilter);
+        return allCandidates.filter(c => {
+            if (typeFilter !== 'all' && c.wine.type !== typeFilter) return false;
+            if (regionFilter.size && !regionFilter.has(c.wine.doc || '')) return false;
+            if (scoreCutoff > 0 && c.score < scoreCutoff) return false;
+            return true;
+        });
     }
 
     function shuffle(arr) {
@@ -213,7 +234,9 @@
         }
         allCandidates.sort((a, b) => b.score - a.score);
 
-        typeFilter = 'all';
+        typeFilter   = 'all';
+        regionFilter = new Set();
+        scoreCutoff  = 0;
         btnEl.disabled = !isDishValid(dishForm.getDish());
         renderResultsPanel();
     }
@@ -238,8 +261,15 @@
             ctxEl.classList.remove('show');
         }
 
-        renderTypeFilters();
+        renderAllFilters();
         renderWineList(getFiltered().slice(0, 10));
+    }
+
+    function renderAllFilters() {
+        renderTypeFilters();
+        renderRegionFilter();
+        renderCutoffFilter();
+        updateCount();
     }
 
     function renderTypeFilters() {
@@ -253,18 +283,79 @@
             const btn = document.createElement('button');
             btn.type = 'button';
             btn.className = 'type-filter-btn' + (typeFilter === f.key ? ' active' : '');
-            btn.textContent = f.key === 'all' ? `${f.label} (${count})` : `${f.label} (${count})`;
+            btn.textContent = `${f.label} (${count})`;
             btn.addEventListener('click', () => {
                 typeFilter = f.key;
-                renderTypeFilters();
+                renderAllFilters();
                 renderWineList(getFiltered().slice(0, 10));
             });
             row.appendChild(btn);
         }
+    }
 
+    function renderRegionFilter() {
+        const row = document.getElementById('regionFilterRow');
+        row.innerHTML = '';
+
+        // Collect regions present in scored pool, sorted alphabetically
+        const regionCounts = {};
+        for (const c of allCandidates) {
+            const r = c.wine.doc || '';
+            if (r) regionCounts[r] = (regionCounts[r] || 0) + 1;
+        }
+        const regions = Object.keys(regionCounts).sort();
+        if (regions.length <= 1) return; // no filter needed if only one region
+
+        // "Todas" button
+        const allBtn = document.createElement('button');
+        allBtn.type = 'button';
+        allBtn.className = 'type-filter-btn' + (regionFilter.size === 0 ? ' active' : '');
+        allBtn.textContent = `Todas regiões`;
+        allBtn.addEventListener('click', () => {
+            regionFilter.clear();
+            renderAllFilters();
+            renderWineList(getFiltered().slice(0, 10));
+        });
+        row.appendChild(allBtn);
+
+        for (const region of regions) {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'type-filter-btn' + (regionFilter.has(region) ? ' multi-active' : '');
+            btn.textContent = `${region} (${regionCounts[region]})`;
+            btn.addEventListener('click', () => {
+                if (regionFilter.has(region)) regionFilter.delete(region);
+                else regionFilter.add(region);
+                renderAllFilters();
+                renderWineList(getFiltered().slice(0, 10));
+            });
+            row.appendChild(btn);
+        }
+    }
+
+    function renderCutoffFilter() {
+        const row = document.getElementById('cutoffFilterRow');
+        row.innerHTML = '';
+        for (const opt of CUTOFF_OPTIONS) {
+            // Only show cutoff if candidates exist above that threshold
+            if (opt.value > 0 && !allCandidates.some(c => c.score >= opt.value)) continue;
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'type-filter-btn' + (scoreCutoff === opt.value ? ' active' : '');
+            btn.textContent = opt.label;
+            btn.addEventListener('click', () => {
+                scoreCutoff = opt.value;
+                renderAllFilters();
+                renderWineList(getFiltered().slice(0, 10));
+            });
+            row.appendChild(btn);
+        }
+    }
+
+    function updateCount() {
         const filtered = getFiltered();
         document.getElementById('resultsCount').textContent =
-            filtered.length ? `${Math.min(filtered.length, 10)} de ${filtered.length}` : '';
+            filtered.length ? `${Math.min(filtered.length, 10)} de ${filtered.length}` : '0 resultados';
     }
 
     function renderWineList(candidates) {
@@ -303,6 +394,8 @@
             allCandidates = [];
             currentDish   = null;
             typeFilter    = 'all';
+            regionFilter  = new Set();
+            scoreCutoff   = 0;
             btnCalc.disabled = true;
             document.getElementById('dishName').value = '';
             document.getElementById('resultsEmpty').style.display = 'block';
