@@ -66,7 +66,6 @@ const PT_TAG = {
     steamed:         'Cozido a Vapor',
     cured:           'Curado',
     smoked:          'Fumado',
-    gratin:          'Gratin',
     // Proteína
     red_meat:        'Carne Vermelha',
     white_meat:      'Carne Branca',
@@ -153,7 +152,7 @@ const TAG_GROUPS_FALLBACK = [
         groups: [
             { label: 'Sabor',       tags: ['salty','acidic','sweet','bitter','umami','spicy'] },
             { label: 'Gordura',     tags: ['fatty_animal','fatty_dairy','fatty_vegetal','lean'] },
-            { label: 'Método',      tags: ['raw','fried','grilled','roasted','sauteed','poached','braised','steamed','cured','smoked','gratin'] },
+            { label: 'Método',      tags: ['raw','fried','grilled','roasted','sauteed','poached','braised','steamed','cured','smoked'] },
             { label: 'Proteína',    tags: ['red_meat','white_meat','poultry','pork','game','fish_lean','fish_rich','shellfish','egg','plant_protein','tofu'] },
             { label: 'Intensidade', tags: ['delicate','medium_intensity','rich','intense'] },
             { label: 'Textura',     tags: ['light','creamy','crunchy','silky','robust','fatty'] },

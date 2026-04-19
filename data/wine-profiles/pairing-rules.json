@@ -22,7 +22,7 @@
     },
     "cooking_method": {
       "_tier": 1,
-      "tags": ["raw", "fried", "grilled", "roasted", "sauteed", "poached", "braised", "steamed", "cured", "smoked", "gratin"]
+      "tags": ["raw", "fried", "grilled", "roasted", "sauteed", "poached", "braised", "steamed", "cured", "smoked"]
     },
     "protein": {
       "_tier": 1,
@@ -168,7 +168,7 @@
       "description": "Brancos encorpados para pratos ricos",
       "dimension": "body",
       "wine_condition": { "body": "full", "type": "white" },
-      "food_tags": ["rich", "creamy", "fatty", "gratin"],
+      "food_tags": ["rich", "creamy", "fatty"],
       "score": 9,
       "reason": "Corpo pleno suporta a riqueza e gordura do prato sem se perder"
     },
@@ -248,7 +248,7 @@
       "description": "Tintos frescos e estruturados para pratos umami, grelhados e fermentados",
       "dimension": "tannin",
       "wine_condition": { "type": "red", "acidity": ">= 6", "tannins": "<= 6" },
-      "food_tags": ["umami", "gratin", "fermented", "mushroom", "grilled"],
+      "food_tags": ["umami", "fermented", "mushroom", "grilled"],
       "score": 8,
       "reason": "Taninos contidos e acidez estruturada sustentam a profundidade do umami e sabores fermentados — a frescura do tinto integra-se sem dominar o prato"
     },
