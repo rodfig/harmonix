@@ -26,7 +26,7 @@
     },
     "protein": {
       "_tier": 1,
-      "tags": ["red_meat", "white_meat", "poultry", "pork", "game",
+      "tags": ["red_meat", "poultry", "pork", "game",
                "fish_lean", "fish_rich", "shellfish",
                "egg", "plant_protein", "tofu"]
     },
@@ -36,7 +36,7 @@
     },
     "texture": {
       "_tier": 1,
-      "tags": ["light", "creamy", "crunchy", "silky", "robust", "fatty"]
+      "tags": ["light", "creamy", "crunchy", "silky", "fatty"]
     },
     "aromatic": {
       "_tier": 2,
@@ -45,7 +45,7 @@
     },
     "flavor_descriptor": {
       "_tier": 2,
-      "tags": ["sweet_sour", "marinade", "fermented", "pickled", "layered", "complex",
+      "tags": ["sweet_sour", "marinade", "fermented", "pickled", "complex",
                "dessert", "nuts", "caramel", "chocolate", "custard",
                "lemon_based", "honey"]
     }
@@ -188,7 +188,7 @@
       "description": "Taninos baixos para carnes brancas, cogumelos e proteína vegetal",
       "dimension": "tannin",
       "wine_condition": { "tannins": "<= 6", "type": "red" },
-      "food_tags": ["white_meat", "poultry", "mushroom", "plant_protein", "tofu"],
+      "food_tags": ["poultry", "mushroom", "plant_protein", "tofu"],
       "score": 8,
       "reason": "Taninos baixos não dominam proteínas delicadas; acidez média equilibra gordura moderada"
     },
@@ -228,7 +228,7 @@
       "description": "Tintos de corpo médio para grelhados",
       "dimension": "tannin",
       "wine_condition": { "body": "medium", "tannins": "<= 7", "type": "red" },
-      "food_tags": ["grilled", "white_meat", "pork", "poultry"],
+      "food_tags": ["grilled", "pork", "poultry"],
       "score": 8,
       "reason": "O carvão do grelhado complementa taninos médios; corpo médio não desequilibra pratos de média riqueza"
     },
@@ -464,7 +464,7 @@
       "description": "Persistência muito longa para pratos de grande complexidade e múltiplas camadas",
       "dimension": "finish",
       "wine_condition": { "finish": "very long" },
-      "food_tags": ["layered", "complex", "cured", "lingering"],
+      "food_tags": ["complex", "cured", "lingering"],
       "score": 8,
       "reason": "Persistência excepcional acompanha a complexidade do prato — os sabores evoluem juntos e sustentam-se até ao fim"
     },
@@ -474,7 +474,7 @@
       "description": "Persistência longa para pratos com sabores que perduram",
       "dimension": "finish",
       "wine_condition": { "finish": "long" },
-      "food_tags": ["layered", "lingering"],
+      "food_tags": ["complex", "lingering"],
       "score": 5,
       "reason": "O finish longo acompanha e prolonga os sabores do prato — a harmonização continua depois do último garfo"
     },
