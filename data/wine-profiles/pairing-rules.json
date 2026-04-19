@@ -27,7 +27,7 @@
     "protein": {
       "_tier": 1,
       "tags": ["red_meat", "white_meat", "poultry", "pork", "game",
-               "oily_fish", "fish_fatty", "fish_lean", "shellfish",
+               "fish_lean", "fish_rich", "shellfish",
                "egg", "plant_protein", "tofu"]
     },
     "intensity": {
@@ -58,9 +58,9 @@
       "description": "Vinhos de acidez muito alta harmonizam com peixe cru ou magro",
       "dimension": "acidity",
       "wine_condition": { "acidity": ">= 8", "type": "white" },
-      "food_tags": ["raw", "fish_lean"],
+      "food_tags": ["raw", "fish_lean", "fish_rich"],
       "score": 10,
-      "reason": "Acidez muito alta realça sabores delicados e limpa a gordura suave do peixe — indispensável com preparações cruas"
+      "reason": "Acidez muito alta realça sabores delicados e limpa a gordura do peixe — indispensável com preparações cruas de qualquer tipo"
     },
 
     {
@@ -208,9 +208,9 @@
       "description": "Tinto de acidez muito alta com peixe gordo",
       "dimension": "acidity",
       "wine_condition": { "acidity": ">= 9", "type": "red" },
-      "food_tags": ["oily_fish"],
+      "food_tags": ["fish_rich"],
       "score": 8,
-      "reason": "Acidez extrema corta eficazmente a gordura de peixes muito gordos como sardinha e cavala"
+      "reason": "Acidez extrema corta eficazmente a gordura de peixes gordos (sardinha, cavala, atum, salmão)"
     },
 
     {
@@ -328,7 +328,7 @@
       "description": "CONFLITO: Taninos altos destroem peixe delicado ou cru",
       "dimension": "tannin",
       "wine_condition": { "tannins": ">= 7", "type": "red" },
-      "food_tags": ["fish_lean", "fish_fatty", "delicate", "raw"],
+      "food_tags": ["fish_lean", "fish_rich", "delicate", "raw"],
       "score": -10,
       "reason": "Taninos altos reagem com proteínas do peixe criando sabor metálico e amargo — combinação clássica a evitar"
     },
