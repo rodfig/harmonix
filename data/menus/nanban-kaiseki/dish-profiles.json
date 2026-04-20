@@ -95,7 +95,7 @@
       "id":          "goma-doufu",
       "meal_arc":    "aperitivo",
       "primary_tag": "shellfish",
-      "food_tags":   ["shellfish", "delicate", "umami", "silky", "light", "layered"],
+      "food_tags":   ["shellfish", "delicate", "umami", "light", "layered"],
       "hard_filters": {
         "type_allow": ["white", "sparkling"],
         "body_exclude": ["full", "medium-full"],
@@ -122,7 +122,7 @@
       "id":          "ceviche-tofu",
       "meal_arc":    "savory_light",
       "primary_tag": "citrus",
-      "food_tags":   ["raw", "delicate", "citrus", "yuzu", "light", "lemon_based"],
+      "food_tags":   ["raw", "delicate", "citrus", "yuzu", "light"],
       "hard_filters": {
         "type_allow": ["white"],
         "body_exclude": ["full", "medium-full"],
@@ -135,7 +135,7 @@
       "id":          "agedashi-doufu",
       "meal_arc":    "savory_medium",
       "primary_tag": "dashi_based",
-      "food_tags":   ["dashi_based", "umami", "tofu", "fried"],
+      "food_tags":   ["dashi_based", "umami", "plant_protein", "fried"],
       "hard_filters": {
         "type_allow": ["white"],
         "body_exclude": ["full"],
@@ -175,7 +175,7 @@
       "id":          "gratin-tofu",
       "meal_arc":    "savory_rich",
       "primary_tag": "miso_based",
-      "food_tags":   ["rich", "creamy", "fatty", "gratin", "miso_based", "mushroom", "complex"],
+      "food_tags":   ["rich", "creamy", "fatty", "gratin", "miso_based", "mushroom"],
       "hard_filters": {
         "type_allow": ["white", "red"],
         "body_exclude": ["light", "medium-light"],

@@ -76,17 +76,13 @@ const PT_TAG = {
     shellfish:       'Marisco',
     egg:             'Ovo',
     plant_protein:   'Proteína Vegetal',
-    tofu:            'Tofu',
     // Intensidade
     delicate:        'Delicado',
-    medium_intensity:'Médio',
     rich:            'Rico',
     intense:         'Intenso',
     // Textura
     light:           'Leve',
     creamy:          'Cremoso',
-    crunchy:         'Crocante',
-    silky:           'Sedoso',
     fatty:           'Gorduroso',
     // Aromáticos
     citrus:          'Cítrico',
@@ -105,15 +101,12 @@ const PT_TAG = {
     marinade:        'Marinada',
     fermented:       'Fermentado',
     pickled:         'Em Conserva',
-    complex:         'Complexo',
     dessert:         'Sobremesa',
     nuts:            'Frutos Secos',
     caramel:         'Caramelo',
     chocolate:       'Chocolate',
     custard:         'Creme',
-    lemon_based:     'Base de Limão',
     honey:           'Mel',
-    // Internal (not in picker, used in scoring labels)
     lingering:       'Persistente',
 };
 
@@ -150,16 +143,16 @@ const TAG_GROUPS_FALLBACK = [
             { label: 'Sabor',       tags: ['salty','acidic','sweet','bitter','umami','spicy'] },
             { label: 'Gordura',     tags: ['fatty_animal','fatty_dairy','fatty_vegetal','lean'] },
             { label: 'Método',      tags: ['raw','fried','grilled','roasted','sauteed','poached','braised','steamed','cured','smoked'] },
-            { label: 'Proteína',    tags: ['red_meat','poultry','pork','game','fish_lean','fish_rich','shellfish','egg','plant_protein','tofu'] },
-            { label: 'Intensidade', tags: ['delicate','medium_intensity','rich','intense'] },
-            { label: 'Textura',     tags: ['light','creamy','crunchy','silky','fatty'] },
+            { label: 'Proteína',    tags: ['red_meat','poultry','pork','game','fish_lean','fish_rich','shellfish','egg','plant_protein'] },
+            { label: 'Intensidade', tags: ['delicate','rich','intense'] },
+            { label: 'Textura',     tags: ['light','creamy','fatty'] },
         ],
     },
     {
         tier: 2, section: 'Aromáticos e sabores',
         groups: [
             { label: 'Aromáticos',  tags: ['citrus','floral','herbaceous','earthy','warm_spiced','mushroom','marine','nutty','smoky'] },
-            { label: 'Descritores', tags: ['sweet_sour','marinade','fermented','pickled','complex','dessert','nuts','caramel','chocolate','custard','lemon_based','honey'] },
+            { label: 'Descritores', tags: ['sweet_sour','marinade','fermented','pickled','dessert','nuts','caramel','chocolate','custard','honey','lingering'] },
         ],
     },
 ];
