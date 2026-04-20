@@ -68,7 +68,7 @@
       "description": "Acidez muito alta para pratos com citrinos intensos",
       "dimension": "acidity",
       "wine_condition": { "acidity": ">= 8", "type": "white" },
-      "food_tags": ["citrus", "raw", "acidic"],
+      "food_tags": ["citrus", "acidic"],
       "score": 9,
       "reason": "Acidez muito alta espelha e sustenta a intensidade cítrica do prato — a frescura do vinho harmoniza com a vivacidade do limão ou citrino"
     },
@@ -129,7 +129,7 @@
       "dimension": "body",
       "wine_condition": { "body": "!= light" },
       "food_tags": ["roasted"],
-      "score": 6,
+      "score": 7,
       "reason": "Assar em forno cria caramelização e reação de Maillard que concentram sabores — o vinho precisa de corpo suficiente para não se perder"
     },
 
@@ -147,7 +147,7 @@
       "id": "aromatic-white-umami",
       "description": "Brancos aromáticos com pratos ricos em umami",
       "dimension": "style",
-      "wine_condition": { "acidity": "<= 7", "type": "white" },
+      "wine_condition": { "type": "white" },
       "food_tags": ["umami", "fermented"],
       "score": 8,
       "reason": "Aromas varietais de brancos moderadamente ácidos complementam a profundidade do umami sem conflito"
@@ -287,7 +287,7 @@
       "id": "tawny-port-nut-desserts",
       "description": "Tawny Port para sobremesas de frutos secos",
       "dimension": "style",
-      "wine_condition": { "id_ref": "porto-tawny-10", "type": "fortified" },
+      "wine_condition": { "type": "fortified", "id_ref": "tawny", "sweetness": "sweet" },
       "food_tags": ["nuts", "caramel", "custard", "dessert"],
       "score": 10,
       "reason": "Notas de noz e caramelo do Tawny espelham os sabores torrados e doces das sobremesas de frutos secos"
@@ -324,13 +324,23 @@
     },
 
     {
-      "id": "conflict-high-tannin-delicate-fish",
-      "description": "CONFLITO: Taninos altos destroem peixe delicado ou cru",
+      "id": "conflict-tannin-fish",
+      "description": "CONFLITO: Taninos altos com peixe — sabor metálico inevitável",
       "dimension": "tannin",
       "wine_condition": { "tannins": ">= 7", "type": "red" },
-      "food_tags": ["fish_lean", "fish_rich", "delicate", "raw"],
+      "food_tags": ["fish_lean", "fish_rich"],
       "score": -10,
       "reason": "Taninos altos reagem com proteínas do peixe criando sabor metálico e amargo — combinação clássica a evitar"
+    },
+
+    {
+      "id": "conflict-tannin-delicate",
+      "description": "CONFLITO: Taninos altos com pratos delicados",
+      "dimension": "conflict_tannin",
+      "wine_condition": { "tannins": ">= 7", "type": "red" },
+      "food_tags": ["delicate", "raw"],
+      "score": -6,
+      "reason": "Taninos elevados dominam e mascaram pratos de sabor sutil — a adstringência apaga a delicadeza do prato"
     },
 
     {
@@ -464,7 +474,7 @@
       "description": "Persistência muito longa para pratos de grande complexidade e múltiplas camadas",
       "dimension": "finish",
       "wine_condition": { "finish": "very long" },
-      "food_tags": ["cured", "lingering"],
+      "food_tags": ["cured", "lingering", "game"],
       "score": 8,
       "reason": "Persistência excepcional acompanha a complexidade do prato — os sabores evoluem juntos e sustentam-se até ao fim"
     },
