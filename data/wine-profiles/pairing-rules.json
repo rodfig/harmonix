@@ -114,13 +114,13 @@
     },
 
     {
-      "id": "medium-body-fried",
-      "description": "Corpo médio e acidez para pratos fritos",
+      "id": "fresh-structured-fried-sauteed",
+      "description": "Acidez e corpo médio para pratos fritos ou salteados",
       "dimension": "body",
       "wine_condition": { "acidity": ">= 6", "body": "!= full" },
-      "food_tags": ["fried"],
+      "food_tags": ["fried", "sauteed"],
       "score": 7,
-      "reason": "Acidez corta o óleo da fritura; corpo médio aguenta a textura mais pesada sem dominar"
+      "reason": "Acidez corta o óleo da fritura e do salteado; corpo médio aguenta a textura mais pesada sem dominar"
     },
 
     {
@@ -131,16 +131,6 @@
       "food_tags": ["roasted"],
       "score": 7,
       "reason": "Assar em forno cria caramelização e reação de Maillard que concentram sabores — o vinho precisa de corpo suficiente para não se perder"
-    },
-
-    {
-      "id": "sauteed-medium-fresh",
-      "description": "Vinhos frescos de corpo médio para pratos salteados",
-      "dimension": "body",
-      "wine_condition": { "acidity": ">= 6", "body": "!= full" },
-      "food_tags": ["sauteed"],
-      "score": 5,
-      "reason": "Saltear cria douramento moderado mas mantém intensidade média — vinho fresco com corpo médio integra sem dominar"
     },
 
     {
@@ -326,7 +316,7 @@
     {
       "id": "conflict-tannin-fish",
       "description": "CONFLITO: Taninos altos com peixe — sabor metálico inevitável",
-      "dimension": "tannin",
+      "dimension": "conflict_tannin",
       "wine_condition": { "tannins": ">= 7", "type": "red" },
       "food_tags": ["fish_lean", "fish_rich"],
       "score": -10,
@@ -344,29 +334,19 @@
     },
 
     {
-      "id": "conflict-tannin-egg",
-      "description": "CONFLITO: Taninos reagem com proteínas do ovo",
-      "dimension": "tannin",
-      "wine_condition": { "tannins": ">= 6", "type": "red" },
-      "food_tags": ["egg"],
-      "score": -6,
-      "reason": "Taninos reagem com as proteínas do ovo criando sabor metálico e adstringência desagradável"
-    },
-
-    {
-      "id": "conflict-tannin-bitter",
-      "description": "CONFLITO: Taninos + amargor do prato amplificam-se mutuamente (Harrington R4)",
+      "id": "conflict-tannin-egg-bitter",
+      "description": "CONFLITO: Taninos com ovos ou pratos amargos — reação proteica e amplificação do amargor",
       "dimension": "conflict_tannin",
       "wine_condition": { "tannins": ">= 6", "type": "red" },
-      "food_tags": ["bitter"],
+      "food_tags": ["egg", "bitter"],
       "score": -6,
-      "reason": "Amargo + amargo amplifica-se desagradavelmente — taninos de tintos jovens com pratos amargos criam excesso de amargor"
+      "reason": "Taninos reagem com proteínas do ovo criando sabor metálico; com pratos amargos, o amargor amplifica-se desagradavelmente"
     },
 
     {
       "id": "conflict-sweet-wine-salty-umami",
       "description": "CONFLITO: Vinho doce com pratos muito salgados ou de umami intenso",
-      "dimension": "sweetness",
+      "dimension": "conflict_sweetness",
       "wine_condition": { "sweetness": "sweet" },
       "food_tags": ["salty", "umami"],
       "score": -8,
@@ -376,7 +356,7 @@
     {
       "id": "conflict-light-body-rich-stew",
       "description": "CONFLITO: Vinho leve com pratos muito ricos",
-      "dimension": "body",
+      "dimension": "conflict_body",
       "wine_condition": { "body": "light" },
       "food_tags": ["rich", "intense", "fatty", "braised"],
       "score": -7,
@@ -500,25 +480,14 @@
     },
 
     {
-      "id": "high-acidity-animal-fat",
-      "description": "Acidez alta corta gordura animal (Harrington R6)",
+      "id": "high-acidity-fat",
+      "description": "Acidez alta corta gorduras animais e vegetais (Harrington R6)",
       "dimension": "acidity",
       "wine_condition": { "acidity": ">= 7" },
-      "food_tags": ["fatty_animal"],
+      "food_tags": ["fatty_animal", "fatty_vegetal"],
       "score": 6,
-      "reason": "Acidez corta a gordura animal e limpa o paladar — funciona tanto com brancos encorpados como com tintos frescos",
-      "notes": "R6: Acidity + animal fat. Complements high-tannin-red-fatty-meat via different dimension."
-    },
-
-    {
-      "id": "high-acidity-vegetal-fat",
-      "description": "Acidez alta integra gordura vegetal — azeite, frutos secos, tahini (Harrington R6)",
-      "dimension": "acidity",
-      "wine_condition": { "acidity": ">= 7" },
-      "food_tags": ["fatty_vegetal"],
-      "score": 6,
-      "reason": "Acidez equilibra a untuosidade do azeite e gorduras vegetais, evitando que o prato pareça pesado",
-      "notes": "R6: Acidity + vegetal fat. Covers olive oil, nut-based sauces, tahini."
+      "reason": "Acidez corta gorduras animais e vegetais e limpa o paladar — funciona com brancos encorpados e tintos frescos",
+      "notes": "R6: Acidity + fat. Covers animal fat (grilled meats, charcuterie) and vegetal fat (olive oil, nut sauces, tahini)."
     },
 
     {
