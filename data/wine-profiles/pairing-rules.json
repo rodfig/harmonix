@@ -41,7 +41,7 @@
     "aromatic": {
       "_tier": 2,
       "tags": ["citrus", "floral", "herbaceous", "earthy", "warm_spiced", "mushroom", "marine", "nutty", "smoky",
-               "resinous", "oxidative"]
+               "oxidative"]
     },
     "flavor_descriptor": {
       "_tier": 2,
@@ -78,9 +78,9 @@
       "description": "Acidez alta com mariscos",
       "dimension": "acidity",
       "wine_condition": { "acidity": ">= 7", "type": "white" },
-      "food_tags": ["shellfish"],
+      "food_tags": ["shellfish", "marine"],
       "score": 9,
-      "reason": "Acidez complementa a salinidade e corta a riqueza dos mariscos"
+      "reason": "Acidez complementa a salinidade e corta a riqueza dos mariscos; espelha o caracter mineral e iodado do prato"
     },
 
     {
@@ -108,7 +108,7 @@
       "description": "Corpo leve para pratos delicados",
       "dimension": "body",
       "wine_condition": { "body": "light", "type": "white" },
-      "food_tags": ["delicate", "steamed", "poached", "light"],
+      "food_tags": ["delicate", "steamed", "poached", "light", "lean"],
       "score": 9,
       "reason": "Corpo leve não domina pratos de sabor sutil e textura delicada"
     },
@@ -168,7 +168,7 @@
       "description": "Espumante para pratos leves, mariscos e fritos",
       "dimension": "style",
       "wine_condition": { "type": "sparkling" },
-      "food_tags": ["light", "shellfish", "fried"],
+      "food_tags": ["light", "shellfish", "fried", "marine"],
       "score": 9,
       "reason": "Borbulha e acidez alta do espumante limpam o palato e complementam sabores frescos e fritos leves"
     },
@@ -178,7 +178,7 @@
       "description": "Taninos baixos para carnes brancas, cogumelos e proteína vegetal",
       "dimension": "tannin",
       "wine_condition": { "tannins": "<= 6", "type": "red" },
-      "food_tags": ["poultry", "mushroom", "plant_protein"],
+      "food_tags": ["poultry", "mushroom", "plant_protein", "earthy"],
       "score": 8,
       "reason": "Taninos baixos não dominam proteínas delicadas; acidez média equilibra gordura moderada"
     },
@@ -238,7 +238,7 @@
       "description": "Tintos frescos e estruturados para pratos umami, grelhados e fermentados",
       "dimension": "tannin",
       "wine_condition": { "type": "red", "acidity": ">= 6", "tannins": "<= 6" },
-      "food_tags": ["umami", "fermented", "mushroom", "grilled"],
+      "food_tags": ["umami", "fermented", "mushroom", "grilled", "earthy"],
       "score": 8,
       "reason": "Taninos contidos e acidez estruturada sustentam a profundidade do umami e sabores fermentados — a frescura do tinto integra-se sem dominar o prato"
     },
@@ -258,9 +258,9 @@
       "description": "Madeira seco (Sercial) para pratos agridoces, fritos e marinados",
       "dimension": "style",
       "wine_condition": { "type": "fortified", "sweetness": "dry", "acidity": ">= 8" },
-      "food_tags": ["acidic", "fried", "sweet_sour", "marinade"],
+      "food_tags": ["acidic", "fried", "sweet_sour", "marinade", "oxidative"],
       "score": 8,
-      "reason": "A acidez extrema do Madeira seco corta a gordura da fritura e equilibra o agridoce — a oxidação acrescenta camadas de complexidade"
+      "reason": "A acidez extrema do Madeira seco corta a gordura da fritura e equilibra o agridoce — a oxidação espelha o carácter oxidativo do prato"
     },
 
     {
@@ -268,7 +268,7 @@
       "description": "Fortificados doces para sobremesas ricas",
       "dimension": "sweetness",
       "wine_condition": { "sweetness": "sweet", "type": "fortified" },
-      "food_tags": ["sweet", "chocolate", "dessert", "nuts", "caramel"],
+      "food_tags": ["sweet", "chocolate", "dessert", "nuts", "caramel", "nutty"],
       "score": 10,
       "reason": "Regra fundamental: vinho deve ser tão doce ou mais doce que a sobremesa; complexidade oxidativa adiciona camadas"
     },
@@ -278,7 +278,7 @@
       "description": "Tawny Port para sobremesas de frutos secos",
       "dimension": "style",
       "wine_condition": { "type": "fortified", "id_ref": "tawny", "sweetness": "sweet" },
-      "food_tags": ["nuts", "caramel", "custard", "dessert"],
+      "food_tags": ["nuts", "caramel", "custard", "dessert", "nutty", "oxidative"],
       "score": 10,
       "reason": "Notas de noz e caramelo do Tawny espelham os sabores torrados e doces das sobremesas de frutos secos"
     },
@@ -288,7 +288,7 @@
       "description": "Madeira seco/off-dry para pratos agridoces e fritos",
       "dimension": "style",
       "wine_condition": { "type": "fortified", "region_ref": "Madeira", "sweetness": "off-dry" },
-      "food_tags": ["sweet_sour", "fried", "acidic", "marinade"],
+      "food_tags": ["sweet_sour", "fried", "acidic", "marinade", "oxidative"],
       "score": 9,
       "reason": "Acidez alta característica do Madeira corta fritura e equilibra agridoce; a oxidação adiciona complexidade"
     },
@@ -399,9 +399,9 @@
       "description": "CONFLITO: Vinho de corpo pleno esmaga pratos delicados (Harrington R7/R8)",
       "dimension": "conflict_body",
       "wine_condition": { "body": "full" },
-      "food_tags": ["delicate", "light"],
+      "food_tags": ["delicate", "light", "lean"],
       "score": -6,
-      "reason": "Corpo pleno domina e esmaga pratos de sabor sutil e textura delicada — o vinho apaga o prato",
+      "reason": "Corpo pleno domina e esmaga pratos de sabor sutil, textura delicada ou proteína magra — o vinho apaga o prato",
       "notes": "R7/R8: Body/intensity equivalence."
     },
 
@@ -505,7 +505,7 @@
       "description": "Vinhos estruturados com pratos fumados",
       "dimension": "style",
       "wine_condition": { "acidity": ">= 6", "body": "!= light" },
-      "food_tags": ["smoked"],
+      "food_tags": ["smoked", "smoky"],
       "score": 6,
       "reason": "O fumo adiciona camadas de amargor e complexidade — acidez suficiente e corpo médio a pleno integram sem se perder nos sabores defumados"
     },
@@ -525,9 +525,19 @@
       "description": "BÓNUS: Brancos florais com pratos de vapor delicados",
       "dimension": "bonus",
       "wine_condition": { "acidity": ">= 6", "body": "light", "type": "white" },
-      "food_tags": ["steamed", "poached", "delicate", "egg", "custard"],
+      "food_tags": ["steamed", "poached", "delicate", "egg", "custard", "floral"],
       "score_bonus": 2,
-      "reason": "Aromas florais e leveza do vinho complementam a delicadeza e textura sedosa dos pratos a vapor ou escalfados"
+      "reason": "Aromas florais e leveza do vinho complementam a delicadeza, textura sedosa e carácter floral do prato"
+    },
+
+    {
+      "id": "bonus-herbaceous-mirror",
+      "description": "BÓNUS: Espelhamento herbáceo — brancos aromáticos com pratos herbáceos",
+      "dimension": "bonus",
+      "wine_condition": { "type": "white", "acidity": ">= 6" },
+      "food_tags": ["herbaceous"],
+      "score_bonus": 2,
+      "reason": "Notas herbáceas de Loureiro, Arinto ou Sauvignon espelham ervas frescas e molhos à base de ervas — harmonia por semelhança"
     }
 
   ],

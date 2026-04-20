@@ -94,7 +94,6 @@ const PT_TAG = {
     marine:          'Marinho',
     nutty:           'Amendoado',
     smoky:           'Defumado',
-    resinous:        'Resinoso',
     oxidative:       'Oxidativo',
     // Sabores e descritores
     sweet_sour:      'Agridoce',
@@ -151,7 +150,7 @@ const TAG_GROUPS_FALLBACK = [
     {
         tier: 2, section: 'Aromáticos e sabores',
         groups: [
-            { label: 'Aromáticos',  tags: ['citrus','floral','herbaceous','earthy','warm_spiced','mushroom','marine','nutty','smoky'] },
+            { label: 'Aromáticos',  tags: ['citrus','floral','herbaceous','earthy','warm_spiced','mushroom','marine','nutty','smoky','oxidative'] },
             { label: 'Descritores', tags: ['sweet_sour','marinade','fermented','pickled','dessert','nuts','caramel','chocolate','custard','honey','lingering'] },
         ],
     },
