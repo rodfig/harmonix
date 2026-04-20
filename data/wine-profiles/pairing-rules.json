@@ -9,7 +9,7 @@
 
   "food_tags_reference": {
     "_note": "Apply these tags to each dish. A dish can have multiple tags.",
-    "_tiers": "Tier 1 = universal structural (every dish expressible with these alone). Tier 2 = aromatic or descriptive (optional; trigger bonus rules; adding a tier-2 tag with no corresponding rule is harmless).",
+    "_tiers": "Tier 1 = universal structural (every dish expressible with these alone). Tier 2 = aromatic or descriptive (optional; trigger bonus rules). Every tag in this vocabulary must fire at least one rule — a tag that fires nothing misleads the picker and must be removed.",
     "_governance": "New tags must be added here before use in dish-profiles or rules.",
 
     "flavor_sauda": {
@@ -55,9 +55,9 @@
 
     {
       "id": "high-acidity-raw-fish",
-      "description": "Vinhos de acidez muito alta harmonizam com peixe cru ou magro",
+      "description": "Acidez muito alta para peixe cru ou magro",
       "dimension": "acidity",
-      "wine_condition": { "acidity": ">= 8", "type": "white" },
+      "wine_condition": { "acidity": ">= 8" },
       "food_tags": ["raw", "fish_lean", "fish_rich"],
       "score": 10,
       "reason": "Acidez muito alta realça sabores delicados e limpa a gordura do peixe — indispensável com preparações cruas de qualquer tipo"
@@ -67,7 +67,7 @@
       "id": "high-acidity-citrus-raw",
       "description": "Acidez muito alta para pratos com citrinos intensos",
       "dimension": "acidity",
-      "wine_condition": { "acidity": ">= 8", "type": "white" },
+      "wine_condition": { "acidity": ">= 8" },
       "food_tags": ["citrus", "acidic"],
       "score": 9,
       "reason": "Acidez muito alta espelha e sustenta a intensidade cítrica do prato — a frescura do vinho harmoniza com a vivacidade do limão ou citrino"
@@ -77,10 +77,20 @@
       "id": "high-acidity-shellfish",
       "description": "Acidez alta com mariscos",
       "dimension": "acidity",
-      "wine_condition": { "acidity": ">= 7", "type": "white" },
+      "wine_condition": { "acidity": ">= 7" },
       "food_tags": ["shellfish", "marine"],
       "score": 9,
       "reason": "Acidez complementa a salinidade e corta a riqueza dos mariscos; espelha o caracter mineral e iodado do prato"
+    },
+
+    {
+      "id": "high-acidity-salty-fermented",
+      "description": "Acidez muito alta para pratos salgados e fermentados",
+      "dimension": "acidity",
+      "wine_condition": { "acidity": ">= 8" },
+      "food_tags": ["salty", "fermented"],
+      "score": 8,
+      "reason": "Acidez muito alta corta e equilibra a salinidade intensa e a profundidade dos fermentados — a frescura do vinho limpa e renova o paladar"
     },
 
     {
@@ -94,20 +104,21 @@
     },
 
     {
-      "id": "high-acidity-salty-fermented",
-      "description": "Acidez muito alta para pratos salgados e fermentados",
+      "id": "high-acidity-fat",
+      "description": "Acidez alta corta gorduras animais e vegetais (Harrington R6)",
       "dimension": "acidity",
-      "wine_condition": { "acidity": ">= 8", "type": "white" },
-      "food_tags": ["salty", "fermented"],
-      "score": 8,
-      "reason": "Acidez muito alta corta e equilibra a salinidade intensa e a profundidade dos fermentados — a frescura do vinho limpa e renova o paladar"
+      "wine_condition": { "acidity": ">= 7" },
+      "food_tags": ["fatty_animal", "fatty_vegetal"],
+      "score": 6,
+      "reason": "Acidez corta gorduras animais e vegetais e limpa o paladar — funciona com qualquer vinho que tenha acidez estrutural suficiente",
+      "notes": "R6: Acidity + fat. Covers animal fat (grilled meats, charcuterie) and vegetal fat (olive oil, nut sauces, tahini)."
     },
 
     {
       "id": "light-body-delicate-dishes",
       "description": "Corpo leve para pratos delicados",
       "dimension": "body",
-      "wine_condition": { "body": "light", "type": "white" },
+      "wine_condition": { "body": "light" },
       "food_tags": ["delicate", "steamed", "poached", "light", "lean"],
       "score": 9,
       "reason": "Corpo leve não domina pratos de sabor sutil e textura delicada"
@@ -134,18 +145,98 @@
     },
 
     {
-      "id": "aromatic-white-umami",
-      "description": "Brancos aromáticos com pratos ricos em umami",
-      "dimension": "style",
-      "wine_condition": { "type": "white" },
-      "food_tags": ["umami", "fermented"],
+      "id": "full-body-rich-dishes",
+      "description": "Vinhos encorpados para pratos ricos, gordurosos e estufados",
+      "dimension": "body",
+      "wine_condition": { "body": "full" },
+      "food_tags": ["rich", "creamy", "fatty", "braised", "red_meat", "game"],
+      "score": 9,
+      "reason": "Corpo pleno suporta a riqueza, gordura e concentração de sabores de pratos ricos e estufados de longa cozedura"
+    },
+
+    {
+      "id": "intense-body-match",
+      "description": "Vinhos de corpo médio a pleno para pratos de intensidade alta",
+      "dimension": "body",
+      "wine_condition": { "body": "!= light" },
+      "food_tags": ["intense"],
+      "score": 6,
+      "reason": "Pratos de intensidade alta dominam vinhos leves — é necessário corpo médio a pleno para que o vinho não desapareça"
+    },
+
+    {
+      "id": "smoked-structured-wine",
+      "description": "Vinhos estruturados com pratos fumados",
+      "dimension": "body",
+      "wine_condition": { "acidity": ">= 6", "body": "!= light" },
+      "food_tags": ["smoked", "smoky"],
+      "score": 6,
+      "reason": "O fumo adiciona camadas de amargor e complexidade — acidez suficiente e corpo médio a pleno integram sem se perder nos sabores defumados"
+    },
+
+    {
+      "id": "egg-delicate",
+      "description": "Vinhos frescos e delicados para pratos à base de ovo",
+      "dimension": "body",
+      "wine_condition": { "acidity": ">= 6", "body": "!= full" },
+      "food_tags": ["egg"],
+      "score": 6,
+      "reason": "Pratos de ovo pedem vinho fresco e delicado — a acidez limpa o paladar sem competir com a textura suave e a riqueza proteica"
+    },
+
+    {
+      "id": "warm-spiced-medium-body",
+      "description": "Vinhos de corpo médio e taninos moderados com pratos de especiarias doces",
+      "dimension": "body",
+      "wine_condition": { "body": "!= full", "tannins": "<= 7" },
+      "food_tags": ["warm_spiced"],
+      "score": 6,
+      "reason": "Especiarias doces (canela, noz-moscada, estrela-de-anis) harmonizam com vinhos frutados de corpo médio — os aromas de fruta madura espelham a doçura das especiarias"
+    },
+
+    {
+      "id": "low-tannin-light-meat",
+      "description": "Taninos baixos para carnes brancas, cogumelos e proteína vegetal",
+      "dimension": "tannin",
+      "wine_condition": { "tannins": "<= 6" },
+      "food_tags": ["poultry", "mushroom", "plant_protein", "earthy"],
       "score": 8,
-      "reason": "Aromas varietais de brancos moderadamente ácidos complementam a profundidade do umami sem conflito"
+      "reason": "Taninos baixos não dominam proteínas delicadas; acidez média equilibra gordura moderada"
+    },
+
+    {
+      "id": "high-tannin-fatty-meat",
+      "description": "Taninos altos para carnes gordurosas",
+      "dimension": "tannin",
+      "wine_condition": { "tannins": ">= 8" },
+      "food_tags": ["red_meat", "game", "fatty_animal", "fatty", "rich"],
+      "score": 10,
+      "reason": "Proteínas e gordura amaciam taninos altos; equilíbrio mútuo entre estrutura do vinho e riqueza do prato"
+    },
+
+    {
+      "id": "medium-body-grilled-meat",
+      "description": "Corpo médio e taninos moderados para grelhados",
+      "dimension": "tannin",
+      "wine_condition": { "body": "medium", "tannins": "<= 7" },
+      "food_tags": ["grilled", "pork", "poultry"],
+      "score": 8,
+      "reason": "O carvão do grelhado complementa taninos médios; corpo médio não desequilibra pratos de média riqueza"
+    },
+
+    {
+      "id": "fresh-structured-umami",
+      "description": "Vinhos frescos e estruturados para pratos umami e fermentados",
+      "dimension": "tannin",
+      "wine_condition": { "acidity": ">= 6", "tannins": "<= 6" },
+      "food_tags": ["umami", "fermented", "mushroom", "grilled", "earthy"],
+      "score": 8,
+      "reason": "Taninos contidos e acidez estruturada sustentam a profundidade do umami e sabores fermentados — a frescura integra-se sem dominar o prato"
     },
 
     {
       "id": "off-dry-sweet-umami",
-      "description": "Brancos com doçura residual para pratos doce-umami",
+      "description": "Vinhos com doçura residual para pratos doce-umami",
       "dimension": "sweetness",
       "wine_condition": { "sweetness": "off-dry" },
       "food_tags": ["sweet", "umami", "fermented"],
@@ -154,170 +245,72 @@
     },
 
     {
-      "id": "full-body-white-rich-dishes",
-      "description": "Brancos encorpados para pratos ricos",
-      "dimension": "body",
-      "wine_condition": { "body": "full", "type": "white" },
-      "food_tags": ["rich", "creamy", "fatty"],
-      "score": 9,
-      "reason": "Corpo pleno suporta a riqueza e gordura do prato sem se perder"
-    },
-
-    {
-      "id": "sparkling-aperitif-light",
-      "description": "Espumante para pratos leves, mariscos e fritos",
-      "dimension": "style",
-      "wine_condition": { "type": "sparkling" },
-      "food_tags": ["light", "shellfish", "fried", "marine"],
-      "score": 9,
-      "reason": "Borbulha e acidez alta do espumante limpam o palato e complementam sabores frescos e fritos leves"
-    },
-
-    {
-      "id": "low-tannin-red-light-meat",
-      "description": "Taninos baixos para carnes brancas, cogumelos e proteína vegetal",
-      "dimension": "tannin",
-      "wine_condition": { "tannins": "<= 6", "type": "red" },
-      "food_tags": ["poultry", "mushroom", "plant_protein", "earthy"],
-      "score": 8,
-      "reason": "Taninos baixos não dominam proteínas delicadas; acidez média equilibra gordura moderada"
-    },
-
-    {
-      "id": "high-tannin-red-fatty-meat",
-      "description": "Taninos altos para carnes gordurosas",
-      "dimension": "tannin",
-      "wine_condition": { "tannins": ">= 8", "type": "red" },
-      "food_tags": ["red_meat", "game", "fatty_animal", "fatty", "rich"],
-      "score": 10,
-      "reason": "Proteínas e gordura amaciam taninos altos; equilíbrio mútuo entre estrutura do vinho e riqueza do prato"
-    },
-
-    {
-      "id": "high-acidity-red-fatty-fish",
-      "description": "Tinto de acidez muito alta com peixe gordo",
-      "dimension": "acidity",
-      "wine_condition": { "acidity": ">= 9", "type": "red" },
-      "food_tags": ["fish_rich"],
-      "score": 8,
-      "reason": "Acidez extrema corta eficazmente a gordura de peixes gordos (sardinha, cavala, atum, salmão)"
-    },
-
-    {
-      "id": "full-body-red-robust-stews",
-      "description": "Tintos encorpados para ensopados robustos",
-      "dimension": "body",
-      "wine_condition": { "body": "full", "type": "red" },
-      "food_tags": ["braised", "rich", "red_meat", "game"],
-      "score": 9,
-      "reason": "Estrutura plena e taninos do tinto encorpado integram-se com a complexidade de molhos de longa cozedura"
-    },
-
-    {
-      "id": "medium-red-grilled-meat",
-      "description": "Tintos de corpo médio para grelhados",
-      "dimension": "tannin",
-      "wine_condition": { "body": "medium", "tannins": "<= 7", "type": "red" },
-      "food_tags": ["grilled", "pork", "poultry"],
-      "score": 8,
-      "reason": "O carvão do grelhado complementa taninos médios; corpo médio não desequilibra pratos de média riqueza"
-    },
-
-    {
-      "id": "warm-spiced-fruity-red",
-      "description": "Tintos frutados de corpo médio com pratos de especiarias doces",
-      "dimension": "style",
-      "wine_condition": { "type": "red", "body": "!= full", "tannins": "<= 7" },
-      "food_tags": ["warm_spiced"],
-      "score": 6,
-      "reason": "Especiarias doces (canela, noz-moscada, estrela-de-anis) harmonizam com tintos frutados — os aromas de fruta madura espelham a doçura das especiarias"
-    },
-
-    {
-      "id": "fresh-structured-red-umami",
-      "description": "Tintos frescos e estruturados para pratos umami, grelhados e fermentados",
-      "dimension": "tannin",
-      "wine_condition": { "type": "red", "acidity": ">= 6", "tannins": "<= 6" },
-      "food_tags": ["umami", "fermented", "mushroom", "grilled", "earthy"],
-      "score": 8,
-      "reason": "Taninos contidos e acidez estruturada sustentam a profundidade do umami e sabores fermentados — a frescura do tinto integra-se sem dominar o prato"
-    },
-
-    {
-      "id": "egg-white-delicate",
-      "description": "Brancos frescos e delicados para pratos à base de ovo",
-      "dimension": "style",
-      "wine_condition": { "type": "white", "acidity": ">= 6", "body": "!= full" },
-      "food_tags": ["egg"],
-      "score": 6,
-      "reason": "Pratos de ovo pedem branco fresco e delicado — a acidez limpa o paladar sem competir com a textura suave e a riqueza proteica"
-    },
-
-    {
-      "id": "dry-madeira-acidic-fried",
-      "description": "Madeira seco (Sercial) para pratos agridoces, fritos e marinados",
-      "dimension": "style",
-      "wine_condition": { "type": "fortified", "sweetness": "dry", "acidity": ">= 8" },
-      "food_tags": ["acidic", "fried", "sweet_sour", "marinade", "oxidative"],
-      "score": 8,
-      "reason": "A acidez extrema do Madeira seco corta a gordura da fritura e equilibra o agridoce — a oxidação espelha o carácter oxidativo do prato"
-    },
-
-    {
-      "id": "sweet-fortified-rich-desserts",
-      "description": "Fortificados doces para sobremesas ricas",
+      "id": "sweet-wine-rich-desserts",
+      "description": "Vinhos doces para sobremesas ricas (Harrington R1)",
       "dimension": "sweetness",
-      "wine_condition": { "sweetness": "sweet", "type": "fortified" },
+      "wine_condition": { "sweetness": "sweet" },
       "food_tags": ["sweet", "chocolate", "dessert", "nuts", "caramel", "nutty"],
       "score": 10,
-      "reason": "Regra fundamental: vinho deve ser tão doce ou mais doce que a sobremesa; complexidade oxidativa adiciona camadas"
+      "reason": "Regra fundamental: o vinho não pode ser menos doce que a sobremesa — qualquer vinho doce satisfaz esta condição estrutural",
+      "notes": "R1: Wine >= sweetness of dish. Type-free: covers fortified, still sweet, and sparkling sweet equally."
     },
 
     {
-      "id": "tawny-port-nut-desserts",
-      "description": "Tawny Port para sobremesas de frutos secos",
-      "dimension": "style",
-      "wine_condition": { "type": "fortified", "id_ref": "tawny", "sweetness": "sweet" },
-      "food_tags": ["nuts", "caramel", "custard", "dessert", "nutty", "oxidative"],
-      "score": 10,
-      "reason": "Notas de noz e caramelo do Tawny espelham os sabores torrados e doces das sobremesas de frutos secos"
+      "id": "off-dry-spicy-food",
+      "description": "Vinhos off-dry de acidez alta para pratos picantes (Harrington R9)",
+      "dimension": "sweetness",
+      "wine_condition": { "sweetness": "off-dry", "acidity": ">= 7" },
+      "food_tags": ["spicy"],
+      "score": 7,
+      "reason": "Doçura residual amacia a capsaicina; acidez alta mantém frescura e impede que o vinho pareça pesado com o picante",
+      "notes": "R9: Spicy → off-dry with high acidity."
     },
 
     {
-      "id": "madeira-acidic-fortified-acidic-dishes",
-      "description": "Madeira seco/off-dry para pratos agridoces e fritos",
-      "dimension": "style",
-      "wine_condition": { "type": "fortified", "region_ref": "Madeira", "sweetness": "off-dry" },
-      "food_tags": ["sweet_sour", "fried", "acidic", "marinade", "oxidative"],
-      "score": 9,
-      "reason": "Acidez alta característica do Madeira corta fritura e equilibra agridoce; a oxidação adiciona complexidade"
+      "id": "very-long-finish-complex",
+      "description": "Persistência muito longa para pratos de grande complexidade",
+      "dimension": "finish",
+      "wine_condition": { "finish": "very long" },
+      "food_tags": ["cured", "lingering", "game"],
+      "score": 8,
+      "reason": "Persistência excepcional acompanha a complexidade do prato — os sabores evoluem juntos e sustentam-se até ao fim"
     },
 
     {
-      "id": "moscatel-sweet-aromatic-desserts",
-      "description": "Moscatel para sobremesas aromáticas",
-      "dimension": "style",
-      "wine_condition": { "id_ref": "moscatel-setubal", "sweetness": "sweet" },
-      "food_tags": ["sweet", "dessert", "honey"],
-      "score": 10,
-      "reason": "Aromas de lichia, mel e damasco do Moscatel harmonizam com sobremesas frutadas e pratos com mel"
+      "id": "long-finish-lingering",
+      "description": "Persistência longa para pratos com sabores que perduram",
+      "dimension": "finish",
+      "wine_condition": { "finish": "long" },
+      "food_tags": ["lingering"],
+      "score": 5,
+      "reason": "O finish longo acompanha e prolonga os sabores do prato — a harmonização continua depois do último garfo"
+    },
+
+    {
+      "id": "game-structured-finish",
+      "description": "Taninos altos e persistência longa para caça",
+      "dimension": "finish",
+      "wine_condition": { "tannins": ">= 7", "finish": "long" },
+      "food_tags": ["game"],
+      "score": 8,
+      "reason": "Caça tem sabores intensos, ferrosos e por vezes fegadosos — taninos altos e persistência longa sustentam a intensidade sem se perder"
     },
 
     {
       "id": "conflict-tannin-umami",
       "description": "CONFLITO: Taninos altos com pratos ricos em umami — sabor metálico (Harrington)",
       "dimension": "conflict_tannin",
-      "wine_condition": { "tannins": ">= 7", "type": "red" },
+      "wine_condition": { "tannins": ">= 7" },
       "food_tags": ["umami", "fermented"],
       "score": -7,
-      "reason": "Glutamato (umami) e compostos fermentados fazem tintos jovens muito tânicos aparecer metálicos e amargos — evitar"
+      "reason": "Glutamato (umami) e compostos fermentados fazem vinhos muito tânicos aparecer metálicos e amargos — evitar"
     },
 
     {
       "id": "conflict-tannin-fish",
       "description": "CONFLITO: Taninos altos com peixe — sabor metálico inevitável",
       "dimension": "conflict_tannin",
-      "wine_condition": { "tannins": ">= 7", "type": "red" },
+      "wine_condition": { "tannins": ">= 7" },
       "food_tags": ["fish_lean", "fish_rich"],
       "score": -10,
       "reason": "Taninos altos reagem com proteínas do peixe criando sabor metálico e amargo — combinação clássica a evitar"
@@ -327,7 +320,7 @@
       "id": "conflict-tannin-delicate",
       "description": "CONFLITO: Taninos altos com pratos delicados",
       "dimension": "conflict_tannin",
-      "wine_condition": { "tannins": ">= 7", "type": "red" },
+      "wine_condition": { "tannins": ">= 7" },
       "food_tags": ["delicate", "raw"],
       "score": -6,
       "reason": "Taninos elevados dominam e mascaram pratos de sabor sutil — a adstringência apaga a delicadeza do prato"
@@ -337,7 +330,7 @@
       "id": "conflict-tannin-egg-bitter",
       "description": "CONFLITO: Taninos com ovos ou pratos amargos — reação proteica e amplificação do amargor",
       "dimension": "conflict_tannin",
-      "wine_condition": { "tannins": ">= 6", "type": "red" },
+      "wine_condition": { "tannins": ">= 6" },
       "food_tags": ["egg", "bitter"],
       "score": -6,
       "reason": "Taninos reagem com proteínas do ovo criando sabor metálico; com pratos amargos, o amargor amplifica-se desagradavelmente"
@@ -374,16 +367,6 @@
     },
 
     {
-      "id": "conflict-sweetness-pickled",
-      "description": "CONFLITO: Vinho com resíduo de açúcar penalizado com pickle ou fermentados",
-      "dimension": "bonus",
-      "wine_condition": { "sweetness": "!= dry" },
-      "food_tags": ["pickled", "fermented"],
-      "score_bonus": -7,
-      "reason": "Resíduo de açúcar conflitua com a acidez láctica de pickles e fermentados — a doçura amplifica a dissonância ácido-doce"
-    },
-
-    {
       "id": "conflict-low-acid-acidic-food",
       "description": "CONFLITO: Vinho de acidez baixa com pratos ácidos — resultado flácido (Harrington R14)",
       "dimension": "conflict_acidity",
@@ -406,6 +389,16 @@
     },
 
     {
+      "id": "conflict-sweetness-pickled",
+      "description": "BÓNUS NEGATIVO: Vinho com resíduo de açúcar com pickle ou fermentados",
+      "dimension": "bonus",
+      "wine_condition": { "sweetness": "!= dry" },
+      "food_tags": ["pickled", "fermented"],
+      "score_bonus": -7,
+      "reason": "Resíduo de açúcar conflitua com a acidez láctica de pickles e fermentados — a doçura amplifica a dissonância ácido-doce"
+    },
+
+    {
       "id": "bonus-salt-tannin-softening",
       "description": "BÓNUS: O sal do prato amacia os taninos do vinho (Harrington R13)",
       "dimension": "bonus",
@@ -413,118 +406,24 @@
       "food_tags": ["salty"],
       "score_bonus": 2,
       "reason": "Sal em quantidade significativa suaviza a percepção dos taninos — a adstringência diminui, o vinho integra melhor",
-      "notes": "R13: Salt softens tannins. Small positive bonus — not a primary pairing driver, just a modifier."
+      "notes": "R13: Salt softens tannins."
     },
 
     {
-      "id": "sparkling-salty-food",
-      "description": "Espumante com pratos salgados — borbulha limpa e equilibra o sal (Harrington R3)",
-      "dimension": "body",
-      "wine_condition": { "type": "sparkling" },
-      "food_tags": ["salty"],
-      "score": 6,
-      "reason": "Efervescência e acidez do espumante limpam o palato e equilibram a salinidade — a borbulha atenua a percepção do sal",
-      "notes": "R3: Salty dish → sparkling wine."
-    },
-
-    {
-      "id": "sparkling-bitter-food",
-      "description": "Espumante com pratos amargos — efervescência atenua o amargor (Harrington R4)",
-      "dimension": "style",
-      "wine_condition": { "type": "sparkling" },
-      "food_tags": ["bitter"],
-      "score": 5,
-      "reason": "A efervescência do espumante dilui e atenua compostos amargos — o CO2 interfere com a percepção do amargor",
-      "notes": "R4: Bitter dish → sparkling attenuates."
-    },
-
-    {
-      "id": "off-dry-spicy-food",
-      "description": "Brancos off-dry de acidez alta para pratos picantes (Harrington R9)",
-      "dimension": "sweetness",
-      "wine_condition": { "sweetness": "off-dry", "acidity": ">= 7" },
-      "food_tags": ["spicy"],
-      "score": 7,
-      "reason": "Doçura residual amacia a capsaicina; acidez alta mantém frescura e impede que o vinho pareça pesado com o picante",
-      "notes": "R9: Spicy → off-dry with high acidity."
-    },
-
-    {
-      "id": "very-long-finish-complex",
-      "description": "Persistência muito longa para pratos de grande complexidade e múltiplas camadas",
-      "dimension": "finish",
-      "wine_condition": { "finish": "very long" },
-      "food_tags": ["cured", "lingering", "game"],
-      "score": 8,
-      "reason": "Persistência excepcional acompanha a complexidade do prato — os sabores evoluem juntos e sustentam-se até ao fim"
-    },
-
-    {
-      "id": "long-finish-lingering",
-      "description": "Persistência longa para pratos com sabores que perduram",
-      "dimension": "finish",
-      "wine_condition": { "finish": "long" },
-      "food_tags": ["lingering"],
-      "score": 5,
-      "reason": "O finish longo acompanha e prolonga os sabores do prato — a harmonização continua depois do último garfo"
-    },
-
-    {
-      "id": "bonus-citrus-citrus-mirror",
-      "description": "BÓNUS: Espelhamento de citrinos — vinho cítrico com prato cítrico",
+      "id": "bonus-citrus-mirror",
+      "description": "BÓNUS: Espelhamento de citrinos — vinho de alta acidez com prato cítrico",
       "dimension": "bonus",
-      "wine_condition": { "acidity": ">= 7", "type": "white" },
+      "wine_condition": { "acidity": ">= 7" },
       "food_tags": ["citrus"],
       "score_bonus": 2,
-      "reason": "Notas cítricas do vinho espelham elementos cítricos do prato — harmonia por semelhança"
-    },
-
-    {
-      "id": "high-acidity-fat",
-      "description": "Acidez alta corta gorduras animais e vegetais (Harrington R6)",
-      "dimension": "acidity",
-      "wine_condition": { "acidity": ">= 7" },
-      "food_tags": ["fatty_animal", "fatty_vegetal"],
-      "score": 6,
-      "reason": "Acidez corta gorduras animais e vegetais e limpa o paladar — funciona com brancos encorpados e tintos frescos",
-      "notes": "R6: Acidity + fat. Covers animal fat (grilled meats, charcuterie) and vegetal fat (olive oil, nut sauces, tahini)."
-    },
-
-    {
-      "id": "game-structured-finish",
-      "description": "Tintos estruturados com caça — taninos altos e persistência longa",
-      "dimension": "finish",
-      "wine_condition": { "type": "red", "tannins": ">= 7", "finish": "long" },
-      "food_tags": ["game"],
-      "score": 8,
-      "reason": "Caça tem sabores intensos, ferrosos e por vezes fegadosos — taninos altos e persistência longa sustentam a intensidade sem se perder"
-    },
-
-    {
-      "id": "smoked-structured-wine",
-      "description": "Vinhos estruturados com pratos fumados",
-      "dimension": "style",
-      "wine_condition": { "acidity": ">= 6", "body": "!= light" },
-      "food_tags": ["smoked", "smoky"],
-      "score": 6,
-      "reason": "O fumo adiciona camadas de amargor e complexidade — acidez suficiente e corpo médio a pleno integram sem se perder nos sabores defumados"
-    },
-
-    {
-      "id": "intense-body-match",
-      "description": "Vinhos de corpo médio a pleno para pratos de intensidade alta",
-      "dimension": "body",
-      "wine_condition": { "body": "!= light" },
-      "food_tags": ["intense"],
-      "score": 6,
-      "reason": "Pratos de intensidade alta dominam vinhos leves — é necessário corpo médio a pleno para que o vinho não desapareça"
+      "reason": "Notas cítricas de vinhos de acidez alta espelham elementos cítricos do prato — harmonia por semelhança"
     },
 
     {
       "id": "bonus-floral-delicate-steam",
-      "description": "BÓNUS: Brancos florais com pratos de vapor delicados",
+      "description": "BÓNUS: Vinhos florais e leves com pratos de vapor delicados",
       "dimension": "bonus",
-      "wine_condition": { "acidity": ">= 6", "body": "light", "type": "white" },
+      "wine_condition": { "acidity": ">= 6", "body": "light" },
       "food_tags": ["steamed", "poached", "delicate", "egg", "custard", "floral"],
       "score_bonus": 2,
       "reason": "Aromas florais e leveza do vinho complementam a delicadeza, textura sedosa e carácter floral do prato"
@@ -532,12 +431,84 @@
 
     {
       "id": "bonus-herbaceous-mirror",
-      "description": "BÓNUS: Espelhamento herbáceo — brancos aromáticos com pratos herbáceos",
+      "description": "BÓNUS: Espelhamento herbáceo — vinhos aromáticos com pratos herbáceos",
       "dimension": "bonus",
-      "wine_condition": { "type": "white", "acidity": ">= 6" },
+      "wine_condition": { "acidity": ">= 6" },
       "food_tags": ["herbaceous"],
       "score_bonus": 2,
-      "reason": "Notas herbáceas de Loureiro, Arinto ou Sauvignon espelham ervas frescas e molhos à base de ervas — harmonia por semelhança"
+      "reason": "Notas herbáceas espelham ervas frescas e molhos à base de ervas — harmonia por semelhança"
+    },
+
+    {
+      "id": "bonus-sparkling-aperitif",
+      "description": "BÓNUS: Vantagem categórica do espumante — efervescência para aperitivos e pratos leves",
+      "dimension": "bonus",
+      "wine_condition": { "type": "sparkling" },
+      "food_tags": ["light", "shellfish", "fried", "marine"],
+      "score_bonus": 4,
+      "reason": "A efervescência do espumante limpa o palato e complementa sabores frescos e fritos leves — vantagem estrutural da categoria que se acumula com qualquer pontuação de acidez e corpo"
+    },
+
+    {
+      "id": "bonus-sparkling-salty",
+      "description": "BÓNUS: Efervescência do espumante equilibra o sal (Harrington R3)",
+      "dimension": "bonus",
+      "wine_condition": { "type": "sparkling" },
+      "food_tags": ["salty"],
+      "score_bonus": 3,
+      "reason": "Efervescência e acidez do espumante limpam o palato e equilibram a salinidade — a borbulha atenua a percepção do sal",
+      "notes": "R3: Salty dish → sparkling wine."
+    },
+
+    {
+      "id": "bonus-sparkling-bitter",
+      "description": "BÓNUS: Efervescência do espumante atenua o amargor (Harrington R4)",
+      "dimension": "bonus",
+      "wine_condition": { "type": "sparkling" },
+      "food_tags": ["bitter"],
+      "score_bonus": 3,
+      "reason": "A efervescência do espumante dilui e atenua compostos amargos — o CO2 interfere com a percepção do amargor",
+      "notes": "R4: Bitter dish → sparkling attenuates."
+    },
+
+    {
+      "id": "bonus-tawny-nut-desserts",
+      "description": "BÓNUS: Concordância aromática do Tawny Port com sobremesas de frutos secos",
+      "dimension": "bonus",
+      "wine_condition": { "type": "fortified", "id_ref": "tawny", "sweetness": "sweet" },
+      "food_tags": ["nuts", "caramel", "custard", "dessert", "nutty", "oxidative"],
+      "score_bonus": 4,
+      "reason": "Notas de noz e caramelo do Tawny espelham os sabores torrados e doces das sobremesas de frutos secos"
+    },
+
+    {
+      "id": "bonus-madeira-dry-acidic-fried",
+      "description": "BÓNUS: Concordância aromática do Madeira seco com pratos agridoces e fritos",
+      "dimension": "bonus",
+      "wine_condition": { "type": "fortified", "sweetness": "dry", "acidity": ">= 8" },
+      "food_tags": ["acidic", "fried", "sweet_sour", "marinade", "oxidative"],
+      "score_bonus": 4,
+      "reason": "A acidez extrema do Madeira seco corta a gordura da fritura e equilibra o agridoce — a oxidação espelha o carácter oxidativo do prato"
+    },
+
+    {
+      "id": "bonus-madeira-off-dry-acidic",
+      "description": "BÓNUS: Concordância aromática do Madeira off-dry com pratos agridoces e ácidos",
+      "dimension": "bonus",
+      "wine_condition": { "type": "fortified", "region_ref": "Madeira", "sweetness": "off-dry" },
+      "food_tags": ["sweet_sour", "fried", "acidic", "marinade", "oxidative"],
+      "score_bonus": 4,
+      "reason": "Acidez alta característica do Madeira corta fritura e equilibra agridoce; a oxidação adiciona complexidade"
+    },
+
+    {
+      "id": "bonus-moscatel-aromatic-desserts",
+      "description": "BÓNUS: Concordância aromática do Moscatel de Setúbal com sobremesas frutadas",
+      "dimension": "bonus",
+      "wine_condition": { "id_ref": "moscatel-setubal", "sweetness": "sweet" },
+      "food_tags": ["sweet", "dessert", "honey"],
+      "score_bonus": 4,
+      "reason": "Aromas de lichia, mel e damasco do Moscatel harmonizam com sobremesas frutadas e pratos com mel"
     }
 
   ],

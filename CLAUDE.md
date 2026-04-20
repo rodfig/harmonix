@@ -52,7 +52,9 @@ For each dish × wine pair:
 4. `primary_tag` bonus: rules addressing the dish's dominant element receive +3 pts
 5. Sort by total score; top N returned per dish
 
-Dimensions: `acidity` · `body` · `tannin` · `sweetness` · `style` · `finish` · `conflict_acidity` · `conflict_body` · `conflict_tannin`
+Dimensions: `acidity` · `body` · `tannin` · `sweetness` · `finish` · `bonus` · `conflict_acidity` · `conflict_body` · `conflict_sweetness` · `conflict_tannin`
+
+**Three-stage funnel (implemented):** (1) hard filters eliminate type/body/sweetness incompatibilities before scoring; (2) structural rules — all type-free, property-only conditions; (3) bonus rules accumulate identity-specific concordance (tawny/madeira/moscatel) and categorical advantages (sparkling effervescence). No `type: white/red` in structural rules — any wine scores on its properties alone.
 
 ---
 
@@ -78,184 +80,42 @@ The rules implement Harrington's pyramid in three layers:
 ### Harrington Rules Implemented
 | Rule | Description | Engine Coverage |
 |---|---|---|
-| R1 | Wine ≥ sweetness of dish | `sweet-fortified-*`, `moscatel-*`, `off-dry-*` rules; hard filters on dessert dishes |
+| R1 | Wine ≥ sweetness of dish | `sweet-wine-rich-desserts`, `off-dry-sweet-umami`, `off-dry-spicy-food`; hard filters on dessert dishes |
 | R2 | Wine acidity ≥ dish acidity | Multiple `high-acidity-*` positive rules |
-| R3 | Salty dish → sparkling | `sparkling-salty-food` *(Phase 1)* |
-| R4 | Bitter dish → sparkling attenuates | `sparkling-bitter-food` *(Phase 1)* |
-| R5 | Tannins + animal fat | `high-tannin-red-fatty-meat` |
-| R6 | Acidity + vegetal/dairy fat | Covered by high-acidity positive rules |
-| R7/R8 | Body/intensity equivalence | `light-body-delicate-dishes`, `full-body-*`, `conflict-light-body-rich-stew`, `conflict-heavy-body-delicate` *(Phase 1)* |
-| R9 | Spicy → off-dry, high acidity | `off-dry-spicy-food` *(Phase 1, dormant)* |
-| R10 | Similarity or contrast | `bonus-regional-affinity`, `bonus-citrus-citrus-mirror`, `bonus-floral-delicate-steam` |
+| R3 | Salty dish → sparkling | `bonus-sparkling-salty` |
+| R4 | Bitter dish → sparkling attenuates | `bonus-sparkling-bitter` |
+| R5 | Tannins + animal fat | `high-tannin-fatty-meat` |
+| R6 | Acidity + vegetal/dairy fat | `high-acidity-fat`, `high-acidity-dairy-fat` |
+| R7/R8 | Body/intensity equivalence | `light-body-delicate-dishes`, `full-body-rich-dishes`, `conflict-light-body-rich-stew`, `conflict-heavy-body-delicate` |
+| R9 | Spicy → off-dry, high acidity | `off-dry-spicy-food`; `conflict-high-alcohol-spicy` |
+| R10 | Similarity or contrast | `bonus-citrus-mirror`, `bonus-floral-delicate-steam`, `bonus-herbaceous-mirror` |
 | R11 | Finish equivalence | `very-long-finish-complex`, `long-finish-lingering` |
-| R13 | Salt softens tannins | `bonus-salt-tannin-softening` *(Phase 1)* |
-| R14 | Low acidity + acidic dish = flácido | `conflict-low-acid-acidic-food` *(Phase 1)* |
+| R13 | Salt softens tannins | `bonus-salt-tannin-softening` |
+| R14 | Low acidity + acidic dish = flácido | `conflict-low-acid-acidic-food` |
 | R15 | Balance — wine complements, not competes | Meta-principle; embedded in dimensional design |
 
 ---
 
-## Implementation Plan
+## Implementation Status
 
-### Phase 1 — Rule Additions *(next task)*
-**Files:** `data/wine-profiles/pairing-rules.json`, `data/menus/nanban-kaiseki/dish-profiles.json`
-**Type:** Data only. No code changes.
+All three planned phases are complete and merged to `main`.
 
-Add 6 new rules:
+### Phase 1 — Rule Additions ✓
+Harrington rules R3, R4, R9, R13, R14, R7/R8 added. Two-tier tag vocabulary established with `_tier` field on all tag groups. `salty` added to `cataplana-tofu`.
 
-| ID | Harrington | Fires on tags | Wine condition | Score | Dimension |
-|---|---|---|---|---|---|
-| `conflict-low-acid-acidic-food` | R14 | `acidic`, `citrus`, `lemon_based` | `acidity <= 5` | −5 | `conflict_acidity` |
-| `conflict-heavy-body-delicate` | R7/R8 | `delicate`, `light` | `body == "full"` | −6 | `conflict_body` |
-| `bonus-salt-tannin-softening` | R13 | `salty` | `tannins >= 5` | +2 (bonus) | — |
-| `sparkling-salty-food` | R3 | `salty` | `type == "sparkling"` | +6 | `body` |
-| `sparkling-bitter-food` | R4 | `bitter` | `type == "sparkling"` | +5 | `style` |
-| `off-dry-spicy-food` | R9 | `spicy` | `sweetness == "off-dry"`, `acidity >= 7` | +7 | `sweetness` |
+### Phase 2 — Three-Mode Dish Profile Schema ✓
+- **Schema:** `component_schema` and `systemic_interactions` sections added to `pairing-rules.json`
+- **Modes:** auto-detected from data structure (Mode 1: components only; Mode 2: food_tags only; Mode 3: both)
+- **Code:** `resolveDishProfile()` implemented in `js/pairing-scorer.js`
 
-Also add to `food_tags_reference`:
-- New tier-1 tags: `salty`, `bitter`, `spicy`
-- Add `"tier"` field (1 = universal structural, 2 = cuisine-specific/aromatic) to all existing tags
-- Document two-tier governance rules
+### Phase 3 — Client-Side JS Engine ✓
+- `js/pairing-scorer.js`: full in-browser scoring engine (45 rules, all modes, dimensional max, bonus accumulation)
+- `js/harmonix.js`: dish form, tag picker, `createDishForm()`, `buildWineCardEl()`
+- `consulta.html`: interactive Consulta page using the in-browser engine
+- No backend, no pre-computed `pairings.json` dependency for the Consulta page
 
-Add `salty` to `cataplana-tofu` food_tags in `data/menus/nanban-kaiseki/dish-profiles.json`.
-
-**Not added:** R1 violation (enforced by hard filters at dish level), R6/R12 (redundant with existing acidity coverage), R15 (meta-principle).
-
-### Phase 2 — Three-Mode Dish Profile Schema
-
-#### Phase 2a — Schema Definition + Interaction Table
-**Files:** `data/wine-profiles/pairing-rules.json` (new section), `doc/dish-profiling-guide.md` (new)
-**Type:** Data + docs. No code changes.
-
-#### The Three Modes
-
-Mode is auto-detected from data structure — no explicit flag:
-
-| Condition | Mode | Description |
-|---|---|---|
-| `food_tags` present, no `components` | **Mode 2** | Unified dish — current model, unchanged |
-| `components` present, no `food_tags` | **Mode 1** | Composed plate — profile derived from components |
-| Both present | **Mode 3** | Dish with highlights — base profile + component modifiers |
-
-**When to use each mode:**
-- **Mode 2:** Components cooked together into a unified flavor surface (cataplana, bolognese, stews). Profile described as a whole.
-- **Mode 1:** Components consumed simultaneously but independently — the eater controls proportions (cheese boards, charcuterie, sushi, composed salads). No dish-level flavor profile exists independent of its parts.
-- **Mode 3:** Dish has a clear primary identity but one or two components are structurally significant and invisible in a flat profile (a sauce with a different profile than the protein, a bitter garnish, a sweet glaze).
-
-#### Component Schema
-
-```json
-{
-  "id": "tabua-queijo",
-  "components": [
-    {
-      "name": "queijo-sao-jorge-8m",
-      "role": "primary",
-      "food_tags": ["salty", "umami", "fatty_dairy", "cured", "medium_intensity"],
-      "generates_hard_filter": false
-    },
-    {
-      "name": "tamaras",
-      "role": "dominant_challenge",
-      "food_tags": ["sweet", "caramel", "medium_intensity"],
-      "generates_hard_filter": true
-    },
-    {
-      "name": "crackers-alecrim",
-      "role": "accent",
-      "food_tags": ["bitter", "herbaceous"],
-      "generates_hard_filter": false
-    }
-  ]
-}
-```
-
-**`role` values:**
-- `dominant_challenge` — the binding constraint; if `generates_hard_filter: true`, its extreme tags derive hard filters automatically (e.g., `sweet` → `sweetness_allow: ["sweet","semi-sweet"]`)
-- `primary` — the dish's identity; full scoring weight
-- `secondary` — important but not dominant
-- `accent` — shapes aromatics; minimal structural weight
-- `highlight` — Mode 3 only; added to dish base profile
-
-#### Systemic Interaction Table
-
-New section in `pairing-rules.json`:
-
-```json
-"systemic_interactions": [
-  { "tags": ["salty", "sweet"],        "effect": "attenuation", "target": "sweet",  "factor": 0.3 },
-  { "tags": ["salty", "bitter"],       "effect": "attenuation", "target": "bitter", "factor": 0.2 },
-  { "tags": ["acidic", "acidic"],      "effect": "stacking",    "target": "acidic", "factor": 1.4 },
-  { "tags": ["bitter", "bitter"],      "effect": "stacking",    "target": "bitter", "factor": 1.4 },
-  { "tags": ["fatty_animal", "bitter"],"effect": "attenuation", "target": "bitter", "factor": 0.25 }
-]
-```
-
-Applied automatically when tag pairs appear across components. Modifies effective constraint strength before hard filter derivation.
-
-#### Phase 2b — Annotation Guidance Document
-**File:** `doc/dish-profiling-guide.md` (new)
-**Type:** Docs only.
-
-Short markdown defining when to use each mode. The criterion is the experience at the table, not the recipe:
-- **Mode 2** when components cook or integrate together and the result presents as a unified flavor experience
-- **Mode 1** when components are consumed simultaneously but independently — the eater controls the proportion of each (boards, platters, sushi, composed salads)
-- **Mode 3** when the dish has a clear primary identity but one or two components are structurally significant and would be invisible in the flat profile (sauces, glazes, garnishes that alter the dominant flavor dimension)
-
-#### Phase 2c — Code Change — `resolve_dish_profile()`
-
-Add one preprocessing function in `scripts/generate-pairings.py`, called in `load_data()` before scoring. The `score_wine()` function is unchanged — it always receives a flat resolved profile.
-
-```python
-def resolve_dish_profile(dish, interaction_table):
-    """
-    Detect mode and compute effective food_tags, primary_tag,
-    hard_filters from components (Mode 1) or merge highlights
-    into dish base (Mode 3). Mode 2 passes through unchanged.
-    """
-    components = dish.get('components', [])
-    has_dish_tags = bool(dish.get('food_tags'))
-    if not components:
-        return dish  # Mode 2 — unchanged
-    if has_dish_tags:
-        # Mode 3: merge highlight tags into dish base
-        ...
-    else:
-        # Mode 1: derive everything from components
-        ...
-```
-
-### Phase 3 — Client-Side JS Engine
-**Files:** `js/pairing-engine.js` (new `js/pairing-scorer.js`)
-**Type:** Code (JavaScript port of Python scoring logic).
-
-Port `generate-pairings.py` scoring logic to JavaScript. Browser loads raw data files instead of pre-computed `pairings.json`. Computation runs in-browser — no backend, no AI, no server.
-
-**Before (current):**
-```javascript
-fetch(`data/menus/${ACTIVE_MENU}/pairings.json`)
-```
-
-**After:**
-```javascript
-Promise.all([
-  fetch('data/wine-profiles/wines-compiled.json'),
-  fetch('data/wine-profiles/pairing-rules.json'),
-  fetch(`data/menus/${ACTIVE_MENU}/dish-profiles.json')
-]).then(([wines, rules, dishes]) => {
-  pairingsData = computePairings(wines, rules, dishes);
-});
-```
-
-Functions to port: `parse_cond`, `check_condition`, `passes_filters`, `score_wine`, `build_per_dish`, `resolve_dish_profile`.
-Total: ~200 lines JS. No external dependencies.
-
-The pre-computed `pairings.json` becomes optional (performance cache). The engine works from source data.
-
-**The Form Extension** (also Phase 3): a client-side dish profiling form that:
-1. Loads tag vocabulary from `food_tags_reference` in `pairing-rules.json`
-2. Collects dish profile (mode, components, food_tags, hard filters) via UI
-3. Calls the in-browser scoring function with the new dish profile
-4. Displays results immediately — no backend, no API call, no AI inference
+### Three-Stage Funnel Refactor ✓ *(April 2026)*
+All `type: white/red` conditions removed from structural rules. `style` dimension eliminated. Identity-specific and sparkling rules converted to accumulating `bonus` dimension (`score_bonus`). 45 rules, 10 dimensions. Engine is now fully property-driven — any wine from any region scores on structural properties alone.
 
 ---
 
@@ -268,20 +128,20 @@ Tags are the bridge between dishes and rules. A rule fires only if `dish.food_ta
 ```
 Flavor (SAUDA):   salty · acidic · sweet · bitter · umami · spicy
 Fat type:         fatty_animal · fatty_dairy · fatty_vegetal · lean
-Method:           raw · fried · grilled · roasted · sauteed · poached · braised · steamed · cured · smoked · gratin
-Protein:          red_meat · white_meat · poultry · pork · game · oily_fish · fish_fatty · fish_lean · shellfish · egg · plant_protein · tofu
-Intensity:        delicate · medium_intensity · rich · intense
-Texture:          light · creamy · crunchy · silky · robust · fatty
+Method:           raw · fried · grilled · roasted · sauteed · poached · braised · steamed · cured · smoked
+Protein:          red_meat · poultry · pork · game · fish_lean · fish_rich · shellfish · egg · plant_protein
+Intensity:        delicate · rich · intense
+Texture:          light · creamy · fatty
 ```
 
-**Tier 2 — Aromatic and descriptor tags.** Optional. Trigger bonus rules for aromatic concordance. Adding a tier-2 tag with no corresponding rule is harmless. No cultural or regional tags — all dish description is structural and universal.
+**Tier 2 — Aromatic and descriptor tags.** Optional. Trigger bonus rules for aromatic concordance. No cultural or regional tags — all dish description is structural and universal.
 
 ```
-Aromatic:     citrus · floral · herbaceous · earthy · warm_spiced · mushroom · marine · nutty · smoky · resinous · oxidative
-Descriptors:  sweet_sour · marinade · fermented · pickled · layered · complex · dessert · nuts · caramel · chocolate · custard · lemon_based · honey
+Aromatic:     citrus · floral · herbaceous · earthy · warm_spiced · mushroom · marine · nutty · smoky · oxidative
+Descriptors:  sweet_sour · marinade · fermented · pickled · dessert · nuts · caramel · chocolate · custard · honey · lingering
 ```
 
-**Governance:** New tags are added to `food_tags_reference` in `pairing-rules.json` before use. New tier-2 tags in a dish profile without corresponding rules fire nothing — they are forward declarations for rules not yet written.
+**Governance:** New tags are added to `food_tags_reference` in `pairing-rules.json` before use. Every tag in the vocabulary must fire at least one rule — a tag that fires nothing misleads the picker.
 
 ---
 
@@ -347,8 +207,8 @@ Output: `data/menus/<menu>/pairings.json` (consumed by `pairing-engine.js`)
   "notes": "Internal rationale (not displayed)"
 }
 ```
-3. For conflict rules: use negative `score` and prefix id with `conflict-`
-4. For bonus rules: use `score_bonus` instead of `score` (no dimension needed)
+3. For conflict rules: use negative `score`, prefix id with `conflict-`, use a `conflict_*` dimension
+4. For bonus rules: use `score_bonus` instead of `score`, set `"dimension": "bonus"`
 5. Regenerate: `python scripts/generate-pairings.py --menu <menu>`
 
 ---
@@ -388,16 +248,7 @@ Verify: `git config user.email` → must return `rodfig@gmail.com`
 
 ## Branch Strategy
 
-Feature branches for planned work:
-
-| Branch | Phase | Scope |
-|---|---|---|
-| `feature/harrington-rules` | Phase 1 | Add 6 rules + tag tier system + `salty` on cataplana |
-| `feature/component-profiling` | Phase 2a/2b/2c | Three-mode schema + annotation guide + `resolve_dish_profile()` |
-| `feature/engine-js-port` | Phase 3 | Port scoring to JS + form extension, remove pairings.json dependency |
-
-Phase 3 is independent of 1 and 2 — can be developed in parallel.
-Phase 2 depends on Phase 1 being merged first (needs new tags defined).
+All planned phases are merged to `main`. Work directly on `main` for incremental rule or vocab changes. Use feature branches only for multi-session structural work (new scoring dimensions, schema changes, new pages).
 
 ---
 
