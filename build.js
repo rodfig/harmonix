@@ -4,7 +4,7 @@
  * Run by Vercel before deploying: npm run build
  */
 
-const replace = require('replace-in-file');
+const { replaceInFileSync } = require('replace-in-file');
 
 const apiKey   = process.env.GOOGLE_API_KEY;
 const clientId = process.env.GOOGLE_CLIENT_ID;
@@ -14,7 +14,7 @@ if (!apiKey || !clientId) {
     process.exit(1);
 }
 
-const results = replace.sync({
+const results = replaceInFileSync({
     files: 'js/drive-harmonix.js',
     from:  [/PLACEHOLDER_GOOGLE_API_KEY/g, /PLACEHOLDER_GOOGLE_CLIENT_ID/g],
     to:    [apiKey, clientId],
