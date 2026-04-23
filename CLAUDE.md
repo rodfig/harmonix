@@ -168,6 +168,10 @@ Wine structural fields used in scoring:
 
 ---
 
+## Python Runtime
+
+Always use `python`, never `python3`. The environment does not have a `python3` command.
+
 ## Running the Engine
 
 ```bash
@@ -307,3 +311,53 @@ Features to consider for future sessions. All client-side, no backend required.
 - Dessert cluster (`dessert`, `nuts`, `caramel`, `chocolate`, `custard`) fires existing sweet-wine rules via the `sweet` tag, but not via the specific descriptors. Consider rules targeting `chocolate` → fortified/tawny, `custard` → moscatel.
 
 *Harmonix — April 2026. Generalized from rodfig/nanban.*
+
+---
+
+## Implicit Contracts — Read Before Any Code Change
+
+These are the invariants that are not obvious from reading the code in isolation. Violations here have caused bugs in prior sessions.
+
+### Scoring engine (`pairing-scorer.js`)
+
+- **No `type: white/red` in structural rules.** The three-stage funnel is property-only. The `style` dimension was eliminated in April 2026 — never re-add type conditions to structural rules. Bonus rules (`score_bonus`) handle identity-specific signals (sparkling, tawny, madeira, moscatel).
+- **`wineCard()` output is already flat.** Do not merge it with the raw wine object before passing to `buildWineCardEl`. Doing so creates duplicate/overwritten fields.
+- **`scoreComposto` and `resolveDishProfile` are mutually exclusive for Mode 1.** `scoreComposto` handles its own tag pooling and filter derivation. Calling `resolveDishProfile` on the same dish beforehand corrupts the input.
+- **`scoreComposto` returns two differently-shaped result sets.** `combination` contains raw candidates `{score, wine, ruleId, reason}`. `byComponent` entries contain pre-built `wineCard` objects. Handle them differently when rendering.
+- **T1 narrowness threshold is 2.** A component with fewer than 2 Tier-1 structural tags is suppressed from `byComponent`. Tier-2 aromatic/descriptor tags do not count toward this threshold.
+
+### UI layer (`harmonix.js`)
+
+- **Mode 1 and Mode 3 component objects have different shapes** stored in the same `components[]` array:
+  - Mode 1: `{ id, name, food_tags[] }` — no `role`, no `generates_hard_filter`
+  - Mode 3: `{ id, name, role: 'highlight', food_tags[], generates_hard_filter: bool }`
+- **`buildComponentChip` is shared between Mode 1 and Mode 3.** It guards `if (comp.role)` before rendering the role badge. Before adding or removing any field on component objects, check every function that reads components — not just the form that creates them.
+- **`PT_ROLE` contains only `{ highlight: 'Destaque' }`.** The entries for `dominant_challenge`, `primary`, `secondary`, `accent` were removed when Mode 1 roles became mechanically inert. Do not re-add them.
+- **`generates_hard_filter` exists only on Mode 3 highlights.** In Mode 1, hard filters are auto-derived from extreme tags (`sweet`, `bitter`, `spicy`) inside `scoreComposto`. The user never sets them manually for Composto.
+
+### Change checklist — run this completely before closing any structural change
+
+**UI (component fields)**
+1. Update `buildDishObj()` for the relevant mode
+2. Update the form `confirmBtn` handler (`renderAddComponentForm` for Mode 1, `renderAddHighlightForm` for Mode 3)
+3. Check `buildComponentChip` — does it read this field? Is the guard correct for both modes?
+4. Check `scoreComposto` / `resolveDishProfile` — does the scorer read this field?
+5. Check the clear handler in `consulta.html` — any state to reset?
+
+**CSS**
+6. If a CSS class is removed from JS: grep the class name in `harmonix.css` and delete any rules that are now dead
+7. If a new CSS class is added in JS: confirm it is defined somewhere (either `harmonix.css` or a page `<style>` block)
+
+**Python parity**
+8. Any logic change in `js/pairing-scorer.js` must be mirrored in `scripts/generate-pairings.py` — check the equivalent function and update if needed
+
+**Docstrings and inline comments**
+9. Update the JSDoc block at the top of `pairing-scorer.js` if public functions change
+10. Update function-level docstrings in `harmonix.js` (e.g. `createDishForm` return value) if behaviour changes
+
+**Documentation**
+11. Check `doc/dish-profiling-guide.md` — does it describe the current schema accurately?
+12. Check `data/wine-profiles/pairing-rules.json → component_schema` — does the `_example` match the current shape?
+
+**Final grep**
+13. After all changes, grep the removed/renamed symbol across `*.js`, `*.py`, `*.css`, `*.html`, `*.md`, `*.json` — zero hits expected outside of intentional documentation references

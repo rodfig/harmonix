@@ -10,9 +10,9 @@ Mode is auto-detected from the data structure — no explicit flag is written.
 
 | Condition | Mode | Name |
 |---|---|---|
-| `food_tags` present, no `components` | **Mode 2** | Unified dish |
-| `components` present, no `food_tags` | **Mode 1** | Composed plate |
-| Both present | **Mode 3** | Dish with highlights |
+| `food_tags` present, no `components` | **Mode 2** | Integrado |
+| `components` present, no `food_tags` | **Mode 1** | Composto |
+| Both present | **Mode 3** | Com Destaque |
 
 ---
 
@@ -20,7 +20,7 @@ Mode is auto-detected from the data structure — no explicit flag is written.
 
 The criterion is **the experience at the table, not the recipe**.
 
-### Mode 2 — Unified dish
+### Mode 2 — Integrado
 Use when the components cook or integrate together and the result presents as a **single flavor surface**. The eater encounters one unified profile, not distinct parts.
 
 Examples: cataplana, bolognese, miso soup, risotto, stews, gratins.
@@ -30,36 +30,40 @@ Annotate with a flat `food_tags` list describing the unified profile.
 ```json
 {
   "id": "cataplana-tofu",
-  "food_tags": ["shellfish", "clam", "rich", "braised", "salty", "portuguese_dish"]
+  "food_tags": ["shellfish", "clam", "rich", "braised", "salty"]
 }
 ```
 
 ---
 
-### Mode 1 — Composed plate
+### Mode 1 — Composto
 Use when components are **consumed simultaneously but independently** — the eater controls the proportion of each bite. No dish-level flavor profile exists independently of its parts.
 
 Examples: cheese boards, charcuterie platters, sushi courses, composed salads, tapas.
 
-Do not write `food_tags` at the dish level. Define each component separately.
+Do not write `food_tags` at the dish level. Define each component separately with a name and its own tags.
 
 ```json
 {
   "id": "tabua-queijo",
   "components": [
-    { "name": "queijo-sao-jorge-8m", "role": "primary",           "food_tags": ["salty", "umami", "fatty_dairy", "cured"],  "generates_hard_filter": false },
-    { "name": "tamaras",             "role": "dominant_challenge", "food_tags": ["sweet", "caramel"],                        "generates_hard_filter": true  },
-    { "name": "crackers-alecrim",    "role": "accent",             "food_tags": ["bitter", "herbaceous"],                   "generates_hard_filter": false }
+    { "name": "queijo-sao-jorge-8m", "food_tags": ["salty", "umami", "fatty_dairy", "cured"] },
+    { "name": "tamaras",             "food_tags": ["sweet", "caramel", "nuts"] },
+    { "name": "crackers-alecrim",    "food_tags": ["bitter", "herbaceous"] }
   ]
 }
 ```
 
-The engine derives the effective `food_tags`, `primary_tag`, and `hard_filters` from the components at runtime.
+The engine runs two scoring passes:
+1. **Combination** — all component tags pooled. Hard filters auto-derived from extreme tags (`sweet`, `bitter`, `spicy`). Produces the main result set.
+2. **Per component** — each component scored independently against its own tags. Only components with ≥ 2 Tier-1 structural tags are shown (narrower components are suppressed as they produce no useful independent insight).
+
+Components have no `role` field and no `generates_hard_filter` — hard filters are always auto-derived from the pooled tag set.
 
 ---
 
-### Mode 3 — Dish with highlights
-Use when the dish has a **clear primary identity** but one or two components are structurally significant and would be **invisible in a flat profile** — a sauce with a different profile than the protein, a sweet glaze on a savory dish, a bitter garnish that shifts the dominant dimension.
+### Mode 3 — Com Destaque
+Use when the dish has a **clear primary identity** but one or two components are structurally significant and would be **invisible in a flat profile** — a sauce with a different profile from the protein, a sweet glaze on a savory dish, a bitter garnish that shifts the dominant dimension.
 
 Write both `food_tags` (the base profile) and `components` (the highlights).
 
@@ -73,25 +77,15 @@ Write both `food_tags` (the base profile) and `components` (the highlights).
 }
 ```
 
-The engine starts with the dish's `food_tags` and merges the highlight tags into the effective pool. If a highlight has `generates_hard_filter: true`, its extreme tags also derive additional hard filters.
+The engine merges highlight tags into the effective pool. If a highlight has `generates_hard_filter: true`, its extreme tags also derive additional hard filters on top of the base dish profile.
+
+Mode 3 components always have `role: "highlight"`. No other role values exist.
 
 ---
 
-## Component Roles
+## `generates_hard_filter` (Mode 3 only)
 
-| Role | Weight | Description |
-|---|---|---|
-| `dominant_challenge` | binding | The constraint that most limits wine selection. Hard filters derived here if `generates_hard_filter: true`. |
-| `primary` | full | The dish's identity. Full scoring weight. |
-| `secondary` | partial | Important but not dominant. |
-| `accent` | minimal | Shapes aromatics. Does not drive hard filters. |
-| `highlight` | additive | Mode 3 only. Merged into dish base. |
-
----
-
-## `generates_hard_filter`
-
-When `true`, the engine automatically derives a hard filter from the component's **extreme structural tags**:
+When `true`, the engine derives a hard filter from the highlight component's extreme structural tags:
 
 | Tag | Derived hard filter |
 |---|---|
@@ -101,11 +95,13 @@ When `true`, the engine automatically derives a hard filter from the component's
 
 When `false`, the component's tags enter the scoring pool but impose no hard constraints. Use `false` for components that contribute flavor nuance without being binding constraints.
 
+In Mode 1 (Composto), hard filters are **always auto-derived** from the pooled extreme tags — this field does not exist on Mode 1 components.
+
 ---
 
 ## Systemic Interactions
 
-When certain tag pairs appear across components, the engine automatically attenuates or amplifies the effective constraint strength of the target tag before scoring. This is defined in `pairing-rules.json → systemic_interactions`.
+When certain tag pairs appear across components, the engine automatically attenuates or amplifies the effective constraint strength of the target tag before scoring. Defined in `pairing-rules.json → systemic_interactions`.
 
 | Tag pair | Effect | What it models |
 |---|---|---|
@@ -121,7 +117,8 @@ These apply automatically — no annotation needed beyond tagging components cor
 
 ## Tag Reference
 
-Tags are defined in `pairing-rules.json → food_tags_reference`. Always use tags from that vocabulary. Adding a tier-2 tag with no matching rule is safe — it fires nothing and forward-declares the tag for future rules.
+Tags are defined in `pairing-rules.json → food_tags_reference`. Always use tags from that vocabulary.
 
-**Tier 1** — Universal structural. Every dish should be fully expressible with tier-1 tags alone.
-**Tier 2** — Cuisine-specific and aromatic. Optional modifiers for bonus/affinity rules.
+**Tier 1** — Universal structural. Every dish should be fully expressible with Tier-1 tags alone. Tier-1 count determines whether a Composto component qualifies for per-component display (threshold: ≥ 2).
+
+**Tier 2** — Aromatic and descriptor. Optional modifiers for bonus/affinity rules. Adding a Tier-2 tag with no matching rule is safe — it fires nothing and forward-declares the tag for future rules.

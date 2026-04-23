@@ -4,12 +4,16 @@
  * Client-side port of scripts/generate-pairings.py.
  * Deterministic rule-based scoring — no inference, no external calls.
  *
- * Exports one public function:
+ * Public functions:
  *   computePairings(winesData, rulesData, dishesData, menuData, options)
  *     → { per_dish, meal_suggestion, pack_pairings, sequence_pairing }
+ *     Output shape identical to pairings.json — consumed by pairing-engine.js.
  *
- * The output shape is identical to pairings.json so all existing render
- * functions in pairing-engine.js work without changes.
+ *   scoreComposto(dish, wines, rules, interactionTable, topN)
+ *     → { combination, byComponent }
+ *     Dual analysis for Mode 1 (Composto) dishes — called directly from consulta.html.
+ *
+ *   resolveDishProfile, passesFilters, scoreWine — also used directly from consulta.html.
  */
 
 'use strict';
@@ -176,30 +180,23 @@ function resolveDishProfile(dish, interactionTable) {
         return resolved;
 
     } else {
-        // ── Mode 1 ───────────────────────────────────────────────────────
+        // ── Mode 1 — pooled tags, hard filters auto-derived ───────────────
         const allTags = new Set();
-        let dominant = null;
-        for (const comp of components) {
+        for (const comp of components)
             for (const t of (comp.food_tags || [])) allTags.add(t);
-            if (comp.role === 'dominant_challenge') dominant = comp;
-        }
 
-        const weights = computeTagWeights(allTags, interactionTable);
+        const weights     = computeTagWeights(allTags, interactionTable);
+        const hardFilters = Object.assign({}, dish.hard_filters || {},
+            deriveHardFilters(allTags, weights));
 
-        const hardFilters = Object.assign({}, dish.hard_filters || {});
-        if (dominant && dominant.generates_hard_filter) {
-            const derived = deriveHardFilters(new Set(dominant.food_tags || []), weights);
-            Object.assign(hardFilters, derived);
-        }
-
-        let primaryTag = dish.primary_tag || null;
-        if (!primaryTag && dominant) {
-            const domTags = dominant.food_tags || [];
-            primaryTag = domTags.find(t => t in EXTREME_TAG_FILTERS) ?? domTags[0] ?? null;
-        }
+        const allTagsArr = [...allTags];
+        const primaryTag = dish.primary_tag
+            || allTagsArr.find(t => t in EXTREME_TAG_FILTERS)
+            || allTagsArr[0]
+            || null;
 
         const resolved = Object.assign({}, dish, {
-            food_tags:   [...allTags],
+            food_tags:    allTagsArr,
             hard_filters: hardFilters,
         });
         if (primaryTag) resolved.primary_tag = primaryTag;
@@ -350,6 +347,88 @@ function wineCard(wine, score, ruleId, reason) {
         primary_rule:  ruleId,
         reason:        reason,
     };
+}
+
+// ─── T1 structural tag set (used by scoreComposto narrowness check) ───────────
+
+const T1_STRUCTURAL = new Set([
+    'salty', 'acidic', 'sweet', 'bitter', 'umami', 'spicy',
+    'fatty_animal', 'fatty_dairy', 'fatty_vegetal', 'lean',
+    'raw', 'fried', 'grilled', 'roasted', 'sauteed', 'poached',
+    'braised', 'steamed', 'cured', 'smoked',
+    'red_meat', 'poultry', 'pork', 'game',
+    'fish_lean', 'fish_rich', 'shellfish', 'egg', 'plant_protein',
+    'delicate', 'rich', 'intense',
+    'light', 'creamy', 'fatty',
+]);
+
+// ─── Composto dual analysis ───────────────────────────────────────────────────
+
+function scoreComposto(dish, wines, rules, interactionTable, topN = 10) {
+    const components = dish.components || [];
+
+    // ── Combination pass (pooled tags) ───────────────────────────────────────
+    const pooledTags = new Set();
+    for (const comp of components)
+        for (const t of (comp.food_tags || [])) pooledTags.add(t);
+
+    const pooledWeights = computeTagWeights(pooledTags, interactionTable);
+    const pooledFilters = Object.assign(
+        {}, dish.hard_filters || {},
+        deriveHardFilters(pooledTags, pooledWeights)
+    );
+
+    const pooledDish = {
+        food_tags:   [...pooledTags],
+        hard_filters: pooledFilters,
+        primary_tag: dish.primary_tag || null,
+    };
+
+    const combination = [];
+    for (const wine of wines) {
+        if (!passesFilters(wine, pooledFilters)) continue;
+        const { score, ruleId, reason } = scoreWine(wine, pooledDish, rules);
+        if (score > 0) combination.push({ score, wine, ruleId, reason });
+    }
+    combination.sort((a, b) => b.score - a.score);
+
+    // ── Per-component passes ─────────────────────────────────────────────────
+    const byComponent = [];
+    for (const comp of components) {
+        const compTags = comp.food_tags || [];
+        const t1Count  = compTags.filter(t => T1_STRUCTURAL.has(t)).length;
+        if (t1Count < 2) continue;  // too narrow — no standalone pairing insight
+
+        const compTagSet  = new Set(compTags);
+        const compWeights = computeTagWeights(compTagSet, interactionTable);
+        const compFilters = Object.assign(
+            {}, dish.hard_filters || {},
+            deriveHardFilters(compTagSet, compWeights)
+        );
+
+        const compDish = {
+            food_tags:   compTags,
+            hard_filters: compFilters,
+            primary_tag: compTags[0] || null,
+        };
+
+        const candidates = [];
+        for (const wine of wines) {
+            if (!passesFilters(wine, compFilters)) continue;
+            const { score, ruleId, reason } = scoreWine(wine, compDish, rules);
+            if (score > 0) candidates.push({ score, wine, ruleId, reason });
+        }
+        if (!candidates.length) continue;  // no results — suppress
+        candidates.sort((a, b) => b.score - a.score);
+
+        byComponent.push({
+            label:     comp.name || 'Componente',
+            top_wines: candidates.slice(0, topN)
+                .map(c => wineCard(c.wine, c.score, c.ruleId, c.reason)),
+        });
+    }
+
+    return { combination, byComponent };
 }
 
 // ─── Per-dish ─────────────────────────────────────────────────────────────────

@@ -109,13 +109,9 @@ const PT_TAG = {
     lingering:       'Persistente',
 };
 
-// Role labels for Mode 1 / 3 components
+// Role label for Mode 3 highlight components
 const PT_ROLE = {
-    dominant_challenge: 'Dominante',
-    primary:            'Principal',
-    secondary:          'Secundário',
-    accent:             'Acento',
-    highlight:          'Destaque',
+    highlight: 'Destaque',
 };
 
 // ── Tag group labels (from pairing-rules.json keys) ───────────────────────────
@@ -181,8 +177,6 @@ function buildTagGroupsFromRules(rulesData) {
             tier1Groups.push({ label, tags });
         } else if (key === 'aromatic') {
             tier2Aromatic.push(...tags);
-        } else if (false) {
-            // cultural group removed — no-op branch kept for structure
         } else {
             // flavor_descriptor, misc_flavor, etc.
             tier2Other.push(...tags);
@@ -312,7 +306,6 @@ const MODE_INFO = {
     },
 };
 
-const COMPONENT_ROLES = ['dominant_challenge', 'primary', 'secondary', 'accent'];
 
 /**
  * Renders a full three-mode dish profiling form.
@@ -322,7 +315,7 @@ const COMPONENT_ROLES = ['dominant_challenge', 'primary', 'secondary', 'accent']
  * @param {Array}       [tagGroups] — from buildTagGroupsFromRules; defaults to fallback
  *
  * @returns {{ getDish, reset }}
- *   getDish() → dish object ready for resolveDishProfile + scoreWine
+ *   getDish() → dish object (Mode 2/3: ready for resolveDishProfile; Mode 1: ready for scoreComposto)
  *   reset()   → clears all state and re-renders
  */
 function createDishForm(container, onChange, tagGroups = TAG_GROUPS_FALLBACK) {
@@ -331,8 +324,8 @@ function createDishForm(container, onChange, tagGroups = TAG_GROUPS_FALLBACK) {
     // Mode 2 / Mode 3 base tags
     let baseTags = new Set();
 
-    // Mode 1 components / Mode 3 highlights
-    // Each: { id, name, role, tags: Set, generates_hard_filter }
+    // Mode 1 components: { id, name, tags: Set }
+    // Mode 3 highlights: { id, name, role: 'highlight', tags: Set, generates_hard_filter }
     let components = [];
 
     let basePicker = null;
@@ -355,10 +348,8 @@ function createDishForm(container, onChange, tagGroups = TAG_GROUPS_FALLBACK) {
         if (mode === 'mode1') {
             return {
                 components: components.map(c => ({
-                    name:                 c.name,
-                    role:                 c.role,
-                    food_tags:            [...c.tags],
-                    generates_hard_filter: c.generates_hard_filter,
+                    name:      c.name,
+                    food_tags: [...c.tags],
                 })),
             };
         }
@@ -434,7 +425,7 @@ function createDishForm(container, onChange, tagGroups = TAG_GROUPS_FALLBACK) {
         container.appendChild(wrap);
     }
 
-    // ── Mode 1: components with roles ───────────────────────────────────────
+    // ── Mode 1: components ──────────────────────────────────────────────────
 
     function renderMode1() {
         const wrap = document.createElement('div');
@@ -500,10 +491,12 @@ function createDishForm(container, onChange, tagGroups = TAG_GROUPS_FALLBACK) {
         const hdr = document.createElement('div');
         hdr.className = 'component-card-header';
 
-        const roleBadge = document.createElement('span');
-        roleBadge.className = 'component-role-badge' + (comp.role === 'dominant_challenge' ? ' dominant' : '');
-        roleBadge.textContent = PT_ROLE[comp.role] || comp.role;
-        hdr.appendChild(roleBadge);
+        if (comp.role) {
+            const roleBadge = document.createElement('span');
+            roleBadge.className = 'component-role-badge';
+            roleBadge.textContent = PT_ROLE[comp.role] || comp.role;
+            hdr.appendChild(roleBadge);
+        }
 
         const nameEl = document.createElement('span');
         nameEl.className = 'component-card-name';
@@ -531,54 +524,15 @@ function createDishForm(container, onChange, tagGroups = TAG_GROUPS_FALLBACK) {
         const form = document.createElement('div');
         form.className = 'add-component-form';
 
-        // Name + Role row
-        const topRow = document.createElement('div');
-        topRow.className = 'form-row';
-
+        // Name row
         const nameGroup = document.createElement('div');
         nameGroup.className = 'form-group';
-        nameGroup.style.flex = '1';
         nameGroup.innerHTML = `<label class="label">Nome</label>`;
         const nameInput = document.createElement('input');
         nameInput.className = 'form-input';
         nameInput.placeholder = 'ex: molho de laranja, dashi';
         nameGroup.appendChild(nameInput);
-        topRow.appendChild(nameGroup);
-
-        const roleGroup = document.createElement('div');
-        roleGroup.className = 'form-group';
-        roleGroup.innerHTML = `<label class="label">Papel</label>`;
-        const roleSelect = document.createElement('select');
-        roleSelect.className = 'form-select';
-        for (const r of COMPONENT_ROLES) {
-            const opt = document.createElement('option');
-            opt.value = r;
-            opt.textContent = PT_ROLE[r];
-            roleSelect.appendChild(opt);
-        }
-        roleGroup.appendChild(roleSelect);
-        topRow.appendChild(roleGroup);
-
-        form.appendChild(topRow);
-
-        // generates_hard_filter checkbox (shown conditionally)
-        const hfRow = document.createElement('div');
-        hfRow.style.marginBottom = '10px';
-        const hfLabel = document.createElement('label');
-        hfLabel.style.cssText = 'display:flex;align-items:center;gap:8px;font-size:12px;cursor:pointer;color:var(--muted)';
-        const hfCheck = document.createElement('input');
-        hfCheck.type = 'checkbox';
-        hfCheck.style.accentColor = 'var(--accent)';
-        hfLabel.appendChild(hfCheck);
-        hfLabel.appendChild(document.createTextNode('Impõe restrições ao vinho (hard filter)'));
-        hfRow.appendChild(hfLabel);
-
-        function updateHfVisibility() {
-            hfRow.style.display = roleSelect.value === 'dominant_challenge' ? '' : 'none';
-        }
-        roleSelect.addEventListener('change', updateHfVisibility);
-        updateHfVisibility();
-        form.appendChild(hfRow);
+        form.appendChild(nameGroup);
 
         // Tags toggle
         const tagsToggle = document.createElement('button');
@@ -616,11 +570,9 @@ function createDishForm(container, onChange, tagGroups = TAG_GROUPS_FALLBACK) {
         confirmBtn.addEventListener('click', () => {
             const name = nameInput.value.trim() || 'Componente';
             components.push({
-                id:                   `comp_${Date.now()}`,
+                id:   `comp_${Date.now()}`,
                 name,
-                role:                 roleSelect.value,
-                tags:                 new Set(compTags),
-                generates_hard_filter: hfCheck.checked,
+                tags: new Set(compTags),
             });
             onConfirm();
         });

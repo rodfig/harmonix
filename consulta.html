@@ -56,6 +56,38 @@
         .type-filter-btn.multi-active { background: var(--accent-bg); border-color: var(--accent); color: var(--accent); }
 
         .filter-block { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+
+        .composto-section-heading {
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin: 32px 0 14px;
+            padding-top: 24px;
+            border-top: 1px solid var(--rule);
+        }
+
+        .composto-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .composto-component {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .composto-component-label {
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            color: var(--accent);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
     </style>
 </head>
 <body>
@@ -114,6 +146,7 @@
                         </div>
                     </div>
                     <div class="wine-list" id="wineList"></div>
+                    <div id="compostoComponents"></div>
                 </div>
             </div>
 
@@ -131,6 +164,8 @@
     let tagGroups      = TAG_GROUPS_FALLBACK;
     let allCandidates  = [];        // all scored wines (score > 0), sorted desc
     let currentDish    = null;      // resolved dish used for last score run
+    let compostoResult = null;      // { combination, byComponent } for Mode 1
+    let isComposto     = false;     // true when last run was Mode 1
     let typeFilter     = 'all';
     let regionFilter   = new Set(); // empty = all regions
     let scoreCutoff    = 0;
@@ -155,7 +190,8 @@
 
     function isDishValid(dish) {
         if (!dish) return false;
-        if (dish.components && dish.components.length) return true;
+        if (dish.components && dish.components.length)
+            return dish.components.some(c => (c.food_tags || []).length > 0);
         return (dish.food_tags || []).length > 0;
     }
 
@@ -221,18 +257,27 @@
         const dishName         = document.getElementById('dishName').value.trim();
         const rawDish          = dishForm.getDish();
         const interactionTable = rulesData.systemic_interactions || [];
-        currentDish = resolveDishProfile(
-            Object.assign({ id: 'explorador', name: dishName || 'Prato' }, rawDish),
-            interactionTable
-        );
 
-        allCandidates = [];
-        for (const wine of winesData) {
-            if (!passesFilters(wine, currentDish.hard_filters || {})) continue;
-            const { score, ruleId, reason } = scoreWine(wine, currentDish, rulesData.rules);
-            if (score > 0) allCandidates.push({ score, wine, ruleId, reason });
+        const baseDish = Object.assign({ id: 'explorador', name: dishName || 'Prato' }, rawDish);
+        isComposto     = !!(rawDish.components && rawDish.components.length && !rawDish.food_tags);
+
+        if (isComposto) {
+            compostoResult = scoreComposto(
+                baseDish, winesData, rulesData.rules, interactionTable
+            );
+            currentDish    = baseDish;
+            allCandidates  = compostoResult.combination;
+        } else {
+            compostoResult = null;
+            currentDish    = resolveDishProfile(baseDish, interactionTable);
+            allCandidates  = [];
+            for (const wine of winesData) {
+                if (!passesFilters(wine, currentDish.hard_filters || {})) continue;
+                const { score, ruleId, reason } = scoreWine(wine, currentDish, rulesData.rules);
+                if (score > 0) allCandidates.push({ score, wine, ruleId, reason });
+            }
+            allCandidates.sort((a, b) => b.score - a.score);
         }
-        allCandidates.sort((a, b) => b.score - a.score);
 
         typeFilter   = 'all';
         regionFilter = new Set();
@@ -252,9 +297,17 @@
                 ? `Harmonizações para "${currentDish.name}"`
                 : 'Sugestões de harmonização';
 
-        // Context tags
+        // Context bar
         const ctxEl = document.getElementById('resultsContext');
-        if (currentDish.food_tags && currentDish.food_tags.length) {
+        if (isComposto && compostoResult) {
+            const names = (currentDish.components || []).map(c => c.name).filter(Boolean);
+            if (names.length) {
+                ctxEl.textContent = 'Composto: ' + names.join(' · ');
+                ctxEl.classList.add('show');
+            } else {
+                ctxEl.classList.remove('show');
+            }
+        } else if (currentDish.food_tags && currentDish.food_tags.length) {
             ctxEl.textContent = currentDish.food_tags.map(t => PT_TAG[t] || t).join(' · ');
             ctxEl.classList.add('show');
         } else {
@@ -263,6 +316,7 @@
 
         renderAllFilters();
         renderWineList(getFiltered().slice(0, 10));
+        renderCompostoComponents();
     }
 
     function renderAllFilters() {
@@ -372,6 +426,38 @@
         }
     }
 
+    function renderCompostoComponents() {
+        const el = document.getElementById('compostoComponents');
+        el.innerHTML = '';
+        if (!isComposto || !compostoResult || !compostoResult.byComponent.length) return;
+
+        const heading = document.createElement('p');
+        heading.className = 'composto-section-heading';
+        heading.textContent = 'Por componente';
+        el.appendChild(heading);
+
+        const grid = document.createElement('div');
+        grid.className = 'composto-grid';
+
+        for (const comp of compostoResult.byComponent) {
+            const col = document.createElement('div');
+            col.className = 'composto-component';
+
+            const lbl = document.createElement('p');
+            lbl.className = 'composto-component-label';
+            lbl.textContent = comp.label;
+            col.appendChild(lbl);
+
+            for (const card of comp.top_wines.slice(0, 3)) {
+                col.appendChild(buildWineCardEl(card));
+            }
+
+            grid.appendChild(col);
+        }
+
+        el.appendChild(grid);
+    }
+
     // ── Init ────────────────────────────────────────────────────────────────────
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -391,15 +477,18 @@
 
         btnClear.addEventListener('click', () => {
             if (dishForm) dishForm.reset();
-            allCandidates = [];
-            currentDish   = null;
-            typeFilter    = 'all';
-            regionFilter  = new Set();
-            scoreCutoff   = 0;
+            allCandidates  = [];
+            currentDish    = null;
+            compostoResult = null;
+            isComposto     = false;
+            typeFilter     = 'all';
+            regionFilter   = new Set();
+            scoreCutoff    = 0;
             btnCalc.disabled = true;
             document.getElementById('dishName').value = '';
             document.getElementById('resultsEmpty').style.display = 'block';
             document.getElementById('resultsPanel').style.display = 'none';
+            document.getElementById('compostoComponents').innerHTML = '';
         });
 
         ensureDataLoaded();

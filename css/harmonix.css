@@ -873,7 +873,6 @@ body {
     flex-shrink: 0;
 }
 
-.component-role-badge.dominant { background: var(--accent); color: #fff; }
 
 .component-card-name {
     font-size: 13px;
@@ -915,8 +914,6 @@ body {
     background: var(--accent-bg);
     margin-bottom: 10px;
 }
-
-.add-component-form .form-row { margin-bottom: 12px; }
 
 .comp-tags-toggle {
     font-size: 12px;

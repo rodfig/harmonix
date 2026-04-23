@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 """
 generate-pairings.py
 
@@ -193,8 +193,8 @@ def passes_filters(wine, filt):
 # score_wine() always receives a flat resolved profile — it is unchanged.
 # ---------------------------------------------------------------------------
 
-# Tags that can auto-derive hard filters when they appear on a dominant_challenge
-# or highlight component with generates_hard_filter: true.
+# Tags that auto-derive hard filters: in Mode 1, applied to pooled tags;
+# in Mode 3, applied to highlight components with generates_hard_filter: true.
 _EXTREME_TAG_FILTERS = {
     'sweet':  {'sweetness_allow': ['sweet', 'semi-sweet']},
     'bitter': {'type_prefer':     ['sparkling']},
@@ -283,34 +283,24 @@ def resolve_dish_profile(dish, interaction_table):
         return resolved
 
     else:
-        # ── Mode 1 ──────────────────────────────────────────────────────────
+        # ── Mode 1 — pooled tags, hard filters auto-derived ─────────────────
         all_tags = set()
-        dominant = None
         for comp in components:
             all_tags |= set(comp.get('food_tags', []))
-            if comp.get('role') == 'dominant_challenge':
-                dominant = comp
 
         weights = _compute_tag_weights(all_tags, interaction_table)
 
-        # Hard filters — from dominant_challenge only if generates_hard_filter
         hard_filters = dict(dish.get('hard_filters', {}))
-        if dominant and dominant.get('generates_hard_filter'):
-            derived = _derive_hard_filters(set(dominant.get('food_tags', [])), weights)
-            hard_filters.update(derived)
+        hard_filters.update(_derive_hard_filters(all_tags, weights))
 
-        # primary_tag — most structurally constraining tag on dominant_challenge,
-        # falling back to its first tag, then None
-        primary_tag = dish.get('primary_tag')
-        if not primary_tag and dominant:
-            dom_tags = dominant.get('food_tags', [])
-            primary_tag = next(
-                (t for t in dom_tags if t in _EXTREME_TAG_FILTERS),
-                dom_tags[0] if dom_tags else None
-            )
+        all_tags_list = list(all_tags)
+        primary_tag = dish.get('primary_tag') or next(
+            (t for t in all_tags_list if t in _EXTREME_TAG_FILTERS),
+            all_tags_list[0] if all_tags_list else None
+        )
 
         resolved = dict(dish)
-        resolved['food_tags'] = list(all_tags)
+        resolved['food_tags'] = all_tags_list
         resolved['hard_filters'] = hard_filters
         if primary_tag:
             resolved['primary_tag'] = primary_tag
@@ -327,7 +317,8 @@ def score_wine(wine, dish, rules):
     """
     Score a wine against a dish using dimensional max-per-dimension scoring.
 
-    Each rule belongs to a 'dimension' (acidity, body, tannin, sweetness, style).
+    Each rule belongs to a 'dimension' (acidity, body, tannin, sweetness, finish, bonus,
+    conflict_acidity, conflict_body, conflict_sweetness, conflict_tannin).
     Within each dimension only the highest-scoring rule contributes to the total,
     preventing multiple rules for the same structural property from stacking.
 

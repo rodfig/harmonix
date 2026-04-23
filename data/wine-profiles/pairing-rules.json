@@ -534,24 +534,26 @@
   "component_schema": {
     "_note": "Schema reference for composed dish profiles. Mode is auto-detected — no explicit flag needed.",
     "_modes": {
-      "mode_2": "food_tags present, no components — unified dish, current model, unchanged",
-      "mode_1": "components present, no food_tags — profile fully derived from components",
-      "mode_3": "both food_tags and components present — dish base profile + highlight modifiers"
+      "mode_2": "food_tags present, no components — Integrado: unified dish profile",
+      "mode_1": "components present, no food_tags — Composto: tags pooled from all components, hard filters auto-derived",
+      "mode_3": "both food_tags and components present — Com Destaque: base profile + highlight modifiers"
     },
-    "_roles": {
-      "dominant_challenge": "The binding constraint. If generates_hard_filter: true, its extreme tags (sweet, bitter, spicy) automatically derive hard filters. Contributes to primary_tag.",
-      "primary":            "The dish's identity. Full scoring weight.",
-      "secondary":          "Important but not dominant. Partial scoring weight.",
-      "accent":             "Shapes aromatics. Minimal structural weight.",
-      "highlight":          "Mode 3 only. Added to dish base profile; may generate additional hard filters."
-    },
-    "_generates_hard_filter": "When true, extreme tags on this component derive hard filters automatically (e.g. sweet → sweetness_allow: [sweet, semi-sweet]). When false, the component affects scoring only.",
-    "_example": {
+    "_mode1_component_shape": "{ name, food_tags[] } — no role, no generates_hard_filter",
+    "_mode3_component_shape": "{ name, role: 'highlight', food_tags[], generates_hard_filter: bool }",
+    "_generates_hard_filter": "Mode 3 only. When true, extreme tags on this highlight derive additional hard filters (sweet → sweetness_allow; bitter → type_prefer sparkling; spicy → sweetness_allow + tannins_max). In Mode 1 hard filters are always auto-derived from the pooled tag set.",
+    "_example_mode1": {
       "id": "tabua-queijo",
       "components": [
-        { "name": "queijo-sao-jorge-8m",  "role": "primary",            "food_tags": ["salty", "umami", "fatty_dairy", "cured", "rich"], "generates_hard_filter": false },
-        { "name": "tamaras",              "role": "dominant_challenge",  "food_tags": ["sweet", "caramel"],                                "generates_hard_filter": true  },
-        { "name": "crackers-alecrim",     "role": "accent",              "food_tags": ["bitter", "herbaceous"],                                       "generates_hard_filter": false }
+        { "name": "queijo-sao-jorge-8m", "food_tags": ["salty", "umami", "fatty_dairy", "cured", "rich"] },
+        { "name": "tamaras",             "food_tags": ["sweet", "caramel", "nuts"] },
+        { "name": "crackers-alecrim",    "food_tags": ["bitter", "herbaceous"] }
+      ]
+    },
+    "_example_mode3": {
+      "id": "pato-laranja",
+      "food_tags": ["red_meat", "grilled", "rich", "fatty_animal"],
+      "components": [
+        { "name": "molho-laranja", "role": "highlight", "food_tags": ["sweet", "citrus", "acidic"], "generates_hard_filter": false }
       ]
     }
   },
