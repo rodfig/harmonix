@@ -6,8 +6,8 @@
 
 const { replaceInFileSync } = require('replace-in-file');
 
-const apiKey   = process.env.GOOGLE_API_KEY;
-const clientId = process.env.GOOGLE_CLIENT_ID;
+const apiKey   = (process.env.GOOGLE_API_KEY || '').trim();
+const clientId = (process.env.GOOGLE_CLIENT_ID || '').trim();
 
 if (!apiKey || !clientId) {
     console.error('build.js: GOOGLE_API_KEY and GOOGLE_CLIENT_ID must be set as environment variables.');
