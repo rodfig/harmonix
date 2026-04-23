@@ -338,8 +338,8 @@
     </div>
 
     <!-- Google API scripts (needed for Drive integration) -->
-    <script src="https://apis.google.com/js/api.js" async defer onload="onGapiLoad()"></script>
-    <script async defer src="https://accounts.google.com/gsi/client" onload="onGsiLoad()"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://accounts.google.com/gsi/client"></script>
 
     <script src="js/pairing-scorer.js"></script>
     <script src="js/harmonix.js"></script>
@@ -794,14 +794,7 @@
 
     // ── Drive integration ───────────────────────────────────────────────────────
 
-    let _gapiReady = false;
-    let _gsiReady  = false;
-
-    function onGapiLoad() { _gapiReady = true; tryInitDrive(); }
-    function onGsiLoad()  { _gsiReady  = true; tryInitDrive(); }
-
     function tryInitDrive() {
-        if (!_gapiReady || !_gsiReady) return;
         driveInit((status, msg) => {
             const statusEl = document.getElementById('driveStatus');
             const dot = status === 'connected' ? '🟢' : status === 'error' ? '🔴' : '🟡';
@@ -830,6 +823,9 @@
     // ── Init ────────────────────────────────────────────────────────────────────
 
     document.addEventListener('DOMContentLoaded', () => {
+        // Drive integration
+        tryInitDrive();
+
         // Wine form tabs
         document.querySelectorAll('.wine-form-tab').forEach(btn => {
             btn.addEventListener('click', () => {
