@@ -24,8 +24,8 @@
  *   driveIsConnected()          — boolean
  */
 
-const DRIVE_API_KEY    = 'YOUR_API_KEY_HERE';
-const DRIVE_CLIENT_ID  = 'YOUR_CLIENT_ID_HERE';
+const DRIVE_API_KEY    = 'PLACEHOLDER_GOOGLE_API_KEY';
+const DRIVE_CLIENT_ID  = 'PLACEHOLDER_GOOGLE_CLIENT_ID';
 const DRIVE_FOLDER     = 'Pairings';
 const DRIVE_INDEX_FILE = 'indice_pairings.json';
 const DRIVE_DISCOVERY  = 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest';

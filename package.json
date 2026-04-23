@@ -1,0 +1,11 @@
+{
+  "name": "harmonix",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "replace-in-file": "^8.0.0"
+  }
+}

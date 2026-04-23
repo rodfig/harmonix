@@ -649,7 +649,7 @@ The DB, rules, and engine are all menu-agnostic. Only the two JSON files need au
 ```
 data/wine-profiles/
   producers-[region].json     source of truth (14 files, 443 wines)
-  pairing-rules.json          30 rules, 6 dimensions + bonus
+  pairing-rules.json          47 rules, 10 dimensions
   wines-compiled.json         GENERATED — flat array with carta_price
 
 data/menus/nanban-kaiseki/
